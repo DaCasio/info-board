@@ -56,66 +56,77 @@
     <div id="uhr">00:00:00</div>
     <div id="liste"></div>
 
-    <script>
-        const termineRaw = `
-            New Life, 2026-01-01 00:00
-            Fliesenleger Bayrami, 2026-01-05 08:00
-            UP-IP-TV, 2026-01-07 00:00
-            Bodenverleger Marcel, 2026-01-09 08:00
-            Urlaub, 2026-01-09 17:00
-            Telekom, 2026-01-13 08:00
-            Umzug, 2026-01-14 08:00
-            Sperrmüll, 2026-01-28 08:00
-            Fuck off Kleiststraße, 2026-02-01 00:00
-        `;
+<script>
+    // Deine Termine
+    const termineRaw = `
+        New Life, 2026-01-01 00:00
+        Fliesenleger Bayrami, 2026-01-05 08:00
+        UP-IP-TV, 2026-01-07 00:00
+        Bodenverleger Marcel, 2026-01-09 08:00
+        Urlaub, 2026-01-09 17:00
+        Telekom, 2026-01-13 08:00
+        Umzug, 2026-01-14 08:00
+        Sperrmüll, 2026-01-28 08:00
+        Fuck off Kleiststraße, 2026-02-01 00:00
+    `;
 
-        function update() {
-            const jetzt = new Date();
-            // Uhrzeit aktualisieren
-            document.getElementById('uhr').innerText = jetzt.toLocaleTimeString('de-DE');
+    function update() {
+        const jetzt = new Date();
+        document.getElementById('uhr').innerText = jetzt.toLocaleTimeString('de-DE');
 
-            const jetztMs = jetzt.getTime();
-            const zeilen = termineRaw.trim().split('\n');
-            let html = '';
+        const jetztMs = jetzt.getTime();
+        
+        // Termine parsen und sortieren
+        let termine = termineRaw.trim().split('\n').map(zeile => {
+            const parts = zeile.split(',');
+            if (parts.length < 2) return null;
+            const name = parts[0].trim();
+            const zielDate = new Date(parts[1].trim());
+            return { name, zielDate, zielMs: zielDate.getTime() };
+        }).filter(t => t !== null);
 
-            zeilen.forEach(zeile => {
-                const parts = zeile.split(',');
-                if (parts.length < 2) return;
+        // Sortierung: Zukünftige Termine nach oben (nächster zuerst), Erledigte nach unten
+        termine.sort((a, b) => {
+            const diffA = a.zielMs - jetztMs;
+            const diffB = b.zielMs - jetztMs;
+            if (diffA > 0 && diffB > 0) return diffA - diffB; // Beide zukünftig: nähster zuerst
+            return diffB - diffA; // Erledigte nach hinten
+        });
 
-                const name = parts[0].trim();
-                const zielDate = new Date(parts[1].trim());
-                const diff = zielDate.getTime() - jetztMs;
-                
-                const formatiertesZiel = zielDate.toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
+        let html = '';
+        termine.forEach(termin => {
+            const diff = termin.zielMs - jetztMs;
+            const formatiertesZiel = termin.zielDate.toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
 
-                let zeitText = "ERLEDIGT";
-                let istAbgelaufen = diff <= 0;
+            let zeitText = "ERLEDIGT";
+            let istAbgelaufen = diff <= 0;
 
-                if (!istAbgelaufen) {
-                    const d = Math.floor(diff / 86400000);
-                    const h = Math.floor((diff % 86400000) / 3600000);
-                    const m = Math.floor((diff % 3600000) / 60000);
-                    const s = Math.floor((diff % 60000) / 1000);
-                    const pad = (n) => String(n).padStart(2, '0');
-                    zeitText = `${d}d ${pad(h)}h ${pad(m)}m ${pad(s)}s`;
-                }
+            if (!istAbgelaufen) {
+                const d = Math.floor(diff / 86400000);
+                const h = Math.floor((diff % 86400000) / 3600000);
+                const m = Math.floor((diff % 3600000) / 60000);
+                const s = Math.floor((diff % 60000) / 1000);
+                const pad = (n) => String(n).padStart(2, '0');
+                zeitText = `${d}d ${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+            }
 
-                html += `
-                    <div class="termin-card">
-                        <div class="info-bereich">
-                            <span class="name">${name}</span>
-                            <span class="ziel-datum">${formatiertesZiel}</span>
-                        </div>
-                        <div class="timer-bereich">
-                            <span class="countdown ${istAbgelaufen ? 'abgelaufen' : ''}">${zeitText}</span>
-                        </div>
-                    </div>`;
-            });
-            document.getElementById('liste').innerHTML = html;
-        }
+            html += `
+                <div class="termin-card">
+                    <div class="info-bereich">
+                        <span class="name">${termin.name}</span>
+                        <span class="ziel-datum">${formatiertesZiel}</span>
+                    </div>
+                    <div class="timer-bereich">
+                        <span class="countdown ${istAbgelaufen ? 'abgelaufen' : ''}">${zeitText}</span>
+                    </div>
+                </div>`;
+        });
+        document.getElementById('liste').innerHTML = html;
+    }
 
-        setInterval(update, 1000);
-        update();
-    </script>
+    setInterval(update, 1000);
+    update();
+</script>
 </body>
+
 </html>
