@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexa Termin Monitor</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            margin: 0;
+            overflow: hidden; /* Verhindert Scrollen auf Alexa */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #uhr {
+            font-size: 4rem;
+            font-family: 'Courier New', monospace;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        #liste {
+            column-count: 2;
+            column-gap: 50px;
+            column-fill: auto;
+            height: 80vh; 
+            width: 100%;
+            max-width: 1400px;
+        }
+
+        .termin-card {
+            break-inside: avoid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #222;
+        }
+
+        .name { font-size: 1.4rem; font-weight: bold; }
+        .ziel-datum { font-size: 0.8rem; color: #666; }
+        .timer-bereich { text-align: right; min-width: 180px; }
+        .countdown { font-family: 'Courier New', monospace; font-size: 1.6rem; color: #00ffcc; font-weight: bold; }
+        .abgelaufen { color: #ff3333 !important; }
+
+        @media (max-width: 900px) { #liste { column-count: 1; height: auto; } }
+    </style>
+</head>
+<body>
+
+    <div id="uhr">00:00:00</div>
+    <div id="liste"></div>
+
+    <script>
+        const termineRaw = `
+            New Life, 2026-01-01 00:00
+            Fliesenleger Bayrami, 2026-01-05 08:00
+            UP-IP-TV, 2026-01-07 00:00
+            Bodenverleger Marcel, 2026-01-09 08:00
+            Urlaub, 2026-01-09 17:00
+            Telekom, 2026-01-13 08:00
+            Umzug, 2026-01-14 08:00
+            Sperrmüll, 2026-01-28 08:00
+            Fuck off Kleiststraße, 2026-02-01 00:00
+        `;
+
+        function update() {
+            const jetzt = new Date();
+            // Uhrzeit aktualisieren
+            document.getElementById('uhr').innerText = jetzt.toLocaleTimeString('de-DE');
+
+            const jetztMs = jetzt.getTime();
+            const zeilen = termineRaw.trim().split('\n');
+            let html = '';
+
+            zeilen.forEach(zeile => {
+                const parts = zeile.split(',');
+                if (parts.length < 2) return;
+
+                const name = parts[0].trim();
+                const zielDate = new Date(parts[1].trim());
+                const diff = zielDate.getTime() - jetztMs;
+                
+                const formatiertesZiel = zielDate.toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
+
+                let zeitText = "ERLEDIGT";
+                let istAbgelaufen = diff <= 0;
+
+                if (!istAbgelaufen) {
+                    const d = Math.floor(diff / 86400000);
+                    const h = Math.floor((diff % 86400000) / 3600000);
+                    const m = Math.floor((diff % 3600000) / 60000);
+                    const s = Math.floor((diff % 60000) / 1000);
+                    const pad = (n) => String(n).padStart(2, '0');
+                    zeitText = `${d}d ${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+                }
+
+                html += `
+                    <div class="termin-card">
+                        <div class="info-bereich">
+                            <span class="name">${name}</span>
+                            <span class="ziel-datum">${formatiertesZiel}</span>
+                        </div>
+                        <div class="timer-bereich">
+                            <span class="countdown ${istAbgelaufen ? 'abgelaufen' : ''}">${zeitText}</span>
+                        </div>
+                    </div>`;
+            });
+            document.getElementById('liste').innerHTML = html;
+        }
+
+        setInterval(update, 1000);
+        update();
+    </script>
+</body>
+</html>
