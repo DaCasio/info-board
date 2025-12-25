@@ -3,135 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor Dashboard</title>
+    <title>Termin Monitor - Public Edition</title>
     <style>
-        /* Modernes dunkles Design */
         body { 
-            background-color: #121212; 
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images-assets.nasa.gov/image/PIA08653/PIA08653~medium.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
             color: white; 
-            font-family: 'Segoe UI', Arial, sans-serif; 
+            font-family: 'Segoe UI', sans-serif; 
             display: flex; 
             flex-direction: column; 
             align-items: center; 
-            padding: 40px;
+            padding: 20px;
             margin: 0;
+            min-height: 100vh;
         }
+
         h1 { 
-            color: #ffffff;
             border-bottom: 3px solid #00cae3; 
-            padding-bottom: 10px;
+            padding-bottom: 10px; 
+            text-transform: uppercase; 
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px rgba(0, 202, 227, 0.5);
+        }
+        
+        .input-box {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
             margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            width: 100%;
+            max-width: 850px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-sizing: border-box;
         }
-        #liste { 
-            width: 100%; 
-            max-width: 650px; 
+
+        input { 
+            padding: 10px; 
+            border-radius: 5px; 
+            border: 1px solid #444; 
+            background: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            flex: 1; 
+            min-width: 150px; 
         }
+
+        .add-btn { 
+            padding: 10px 25px; 
+            border-radius: 5px; 
+            border: none; 
+            background: #00cae3; 
+            color: black; 
+            font-weight: bold; 
+            cursor: pointer;
+        }
+
+        #liste { width: 100%; max-width: 850px; }
+
         .termin-card { 
-            background: #1e1e1e; 
-            margin: 15px 0; 
-            padding: 20px; 
+            background: rgba(30, 30, 30, 0.7); 
+            backdrop-filter: blur(5px);
+            margin: 10px 0; 
+            padding: 15px 20px; 
             border-radius: 12px; 
             display: flex; 
             justify-content: space-between; 
-            align-items: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            border-left: 5px solid #00cae3;
-            transition: transform 0.2s;
+            align-items: center; 
+            border-left: 8px solid #00cae3;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        .termin-card:hover {
-            transform: scale(1.02);
-        }
-        .name { 
-            font-weight: bold; 
-            font-size: 1.3em;
-        }
+
+        .info-bereich { display: flex; flex-direction: column; flex-grow: 1; }
+        .name { font-weight: bold; font-size: 1.4em; }
+        .zieldatum { font-size: 0.9em; color: #bbb; margin-top: 3px; }
+
+        .zeit-container { display: flex; align-items: center; gap: 15px; }
         .zeit { 
             color: #00cae3; 
             font-family: 'Courier New', monospace; 
-            font-size: 1.2em;
-            background: rgba(0, 202, 227, 0.1);
-            padding: 5px 15px;
-            border-radius: 5px;
+            font-size: 1.5em; 
+            font-weight: bold; 
+            min-width: 210px; 
+            text-align: right; 
         }
-        .error {
-            color: #ff5f56;
-            background: rgba(255, 95, 86, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #ff5f56;
+
+        .action-btn { border: none; border-radius: 5px; width: 35px; height: 35px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+        .edit-btn { background: rgba(243, 156, 18, 0.8); color: white; }
+        .del-btn { background: rgba(255, 77, 77, 0.8); color: white; }
+        .save-btn { background: #2ecc71; color: white; width: auto; padding: 0 15px; }
+
+        .warn-yellow { border-left-color: #ffd700 !important; background: rgba(60, 50, 0, 0.7) !important; }
+        .warn-red { border-left-color: #ff4d4d !important; background: rgba(80, 0, 0, 0.7) !important; animation: pulse 2s infinite; }
+        .erledigt { border-left-color: #2ecc71 !important; opacity: 0.4; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.4em; }
+            .input-box { flex-direction: column; }
+            .termin-card { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .zeit { text-align: left; min-width: 100%; font-size: 1.2em; }
+            .zeit-container { width: 100%; justify-content: space-between; }
         }
+
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(255, 77, 77, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 77, 77, 0); } }
     </style>
-    <meta http-equiv="refresh" content="300">
 </head>
 <body>
 
     <h1>Termin Monitor</h1>
-    <div id="liste">Lade private Daten von GitHub...</div>
+
+    <div class="input-box">
+        <input type="text" id="new-name" placeholder="Neuer Termin...">
+        <input type="datetime-local" id="new-date">
+        <button class="add-btn" onclick="speichereTermin()">Hinzufügen</button>
+    </div>
+
+    <div id="liste">Lade galaktische Daten...</div>
 
     <script>
-        // Deine Zugangsdaten
         const GITHUB_TOKEN = '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';
-        // Wir nutzen die GitHub API, um CORS-Probleme zu vermeiden
         const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
+        
+        let termineDaten = [];
+        let currentSha = "";
+        let editIndex = -1; 
 
-        async function ladeTermine() {
+        async function holeDaten() {
+            if (editIndex !== -1) return;
             try {
-                const response = await fetch(GITHUB_URL, {
-                    headers: {
-                        'Authorization': `token ${GITHUB_TOKEN}`,
-                        'Accept': 'application/vnd.github.v3.raw'
-                    }
-                });
-                
-                if (!response.ok) {
-                    throw new Error('Fehler: ' + response.status + ' (Prüfe Token und Repo-Name)');
+                const response = await fetch(GITHUB_URL, { headers: { 'Authorization': `token ${GITHUB_TOKEN}` } });
+                if (response.ok) {
+                    const data = await response.json();
+                    currentSha = data.sha;
+                    const content = decodeURIComponent(escape(atob(data.content)));
+                    termineDaten = JSON.parse(content);
+                    termineDaten.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
+                    updateAnzeige();
                 }
-                
-                const termine = await response.json();
-                const listeDiv = document.getElementById('liste');
-                listeDiv.innerHTML = ''; // Lade-Text entfernen
-
-                const jetzt = new Date();
-
-                // Termine sortieren (optional: bald fällige zuerst)
-                termine.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
-
-                termine.forEach(t => {
-                    const ziel = new Date(t.ziel);
-                    const diff = ziel - jetzt;
-                    let zeitText = "Erledigt";
-
-                    if (diff > 0) {
-                        const d = Math.floor(diff / 86400000);
-                        const h = Math.floor((diff % 86400000) / 3600000);
-                        zeitText = `${d}t ${h}std`;
-                    }
-
-                    const card = document.createElement('div');
-                    card.className = 'termin-card';
-                    card.innerHTML = `
-                        <span class="name">${t.name}</span>
-                        <span class="zeit">${zeitText}</span>
-                    `;
-                    listeDiv.appendChild(card);
-                });
-            } catch (error) {
-                document.getElementById('liste').innerHTML = `
-                    <div class="error">
-                        <strong>Abruf fehlgeschlagen:</strong><br>
-                        ${error.message}<br><br>
-                        <small>Hinweis: Stelle sicher, dass das Repository "termine-dashboard" heißt und die Datei "termine.json" im Hauptverzeichnis liegt.</small>
-                    </div>
-                `;
-                console.error(error);
-            }
+            } catch (e) { console.error("Fehler", e); }
         }
 
-        // Sofort beim Laden ausführen
-        ladeTermine();
+        async function pushToGithub(neueListe, msg) {
+            try {
+                const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(neueListe, null, 4))));
+                const response = await fetch(GITHUB_URL, {
+                    method: 'PUT',
+                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: msg, content: newContent, sha: currentSha })
+                });
+                if (response.ok) { editIndex = -1; await holeDaten(); }
+            } catch (e) { alert("Speichern fehlgeschlagen."); }
+        }
+
+        function speichereTermin() {
+            const n = document.getElementById('new-name'), d = document.getElementById('new-date');
+            if (!n.value || !d.value) return;
+            pushToGithub([...termineDaten, { "name": n.value, "ziel": d.value + ":00" }], "Neu: " + n.value);
+            n.value = ''; d.value = '';
+        }
+
+        function loescheTermin(i) { if (confirm("Löschen?")) pushToGithub(termineDaten.filter((_, idx) => idx !== i), "Gelöscht"); }
+        function aktiviereEdit(i) { editIndex = i; updateAnzeige(); }
+        function speichereEdit(i) {
+            const n = document.getElementById(`edit-name-${i}`).value, d = document.getElementById(`edit-date-${i}`).value;
+            termineDaten[i].name = n;
+            termineDaten[i].ziel = d.includes("T") && d.length === 16 ? d + ":00" : d;
+            pushToGithub(termineDaten, "Edit: " + n);
+        }
+
+        function updateAnzeige() {
+            const listeDiv = document.getElementById('liste');
+            if (editIndex !== -1 && listeDiv.querySelectorAll('input').length > 1) return;
+            listeDiv.innerHTML = '';
+            const jetzt = new Date();
+            termineDaten.forEach((t, index) => {
+                const card = document.createElement('div');
+                if (editIndex === index) {
+                    card.className = 'termin-card';
+                    card.innerHTML = `<div style="display:flex; gap:10px; width:100%; flex-wrap:wrap;">
+                        <input type="text" id="edit-name-${index}" value="${t.name}">
+                        <input type="datetime-local" id="edit-date-${index}" value="${t.ziel.substring(0,16)}">
+                        <button class="action-btn save-btn" onclick="speichereEdit(${index})">OK</button>
+                        <button class="action-btn del-btn" onclick="editIndex=-1; updateAnzeige();">X</button>
+                    </div>`;
+                } else {
+                    const ziel = new Date(t.ziel), diff = ziel - jetzt;
+                    let zeitStr = "Erledigt", statusClass = "erledigt";
+                    if (diff > 0) {
+                        const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
+                        zeitStr = `${d}t ${h}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`;
+                        statusClass = diff < 86400000 ? "warn-red" : (diff < 259200000 ? "warn-yellow" : "");
+                    }
+                    card.className = `termin-card ${statusClass}`;
+                    card.innerHTML = `<div class="info-bereich"><span class="name">${t.name}</span><span class="zieldatum">Ziel: ${new Date(t.ziel).toLocaleString('de-DE')}</span></div>
+                        <div class="zeit-container"><span class="zeit">${zeitStr}</span><button class="action-btn edit-btn" onclick="aktiviereEdit(${index})">✎</button><button class="action-btn del-btn" onclick="loescheTermin(${index})">✕</button></div>`;
+                }
+                listeDiv.appendChild(card);
+            });
+        }
+        holeDaten();
+        setInterval(() => { if(editIndex === -1) updateAnzeige(); }, 1000);
+        setInterval(holeDaten, 60000);
     </script>
 </body>
 </html>
-
