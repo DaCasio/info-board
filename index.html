@@ -60,9 +60,10 @@
     <div id="liste">Bitte PIN eingeben...</div>
 
     <script>
-        const RICHTIGE_PIN = "1234";
+        // --- KONFIGURATION ---
+        const RICHTIGE_PIN = "0508";
         
-        // Tarnung für den Token
+        // Tarnung für den Token (bleibt gleich)
         const secret_parts = ["github", "_pat", "_11BB", "RVHC", "Q0kf", "CkR2", "kerg", "gY_C", "IMB6", "2Hxr", "eVC5", "u9vt", "rAxS", "aXpo", "G0pq", "ljhf", "Y8Ik", "eF8l", "opZR", "OR2O", "SU5I", "Q1EI", "s9"];
         const GITHUB_TOKEN = secret_parts.join("");
         const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
@@ -77,9 +78,10 @@
                 isLogged = true;
                 document.getElementById('login-overlay').style.display = 'none';
                 document.getElementById('liste').innerHTML = "Verbindung wird hergestellt...";
-                holeDaten(); // Sofortiger Abruf nach Login
+                // Kleiner Delay damit die UI nicht einfriert
+                setTimeout(holeDaten, 500);
             } else {
-                alert("PIN inkorrekt.");
+                alert("PIN falsch.");
                 document.getElementById('pin-field').value = "";
             }
         }
@@ -87,30 +89,52 @@
         async function holeDaten() {
             if (!isLogged) return;
             try {
+                // Fetch mit Cache: reload unterbindet veraltete Daten
                 const response = await fetch(GITHUB_URL, { 
-                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Cache-Control': 'no-cache' } 
+                    method: 'GET',
+                    headers: { 
+                        'Authorization': `token ${GITHUB_TOKEN}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
                 });
+
                 if (response.ok) {
                     const data = await response.json();
                     currentSha = data.sha;
-                    termineDaten = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                    // Daten dekodieren
+                    const content = atob(data.content);
+                    termineDaten = JSON.parse(decodeURIComponent(escape(content)));
                     updateAnzeige();
                 } else {
-                    document.getElementById('liste').innerHTML = "Fehler: Datenbank-Zugriff verweigert (" + response.status + ")";
+                    const errorMsg = await response.text();
+                    document.getElementById('liste').innerHTML = `Fehler: ${response.status} - Zugriff verweigert.`;
                 }
             } catch (e) { 
-                document.getElementById('liste').innerHTML = "Netzwerkfehler beim Laden.";
+                console.error("Fetch Error:", e);
+                document.getElementById('liste').innerHTML = "Netzwerkfehler: Bitte Internetverbindung prüfen.";
             }
         }
 
         async function pushToGithub(neueListe) {
-            const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(neueListe, null, 4))));
-            const response = await fetch(GITHUB_URL, {
-                method: 'PUT',
-                headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: "Update via Web", content: newContent, sha: currentSha })
-            });
-            if (response.ok) holeDaten();
+            try {
+                const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(neueListe, null, 4))));
+                const response = await fetch(GITHUB_URL, {
+                    method: 'PUT',
+                    headers: { 
+                        'Authorization': `token ${GITHUB_TOKEN}`, 
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify({ 
+                        message: "Update via Web", 
+                        content: newContent, 
+                        sha: currentSha 
+                    })
+                });
+                if (response.ok) holeDaten();
+                else alert("Speichern fehlgeschlagen: " + response.status);
+            } catch (e) {
+                alert("Fehler beim Senden der Daten.");
+            }
         }
 
         function speichereTermin() {
@@ -149,7 +173,6 @@
             });
         }
 
-        // Timer starten nur nach Login
         setInterval(() => { if (isLogged) updateAnzeige(); }, 1000);
         setInterval(() => { if (isLogged) holeDaten(); }, 30000);
     </script>
