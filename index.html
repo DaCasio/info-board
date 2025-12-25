@@ -3,130 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexa Termin Monitor</title>
+    <title>Termin Monitor Dashboard</title>
     <style>
         body {
-            background-color: black;
+            background-color: #121212;
             color: white;
-            font-family: 'Segoe UI', sans-serif;
-            padding: 20px;
-            margin: 0;
-            overflow: hidden; /* Verhindert Scrollen auf Alexa */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 20px;
         }
-
-        #uhr {
-            font-size: 4rem;
-            font-family: 'Courier New', monospace;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
+        h1 { border-bottom: 2px solid #00cae3; padding-bottom: 10px; }
         #liste {
-            column-count: 2;
-            column-gap: 50px;
-            column-fill: auto;
-            height: 80vh; 
             width: 100%;
-            max-width: 1400px;
+            max-width: 600px;
+            margin-top: 20px;
         }
-
         .termin-card {
-            break-inside: avoid;
+            background: #1e1e1e;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 15px 10px;
-            border-bottom: 1px solid #222;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
-
-        .name { font-size: 1.4rem; font-weight: bold; }
-        .ziel-datum { font-size: 0.8rem; color: #666; }
-        .timer-bereich { text-align: right; min-width: 180px; }
-        .countdown { font-family: 'Courier New', monospace; font-size: 1.6rem; color: #00ffcc; font-weight: bold; }
-        .abgelaufen { color: #ff3333 !important; }
-
-        @media (max-width: 900px) { #liste { column-count: 1; height: auto; } }
+        .name { font-weight: bold; font-size: 1.2em; }
+        .zeit { color: #00cae3; font-family: monospace; }
     </style>
 </head>
 <body>
 
-    <div id="uhr">00:00:00</div>
-    <div id="liste"></div>
+    <h1>Termin Monitor</h1>
+    <div id="liste">Lade Termine...</div>
 
-<script>
-    // Deine Termine
-    const termineRaw = `
-        New Life, 2026-01-01 00:00
-        Fliesenleger Bayrami, 2026-01-05 08:00
-        UP-IP-TV, 2026-01-07 00:00
-        Bodenverleger Marcel, 2026-01-09 08:00
-        Urlaub, 2026-01-09 17:00
-        Telekom, 2026-01-13 08:00
-        Umzug, 2026-01-14 08:00
-        Sperrmüll, 2026-01-28 08:00
-        Fuck off Kleiststraße, 2026-02-01 00:00
-    `;
+    <script>
+        async function ladeTermine() {
+            try {
+                // Lädt die Datei aus dem gleichen Verzeichnis
+                const response = await fetch('termine.json');
+                const termine = await response.json();
+                
+                const listeDiv = document.getElementById('liste');
+                listeDiv.innerHTML = ''; // Lade-Text entfernen
 
-    function update() {
-        const jetzt = new Date();
-        document.getElementById('uhr').innerText = jetzt.toLocaleTimeString('de-DE');
+                const jetzt = new Date();
 
-        const jetztMs = jetzt.getTime();
-        
-        // Termine parsen und sortieren
-        let termine = termineRaw.trim().split('\n').map(zeile => {
-            const parts = zeile.split(',');
-            if (parts.length < 2) return null;
-            const name = parts[0].trim();
-            const zielDate = new Date(parts[1].trim());
-            return { name, zielDate, zielMs: zielDate.getTime() };
-        }).filter(t => t !== null);
+                termine.forEach(t => {
+                    const ziel = new Date(t.ziel);
+                    const diff = ziel - jetzt;
+                    let zeitText = "Erledigt";
 
-        // Sortierung: Zukünftige Termine nach oben (nächster zuerst), Erledigte nach unten
-        termine.sort((a, b) => {
-            const diffA = a.zielMs - jetztMs;
-            const diffB = b.zielMs - jetztMs;
-            if (diffA > 0 && diffB > 0) return diffA - diffB; // Beide zukünftig: nähster zuerst
-            return diffB - diffA; // Erledigte nach hinten
-        });
+                    if (diff > 0) {
+                        const d = Math.floor(diff / 86400000);
+                        const h = Math.floor((diff % 86400000) / 3600000);
+                        zeitText = `${d}d ${h}h`;
+                    }
 
-        let html = '';
-        termine.forEach(termin => {
-            const diff = termin.zielMs - jetztMs;
-            const formatiertesZiel = termin.zielDate.toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
-
-            let zeitText = "ERLEDIGT";
-            let istAbgelaufen = diff <= 0;
-
-            if (!istAbgelaufen) {
-                const d = Math.floor(diff / 86400000);
-                const h = Math.floor((diff % 86400000) / 3600000);
-                const m = Math.floor((diff % 3600000) / 60000);
-                const s = Math.floor((diff % 60000) / 1000);
-                const pad = (n) => String(n).padStart(2, '0');
-                zeitText = `${d}d ${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+                    // Karte erstellen
+                    const card = document.createElement('div');
+                    card.className = 'termin-card';
+                    card.innerHTML = `
+                        <span class="name">${t.name}</span>
+                        <span class="zeit">${zeitText}</span>
+                    `;
+                    listeDiv.appendChild(card);
+                });
+            } catch (error) {
+                document.getElementById('liste').innerText = 'Fehler beim Laden der Termine.';
+                console.error(error);
             }
+        }
 
-            html += `
-                <div class="termin-card">
-                    <div class="info-bereich">
-                        <span class="name">${termin.name}</span>
-                        <span class="ziel-datum">${formatiertesZiel}</span>
-                    </div>
-                    <div class="timer-bereich">
-                        <span class="countdown ${istAbgelaufen ? 'abgelaufen' : ''}">${zeitText}</span>
-                    </div>
-                </div>`;
-        });
-        document.getElementById('liste').innerHTML = html;
-    }
-
-    setInterval(update, 1000);
-    update();
-</script>
+        ladeTermine();
+    </script>
 </body>
-
 </html>
