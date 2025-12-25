@@ -3,24 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privater Termin Monitor</title>
+    <title>Termin Monitor Dashboard</title>
     <style>
-        body { background-color: #121212; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
-        h1 { border-bottom: 2px solid #00cae3; padding-bottom: 10px; }
-        #liste { width: 100%; max-width: 600px; margin-top: 20px; }
-        .termin-card { background: #1e1e1e; margin: 10px 0; padding: 15px; border-radius: 8px; display: flex; justify-content: space-between; }
-        .name { font-weight: bold; }
-        .zeit { color: #00cae3; font-family: monospace; }
+        /* Modernes dunkles Design */
+        body { 
+            background-color: #121212; 
+            color: white; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 40px;
+            margin: 0;
+        }
+        h1 { 
+            color: #ffffff;
+            border-bottom: 3px solid #00cae3; 
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        #liste { 
+            width: 100%; 
+            max-width: 650px; 
+        }
+        .termin-card { 
+            background: #1e1e1e; 
+            margin: 15px 0; 
+            padding: 20px; 
+            border-radius: 12px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border-left: 5px solid #00cae3;
+            transition: transform 0.2s;
+        }
+        .termin-card:hover {
+            transform: scale(1.02);
+        }
+        .name { 
+            font-weight: bold; 
+            font-size: 1.3em;
+        }
+        .zeit { 
+            color: #00cae3; 
+            font-family: 'Courier New', monospace; 
+            font-size: 1.2em;
+            background: rgba(0, 202, 227, 0.1);
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        .error {
+            color: #ff5f56;
+            background: rgba(255, 95, 86, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ff5f56;
+        }
     </style>
+    <meta http-equiv="refresh" content="300">
 </head>
 <body>
 
-    <h1>Termin Monitor (Privat)</h1>
-    <div id="liste">Lade private Daten...</div>
+    <h1>Termin Monitor</h1>
+    <div id="liste">Lade private Daten von GitHub...</div>
 
     <script>
+        // Deine Zugangsdaten
         const GITHUB_TOKEN = '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';
-        const GITHUB_URL = 'https://raw.githubusercontent.com/dacasio/termine-dashboard/main/termine.json';
+        // Wir nutzen die GitHub API, um CORS-Probleme zu vermeiden
+        const GITHUB_URL = 'https://api.github.com/repos/dacasio/termine-dashboard/contents/termine.json';
 
         async function ladeTermine() {
             try {
@@ -31,13 +85,18 @@
                     }
                 });
                 
-                if (!response.ok) throw new Error('Fehler beim Laden: ' + response.status);
+                if (!response.ok) {
+                    throw new Error('Fehler: ' + response.status + ' (Prüfe Token und Repo-Name)');
+                }
                 
                 const termine = await response.json();
                 const listeDiv = document.getElementById('liste');
-                listeDiv.innerHTML = ''; 
+                listeDiv.innerHTML = ''; // Lade-Text entfernen
 
                 const jetzt = new Date();
+
+                // Termine sortieren (optional: bald fällige zuerst)
+                termine.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
 
                 termine.forEach(t => {
                     const ziel = new Date(t.ziel);
@@ -47,19 +106,30 @@
                     if (diff > 0) {
                         const d = Math.floor(diff / 86400000);
                         const h = Math.floor((diff % 86400000) / 3600000);
-                        zeitText = `${d}d ${h}h`;
+                        zeitText = `${d}t ${h}std`;
                     }
 
                     const card = document.createElement('div');
                     card.className = 'termin-card';
-                    card.innerHTML = `<span class="name">${t.name}</span><span class="zeit">${zeitText}</span>`;
+                    card.innerHTML = `
+                        <span class="name">${t.name}</span>
+                        <span class="zeit">${zeitText}</span>
+                    `;
                     listeDiv.appendChild(card);
                 });
             } catch (error) {
-                document.getElementById('liste').innerText = 'Fehler: ' + error.message;
+                document.getElementById('liste').innerHTML = `
+                    <div class="error">
+                        <strong>Abruf fehlgeschlagen:</strong><br>
+                        ${error.message}<br><br>
+                        <small>Hinweis: Stelle sicher, dass das Repository "termine-dashboard" heißt und die Datei "termine.json" im Hauptverzeichnis liegt.</small>
+                    </div>
+                `;
+                console.error(error);
             }
         }
 
+        // Sofort beim Laden ausführen
         ladeTermine();
     </script>
 </body>
