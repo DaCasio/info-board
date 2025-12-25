@@ -3,50 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor Dashboard</title>
+    <title>Privater Termin Monitor</title>
     <style>
-        body {
-            background-color: #121212;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
+        body { background-color: #121212; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
         h1 { border-bottom: 2px solid #00cae3; padding-bottom: 10px; }
-        #liste {
-            width: 100%;
-            max-width: 600px;
-            margin-top: 20px;
-        }
-        .termin-card {
-            background: #1e1e1e;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            display: flex;
-            justify-content: space-between;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-        .name { font-weight: bold; font-size: 1.2em; }
+        #liste { width: 100%; max-width: 600px; margin-top: 20px; }
+        .termin-card { background: #1e1e1e; margin: 10px 0; padding: 15px; border-radius: 8px; display: flex; justify-content: space-between; }
+        .name { font-weight: bold; }
         .zeit { color: #00cae3; font-family: monospace; }
     </style>
 </head>
 <body>
 
-    <h1>Termin Monitor</h1>
-    <div id="liste">Lade Termine...</div>
+    <h1>Termin Monitor (Privat)</h1>
+    <div id="liste">Lade private Daten...</div>
 
     <script>
+        const GITHUB_TOKEN = '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';
+        const GITHUB_URL = 'https://raw.githubusercontent.com/dacasio/termine-dashboard/main/termine.json';
+
         async function ladeTermine() {
             try {
-                // Lädt die Datei aus dem gleichen Verzeichnis
-                const response = await fetch('termine.json');
-                const termine = await response.json();
+                const response = await fetch(GITHUB_URL, {
+                    headers: {
+                        'Authorization': `token ${GITHUB_TOKEN}`,
+                        'Accept': 'application/vnd.github.v3.raw'
+                    }
+                });
                 
+                if (!response.ok) throw new Error('Fehler beim Laden: ' + response.status);
+                
+                const termine = await response.json();
                 const listeDiv = document.getElementById('liste');
-                listeDiv.innerHTML = ''; // Lade-Text entfernen
+                listeDiv.innerHTML = ''; 
 
                 const jetzt = new Date();
 
@@ -61,18 +50,13 @@
                         zeitText = `${d}d ${h}h`;
                     }
 
-                    // Karte erstellen
                     const card = document.createElement('div');
                     card.className = 'termin-card';
-                    card.innerHTML = `
-                        <span class="name">${t.name}</span>
-                        <span class="zeit">${zeitText}</span>
-                    `;
+                    card.innerHTML = `<span class="name">${t.name}</span><span class="zeit">${zeitText}</span>`;
                     listeDiv.appendChild(card);
                 });
             } catch (error) {
-                document.getElementById('liste').innerText = 'Fehler beim Laden der Termine.';
-                console.error(error);
+                document.getElementById('liste').innerText = 'Fehler: ' + error.message;
             }
         }
 
