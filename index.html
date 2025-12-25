@@ -3,41 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor</title>
+    <title>Termin Monitor - Safe</title>
     <style>
         body { 
-            background: #000; color: white; font-family: sans-serif; 
-            display: flex; flex-direction: column; align-items: center; padding: 20px; 
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images-assets.nasa.gov/image/PIA08653/PIA08653~medium.jpg');
+            background-size: cover; background-attachment: fixed; background-position: center;
+            color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex; flex-direction: column; align-items: center; 
+            padding: 20px; margin: 0; min-height: 100vh;
         }
-        /* Der Sperrbildschirm */
+
+        /* PIN Login Overlay */
         #login-overlay {
-            position: fixed; inset: 0; background: #000;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95); backdrop-filter: blur(15px);
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             z-index: 1000;
         }
+        .pin-box { background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #00cae3; text-align: center; max-width: 320px; }
         .pin-input { 
-            padding: 15px; font-size: 24px; text-align: center; border-radius: 10px; 
-            border: 2px solid #00cae3; background: #111; color: white; width: 120px; margin-bottom: 20px;
+            padding: 12px; font-size: 24px; text-align: center; border-radius: 8px; 
+            border: 2px solid #00cae3; background: #000; color: #00cae3; width: 140px; margin-bottom: 20px;
         }
-        .btn { padding: 10px 25px; background: #00cae3; color: black; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+
+        /* Debug/Log Feld */
+        #status-log { 
+            font-family: monospace; font-size: 11px; color: #666; 
+            background: #000; padding: 10px; border-radius: 5px; 
+            width: 250px; height: 60px; overflow-y: auto; text-align: left; margin-top: 15px;
+        }
+
+        /* Dashboard Design */
+        #main-content { display: none; width: 100%; max-width: 850px; }
+        h1 { border-bottom: 3px solid #00cae3; padding-bottom: 10px; text-transform: uppercase; letter-spacing: 5px; text-shadow: 0 0 10px rgba(0, 202, 227, 0.5); text-align: center; }
         
-        /* Dashboard Styling */
-        #main-content { display: none; width: 100%; max-width: 600px; }
-        .card { background: #111; border-left: 5px solid #00cae3; margin: 10px 0; padding: 15px; border-radius: 8px; display: flex; justify-content: space-between; }
-        .zeit { color: #00cae3; font-weight: bold; }
+        .input-box { 
+            background: rgba(26, 26, 26, 0.8); backdrop-filter: blur(10px); padding: 20px; 
+            border-radius: 12px; margin-bottom: 30px; display: flex; gap: 10px; flex-wrap: wrap; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+        input { padding: 10px; border-radius: 5px; border: 1px solid #444; background: rgba(0, 0, 0, 0.5); color: white; flex: 1; min-width: 150px; }
+        
+        .btn { padding: 10px 20px; border-radius: 5px; border: none; background: #00cae3; color: black; font-weight: bold; cursor: pointer; }
+        .btn-del { background: rgba(255, 77, 77, 0.8); color: white; padding: 5px 10px; }
+
+        .termin-card { 
+            background: rgba(30, 30, 30, 0.7); backdrop-filter: blur(5px); 
+            margin: 10px 0; padding: 15px 20px; border-radius: 12px; 
+            display: flex; justify-content: space-between; align-items: center; 
+            border-left: 8px solid #00cae3; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); 
+        }
+        .zeit { color: #00cae3; font-family: 'Courier New', monospace; font-size: 1.3em; font-weight: bold; }
+
+        @media (max-width: 600px) {
+            .termin-card { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
     </style>
 </head>
 <body>
 
     <div id="login-overlay">
-        <h2>LOGIN</h2>
-        <input type="password" id="pin-field" class="pin-input" placeholder="PIN" inputmode="numeric" maxlength="4">
-        <button class="btn" onclick="entsperren()">LOGIN</button>
+        <div class="pin-box">
+            <h2 style="letter-spacing: 2px;">SYSTEM LOGIN</h2>
+            <input type="password" id="pin-field" class="pin-input" placeholder="PIN" inputmode="numeric" maxlength="4">
+            <br>
+            <button class="btn" onclick="entsperren()">ENTRIEGELN</button>
+            <div id="status-log">Bereit für Initialisierung...</div>
+        </div>
     </div>
 
     <div id="main-content">
         <h1>Termin Monitor</h1>
-        <div id="liste">Lade Daten...</div>
+
+        <div class="input-box">
+            <input type="text" id="new-name" placeholder="Neuer Termin...">
+            <input type="datetime-local" id="new-date">
+            <button class="btn" onclick="speichereTermin()">Hinzufügen</button>
+        </div>
+
+        <div id="liste">Initialisiere Orbital-Link...</div>
     </div>
 
     <script>
@@ -47,51 +92,101 @@
         const GITHUB_TOKEN = t1 + t2;
         const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
 
+        let termineDaten = [];
+        let currentSha = "";
+        let isLogged = false;
+
+        function log(msg) {
+            const l = document.getElementById('status-log');
+            l.innerHTML += "<br>> " + msg;
+            l.scrollTop = l.scrollHeight;
+        }
+
         function entsperren() {
-            const eingabe = document.getElementById('pin-field').value;
-            if (eingabe === RICHTIGE_PIN) {
-                // 1. PIN-Schutz entfernen
+            if (document.getElementById('pin-field').value === RICHTIGE_PIN) {
+                isLogged = true;
+                log("PIN akzeptiert.");
                 document.getElementById('login-overlay').style.display = 'none';
-                // 2. Dashboard anzeigen
                 document.getElementById('main-content').style.display = 'block';
-                // 3. Erst JETZT die Daten laden
                 holeDaten();
             } else {
-                alert("Falsche PIN!");
+                alert("Zugriff verweigert.");
                 document.getElementById('pin-field').value = "";
             }
         }
 
         async function holeDaten() {
+            if(!isLogged) return;
             try {
                 const response = await fetch(GITHUB_URL, {
-                    headers: { 'Authorization': `token ${GITHUB_TOKEN}` }
+                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Cache-Control': 'no-cache' }
                 });
                 if (response.ok) {
                     const data = await response.json();
-                    const termine = JSON.parse(atob(data.content));
-                    render(termine);
+                    currentSha = data.sha;
+                    termineDaten = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                    termineDaten.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
+                    updateAnzeige();
                 } else {
-                    document.getElementById('liste').innerHTML = "Fehler beim Laden der Daten.";
+                    alert("API Fehler: " + response.status);
                 }
-            } catch (e) {
-                document.getElementById('liste').innerHTML = "Netzwerkfehler.";
+            } catch (e) { console.error(e); }
+        }
+
+        async function pushToGithub(neueListe) {
+            const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(neueListe, null, 4))));
+            const response = await fetch(GITHUB_URL, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: "Update via Dashboard", content: newContent, sha: currentSha })
+            });
+            if (response.ok) holeDaten();
+        }
+
+        function speichereTermin() {
+            const n = document.getElementById('new-name'), d = document.getElementById('new-date');
+            if (!n.value || !d.value) return;
+            pushToGithub([...termineDaten, { "name": n.value, "ziel": d.value + ":00" }]);
+            n.value = ''; d.value = '';
+        }
+
+        function loescheTermin(i) {
+            if (confirm("Termin wirklich löschen?")) {
+                pushToGithub(termineDaten.filter((_, idx) => idx !== i));
             }
         }
 
-        function render(termine) {
-            const container = document.getElementById('liste');
-            if (termine.length === 0) {
-                container.innerHTML = "Keine Termine.";
-                return;
-            }
-            container.innerHTML = termine.map(t => `
-                <div class="card">
-                    <span>${t.name}</span>
-                    <span class="zeit">${t.ziel}</span>
-                </div>
-            `).join('');
+        function updateAnzeige() {
+            const listeDiv = document.getElementById('liste');
+            listeDiv.innerHTML = '';
+            const jetzt = new Date();
+
+            termineDaten.forEach((t, index) => {
+                const ziel = new Date(t.ziel), diff = ziel - jetzt;
+                let zeitStr = "Fällig";
+                if (diff > 0) {
+                    const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
+                    zeitStr = `${d}t ${h}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`;
+                }
+                
+                const card = document.createElement('div');
+                card.className = 'termin-card';
+                card.innerHTML = `
+                    <div>
+                        <div style="font-size: 1.1em; font-weight: bold;">${t.name}</div>
+                        <small style="color: #888;">${new Date(t.ziel).toLocaleString()}</small>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:15px;">
+                        <span class="zeit">${zeitStr}</span>
+                        <button class="btn btn-del" onclick="loescheTermin(${index})">✕</button>
+                    </div>`;
+                listeDiv.appendChild(card);
+            });
         }
+
+        // Live-Countdown & Auto-Refresh
+        setInterval(() => { if(isLogged) updateAnzeige(); }, 1000);
+        setInterval(() => { if(isLogged) holeDaten(); }, 60000);
     </script>
 </body>
 </html>
