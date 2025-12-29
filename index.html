@@ -84,6 +84,7 @@
             <div style="width: 100%; text-align: center;">
                 <input type="file" id="ics-file" accept=".ics" style="display:none" onchange="handleIcsUpload(event)">
                 <button class="btn btn-secondary" onclick="document.getElementById('ics-file').click()">+ iCLOUD IMPORT (.ics)</button>
+                <button class="btn btn-secondary" style="background:#222; border-color:#555; color:#888; margin-left: 10px;" onclick="logout()">LOGOUT</button>
             </div>
         </div>
         <div id="liste">Lade Orbital-Daten...</div>
@@ -101,13 +102,31 @@
         let currentSha = "";
         let isLogged = false;
 
+        // Auto-Login Check beim Start
+        window.onload = function() {
+            if (localStorage.getItem('termin_monitor_auth') === 'true') {
+                isLogged = true;
+                showDashboard();
+            }
+        };
+
         function entsperren() {
             if (document.getElementById('pin-field').value === RICHTIGE_PIN) {
                 isLogged = true;
-                document.getElementById('login-overlay').style.display = 'none';
-                document.getElementById('main-content').style.display = 'block';
-                holeDaten();
+                localStorage.setItem('termin_monitor_auth', 'true');
+                showDashboard();
             } else { alert("Falsche PIN!"); }
+        }
+
+        function logout() {
+            localStorage.removeItem('termin_monitor_auth');
+            location.reload();
+        }
+
+        function showDashboard() {
+            document.getElementById('login-overlay').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+            holeDaten();
         }
 
         async function holeDaten() {
