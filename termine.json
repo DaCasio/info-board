@@ -100,6 +100,10 @@
         "ziel": "2026-05-22T17:00"
     },
     {
+        "name": "Morgen frei",
+        "ziel": "2026-06-03T17:00"
+    },
+    {
         "name": "Elster Zerti Mutti läuft aus",
         "ziel": "2026-08-31T08:37:00"
     },
@@ -124,7 +128,7 @@
         "ziel": "2030-05-15T18:00"
     },
     {
-        "name": "Morgen frei",
-        "ziel": "2026-06-03T17:00"
+        "name": "Urlaub",
+        "ziel": "2026-07-03T17:00"
     }
 ]
