@@ -8,6 +8,10 @@
         "ziel": "2025-12-30T18:00"
     },
     {
+        "ziel": "2025-12-31T14:40:00",
+        "name": "Lieferung von Picnic"
+    },
+    {
         "name": "New Life",
         "ziel": "2026-01-01T00:00"
     },
@@ -18,6 +22,10 @@
     {
         "name": "UP-IP-TV",
         "ziel": "2026-01-07T00:00:00"
+    },
+    {
+        "ziel": "2026-01-07T10:45:00",
+        "name": "Frauenarzt 🎀"
     },
     {
         "name": "Bodenverleger Marcel",
@@ -32,12 +40,36 @@
         "ziel": "2026-01-10T10:00"
     },
     {
+        "ziel": "2026-01-10T10:00:00",
+        "name": "Thorsten Türen"
+    },
+    {
+        "ziel": "2026-01-12T14:00:00",
+        "name": "Fußpflege 💅🏽"
+    },
+    {
         "name": "Telekom",
         "ziel": "2026-01-13T08:00:00"
     },
     {
+        "ziel": "2026-01-13T08:00:00",
+        "name": "Telekom VDSL Umschaltung"
+    },
+    {
         "name": "Umzug",
         "ziel": "2026-01-14T08:00:00"
+    },
+    {
+        "ziel": "2026-01-19T08:00:00",
+        "name": "Lieferung 🚚 Esstisch ❤️"
+    },
+    {
+        "ziel": "2026-01-27T15:00:00",
+        "name": "Sperrmüll rausstellen"
+    },
+    {
+        "ziel": "2026-01-28T07:00:00",
+        "name": "Sperrmüll wird abgeholt 🥳"
     },
     {
         "name": "Sperrmüll",
@@ -48,75 +80,87 @@
         "ziel": "2026-02-01T00:00"
     },
     {
-        "name": "Konto glatt",
-        "ziel": "2026-11-27T18:00"
-    },
-    {
-        "name": "Elster Zerti Casi läuft aus",
-        "ziel": "2028-03-24T09:24:00"
-    },
-    {
-        "ziel": "2026-01-10T10:00:00",
-        "name": "Thorsten Türen"
-    },
-    {
         "ziel": "2026-02-10T16:00:00",
         "name": "Fußpflege 💅🏽"
-    },
-    {
-        "ziel": "2026-01-07T10:45:00",
-        "name": "Frauenarzt 🎀"
-    },
-    {
-        "ziel": "2026-03-22T19:00:00",
-        "name": "Bülent Ceylan - Diktatürk - TICKETS IN ESSEN"
-    },
-    {
-        "ziel": "2026-01-28T07:00:00",
-        "name": "Sperrmüll wird abgeholt 🥳"
     },
     {
         "ziel": "2026-03-11T09:00:00",
         "name": "Dr Stickelbruck Reinigung"
     },
     {
-        "ziel": "2026-01-19T08:00:00",
-        "name": "Lieferung 🚚 Esstisch ❤️"
-    },
-    {
-        "ziel": "2027-09-13T12:00:00",
-        "name": "Termin - Christoph Knierim"
-    },
-    {
-        "name": "Elster Zerti Kersti läuft aus",
-        "ziel": "2028-09-11T21:04:00"
-    },
-    {
-        "ziel": "2026-01-13T08:00:00",
-        "name": "Telekom VDSL Umschaltung"
+        "ziel": "2026-03-22T19:00:00",
+        "name": "Bülent Ceylan - Diktatürk - TICKETS IN ESSEN"
     },
     {
         "name": "C1E Verlängern 21.6.26",
         "ziel": "2026-04-06T12:00:00"
     },
     {
-        "ziel": "2025-12-31T14:40:00",
-        "name": "Lieferung von Picnic"
-    },
-    {
-        "ziel": "2026-01-12T14:00:00",
-        "name": "Fußpflege 💅🏽"
-    },
-    {
-        "ziel": "2026-01-27T15:00:00",
-        "name": "Sperrmüll rausstellen"
+        "ziel": "2026-04-07T16:44:00",
+        "name": "Dezor gekündigt-Abo trotzdem prüfen"
     },
     {
         "name": "Elster Zerti Mutti läuft aus",
         "ziel": "2026-08-31T08:37:00"
     },
     {
-        "ziel": "2026-04-07T16:44:00",
-        "name": "Dezor gekündigt-Abo trotzdem prüfen"
+        "name": "Konto glatt",
+        "ziel": "2026-11-27T18:00"
+    },
+    {
+        "ziel": "2027-09-13T12:00:00",
+        "name": "Termin - Christoph Knierim"
+    },
+    {
+        "name": "Elster Zerti Casi läuft aus",
+        "ziel": "2028-03-24T09:24:00"
+    },
+    {
+        "name": "Elster Zerti Kersti läuft aus",
+        "ziel": "2028-09-11T21:04:00"
+    },
+    {
+        "name": "Casi X",
+        "ziel": "2026-01-19T08:00:00"
+    },
+    {
+        "name": "Kerstin Spätschicht 😴💙",
+        "ziel": "2026-01-05T09:30:00"
+    },
+    {
+        "ziel": "2026-01-12T08:00:00",
+        "name": "Casi X"
+    },
+    {
+        "ziel": "2026-01-08T08:00:00",
+        "name": "Casi X"
+    },
+    {
+        "ziel": "2026-01-07T08:00:00",
+        "name": "Casi X"
+    },
+    {
+        "ziel": "2026-01-06T08:00:00",
+        "name": "Casi X"
+    },
+    {
+        "ziel": "2026-01-09T08:00:00",
+        "name": "Casi X"
+    },
+    {
+        "ziel": "2026-01-05T08:00:00",
+        "name": "Casi X"
+    },
+    {
+        "ziel": "2026-10-26T08:00:00",
+        "name": "Casi X"
+    },
+    {
+        "name": "Casi Spät",
+        "ziel": "2026-01-26T09:30:00"
+    },
+    {
+        "ziel": "2026-02-02T12:00:00",
+        "name": "Casi X"
     }
 ]
