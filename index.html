@@ -28,6 +28,7 @@
         input { padding: 10px; border-radius: 5px; border: 1px solid #444; background: rgba(0, 0, 0, 0.5); color: white; flex: 1; min-width: 150px; }
         
         .btn { padding: 10px 20px; border-radius: 5px; border: none; background: #00cae3; color: black; font-weight: bold; cursor: pointer; }
+        .btn-secondary { background: #444; color: #00cae3; font-size: 0.85em; margin-top: 10px; border: 1px solid #00cae3; }
         .btn-edit { background: #ffcc00; color: black; margin-right: 5px; }
         .btn-del { background: #ff4d4d; color: white; }
         .btn-action { padding: 5px 10px; border-radius: 4px; border: none; cursor: pointer; font-weight: bold; font-size: 0.9em; }
@@ -39,6 +40,13 @@
         }
         .zeit { color: #00cae3; font-family: 'Courier New', monospace; font-size: 1.2em; font-weight: bold; min-width: 180px; text-align: right; }
         
+        #import-modal {
+            display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 2000;
+            padding: 20px; overflow-y: auto;
+        }
+        .import-list-item { background: #222; padding: 10px; margin: 5px 0; border-radius: 5px; display: flex; align-items: center; gap: 15px; border: 1px solid #333; }
+        .duplicate-info { color: #ffcc00; font-size: 0.8em; font-style: italic; }
+
         @media (max-width: 650px) {
             .termin-card { flex-direction: column; align-items: flex-start; gap: 10px; }
             .zeit { text-align: left; min-width: unset; }
@@ -56,6 +64,16 @@
         </div>
     </div>
 
+    <div id="import-modal">
+        <h2 style="color:#00cae3">TERMINE IMPORTIEREN</h2>
+        <p>Wähle aus, welche Orbital-Daten synchronisiert werden sollen:</p>
+        <div id="import-items-container"></div>
+        <div style="margin-top: 20px; display: flex; gap: 10px;">
+            <button class="btn" onclick="confirmImport()">AUSWAHL BESTÄTIGEN</button>
+            <button class="btn btn-del" onclick="closeImport()">ABBRECHEN</button>
+        </div>
+    </div>
+
     <div id="main-content">
         <h1>Termin Monitor</h1>
         <div class="input-box">
@@ -63,6 +81,10 @@
             <input type="text" id="new-name" placeholder="Was steht an?">
             <input type="datetime-local" id="new-date">
             <button class="btn" id="save-btn" onclick="speichereTermin()">OK</button>
+            <div style="width: 100%; text-align: center;">
+                <input type="file" id="ics-file" accept=".ics" style="display:none" onchange="handleIcsUpload(event)">
+                <button class="btn btn-secondary" onclick="document.getElementById('ics-file').click()">+ iCLOUD IMPORT (.ics)</button>
+            </div>
         </div>
         <div id="liste">Lade Orbital-Daten...</div>
     </div>
@@ -75,6 +97,7 @@
         const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
 
         let termineDaten = [];
+        let importKandidaten = [];
         let currentSha = "";
         let isLogged = false;
 
@@ -125,16 +148,79 @@
         function speichereTermin() {
             const n = document.getElementById('new-name'), d = document.getElementById('new-date'), idx = document.getElementById('edit-index').value;
             if (!n.value || !d.value) return;
-
             let neueListe = [...termineDaten];
             const neuerEintrag = { "name": n.value, "ziel": d.value.includes(":00") ? d.value : d.value + ":00" };
-
-            if (idx === "-1") {
-                neueListe.push(neuerEintrag);
-            } else {
-                neueListe[idx] = neuerEintrag;
-            }
+            if (idx === "-1") neueListe.push(neuerEintrag);
+            else neueListe[idx] = neuerEintrag;
             pushToGithub(neueListe);
+        }
+
+        function handleIcsUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) { parseIcs(e.target.result); };
+            reader.readAsText(file);
+        }
+
+        function parseIcs(icsText) {
+            const events = [];
+            const lines = icsText.split(/\r?\n/);
+            let currentEvent = null;
+
+            lines.forEach(line => {
+                if (line.startsWith("BEGIN:VEVENT")) currentEvent = {};
+                if (line.startsWith("SUMMARY:") && currentEvent) currentEvent.name = line.replace("SUMMARY:", "").trim();
+                if (line.startsWith("DTSTART") && currentEvent) {
+                    let datePart = line.split(":")[1];
+                    if (datePart) {
+                        let y = datePart.substring(0,4), mo = datePart.substring(4,6), d = datePart.substring(6,8);
+                        let h = datePart.substring(9,11), mi = datePart.substring(11,13);
+                        currentEvent.ziel = `${y}-${mo}-${d}T${h}:${mi}:00`;
+                    }
+                }
+                if (line.startsWith("END:VEVENT") && currentEvent) {
+                    if (currentEvent.name && currentEvent.ziel) events.push(currentEvent);
+                    currentEvent = null;
+                }
+            });
+            importKandidaten = events.filter(e => new Date(e.ziel) > new Date());
+            showImportModal();
+        }
+
+        function istDuplikat(neu) {
+            return termineDaten.some(alt => alt.name === neu.name && alt.ziel === neu.ziel);
+        }
+
+        function showImportModal() {
+            const container = document.getElementById('import-items-container');
+            container.innerHTML = importKandidaten.map((e, i) => {
+                const dupe = istDuplikat(e);
+                return `
+                <div class="import-list-item" style="${dupe ? 'opacity:0.6' : ''}">
+                    <input type="checkbox" id="imp-${i}" ${dupe ? '' : 'checked'}>
+                    <label for="imp-${i}">
+                        <strong>${e.name}</strong><br>
+                        <small>${new Date(e.ziel).toLocaleString()}</small>
+                        ${dupe ? '<br><span class="duplicate-info">(Bereits vorhanden)</span>' : ''}
+                    </label>
+                </div>
+            `}).join('');
+            document.getElementById('import-modal').style.display = 'block';
+        }
+
+        function closeImport() { 
+            document.getElementById('import-modal').style.display = 'none'; 
+            document.getElementById('ics-file').value = "";
+        }
+
+        function confirmImport() {
+            const ausgewaehlt = [];
+            importKandidaten.forEach((e, i) => {
+                if (document.getElementById(`imp-${i}`).checked) ausgewaehlt.push(e);
+            });
+            if(ausgewaehlt.length > 0) pushToGithub([...termineDaten, ...ausgewaehlt]);
+            closeImport();
         }
 
         function editTermin(i) {
@@ -161,7 +247,6 @@
             const listeDiv = document.getElementById('liste');
             const jetzt = new Date();
             let html = "";
-
             termineDaten.forEach((t, index) => {
                 const ziel = new Date(t.ziel), diff = ziel - jetzt;
                 let zeitStr = "Fällig";
