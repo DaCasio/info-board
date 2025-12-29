@@ -88,8 +88,12 @@
         "name": "Dezor gekündigt-Abo trotzdem prüfen"
     },
     {
+        "name": "Morgen frei",
+        "ziel": "2026-05-13T17:00"
+    },
+    {
         "name": "Langes WE",
-        "ziel": "2026-05-30T17:00"
+        "ziel": "2026-04-30T17:00"
     },
     {
         "name": "Elster Zerti Mutti läuft aus",
@@ -114,9 +118,5 @@
     {
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "Morgen frei",
-        "ziel": "2026-05-13T17:00"
     }
 ]
