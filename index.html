@@ -104,14 +104,13 @@
         let importKandidaten = [];
         let currentSha = "";
         let isLogged = false;
-        let versuche = parseInt(sessionStorage.getItem('pin_versuche')) || 0;
 
         window.onload = function() {
-            checkSperre();
             if (localStorage.getItem('termin_monitor_auth') === 'true') {
                 isLogged = true;
                 showDashboard();
             }
+            checkSperre();
         };
 
         async function sha256(message) {
@@ -122,6 +121,7 @@
         }
 
         function checkSperre() {
+            const versuche = parseInt(sessionStorage.getItem('pin_versuche')) || 0;
             if (versuche >= 3) {
                 document.getElementById('pin-field').disabled = true;
                 document.getElementById('login-btn').disabled = true;
@@ -131,7 +131,10 @@
         }
 
         async function entsperren() {
-            const eingabe = document.getElementById('pin-field').value;
+            const field = document.getElementById('pin-field');
+            const eingabe = field.value.trim();
+            if (!eingabe) return;
+
             const hashedEingabe = await sha256(eingabe);
 
             if (hashedEingabe === PIN_HASH) {
@@ -140,8 +143,9 @@
                 localStorage.setItem('termin_monitor_auth', 'true');
                 showDashboard();
             } else {
-                versuche++;
+                let versuche = (parseInt(sessionStorage.getItem('pin_versuche')) || 0) + 1;
                 sessionStorage.setItem('pin_versuche', versuche);
+                field.value = "";
                 alert(`Falsche PIN! Versuch ${versuche} von 3.`);
                 checkSperre();
             }
