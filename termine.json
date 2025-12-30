@@ -1,12 +1,17 @@
 [
     {
+        "name": "Bodenverleger Marcel Nachhaken",
+        "ziel": "2025-12-30T19:00",
+        "notiz": "Wann kann der PVC nach oben? Er sollte warm verlegt werden.\nVorher muss noch gespachtelt werden, das braucht ebenfalls Trocknungszeit?"
+    },
+    {
         "name": "New Life 🏠",
         "ziel": "2026-01-01T00:00"
     },
     {
         "name": "Bairami nachhaken ",
         "ziel": "2026-01-02T08:00",
-        "notiz": "Fliesenleger: Zieht er die Fliesen komplett durch?\nWann bekommen wir den Kellerschlüssel?\nWohnungsübergabe Haustürschlüssel?\nBadezimmer:\n- Wird der Rest verputzt\n- Fugen fehlen\n- Silikon überall\nHeizungsrohr und Manchete?\n"
+        "notiz": "Fliesenleger:\nZieht er die Fliesen komplett durch?\n\nWohnungsübergabe\nWann bekommen wir den Kellerschlüssel? Haustürschlüssel?\nMieterbestätigung\n\nBadezimmer:\nWird der Rest noch verputzt?\nFugen fehlen.\nSilikon überall.\n\nHeizungsrohr:\nKommt noch die Manschette?\n"
     },
     {
         "name": "Fliesenleger Bairami 👨‍🔧",
@@ -131,10 +136,5 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "Bodenverleger Marcel Nachhaken",
-        "ziel": "2025-12-30T19:00",
-        "notiz": "Wann kann der PVC nach oben? Er sollte warm verlegt werden.\nVorher muss noch gespachtelt werden, das braucht ebenfalls Trocknungszeit?"
     }
 ]
