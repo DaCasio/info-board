@@ -2,7 +2,7 @@
     {
         "name": "Klärung Irman",
         "ziel": "2025-12-30T19:00",
-        "notiz": "Heizungen lackiert?\nTüren endlackiert?\nPVC-Boden wird wie besprochen nach oben getragen?\nZusage liegt vor. O-Ton: Seine Jungs übernehmen das mit Zurrgurten."
+        "notiz": "Heizungen lackiert?\nTüren endlackiert?\nPVC-Boden wird wie besprochen nach oben getragen?\nTermin 7.1. nach Fliesenleger oder ggf 6.1. wenn FL fertig.\nZusage liegt vor. O-Ton: Seine Jungs übernehmen das mit Zurrgurten."
     },
     {
         "name": "Bodenverleger Marcel nachgehakt postponed",
@@ -36,6 +36,11 @@
     {
         "name": "UP-IP-TV 📺",
         "ziel": "2026-01-07T00:00"
+    },
+    {
+        "name": "PVC nach oben",
+        "ziel": "2026-01-07T08:00",
+        "notiz": "Laut Irmi mit seinen Jungs"
     },
     {
         "name": "Bodenverleger Marcel👨‍🔧",
@@ -152,10 +157,5 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "PVC nach oben",
-        "ziel": "2026-01-07T08:00",
-        "notiz": "Laut Irmi mit seinen Jungs"
     }
 ]
