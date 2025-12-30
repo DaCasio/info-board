@@ -16,7 +16,12 @@
     {
         "name": "Bajrami nachhaken 👨‍🔧",
         "ziel": "2026-01-02T10:00",
-        "notiz": "Fliesenleger:\nZieht er die Fliesen komplett durch?\n\nWohnungsübergabe\nWann bekommen wir den Kellerschlüssel? Haustürschlüssel?\nMieterbestätigung\n\nBadezimmer:\nWird der Rest noch verputzt?\nFugen fehlen.\nSilikon überall.\n\nHeizungsrohr:\nKommt noch die Manschette?\n"
+        "notiz": "Fliesenleger:\nZieht er die Fliesen komplett durch?\n\nWohnungsübergabe\nWann bekommen wir den Kellerschlüssel? Haustürschlüssel?\nMieterbestätigung\n\nBadezimmer:\nWird der Rest noch verputzt?\nFugen fehlen.\nSilikon überall.\n\nHeizungsrohr:\nKommt noch die Manschette?\nWie ist das mit den restlichen Lücken.\n"
+    },
+    {
+        "name": "Gianni sprechen👨‍🔧",
+        "ziel": "2026-01-02T10:00",
+        "notiz": "Wegen der Küche sprechen.\nRahmen: müssen diese noch verspachtelt werden?\nKlären, was der Fliesenleger genau macht."
     },
     {
         "name": "Fliesenleger Bajrami 👨‍🔧",
@@ -142,10 +147,5 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "Gianni sprechen👨‍🔧",
-        "ziel": "2026-01-02T10:00",
-        "notiz": "Wegen der Küche sprechen.\nRahmen: müssen diese noch verspachtelt werden?\nKlären, was der Fliesenleger genau macht."
     }
 ]
