@@ -5,6 +5,11 @@
         "notiz": "* Heizungen lackiert?\n* Türen endlackiert?\n* PVC-Boden wird wie besprochen nach oben getragen?\n** Termin kann auch früher -> Zusage liegt vor.\n** O-Ton: Seine Jungs übernehmen das mit Zurrgurten.\n* Brauchen den Schlüssel - Thorsten will Türen ausmessen."
     },
     {
+        "name": "Marcel Boden spachteln",
+        "ziel": "2025-12-31T12:00",
+        "notiz": "Marcel spachtelt am 06.01 den kompletten Boden\nDanach kann der PVC rein\nMarcel soll sagen wann der hoch kann\nIrmi muss sagen wann er kann - ist informiert."
+    },
+    {
         "name": "Thorsten kommt Türen🚪 abmessen",
         "ziel": "2025-12-31T14:00",
         "notiz": "Abstimmen Mozi - Uhrzeit noch nicht klar / nach Arbeit evt."
@@ -27,11 +32,6 @@
         "name": "Fliesenleger Bajrami 👨‍🔧 1/2",
         "ziel": "2026-01-05T08:00",
         "notiz": ""
-    },
-    {
-        "name": "Marcel Boden spachteln",
-        "ziel": "2025-12-31T12:00",
-        "notiz": "Marcel spachtelt am 06.01 den kompletten Boden\nDanach kann der PVC rein\nMarcel soll sagen wann der hoch kann\nIrmi muss sagen wann er kann - ist informiert."
     },
     {
         "name": "Fliesenleger Bajrami 👨‍🔧 2/2",
@@ -162,5 +162,10 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
+    },
+    {
+        "name": "Marcel Boden spachteln",
+        "ziel": "2026-01-06T16:00",
+        "notiz": "Marcel spachtelt am 06.01 den kompletten Boden"
     }
 ]
