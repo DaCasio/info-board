@@ -20,14 +20,14 @@
         }
         .pin-box { background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #00cae3; text-align: center; }
         .pin-input { padding: 12px; font-size: 24px; text-align: center; border-radius: 8px; border: 2px solid #00cae3; background: #000; color: #00cae3; width: 140px; margin-bottom: 20px; }
-        .pin-input:disabled { border-color: #ff4d4d; color: #ff4d4d; opacity: 0.5; }
-
+        
         #main-content { display: none; width: 100%; max-width: 850px; }
         h1 { border-bottom: 3px solid #00cae3; padding-bottom: 10px; text-transform: uppercase; letter-spacing: 5px; text-shadow: 0 0 10px rgba(0, 202, 227, 0.5); text-align: center; }
         
         .input-box { background: rgba(26, 26, 26, 0.8); padding: 20px; border-radius: 12px; margin-bottom: 30px; display: flex; gap: 10px; flex-wrap: wrap; border: 1px solid rgba(0, 202, 227, 0.3); }
-        input { padding: 10px; border-radius: 5px; border: 1px solid #444; background: rgba(0, 0, 0, 0.5); color: white; flex: 1; min-width: 150px; }
-        .full-width { flex-basis: 100%; }
+        input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #444; background: rgba(0, 0, 0, 0.5); color: white; flex: 1; min-width: 150px; font-family: inherit; }
+        
+        textarea { flex-basis: 100%; min-height: 80px; resize: vertical; }
 
         .btn { padding: 10px 20px; border-radius: 5px; border: none; background: #00cae3; color: black; font-weight: bold; cursor: pointer; }
         .btn-secondary { background: #444; color: #00cae3; font-size: 0.85em; margin-top: 10px; border: 1px solid #00cae3; }
@@ -40,9 +40,21 @@
         .termin-card { 
             background: rgba(30, 30, 30, 0.7); margin: 10px 0; padding: 15px 20px; border-radius: 12px; 
             display: flex; justify-content: space-between; align-items: center; 
-            border-left: 8px solid #00cae3; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); 
+            border-left: 8px solid #00cae3; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            min-height: min-content; /* Karte wächst mit Inhalt */
         }
-        .notiz-text { color: #aaa; font-size: 0.9em; margin-top: 4px; font-style: italic; white-space: pre-wrap; }
+        
+        .notiz-text { 
+            color: #ccc; 
+            font-size: 0.9em; 
+            margin-top: 8px; 
+            font-style: normal; 
+            white-space: pre-wrap; 
+            line-height: 1.5; 
+            border-top: 1px solid rgba(0, 202, 227, 0.2); 
+            padding-top: 6px;
+        }
+        
         .zeit { color: #00cae3; font-family: 'Courier New', monospace; font-size: 1.2em; font-weight: bold; min-width: 180px; text-align: right; }
         
         #import-modal {
@@ -83,7 +95,7 @@
             <input type="hidden" id="edit-index" value="-1">
             <input type="text" id="new-name" placeholder="Name des Termins">
             <input type="datetime-local" id="new-date">
-            <input type="text" id="new-note" class="full-width" placeholder="Notizen (optional)">
+            <textarea id="new-note" placeholder="Notizen (Enter für neue Zeile...)"></textarea>
             <button class="btn" id="save-btn" onclick="speichereTermin()">OK</button>
             <div style="width: 100%; text-align: center;">
                 <input type="file" id="ics-file" accept=".ics" style="display:none" onchange="handleIcsUpload(event)">
@@ -310,12 +322,11 @@
                     zeitStr = `${d}t ${h}h ${m}m ${s}s`;
                 }
                 
-                // Notiz-HTML generieren, falls eine Notiz existiert
                 const notizHtml = t.notiz ? `<div class="notiz-text">${t.notiz}</div>` : "";
 
                 html += `
                     <div class="termin-card">
-                        <div>
+                        <div style="flex: 1; padding-right: 15px;">
                             <div style="font-weight:bold; font-size:1.1em;">${t.name}</div>
                             <small style="color:#888">${new Date(t.ziel).toLocaleString()}</small>
                             ${notizHtml}
