@@ -1,5 +1,10 @@
 [
     {
+        "name": "Irmi Schlüssel bringen",
+        "ziel": "2026-01-01T18:00",
+        "notiz": ""
+    },
+    {
         "name": "PVC unten zuschneiden 🗞️",
         "ziel": "2026-01-02T08:00",
         "notiz": "Hochtragen schwierig\nMit Irmi alternativ Hebebühne, Marcel sollte das wissen mit zuschneiden\nGgf Hebebühne oder so?"
@@ -10,7 +15,7 @@
         "notiz": "* Heizungen werden noch lackiert!\n* Boden Arbeitszimmer"
     },
     {
-        "name": "Gianni informiert (Backup Fliesenleger)👨‍🔧",
+        "name": "Gianni informiert - Nochmal frahen (Backup Fliesenleger)👨‍🔧",
         "ziel": "2026-01-02T09:30:00",
         "notiz": "Wegen der Küche angefragt\nRahmen: müssen diese noch verspachtelt werden?\nWenn Gianni Zeit hat, dann mit Bajrami abstimmen.\nDatum 7/8.1."
     },
@@ -184,10 +189,5 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "Irmi Schlüssel bringen",
-        "ziel": "2026-01-01T18:00",
-        "notiz": ""
     }
 ]
