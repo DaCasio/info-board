@@ -2,7 +2,7 @@
     {
         "name": "PVC unten zuschneiden 🗞️",
         "ziel": "2026-01-02T08:00",
-        "notiz": "Hochtragen schwierig\nMarcel sollte das wissen mit zuschneiden auf Wiese\nSoll kalt werden\nGgf Hebebühne oder so?"
+        "notiz": "Hochtragen schwierig\nMarcel sollte das wissen mit zuschneiden auf Wiese\nSoll kalt werden\nHebebühne muss, WA abschicken & klären."
     },
     {
         "name": "Irmi 👨‍🔧",
@@ -57,6 +57,11 @@
         "name": "Gianni Fliesen Küche evt 1 👨‍🔧",
         "ziel": "2026-01-07T10:00",
         "notiz": ""
+    },
+    {
+        "name": "PVC mit Hebebühne",
+        "ziel": "2026-01-07T10:00",
+        "notiz": "Mit Marcel abklären wie er es machen will\nGibt eigentlich keine Alternative \nDraußen zu Kalt fürs schneiden."
     },
     {
         "name": "Gianni Fliesen Küche evt 2 👨‍🔧",
@@ -219,10 +224,5 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "PVC mit Hebebühne",
-        "ziel": "2026-01-07T10:00",
-        "notiz": "Mit Marcel abklären wie er es machen will\nGibt eigentlich keine Alternative \nDraußen zu Kalt fürs schneiden."
     }
 ]
