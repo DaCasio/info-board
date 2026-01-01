@@ -1,0 +1,68 @@
+<script>
+    var GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
+    var GITHUB_TOKEN = "github_pat_11BBRVHCQ05kX9OEirDuF2" + "_SfPbmFFMu5S4O8kX6AdanuVfPsNY6k84nVv35qdNOgAV5OKWJ5NnW3tS9qH";
+    var termineDaten = [];
+
+    function holeDaten() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", GITHUB_URL, true);
+        xhr.setRequestHeader("Authorization", "token " + GITHUB_TOKEN);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+                // Base64 Dekodierung auf die alte Art (atob)
+                var decoded = decodeURIComponent(escape(window.atob(response.content)));
+                termineDaten = JSON.parse(decoded);
+                termineDaten.sort(function(a, b) {
+                    return new Date(a.ziel) - new Date(b.ziel);
+                });
+                updateAnzeige();
+            }
+        };
+        xhr.send();
+    }
+
+    function updateAnzeige() {
+        var listeDiv = document.getElementById('liste');
+        var counterDiv = document.getElementById('counter-display');
+        var jetzt = new Date();
+        
+        counterDiv.innerText = "EINTRAEGE: " + termineDaten.length;
+
+        var html = "";
+        for (var i = 0; i < termineDaten.length; i++) {
+            var t = termineDaten[i];
+            var ziel = new Date(t.ziel);
+            var diff = ziel - jetzt;
+            var zeitStr = "FAELLIG";
+            var urgentClass = "";
+
+            if (diff > 0) {
+                var d = Math.floor(diff/86400000);
+                var h = Math.floor((diff%86400000)/3600000);
+                var m = Math.floor((diff%3600000)/60000);
+                zeitStr = d + "d " + h + "h " + m + "m";
+                if (diff < 86400000) urgentClass = " card-urgent";
+            } else {
+                urgentClass = " card-urgent";
+            }
+            
+            var notiz = t.notiz ? '<div class="notiz-text">' + t.notiz + '</div>' : "";
+            var datumStr = ziel.getDate() + "." + (ziel.getMonth()+1) + ". " + ziel.getHours() + ":" + (ziel.getMinutes()<10?'0':'') + ziel.getMinutes();
+
+            html += '<div class="termin-card' + urgentClass + '">' +
+                        '<div class="termin-info">' +
+                            '<div class="termin-name">' + t.name + '</div>' +
+                            '<div class="termin-datum">' + datumStr + ' Uhr</div>' +
+                            notiz +
+                        '</div>' +
+                        '<div class="zeit">' + zeitStr + '</div>' +
+                    '</div>';
+        }
+        listeDiv.innerHTML = html || "Keine Termine.";
+    }
+
+    holeDaten();
+    // Alle 60 Sekunden prüfen
+    setInterval(holeDaten, 60000);
+</script>
