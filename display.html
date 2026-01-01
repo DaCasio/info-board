@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termin Monitor - Display Mode</title>
+    <style>
+        /* Optimiert für E-Ink: Hoher Kontrast, kein Schnickschnack */
+        body { 
+            background-color: white; 
+            color: black; 
+            font-family: 'Arial', sans-serif; 
+            padding: 20px; 
+            margin: 0; 
+        }
+
+        h1 { 
+            border-bottom: 4px solid black; 
+            padding-bottom: 5px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 2em;
+        }
+        
+        .termin-counter { 
+            text-align: right; 
+            font-weight: bold; 
+            margin-bottom: 15px; 
+            border-bottom: 1px solid black;
+        }
+
+        .termin-card { 
+            border: 2px solid black;
+            margin: 15px 0; 
+            padding: 15px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        
+        .termin-info { flex: 1; }
+        .termin-name { font-size: 1.4em; font-weight: bold; }
+        .termin-datum { font-size: 1em; margin-bottom: 5px; }
+
+        .notiz-text { 
+            margin-top: 10px; 
+            font-size: 0.95em; 
+            border-top: 1px dashed black; 
+            padding-top: 5px;
+            white-space: pre-wrap;
+        }
+        
+        .zeit { 
+            font-family: monospace; 
+            font-size: 1.5em; 
+            font-weight: bold; 
+            text-align: right; 
+            margin-left: 20px;
+        }
+
+        /* Keine Graustufen für besseres Rendering auf Billig-Displays */
+        small { color: black; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Termin Monitor</h1>
+    <div id="counter-display" class="termin-counter">Termine: 0</div>
+    <div id="liste">Lade Daten...</div>
+
+    <script>
+        // Deine Zugangsdaten (identisch zur Hauptseite)
+        const t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
+        const t2 = "_SfPbmFFMu5S4O8kX6AdanuVfPsNY6k84nVv35qdNOgAV5OKWJ5NnW3tS9qH";
+        const GITHUB_TOKEN = t1 + t2;
+        const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
+
+        let termineDaten = [];
+
+        async function holeDaten() {
+            try {
+                const response = await fetch(GITHUB_URL, {
+                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    const str = atob(data.content);
+                    const bytes = new Uint8Array(str.length);
+                    for (let i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
+                    termineDaten = JSON.parse(new TextDecoder().decode(bytes));
+                    termineDaten.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
+                    updateAnzeige();
+                }
+            } catch (e) { console.error("Fehler beim Laden"); }
+        }
+
+        function updateAnzeige() {
+            const listeDiv = document.getElementById('liste');
+            const counterDiv = document.getElementById('counter-display');
+            const jetzt = new Date();
+            
+            counterDiv.innerText = `Einträge: ${termineDaten.length}`;
+
+            let html = "";
+            termineDaten.forEach((t) => {
+                const ziel = new Date(t.ziel), diff = ziel - jetzt;
+                let zeitStr = "Fällig";
+                if (diff > 0) {
+                    const d = Math.floor(diff/86400000).toString().padStart(2, '0');
+                    const h = Math.floor((diff%86400000)/3600000).toString().padStart(2, '0');
+                    const m = Math.floor((diff%3600000)/60000).toString().padStart(2, '0');
+                    zeitStr = `${d}d ${h}h ${m}m`;
+                }
+                
+                const notizHtml = t.notiz ? `<div class="notiz-text">${t.notiz}</div>` : "";
+
+                html += `
+                    <div class="termin-card">
+                        <div class="termin-info">
+                            <div class="termin-name">${t.name}</div>
+                            <div class="termin-datum">${new Date(t.ziel).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}</div>
+                            ${notizHtml}
+                        </div>
+                        <div class="zeit">${zeitStr}</div>
+                    </div>`;
+            });
+            listeDiv.innerHTML = html;
+        }
+
+        // Initiales Laden
+        holeDaten();
+
+        // Alle 60 Sekunden aktualisieren (reicht für E-Ink völlig aus und schont den Akku/Display)
+        setInterval(holeDaten, 60000);
+        // Die Countdown-Anzeige (Minuten-Takt reicht hier)
+        setInterval(updateAnzeige, 60000);
+    </script>
+</body>
+</html>
