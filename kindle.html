@@ -2,49 +2,43 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Monitor</title>
+    <title>Kindle Monitor</title>
     <style>
-        body { background-color: white; color: black; font-family: sans-serif; padding: 15px; margin: 0; }
-        h1 { border-bottom: 5px solid black; padding-bottom: 5px; text-align: center; font-size: 28px; }
-        .termin-card { border: 3px solid black; margin: 15px 0; padding: 10px; display: block; overflow: hidden; }
-        .termin-name { font-size: 20px; font-weight: bold; display: block; }
-        .termin-datum { font-size: 16px; margin-bottom: 5px; display: block; }
-        .notiz-text { margin-top: 8px; font-size: 14px; border-top: 1px dashed black; padding-top: 5px; }
-        .zeit { font-size: 24px; font-weight: bold; display: block; margin-top: 10px; text-align: right; }
-        .card-urgent { background-color: black; color: white; }
+        body { background-color: white; color: black; font-family: sans-serif; padding: 10px; }
+        .termin-card { border: 4px solid black; margin: 15px 0; padding: 10px; }
+        .zeit { font-size: 24px; font-weight: bold; text-align: right; border-top: 1px solid black; }
+        .urgent { background-color: black; color: white; }
     </style>
 </head>
 <body>
 
-    <h1 id="head">Termine</h1>
-    <div id="liste">Lade Daten...</div>
+    <h2 id="status">Lade Daten via Proxy...</h2>
+    <div id="liste"></div>
 
     <script>
-        // Token gesplittet, damit manche Browser nicht "denken", es sei ein Sicherheitsrisiko im Text
+        // Wir tunneln die GitHub API durch einen Proxy
         var t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
         var t2 = "_SfPbmFFMu5S4O8kX6AdanuVfPsNY6k84nVv35qdNOgAV5OKWJ5NnW3tS9qH";
-        var url = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
+        var rawUrl = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
+        
+        // Der Proxy-Tunnel
+        var proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent(rawUrl);
 
         function holeDaten() {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", url, true);
+            xhr.open("GET", proxyUrl, true);
             xhr.setRequestHeader("Authorization", "token " + t1 + t2);
+            
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
+                        document.getElementById('status').innerHTML = "TERMINE";
                         var response = JSON.parse(xhr.responseText);
-                        // Ganz einfache Dekodierung
                         var jsonString = decodeURIComponent(escape(window.atob(response.content)));
                         var daten = JSON.parse(jsonString);
-                        
-                        // Sortieren
-                        daten.sort(function(a, b) {
-                            return new Date(a.ziel.replace(' ', 'T')) - new Date(b.ziel.replace(' ', 'T'));
-                        });
-                        
                         updateAnzeige(daten);
                     } else {
-                        document.getElementById('liste').innerHTML = "Fehler: " + xhr.status;
+                        document.getElementById('status').innerHTML = "Fehler: " + xhr.status + " (Proxy blocked?)";
                     }
                 }
             };
@@ -54,37 +48,30 @@
         function updateAnzeige(daten) {
             var html = "";
             var jetzt = new Date();
-            
             for (var i = 0; i < daten.length; i++) {
                 var t = daten[i];
                 var ziel = new Date(t.ziel.replace(' ', 'T'));
                 var diff = ziel - jetzt;
-                var zeitStr = "Fällig";
-                var urgent = (diff <= 0) ? " card-urgent" : "";
+                var zeitStr = "HEUTE";
+                var urgent = (diff <= 0) ? " urgent" : "";
 
                 if (diff > 0) {
                     var d = Math.floor(diff / 86400000);
                     var h = Math.floor((diff % 86400000) / 3600000);
-                    var m = Math.floor((diff % 3600000) / 60000);
-                    zeitStr = d + "d " + h + "h " + m + "m";
+                    zeitStr = d + "d " + h + "h";
                 }
 
-                // String-Zusammensetzung OHNE Backticks (wichtig für Kindle!)
                 html += '<div class="termin-card' + urgent + '">';
-                html += '<span class="termin-name">' + t.name + '</span>';
-                html += '<span class="termin-datum">' + ziel.toLocaleString() + '</span>';
-                if (t.notiz) {
-                    html += '<div class="notiz-text">' + t.notiz + '</div>';
-                }
+                html += '<strong>' + t.name + '</strong><br>';
+                html += '<small>' + ziel.toLocaleString() + '</small>';
+                if (t.notiz) html += '<p>' + t.notiz + '</p>';
                 html += '<div class="zeit">' + zeitStr + '</div>';
                 html += '</div>';
             }
-            document.getElementById('liste').innerHTML = html || "Keine Termine.";
+            document.getElementById('liste').innerHTML = html || "Keine Termine gefunden.";
         }
 
-        // Start
         holeDaten();
-        // Alle 5 Minuten reicht für Kindle-Browser (weniger Absturzgefahr)
         setInterval(holeDaten, 300000);
     </script>
 </body>
