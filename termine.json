@@ -205,5 +205,10 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
+    },
+    {
+        "name": "test 2",
+        "ziel": "2026-01-02T13:00",
+        "notiz": "**fadgdafg**\n--adfgadf--\n[color:red]adfgadfg[/color]\n[color:green]asdfasdf[/color]\n[ ]test2"
     }
 ]
