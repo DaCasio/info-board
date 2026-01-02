@@ -5,6 +5,11 @@
         "notiz": "[color:#00ff00]Ganztägig[/color]"
     },
     {
+        "name": "Kabeldose anbringen / Hahn informieren.",
+        "ziel": "2026-01-03T08:00",
+        "notiz": "Haben kein Internet"
+    },
+    {
         "name": "Irmi ToDo",
         "ziel": "2026-01-03T09:00",
         "notiz": "[ ]Schlüssel wegen Klaus Klettke (Türen)\n[ ]Hebebühne abklären / Ansonsten SK Umzüge"
@@ -242,10 +247,5 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
-    },
-    {
-        "name": "Kabeldose anbringen / Hahn informieren.",
-        "ziel": "2026-01-03T08:00",
-        "notiz": "haben kein Internet"
     }
 ]
