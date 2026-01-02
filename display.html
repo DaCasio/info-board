@@ -3,150 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor - Color E-Ink</title>
+    <title>Termin Monitor - Display Mode</title>
     <style>
-        /* Optimiert für Color E-Ink: Klare Farben, kein Glow, kein Gradient */
+        :root { --accent: #00cae3; --bg-overlay: rgba(0, 0, 0, 0.6); }
+        
         body { 
-            background-color: white; 
-            color: black; 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            padding: 20px; 
-            margin: 0; 
+            background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), 
+                        url('https://images-assets.nasa.gov/image/PIA08653/PIA08653~medium.jpg');
+            background-size: cover; background-attachment: fixed; background-position: center;
+            color: white; font-family: 'Segoe UI', sans-serif; 
+            display: flex; flex-direction: column; align-items: center; 
+            padding: 20px; margin: 0; min-height: 100vh;
         }
 
-        h1 { 
-            border-bottom: 6px solid #00cae3; 
-            padding-bottom: 5px; 
-            text-transform: uppercase; 
-            letter-spacing: 4px;
-            text-align: center;
-            font-size: 2.5em;
-            color: black;
-        }
+        #main-content { width: 100%; max-width: 1000px; display: none; }
         
-        .termin-counter { 
-            text-align: right; 
-            font-weight: bold; 
-            color: #00cae3;
-            margin-bottom: 15px;
-            font-size: 1.1em;
+        h1 { 
+            text-align: center; text-transform: uppercase; letter-spacing: 8px; 
+            margin-bottom: 30px; text-shadow: 0 0 20px var(--accent);
+            font-size: 2.5em;
         }
 
         .termin-card { 
-            border: 3px solid black;
-            margin: 15px 0; 
-            padding: 15px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
-            background-color: #fdfdfd;
-        }
-
-        /* Akzentfarbe für dringende Termine (weniger als 24h) */
-        .card-urgent { border-color: #ff4d4d; background-color: #fffafa; }
-        .card-urgent .zeit { color: #ff4d4d; }
-        
-        .termin-info { flex: 1; }
-        .termin-name { font-size: 1.6em; font-weight: bold; color: black; }
-        .termin-datum { font-size: 1.1em; margin-bottom: 5px; color: #444; }
-
-        .notiz-text { 
-            margin-top: 10px; 
-            font-size: 1em; 
-            border-top: 2px solid #00cae3; 
-            padding-top: 8px;
-            white-space: pre-wrap;
-            color: #333;
+            background: rgba(20, 20, 20, 0.7); backdrop-filter: blur(10px);
+            border-left: 8px solid var(--accent); padding: 20px 25px; border-radius: 12px; 
+            margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
         
-        .zeit { 
-            font-family: 'Courier New', monospace; 
-            font-size: 1.8em; 
-            font-weight: bold; 
-            text-align: right; 
-            margin-left: 20px;
-            color: #00cae3;
-            white-space: nowrap;
+        .info-seite { flex: 1; min-width: 0; padding-right: 20px; }
+        .termin-name { font-size: 1.6em; font-weight: bold; letter-spacing: 1px; display: block; margin-bottom: 5px; }
+        .termin-datum { color: #aaa; font-size: 1.1em; }
+
+        .notiz-display { 
+            margin-top: 15px; padding-top: 10px; 
+            border-top: 1px solid rgba(0, 202, 227, 0.2); 
+            font-size: 1.1em; white-space: pre-wrap; color: #ddd; 
+            line-height: 1.6;
         }
 
-        .faellig { color: #ff4d4d !important; text-transform: uppercase; }
+        .cb-line { cursor: pointer; display: block; padding: 4px 0; transition: 0.2s; }
+        .cb-line:hover { color: var(--accent); }
+        .cb-line.done { text-decoration: line-through; color: #666; }
+        
+        .zeit-display { 
+            color: var(--accent); font-family: 'Courier New', monospace; 
+            font-size: 1.8em; font-weight: bold; white-space: nowrap;
+            text-shadow: 0 0 10px rgba(0, 202, 227, 0.4);
+        }
+        .faellig { color: #ff4d4d; text-shadow: 0 0 10px rgba(255, 77, 77, 0.4); }
+
+        #login-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.95); display: flex; justify-content: center; align-items: center; z-index: 9999; }
+        .pin-box { background: #1a1a1a; padding: 40px; border-radius: 20px; border: 1px solid var(--accent); text-align: center; }
+        input[type="password"] { background: black; border: 2px solid var(--accent); color: var(--accent); padding: 10px; font-size: 24px; text-align: center; border-radius: 8px; width: 150px; }
+        .btn-login { background: var(--accent); color: black; border: none; padding: 15px 30px; margin-top: 20px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; }
+
+        @media (max-width: 800px) {
+            .termin-card { flex-direction: column; align-items: flex-start; }
+            .zeit-display { margin-top: 15px; font-size: 1.4em; }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Termin Monitor</h1>
-    <div id="counter-display" class="termin-counter">Termine: 0</div>
-    <div id="liste">Initialisiere Anzeige...</div>
+    <div id="login-overlay">
+        <div class="pin-box">
+            <h2 style="color:var(--accent); margin-bottom:20px;">SYSTEM ACCESS</h2>
+            <input type="password" id="pin" placeholder="PIN" maxlength="4">
+            <br>
+            <button class="btn-login" onclick="login()">INITIALIZE</button>
+        </div>
+    </div>
 
-    <script>
-        const t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
-        const t2 = "_SfPbmFFMu5S4O8kX6AdanuVfPsNY6k84nVv35qdNOgAV5OKWJ5NnW3tS9qH";
-        const GITHUB_TOKEN = t1 + t2;
-        const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
+    <div id="main-content">
+        <h1>Mission Control</h1>
+        <div id="liste">Lade Daten...</div>
+    </div>
 
-        let termineDaten = [];
+<script>
+    const P_ENC = "MDUwOA==";
+    const t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
+    const t2 = "_SfPbmFFMu5S4O8kX6AdanuVfPsNY6k84nVv35qdNOgAV5OKWJ5NnW3tS9qH";
+    const G_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
+    let data = [], currentSha = "", isLogged = false;
 
-        async function holeDaten() {
-            try {
-                const response = await fetch(GITHUB_URL, {
-                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
-                });
-                if (response.ok) {
-                    const data = await response.json();
-                    const str = atob(data.content);
-                    const bytes = new Uint8Array(str.length);
-                    for (let i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
-                    termineDaten = JSON.parse(new TextDecoder().decode(bytes));
-                    termineDaten.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
-                    updateAnzeige();
-                }
-            } catch (e) { console.error("Sync Fehler"); }
-        }
+    window.onload = () => { if(localStorage.getItem('termin_monitor_auth') === 'true') login(true); };
 
-        function updateAnzeige() {
-            const listeDiv = document.getElementById('liste');
-            const counterDiv = document.getElementById('counter-display');
-            const jetzt = new Date();
-            
-            counterDiv.innerText = `AKTIVE TERMINE: ${termineDaten.length}`;
+    function login(auto = false) {
+        if(auto || btoa(document.getElementById('pin').value) === P_ENC) {
+            localStorage.setItem('termin_monitor_auth', 'true');
+            document.getElementById('login-overlay').style.display='none';
+            document.getElementById('main-content').style.display='block';
+            isLogged = true; load();
+        } else if(!auto) { alert("ACCESS DENIED"); }
+    }
 
-            let html = "";
-            termineDaten.forEach((t) => {
-                const ziel = new Date(t.ziel), diff = ziel - jetzt;
-                let zeitStr = "Fällig";
-                let isUrgent = false;
+    async function load() {
+        try {
+            const res = await fetch(G_URL, { headers: { 'Authorization': `token ${t1+t2}` }, cache: "no-store" });
+            if(res.ok) {
+                const j = await res.json();
+                currentSha = j.sha;
+                data = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0))));
+                render();
+            }
+        } catch(e) { console.error("Sync Error"); }
+    }
 
-                if (diff > 0) {
-                    const d = Math.floor(diff/86400000).toString().padStart(2, '0');
-                    const h = Math.floor((diff%86400000)/3600000).toString().padStart(2, '0');
-                    const m = Math.floor((diff%3600000)/60000).toString().padStart(2, '0');
-                    zeitStr = `${d}d ${h}h ${m}m`;
-                    if (diff < 86400000) isUrgent = true; // Markierung wenn < 24h
-                }
-                
-                const notizHtml = t.notiz ? `<div class="notiz-text">${t.notiz}</div>` : "";
+    function render() {
+        const jetzt = new Date();
+        let h = "";
+        data.sort((a,b) => new Date(a.ziel) - new Date(b.ziel)).forEach((t, i) => {
+            const ziel = new Date(t.ziel), diff = ziel - jetzt;
+            let zStr = "MISSION EXPIRED";
+            if(diff > 0) {
+                const d = Math.floor(diff/86400000).toString().padStart(2,'0');
+                const hh = Math.floor((diff%86400000)/3600000).toString().padStart(2,'0');
+                const mm = Math.floor((diff%3600000)/60000).toString().padStart(2,'0');
+                const ss = Math.floor((diff%60000)/1000).toString().padStart(2,'0');
+                zStr = `${d}D ${hh}H ${mm}M ${ss}S`;
+            }
+            h += `
+            <div class="termin-card">
+                <div class="info-seite">
+                    <span class="termin-name">${t.name}</span>
+                    <span class="termin-datum">${ziel.toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })} Uhr</span>
+                    ${t.notiz ? `<div class="notiz-display">${format(t.notiz, i)}</div>` : ""}
+                </div>
+                <div class="zeit-display ${diff <= 0 ? 'faellig' : ''}">${zStr}</div>
+            </div>`;
+        });
+        document.getElementById('liste').innerHTML = h || "<div style='text-align:center; font-size:1.5em; opacity:0.5;'>Keine aktiven Missionen</div>";
+    }
 
-                html += `
-                    <div class="termin-card ${isUrgent ? 'card-urgent' : ''}">
-                        <div class="termin-info">
-                            <div class="termin-name">${t.name}</div>
-                            <div class="termin-datum">${new Date(t.ziel).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })} Uhr</div>
-                            ${notizHtml}
-                        </div>
-                        <div class="zeit ${diff <= 0 ? 'faellig' : ''}">${zeitStr}</div>
-                    </div>`;
-            });
-            listeDiv.innerHTML = html || "<p style='text-align:center; font-size:1.5em;'>Keine aktuellen Termine.</p>";
-        }
+    function format(txt, tIdx) {
+        let lines = txt.split('\n').map((l, lIdx) => {
+            if(l.startsWith('[ ]')) return `<span class="cb-line" onclick="toggle(${tIdx},${lIdx})">☐ ${l.slice(3)}</span>`;
+            if(l.startsWith('[x]')) return `<span class="cb-line done" onclick="toggle(${tIdx},${lIdx})">☑ ${l.slice(3)}</span>`;
+            return l;
+        });
+        return lines.join('\n')
+            .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+            .replace(/--(.*?)--/g, '<s>$1</s>')
+            .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+    }
 
-        // Sofort laden
-        holeDaten();
-
-        // Alle 30 Sekunden nach neuen Daten auf GitHub schauen (Original-Sync)
-        setInterval(holeDaten, 30000);
+    async function toggle(tIdx, lIdx) {
+        let l = data[tIdx].notiz.split('\n');
+        l[lIdx] = l[lIdx].startsWith('[ ]') ? l[lIdx].replace('[ ]','[x]') : l[lIdx].replace('[x]','[ ]');
+        data[tIdx].notiz = l.join('\n');
         
-        // Anzeige jede Minute aktualisieren (für den Minuten-Countdown)
-        setInterval(updateAnzeige, 60000);
-    </script>
+        // Push Update
+        const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 4))));
+        const res = await fetch(G_URL, { 
+            method: 'PUT', 
+            headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, 
+            body: JSON.stringify({ message: "Display Sync", content, sha: currentSha }) 
+        });
+        if(res.ok) load();
+    }
+
+    // Intervalle: 1s für Countdown, 30s für Datenabgleich mit Github
+    setInterval(() => { if(isLogged) render(); }, 1000);
+    setInterval(() => { if(isLogged) load(); }, 30000);
+</script>
 </body>
 </html>
