@@ -5,6 +5,11 @@
         "notiz": "* Schlüssel wegen Klaus Klettke (Türen)\n* Hebebühne abklären\n* Ansonsten SK Umzüge"
     },
     {
+        "name": "test",
+        "ziel": "2026-01-02T13:00",
+        "notiz": "**fadgdafg**\n--adfgadf--\n[color:red]adfgadfg[/color]\n[color:green]asdfasdf[/color]\n[ ]test"
+    },
+    {
         "name": "Holz Dammers Verblendung",
         "ziel": "2026-01-02T15:00",
         "notiz": "Für Kochnische"
@@ -200,10 +205,5 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "test",
-        "ziel": "2026-01-02T13:00",
-        "notiz": "**fadgdafg**\n--adfgadf--\n[color:red]adfgadfg[/color]\n[color:green]asdfasdf[/color]"
     }
 ]
