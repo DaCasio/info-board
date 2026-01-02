@@ -7,7 +7,7 @@
     {
         "name": "test",
         "ziel": "2026-01-02T13:00",
-        "notiz": "**dsffsd**\n--sdf--\n[color:#ff4d4d]sdf[/color]\n[color:#00ff00]sdf[/color]\n[color:#ffff00]sdf[/color]\n[color:#1e90ff]sdf[/color]\n\n[x]1\n[x]2"
+        "notiz": "**dsffsd**\n--sdf--\n[color:#ff4d4d]sdf[/color]\n[color:#00ff00]sdf[/color]\n[color:#ffff00]sdf[/color]\n[color:#1e90ff]sdf[/color]\n\n[ ]1\n[x]2"
     },
     {
         "name": "Holz Dammers Verblendung",
