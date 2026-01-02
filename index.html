@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor - Pro</title>
+    <title>Termin Monitor - Control Center</title>
     <style>
         body { 
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
@@ -26,51 +26,32 @@
         
         .input-box { background: rgba(26, 26, 26, 0.8); padding: 20px; border-radius: 12px; margin-bottom: 30px; display: flex; gap: 10px; flex-wrap: wrap; border: 1px solid rgba(0, 202, 227, 0.3); }
         input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #444; background: rgba(0, 0, 0, 0.5); color: white; flex: 1; min-width: 150px; font-family: inherit; }
-        
-        /* Notizenfeld auf eine Zeile korrigiert */
-        textarea { flex-basis: 100%; min-height: 20px; height: 24px; resize: vertical; }
+        textarea { flex-basis: 100%; min-height: 60px; resize: vertical; }
 
         .btn { padding: 10px 20px; border-radius: 5px; border: none; background: #00cae3; color: black; font-weight: bold; cursor: pointer; }
         .btn-secondary { background: #444; color: #00cae3; font-size: 0.85em; margin-top: 10px; border: 1px solid #00cae3; }
-        
         .btn-action { padding: 5px 10px; border-radius: 4px; border: none; cursor: pointer; font-weight: bold; font-size: 0.9em; margin-left: 2px; }
         .btn-copy { background: #00cae3; color: black; }
         .btn-edit { background: #ffcc00; color: black; }
         .btn-del { background: #ff4d4d; color: white; }
 
-        /* Counter Styling */
-        .termin-counter { width: 100%; text-align: right; color: #00cae3; font-size: 0.85em; margin-bottom: 5px; letter-spacing: 1px; }
-
         .termin-card { 
             background: rgba(30, 30, 30, 0.7); margin: 10px 0; padding: 15px 20px; border-radius: 12px; 
             display: flex; justify-content: space-between; align-items: center; 
             border-left: 8px solid #00cae3; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-            min-height: min-content;
         }
         
         .notiz-text { 
-            color: #ccc; 
-            font-size: 0.9em; 
-            margin-top: 8px; 
-            font-style: normal; 
-            white-space: pre-wrap; 
-            line-height: 1.5; 
-            border-top: 1px solid rgba(0, 202, 227, 0.2); 
-            padding-top: 6px;
+            color: #ccc; font-size: 0.9em; margin-top: 8px; border-top: 1px solid rgba(0, 202, 227, 0.2); padding-top: 6px;
+            white-space: pre-wrap; line-height: 1.5; 
         }
+
+        /* Checkbox Styling */
+        .cb-row { cursor: pointer; padding: 3px 8px; border-radius: 4px; margin: 2px 0; display: block; }
+        .cb-row:hover { background: rgba(0, 202, 227, 0.15); }
+        .cb-row.done { color: #666; text-decoration: line-through; }
         
         .zeit { color: #00cae3; font-family: 'Courier New', monospace; font-size: 1.2em; font-weight: bold; min-width: 180px; text-align: right; }
-        
-        #import-modal {
-            display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 2000;
-            padding: 20px; overflow-y: auto;
-        }
-        .import-list-item { background: #222; padding: 10px; margin: 5px 0; border-radius: 5px; display: flex; align-items: center; gap: 15px; border: 1px solid #333; }
-
-        @media (max-width: 650px) {
-            .termin-card { flex-direction: column; align-items: flex-start; gap: 10px; }
-            .zeit { text-align: left; min-width: unset; }
-        }
     </style>
 </head>
 <body>
@@ -84,31 +65,19 @@
         </div>
     </div>
 
-    <div id="import-modal">
-        <h2 style="color:#00cae3">TERMINE IMPORTIEREN</h2>
-        <div id="import-items-container"></div>
-        <div style="margin-top: 20px; display: flex; gap: 10px;">
-            <button class="btn" onclick="confirmImport()">AUSWAHL BESTÄTIGEN</button>
-            <button class="btn btn-del" onclick="closeImport()">ABBRECHEN</button>
-        </div>
-    </div>
-
     <div id="main-content">
         <h1>Termin Monitor</h1>
         <div class="input-box">
             <input type="hidden" id="edit-index" value="-1">
             <input type="text" id="new-name" placeholder="Name des Termins">
             <input type="datetime-local" id="new-date">
-            <textarea id="new-note" placeholder="Notizen (Enter für neue Zeile...)"></textarea>
+            <textarea id="new-note" placeholder="Notizen... Nutze [ ] für Checkboxen, **fett**, --durch--, [color:red]Text[/color]"></textarea>
             <button class="btn" id="save-btn" onclick="speichereTermin()">OK</button>
             <div style="width: 100%; text-align: center;">
-                <input type="file" id="ics-file" accept=".ics" style="display:none" onchange="handleIcsUpload(event)">
-                <button class="btn btn-secondary" onclick="document.getElementById('ics-file').click()">+ iCLOUD IMPORT (.ics)</button>
-                <button class="btn btn-secondary" style="background:#222; border-color:#555; color:#888; margin-left: 10px;" onclick="logout()">LOGOUT</button>
+                <button class="btn btn-secondary" onclick="logout()">LOGOUT</button>
             </div>
         </div>
-        <div id="counter-display" class="termin-counter">Termine: 0</div>
-        <div id="liste">Lade Orbital-Daten...</div>
+        <div id="liste">Lade Daten...</div>
     </div>
 
     <script>
@@ -119,241 +88,123 @@
         const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
 
         let termineDaten = [];
-        let importKandidaten = [];
         let currentSha = "";
         let isLogged = false;
 
-        window.onload = function() {
-            if (localStorage.getItem('termin_monitor_auth') === 'true') {
-                isLogged = true;
-                showDashboard();
-            }
-            checkSperre();
+        window.onload = () => {
+            if (localStorage.getItem('termin_monitor_auth') === 'true') { showDashboard(); }
         };
 
-        function checkSperre() {
-            const versuche = parseInt(sessionStorage.getItem('pin_versuche')) || 0;
-            if (versuche >= 3) {
-                document.getElementById('pin-field').disabled = true;
-                document.getElementById('login-btn').disabled = true;
-                document.getElementById('login-status').innerText = "SYSTEM GESPERRT";
-                document.getElementById('login-status').style.color = "#ff4d4d";
-            }
-        }
-
         function entsperren() {
-            const field = document.getElementById('pin-field');
-            const eingabe = field.value.trim();
-            if (btoa(eingabe) === P_ENC) {
-                isLogged = true;
-                sessionStorage.setItem('pin_versuche', 0);
+            if (btoa(document.getElementById('pin-field').value) === P_ENC) {
                 localStorage.setItem('termin_monitor_auth', 'true');
                 showDashboard();
-            } else {
-                let versuche = (parseInt(sessionStorage.getItem('pin_versuche')) || 0) + 1;
-                sessionStorage.setItem('pin_versuche', versuche);
-                field.value = "";
-                alert(`Falsche PIN! Versuch ${versuche} von 3.`);
-                checkSperre();
-            }
+            } else { alert("Falsche PIN!"); }
         }
 
-        function logout() {
-            localStorage.removeItem('termin_monitor_auth');
-            location.reload();
-        }
+        function logout() { localStorage.removeItem('termin_monitor_auth'); location.reload(); }
 
         function showDashboard() {
+            isLogged = true;
             document.getElementById('login-overlay').style.display = 'none';
             document.getElementById('main-content').style.display = 'block';
             holeDaten();
         }
 
         async function holeDaten() {
-            if(!isLogged) return;
-            try {
-                const response = await fetch(GITHUB_URL, {
-                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' }
-                });
-                if (response.ok) {
-                    const data = await response.json();
-                    currentSha = data.sha;
-                    const str = atob(data.content);
-                    const bytes = new Uint8Array(str.length);
-                    for (let i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
-                    termineDaten = JSON.parse(new TextDecoder().decode(bytes));
-                    termineDaten.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
-                    updateAnzeige();
-                }
-            } catch (e) { console.error("Fehler beim Laden"); }
+            const res = await fetch(GITHUB_URL, { headers: { 'Authorization': `token ${GITHUB_TOKEN}` } });
+            if (res.ok) {
+                const data = await res.json();
+                currentSha = data.sha;
+                const str = atob(data.content);
+                const bytes = new Uint8Array(str.length);
+                for (let i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
+                termineDaten = JSON.parse(new TextDecoder().decode(bytes));
+                updateAnzeige();
+            }
         }
 
         async function pushToGithub(neueListe) {
-            const jsonStr = JSON.stringify(neueListe, null, 4);
-            const bytes = new TextEncoder().encode(jsonStr);
+            const bytes = new TextEncoder().encode(JSON.stringify(neueListe, null, 4));
             const base64 = btoa(String.fromCharCode(...bytes));
-            const response = await fetch(GITHUB_URL, {
+            await fetch(GITHUB_URL, {
                 method: 'PUT',
                 headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: "Update", content: base64, sha: currentSha })
             });
-            if (response.ok) {
-                resetInput();
-                holeDaten();
-            }
+            holeDaten();
+        }
+
+        function parseFormat(text, tIdx) {
+            if (!text) return "";
+            let lines = text.split('\n').map((line, lIdx) => {
+                if (line.startsWith('[ ]')) return `<span class="cb-row" onclick="toggleCB(${tIdx}, ${lIdx})">☐ ${line.substring(3)}</span>`;
+                if (line.startsWith('[x]')) return `<span class="cb-row done" onclick="toggleCB(${tIdx}, ${lIdx})">☑ ${line.substring(3)}</span>`;
+                return line;
+            });
+            return lines.join('\n')
+                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+                .replace(/--(.*?)--/g, '<s>$1</s>')
+                .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+        }
+
+        async function toggleCB(tIdx, lIdx) {
+            let lines = termineDaten[tIdx].notiz.split('\n');
+            lines[lIdx] = lines[lIdx].startsWith('[ ]') ? lines[lIdx].replace('[ ]', '[x]') : lines[lIdx].replace('[x]', '[ ]');
+            termineDaten[tIdx].notiz = lines.join('\n');
+            await pushToGithub(termineDaten);
         }
 
         function speichereTermin() {
-            const n = document.getElementById('new-name'), 
-                  d = document.getElementById('new-date'), 
-                  notiz = document.getElementById('new-note'),
-                  idx = document.getElementById('edit-index').value;
-            
-            if (!n.value || !d.value) return;
-            
+            const n = document.getElementById('new-name').value, d = document.getElementById('new-date').value, 
+                  notiz = document.getElementById('new-note').value, idx = document.getElementById('edit-index').value;
+            if (!n || !d) return;
             let neueListe = [...termineDaten];
-            const neuerEintrag = { 
-                "name": n.value, 
-                "ziel": d.value.includes(":00") ? d.value : d.value + ":00",
-                "notiz": notiz.value || ""
-            };
-            
-            if (idx === "-1") neueListe.push(neuerEintrag);
-            else neueListe[idx] = neuerEintrag;
+            const eintr = { "name": n, "ziel": d.includes(":00") ? d : d + ":00", "notiz": notiz };
+            if (idx === "-1") neueListe.push(eintr); else neueListe[idx] = eintr;
             pushToGithub(neueListe);
+            resetInput();
+        }
+
+        function resetInput() {
+            document.getElementById('new-name').value = ''; document.getElementById('new-date').value = '';
+            document.getElementById('new-note').value = ''; document.getElementById('edit-index').value = "-1";
+        }
+
+        function updateAnzeige() {
+            let html = "";
+            const jetzt = new Date();
+            termineDaten.sort((a,b) => new Date(a.ziel) - new Date(b.ziel)).forEach((t, i) => {
+                const diff = new Date(t.ziel) - jetzt;
+                let zStr = diff > 0 ? `${Math.floor(diff/86400000)}d ${Math.floor((diff%86400000)/3600000)}h` : "Fällig";
+                html += `
+                    <div class="termin-card">
+                        <div style="flex:1">
+                            <strong>${t.name}</strong><br>
+                            <small>${new Date(t.ziel).toLocaleString()}</small>
+                            <div class="notiz-text">${parseFormat(t.notiz, i)}</div>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <span class="zeit">${zStr}</span>
+                            <button class="btn-action btn-edit" onclick="editTermin(${i})">✎</button>
+                            <button class="btn-action btn-del" onclick="loescheTermin(${i})">✕</button>
+                        </div>
+                    </div>`;
+            });
+            document.getElementById('liste').innerHTML = html;
         }
 
         function editTermin(i) {
             const t = termineDaten[i];
             document.getElementById('new-name').value = t.name;
-            document.getElementById('new-date').value = t.ziel.substring(0, 16);
-            document.getElementById('new-note').value = t.notiz || "";
+            document.getElementById('new-date').value = t.ziel.substring(0,16);
+            document.getElementById('new-note').value = t.notiz;
             document.getElementById('edit-index').value = i;
-            document.getElementById('save-btn').innerText = "UPDATE";
-            document.getElementById('new-name').focus();
         }
 
-        function kopiereTermin(i) {
-            const t = termineDaten[i];
-            document.getElementById('new-name').value = t.name + " (Kopie)";
-            document.getElementById('new-date').value = t.ziel.substring(0, 16);
-            document.getElementById('new-note').value = t.notiz || "";
-            document.getElementById('edit-index').value = "-1";
-            document.getElementById('save-btn').innerText = "OK";
-            document.getElementById('new-name').focus();
-        }
+        function loescheTermin(i) { if(confirm("Löschen?")) pushToGithub(termineDaten.filter((_, idx) => idx !== i)); }
 
-        function resetInput() {
-            document.getElementById('new-name').value = '';
-            document.getElementById('new-date').value = '';
-            document.getElementById('new-note').value = '';
-            document.getElementById('edit-index').value = "-1";
-            document.getElementById('save-btn').innerText = "OK";
-        }
-
-        function handleIcsUpload(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-            const reader = new FileReader();
-            reader.onload = function(e) { parseIcs(e.target.result); };
-            reader.readAsText(file);
-        }
-
-        function parseIcs(icsText) {
-            const events = [];
-            const lines = icsText.split(/\r?\n/);
-            let currentEvent = null;
-            lines.forEach(line => {
-                if (line.startsWith("BEGIN:VEVENT")) currentEvent = { notiz: "" };
-                if (line.startsWith("SUMMARY:") && currentEvent) currentEvent.name = line.replace("SUMMARY:", "").trim();
-                if (line.startsWith("DESCRIPTION:") && currentEvent) currentEvent.notiz = line.replace("DESCRIPTION:", "").trim();
-                if (line.startsWith("DTSTART") && currentEvent) {
-                    let datePart = line.split(":")[1];
-                    if (datePart) {
-                        let y = datePart.substring(0,4), mo = datePart.substring(4,6), d = datePart.substring(6,8);
-                        let h = datePart.substring(9,11), mi = datePart.substring(11,13);
-                        currentEvent.ziel = `${y}-${mo}-${d}T${h}:${mi}:00`;
-                    }
-                }
-                if (line.startsWith("END:VEVENT") && currentEvent) {
-                    if (currentEvent.name && currentEvent.ziel) events.push(currentEvent);
-                    currentEvent = null;
-                }
-            });
-            importKandidaten = events.filter(e => new Date(e.ziel) > new Date());
-            showImportModal();
-        }
-
-        function confirmImport() {
-            const ausgewaehlt = [];
-            importKandidaten.forEach((e, i) => { if (document.getElementById(`imp-${i}`).checked) ausgewaehlt.push(e); });
-            if(ausgewaehlt.length > 0) pushToGithub([...termineDaten, ...ausgewaehlt]);
-            closeImport();
-        }
-
-        function closeImport() { 
-            document.getElementById('import-modal').style.display = 'none'; 
-            document.getElementById('ics-file').value = "";
-        }
-
-        function showImportModal() {
-            const container = document.getElementById('import-items-container');
-            container.innerHTML = importKandidaten.map((e, i) => {
-                const dupe = termineDaten.some(alt => alt.name === e.name && alt.ziel === e.ziel);
-                return `<div class="import-list-item" style="${dupe ? 'opacity:0.6' : ''}">
-                    <input type="checkbox" id="imp-${i}" ${dupe ? '' : 'checked'}>
-                    <label for="imp-${i}"><strong>${e.name}</strong><br><small>${new Date(e.ziel).toLocaleString()}</small></label>
-                </div>`;
-            }).join('');
-            document.getElementById('import-modal').style.display = 'block';
-        }
-
-        function loescheTermin(i) {
-            if (confirm("Löschen?")) pushToGithub(termineDaten.filter((_, idx) => idx !== i));
-        }
-
-        function updateAnzeige() {
-            const listeDiv = document.getElementById('liste');
-            const counterDiv = document.getElementById('counter-display');
-            const jetzt = new Date();
-            
-            // Counter aktualisieren
-            counterDiv.innerText = `Termine: ${termineDaten.length}`;
-
-            let html = "";
-            termineDaten.forEach((t, index) => {
-                const ziel = new Date(t.ziel), diff = ziel - jetzt;
-                let zeitStr = "Fällig";
-                if (diff > 0) {
-                    const d = Math.floor(diff/86400000).toString().padStart(2, '0');
-                    const h = Math.floor((diff%86400000)/3600000).toString().padStart(2, '0');
-                    const m = Math.floor((diff%3600000)/60000).toString().padStart(2, '0');
-                    const s = Math.floor((diff%60000)/1000).toString().padStart(2, '0');
-                    zeitStr = `${d}t ${h}h ${m}m ${s}s`;
-                }
-                
-                const notizHtml = t.notiz ? `<div class="notiz-text">${t.notiz}</div>` : "";
-
-                html += `
-                    <div class="termin-card">
-                        <div style="flex: 1; padding-right: 15px;">
-                            <div style="font-weight:bold; font-size:1.1em;">${t.name}</div>
-                            <small style="color:#888">${new Date(t.ziel).toLocaleString()}</small>
-                            ${notizHtml}
-                        </div>
-                        <div style="display:flex; align-items:center; gap:5px;">
-                            <span class="zeit">${zeitStr}</span>
-                            <button class="btn-action btn-copy" title="Kopieren" onclick="kopiereTermin(${index})">📄</button>
-                            <button class="btn-action btn-edit" title="Bearbeiten" onclick="editTermin(${index})">✎</button>
-                            <button class="btn-action btn-del" title="Löschen" onclick="loescheTermin(${index})">✕</button>
-                        </div>
-                    </div>`;
-            });
-            listeDiv.innerHTML = html;
-        }
-
-        setInterval(() => { if(isLogged) updateAnzeige(); }, 1000);
-        setInterval(() => { if(isLogged) holeDaten(); }, 30000);
+        setInterval(() => { if(isLogged) updateAnzeige(); }, 60000);
     </script>
 </body>
 </html>
