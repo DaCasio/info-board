@@ -24,19 +24,21 @@
             padding: 15px; margin-bottom: 15px; box-shadow: 0 0 25px rgba(0,0,0,0.6);
         }
         
-        /* Optimierte Toolbar */
-        .toolbar { display: flex; gap: 4px; margin-bottom: 5px; flex-wrap: wrap; align-items: center; }
+        .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
         .tool-btn:hover { background: var(--accent); color: black; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 8px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.9em; }
-        textarea { min-height: 40px; height: 45px; font-family: inherit; resize: vertical; }
+        textarea { min-height: 45px; height: 50px; font-family: inherit; resize: vertical; }
 
+        /* Fix für die Checkbox-Eingabefelder */
         #cb-editor-zone { border: 1px dashed #555; padding: 10px; border-radius: 8px; margin-bottom: 10px; background: rgba(0,0,0,0.3); }
-        .cb-edit-row { display: flex; gap: 8px; align-items: center; margin-bottom: 5px; }
-        .cb-edit-row input[type="text"] { margin-bottom: 0; padding: 4px; flex: 1; }
+        .cb-edit-row { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; width: 100%; }
+        .cb-edit-row input[type="checkbox"] { width: 22px; height: 22px; margin: 0; cursor: pointer; flex-shrink: 0; }
+        .cb-edit-row input[type="text"] { flex: 1; margin-bottom: 0; min-width: 0; }
+        .cb-remove-btn { color: #ff4d4d; border-color: #ff4d4d; padding: 6px 10px; flex-shrink: 0; }
 
-        .btn-main { background: var(--accent); color: black; border: none; padding: 10px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1em; text-transform: uppercase; }
+        .btn-main { background: var(--accent); color: black; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1em; text-transform: uppercase; }
         .btn-main:hover { filter: brightness(1.2); }
         
         .termin-card { 
@@ -46,16 +48,16 @@
         }
         
         .notiz-display { margin-top: 8px; padding-top: 5px; border-top: 1px solid rgba(0, 202, 227, 0.1); font-size: 0.85em; white-space: pre-wrap; color: #ccc; }
-        .cb-line { cursor: pointer; display: block; padding: 1px 0; }
+        .cb-line { cursor: pointer; display: block; padding: 2px 0; }
         .cb-line.done { text-decoration: line-through; color: #777; }
         
         .zeit-display { color: var(--accent); font-family: 'Courier New', monospace; font-size: 1.1em; font-weight: bold; margin-right: 12px; white-space: nowrap; }
         .faellig { color: #ff4d4d; }
-        .btn-action { padding: 5px 10px; border-radius: 4px; border: none; cursor: pointer; font-size: 0.9em; margin-left: 3px; transition: transform 0.1s; }
-        .btn-action:active { transform: scale(0.9); }
+        
+        .btn-action { padding: 5px 10px; border-radius: 4px; border: none; cursor: pointer; font-size: 0.9em; margin-left: 3px; }
 
         #login-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.9); backdrop-filter: blur(15px); display: flex; justify-content: center; align-items: center; z-index: 9999; }
-        .pin-box { background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid var(--accent); text-align: center; box-shadow: 0 0 30px rgba(0, 202, 227, 0.2); }
+        .pin-box { background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid var(--accent); text-align: center; }
     </style>
 </head>
 <body>
@@ -74,32 +76,32 @@
         <div class="card">
             <input type="hidden" id="edit-id" value="-1">
             <div style="display:flex; gap:8px;">
-                <input type="text" id="t-name" placeholder="Name des Termins" style="flex:2">
+                <input type="text" id="t-name" placeholder="Titel des Termins" style="flex:2">
                 <input type="datetime-local" id="t-date" style="flex:1">
             </div>
             
             <div class="toolbar">
-                <button class="tool-btn" onclick="wrapText('**','**')" title="Fett"><b>B</b></button>
-                <button class="tool-btn" onclick="wrapText('--','--')" title="Durchgestrichen"><s>S</s></button>
+                <button class="tool-btn" onclick="wrapText('**','**')"><b>B</b></button>
+                <button class="tool-btn" onclick="wrapText('--','--')"><s>S</s></button>
                 <button class="tool-btn" onclick="wrapText('[color:#ff4d4d]','[/color]')" style="color:#ff4d4d">ROT</button>
                 <button class="tool-btn" onclick="wrapText('[color:#00ff00]','[/color]')" style="color:#00ff00">GRÜN</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ffff00]','[/color]')" style="color:#ffff00">GELB</button>
                 <button class="tool-btn" onclick="wrapText('[color:#1e90ff]','[/color]')" style="color:#1e90ff">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
             </div>
-            <textarea id="t-note" placeholder="Notizentext hier eingeben..."></textarea>
+            <textarea id="t-note" placeholder="Zusätzliche Notizen..."></textarea>
 
             <div id="cb-editor-zone">
                 <div id="cb-list"></div>
             </div>
 
-            <button class="btn-main" id="save-btn" onclick="save()">OK / SPEICHERN</button>
+            <button class="btn-main" id="save-btn" onclick="save()">TERMIN SPEICHERN</button>
             <div style="text-align: right; margin-top: 10px;">
-                 <button class="tool-btn" style="background:transparent; border:none; color:#555; font-size:0.65em;" onclick="logout()">SESSION TERMINATE (LOGOUT)</button>
+                 <button class="tool-btn" style="background:transparent; border:none; color:#555; font-size:0.65em;" onclick="logout()">LOGOUT</button>
             </div>
         </div>
 
-        <div id="liste">Lade Orbital-Daten...</div>
+        <div id="liste">Synchronisiere Orbital-Daten...</div>
     </div>
 
 <script>
@@ -118,7 +120,7 @@
             document.getElementById('login-overlay').style.display='none';
             document.getElementById('main-content').style.display='block';
             isLogged = true; load();
-        } else if(!auto) { alert("ACCESS DENIED - WRONG PIN"); }
+        } else if(!auto) { alert("PIN FALSCH"); }
     }
 
     function logout() { localStorage.removeItem('termin_monitor_auth'); location.reload(); }
@@ -133,8 +135,13 @@
     function addCB(val = "", checked = false) {
         const div = document.createElement('div');
         div.className = "cb-edit-row";
-        div.innerHTML = `<input type="checkbox" ${checked ? 'checked' : ''}><input type="text" value="${val}"><button class="tool-btn" style="color:#ff4d4d; border-color:#ff4d4d" onclick="this.parentElement.remove()">✕</button>`;
+        div.innerHTML = `
+            <input type="checkbox" ${checked ? 'checked' : ''}>
+            <input type="text" value="${val}" placeholder="Listenpunkt...">
+            <button class="tool-btn cb-remove-btn" onclick="this.parentElement.remove()">✕</button>
+        `;
         document.getElementById('cb-list').appendChild(div);
+        div.querySelector('input[type="text"]').focus();
     }
 
     async function load() {
@@ -146,7 +153,7 @@
                 data = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0))));
                 render();
             }
-        } catch(e) { console.error("Orbit Sync Failed"); }
+        } catch(e) { console.error("Sync Error"); }
     }
 
     function render() {
@@ -164,19 +171,19 @@
             }
             h += `<div class="termin-card">
                 <div style="flex:1; min-width:0; padding-right:10px;">
-                    <strong style="font-size:1.1em; letter-spacing:1px;">${t.name}</strong><br>
-                    <small style="color:#999">${ziel.toLocaleString('de-DE')}</small>
+                    <strong style="font-size:1.1em;">${t.name}</strong><br>
+                    <small style="color:#aaa">${ziel.toLocaleString('de-DE')}</small>
                     <div class="notiz-display">${format(t.notiz, i)}</div>
                 </div>
                 <div style="display:flex; align-items:center; flex-shrink:0;">
                     <span class="zeit-display ${diff <= 0 ? 'faellig' : ''}">${zStr}</span>
-                    <button class="btn-action" style="background:#00cae3" onclick="copy(${i})" title="Kopieren">📄</button>
-                    <button class="btn-action" style="background:#ffcc00" onclick="edit(${i})" title="Bearbeiten">✎</button>
-                    <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${i})" title="Löschen">✕</button>
+                    <button class="btn-action" style="background:#00cae3" onclick="copy(${i})">📄</button>
+                    <button class="btn-action" style="background:#ffcc00" onclick="edit(${i})">✎</button>
+                    <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${i})">✕</button>
                 </div>
             </div>`;
         });
-        document.getElementById('liste').innerHTML = h;
+        document.getElementById('liste').innerHTML = h || "Keine Termine vorhanden.";
     }
 
     function format(txt, tIdx) {
@@ -212,20 +219,20 @@
             else textPart.push(line);
         });
         document.getElementById('t-note').value = textPart.join('\n');
-        document.getElementById('save-btn').innerText = "UPDATE BESTÄTIGEN";
+        document.getElementById('save-btn').innerText = "ÄNDERUNG SPEICHERN";
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
     function copy(i) {
         edit(i);
         document.getElementById('edit-id').value = "-1";
-        document.getElementById('t-name').value += " (KOPIE)";
-        document.getElementById('save-btn').innerText = "OK / SPEICHERN";
+        document.getElementById('t-name').value += " (Kopie)";
+        document.getElementById('save-btn').innerText = "SPEICHERN";
     }
 
     async function save() {
         const name = document.getElementById('t-name').value, date = document.getElementById('t-date').value, note = document.getElementById('t-note').value, id = document.getElementById('edit-id').value;
-        if(!name || !date) { alert("Titel und Datum benötigt!"); return; }
+        if(!name || !date) return;
         let fullNote = note;
         document.querySelectorAll('.cb-edit-row').forEach(row => {
             const txt = row.querySelector('input[type="text"]').value, chk = row.querySelector('input[type="checkbox"]').checked;
@@ -235,16 +242,16 @@
         if(id === "-1") data.push(entry); else data[id] = entry;
         saveToGit();
         document.getElementById('edit-id').value = "-1"; document.getElementById('cb-list').innerHTML = ""; document.getElementById('t-note').value = ""; document.getElementById('t-name').value = "";
-        document.getElementById('save-btn').innerText = "OK / SPEICHERN";
+        document.getElementById('save-btn').innerText = "TERMIN SPEICHERN";
     }
 
     async function saveToGit() {
         const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 4))));
-        await fetch(G_URL, { method: 'PUT', headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ message: "Orbit Update", content, sha: currentSha }) });
+        await fetch(G_URL, { method: 'PUT', headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ message: "Update", content, sha: currentSha }) });
         load();
     }
 
-    function del(i) { if(confirm("Eintrag unwiderruflich löschen?")) { data.splice(i,1); saveToGit(); } }
+    function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
 
     setInterval(() => { if(isLogged) render(); }, 1000);
     setInterval(() => { if(isLogged) load(); }, 60000);
