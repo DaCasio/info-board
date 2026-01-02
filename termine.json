@@ -1,5 +1,10 @@
 [
     {
+        "name": "Fliesenleger Bajrami",
+        "ziel": "2026-01-03T08:00",
+        "notiz": "[color:#00ff00]Ganztägig[/color]"
+    },
+    {
         "name": "Irmi ToDo",
         "ziel": "2026-01-03T09:00",
         "notiz": "[ ]Schlüssel wegen Klaus Klettke (Türen)\n[ ]Hebebühne abklären / Ansonsten SK Umzüge"
@@ -239,8 +244,8 @@
         "notiz": ""
     },
     {
-        "name": "Fliesenleger Bajrami",
+        "name": "Kabeldose anbringen / Hahn informieren.",
         "ziel": "2026-01-03T08:00",
-        "notiz": "[color:#00ff00]Ganztägig[/color]"
+        "notiz": "haben kein Internet"
     }
 ]
