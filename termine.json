@@ -40,8 +40,9 @@
         "notiz": "Ab 9.1 Uhr sicher\nKero ab 7.1. bis 21.1. sicher\nCasi ab 7.1. bis 21.1. noch in Genehmigung"
     },
     {
-        "name": "UP-IP-TV 📺",
-        "ziel": "2026-01-07T00:00"
+        "name": "UP-IP-TV",
+        "ziel": "2026-01-07T00:00",
+        "notiz": ""
     },
     {
         "name": "PVC mit Hebebühne",
