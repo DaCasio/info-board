@@ -7,7 +7,7 @@
     {
         "name": "test",
         "ziel": "2026-01-02T12:00",
-        "notiz": "[x] checkbox\n**fett**\n[color:red] test"
+        "notiz": "[ ] checkbox\n**fett**\n[color:red] test"
     },
     {
         "name": "Holz Dammers Verblendung",
