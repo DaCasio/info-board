@@ -20,9 +20,9 @@
         "notiz": "Wohnungsübergabe:\nWann bekommen wir Keller- und Haustürschlüssel?\nMieterbestätigung.\nRauchmelder müssen gewartet werden.\n\nFliesenleger:\n***************\nKüche:\nZieht er die Fliesen komplett durch?\nKüche ist noch vollgestellt (Türen, Rigipsplatten etc.).\nVorab klären wegen Gianni als Backup?\nTermine:\n5.1 Ganztägig\n6.1. bis 16 Uhr möglich, danach pausieren weil Marcel verspachtelt\n7.1 weiter Ganztägig\n\nBadezimmer:\nWird der Rest noch verputzt? (Wo keine Fliesen)\nFugen fehlen.\nSilikonarbeiten überall offen.\nSollten uns dazu nochmal treffen.\nBad Heizungsrohr.\nKommt noch eine Manschette?\nWie werden die restlichen Lücken geschlossen?"
     },
     {
-        "name": "Gianni angefragt (Backup Fliesenleger)👨‍🔧",
-        "ziel": "2026-01-02T18:30:00",
-        "notiz": "Wegen verspachteln Küche - Kann Gianni sich anschauen?\nRahmen & Kochnische ebenfalls verspachteln\nWenn Gianni Zeit hat, dann mit Bajrami abstimmen.\nKläre was Fliesenleger machen oder ob Bajrami auf Gianni setzt\nTermine:\n05.1 Ganztägig\n06.1. bis 16 Uhr möglich, danach pausieren weil Marcel verspachtelt\n07.1 weiter Ganztägig \n08.1. weiter Ganztägig \n09.1 nicht wegen PVC verlegen\n10.1 nicht wegen Fußleisten ggf möglich da nur Küche\n11.1 bis 13.1 ggf auch möglich\n14.1. Deadline Umzug"
+        "name": "Gianni Fliesenlegen - Termine voll",
+        "ziel": "2026-01-02T12:00",
+        "notiz": "Gianni ist terminlich voll und kann nicht - Abgesagt\n\nWegen verspachteln Küche - Kann Gianni sich anschauen?\nRahmen & Kochnische ebenfalls verspachteln\nWenn Gianni Zeit hat, dann mit Bajrami abstimmen.\nKläre was Fliesenleger machen oder ob Bajrami auf Gianni setzt\nTermine:\n05.1 Ganztägig\n06.1. bis 16 Uhr möglich, danach pausieren weil Marcel verspachtelt\n07.1 weiter Ganztägig \n08.1. weiter Ganztägig \n09.1 nicht wegen PVC verlegen\n10.1 nicht wegen Fußleisten ggf möglich da nur Küche\n11.1 bis 13.1 ggf auch möglich\n14.1. Deadline Umzug"
     },
     {
         "name": "Fliesenleger Bajrami 👨‍🔧 1/2",
@@ -99,6 +99,11 @@
     {
         "name": "Gianni Fliesen Küche evt 👨‍🔧",
         "ziel": "2026-01-11T08:00",
+        "notiz": ""
+    },
+    {
+        "name": "Gianni Fliesen Küche evt 👨‍🔧",
+        "ziel": "2026-01-12T08:00",
         "notiz": ""
     },
     {
@@ -239,10 +244,5 @@
     {
         "name": "Darlehen Ende🏦",
         "ziel": "2030-05-15T18:00"
-    },
-    {
-        "name": "Gianni Fliesen Küche evt 👨‍🔧",
-        "ziel": "2026-01-12T08:00",
-        "notiz": ""
     }
 ]
