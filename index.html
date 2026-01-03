@@ -26,11 +26,13 @@
         
         .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 5px 8px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
+        .tool-btn:hover { background: var(--accent); color: black; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.95em; }
         textarea { min-height: 60px; font-family: inherit; resize: vertical; }
 
-        /* Optimiertes Layout nach deiner neuen Vorgabe */
+        .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; letter-spacing: 1px; }
+
         .termin-card { 
             background: rgba(30,30,30,0.85); backdrop-filter: blur(4px);
             border-left: 6px solid var(--accent); padding: 15px; border-radius: 8px; 
@@ -85,15 +87,16 @@
                 <button class="tool-btn" onclick="wrapText('--','--')">S</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ff4d4d]','[/color]')" style="color:#ff4d4d">ROT</button>
                 <button class="tool-btn" onclick="wrapText('[color:#00ff00]','[/color]')" style="color:#00ff00">GRÜN</button>
-                <button class="tool-btn" onclick="wrapText('[color:#ffff00]','[/color]')" style="color:#ffff00">GELB</button>
-                <button class="tool-btn" onclick="wrapText('[color:#1e90ff]','[/color]')" style="color:#1e90ff">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
+                <button class="tool-btn" onclick="document.getElementById('ics-upload').click()">+ ICS IMPORT</button>
+                <input type="file" id="ics-upload" accept=".ics" style="display:none" onchange="importICS(this)">
             </div>
             <textarea id="t-note" placeholder="Notizen..."></textarea>
             <div id="cb-list"></div>
             <button class="btn-main" id="save-btn" onclick="save()">TERMIN SPEICHERN</button>
         </div>
 
+        <div id="counter-display" class="termin-counter">TERMINE: 0</div>
         <div id="liste">Lade Daten...</div>
     </div>
 
@@ -127,6 +130,7 @@
 
     function render() {
         const jetzt = new Date();
+        document.getElementById('counter-display').innerText = `TERMINE: ${data.length}`;
         let h = "";
         data.sort((a,b) => new Date(a.ziel) - new Date(b.ziel)).forEach((t, i) => {
             const ziel = new Date(t.ziel), diff = ziel - jetzt;
@@ -158,6 +162,31 @@
             </div>`;
         });
         document.getElementById('liste').innerHTML = h || "Keine Termine.";
+    }
+
+    // ICS Import Funktion
+    function importICS(input) {
+        const file = input.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const content = e.target.result;
+            const events = content.split('BEGIN:VEVENT');
+            events.shift(); 
+            events.forEach(event => {
+                const summary = event.match(/SUMMARY:(.*)/)?.[1]?.trim();
+                const dtstart = event.match(/DTSTART[:;](?:TZID=.*?:)?(\d{8}T\d{6})/)?.[1];
+                if (summary && dtstart) {
+                    const y = dtstart.substring(0,4), m = dtstart.substring(4,6), d = dtstart.substring(6,8);
+                    const hh = dtstart.substring(9,11), mm = dtstart.substring(11,13);
+                    const dateStr = `${y}-${m}-${d}T${hh}:${mm}`;
+                    data.push({ name: summary, ziel: dateStr, notiz: "" });
+                }
+            });
+            saveToGit();
+            input.value = "";
+        };
+        reader.readAsText(file);
     }
 
     function format(txt, tIdx) {
