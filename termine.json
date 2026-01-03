@@ -70,6 +70,11 @@
         "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
     },
     {
+        "name": "Bajrami Fliesenleger",
+        "ziel": "2026-01-12T08:00",
+        "notiz": "Bad wände silikon  / Küche fliesenspiegel\n12-16.1."
+    },
+    {
         "name": "Sabina Jeckes Putzen",
         "ziel": "2026-01-12T09:00",
         "notiz": "9 bis 11"
@@ -244,8 +249,8 @@
         "notiz": ""
     },
     {
-        "name": "Bajrami Fliesenleger",
-        "ziel": "2026-01-12T08:00",
-        "notiz": "Bad wände silikon  / Küche fliesenspiegel\n12-16.1."
+        "name": "Klaus Küche Decke / Wände",
+        "ziel": "2026-01-19T08:00",
+        "notiz": "19.-23.1"
     }
 ]
