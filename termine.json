@@ -109,6 +109,11 @@
         "ziel": "2026-02-01T00:00"
     },
     {
+        "name": "Sperrmüll Neukirchen rausstellen",
+        "ziel": "2026-02-08T10:00",
+        "notiz": ""
+    },
+    {
         "name": "Steuern rausschicken",
         "ziel": "2026-03-01T18:00",
         "notiz": ""
@@ -229,8 +234,8 @@
         "notiz": ""
     },
     {
-        "name": "Sperrmüll Neukirchen rausstellen",
-        "ziel": "2026-02-08T10:00",
+        "name": "Sperrmüll Neukirchen Abholung",
+        "ziel": "2026-02-09T10:00",
         "notiz": ""
     }
 ]
