@@ -112,7 +112,12 @@
     {
         "name": "Urlaub Ende",
         "ziel": "2026-01-21T22:00",
-        "notiz": "Casi ab 9.1. 17 Uhr bis 18.1 sicher\nCasi ab 7.1. bis 21.1. noch in Genehmigung / Kero sicher"
+        "notiz": "Casi ab 9.1. 17 Uhr bis 18.1 sicher\nCasi ab 7.1. bis 21.1. noch in Genehmigung"
+    },
+    {
+        "name": "Urlaub Ende Kero",
+        "ziel": "2026-01-23T22:00",
+        "notiz": "Kero ab 7.1. bis 23.1."
     },
     {
         "name": "Sperrmüll rausstellen",
@@ -247,10 +252,5 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
-    },
-    {
-        "name": "Urlaub Ende Kero",
-        "ziel": "2026-01-23T22:00",
-        "notiz": "Kero ab 7.1. bis 23.1."
     }
 ]
