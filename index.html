@@ -24,15 +24,17 @@
             padding: 15px; margin-bottom: 20px; box-shadow: 0 0 25px rgba(0,0,0,0.6);
         }
         
+        /* Toolbar für Formatierung & Import */
         .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
-        .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 5px 8px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
+        .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
         .tool-btn:hover { background: var(--accent); color: black; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.95em; }
-        textarea { min-height: 60px; font-family: inherit; resize: vertical; }
+        textarea { min-height: 80px; font-family: inherit; resize: vertical; }
 
-        .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; letter-spacing: 1px; }
+        .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase; }
 
+        /* Termin Karten Layout */
         .termin-card { 
             background: rgba(30,30,30,0.85); backdrop-filter: blur(4px);
             border-left: 6px solid var(--accent); padding: 15px; border-radius: 8px; 
@@ -54,7 +56,7 @@
         .row-notiz { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 10px; }
         .notiz-display { font-size: 0.95em; line-height: 1.5; color: #ddd; white-space: pre-wrap; }
 
-        .btn-main { background: var(--accent); color: black; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1em; text-transform: uppercase; }
+        .btn-main { background: var(--accent); color: black; border: none; padding: 14px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1em; text-transform: uppercase; margin-top: 10px; }
         .btn-action { padding: 6px 10px; border-radius: 4px; border: none; cursor: pointer; font-size: 0.9em; }
         
         .cb-line { cursor: pointer; display: block; padding: 2px 0; }
@@ -69,7 +71,7 @@
     <div id="login-overlay">
         <div style="background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid var(--accent); text-align: center;">
             <h2 style="color:var(--accent); margin-top:0;">SYSTEM LOGIN</h2>
-            <input type="password" id="pin" placeholder="PIN" style="width:120px; text-align:center; font-size:24px; border: 2px solid var(--accent);">
+            <input type="password" id="pin" placeholder="PIN" style="width:140px; text-align:center; font-size:24px; border: 2px solid var(--accent);">
             <br><button class="btn-main" onclick="login()">ENTER</button>
         </div>
     </div>
@@ -87,17 +89,20 @@
                 <button class="tool-btn" onclick="wrapText('--','--')">S</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ff4d4d]','[/color]')" style="color:#ff4d4d">ROT</button>
                 <button class="tool-btn" onclick="wrapText('[color:#00ff00]','[/color]')" style="color:#00ff00">GRÜN</button>
+                <button class="tool-btn" onclick="wrapText('[color:#ffff00]','[/color]')" style="color:#ffff00">GELB</button>
+                <button class="tool-btn" onclick="wrapText('[color:#1e90ff]','[/color]')" style="color:#1e90ff">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
                 <button class="tool-btn" onclick="document.getElementById('ics-upload').click()">+ ICS IMPORT</button>
                 <input type="file" id="ics-upload" accept=".ics" style="display:none" onchange="importICS(this)">
             </div>
+            
             <textarea id="t-note" placeholder="Notizen..."></textarea>
-            <div id="cb-list"></div>
+            <div id="cb-list" style="margin-bottom: 8px;"></div>
             <button class="btn-main" id="save-btn" onclick="save()">TERMIN SPEICHERN</button>
         </div>
 
-        <div id="counter-display" class="termin-counter">TERMINE: 0</div>
-        <div id="liste">Lade Daten...</div>
+        <div id="counter-display" class="termin-counter">AKTIVE TERMINE: 0</div>
+        <div id="liste">Lade Daten aus Orbit...</div>
     </div>
 
 <script>
@@ -115,23 +120,26 @@
             document.getElementById('login-overlay').style.display='none';
             document.getElementById('main-content').style.display='block';
             isLogged = true; load();
-        } else if(!auto) { alert("PIN falsch"); }
+        } else if(!auto) { alert("PIN inkorrekt."); }
     }
 
     async function load() {
-        const res = await fetch(G_URL, { headers: { 'Authorization': `token ${t1+t2}` } });
-        if(res.ok) {
-            const j = await res.json();
-            currentSha = j.sha;
-            data = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0))));
-            render();
-        }
+        try {
+            const res = await fetch(G_URL, { headers: { 'Authorization': `token ${t1+t2}` } });
+            if(res.ok) {
+                const j = await res.json();
+                currentSha = j.sha;
+                data = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0))));
+                render();
+            }
+        } catch(e) { console.error("Sync-Fehler", e); }
     }
 
     function render() {
         const jetzt = new Date();
-        document.getElementById('counter-display').innerText = `TERMINE: ${data.length}`;
+        document.getElementById('counter-display').innerText = `AKTIVE TERMINE: ${data.length}`;
         let h = "";
+        
         data.sort((a,b) => new Date(a.ziel) - new Date(b.ziel)).forEach((t, i) => {
             const ziel = new Date(t.ziel), diff = ziel - jetzt;
             let zStr = "FÄLLIG";
@@ -142,14 +150,15 @@
                 const ss = Math.floor((diff%60000)/1000).toString().padStart(2,'0');
                 zStr = `${d}d ${hh}:${mm}:${ss}`;
             }
+            
             h += `
             <div class="termin-card">
                 <div class="row-title">
                     <div class="titel-box">${t.name}</div>
                     <div class="actions-box">
-                        <button class="btn-action" style="background:#00cae3" onclick="copy(${i})">📄</button>
-                        <button class="btn-action" style="background:#ffcc00" onclick="edit(${i})">✎</button>
-                        <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${i})">✕</button>
+                        <button class="btn-action" style="background:#00cae3" onclick="copy(${i})" title="Kopieren">📄</button>
+                        <button class="btn-action" style="background:#ffcc00" onclick="edit(${i})" title="Edit">✎</button>
+                        <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${i})" title="Löschen">✕</button>
                     </div>
                 </div>
                 <div class="row-info">
@@ -161,32 +170,7 @@
                 </div>
             </div>`;
         });
-        document.getElementById('liste').innerHTML = h || "Keine Termine.";
-    }
-
-    // ICS Import Funktion
-    function importICS(input) {
-        const file = input.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const content = e.target.result;
-            const events = content.split('BEGIN:VEVENT');
-            events.shift(); 
-            events.forEach(event => {
-                const summary = event.match(/SUMMARY:(.*)/)?.[1]?.trim();
-                const dtstart = event.match(/DTSTART[:;](?:TZID=.*?:)?(\d{8}T\d{6})/)?.[1];
-                if (summary && dtstart) {
-                    const y = dtstart.substring(0,4), m = dtstart.substring(4,6), d = dtstart.substring(6,8);
-                    const hh = dtstart.substring(9,11), mm = dtstart.substring(11,13);
-                    const dateStr = `${y}-${m}-${d}T${hh}:${mm}`;
-                    data.push({ name: summary, ziel: dateStr, notiz: "" });
-                }
-            });
-            saveToGit();
-            input.value = "";
-        };
-        reader.readAsText(file);
+        document.getElementById('liste').innerHTML = h || "<p style='text-align:center;'>Keine Termine vorhanden.</p>";
     }
 
     function format(txt, tIdx) {
@@ -213,8 +197,32 @@
         const div = document.createElement('div');
         div.style.display = "flex"; div.style.gap = "5px"; div.style.marginBottom = "5px";
         div.className = "cb-edit-row";
-        div.innerHTML = `<input type="checkbox" ${checked ? 'checked' : ''} style="width:20px;"><input type="text" value="${val}" style="flex:1; margin-bottom:0;"><button class="tool-btn" onclick="this.parentElement.remove()">✕</button>`;
+        div.innerHTML = `<input type="checkbox" ${checked ? 'checked' : ''} style="width:20px; margin:0;"><input type="text" value="${val}" style="flex:1; margin-bottom:0;"><button class="tool-btn" onclick="this.parentElement.remove()">✕</button>`;
         document.getElementById('cb-list').appendChild(div);
+    }
+
+    function importICS(input) {
+        const file = input.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const content = e.target.result;
+            const events = content.split('BEGIN:VEVENT');
+            events.shift(); 
+            events.forEach(event => {
+                const summary = event.match(/SUMMARY:(.*)/)?.[1]?.trim();
+                const dtstart = event.match(/DTSTART[:;](?:TZID=.*?:)?(\d{8}T\d{6})/)?.[1];
+                if (summary && dtstart) {
+                    const y = dtstart.substring(0,4), m = dtstart.substring(4,6), d = dtstart.substring(6,8);
+                    const hh = dtstart.substring(9,11), mm = dtstart.substring(11,13);
+                    const dateStr = `${y}-${m}-${d}T${hh}:${mm}`;
+                    data.push({ name: summary, ziel: dateStr, notiz: "" });
+                }
+            });
+            saveToGit();
+            input.value = "";
+        };
+        reader.readAsText(file);
     }
 
     function edit(i) {
@@ -258,13 +266,26 @@
 
     async function saveToGit() {
         const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 4))));
-        await fetch(G_URL, { method: 'PUT', headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ message: "Update", content, sha: currentSha }) });
-        load();
+        try {
+            await fetch(G_URL, { 
+                method: 'PUT', 
+                headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, 
+                body: JSON.stringify({ message: "Update via Web App", content, sha: currentSha }) 
+            });
+            load();
+        } catch(e) { alert("Fehler beim Speichern auf GitHub."); }
     }
 
-    function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
-    function wrapText(b, a) { const t = document.getElementById('t-note'); const s = t.selectionStart, e = t.selectionEnd; t.value = t.value.substring(0,s)+b+t.value.substring(s,e)+a+t.value.substring(e); t.focus(); }
+    function del(i) { if(confirm("Termin endgültig löschen?")) { data.splice(i,1); saveToGit(); } }
+    
+    function wrapText(b, a) { 
+        const t = document.getElementById('t-note'); 
+        const s = t.selectionStart, e = t.selectionEnd; 
+        t.value = t.value.substring(0,s)+b+t.value.substring(s,e)+a+t.value.substring(e); 
+        t.focus(); 
+    }
 
+    // Intervalle für Live-Updates
     setInterval(() => { if(isLogged) render(); }, 1000);
     setInterval(() => { if(isLogged) load(); }, 60000);
 </script>
