@@ -1,5 +1,10 @@
 [
     {
+        "name": "Hahn Internet",
+        "ziel": "2026-01-03T13:00",
+        "notiz": "Dose"
+    },
+    {
         "name": "Holz Dammers Verblendung",
         "ziel": "2026-01-03T16:30",
         "notiz": "Für Kochnische"
@@ -252,10 +257,5 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
-    },
-    {
-        "name": "Hahn Internet",
-        "ziel": "2026-01-03T08:00",
-        "notiz": "Dose"
     }
 ]
