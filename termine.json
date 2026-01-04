@@ -2,7 +2,7 @@
     {
         "name": "Irmi Rest",
         "ziel": "2026-01-05T08:00",
-        "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
+        "notiz": "[ ]Heizungen\n[x]Boden spachteln/schleifen etc"
     },
     {
         "name": "Urlaub anpassen",
@@ -184,6 +184,11 @@
         "notiz": ""
     },
     {
+        "name": "Abbait",
+        "ziel": "2026-08-10T08:00",
+        "notiz": ""
+    },
+    {
         "name": "Elster Zerti Mutti läuft aus",
         "ziel": "2026-08-31T08:37",
         "notiz": ""
@@ -226,11 +231,6 @@
     {
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
-        "notiz": ""
-    },
-    {
-        "name": "Abbait",
-        "ziel": "2026-08-10T08:00",
         "notiz": ""
     }
 ]
