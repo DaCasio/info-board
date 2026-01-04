@@ -7,7 +7,7 @@
     {
         "name": "Urlaub anpassen",
         "ziel": "2026-01-05T17:00",
-        "notiz": "Status abwarten\n[x]Casi: 7.1. bis 16.1 U löschen\n[x]Casi: 12-16.1 löschen\n[x]Casi: 19. - 30.1 U beantragen\n[ ]Kero: 12-16.1 löschen\n[ ]Kero: 19. - 30.1 U beantragen"
+        "notiz": "Status abwarten\n[x]Casi: 7.1. bis 16.1 U löschen\n[x]Casi: 12-16.1 löschen\n[x]Casi: 19. - 30.1 U beantragen\n[ ]Kero: 12-16.1 löschen\n[ ]Kero: 19. - 30.1 U beantragen\n[ ]Status Kero: Abgeschlossen?\n[ ]Status Casi: Abgeschlossen?"
     },
     {
         "name": "Bajrami - Übergabe & Fliesen - nachgefragt",
@@ -65,11 +65,6 @@
         "notiz": "Türen lackieren\n12.-14.1."
     },
     {
-        "name": "Telekom VDSL Umschaltung",
-        "ziel": "2026-01-26T08:00",
-        "notiz": ""
-    },
-    {
         "name": "Lieferung Esstisch",
         "ziel": "2026-01-19T08:00",
         "notiz": ""
@@ -78,6 +73,11 @@
         "name": "Klaus Küche Decke / Wände",
         "ziel": "2026-01-19T08:00",
         "notiz": "19.-23.1"
+    },
+    {
+        "name": "Telekom VDSL Umschaltung",
+        "ziel": "2026-01-26T08:00",
+        "notiz": ""
     },
     {
         "name": "Umzug",
