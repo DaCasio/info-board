@@ -40,14 +40,14 @@
         "notiz": "Weil Marcel krank ist, kann sich das auf Montag verschieben"
     },
     {
-        "name": "Thorsten Türen - Abhängig vom Boden.",
-        "ziel": "2026-01-12T10:00",
-        "notiz": "Türen kürzen <<< - Brauch er das noch oder nicht?"
-    },
-    {
         "name": "PVC zuschneiden / verlegen",
         "ziel": "2026-01-12T08:00",
         "notiz": "Zuschneiden und Verlegen von PVC"
+    },
+    {
+        "name": "Thorsten Türen - Abhängig vom Boden.",
+        "ziel": "2026-01-12T13:00",
+        "notiz": "Türen kürzen <<< - Brauch er das noch oder nicht?"
     },
     {
         "name": "Irmi / Marcel Boden schleifen fertig – spätestens",
