@@ -1,10 +1,5 @@
 [
     {
-        "name": "Irmi Rest Status?",
-        "ziel": "2026-01-09T17:00",
-        "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
-    },
-    {
         "name": "Bajrami Küche soll fertig sein! wir schauen.",
         "ziel": "2026-01-05T18:00",
         "notiz": "Soll fertig sein\nVerspachtelt / Fliesen Wand Nische usw."
@@ -22,12 +17,17 @@
     {
         "name": "Marcel PVC sagt Bescheid",
         "ziel": "2026-01-08T08:00",
-        "notiz": "Marcel sagt Bescheid wie es ihm geht, aber glaube nicht wie es geht. Marcel will noch zwei Leute mitbringen."
+        "notiz": "Marcel sagt Bescheid wie es ihm geht.\nMarcel hat noch zwei Leute mitbringen / Einer könnte abspringen."
     },
     {
         "name": "Marcel Boden spachteln Freitag und schleifen",
         "ziel": "2026-01-09T16:00",
         "notiz": "Marcel krank > Irman hilft und spachtelt/schleift am 09.01 den kompletten Boden"
+    },
+    {
+        "name": "Irmi Rest Status?",
+        "ziel": "2026-01-09T17:00",
+        "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
     },
     {
         "name": "Holz Dammers Fußleisten Küchenschränke",
