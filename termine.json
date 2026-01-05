@@ -1,7 +1,7 @@
 [
     {
-        "name": "Bajrami Küche soll fertig sein!",
-        "ziel": "2026-01-05T17:00",
+        "name": "Bajrami Küche soll fertig sein! wir schauen.",
+        "ziel": "2026-01-05T18:00",
         "notiz": "Soll fertig sein\nVerspachtelt / Fliesen Wand Nische usw."
     },
     {
@@ -23,11 +23,6 @@
         "name": "Marcel PVC sagt Bescheid",
         "ziel": "2026-01-08T08:00",
         "notiz": "Marcel sagt Bescheid wie es ihm geht, aber glaube nicht wie es geht. Marcel will noch zwei Leute mitbringen."
-    },
-    {
-        "name": "Marcel PVC Zuschneiden / Verlegen",
-        "ziel": "2026-01-12T08:00",
-        "notiz": ""
     },
     {
         "name": "Marcel Boden spachteln Freitag und schleifen",
@@ -52,6 +47,11 @@
     {
         "name": "Irmi Deadline",
         "ziel": "2026-01-11T22:00",
+        "notiz": ""
+    },
+    {
+        "name": "Marcel PVC Zuschneiden / Verlegen",
+        "ziel": "2026-01-12T08:00",
         "notiz": ""
     },
     {
