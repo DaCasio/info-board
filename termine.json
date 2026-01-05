@@ -35,11 +35,6 @@
         "notiz": "Für Küchenschränke"
     },
     {
-        "name": "Marcel / Vertretung Bodenleisten? Oder 12.01.",
-        "ziel": "2026-01-13T10:00",
-        "notiz": "Weil Marcel krank ist"
-    },
-    {
         "name": "Irmi / Marcel Boden schleifen fertig – spätestens",
         "ziel": "2026-01-12T08:00",
         "notiz": "Irmi/Marcel schleifen am 12.01. den kompletten Boden"
@@ -58,6 +53,11 @@
         "name": "Türen lackieren Klaus Klettke",
         "ziel": "2026-01-12T17:00",
         "notiz": "Türen lackieren\n12.–14.01."
+    },
+    {
+        "name": "Marcel / Vertretung Bodenleisten? Oder 12.01.",
+        "ziel": "2026-01-13T10:00",
+        "notiz": "Weil Marcel krank ist"
     },
     {
         "name": "Boden spätestens drin",
