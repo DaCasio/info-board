@@ -15,6 +15,11 @@
         "notiz": ""
     },
     {
+        "name": "Irmi Rest Heizung",
+        "ziel": "2026-01-06T17:00",
+        "notiz": "[ ]Heizungen"
+    },
+    {
         "name": "Bajrami - Übergabe & Fliesen - nachgefragt",
         "ziel": "2026-01-06T18:00",
         "notiz": "Klären was Fliesenleger machen\n[ ]Übergabe: Keller- und Haustürschlüssel\n[ ]Übergabe: Mieterbestätigung\n[ ]Übergabe: Briefkasten / Halterung Name fehlt\n[ ]Fliesenleger: Küche Fliesen komplett durchziehen?\n[ ]Fliesenleger oder Klaus: Küche verspachteln / Kochnische?\n[x]Fliesenleger: Bad Wird Rest noch verputzt?\n[x]Fliesenleger: Bad verfugen / Lücken schließen / Silikon?\n[x]Fliesenleger: Bad Manschette?"
@@ -30,9 +35,9 @@
         "notiz": "Marcel krank > Irman hilft und spachtelt/schleift am 09.01 den kompletten Boden / Planung\nOder spätestens 12.1."
     },
     {
-        "name": "Irmi Rest Status?",
+        "name": "Irmi Rest Boden spachteln?",
         "ziel": "2026-01-09T17:00",
-        "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
+        "notiz": "oder 12.1.\n[ ]Boden spachteln/schleifen etc"
     },
     {
         "name": "Holz Dammers Fußleisten Küchenschränke",
@@ -267,10 +272,5 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
-    },
-    {
-        "name": "Irmi Rest Heizung",
-        "ziel": "2026-01-06T17:00",
-        "notiz": "[ ]Heizungen"
     }
 ]
