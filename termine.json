@@ -257,5 +257,10 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
+    },
+    {
+        "name": "Irmi Heizung (Kopie)",
+        "ziel": "2026-01-06T08:00",
+        "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
     }
 ]
