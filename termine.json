@@ -5,13 +5,8 @@
         "notiz": "Status abwarten\n[x]Casi: 7.1. bis 16.1 U löschen\n[x]Casi: 12-16.1 löschen\n[x]Casi: 19. - 30.1 U beantragen\n[x]Kero: 12-16.1 löschen\n[x]Kero: 20. - 30.1 U beantragen\n[x]Status Kero: Abgeschlossen?\n[ ]Status Casi: Abgeschlossen?"
     },
     {
-        "name": "Bajrami - Übergabe & Fliesen - nachgefragt",
-        "ziel": "2026-01-06T18:00",
-        "notiz": "Klären was Fliesenleger machen\n[ ]Übergabe: Keller- und Haustürschlüssel\n[ ]Übergabe: Mieterbestätigung\n[ ]Übergabe: Briefkasten / Halterung Name fehlt\n[ ]Fliesenleger: Küche Fliesen komplett durchziehen?\n[ ]Fliesenleger oder Klaus: Küche verspachteln / Kochnische?\n[x]Fliesenleger: Bad Wird Rest noch verputzt?\n[x]Fliesenleger: Bad verfugen / Lücken schließen / Silikon?\n[x]Fliesenleger: Bad Manschette?"
-    },
-    {
         "name": "Irmi Rest",
-        "ziel": "2026-01-06T08:00",
+        "ziel": "2026-01-07T08:00",
         "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
     },
     {
@@ -23,6 +18,11 @@
         "name": "Urlaub Kero",
         "ziel": "2026-01-06T17:00",
         "notiz": "Status abwarten"
+    },
+    {
+        "name": "Bajrami - Übergabe & Fliesen - nachgefragt",
+        "ziel": "2026-01-06T18:00",
+        "notiz": "Klären was Fliesenleger machen\n[ ]Übergabe: Keller- und Haustürschlüssel\n[ ]Übergabe: Mieterbestätigung\n[ ]Übergabe: Briefkasten / Halterung Name fehlt\n[ ]Fliesenleger: Küche Fliesen komplett durchziehen?\n[ ]Fliesenleger oder Klaus: Küche verspachteln / Kochnische?\n[x]Fliesenleger: Bad Wird Rest noch verputzt?\n[x]Fliesenleger: Bad verfugen / Lücken schließen / Silikon?\n[x]Fliesenleger: Bad Manschette?"
     },
     {
         "name": "Irmi/Marcel Boden schleifen",
