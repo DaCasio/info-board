@@ -252,5 +252,10 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
+    },
+    {
+        "name": "Urlaub Kero",
+        "ziel": "2026-01-19T17:00",
+        "notiz": "Status abwarten"
     }
 ]
