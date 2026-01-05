@@ -96,7 +96,7 @@
     },
     {
         "name": "Umzug",
-        "ziel": "2026-01-26T08:00",
+        "ziel": "2026-01-22T08:00",
         "notiz": "26-30.1\n\nGucken dass der Scherge nicht hinterherfährt\n**Protokoll Vorfall Verfolgung/Nachstellung**\n\nDatum/Uhrzeit: \nOrt: \nBeschreibung: (Kennzeichen, Person, Verhalten)\nZeugen: \nFotos/Video: \n\n1. Polizei anrufen (110): „Verdacht Nachstellung § 238 StGB\"\n2. Anwältin informieren: Unterlassungsklage vorbereiten.\n3. Strafanzeige stellen.\n\n**Vertraulichkeitsvereinbarung – Umzug am 14.01.2026**\n\nSehr geehrte Damen und Herren,\n\nwir beauftragen Sie mit unserem Umzug von der ***straße **, *12345* *Ort* zum [Zielort nicht angeben].\n\n**Wichtige Datenschutzhinweise:**\n1. Der Zielort ist streng vertraulich. Geben Sie **keine Auskunft** über Zieladresse, Route oder Umzugszeit an Dritte (Nachbarn, Vermieter, Mitfahrer).\n2. Bei Nachfragen oder Beobachtung durch Dritte (z.B. Mitmieter, Nachbarn) bitte Sie diese höflich abzuweisen mit: „Datenschutz – keine Auskunft möglich.\"\n3. Bei Belästigung oder Verfolgung melden Sie dies umgehend an uns (Tel: [Ihre Nummer]).\n\nVielen Dank!\n[Unterschrift + Datum]"
     },
     {
@@ -112,6 +112,11 @@
     {
         "name": "Fuck off Kleiststraße 💩🤢🤮",
         "ziel": "2026-02-01T00:00"
+    },
+    {
+        "name": "Urlaub Ende",
+        "ziel": "2026-02-01T22:00",
+        "notiz": "Status abwarten"
     },
     {
         "name": "Sperrmüll Neukirchen rausstellen",
@@ -247,10 +252,5 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
-    },
-    {
-        "name": "Urlaub Ende",
-        "ziel": "2026-02-01T22:00",
-        "notiz": "Status abwarten"
     }
 ]
