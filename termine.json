@@ -35,6 +35,11 @@
         "notiz": "Für Küchenschränke"
     },
     {
+        "name": "PVC nach oben",
+        "ziel": "2026-01-10T16:00",
+        "notiz": ""
+    },
+    {
         "name": "Boden schleifen fertig – spätestens",
         "ziel": "2026-01-12T08:00",
         "notiz": "Irmi/Marcel schleifen am 12.01. den kompletten Boden"
@@ -265,8 +270,8 @@
         "notiz": ""
     },
     {
-        "name": "PVC nach oben",
-        "ziel": "2026-01-10T16:00",
-        "notiz": ""
+        "name": "Klaus vor Ort",
+        "ziel": "2026-01-06T18:15",
+        "notiz": "Schaut sich alles an."
     }
 ]
