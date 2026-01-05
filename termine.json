@@ -1,8 +1,13 @@
 [
     {
-        "name": "Irmi Rest",
-        "ziel": "2026-01-05T08:00",
+        "name": "Irmi Rest Status?",
+        "ziel": "2026-01-05T17:00",
         "notiz": "[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
+    },
+    {
+        "name": "Bajrami Küche anfangen",
+        "ziel": "2026-01-05T10:00",
+        "notiz": ""
     },
     {
         "name": "Urlaub anpassen",
@@ -266,11 +271,6 @@
     {
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
-        "notiz": ""
-    },
-    {
-        "name": "Bajrami Küche anfangen",
-        "ziel": "2026-01-05T10:00",
         "notiz": ""
     }
 ]
