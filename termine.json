@@ -20,6 +20,11 @@
         "notiz": "Marcel spachtelt am 06.01 den kompletten Boden"
     },
     {
+        "name": "Urlaub Kero",
+        "ziel": "2026-01-06T17:00",
+        "notiz": "Status abwarten"
+    },
+    {
         "name": "Irmi/Marcel Boden schleifen",
         "ziel": "2026-01-07T16:00",
         "notiz": "Irmi/Marcel schleifen am 07.01 den kompletten Boden"
@@ -234,8 +239,8 @@
         "notiz": ""
     },
     {
-        "name": "Urlaub Kero",
-        "ziel": "2026-01-06T17:00",
+        "name": "Abbait Kero",
+        "ziel": "2026-01-12T08:00",
         "notiz": "Status abwarten"
     }
 ]
