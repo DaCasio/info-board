@@ -10,11 +10,6 @@
         "notiz": "Irmi hat die Info, den Fliesenleger von Bajrami zusagen, dass die Sachen aus der Küche ins Bad zu verlagern sind, damit Irmi nicht weint und Marcel freie Bahn fürs verspachteln hat.\n\n[ ]Heizungen\n[ ]Boden spachteln/schleifen etc"
     },
     {
-        "name": "Marcel Boden spachteln Freitag und schleifen",
-        "ziel": "2026-01-09T16:00",
-        "notiz": "Marcel krank > Irman hilft und spachtelt/schleift am 09.01 den kompletten Boden"
-    },
-    {
         "name": "Urlaub Kero",
         "ziel": "2026-01-06T17:00",
         "notiz": "Status abwarten"
@@ -38,6 +33,11 @@
         "name": "Marcel PVC Zuschneiden / Verlegen",
         "ziel": "2026-01-09T08:00",
         "notiz": ""
+    },
+    {
+        "name": "Marcel Boden spachteln Freitag und schleifen",
+        "ziel": "2026-01-09T16:00",
+        "notiz": "Marcel krank > Irman hilft und spachtelt/schleift am 09.01 den kompletten Boden"
     },
     {
         "name": "Holz Dammers Fußleisten Küchenschränke",
@@ -262,5 +262,10 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
+    },
+    {
+        "name": "Marcel PVC sagt Bescheid",
+        "ziel": "2026-01-08T08:00",
+        "notiz": "Marcel sagt Bescheid wie es ihm geht, aber glaube nicht wie es geht. Marcel will noch zwei Leute mitbringen."
     }
 ]
