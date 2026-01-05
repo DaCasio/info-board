@@ -45,19 +45,9 @@
         "notiz": "Türen kürzen"
     },
     {
-        "name": "Boden spätestens drin",
-        "ziel": "2026-01-13T22:00",
-        "notiz": "Fußleisten danach?"
-    },
-    {
         "name": "Marcel PVC Zuschneiden / Verlegen",
         "ziel": "2026-01-12T08:00",
         "notiz": ""
-    },
-    {
-        "name": "Bajrami Fliesenleger Küche",
-        "ziel": "2026-01-12T08:00",
-        "notiz": "Küche Fliesenspiegel\n12-14.1."
     },
     {
         "name": "PVC",
@@ -73,6 +63,11 @@
         "name": "Türen Klaus Klettke treffen",
         "ziel": "2026-01-12T17:00",
         "notiz": "Türen lackieren\n12.-14.1."
+    },
+    {
+        "name": "Boden spätestens drin",
+        "ziel": "2026-01-13T22:00",
+        "notiz": "Fußleisten danach?"
     },
     {
         "name": "Bajrami Fliesenleger Bad",
