@@ -278,5 +278,10 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
+    },
+    {
+        "name": "PVC zuschneiden / verlegen alternativ",
+        "ziel": "2026-01-12T16:00",
+        "notiz": "Zuschneiden und Verlegen von PVC\nMarcel versichert dass der PVC spätestens heute liegen soll"
     }
 ]
