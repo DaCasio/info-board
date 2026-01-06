@@ -1,5 +1,10 @@
 [
     {
+        "name": "Entsperren",
+        "ziel": "2026-01-06T13:46",
+        "notiz": ""
+    },
+    {
         "name": "Herr Bajrami – Übergabe",
         "ziel": "2026-01-06T18:00",
         "notiz": "Silikon, Manschetten – Rest\n\n[ ] Übergabe: Keller- und Haustürschlüssel\n[ ] Übergabe: Mieterbestätigung\n[ ] Übergabe: Briefkasten / Halterung, Name fehlt"
@@ -255,8 +260,8 @@
         "notiz": ""
     },
     {
-        "name": "Entsperren",
-        "ziel": "2026-01-06T13:46",
+        "name": "Feierabend",
+        "ziel": "2026-01-06T17:00",
         "notiz": ""
     }
 ]
