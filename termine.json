@@ -253,5 +253,10 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
+    },
+    {
+        "name": "Entsperren",
+        "ziel": "2026-01-06T13:46",
+        "notiz": ""
     }
 ]
