@@ -1,91 +1,71 @@
 [
     {
-        "name": "Bajrami Küche soll fertig sein! wir schauen.",
-        "ziel": "2026-01-05T18:00",
-        "notiz": "Soll fertig sein\nVerspachtelt / Fliesen Wand Nische usw."
-    },
-    {
-        "name": "Bajrami Fliesenleger Bad",
-        "ziel": "2026-01-06T08:00",
-        "notiz": "Mit Bajrami klären\nBad Wände Silikon, Manschetten - Rest"
-    },
-    {
-        "name": "Urlaub Kero",
-        "ziel": "2026-01-06T17:00",
-        "notiz": ""
-    },
-    {
-        "name": "Irmi Rest Heizung",
-        "ziel": "2026-01-06T17:00",
-        "notiz": "[ ]Heizungen"
-    },
-    {
-        "name": "Bajrami - Übergabe & Fliesen - nachgefragt",
+        "name": "Herr Bajrami – Übergabe",
         "ziel": "2026-01-06T18:00",
-        "notiz": "Klären was Fliesenleger machen\n[ ]Übergabe: Keller- und Haustürschlüssel\n[ ]Übergabe: Mieterbestätigung\n[ ]Übergabe: Briefkasten / Halterung Name fehlt\n[ ]Fliesenleger: Küche Fliesen komplett durchziehen?\n[ ]Fliesenleger oder Klaus: Küche verspachteln / Kochnische?\n[x]Fliesenleger: Bad Wird Rest noch verputzt?\n[x]Fliesenleger: Bad verfugen / Lücken schließen / Silikon?\n[x]Fliesenleger: Bad Manschette?"
+        "notiz": "Silikon, Manschetten – Rest\n\n[ ] Übergabe: Keller- und Haustürschlüssel\n[ ] Übergabe: Mieterbestätigung\n[ ] Übergabe: Briefkasten / Halterung, Name fehlt"
+    },
+    {
+        "name": "Klaus vor Ort",
+        "ziel": "2026-01-06T18:15",
+        "notiz": "Schaut sich alles an."
+    },
+    {
+        "name": "Bodenverleger Ziberi",
+        "ziel": "2026-01-06T18:30",
+        "notiz": "Schaut sich alles an."
     },
     {
         "name": "Marcel PVC sagt Bescheid",
         "ziel": "2026-01-08T08:00",
-        "notiz": "Marcel sagt Bescheid wie es ihm geht.\nMarcel hat noch zwei Leute mitbringen / Einer könnte abspringen."
+        "notiz": "Marcel sagt Bescheid, wie es ihm geht.\nMarcel hat noch zwei Leute mitzubringen / einer könnte abspringen."
     },
     {
-        "name": "Marcel/Vertretung Boden spachteln Freitag und schleifen evt oder 12.1.",
+        "name": "Marcel / Vertretung: Boden spachteln",
         "ziel": "2026-01-09T16:00",
-        "notiz": "Marcel krank > Irman hilft und spachtelt/schleift am 09.01 den kompletten Boden / Planung\nOder spätestens 12.1."
+        "notiz": "Marcel krank → Irman hilft und spachtelt/schleift am 09.01. den kompletten Boden.\nOder spätestens 12.01."
     },
     {
-        "name": "Holz Dammers Fußleisten Küchenschränke",
+        "name": "Holz-Dammers Fußleisten Küchenschränke",
         "ziel": "2026-01-10T10:00",
         "notiz": "Für Küchenschränke"
     },
     {
-        "name": "Marcel / Vertretung Boden Leisten? oder 12.1.",
-        "ziel": "2026-01-10T10:00",
-        "notiz": "Weil Marcel krank ist kann sich das auf Montag verschieben"
+        "name": "PVC nach oben",
+        "ziel": "2026-01-10T16:00",
+        "notiz": ""
+    },
+    {
+        "name": "Boden schleifen fertig – spätestens",
+        "ziel": "2026-01-12T08:00",
+        "notiz": "Irmi/Marcel schleifen am 12.01. den kompletten Boden"
+    },
+    {
+        "name": "PVC zuschneiden / verlegen",
+        "ziel": "2026-01-12T16:00",
+        "notiz": "Zuschneiden und Verlegen von PVC"
+    },
+    {
+        "name": "Türen lackieren – Klaus Klettke",
+        "ziel": "2026-01-12T17:00",
+        "notiz": "Türen lackieren\n12.–14.01."
+    },
+    {
+        "name": "Bodenleisten",
+        "ziel": "2026-01-13T10:00",
+        "notiz": "Abhängig von Marcels Zustand"
     },
     {
         "name": "Thorsten Türen",
-        "ziel": "2026-01-10T10:00",
-        "notiz": "Türen kürzen"
+        "ziel": "2026-01-14T13:00",
+        "notiz": "Türen kürzen – abhängig vom Boden"
     },
     {
-        "name": "Marcel PVC Zuschneiden / Verlegen",
-        "ziel": "2026-01-12T08:00",
-        "notiz": ""
-    },
-    {
-        "name": "PVC",
-        "ziel": "2026-01-12T10:00",
-        "notiz": ""
-    },
-    {
-        "name": "Irmi/Marcel Boden schleifen fertig - spätestens",
-        "ziel": "2026-01-12T16:00",
-        "notiz": "Irmi/Marcel schleifen am 12.01 den kompletten Boden"
-    },
-    {
-        "name": "Türen Klaus Klettke treffen",
-        "ziel": "2026-01-12T17:00",
-        "notiz": "Türen lackieren\n12.-14.1."
-    },
-    {
-        "name": "Boden spätestens drin",
-        "ziel": "2026-01-13T22:00",
-        "notiz": "Fußleisten danach?"
-    },
-    {
-        "name": "Marcel / Vertretung Boden Leisten? spätestens 14.1",
-        "ziel": "2026-01-14T10:00",
-        "notiz": "Weil Marcel krank ist kann sich das auf Montag verschieben oder spätestens 14.1."
-    },
-    {
-        "name": "Küche Klaus Klettke",
+        "name": "Küche – Klaus Klettke",
         "ziel": "2026-01-15T17:00",
-        "notiz": "Türen lackieren\n15.-19.1."
+        "notiz": "Verspachteln und Rest\n15.–19.01."
     },
     {
-        "name": "Urlaub Casi ab 17 Uhr",
+        "name": "Urlaub Casi",
         "ziel": "2026-01-16T17:00",
         "notiz": "Status abwarten"
     },
@@ -95,13 +75,23 @@
         "notiz": ""
     },
     {
-        "name": "Klaus Küche Decke / Wände",
+        "name": "Küche Decke / Wände",
         "ziel": "2026-01-19T08:00",
-        "notiz": "19.-23.1"
+        "notiz": "19.–23.01."
     },
     {
         "name": "Urlaub Kero",
         "ziel": "2026-01-20T00:00",
+        "notiz": ""
+    },
+    {
+        "name": "Kero / Sabina - putzen",
+        "ziel": "2026-01-20T22:00",
+        "notiz": ""
+    },
+    {
+        "name": "Kero / Sabina - putzen",
+        "ziel": "2026-01-21T22:00",
         "notiz": ""
     },
     {
@@ -120,13 +110,14 @@
         "notiz": ""
     },
     {
-        "name": "Sperrmüll wird abgeholt",
+        "name": "Sperrmüll Abholung",
         "ziel": "2026-01-28T07:00",
         "notiz": ""
     },
     {
-        "name": "Fuck off Kleiststraße 💩🤢🤮",
-        "ziel": "2026-02-01T00:00"
+        "name": "Umzug abgeschlossen",
+        "ziel": "2026-02-01T00:00",
+        "notiz": ""
     },
     {
         "name": "Urlaub Ende",
@@ -149,7 +140,7 @@
         "notiz": ""
     },
     {
-        "name": "Dr Stickelbruck Reinigung",
+        "name": "Dr. Stickelbruck Reinigung",
         "ziel": "2026-03-11T09:00",
         "notiz": ""
     },
@@ -159,27 +150,27 @@
         "notiz": ""
     },
     {
-        "name": "Bülent Ceylan - Diktatürk",
+        "name": "Bülent Ceylan – Diktatürk",
         "ziel": "2026-03-22T19:00",
         "notiz": ""
     },
     {
-        "name": "Langes WE",
+        "name": "Langes Wochenende",
         "ziel": "2026-04-02T17:00",
         "notiz": ""
     },
     {
-        "name": "C1E Verlängern 21.6.26",
+        "name": "C1E verlängern",
         "ziel": "2026-04-06T12:00",
-        "notiz": ""
+        "notiz": "Frist 21.06.2026"
     },
     {
-        "name": "Dezor gekündigt-Abo trotzdem prüfen",
+        "name": "Dezor Abo prüfen",
         "ziel": "2026-04-07T16:44",
-        "notiz": ""
+        "notiz": "Gekündigt, trotzdem prüfen"
     },
     {
-        "name": "Langes WE",
+        "name": "Langes Wochenende",
         "ziel": "2026-04-30T17:00",
         "notiz": ""
     },
@@ -189,7 +180,7 @@
         "notiz": ""
     },
     {
-        "name": "Langes WE",
+        "name": "Langes Wochenende",
         "ziel": "2026-05-22T17:00",
         "notiz": ""
     },
@@ -214,7 +205,7 @@
         "notiz": ""
     },
     {
-        "name": "Urlaub Kanaren Check Konto 21-27.9. 1/2",
+        "name": "Urlaub Kanaren – Konto check 1/2",
         "ziel": "2026-08-01T12:00",
         "notiz": ""
     },
@@ -224,12 +215,12 @@
         "notiz": ""
     },
     {
-        "name": "Elster Zerti Mutti läuft aus",
+        "name": "Elster Zertifikat Mutti läuft aus",
         "ziel": "2026-08-31T08:37",
         "notiz": ""
     },
     {
-        "name": "Urlaub Kanaren Check Konto 21-27.9. 2/2",
+        "name": "Urlaub Kanaren – Konto check 2/2",
         "ziel": "2026-09-01T12:00",
         "notiz": ""
     },
@@ -249,17 +240,17 @@
         "notiz": ""
     },
     {
-        "name": "Termin - Christoph Knierim",
+        "name": "Termin Christoph Knierim",
         "ziel": "2027-09-13T12:00",
         "notiz": ""
     },
     {
-        "name": "Elster Zerti Casi läuft aus",
+        "name": "Elster Zertifikat Casi läuft aus",
         "ziel": "2028-03-24T09:24",
         "notiz": ""
     },
     {
-        "name": "Elster Zerti Kersti läuft aus",
+        "name": "Elster Zertifikat Kersti läuft aus",
         "ziel": "2028-09-11T21:04",
         "notiz": ""
     },
