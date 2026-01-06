@@ -20,6 +20,11 @@
         "notiz": "Schaut sich alles an.\nSachen auf Balkon stellen – Wohnung muss frei bleiben (Irmi benötigt alles picobello sauber)."
     },
     {
+        "name": "Küche Decke und Wände (Klaus Klettke)",
+        "ziel": "2026-01-07T17:00",
+        "notiz": "Verspachteln und Restarbeiten.\nZeitraum: 15.–19.01.\nHolzlatten / Tapetenreste auf Balkon"
+    },
+    {
         "name": "Marcel meldet Status PVC",
         "ziel": "2026-01-08T08:00",
         "notiz": "Rückmeldung Gesundheitszustand.\nEvtl. bringt Marcel zwei Leute mit, einer könnte abspringen."
@@ -73,11 +78,6 @@
         "name": "Türen kürzen – Thorsten",
         "ziel": "2026-01-14T13:00",
         "notiz": "Abhängig vom fertigen Boden."
-    },
-    {
-        "name": "Küche Decke und Wände (Klaus Klettke)",
-        "ziel": "2026-01-07T17:00",
-        "notiz": "Verspachteln und Restarbeiten.\nZeitraum: 15.–19.01."
     },
     {
         "name": "Urlaub Casi",
