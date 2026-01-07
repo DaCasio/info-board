@@ -278,5 +278,10 @@
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
         "notiz": ""
+    },
+    {
+        "name": "Ende Blocker Irmi",
+        "ziel": "2026-01-13T10:00",
+        "notiz": "Spätestens hier ist Feierabend, außer Fußleisten\nBoden muss liegen! Ansonsten Bajrami um Hilfe bitten"
     }
 ]
