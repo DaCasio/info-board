@@ -1,8 +1,8 @@
 [
     {
-        "name": "Klaus vor Ort (Begehung)",
-        "ziel": "2026-01-06T18:15",
-        "notiz": "Schaut sich alles an.\nSachen auf Balkon stellen – Wohnung muss frei bleiben (Irmi benötigt alles picobello sauber)."
+        "name": "Freiräumen",
+        "ziel": "2026-01-08T19:00",
+        "notiz": "Wohnung muss frei bleiben (Irmi benötigt alles picobello sauber)."
     },
     {
         "name": "Küche Decke und Wände (Klaus Klettke)",
@@ -160,11 +160,6 @@
         "notiz": ""
     },
     {
-        "name": "Eurowings – Konto prüfen",
-        "ziel": "2026-04-15T15:00",
-        "notiz": ""
-    },
-    {
         "name": "Bülent Ceylan – Diktatürk",
         "ziel": "2026-03-22T19:00",
         "notiz": ""
@@ -183,6 +178,11 @@
         "name": "Dezor Abo prüfen",
         "ziel": "2026-04-07T16:44",
         "notiz": "Gekündigt, trotzdem prüfen."
+    },
+    {
+        "name": "Eurowings – Konto prüfen",
+        "ziel": "2026-04-15T15:00",
+        "notiz": ""
     },
     {
         "name": "Langes Wochenende",
