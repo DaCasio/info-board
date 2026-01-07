@@ -12,7 +12,12 @@
     {
         "name": "Fliesenleger Bajrami 7-8.1 möglich",
         "ziel": "2026-01-07T17:00",
-        "notiz": "Zeitraum: 07.–08.01. - Ab 9.1. darf keiner rein wegen Irmi. - Sachen von Fliesenleger müssen raus und dürfen nciht im Weg sein.\nBad, Fugen etc."
+        "notiz": "Kero hat Bajrama bescheid gesagt - warten auf Rückmeldung\nZeitraum: 07.–08.01. - Ab 9.1. darf keiner rein wegen Irmi. - Sachen von Fliesenleger müssen raus und dürfen nciht im Weg sein.\nBad, Fugen etc."
+    },
+    {
+        "name": "Wohnung fahren",
+        "ziel": "2026-01-07T17:15",
+        "notiz": ""
     },
     {
         "name": "Übergabe – Herr Bajrami",
@@ -277,11 +282,6 @@
     {
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
-        "notiz": ""
-    },
-    {
-        "name": "Wohnung fahren",
-        "ziel": "2026-01-07T17:15",
         "notiz": ""
     }
 ]
