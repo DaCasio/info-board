@@ -5,6 +5,11 @@
         "notiz": ""
     },
     {
+        "name": "Bofrost",
+        "ziel": "2026-01-07T12:00",
+        "notiz": ""
+    },
+    {
         "name": "Küche Decke und Wände (Klaus Klettke)",
         "ziel": "2026-01-07T17:00",
         "notiz": "Verspachteln und Restarbeiten.\nZeitraum: 07.–08.01. - Ab 9.1. darf keiner rein wegen Irmi.\nHolzlatten / Tapetenreste auf Balkon."
@@ -21,7 +26,7 @@
     },
     {
         "name": "Übergabe – Herr Bajrami",
-        "ziel": "2026-01-07T18:00",
+        "ziel": "2026-01-08T18:00",
         "notiz": "Restarbeiten: Silikon, Manschetten\n[ ] Keller- und Haustürschlüssel\n[ ] Mieterbestätigung\n[ ] Briefkasten / Halterung, Name fehlt"
     },
     {
@@ -282,11 +287,6 @@
     {
         "name": "Darlehen Ende",
         "ziel": "2030-05-15T18:00",
-        "notiz": ""
-    },
-    {
-        "name": "Bofrost",
-        "ziel": "2026-01-07T12:00",
         "notiz": ""
     }
 ]
