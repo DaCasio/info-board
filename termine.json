@@ -1,10 +1,5 @@
 [
     {
-        "name": "Freiräumen",
-        "ziel": "2026-01-08T19:00",
-        "notiz": "Wohnung muss frei bleiben (Irmi benötigt alles picobello sauber)."
-    },
-    {
         "name": "Küche Decke und Wände (Klaus Klettke)",
         "ziel": "2026-01-07T17:00",
         "notiz": "Verspachteln und Restarbeiten.\nZeitraum: 07.–08.01. - Ab 9.1. darf keiner rein wegen Irmi.\nHolzlatten / Tapetenreste auf Balkon."
@@ -25,14 +20,14 @@
         "notiz": "Rückmeldung Gesundheitszustand.\nEvtl. bringt Marcel zwei Leute mit, einer könnte abspringen."
     },
     {
+        "name": "Freiräumen",
+        "ziel": "2026-01-08T19:00",
+        "notiz": "Wohnung muss frei bleiben (Irmi benötigt alles picobello sauber)."
+    },
+    {
         "name": "Boden spachteln / schleifen",
         "ziel": "2026-01-09T16:00",
         "notiz": "Geplant am 09.01.\nBei Ausfall von Marcel hilft Irman.\nSpätester Termin: 12.01.\nKleberreste Küche hat Marcel nichts zu gesagt, Ergo macht er das wie besprochen."
-    },
-    {
-        "name": "Wochenende",
-        "ziel": "2026-01-09T17:00",
-        "notiz": ""
     },
     {
         "name": "Boden Arbeitszimmer fertig",
