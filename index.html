@@ -23,12 +23,19 @@
             border: 1px solid rgba(0, 202, 227, 0.3); border-radius: 12px; 
             padding: 15px; margin-bottom: 20px; box-shadow: 0 0 25px rgba(0,0,0,0.6);
         }
+
+        /* NEU: Flex-Layout für die obere Zeile */
+        .input-row { display: flex; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+        .input-row input#t-name { flex: 2; min-width: 200px; }
+        .input-row input#t-tags { flex: 1; min-width: 150px; }
+        .input-row input#t-date { flex: 1; min-width: 180px; }
         
         .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
         .tool-btn:hover { background: var(--accent); color: black; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.95em; }
+        .input-row input { margin-bottom: 0; } /* Margin in der Zeile entfernen */
         textarea { min-height: 80px; font-family: inherit; resize: vertical; }
 
         .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px; }
@@ -91,11 +98,14 @@
         
         <div class="card">
             <input type="hidden" id="edit-id" value="-1">
-            <input type="text" id="t-name" placeholder="Titel des Termins">
-            <input type="text" id="t-tags" placeholder="Tags (Wohnung, Arbeit, Privat...) mit Komma trennen">
-            <input type="datetime-local" id="t-date">
             
-            <div class="toolbar">
+            <div class="input-row">
+                <input type="text" id="t-name" placeholder="Titel des Termins">
+                <input type="text" id="t-tags" placeholder="Tags (Wohnung, Arbeit...)">
+                <input type="datetime-local" id="t-date">
+            </div>
+            
+            <div class="toolbar" style="margin-top: 10px;">
                 <button class="tool-btn" onclick="wrapText('**','**')">B</button>
                 <button class="tool-btn" onclick="wrapText('--','--')">S</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ff4d4d]','[/color]')" style="color:#ff4d4d">ROT</button>
@@ -112,14 +122,13 @@
             <button class="btn-main" id="save-btn" onclick="save()">TERMIN SPEICHERN</button>
         </div>
 
-        <div id="filter-display" class="filter-bar">
-            </div>
-
+        <div id="filter-display" class="filter-bar"></div>
         <div id="counter-display" class="termin-counter">AKTIVE TERMINE: 0</div>
         <div id="liste">Lade Daten aus Orbit...</div>
     </div>
 
 <script>
+    // ... (Gesamter JavaScript-Teil bleibt identisch zum Original)
     const P_ENC = "MDUwOA==";
     const t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
     const t2 = "_SfPbmFFMu5S4O8kX6AdanuVfPsNY6k84nVv35qdNOgAV5OKWJ5NnW3tS9qH";
@@ -144,11 +153,12 @@
 
     async function load() {
         try {
-            const res = await fetch(G_URL, { headers: { 'Authorization': `token ${t1+t2}` } });
+            const res = await fetch(G_URL, { headers: { 'Authorization': `token ${t1+t2}` }, cache: "no-store" });
             if(res.ok) {
                 const j = await res.json();
                 currentSha = j.sha;
-                data = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0))));
+                const raw = new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0)));
+                data = JSON.parse(raw);
                 render();
             }
         } catch(e) { console.error("Sync-Fehler", e); }
@@ -202,7 +212,6 @@
     function updateFilterBar() {
         const allTags = new Set();
         data.forEach(t => { if(t.tags) t.tags.forEach(tag => allTags.add(tag)); });
-        
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
         allTags.forEach(tag => {
             fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`;
@@ -210,10 +219,7 @@
         document.getElementById('filter-display').innerHTML = fHtml;
     }
 
-    function setFilter(tag) {
-        activeFilter = tag;
-        render();
-    }
+    function setFilter(tag) { activeFilter = tag; render(); }
 
     function format(txt, tIdx) {
         if(!txt) return "";
@@ -300,10 +306,7 @@
               id = document.getElementById('edit-id').value;
               
         if(!name || !date) return;
-        
-        // Tags verarbeiten
         const tags = tagsRaw.split(',').map(s => s.trim().toUpperCase()).filter(s => s !== "");
-        
         let fullNote = note;
         document.querySelectorAll('.cb-edit-row').forEach(row => {
             const txt = row.querySelector('input[type="text"]').value, chk = row.querySelector('input[type="checkbox"]').checked;
@@ -312,9 +315,7 @@
         
         const entry = { name, ziel: date, notiz: fullNote.trim(), tags: tags };
         if(id === "-1") data.push(entry); else data[id] = entry;
-        
         saveToGit();
-        // Reset Form
         document.getElementById('edit-id').value = "-1"; 
         document.getElementById('cb-list').innerHTML = ""; 
         document.getElementById('t-note').value = ""; 
