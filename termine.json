@@ -91,15 +91,6 @@
         ]
     },
     {
-        "name": "Türen lackieren – Klaus Klettke",
-        "start": "2026-01-14T17:00",
-        "ziel": "2026-01-16T17:00",
-        "notiz": "Zeitraum: 14.–16.01.",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
         "name": "Fliesenleger Bajrami",
         "ziel": "2026-01-14T17:00",
         "notiz": "Zeitraum: 14.–17.01.\nBad, Fugen etc.",
@@ -116,8 +107,18 @@
         ]
     },
     {
-        "name": "Urlaub Casi",
+        "name": "Türen lackieren – Klaus Klettke",
+        "start": "2026-01-14T17:00",
         "ziel": "2026-01-16T17:00",
+        "notiz": "Zeitraum: 14.–16.01.",
+        "tags": [
+            "WOHNUNG"
+        ]
+    },
+    {
+        "name": "Urlaub Casi",
+        "start": "2026-01-16T17:00",
+        "ziel": "2026-02-01T22:00",
         "notiz": "",
         "tags": [
             "URLAUB"
