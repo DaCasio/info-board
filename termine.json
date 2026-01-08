@@ -1,14 +1,5 @@
 [
     {
-        "name": "test",
-        "start": "2026-01-08T18:34",
-        "ziel": "2026-01-08T18:35",
-        "notiz": "test",
-        "tags": [
-            "TEST"
-        ]
-    },
-    {
         "name": "test (Kopie)",
         "start": null,
         "ziel": "2026-01-08T18:35",
