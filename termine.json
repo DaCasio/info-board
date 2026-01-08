@@ -80,14 +80,6 @@
         ]
     },
     {
-        "name": "PANO auf 10.2.17",
-        "ziel": "2026-01-13T18:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "Bodenleisten",
         "ziel": "2026-01-13T10:00",
         "notiz": "Abhängig vom Zustand von Marcel.\nKann später gemacht werden.\nZeitraum noch nicht final.",
@@ -96,11 +88,19 @@
         ]
     },
     {
-        "name": "Ende Blocker Irmi",
+        "name": "Ende Blocker Irmi - PVC Deadline",
         "ziel": "2026-01-13T10:00",
         "notiz": "Spätestens hier ist Feierabend, außer Fußleisten\nBoden muss liegen! Ansonsten Bajrami um Hilfe bitten",
         "tags": [
             "WOHNUNG"
+        ]
+    },
+    {
+        "name": "PANO auf 10.2.17",
+        "ziel": "2026-01-13T18:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
         ]
     },
     {
