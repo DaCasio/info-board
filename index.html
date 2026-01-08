@@ -24,57 +24,27 @@
             padding: 15px; margin-bottom: 20px; box-shadow: 0 0 25px rgba(0,0,0,0.6);
         }
 
-        .input-row { 
-            display: flex; 
-            gap: 10px; 
-            margin-bottom: 10px; 
-            flex-wrap: wrap; 
-        }
-        
+        .input-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
         .input-row input#t-name { flex: 2; min-width: 250px; }
         .input-row input#t-tags { flex: 1; min-width: 150px; }
         
-        /* Datums-Gruppe mit Beschriftung */
-        .date-group { 
-            flex: 3; 
-            display: flex; 
-            gap: 8px; 
-            min-width: 320px;
-        }
-        
-        .date-item {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
+        .date-group { flex: 3; display: flex; gap: 8px; min-width: 320px; }
+        .date-item { flex: 1; display: flex; flex-direction: column; }
+        .date-label { font-size: 0.7em; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; font-weight: bold; }
+        .required-star { color: #ff4d4d; }
 
-        .date-label {
-            font-size: 0.7em;
-            color: var(--accent);
-            text-transform: uppercase;
-            margin-bottom: 4px;
-            letter-spacing: 1px;
-            font-weight: bold;
-        }
-
-        .required-star { color: #ff4d4d; margin-left: 2px; }
-        
-        .date-group input { width: 100%; }
-        
-        .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
+        .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
         .tool-btn:hover { background: var(--accent); color: black; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.95em; }
-        .input-row input { margin-bottom: 0; }
         textarea { min-height: 80px; font-family: inherit; resize: vertical; }
 
         .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .tag-pill { background: #333; color: #aaa; padding: 4px 10px; border-radius: 20px; font-size: 0.8em; cursor: pointer; border: 1px solid #444; transition: 0.2s; }
         .tag-pill.active { background: var(--accent); color: black; border-color: var(--accent); }
-        .tag-pill:hover { border-color: var(--accent); }
 
-        .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase; }
+        .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; text-transform: uppercase; }
 
         .termin-card { 
             background: rgba(30,30,30,0.85); backdrop-filter: blur(4px);
@@ -83,33 +53,26 @@
         }
 
         .row-title { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-        .titel-box { font-size: 1.3em; font-weight: bold; flex: 1; min-width: 0; word-wrap: break-word; }
-        .actions-box { display: flex; gap: 6px; margin-left: 10px; }
+        .titel-box { font-size: 1.3em; font-weight: bold; flex: 1; }
+        .actions-box { display: flex; gap: 6px; }
 
         .tag-display-container { display: flex; gap: 5px; margin-bottom: 8px; flex-wrap: wrap; }
         .tag-mini { font-size: 0.7em; background: rgba(0, 202, 227, 0.2); color: var(--accent); padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(0, 202, 227, 0.3); }
 
         .row-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
-        .datum-box { font-size: 0.85em; color: #aaa; line-height: 1.4; }
+        .datum-box { font-size: 0.85em; color: #aaa; }
         .countdown-box { 
             background: rgba(0, 202, 227, 0.15); padding: 4px 10px; border-radius: 4px; 
             font-family: 'Courier New', monospace; font-weight: bold; color: var(--accent); 
             font-size: 1.05em; border: 1px solid rgba(0, 202, 227, 0.3); text-align: center; min-width: 140px;
         }
 
-        .row-notiz { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 10px; }
-        .notiz-display { font-size: 0.95em; line-height: 1.5; color: #ddd; white-space: pre-wrap; }
-
-        .btn-main { background: var(--accent); color: black; border: none; padding: 14px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1em; text-transform: uppercase; margin-top: 10px; transition: 0.2s; }
-        .btn-main:hover { opacity: 0.8; }
-        .btn-main:disabled { background: #555; cursor: wait; }
-
-        .btn-action { padding: 6px 10px; border-radius: 4px; border: none; cursor: pointer; font-size: 0.9em; }
+        .btn-main { background: var(--accent); color: black; border: none; padding: 14px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; text-transform: uppercase; margin-top: 10px; }
+        .btn-action { padding: 6px 10px; border-radius: 4px; border: none; cursor: pointer; }
         
         .cb-line { cursor: pointer; display: block; padding: 2px 0; }
         .cb-line.done { text-decoration: line-through; color: #777; }
         
-        /* Zustandsfarben */
         .faellig { color: #ff4d4d !important; border-color: rgba(255, 77, 77, 0.4) !important; background: rgba(255, 77, 77, 0.1) !important; }
         .laufend { color: #ffcc00 !important; border-color: rgba(255, 204, 0, 0.4) !important; background: rgba(255, 204, 0, 0.1) !important; }
 
@@ -118,7 +81,6 @@
         
         @media (max-width: 600px) {
             .date-group { flex-direction: column; min-width: 100%; }
-            .input-row input#t-name, .input-row input#t-tags { min-width: 100%; }
         }
     </style>
 </head>
@@ -141,27 +103,29 @@
             
             <div class="input-row">
                 <input type="text" id="t-name" placeholder="Titel des Termins">
-                <input type="text" id="t-tags" placeholder="Tags (kommagetrennt)">
-                
+                <input type="text" id="t-tags" placeholder="Tags">
                 <div class="date-group">
                     <div class="date-item">
-                        <label class="date-label">Start (Optional)</label>
+                        <span class="date-label">Start (Optional)</span>
                         <input type="datetime-local" id="t-start">
                     </div>
                     <div class="date-item">
-                        <label class="date-label">Fälligkeit / Ende <span class="required-star">*</span></label>
+                        <span class="date-label">Fälligkeit / Ende <span class="required-star">*</span></span>
                         <input type="datetime-local" id="t-date">
                     </div>
                 </div>
             </div>
             
-            <div class="toolbar" style="margin-top: 10px;">
+            <div class="toolbar">
                 <button class="tool-btn" onclick="wrapText('**','**')">B</button>
                 <button class="tool-btn" onclick="wrapText('--','--')">S</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ff4d4d]','[/color]')" style="color:#ff4d4d">ROT</button>
                 <button class="tool-btn" onclick="wrapText('[color:#00ff00]','[/color]')" style="color:#00ff00">GRÜN</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ffff00]','[/color]')" style="color:#ffff00">GELB</button>
+                <button class="tool-btn" onclick="wrapText('[color:#00cae3]','[/color]')" style="color:#00cae3">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
+                <button class="tool-btn" onclick="document.getElementById('ics-upload').click()">+ ICS IMPORT</button>
+                <input type="file" id="ics-upload" accept=".ics" style="display:none" onchange="importICS(this)">
             </div>
             
             <textarea id="t-note" placeholder="Notizen..."></textarea>
@@ -326,7 +290,7 @@
               tagsRaw = document.getElementById('t-tags').value,
               id = document.getElementById('edit-id').value;
               
-        if(!name || !ziel) { alert("Bitte Titel und Fälligkeitsdatum angeben."); return; }
+        if(!name || !ziel) { alert("Bitte Titel und Enddatum angeben."); return; }
         
         saveBtn.disabled = true;
         saveBtn.innerText = "SYNCHRONISIERE...";
@@ -371,6 +335,30 @@
                 render();
             }
         } catch(e) { alert("Fehler beim Speichern im Orbit."); }
+    }
+
+    function importICS(input) {
+        const file = input.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const content = e.target.result;
+            const summary = content.match(/SUMMARY:(.*)/)?.[1] || "ICS Import";
+            const dtStartMatch = content.match(/DTSTART[:;](?:VALUE=DATE:)?(\d{8}T\d{6}|\d{8})/);
+            const dtEndMatch = content.match(/DTEND[:;](?:VALUE=DATE:)?(\d{8}T\d{6}|\d{8})/);
+            
+            const parseDate = (match) => {
+                if (!match) return "";
+                const d = match[1];
+                return `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,8)}T${d.slice(9,11) || '00'}:${d.slice(11,13) || '00'}`;
+            };
+
+            document.getElementById('t-name').value = summary.trim();
+            document.getElementById('t-start').value = parseDate(dtStartMatch);
+            document.getElementById('t-date').value = parseDate(dtEndMatch);
+            alert("ICS Daten geladen. Bitte prüfen und speichern.");
+        };
+        reader.readAsText(file);
     }
 
     function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
