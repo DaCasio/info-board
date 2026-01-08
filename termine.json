@@ -66,20 +66,20 @@
         ]
     },
     {
+        "name": "Ende Blocker Irmi - PVC Deadline",
+        "ziel": "2026-01-13T20:00",
+        "notiz": "Spätestens hier ist Feierabend, außer Fußleisten\nBoden muss liegen! Ansonsten Bajrami um Hilfe bitten",
+        "tags": [
+            "WOHNUNG"
+        ]
+    },
+    {
         "name": "Bereitschaft ",
         "start": "2026-01-13T18:00",
         "ziel": "2026-01-14T06:00",
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
-    },
-    {
-        "name": "Ende Blocker Irmi - PVC Deadline",
-        "ziel": "2026-01-13T20:00",
-        "notiz": "Spätestens hier ist Feierabend, außer Fußleisten\nBoden muss liegen! Ansonsten Bajrami um Hilfe bitten",
-        "tags": [
-            "WOHNUNG"
         ]
     },
     {
@@ -92,7 +92,8 @@
     },
     {
         "name": "Türen lackieren – Klaus Klettke",
-        "ziel": "2026-01-14T17:00",
+        "start": "2026-01-14T17:00",
+        "ziel": "2026-01-16T17:00",
         "notiz": "Zeitraum: 14.–16.01.",
         "tags": [
             "WOHNUNG"
