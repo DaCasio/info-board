@@ -16,6 +16,14 @@
         ]
     },
     {
+        "name": "Übergabe – Herr Bajrami",
+        "ziel": "2026-01-08T12:00",
+        "notiz": "Restarbeiten: Silikon, Manschetten\n[ ] Keller- und Haustürschlüssel\n[ ] Mieterbestätigung\n[ ] Briefkasten / Halterung, Name fehlt",
+        "tags": [
+            "WOHNUNG"
+        ]
+    },
+    {
         "name": "Küche Decke und Wände (Klaus Klettke)",
         "ziel": "2026-01-08T17:00",
         "notiz": "Zeitraum: 07.–08.01. - Ab 9.1. darf keiner rein wegen Irmi.\nStreichen & Tapezieren",
@@ -26,15 +34,7 @@
     {
         "name": "Wohnung fahren / Freiräumen",
         "ziel": "2026-01-08T17:15",
-        "notiz": "Wohnung muss frei bleiben (Irmi benötigt alles picobello sauber).",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Übergabe – Herr Bajrami",
-        "ziel": "2026-01-08T12:00",
-        "notiz": "Restarbeiten: Silikon, Manschetten\n[ ] Keller- und Haustürschlüssel\n[ ] Mieterbestätigung\n[ ] Briefkasten / Halterung, Name fehlt",
+        "notiz": "Wohnung muss frei bleiben (Irmi benötigt alles picobello sauber). Irmis alter PVC liegt noch in der Küche, was ist damit? Sollte doch entsorgt werden und hat er auch bezahlt bekommen.",
         "tags": [
             "WOHNUNG"
         ]
