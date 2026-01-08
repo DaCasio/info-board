@@ -492,5 +492,13 @@
         "tags": [
             "FINANZEN"
         ]
+    },
+    {
+        "name": "1 * Bereitschaft Ende",
+        "ziel": "2026-01-14T06:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
