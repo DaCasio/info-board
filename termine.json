@@ -295,7 +295,8 @@
         ]
     },
     {
-        "name": "Dezor Abo prüfen",
+        "name": "Dezor Abo Ende",
+        "start": null,
         "ziel": "2026-04-07T16:44",
         "notiz": "Gekündigt, trotzdem prüfen.",
         "tags": [
