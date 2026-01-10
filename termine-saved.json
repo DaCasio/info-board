@@ -1,51 +1,37 @@
 [
     {
-        "name": "Boden spachteln / schleifen",
-        "ziel": "2026-01-09T16:00",
-        "notiz": "Marcel wie geplant am 09.01.\nBei Ausfall von Marcel hilft Irman, ist aber jetzt auf anderer Baustelle.\nSpätester Termin: 12.01.\nKleberreste Küche hat Marcel nichts zu gesagt, Ergo macht er das wie besprochen.",
+        "name": "test",
+        "start": "2026-01-10T10:45",
+        "ziel": "2026-01-10T10:46",
+        "notiz": "**dick**\n--durchgestrichen--\n[color:#ff4d4d]rot[/color]\n[color:#00ff00]grün[/color]\n[color:#ffff00]gelb[/color]\n[color:#00cae3]blau[/color]\n\n[ ]checkbox",
         "tags": [
-            "WOHNUNG"
+            "TEST"
         ]
     },
     {
         "name": "Marcel PVC",
-        "ziel": "2026-01-10T08:00",
-        "notiz": "Marcel schneidet PVC unten zu und verlegt oben.",
+        "start": "2026-01-10T08:00",
+        "ziel": "2026-01-10T17:00",
+        "notiz": "Marcel schneidet PVC unten zu und verlegt oben.\nWohnzimmer lieg & Rest wird wahrscheinlich heute fertig.",
         "tags": [
             "WOHNUNG"
         ]
     },
     {
-        "name": "Fußleisten Küchenschränke – Holz Dammers",
-        "ziel": "2026-01-10T10:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Marcel PVC Übergabe",
-        "ziel": "2026-01-10T18:00",
-        "notiz": "Wir schauen vorbei\nEinfach ziwschendurch nachfragen",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "PVC verlegen - PreDeadline",
-        "ziel": "2026-01-11T17:00",
-        "notiz": "Zuschneiden und Verlegen von PVC.\nMarcel versichert, dass der PVC spätestens heute liegt.",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Ende Bereitschaft",
+        "name": "Bereitschaft",
+        "start": "2026-01-06T18:00",
         "ziel": "2026-01-12T06:00",
         "notiz": "",
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Fußleiste Deadline",
+        "start": "2026-01-12T08:00",
+        "ziel": "2026-01-19T20:00",
+        "notiz": "",
+        "tags": []
     },
     {
         "name": "Bodenleisten - Marcel - Fußleisten Pre-Deadline",
@@ -64,23 +50,8 @@
         ]
     },
     {
-        "name": "1 * Bereitschaft ",
-        "ziel": "2026-01-13T18:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
-        "name": "Ende Blocker Irmi - PVC Deadline",
-        "ziel": "2026-01-13T20:00",
-        "notiz": "Spätestens hier ist Feierabend, außer Fußleisten\nBoden muss liegen! Ansonsten Bajrami um Hilfe bitten",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "1 * Bereitschaft Ende",
+        "name": "Bereitschaft ",
+        "start": "2026-01-13T18:00",
         "ziel": "2026-01-14T06:00",
         "notiz": "",
         "tags": [
@@ -88,8 +59,27 @@
         ]
     },
     {
+        "name": "Blocker Irmi",
+        "start": "2026-01-09T08:00",
+        "ziel": "2026-01-13T20:00",
+        "notiz": "Spätestens hier ist Feierabend, außer Fußleisten\nBoden muss liegen! Ansonsten Bajrami um Hilfe bitten",
+        "tags": [
+            "WOHNUNG"
+        ]
+    },
+    {
+        "name": "Fliesenleger Bajrami",
+        "start": "2026-01-14T08:00",
+        "ziel": "2026-01-17T17:00",
+        "notiz": "Zeitraum: 14.–17.01.\nBad, Fugen etc.",
+        "tags": [
+            "WOHNUNG"
+        ]
+    },
+    {
         "name": "Türen kürzen – Thorsten",
-        "ziel": "2026-01-14T13:00",
+        "start": null,
+        "ziel": "2026-01-14T10:00",
         "notiz": "Abhängig vom fertigen Boden.",
         "tags": [
             "WOHNUNG"
@@ -97,16 +87,9 @@
     },
     {
         "name": "Türen lackieren – Klaus Klettke",
-        "ziel": "2026-01-14T17:00",
+        "start": "2026-01-14T17:00",
+        "ziel": "2026-01-16T17:00",
         "notiz": "Zeitraum: 14.–16.01.",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Fliesenleger Bajrami",
-        "ziel": "2026-01-14T17:00",
-        "notiz": "Zeitraum: 14.–17.01.\nBad, Fugen etc.",
         "tags": [
             "WOHNUNG"
         ]
@@ -121,6 +104,7 @@
     },
     {
         "name": "Urlaub Casi",
+        "start": null,
         "ziel": "2026-01-16T17:00",
         "notiz": "",
         "tags": [
@@ -136,22 +120,9 @@
         ]
     },
     {
-        "name": "Küche Decke und Wände",
-        "ziel": "2026-01-19T08:00",
-        "notiz": "Zeitraum: 19.–23.01.",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Fußleiste Deadline",
-        "ziel": "2026-01-19T20:00",
-        "notiz": "",
-        "tags": []
-    },
-    {
         "name": "Urlaub Kero",
-        "ziel": "2026-01-20T00:00",
+        "start": null,
+        "ziel": "2026-01-19T18:00",
         "notiz": "",
         "tags": [
             "URLAUB"
@@ -159,22 +130,7 @@
     },
     {
         "name": "Putzen – Kero & Sabina",
-        "ziel": "2026-01-20T22:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Kätzken zum Helge",
-        "ziel": "2026-01-21T20:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Putzen – Kero & Sabina",
+        "start": "2026-01-20T08:00",
         "ziel": "2026-01-21T22:00",
         "notiz": "",
         "tags": [
@@ -182,11 +138,30 @@
         ]
     },
     {
+        "name": "Kätzken zum Helge",
+        "start": "2026-01-21T20:00",
+        "ziel": "2026-01-23T19:59",
+        "notiz": "",
+        "tags": [
+            "WOHNUNG"
+        ]
+    },
+    {
         "name": "Umzug",
-        "ziel": "2026-01-22T08:00",
+        "start": "2026-01-22T08:00",
+        "ziel": "2026-01-23T15:00",
         "notiz": "22-23.1\n\nGucken dass der Scherge nicht hinterherfährt\n**Protokoll Vorfall Verfolgung/Nachstellung**\n\nDatum/Uhrzeit: \nOrt: \nBeschreibung: (Kennzeichen, Person, Verhalten)\nZeugen: \nFotos/Video: \n\n1. Polizei anrufen (110): „Verdacht Nachstellung § 238 StGB\"\n2. Anwältin informieren: Unterlassungsklage vorbereiten.\n3. Strafanzeige stellen.\n\n**Vertraulichkeitsvereinbarung – Umzug am 14.01.2026**\n\nSehr geehrte Damen und Herren,\n\nwir beauftragen Sie mit unserem Umzug von der ***straße **, *12345* *Ort* zum [Zielort nicht angeben].\n\n**Wichtige Datenschutzhinweise:**\n1. Der Zielort ist streng vertraulich. Geben Sie **keine Auskunft** über Zieladresse, Route oder Umzugszeit an Dritte (Nachbarn, Vermieter, Mitfahrer).\n2. Bei Nachfragen oder Beobachtung durch Dritte (z.B. Mitmieter, Nachbarn) bitte Sie diese höflich abzuweisen mit: „Datenschutz – keine Auskunft möglich.\"\n3. Bei Belästigung oder Verfolgung melden Sie dies umgehend an uns (Tel: [Ihre Nummer]).\n\nVielen Dank!\n[Unterschrift + Datum]",
         "tags": [
             "WOHNUNG"
+        ]
+    },
+    {
+        "name": "Dayflat Telekom",
+        "start": "2026-01-22T20:00",
+        "ziel": "2026-01-26T07:59",
+        "notiz": "",
+        "tags": [
+            "INTERNET"
         ]
     },
     {
@@ -199,7 +174,8 @@
     },
     {
         "name": "Telekom VDSL Umschaltung",
-        "ziel": "2026-01-26T08:00",
+        "start": "2026-01-26T08:00",
+        "ziel": "2026-01-26T16:00",
         "notiz": "",
         "tags": [
             "WOHNUNG"
@@ -286,7 +262,17 @@
         ]
     },
     {
+        "name": "Dezor Abo Ende prüfen",
+        "start": null,
+        "ziel": "2026-04-06T09:00",
+        "notiz": "Gekündigt, trotzdem prüfen.",
+        "tags": [
+            "TERMINE"
+        ]
+    },
+    {
         "name": "C1E verlängern",
+        "start": null,
         "ziel": "2026-04-06T12:00",
         "notiz": "Frist: 21.06.2026",
         "tags": [
@@ -294,9 +280,10 @@
         ]
     },
     {
-        "name": "Dezor Abo prüfen",
+        "name": "Dezor Abo Ende",
+        "start": null,
         "ziel": "2026-04-07T16:44",
-        "notiz": "Gekündigt, trotzdem prüfen.",
+        "notiz": "Gekündigt.",
         "tags": [
             "TERMINE"
         ]
