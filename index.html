@@ -43,6 +43,7 @@
         .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .tag-pill { background: #333; color: #aaa; padding: 4px 10px; border-radius: 20px; font-size: 0.8em; cursor: pointer; border: 1px solid #444; transition: 0.2s; }
         .tag-pill.active { background: var(--accent); color: black; border-color: var(--accent); }
+        .tag-pill.arch-pill { border-color: #666; }
 
         .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; text-transform: uppercase; }
 
@@ -107,7 +108,7 @@
             
             <div class="input-row">
                 <input type="text" id="t-name" placeholder="Titel des Termins">
-                <input type="text" id="t-tags" placeholder="Tags">
+                <input type="text" id="t-tags" placeholder="Tags (z.B. ARCHIV, Arbeit...)">
                 <div class="date-group">
                     <div class="date-item">
                         <span class="date-label">Start (Optional)</span>
@@ -175,7 +176,7 @@
     }
 
     function getCountdown(ms) {
-        if (ms < 0) return null; // Gebe null zurück, wenn abgelaufen
+        if (ms < 0) return null;
         const d = Math.floor(ms/86400000).toString().padStart(2,'0');
         const hh = Math.floor((ms%86400000)/3600000).toString().padStart(2,'0');
         const mm = Math.floor((ms%3600000)/60000).toString().padStart(2,'0');
@@ -185,8 +186,21 @@
 
     function render() {
         const jetzt = new Date();
-        const filteredData = activeFilter === "ALL" ? data : data.filter(t => t.tags && t.tags.includes(activeFilter));
-        document.getElementById('counter-display').innerText = `AKTIVE TERMINE: ${filteredData.length}`;
+        
+        // Archiv-Logik Filterung
+        let filteredData;
+        if (activeFilter === "ALL") {
+            // Zeige alles, außer ARCHIV
+            filteredData = data.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
+        } else if (activeFilter === "ARCHIV") {
+            // Zeige NUR Archiv
+            filteredData = data.filter(t => t.tags && t.tags.includes("ARCHIV"));
+        } else {
+            // Zeige spezifischen Tag (auch wenn ARCHIV dabei wäre, aber ARCHIV wird oben separat behandelt)
+            filteredData = data.filter(t => t.tags && t.tags.includes(activeFilter));
+        }
+
+        document.getElementById('counter-display').innerText = `${activeFilter === 'ARCHIV' ? 'ARCHIVIERTE' : 'AKTIVE'} TERMINE: ${filteredData.length}`;
         updateFilterBar();
 
         filteredData.sort((a, b) => {
@@ -212,7 +226,6 @@
                 displayTime = getCountdown(ziel - jetzt);
                 cssClass = start ? "laufend" : ""; 
             } else {
-                // Hier ist der Termin fällig
                 statusText = ""; 
                 displayTime = "FÄLLIG"; 
                 cssClass = "faellig";
@@ -220,8 +233,6 @@
 
             const tagsHtml = t.tags ? t.tags.map(tag => `<span class="tag-mini">${tag}</span>`).join('') : '';
             const startDisplay = start ? `Start: ${start.toLocaleString('de-DE', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'})} Uhr<br>` : '';
-
-            // Wenn "FÄLLIG" angezeigt wird, machen wir die Schrift etwas größer, da der Status-Label-Text oben fehlt
             const timeStyle = displayTime === "FÄLLIG" ? "font-size: 1.2em; padding: 10px 0;" : "";
 
             h += `
@@ -245,14 +256,27 @@
                 <div class="row-notiz"><div class="notiz-display">${format(t.notiz, originalIndex)}</div></div>
             </div>`;
         });
-        document.getElementById('liste').innerHTML = h || "<p style='text-align:center;'>Keine Termine vorhanden!</p>";
+        document.getElementById('liste').innerHTML = h || "<p style='text-align:center;'>Keine Termine in dieser Ansicht vorhanden!</p>";
     }
 
     function updateFilterBar() {
         const allTags = new Set();
         data.forEach(t => { if(t.tags) t.tags.forEach(tag => allTags.add(tag)); });
+        
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
-        allTags.forEach(tag => fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`);
+        
+        // Normale Tags (ohne ARCHIV)
+        allTags.forEach(tag => {
+            if(tag !== "ARCHIV") {
+                fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`;
+            }
+        });
+
+        // Archiv immer am Ende, falls vorhanden
+        if(allTags.has("ARCHIV")) {
+            fHtml += `<span class="tag-pill arch-pill ${activeFilter === 'ARCHIV' ? 'active' : ''}" onclick="setFilter('ARCHIV')">📁 ARCHIV</span>`;
+        }
+        
         document.getElementById('filter-display').innerHTML = fHtml;
     }
 
@@ -369,13 +393,11 @@
             const summary = content.match(/SUMMARY:(.*)/)?.[1] || "ICS Import";
             const dtStartMatch = content.match(/DTSTART[:;](?:VALUE=DATE:)?(\d{8}T\d{6}|\d{8})/);
             const dtEndMatch = content.match(/DTEND[:;](?:VALUE=DATE:)?(\d{8}T\d{6}|\d{8})/);
-            
             const parseDate = (match) => {
                 if (!match) return "";
                 const d = match[1];
                 return `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,8)}T${d.slice(9,11) || '00'}:${d.slice(11,13) || '00'}`;
             };
-
             document.getElementById('t-name').value = summary.trim();
             document.getElementById('t-start').value = parseDate(dtStartMatch);
             document.getElementById('t-date').value = parseDate(dtEndMatch);
