@@ -106,7 +106,6 @@
                     const bytes = new Uint8Array(str.length);
                     for (let i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
                     termineDaten = JSON.parse(new TextDecoder().decode(bytes));
-                    termineDaten.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
                     updateAnzeige();
                 }
             } catch (e) { console.error("Sync Fehler"); }
@@ -150,6 +149,15 @@
             const counterDiv = document.getElementById('counter-display');
             const jetzt = new Date();
             counterDiv.innerText = `AKTIVE TERMINE: ${termineDaten.length}`;
+
+            // Sortierung wie im Monitor
+            termineDaten.sort((a, b) => {
+                const zielA = new Date(a.ziel), startA = a.start ? new Date(a.start) : null;
+                const zielB = new Date(b.ziel), startB = b.start ? new Date(b.start) : null;
+                const relA = (startA && jetzt < startA) ? startA : zielA;
+                const relB = (startB && jetzt < startB) ? startB : zielB;
+                return relA - relB;
+            });
 
             let html = "";
             termineDaten.forEach((t, i) => {
