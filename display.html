@@ -148,10 +148,14 @@
             const listeDiv = document.getElementById('liste');
             const counterDiv = document.getElementById('counter-display');
             const jetzt = new Date();
-            counterDiv.innerText = `AKTIVE TERMINE: ${termineDaten.length}`;
 
-            // Sortierung wie im Monitor
-            termineDaten.sort((a, b) => {
+            // 1. ARCHIV FILTER: Nur Termine behalten, die NICHT mit "ARCHIV" getaggt sind
+            const sichtbareTermine = termineDaten.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
+
+            counterDiv.innerText = `AKTIVE TERMINE: ${sichtbareTermine.length}`;
+
+            // 2. SORTIERUNG (nur der sichtbaren Termine)
+            sichtbareTermine.sort((a, b) => {
                 const zielA = new Date(a.ziel), startA = a.start ? new Date(a.start) : null;
                 const zielB = new Date(b.ziel), startB = b.start ? new Date(b.start) : null;
                 const relA = (startA && jetzt < startA) ? startA : zielA;
@@ -160,7 +164,10 @@
             });
 
             let html = "";
-            termineDaten.forEach((t, i) => {
+            sichtbareTermine.forEach((t) => {
+                // Den originalen Index für Checkbox-Toggles finden
+                const originalIdx = termineDaten.indexOf(t);
+                
                 const ziel = new Date(t.ziel);
                 const start = t.start ? new Date(t.start) : null;
                 
@@ -190,7 +197,7 @@
                 }
                 
                 const startHtml = start ? `Start: ${start.toLocaleString('de-DE', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'})} Uhr<br>` : '';
-                const notizHtml = t.notiz ? `<div class="notiz-text">${formatNotiz(t.notiz, i)}</div>` : "";
+                const notizHtml = t.notiz ? `<div class="notiz-text">${formatNotiz(t.notiz, originalIdx)}</div>` : "";
 
                 html += `
                     <div class="termin-card ${cardClass}">
