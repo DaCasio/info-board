@@ -68,7 +68,6 @@
         }
 
         .row-notiz { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 10px; }
-        /* WICHTIG: Erlaubt Zeilenumbrüche in den Karten */
         .notiz-display { font-size: 0.95em; line-height: 1.5; color: #ddd; white-space: pre-wrap; word-break: break-word; }
 
         .btn-main { background: var(--accent); color: black; border: none; padding: 14px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; text-transform: uppercase; margin-top: 10px; }
@@ -189,8 +188,22 @@
         document.getElementById('counter-display').innerText = `AKTIVE TERMINE: ${filteredData.length}`;
         updateFilterBar();
 
+        // Dynamische Sortierung
+        filteredData.sort((a, b) => {
+            const zielA = new Date(a.ziel), startA = a.start ? new Date(a.start) : null;
+            const zielB = new Date(b.ziel), startB = b.start ? new Date(b.start) : null;
+
+            // Logik: Welcher Zeitpunkt ist für die Sortierung JETZT relevant?
+            // 1. Wenn noch nicht gestartet -> Startzeitpunkt
+            // 2. Wenn bereits läuft oder kein Start vorhanden -> Endzeitpunkt
+            const relevantA = (startA && jetzt < startA) ? startA : zielA;
+            const relevantB = (startB && jetzt < startB) ? startB : zielB;
+
+            return relevantA - relevantB;
+        });
+
         let h = "";
-        filteredData.sort((a,b) => new Date(a.ziel) - new Date(b.ziel)).forEach((t, i) => {
+        filteredData.forEach((t, i) => {
             const originalIndex = data.indexOf(t);
             const ziel = new Date(t.ziel), start = t.start ? new Date(t.start) : null;
             let statusText = "FÄLLIG", countdown = "00d 00:00:00", cssClass = "faellig";
