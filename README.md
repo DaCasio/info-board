@@ -67,9 +67,3 @@ A minimalist appointment monitoring system using GitHub as a backend.
 1. Initialize a `termine.json` file in your repo: `[]`.
 2. Update the GitHub Token and Repo URL in both HTML files.
 3. Open `index.html` to start managing your orbital schedule.
-
----
-
-### Was ich jetzt noch für dich tun kann:
-
-Möchtest du, dass ich die **PIN-Verschlüsselung** in der README genauer erkläre (wie man sie ändert), oder soll ich eine **beispielhafte JSON-Struktur** hinzufügen, falls du das Projekt mal manuell befüllen willst?
