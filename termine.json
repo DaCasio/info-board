@@ -355,7 +355,8 @@
     },
     {
         "name": "Konto glatt",
-        "ziel": "2026-11-27T15:00",
+        "start": null,
+        "ziel": "2026-12-31T15:00",
         "notiz": "",
         "tags": [
             "FINANZEN"
