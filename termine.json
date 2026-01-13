@@ -452,5 +452,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Casi Spät",
+        "start": null,
+        "ziel": "2026-03-30T09:30",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
