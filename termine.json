@@ -489,5 +489,14 @@
         "tags": [
             "WOHNUNG"
         ]
+    },
+    {
+        "name": "Test",
+        "start": null,
+        "ziel": "2026-01-01T00:00",
+        "notiz": "",
+        "tags": [
+            "ARCHIV"
+        ]
     }
 ]
