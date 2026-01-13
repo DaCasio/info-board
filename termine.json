@@ -12,7 +12,7 @@
         "name": "PANO auf 10.2.16-h4",
         "start": "2026-01-13T18:00",
         "ziel": "2026-01-13T20:00",
-        "notiz": "[ ]Backup beider Panos\n[ ]Update der passiven\n[ ]Reboot der passiven\n[ ]Schwenk auf passive\n[ ]Vormals aktive update\n[ ]Vormals aktive rebooten\n[ ]Vormals aktive wieder aktivieren\n[ ]Done",
+        "notiz": "",
         "tags": [
             "ARBEIT"
         ]
