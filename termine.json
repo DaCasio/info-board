@@ -471,5 +471,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Lampen anschrauben",
+        "start": null,
+        "ziel": "2026-01-14T17:00",
+        "notiz": "",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
