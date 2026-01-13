@@ -507,5 +507,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Bajrami Elektriker",
+        "start": null,
+        "ziel": "2026-01-19T09:00",
+        "notiz": "",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
