@@ -464,15 +464,6 @@
         ]
     },
     {
-        "name": "Buchungsrichtline",
-        "start": "2026-01-14T14:00",
-        "ziel": "2026-01-14T14:30",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "Schnubbi Mozi",
         "start": null,
         "ziel": "2026-01-14T15:00",
