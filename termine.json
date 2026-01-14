@@ -545,7 +545,7 @@
         ]
     },
     {
-        "name": "Pa Meeting (Kopie)",
+        "name": "Pa Meeting",
         "start": "2026-01-14T15:00",
         "ziel": "2026-01-14T17:00",
         "notiz": "Testen der permanenten Fixes (NICHT nur Root-Delete):\ndebug system reset-ztp\nPublic key update via admin portal\nOTP / fetchen kann Kunde selbst\n\nZiel: Recurring-Problem (alle 3 Monate) endgültig lösen\nTSF liegt vor, Appliance bereit (Serial: 025401001734)",
