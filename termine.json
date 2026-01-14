@@ -507,5 +507,14 @@
         "tags": [
             "WOHNUNG"
         ]
+    },
+    {
+        "name": "Irmi Fußleisten abholen",
+        "start": null,
+        "ziel": "2026-01-15T17:00",
+        "notiz": "Fußleisten / Übergangsleisten",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
