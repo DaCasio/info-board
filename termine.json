@@ -449,7 +449,7 @@
         "name": "Pa Meeting",
         "start": "2026-01-14T13:00",
         "ziel": "2026-01-14T14:00",
-        "notiz": "Testen der permanenten Fixes (NICHT nur Root-Delete):\ndebug system reset-ztp\nPublic key update via admin portal\nOTP / fetchen kann Kunde selbst\n\nZiel: Recurring-Problem (alle 3 Monate) endgültig lösen\nTSF liegt vor, Appliance bereit (Serial: 025401001734)",
+        "notiz": "## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
         "tags": [
             "ARBEIT"
         ]
