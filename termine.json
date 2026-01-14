@@ -449,7 +449,7 @@
         "name": "Pa Meeting",
         "start": "2026-01-14T13:00",
         "ziel": "2026-01-14T14:00",
-        "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. PA-5430 LEVFRW03",
+        "notiz": "Testen der permanenten Fixes (NICHT nur Root-Delete):\ndebug system reset-ztp\nPublic key update via admin portal\nOTP / fetchen kann Kunde selbst\n\nZiel: Recurring-Problem (alle 3 Monate) endgültig lösen\nTSF liegt vor, Appliance bereit (Serial: 025401001734)\n\nAuge drauf haben, Zoom-Link weiterleiten. Teilnahme optional.\n**Fallback:** Keine Kunden-Bestätigung → Ticket zurück an mich.",
         "tags": [
             "ARBEIT"
         ]
