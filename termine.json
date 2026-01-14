@@ -483,8 +483,8 @@
     },
     {
         "name": "Pa Meeting",
-        "start": null,
-        "ziel": "2026-01-14T13:00",
+        "start": "2026-01-14T13:00",
+        "ziel": "2026-01-14T14:00",
         "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. PA-5430 LEVFRW03",
         "tags": [
             "ARBEIT"
