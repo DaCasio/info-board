@@ -498,5 +498,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Daily",
+        "start": null,
+        "ziel": "2026-01-16T09:40",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
