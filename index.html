@@ -34,11 +34,11 @@
         .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; font-weight: bold; font-size: 1.2em; color: var(--accent); }
         .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center; }
         .cal-day-label { font-size: 0.7em; color: #777; padding-bottom: 5px; }
-        .cal-cell { background: rgba(255,255,255,0.05); min-height: 80px; border-radius: 4px; padding: 4px; font-size: 0.8em; border: 1px solid rgba(255,255,255,0.1); position: relative; }
+        .cal-cell { background: rgba(255,255,255,0.05); min-height: 80px; border-radius: 4px; padding: 4px; font-size: 0.8em; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden; }
         .cal-cell.today { border-color: var(--accent); background: rgba(0, 202, 227, 0.1); }
         .cal-cell.other-month { opacity: 0.3; }
         .cal-dot-container { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
-        .cal-event { background: var(--accent); color: black; font-size: 0.7em; padding: 2px 4px; border-radius: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
+        .cal-event { background: var(--accent); color: black; font-size: 0.7em; padding: 2px 4px; border-radius: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; text-align: left; }
         .cal-event.archived { opacity: 0.5; background: #666; color: white; }
 
         .input-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
@@ -260,8 +260,10 @@
 
         const totalCells = grid.children.length - 7;
         const remaining = (42 - totalCells) % 42;
-        for (let i = 1; i <= remaining; i++) {
-            createCalCell(grid, i, true);
+        if (remaining > 0) {
+            for (let i = 1; i <= remaining; i++) {
+                createCalCell(grid, i, true);
+            }
         }
     }
 
@@ -271,15 +273,27 @@
         cell.innerHTML = `<b>${day}</b><div class="cal-dot-container"></div>`;
         
         if (!otherMonth) {
-            const cellDateStr = `${year}-${(month+1).toString().padStart(2,'0')}-${day.toString().padStart(2,'0')}`;
-            const events = data.filter(t => t.ziel.startsWith(cellDateStr));
+            const cellDateStart = new Date(year, month, day, 0, 0, 0);
+            const cellDateEnd = new Date(year, month, day, 23, 59, 59);
+
+            const events = data.filter(t => {
+                const z = new Date(t.ziel);
+                const s = t.start ? new Date(t.start) : new Date(t.ziel);
+                // Check if the current day is within the range [start, end]
+                return (cellDateEnd >= s && cellDateStart <= z);
+            });
+
             const dotContainer = cell.querySelector('.cal-dot-container');
             
             events.forEach(t => {
                 const isArchived = t.tags && t.tags.includes("ARCHIV");
                 const evDiv = document.createElement('div');
                 evDiv.className = `cal-event ${isArchived ? 'archived' : ''}`;
-                evDiv.innerText = t.name;
+                
+                // Add indicator if it's a multi-day event span
+                const isMulti = t.start && t.start.substring(0,10) !== t.ziel.substring(0,10);
+                evDiv.innerText = (isMulti ? "↔ " : "") + t.name;
+
                 evDiv.onclick = (e) => {
                     e.stopPropagation();
                     edit(data.indexOf(t));
