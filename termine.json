@@ -543,5 +543,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": " pa-440-1/2 Update",
+        "start": "2026-01-15T18:00",
+        "ziel": "2026-01-16T20:00",
+        "notiz": "pa-440-1 & pa-440-2 auf 10.2.16-h6",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
