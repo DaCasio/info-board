@@ -27,15 +27,6 @@
         ]
     },
     {
-        "name": "Urlaub",
-        "start": null,
-        "ziel": "2026-01-16T17:00",
-        "notiz": "",
-        "tags": [
-            "URLAUB"
-        ]
-    },
-    {
         "name": "Lieferung Esstisch",
         "ziel": "2026-01-19T08:00",
         "notiz": "",
