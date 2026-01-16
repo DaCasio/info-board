@@ -471,14 +471,5 @@
         "tags": [
             "ARBEIT"
         ]
-    },
-    {
-        "name": "Pause",
-        "start": "2026-01-16T12:00",
-        "ziel": "2026-01-16T12:55",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
     }
 ]
