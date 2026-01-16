@@ -1,114 +1,29 @@
 [
     {
-        "name": "test",
-        "start": "2026-01-10T10:45",
-        "ziel": "2026-01-10T10:46",
-        "notiz": "**dick**\n--durchgestrichen--\n[color:#ff4d4d]rot[/color]\n[color:#00ff00]grün[/color]\n[color:#ffff00]gelb[/color]\n[color:#00cae3]blau[/color]\n\n[ ]checkbox",
-        "tags": [
-            "TEST"
-        ]
-    },
-    {
-        "name": "Marcel PVC",
-        "start": "2026-01-10T08:00",
-        "ziel": "2026-01-10T17:00",
-        "notiz": "Marcel schneidet PVC unten zu und verlegt oben.\nWohnzimmer lieg & Rest wird wahrscheinlich heute fertig.",
+        "name": "Herr Ziberi treffen",
+        "start": "2026-01-17T12:00",
+        "ziel": "2026-01-17T15:00",
+        "notiz": "",
         "tags": [
             "WOHNUNG"
         ]
     },
     {
-        "name": "Bereitschaft",
-        "start": "2026-01-06T18:00",
-        "ziel": "2026-01-12T06:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
-        "name": "Fußleiste Deadline",
-        "start": "2026-01-12T08:00",
-        "ziel": "2026-01-19T20:00",
-        "notiz": "",
-        "tags": []
-    },
-    {
-        "name": "Bodenleisten - Marcel - Fußleisten Pre-Deadline",
-        "ziel": "2026-01-13T10:00",
-        "notiz": "Kann später gemacht werden.\nZeitraum noch nicht final.",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "PANO auf 10.2.17",
-        "ziel": "2026-01-13T18:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
-        "name": "Bereitschaft ",
-        "start": "2026-01-13T18:00",
-        "ziel": "2026-01-14T06:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
-        "name": "Blocker Irmi",
-        "start": "2026-01-09T08:00",
-        "ziel": "2026-01-13T20:00",
-        "notiz": "Spätestens hier ist Feierabend, außer Fußleisten\nBoden muss liegen! Ansonsten Bajrami um Hilfe bitten",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Fliesenleger Bajrami",
-        "start": "2026-01-14T08:00",
+        "name": "Bajrami Maler",
+        "start": null,
         "ziel": "2026-01-17T17:00",
-        "notiz": "Zeitraum: 14.–17.01.\nBad, Fugen etc.",
+        "notiz": "Bad, Fugen etc.",
         "tags": [
             "WOHNUNG"
         ]
     },
     {
-        "name": "Türen kürzen – Thorsten",
+        "name": "Bajrami Übergabe",
         "start": null,
-        "ziel": "2026-01-14T10:00",
-        "notiz": "Abhängig vom fertigen Boden.",
+        "ziel": "2026-01-17T18:00",
+        "notiz": "[ ] Keller- und Haustürschlüssel - abholen\n[ ] Mieterbestätigung - Ausdrucken und unterschreiben lassen",
         "tags": [
             "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Türen lackieren – Klaus Klettke",
-        "start": "2026-01-14T17:00",
-        "ziel": "2026-01-16T17:00",
-        "notiz": "Zeitraum: 14.–16.01.",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Übergabe – Herr Bajrami",
-        "ziel": "2026-01-16T12:00",
-        "notiz": "Restarbeiten: Silikon, Manschetten\n[ ] Keller- und Haustürschlüssel\n[ ] Mieterbestätigung\n[ ] Briefkasten / Halterung, Name fehlt",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Urlaub Casi",
-        "start": null,
-        "ziel": "2026-01-16T17:00",
-        "notiz": "",
-        "tags": [
-            "URLAUB"
         ]
     },
     {
@@ -120,27 +35,9 @@
         ]
     },
     {
-        "name": "Urlaub Kero",
-        "start": null,
-        "ziel": "2026-01-19T18:00",
-        "notiz": "",
-        "tags": [
-            "URLAUB"
-        ]
-    },
-    {
         "name": "Putzen – Kero & Sabina",
         "start": "2026-01-20T08:00",
         "ziel": "2026-01-21T22:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Kätzken zum Helge",
-        "start": "2026-01-21T20:00",
-        "ziel": "2026-01-23T19:59",
         "notiz": "",
         "tags": [
             "WOHNUNG"
@@ -162,14 +59,6 @@
         "notiz": "",
         "tags": [
             "INTERNET"
-        ]
-    },
-    {
-        "name": "Kätzken vom Helge abholen",
-        "ziel": "2026-01-23T20:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
         ]
     },
     {
@@ -231,8 +120,9 @@
     },
     {
         "name": "Steuern rausschicken",
-        "ziel": "2026-03-01T18:00",
-        "notiz": "",
+        "start": "2026-03-01T18:00",
+        "ziel": "2026-04-13T18:00",
+        "notiz": "Start wenn Lohnsteuerabruf möglich.\n6 Wochen Dauer bis Auszahlung abwarten.",
         "tags": [
             "STEUERN"
         ]
@@ -247,8 +137,9 @@
     },
     {
         "name": "Bülent Ceylan – Diktatürk",
+        "start": null,
         "ziel": "2026-03-22T19:00",
-        "notiz": "",
+        "notiz": "[ ]Bereitschaft für den Sonntag abgeben!",
         "tags": [
             "TERMINE"
         ]
@@ -402,7 +293,8 @@
     },
     {
         "name": "Konto glatt",
-        "ziel": "2026-11-27T15:00",
+        "start": null,
+        "ziel": "2026-12-31T15:00",
         "notiz": "",
         "tags": [
             "FINANZEN"
@@ -470,6 +362,87 @@
         "notiz": "",
         "tags": [
             "FINANZEN"
+        ]
+    },
+    {
+        "name": "RbB",
+        "start": "2026-02-16T18:00",
+        "ziel": "2026-02-23T06:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Casi Spät",
+        "start": null,
+        "ziel": "2026-03-02T09:30",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "RbB",
+        "start": "2026-03-16T18:00",
+        "ziel": "2026-03-22T06:00",
+        "notiz": "Verkürzt. RB an Sahand abgegeben 22.3.2026",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Casi Spät",
+        "start": null,
+        "ziel": "2026-03-30T09:30",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Bajrami Elektriker",
+        "start": "2026-01-19T09:00",
+        "ziel": "2026-01-19T12:00",
+        "notiz": "",
+        "tags": [
+            "WOHNUNG"
+        ]
+    },
+    {
+        "name": "Test",
+        "start": null,
+        "ziel": "2026-01-01T00:00",
+        "notiz": "",
+        "tags": [
+            "ARCHIV"
+        ]
+    },
+    {
+        "name": "Datagroup: Failed to fetch device certificate.",
+        "start": null,
+        "ziel": "2026-04-14T14:39",
+        "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. PA-5430 LEVFRW03\nReminder: Schauen ob das Problem nach dem Fix nochmal auftritt. (Cert generiert 14.1.26 CET 13:39 (CEST 14:39))\nReferenzieren auf den Case 03867695\n\nProdukt ID: PA-5430\nSystem ID: LEVFRW03\nSerial ID: 025401001734\nVendor Ticket: Referenz - > 03867695\n\n## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "RA Jellesen",
+        "start": "2026-01-28T15:00",
+        "ziel": "2026-01-28T16:00",
+        "notiz": "Steinstraße 49\n47441 Moers\nDeutschland",
+        "tags": [
+            "TERMINE"
+        ]
+    },
+    {
+        "name": "Küche Doings",
+        "start": null,
+        "ziel": "2026-01-17T15:00",
+        "notiz": "[ ]Brett kochnische, Bohrung für Abzugsrohr DAH\n[ ]Brett Mikrowelle, mit kleiner Kabelbohrung\n[ ]Unterschränke Abschlussleisten",
+        "tags": [
+            "WOHNUNG"
         ]
     }
 ]
