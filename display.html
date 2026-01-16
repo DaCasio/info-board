@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor - Color E-Ink</title>
+    <title>Termin Monitor - Color E-Ink (View Only)</title>
     <style>
         /* Optimiert für Color E-Ink: Klare Farben, kein Glow, kein Gradient */
         body { 
@@ -60,7 +60,14 @@
             line-height: 1.4;
         }
 
-        .cb-line { cursor: pointer; display: block; padding: 5px 0; font-weight: 500; }
+        /* Checkboxen: Klicks deaktiviert */
+        .cb-line { 
+            display: block; 
+            padding: 5px 0; 
+            font-weight: 500; 
+            pointer-events: none; /* Keine Klicks möglich */
+            cursor: default;      /* Standard-Mauszeiger */
+        }
         .cb-line.done { text-decoration: line-through; color: #888; }
         
         .zeit-box { text-align: right; margin-left: 20px; min-width: 180px; }
@@ -119,29 +126,18 @@
             return `${d}d ${h}h ${m}m`;
         }
 
-        function formatNotiz(txt, tIdx) {
+        function formatNotiz(txt) {
             if (!txt) return "";
-            let lines = txt.split('\n').map((line, lIdx) => {
-                if (line.startsWith('[ ]')) return `<span class="cb-line" onclick="toggleCB(${tIdx}, ${lIdx})">☐ ${line.slice(3)}</span>`;
-                if (line.startsWith('[x]')) return `<span class="cb-line done" onclick="toggleCB(${tIdx}, ${lIdx})">☑ ${line.slice(3)}</span>`;
+            let lines = txt.split('\n').map((line) => {
+                // Keine onclick-Events mehr
+                if (line.startsWith('[ ]')) return `<span class="cb-line">☐ ${line.slice(3)}</span>`;
+                if (line.startsWith('[x]')) return `<span class="cb-line done">☑ ${line.slice(3)}</span>`;
                 return line;
             });
-            return lines.join('\n').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/--(.*?)--/g, '<s>$1</s>').replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
-        }
-
-        async function toggleCB(tIdx, lIdx) {
-            let lines = termineDaten[tIdx].notiz.split('\n');
-            if (lines[lIdx].startsWith('[ ]')) lines[lIdx] = lines[lIdx].replace('[ ]', '[x]');
-            else if (lines[lIdx].startsWith('[x]')) lines[lIdx] = lines[lIdx].replace('[x]', '[ ]');
-            termineDaten[tIdx].notiz = lines.join('\n');
-            updateAnzeige();
-            const content = btoa(unescape(encodeURIComponent(JSON.stringify(termineDaten, null, 4))));
-            await fetch(GITHUB_URL, {
-                method: 'PUT',
-                headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: "E-Ink Checkbox Update", content, sha: currentSha })
-            });
-            holeDaten();
+            return lines.join('\n')
+                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+                .replace(/--(.*?)--/g, '<s>$1</s>')
+                .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
         }
 
         function updateAnzeige() {
@@ -162,7 +158,6 @@
 
             let html = "";
             sichtbareTermine.forEach((t) => {
-                const originalIdx = termineDaten.indexOf(t);
                 const ziel = new Date(t.ziel);
                 const start = t.start ? new Date(t.start) : null;
                 
@@ -191,11 +186,9 @@
                     zeitClass = "faellig";
                 }
                 
-                // Formatierungseinstellungen
                 const optWithYear = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
                 const optNoYear = { weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' };
 
-                // Jahr beim Start nur anzeigen, wenn es sich vom End-Jahr unterscheidet
                 const startYear = start ? start.getFullYear() : null;
                 const endYear = ziel.getFullYear();
                 const startFormat = (startYear && startYear !== endYear) ? optWithYear : optNoYear;
@@ -203,7 +196,7 @@
                 const startHtml = start ? `Start: ${start.toLocaleString('de-DE', startFormat)} Uhr<br>` : '';
                 const zielHtml = `Ende: ${ziel.toLocaleString('de-DE', optWithYear)} Uhr`;
                 
-                const notizHtml = t.notiz ? `<div class="notiz-text">${formatNotiz(t.notiz, originalIdx)}</div>` : "";
+                const notizHtml = t.notiz ? `<div class="notiz-text">${formatNotiz(t.notiz)}</div>` : "";
 
                 html += `
                     <div class="termin-card ${cardClass}">
