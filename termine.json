@@ -19,7 +19,8 @@
     },
     {
         "name": "Lieferung Esstisch",
-        "ziel": "2026-01-19T08:00",
+        "start": "2026-01-19T08:00",
+        "ziel": "2026-01-19T18:00",
         "notiz": "",
         "tags": [
             "WOHNUNG"
