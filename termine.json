@@ -445,5 +445,14 @@
         "tags": [
             "WOHNUNG"
         ]
+    },
+    {
+        "name": "Heizungsableser",
+        "start": "2026-01-19T09:00",
+        "ziel": "2026-01-19T12:00",
+        "notiz": "Funkmodul Heizung\nFunkmodul Wasser\nRauchmelder prüfen",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
