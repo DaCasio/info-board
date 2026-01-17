@@ -481,5 +481,14 @@
         "tags": [
             "WOHNUNG"
         ]
+    },
+    {
+        "name": "Klaus Klettke Türen lackieren",
+        "start": "2026-01-20T15:30",
+        "ziel": "2026-01-20T17:30",
+        "notiz": "",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
