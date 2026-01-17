@@ -445,5 +445,14 @@
         "tags": [
             "WOHNUNG"
         ]
+    },
+    {
+        "name": "Wohnung fahren",
+        "start": "2026-01-18T15:00",
+        "ziel": "2026-01-18T16:00",
+        "notiz": "⚒️🔨❤️ und Bedri Türe aufmachen",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
