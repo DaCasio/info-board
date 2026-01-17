@@ -449,7 +449,7 @@
         "name": "Wohnung ToDo List",
         "start": null,
         "ziel": "2026-01-17T20:00",
-        "notiz": "[color:#00cae3][/color]\n[ ][color:#ff4d4d]Lampe Schlafzimmer [/color]\n[ ][color:#ff4d4d] Lampe Arbeitszimmer [/color]\n[ ][color:#ff4d4d] Lampe Esszimmer [/color]\n[ ][color:#ff4d4d] Lampe Wohnzimmer [/color]\n[ ][color:#00cae3 Steckdosen Arbeitszimmer [/color]\n[ ][color:#00cae3 Steckdosen Wohnzimmer zumachen [/color]\n[ ][color:#00cae3 Fernseher Sony Wohnzimmer [/color]\n[ ][color:#ff4d4d] TV Halterung Schlafzimmer [/color]\n[ ][color:#ff4d4d] TV Halterung Ess oder Arbeitszimmer [/color]",
+        "notiz": "[color:#00cae3][/color]\n[ ][color:#ff4d4d]Lampe Schlafzimmer[/color]\n[ ][color:#ff4d4d]Lampe Arbeitszimmer[/color]\n[ ][color:#ff4d4d]Lampe Esszimmer[/color]\n[ ][color:#ff4d4d]Lampe Wohnzimmer[/color]\n[ ][color:#00cae3]Steckdosen Arbeitszimmer[/color]\n[ ][color:#00cae3]Steckdosen Wohnzimmer zumachen[/color]\n[ ][color:#00cae3]Fernseher Sony Wohnzimmer[/color]\n[ ][color:#ff4d4d]TV Halterung Schlafzimmer[/color]\n[ ][color:#ff4d4d]TV Halterung Ess oder Arbeitszimmer[/color]",
         "tags": [
             "WOHNUNG"
         ]
