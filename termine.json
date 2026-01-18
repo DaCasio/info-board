@@ -28,8 +28,8 @@
     },
     {
         "name": "Putzen – Kero & Sabina",
-        "start": "2026-01-20T08:00",
-        "ziel": "2026-01-21T22:00",
+        "start": null,
+        "ziel": "2026-01-21T09:00",
         "notiz": "",
         "tags": [
             "WOHNUNG"
