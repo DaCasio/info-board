@@ -446,5 +446,14 @@
         "tags": [
             "WOHNUNG"
         ]
+    },
+    {
+        "name": "Ziberi",
+        "start": null,
+        "ziel": "2026-01-20T13:00",
+        "notiz": "",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
