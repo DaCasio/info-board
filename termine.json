@@ -439,15 +439,6 @@
         ]
     },
     {
-        "name": "Heizungsableser",
-        "start": "2026-01-19T08:30",
-        "ziel": "2026-01-19T09:30",
-        "notiz": "Funkmodul Heizung\nFunkmodul Wasser\nRauchmelder prüfen",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
         "name": "Herrn Ziberi Fußleisten",
         "start": "2026-01-20T13:00",
         "ziel": "2026-01-20T16:00",
