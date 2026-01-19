@@ -397,7 +397,7 @@
         "name": "Küche Erledigungen",
         "start": null,
         "ziel": "2026-01-19T15:00",
-        "notiz": "[x] Brett Kochnische, Bohrung für Abzugsrohr DAH\n[x] Brett Mikrowelle mit kleiner Kabelbohrung\n[ ] Abschlussleisten Unterschränke",
+        "notiz": "[x] Brett Kochnische, Bohrung für Abzugsrohr DAH\n[x] Brett Mikrowelle mit kleiner Kabelbohrung\n[x] Abschlussleisten Unterschränke",
         "tags": [
             "WOHNUNG"
         ]
@@ -424,15 +424,6 @@
         "name": "Helge und Casi Lampen Müll 🗑️ entsorgen ",
         "start": "2026-01-21T14:00",
         "ziel": "2026-01-21T15:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Herrn Ziberi Fußleisten",
-        "start": "2026-01-21T13:00",
-        "ziel": "2026-01-21T16:00",
         "notiz": "",
         "tags": [
             "WOHNUNG"
