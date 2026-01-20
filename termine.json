@@ -395,8 +395,8 @@
     },
     {
         "name": "Wohnung ToDo List",
-        "start": "2026-01-20T08:00",
-        "ziel": "2026-01-20T20:00",
+        "start": "2026-01-21T08:00",
+        "ziel": "2026-01-21T20:00",
         "notiz": "[color:#00cae3][/color]\n[ ][color:#ff4d4d]Lampe Esszimmer[/color]\n[ ][color:#008800]Fernseher Sony Wohnzimmer[/color]\n[ ][color:#ff4d4d]TV Halterung Schlafzimmer[/color]\n[ ][color:#ff4d4d]TV Halterung Ess oder Arbeitszimmer[/color]",
         "tags": [
             "WOHNUNG"
