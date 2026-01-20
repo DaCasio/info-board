@@ -94,15 +94,6 @@
         ]
     },
     {
-        "name": "Steuern rausschicken",
-        "start": "2026-03-01T18:00",
-        "ziel": "2026-04-13T18:00",
-        "notiz": "Start, sobald Lohnsteuerabruf möglich ist.\n6 Wochen Dauer bis zur Auszahlung abwarten.",
-        "tags": [
-            "STEUERN"
-        ]
-    },
-    {
         "name": "Dr. Stickelbruck – Reinigung",
         "ziel": "2026-03-11T09:00",
         "notiz": "",
