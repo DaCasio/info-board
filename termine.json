@@ -397,5 +397,14 @@
         "tags": [
             "ABO"
         ]
+    },
+    {
+        "name": "Umzugs Todos",
+        "start": "2026-01-22T08:00",
+        "ziel": "2026-01-22T18:00",
+        "notiz": "[ ]Sekretär und alles drauf lassen\n[ ]Sira Kratzbaum da lassen\n[ ]Küche Vitrine und Nebentisch lassen",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
