@@ -406,5 +406,14 @@
         "tags": [
             "STEUERN"
         ]
+    },
+    {
+        "name": "Steuern Kohle check",
+        "start": null,
+        "ziel": "2026-03-16T12:00",
+        "notiz": "",
+        "tags": [
+            "STEUERN"
+        ]
     }
 ]
