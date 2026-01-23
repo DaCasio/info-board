@@ -9,15 +9,6 @@
         ]
     },
     {
-        "name": "Dayflat Telekom",
-        "start": "2026-01-22T20:00",
-        "ziel": "2026-01-26T07:59",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
         "name": "Telekom VDSL Umschaltung",
         "start": "2026-01-26T08:00",
         "ziel": "2026-01-26T16:00",
