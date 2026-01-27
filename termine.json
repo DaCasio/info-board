@@ -389,5 +389,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Casi Pause",
+        "start": "2026-02-02T12:00",
+        "ziel": "2026-02-02T13:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
