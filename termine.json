@@ -401,15 +401,6 @@
         ]
     },
     {
-        "name": "Bofrost",
-        "start": null,
-        "ziel": "2026-01-29T12:00",
-        "notiz": "Kommt vorbei",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
         "name": "Transporter abgeben",
         "start": null,
         "ziel": "2026-01-29T14:00",
