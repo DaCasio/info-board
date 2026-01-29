@@ -392,15 +392,6 @@
         ]
     },
     {
-        "name": "Transporter abholen",
-        "start": null,
-        "ziel": "2026-01-29T10:00",
-        "notiz": "30 € erste 2 Std.\nJede weitere halbe Std. 10 €\n100km sind drin",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
         "name": "Schlüsselübergabe ",
         "start": null,
         "ziel": "2026-01-31T15:00",
