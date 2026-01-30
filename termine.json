@@ -383,15 +383,6 @@
         ]
     },
     {
-        "name": "Kleiststraße",
-        "start": null,
-        "ziel": "2026-01-30T11:00",
-        "notiz": "[x]Wohnung leer machen\n[x]Fotos Wohnung detailliert",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
         "name": "Schlüsselübergabe ",
         "start": null,
         "ziel": "2026-01-31T15:00",
