@@ -390,14 +390,5 @@
         "tags": [
             "WOHNUNG"
         ]
-    },
-    {
-        "name": "Transporter",
-        "start": "2026-01-30T10:00",
-        "ziel": "2026-01-30T14:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
     }
 ]
