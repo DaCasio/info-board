@@ -1,14 +1,5 @@
 [
     {
-        "name": "Übergabe Bajrami",
-        "start": null,
-        "ziel": "2026-01-31T20:00",
-        "notiz": "Meldet sich\n\n[ ]Keller- und Haustürschlüssel \n[ ]Briefkastenschlüssel\n[ ]Wäsche Schlüssel Obergeschoss",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
         "name": "Urlaub Ende",
         "ziel": "2026-02-01T22:00",
         "notiz": "",
