@@ -373,5 +373,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Urlaub Morgen",
+        "start": null,
+        "ziel": "2026-02-05T17:00",
+        "notiz": "",
+        "tags": [
+            "URLAUB"
+        ]
     }
 ]
