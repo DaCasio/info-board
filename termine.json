@@ -366,15 +366,6 @@
         ]
     },
     {
-        "name": "Berrang Onboarding",
-        "start": "2026-02-03T10:30",
-        "ziel": "2026-03-03T11:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-02-03T17:00",
