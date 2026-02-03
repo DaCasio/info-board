@@ -375,13 +375,6 @@
         ]
     },
     {
-        "name": "Pause Ende ",
-        "start": null,
-        "ziel": "2026-02-03T13:10",
-        "notiz": "",
-        "tags": []
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-02-03T17:00",
