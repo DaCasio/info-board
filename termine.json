@@ -373,5 +373,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Berrang Onboarding",
+        "start": "2026-02-03T10:30",
+        "ziel": "2026-03-03T11:00",
+        "notiz": "Habe in der Woche Spät, da müsste dann jemand die Spät für mich machen.",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
