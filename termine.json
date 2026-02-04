@@ -376,8 +376,8 @@
     },
     {
         "name": "ALDI Firewall & Switche Update Vorbereitung",
-        "start": null,
-        "ziel": "2026-02-04T08:30",
+        "start": "2026-02-04T09:30",
+        "ziel": "2026-02-04T09:40",
         "notiz": "",
         "tags": [
             "ARBEIT"
