@@ -418,5 +418,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Pause",
+        "start": "2026-02-05T12:00",
+        "ziel": "2026-02-05T13:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
