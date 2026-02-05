@@ -296,7 +296,7 @@
         ]
     },
     {
-        "name": "Datagroup: Failed to fetch device certificate.",
+        "name": "D.group: Failed to fetch device certificate.",
         "start": null,
         "ziel": "2026-04-14T14:39",
         "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. PA-5430 LEVFRW03\nReminder: Schauen, ob das Problem nach dem Fix nochmal auftritt. (Zertifikat generiert 14.01.26 CET 13:39 (CEST 14:39))\nReferenzieren auf Case 03867695\n\nProdukt-ID: PA-5430\nSystem-ID: LEVFRW03\nSerien-ID: 025401001734\nVendor-Ticket: Referenz -> 03867695\n\n## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
