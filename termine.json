@@ -359,7 +359,7 @@
         ]
     },
     {
-        "name": "ALDI Firewall & Switche Update Rest",
+        "name": "Firewall & Switche Update Rest",
         "start": "2026-02-10T10:00",
         "ziel": "2026-02-10T23:59",
         "notiz": "",
