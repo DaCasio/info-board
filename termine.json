@@ -391,12 +391,5 @@
         "tags": [
             "ARBEIT"
         ]
-    },
-    {
-        "name": "[color:#ff4d4d]Test[/color]",
-        "start": null,
-        "ziel": "2026-02-05T11:00",
-        "notiz": "",
-        "tags": []
     }
 ]
