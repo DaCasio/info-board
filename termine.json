@@ -9,7 +9,8 @@
         ]
     },
     {
-        "name": "Sperrmüll Neukirchen Abholung",
+        "name": "Sperrmüll Abholung",
+        "start": null,
         "ziel": "2026-02-09T10:00",
         "notiz": "",
         "tags": [
