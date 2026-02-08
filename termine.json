@@ -350,15 +350,6 @@
         ]
     },
     {
-        "name": "Firewall & Switche Update Rest",
-        "start": "2026-02-10T10:00",
-        "ziel": "2026-02-10T23:59",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "FW Download",
         "start": "2026-02-09T08:00",
         "ziel": "2026-02-09T12:00",
