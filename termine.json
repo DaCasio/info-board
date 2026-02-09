@@ -357,5 +357,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Switch Prüfung Reload",
+        "start": "2026-02-10T21:25",
+        "ziel": "2026-02-10T22:45",
+        "notiz": "21:30 / 22:30",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
