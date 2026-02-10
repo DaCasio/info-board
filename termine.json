@@ -348,5 +348,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Bedri",
+        "start": null,
+        "ziel": "2026-02-10T17:00",
+        "notiz": "Wegen Kellertür",
+        "tags": [
+            "WOHNUNG"
+        ]
     }
 ]
