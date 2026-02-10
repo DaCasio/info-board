@@ -384,5 +384,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Kerstin Nageltermin",
+        "start": "2026-02-12T17:00",
+        "ziel": "2026-02-12T18:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
