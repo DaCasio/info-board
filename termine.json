@@ -375,5 +375,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Bofrost",
+        "start": "2026-02-12T12:00",
+        "ziel": "2026-02-12T14:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
