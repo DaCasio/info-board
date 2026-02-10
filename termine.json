@@ -366,5 +366,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Switch Prüfung Reload (Kopie)",
+        "start": null,
+        "ziel": "2026-02-10T22:30",
+        "notiz": "21:30 / 22:30",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
