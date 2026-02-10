@@ -366,5 +366,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Kerstin Therapie",
+        "start": "2026-02-11T19:00",
+        "ziel": "2026-02-11T20:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
