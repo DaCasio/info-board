@@ -332,15 +332,6 @@
         ]
     },
     {
-        "name": "Switch Prüfung Reload",
-        "start": null,
-        "ziel": "2026-02-10T21:30",
-        "notiz": "21:30 / 22:30",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "Kerstin Therapie",
         "start": "2026-02-11T19:00",
         "ziel": "2026-02-11T20:00",
