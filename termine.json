@@ -52,8 +52,9 @@
         ]
     },
     {
-        "name": "Eurowings – Konto prüfen",
-        "ziel": "2026-04-15T15:00",
+        "name": "Eurowings Glatt",
+        "start": null,
+        "ziel": "2026-05-15T15:00",
         "notiz": "",
         "tags": [
             "FINANZEN"
