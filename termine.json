@@ -385,5 +385,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Work",
+        "start": "2026-02-13T10:56",
+        "ziel": "2026-02-13T11:59",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
