@@ -439,5 +439,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Wochenende",
+        "start": null,
+        "ziel": "2026-02-13T17:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
