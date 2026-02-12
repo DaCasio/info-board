@@ -369,8 +369,8 @@
         ]
     },
     {
-        "name": "Proxy Dokumentation",
-        "start": "2026-02-12T09:00",
+        "name": "Pause",
+        "start": null,
         "ziel": "2026-02-12T12:00",
         "notiz": "",
         "tags": [
