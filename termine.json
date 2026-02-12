@@ -376,5 +376,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Work Ende",
+        "start": null,
+        "ziel": "2026-02-12T17:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
