@@ -360,15 +360,6 @@
         ]
     },
     {
-        "name": "PA ANO UPDATES",
-        "start": "2026-02-12T18:00",
-        "ziel": "2026-02-12T21:00",
-        "notiz": "",
-        "tags": [
-            "TERMINE"
-        ]
-    },
-    {
         "name": "Sommerzeit",
         "start": null,
         "ziel": "2026-03-29T03:00",
