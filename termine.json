@@ -369,15 +369,6 @@
         ]
     },
     {
-        "name": "Work",
-        "start": "2026-02-13T13:25",
-        "ziel": "2026-02-13T17:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "Wochenende",
         "start": null,
         "ziel": "2026-02-13T17:00",
