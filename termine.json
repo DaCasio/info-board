@@ -394,5 +394,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Open Lunch in Köln",
+        "start": "2026-03-25T08:00",
+        "ziel": "2026-03-24T12:00",
+        "notiz": "Vor Ort in Kölle.",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
