@@ -383,5 +383,14 @@
         "ziel": "2026-08-01T00:00",
         "notiz": "31.07.2026 - Kleiststraße",
         "tags": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-02-16T09:40",
+        "ziel": "2026-02-16T10:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
