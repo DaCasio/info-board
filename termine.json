@@ -437,5 +437,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "ANO VIP Routing",
+        "start": "2026-02-18T11:30",
+        "ziel": "2026-02-18T12:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
