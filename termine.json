@@ -201,8 +201,9 @@
     },
     {
         "name": "Frei",
+        "start": null,
         "ziel": "2026-12-30T17:00",
-        "notiz": "",
+        "notiz": "Heiligabend 31. Dezember 2026 Donnerstag",
         "tags": [
             "URLAUB"
         ]
