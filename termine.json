@@ -90,8 +90,9 @@
     },
     {
         "name": "Morgen frei",
+        "start": null,
         "ziel": "2026-06-03T17:00",
-        "notiz": "",
+        "notiz": "Fronleichnam\t04. Juni 2026\tDonnerstag",
         "tags": [
             "URLAUB"
         ]
