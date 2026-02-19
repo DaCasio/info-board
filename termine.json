@@ -435,5 +435,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Toyota Session Stefan Backup",
+        "start": null,
+        "ziel": "2026-02-20T19:00",
+        "notiz": "Bereithalten",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
