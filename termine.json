@@ -471,5 +471,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "FAQ Buchungsrichtlinie",
+        "start": "2026-02-27T10:30",
+        "ziel": "2026-02-27T10:55",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
