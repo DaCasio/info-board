@@ -471,5 +471,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "ANO Kernmeeting",
+        "start": "2026-03-06T09:00",
+        "ziel": "2026-03-06T09:25",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
