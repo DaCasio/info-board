@@ -462,5 +462,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "NORD Team 1 Weekly",
+        "start": "2026-02-27T10:00",
+        "ziel": "2026-02-27T10:55",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
