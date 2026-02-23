@@ -480,5 +480,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Pause Ende",
+        "start": null,
+        "ziel": "2026-02-23T13:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
