@@ -486,7 +486,9 @@
         "start": null,
         "ziel": "2026-02-23T10:00",
         "notiz": "2026022017366880",
-        "tags": []
+        "tags": [
+            "ARBEIT"
+        ]
     },
     {
         "name": "Pause",
