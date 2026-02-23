@@ -374,15 +374,6 @@
         "tags": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-02-23T17:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "CVE Liste mit Daniel",
         "start": "2026-03-11T10:00",
         "ziel": "2026-03-11T10:25",
