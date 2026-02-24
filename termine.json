@@ -476,7 +476,7 @@
         "name": "Fuhrpark / Reifen Quick Rechnung",
         "start": null,
         "ziel": "2026-02-24T10:00",
-        "notiz": "[color:#008800]Winterreifen am 12.12.25[/color] | [color:#febe00]18.12.25 Rechnung[/color] | [color:#ff4d4d]Noch nicht beglichen.[/color]",
+        "notiz": "[ ][color:#008800]Rechnung wird beglichen[/color]\n[ ][color:#febe00]Warten auf Anpassung der Rechnung / Firmierung[/color]",
         "tags": [
             "ARBEIT"
         ]
