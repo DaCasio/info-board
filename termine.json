@@ -227,10 +227,11 @@
     },
     {
         "name": "Elster-Zertifikat Casi läuft aus",
+        "start": null,
         "ziel": "2028-03-24T09:24",
         "notiz": "",
         "tags": [
-            "STEUERN"
+            "ARCHIV"
         ]
     },
     {
