@@ -500,15 +500,6 @@
         ]
     },
     {
-        "name": "X-Schicht",
-        "start": "2026-02-26T13:00",
-        "ziel": "2026-02-26T17:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
         "name": "ANO Routing",
         "start": "2026-02-26T11:30",
         "ziel": "2026-02-26T12:00",
