@@ -501,15 +501,6 @@
     },
     {
         "name": "X-Schicht",
-        "start": "2026-02-26T09:10",
-        "ziel": "2026-02-26T09:40",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
-        "name": "X-Schicht",
         "start": "2026-02-26T10:00",
         "ziel": "2026-02-26T11:30",
         "notiz": "",
