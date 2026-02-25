@@ -243,10 +243,11 @@
     },
     {
         "name": "Darlehen-Ende",
+        "start": null,
         "ziel": "2030-05-15T18:00",
         "notiz": "",
         "tags": [
-            "FINANZEN"
+            "ARCHIV"
         ]
     },
     {
