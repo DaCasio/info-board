@@ -520,5 +520,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "PSC Connect (Nord) in HH Blocker",
+        "start": "2026-04-20T11:00",
+        "ziel": "2026-04-20T16:00",
+        "notiz": "Anreise",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
