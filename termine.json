@@ -529,5 +529,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "AXN HQ",
+        "start": null,
+        "ziel": "2026-08-01T10:00",
+        "notiz": "Einzug alle Etagen Von der Wettern Str.",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
