@@ -529,5 +529,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Kero Nägel",
+        "start": "2026-02-27T14:30",
+        "ziel": "2026-03-27T15:30",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
