@@ -538,5 +538,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "ANO",
+        "start": null,
+        "ziel": "2026-03-02T10:30",
+        "notiz": "MK wegen restlichen Updates anschreiben",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
