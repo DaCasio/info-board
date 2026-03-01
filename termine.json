@@ -538,5 +538,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "NV-Ring-Sperrung",
+        "start": "2026-03-02T06:00",
+        "ziel": "2026-04-17T17:07",
+        "notiz": "Montag, 06:00 – 17. April, 18:00",
+        "tags": [
+            "WAZE"
+        ]
     }
 ]
