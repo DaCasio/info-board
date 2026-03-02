@@ -538,5 +538,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Hochzeitstag",
+        "start": null,
+        "ziel": "2026-07-04T00:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
