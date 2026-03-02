@@ -529,5 +529,14 @@
         "tags": [
             "WAZE"
         ]
+    },
+    {
+        "name": "Jahrestag",
+        "start": null,
+        "ziel": "2026-08-05T00:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
