@@ -538,5 +538,14 @@
         "tags": [
             "WAZE"
         ]
+    },
+    {
+        "name": "Learning Friday",
+        "start": null,
+        "ziel": "2026-03-02T10:30",
+        "notiz": "registrieren, s. Mail Tim",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
