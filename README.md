@@ -1,14 +1,9 @@
 # 🛰️ Termin Monitor - Orbital Control
 
-![Version](https://img.shields.io/badge/Version-3.0-00cae3.svg)
+![Version](https://img.shields.io/badge/Version-3.1-00cae3.svg)
 ![License](https://img.shields.io/badge/License-Private-ff4d4d.svg)
-![Status](https://img.shields.io/badge/Status-Operational-00ff00.svg)
 
-### 🇩🇪 Deutsch
 Ein hochmoderner, browserbasierter Termin-Planer mit orbitalem Design und direkter Cloud-Synchronisation via GitHub API. Optimiert für Desktop-Management und passive E-Ink-Displays.
-
-### 🇺🇸 English
-A state-of-the-art, browser-based appointment planner featuring an orbital design and direct cloud synchronization via the GitHub API. Optimized for desktop management and passive e-ink displays.
 
 ---
 
@@ -16,55 +11,45 @@ A state-of-the-art, browser-based appointment planner featuring an orbital desig
 
 ### 🇩🇪 Deutsch
 * **Echtzeit-Synchronisation:** Speichert Daten direkt in deinem GitHub-Repo via REST API.
-* **Duale Ansicht:** Wechsel zwischen einer taktischen **Monitor-Liste** und einer strategischen **Kalender-Ansicht**.
-* **Intelligentes Filtersystem:** Automatische "LIVE NOW" Erkennung, Archiv-Funktion und der neue **# NOTAG** Filter für unsortierte Einträge.
-* **Präzisions-Countdown:** Live-Ticks für verbleibende Zeit bis zum Start oder Ende eines Termins.
-* **Rich Content:** Unterstützt Markdown-Formatierung, Farben und interaktive Checkboxen innerhalb der Notizen.
-* **ICS-Schnittstelle:** Schneller Import von Terminen aus externen Kalender-Dateien.
+* **Duale Ansicht:** Wechsel zwischen **Monitor-Liste** und **Kalender-Ansicht**.
+* **Smart Filtering:** "LIVE NOW" Erkennung, Archiv-Funktion und der **# NOTAG** Filter.
+* **Backup-System:** Exportiere deine Daten jederzeit als JSON-Datei mit Zeitstempel.
+* **Markdown & Checkboxen:** Unterstützt Fett-Text, Farben und interaktive Aufgabenlisten.
+* **ICS-Import:** Direkter Import aus Kalender-Dateien.
 
 ### 🇺🇸 English
-* **Real-Time Sync:** Persists data directly to your private GitHub repository via REST API.
-* **Dual Interface:** Toggle between a tactical **Monitor List** and a strategic **Calendar View**.
-* **Smart Filtering:** Features automatic "LIVE NOW" detection, archiving, and the new **# NOTAG** filter for uncategorized entries.
-* **Precision Countdown:** Live ticking countdowns for both start times and deadlines.
-* **Rich Content:** Native support for Markdown-style formatting, colors, and interactive checkboxes in notes.
-* **ICS Interface:** Quick import functionality for external calendar files.
+* **Real-Time Sync:** Persists data directly to your GitHub repository via REST API.
+* **Dual Interface:** Toggle between tactical **Monitor List** and **Calendar View**.
+* **Smart Filtering:** "LIVE NOW" detection, archiving, and the **# NOTAG** filter.
+* **Backup System:** Export your data at any time as a timestamped JSON file.
+* **Markdown & Checkboxes:** Native support for bold text, colors, and interactive to-dos.
+* **ICS Import:** Quick import functionality from external calendar files.
 
 ---
 
 ## 🛠️ Einrichtung / Setup Instructions
 
-### 1. Repository Setup
-* **DE:** Erstelle ein privates Repo und eine `termine.json` mit dem Inhalt `[]`.
-* **EN:** Create a private repo and an empty `termine.json` containing `[]`.
-
-### 2. Authentication (GitHub PAT)
-* **DE:** Erstelle ein Personal Access Token (classic) mit `repo` Scope. Teile es im Code auf `t1` und `t2` auf.
-* **EN:** Generate a Personal Access Token (classic) with `repo` scope. Split the token into `t1` and `t2` variables in the code.
-
-### 3. Configuration
-* **DE:** Passe `G_URL` an deinen User- und Repository-Namen an. Standard-PIN: `0508`.
-* **EN:** Adjust `G_URL` to match your username and repo. Default PIN: `0508`.
+1. **GitHub:** Erstelle ein privates Repo und eine `termine.json` mit `[]`.
+2. **Token:** Generiere ein GitHub PAT (classic) mit `repo` Scope. Teile es auf `t1` und `t2` auf.
+3. **URL:** Passe die `G_URL` im Script an dein Repository an.
+4. **PIN:** Standard-PIN ist `0508`. Ändere den Base64-String in `P_ENC` für Sicherheit.
 
 ---
 
 ## 📖 Bedienung / How to Use
 
-| Aktion / Action | Beschreibung / Description (DE) | Description (EN) |
+| Aktion / Action | Beschreibung (DE) | Description (EN) |
 | :--- | :--- | :--- |
-| **Save** | Titel + Enddatum sind Pflicht. | Title + End Date are required. |
-| **Search** | Filtert Titel und Notizen in Echtzeit. | Filters titles and notes in real-time. |
-| **NOTAG Filter** | Findet alle Termine ohne Kategorien. | Finds all appointments without tags. |
-| **Checkboxes** | Klickbare Aufgaben in der Kartenansicht. | Clickable to-do items directly in the card. |
-| **Archive** | Tag `ARCHIV` versteckt den Termin. | Tag `ARCHIV` hides entry from main list. |
-| **Calendar** | Visualisiert Termine im Monatsraster. | Visualizes events in a monthly grid. |
+| **💾 BACKUP** | Lädt alle Termine als lokale JSON-Datei herunter. | Downloads all events as a local JSON file. |
+| **# NOTAG** | Filtert alle Termine ohne Kategorien heraus. | Filters all events that have no tags assigned. |
+| **ICS IMPORT** | Lädt Termindaten aus einer `.ics` Datei vor. | Pre-fills data from an `.ics` calendar file. |
+| **CALENDAR** | Visualisiert Termine im Monatsraster. | Visualizes events in a monthly grid. |
 
 ---
 
-## 🔒 Sicherheit / Security Note
-**DE:** Da das Tool das GitHub-Token im Quellcode nutzt, darf die Datei **niemals öffentlich** zugänglich sein. Hosting nur via GitHub Pages (Privat) oder lokal.
-
-**EN:** Since this tool stores the GitHub token in the source code, the file must **never be made public**. Host via private GitHub Pages or run locally.
+## 🔒 Sicherheit / Security
+**DE:** Die HTML-Datei enthält sensible Token-Daten. Hoste sie nur in privaten Umgebungen oder lokal.  
+**EN:** This file contains sensitive API tokens. Host privately or run locally.
 
 ---
 *Developed for Orbital Control Systems. Status: Operational.*
