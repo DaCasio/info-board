@@ -66,6 +66,7 @@
         .tag-pill.live-pill { border-color: var(--live-color); color: var(--live-color); }
         .tag-pill.live-pill.active { background: var(--live-color); color: black; }
         .tag-pill.arch-pill { border-color: #666; }
+        .tag-pill.notag-pill { border-color: #ff4d4d; font-style: italic; }
 
         .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; text-transform: uppercase; }
 
@@ -279,7 +280,6 @@
             const events = data.filter(t => {
                 const z = new Date(t.ziel);
                 const s = t.start ? new Date(t.start) : new Date(t.ziel);
-                // Check if the current day is within the range [start, end]
                 return (cellDateEnd >= s && cellDateStart <= z);
             });
 
@@ -290,7 +290,6 @@
                 const evDiv = document.createElement('div');
                 evDiv.className = `cal-event ${isArchived ? 'archived' : ''}`;
                 
-                // Add indicator if it's a multi-day event span
                 const isMulti = t.start && t.start.substring(0,10) !== t.ziel.substring(0,10);
                 evDiv.innerText = (isMulti ? "↔ " : "") + t.name;
 
@@ -323,6 +322,8 @@
             filteredData = data.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
         } else if (activeFilter === "ARCHIV") {
             filteredData = data.filter(t => t.tags && t.tags.includes("ARCHIV"));
+        } else if (activeFilter === "NOTAG") {
+            filteredData = data.filter(t => !t.tags || t.tags.length === 0);
         } else if (activeFilter === "LIVE") {
             filteredData = data.filter(t => {
                 const s = t.start ? new Date(t.start) : null;
@@ -408,14 +409,20 @@
         const jetzt = new Date();
         const allTags = new Set();
         let hasLive = false;
+        let hasNoTag = false;
         data.forEach(t => { 
-            if(t.tags) t.tags.forEach(tag => allTags.add(tag)); 
+            if(t.tags && t.tags.length > 0) t.tags.forEach(tag => allTags.add(tag)); 
+            else hasNoTag = true;
+
             const s = t.start ? new Date(t.start) : null;
             const z = new Date(t.ziel);
             if(s && jetzt >= s && jetzt <= z) hasLive = true;
         });
+
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
         if(hasLive) fHtml += `<span class="tag-pill live-pill ${activeFilter === 'LIVE' ? 'active' : ''}" onclick="setFilter('LIVE')">● LIVE NOW</span>`;
+        if(hasNoTag) fHtml += `<span class="tag-pill notag-pill ${activeFilter === 'NOTAG' ? 'active' : ''}" onclick="setFilter('NOTAG')"># NOTAG</span>`;
+        
         allTags.forEach(tag => {
             if(tag !== "ARCHIV") fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`;
         });
@@ -552,6 +559,3 @@
 </script>
 </body>
 </html>
-
-
-
