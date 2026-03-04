@@ -4,7 +4,10 @@
 ![License](https://img.shields.io/badge/License-Private-ff4d4d.svg)
 ![Status](https://img.shields.io/badge/Status-Operational-00ff00.svg)
 
+### 🇩🇪 Deutsch
 Ein hochmoderner, browserbasierter Termin-Planer mit orbitalem Design und direkter Cloud-Synchronisation via GitHub API. Optimiert für Desktop-Management und passive E-Ink-Displays.
+
+### 🇺🇸 English
 A state-of-the-art, browser-based appointment planner featuring an orbital design and direct cloud synchronization via the GitHub API. Optimized for desktop management and passive e-ink displays.
 ---
 
