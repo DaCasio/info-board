@@ -1,67 +1,66 @@
 # 🛰️ Termin Monitor - Orbital Control
 
-![Version](https://img.shields.io/badge/Version-2.5-00cae3.svg)
+![Version](https://img.shields.io/badge/Version-3.0-00cae3.svg)
 ![License](https://img.shields.io/badge/License-Private-ff4d4d.svg)
+![Status](https://img.shields.io/badge/Status-Operational-00ff00.svg)
 
-Ein hochmoderner, browserbasierter Termin-Planer mit orbitalem Design und direkter Cloud-Synchronisation via GitHub API.
+Ein hochmoderner, browserbasierter Termin-Planer mit orbitalem Design und direkter Cloud-Synchronisation via GitHub API. Optimiert für Desktop-Management und passive E-Ink-Displays.
 
 ---
 
 ## 🚀 Kernfunktionen / Core Features
 
 ### 🇩🇪 Deutsch
-* **Echtzeit-Synchronisation:** Speichert Daten direkt in deinem GitHub-Repo als `termine.json`.
-* **Intelligentes Filtersystem:** Automatische "LIVE NOW" Erkennung und Filterung nach Tags (Kategorien).
-* **Dynamische Suche:** Echtzeit-Suche über alle Titel, Notizen und Checkboxen.
-* **Präzisions-Countdown:** Live-Anzeige der verbleibenden Zeit bis zum Start oder Ende.
-* **Markdown & Checkboxen:** Unterstützt Fett-Text, Farben und interaktive Aufgabenlisten.
-* **ICS-Import:** Importiert Termine direkt aus Kalender-Dateien.
+* **Echtzeit-Synchronisation:** Speichert Daten direkt in deinem GitHub-Repo via REST API.
+* **Duale Ansicht:** Wechsel zwischen einer taktischen **Monitor-Liste** und einer strategischen **Kalender-Ansicht**.
+* **Intelligentes Filtersystem:** Automatische "LIVE NOW" Erkennung, Archiv-Funktion und der neue **# NOTAG** Filter für unsortierte Einträge.
+* **Präzisions-Countdown:** Live-Ticks für verbleibende Zeit bis zum Start oder Ende eines Termins.
+* **Rich Content:** Unterstützt Markdown-Formatierung, Farben und interaktive Checkboxen innerhalb der Notizen.
+* **ICS-Schnittstelle:** Schneller Import von Terminen aus externen Kalender-Dateien.
 
 ### 🇺🇸 English
-* **Real-Time Sync:** Saves data directly to your GitHub repo as `termine.json`.
-* **Smart Filtering:** Automatic "LIVE NOW" detection and tag-based categorization.
-* **Dynamic Search:** Real-time search across all titles, notes, and checkboxes.
-* **Precision Countdown:** Live display of remaining time until start or expiration.
-* **Markdown & Checkboxes:** Supports bold text, colors, and interactive to-do lists.
-* **ICS Import:** Import appointments directly from calendar files.
+* **Real-Time Sync:** Persists data directly to your private GitHub repository via REST API.
+* **Dual Interface:** Toggle between a tactical **Monitor List** and a strategic **Calendar View**.
+* **Smart Filtering:** Features automatic "LIVE NOW" detection, archiving, and the new **# NOTAG** filter for uncategorized entries.
+* **Precision Countdown:** Live ticking countdowns for both start times and deadlines.
+* **Rich Content:** Native support for Markdown-style formatting, colors, and interactive checkboxes in notes.
+* **ICS Interface:** Quick import functionality for external calendar files.
 
 ---
 
-## 🛠️ Technische Einrichtung / Setup Instructions
+## 🛠️ Einrichtung / Setup Instructions
 
-### 1. GitHub Repository
-* Erstelle ein **privates** Repository (z.B. `info-board`).
-* Erstelle eine leere Datei namens `termine.json` mit folgendem Inhalt: `[]`.
+### 1. Repository Setup
+* **DE:** Erstelle ein privates Repo und eine `termine.json` mit dem Inhalt `[]`.
+* **EN:** Create a private repo and an empty `termine.json` containing `[]`.
 
-### 2. GitHub Token (PAT)
-* Gehe zu **Settings > Developer Settings > Personal Access Tokens (classic)**.
-* Erstelle ein neues Token mit dem Scope `repo`.
-* Teile das Token in zwei Hälften auf und trage sie in die Variablen `t1` und `t2` im Code ein (um automatische Scans durch GitHub zu erschweren).
+### 2. Authentication (GitHub PAT)
+* **DE:** Erstelle ein Personal Access Token (classic) mit `repo` Scope. Teile es im Code auf `t1` und `t2` auf.
+* **EN:** Generate a Personal Access Token (classic) with `repo` scope. Split the token into `t1` and `t2` variables in the code.
 
-### 3. API URL
-* Passe die `G_URL` im Script-Teil an: 
-  `https://api.github.com/repos/DEIN_NUTZERNAME/DEIN_REPO/contents/termine.json`
-
-### 4. PIN Schutz
-* Der Standard-PIN ist `0508`. 
-* Um den PIN zu ändern, generiere einen neuen Base64-String deines PINs und ersetze den Wert in `P_ENC`.
+### 3. Configuration
+* **DE:** Passe `G_URL` an deinen User- und Repository-Namen an. Standard-PIN: `0508`.
+* **EN:** Adjust `G_URL` to match your username and repo. Default PIN: `0508`.
 
 ---
 
 ## 📖 Bedienung / How to Use
 
-| Aktion | Beschreibung |
-| :--- | :--- |
-| **Speichern** | Titel und Enddatum sind Pflichtfelder. |
-| **Suchen** | Nutze das Suchfeld, um Inhalte sofort zu filtern. |
-| **Formatierung** | Nutze die Toolbar für **B** (Fett), **S** (Durchgestrichen) oder Farben. |
-| **Checklisten** | Klicke auf `+ CHECKBOX` im Editor oder direkt auf die Box in der Kartenansicht. |
-| **Archivieren** | Füge das Tag `ARCHIV` hinzu, um einen Termin aus der Hauptliste zu entfernen. |
+| Aktion / Action | Beschreibung / Description (DE) | Description (EN) |
+| :--- | :--- | :--- |
+| **Save** | Titel + Enddatum sind Pflicht. | Title + End Date are required. |
+| **Search** | Filtert Titel und Notizen in Echtzeit. | Filters titles and notes in real-time. |
+| **NOTAG Filter** | Findet alle Termine ohne Kategorien. | Finds all appointments without tags. |
+| **Checkboxes** | Klickbare Aufgaben in der Kartenansicht. | Clickable to-do items directly in the card. |
+| **Archive** | Tag `ARCHIV` versteckt den Termin. | Tag `ARCHIV` hides entry from main list. |
+| **Calendar** | Visualisiert Termine im Monatsraster. | Visualizes events in a monthly grid. |
 
 ---
 
-## 🔒 Sicherheitshinweis / Security Note
-Da dieses Tool Client-seitig im Browser läuft und das GitHub-Token im Quellcode enthält, sollte die HTML-Datei **niemals in einem öffentlichen Repository** hochgeladen werden. Nutze es lokal oder hoste es in einer privaten, passwortgeschützten Umgebung.
+## 🔒 Sicherheit / Security Note
+**DE:** Da das Tool das GitHub-Token im Quellcode nutzt, darf die Datei **niemals öffentlich** zugänglich sein. Hosting nur via GitHub Pages (Privat) oder lokal.
+
+**EN:** Since this tool stores the GitHub token in the source code, the file must **never be made public**. Host via private GitHub Pages or run locally.
 
 ---
 *Developed for Orbital Control Systems. Status: Operational.*
