@@ -52,6 +52,7 @@
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
         .tool-btn:hover { background: var(--accent); color: black; }
         .tool-btn.backup-btn { border-color: #00ff00; color: #00ff00; margin-left: auto; }
+        .tool-btn.restore-btn { border-color: #ff9900; color: #ff9900; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.95em; }
         textarea { min-height: 80px; font-family: inherit; resize: vertical; }
@@ -159,8 +160,10 @@
                 <button class="tool-btn" onclick="wrapText('[color:#1010dd]','[/color]')" style="color:#1010dd">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
                 <button class="tool-btn" onclick="document.getElementById('ics-upload').click()">+ ICS IMPORT</button>
+                <button class="tool-btn restore-btn" onclick="document.getElementById('backup-upload').click()">📂 RESTORE</button>
                 <button class="tool-btn backup-btn" onclick="downloadBackup()">💾 BACKUP</button>
                 <input type="file" id="ics-upload" accept=".ics" style="display:none" onchange="importICS(this)">
+                <input type="file" id="backup-upload" accept=".json" style="display:none" onchange="importBackup(this)">
             </div>
             
             <textarea id="t-note" placeholder="Notizen..."></textarea>
@@ -456,6 +459,23 @@
         a.href = url; a.download = fileName;
         document.body.appendChild(a); a.click();
         document.body.removeChild(a); URL.revokeObjectURL(url);
+    }
+
+    function importBackup(input) {
+        const file = input.files[0]; if (!file) return;
+        if(!confirm("Möchtest du das Backup wirklich einspielen? Alle aktuellen Daten werden überschrieben!")) return;
+        const reader = new FileReader();
+        reader.onload = async function(e) {
+            try {
+                const importedData = JSON.parse(e.target.result);
+                if(Array.isArray(importedData)) {
+                    data = importedData;
+                    await saveToGit();
+                    alert("Backup erfolgreich wiederhergestellt und synchronisiert!");
+                } else { alert("Ungültiges Dateiformat."); }
+            } catch(err) { alert("Fehler beim Lesen des Backups."); }
+        };
+        reader.readAsText(file);
     }
 
     function importICS(input) {
