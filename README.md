@@ -1,72 +1,70 @@
-# 🛰️ Termin Monitor - Orbital Control System
+# 🛰️ Termin Monitor - Orbital Control
 
 ![Version](https://img.shields.io/badge/Version-3.3-00cae3.svg)
-![Build](https://img.shields.io/badge/Build-Operational-00ff00.svg)
-![License](https://img.shields.io/badge/License-Private-ff4d4d.svg)
-
-A high-performance, browser-based scheduling and monitoring dashboard with a tactical "Orbital" aesthetic. Optimized for desktop management and passive E-Ink displays, featuring direct cloud synchronization via the GitHub REST API.
+![Status](https://img.shields.io/badge/Status-Operational-00ff00.svg)
 
 ---
 
-## 🚀 Key Features
+## 🇩🇪 Deutsch: Übersicht
+Ein hochmodernes Kontrollzentrum für Termine und Fristen. Optimiert für Desktop-Management und passive Dashboards, mit direkter GitHub-Cloud-Synchronisation.
 
-* **Real-Time Cloud Sync:** Persists all data directly to a private GitHub repository.
-* **Dual-View Interface:** Seamlessly toggle between a tactical **Monitor List** and a full **Monthly Calendar**.
-* **Smart Filtering:** Includes specialized filters for "LIVE NOW" events, archived data, and a unique **# NOTAG** filter for uncategorized entries.
-* **Rich Text & Tasks:** Native support for Markdown-style bolding, custom color codes, and interactive checkboxes within notes.
-* **Redundancy System:** Integrated **Backup (Export)** and **Restore (Import)** functions for local data safety.
-* **ICS Integration:** Directly pre-fill event data from standard `.ics` calendar files.
-
----
-
-## 🛠️ Installation & Setup
-
-1.  **Repository:** Create a private GitHub repository.
-2.  **Storage:** Initialize a file named `termine.json` containing only `[]`.
-3.  **Authentication:** * Generate a GitHub Personal Access Token (PAT) with `repo` scope.
-    * Split the token into constants `t1` and `t2` within the script.
-4.  **URL:** Update the `G_URL` constant in the script to match your repository path.
-5.  **Security:** The default PIN is `0508`. Change the Base64 string in `P_ENC` for custom security.
+### 🚀 Kernfunktionen
+* **Echtzeit-Sync:** Speichert Daten direkt in deinem GitHub-Repo via REST API.
+* **Backup & Restore:** Lokale JSON-Snapshots erstellen und mit einem Klick wiederherstellen.
+* **Duale Ansicht:** Wechsel zwischen Monitor-Liste und grafischem Kalender.
+* **Smart Filtering:** "LIVE NOW" Erkennung, Archiv-Funktion und der **# NOTAG** Filter.
+* **Rich Text:** Unterstützt Checkboxen, Fettdruck und Farbcodes.
+* **ICS-Import:** Direkter Import aus externen Kalender-Dateien (.ics).
 
 ---
 
-## 📜 Version History (Changelog)
+## 🇺🇸 English: Overview
+A state-of-the-art control center for deadlines and appointments. Optimized for desktop management and passive dashboards, featuring direct GitHub cloud synchronization.
 
-### **v1.0 - The Foundation**
-* Initial release of the "Info-Board".
-* Basic GitHub API integration for saving and loading.
-* Simple list view of upcoming deadlines.
+### 🚀 Key Features
+* **Real-Time Sync:** Persists data directly to your GitHub repository via REST API.
+* **Backup & Restore:** Create local JSON snapshots and restore them with a single click.
+* **Dual Interface:** Toggle between a tactical Monitor List and a graphical Calendar.
+* **Smart Filtering:** "LIVE NOW" detection, archiving, and the **# NOTAG** filter.
+* **Rich Text:** Native support for checkboxes, bold text, and color codes.
+* **ICS Import:** Direct import functionality from external calendar files (.ics).
 
-### **v2.0 - Tactical UI & UX**
-* Introduced the "Orbital" dark-mode design with NASA imagery.
-* Added the **Countdown Engine** (days, hours, minutes, seconds).
-* Implemented **Tagging System** and basic filtering.
-* Added the **Copy/Duplicate** function for recurring tasks.
+---
 
-### **v3.0 - The Calendar Update**
-* Integrated a full **Interactive Calendar View**.
-* Added **Event Duration** support (Start-Date vs. End-Date).
-* Introduced the **"LIVE NOW"** status for ongoing events.
-* Enhanced Note Formatting: Bolding (`**`), Strikethrough (`--`), and Custom Colors (`[color:...]`).
+## 📜 Versions-Historie / Version History
 
-### **v3.1 - Connectivity & Tasks**
-* Added **ICS File Import** for external calendar integration.
-* Implemented **Interactive Checkboxes** within the note field (`[ ]` / `[x]`).
-* Auto-refresh logic (60s sync / 1s UI update).
+### **v1.0 - The Core (Basis)**
+* **DE:** Grundlegendes Listing, lokale Speicherung, einfaches Design.
+* **EN:** Basic listing, local storage, simple design.
+
+### **v2.0 - Orbital Sync**
+* **DE:** Einführung der GitHub API Anbindung für Cloud-Sync. PIN-Login-System integriert.
+* **EN:** Introduction of GitHub API for cloud sync. Integrated PIN login system.
+
+### **v3.0 - Tactical UI**
+* **DE:** Neues "Orbital" Dark-Design, Countdown-Timer, Tag-System und ICS-Import.
+* **EN:** New "Orbital" dark design, countdown timers, tag system, and ICS import.
+
+### **v3.1 - Calendar & Rich Text**
+* **DE:** Implementierung der Kalender-Ansicht und Textformatierung (Bett, Farbe, Checkboxen).
+* **EN:** Implementation of Calendar View and text formatting (bold, color, checkboxes).
 
 ### **v3.2 - Redundancy Update**
-* Added **💾 BACKUP** function: Export all data as a local `.json` file.
-* Added **📂 RESTORE** function: Overwrite cloud data with a local backup file (including safety confirmation).
+* **DE:** Backup- und Restore-Logik für JSON-Dateien hinzugefügt.
+* **EN:** Added backup and restore logic for JSON files.
 
-### **v3.3 - Layout Finalization (Current)**
-* **System Isolation:** Realigned Backup/Restore buttons to the right side of the toolbar to separate administrative tasks from content formatting.
-* **Responsive Fixes:** Improved mobile behavior for the new toolbar layout.
-* **Status Logic:** Refined countdown priorities between Start and End dates.
-
----
-
-## 🔒 Security Disclaimer
-This application is designed for **private use**. Because the API tokens are stored in the client-side code (even if segmented), this HTML file should only be hosted in private environments or run locally.
+### **v3.3 - System Layout (Current)**
+* **DE:** Optimierung der Toolbar. System-Buttons (Backup/Restore) sind nun rechtsbündig isoliert.
+* **EN:** Toolbar optimization. System buttons (Backup/Restore) are now isolated on the right side.
 
 ---
-*Developed for Orbital Control Systems. Status: Fully Operational.*
+
+## ⚙️ Einrichtung / Setup (DE/EN)
+
+1. **GitHub:** Create a private repo with a `termine.json` containing `[]`.
+2. **Token:** Generate a GitHub PAT (classic) and split it into `t1` and `t2` in the code.
+3. **PIN:** Standard PIN is `0508`. Change the Base64 string in `P_ENC` for security.
+4. **URL:** Update `G_URL` to point to your repository.
+
+---
+*Orbital Control Systems - Developed for Precision.*
