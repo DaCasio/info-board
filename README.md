@@ -9,6 +9,7 @@ Ein hochmoderner, browserbasierter Termin-Planer mit orbitalem Design und direkt
 
 ### 🇺🇸 English
 A state-of-the-art, browser-based appointment planner featuring an orbital design and direct cloud synchronization via the GitHub API. Optimized for desktop management and passive e-ink displays.
+
 ---
 
 ## 🚀 Kernfunktionen / Core Features
