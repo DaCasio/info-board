@@ -24,12 +24,10 @@
             padding: 15px; margin-bottom: 20px; box-shadow: 0 0 25px rgba(0,0,0,0.6);
         }
 
-        /* View Toggle */
         .view-toggle { display: flex; gap: 10px; margin-bottom: 20px; width: 100%; justify-content: center; }
         .view-btn { background: rgba(0,0,0,0.5); color: white; border: 1px solid var(--accent); padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; flex: 1; transition: 0.3s; }
         .view-btn.active { background: var(--accent); color: black; }
 
-        /* Calendar Styles */
         #calendar-view { display: none; }
         .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; font-weight: bold; font-size: 1.2em; color: var(--accent); }
         .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center; }
@@ -53,6 +51,7 @@
         .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
         .tool-btn:hover { background: var(--accent); color: black; }
+        .tool-btn.backup-btn { border-color: #00ff00; color: #00ff00; margin-left: auto; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.95em; }
         textarea { min-height: 80px; font-family: inherit; resize: vertical; }
@@ -110,6 +109,7 @@
         @media (max-width: 600px) {
             .date-group { flex-direction: column; min-width: 100%; }
             .cal-cell { min-height: 60px; font-size: 0.7em; }
+            .tool-btn.backup-btn { margin-left: 0; width: 100%; text-align: center; margin-top: 5px; }
         }
     </style>
 </head>
@@ -159,6 +159,7 @@
                 <button class="tool-btn" onclick="wrapText('[color:#1010dd]','[/color]')" style="color:#1010dd">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
                 <button class="tool-btn" onclick="document.getElementById('ics-upload').click()">+ ICS IMPORT</button>
+                <button class="tool-btn backup-btn" onclick="downloadBackup()">💾 BACKUP</button>
                 <input type="file" id="ics-upload" accept=".ics" style="display:none" onchange="importICS(this)">
             </div>
             
@@ -237,67 +238,43 @@
         const grid = document.getElementById('cal-grid');
         const title = document.getElementById('cal-month-title');
         grid.innerHTML = "";
-        
         const year = calDate.getFullYear();
         const month = calDate.getMonth();
         title.innerText = new Intl.DateTimeFormat('de-DE', { month: 'long', year: 'numeric' }).format(calDate);
-
-        ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"].forEach(d => {
-            grid.innerHTML += `<div class="cal-day-label">${d}</div>`;
-        });
-
+        ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"].forEach(d => { grid.innerHTML += `<div class="cal-day-label">${d}</div>`; });
         const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
         const daysInMonth = new Date(year, month + 1, 0).getDate();
         const daysInPrevMonth = new Date(year, month, 0).getDate();
-
-        for (let i = firstDay - 1; i >= 0; i--) {
-            createCalCell(grid, daysInPrevMonth - i, true);
-        }
-
+        for (let i = firstDay - 1; i >= 0; i--) { createCalCell(grid, daysInPrevMonth - i, true); }
         for (let d = 1; d <= daysInMonth; d++) {
             const isToday = d === new Date().getDate() && month === new Date().getMonth() && year === new Date().getFullYear();
             createCalCell(grid, d, false, isToday, year, month);
         }
-
         const totalCells = grid.children.length - 7;
         const remaining = (42 - totalCells) % 42;
-        if (remaining > 0) {
-            for (let i = 1; i <= remaining; i++) {
-                createCalCell(grid, i, true);
-            }
-        }
+        if (remaining > 0) { for (let i = 1; i <= remaining; i++) { createCalCell(grid, i, true); } }
     }
 
     function createCalCell(container, day, otherMonth, isToday, year, month) {
         const cell = document.createElement('div');
         cell.className = `cal-cell ${otherMonth ? 'other-month' : ''} ${isToday ? 'today' : ''}`;
         cell.innerHTML = `<b>${day}</b><div class="cal-dot-container"></div>`;
-        
         if (!otherMonth) {
             const cellDateStart = new Date(year, month, day, 0, 0, 0);
             const cellDateEnd = new Date(year, month, day, 23, 59, 59);
-
             const events = data.filter(t => {
                 const z = new Date(t.ziel);
                 const s = t.start ? new Date(t.start) : new Date(t.ziel);
                 return (cellDateEnd >= s && cellDateStart <= z);
             });
-
             const dotContainer = cell.querySelector('.cal-dot-container');
-            
             events.forEach(t => {
                 const isArchived = t.tags && t.tags.includes("ARCHIV");
                 const evDiv = document.createElement('div');
                 evDiv.className = `cal-event ${isArchived ? 'archived' : ''}`;
-                
                 const isMulti = t.start && t.start.substring(0,10) !== t.ziel.substring(0,10);
                 evDiv.innerText = (isMulti ? "↔ " : "") + t.name;
-
-                evDiv.onclick = (e) => {
-                    e.stopPropagation();
-                    edit(data.indexOf(t));
-                    switchView('list');
-                };
+                evDiv.onclick = (e) => { e.stopPropagation(); edit(data.indexOf(t)); switchView('list'); };
                 dotContainer.appendChild(evDiv);
             });
         }
@@ -317,34 +294,15 @@
         const jetzt = new Date();
         const searchQuery = document.getElementById('search-input').value.toLowerCase();
         let filteredData;
-        
-        if (activeFilter === "ALL") {
-            filteredData = data.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
-        } else if (activeFilter === "ARCHIV") {
-            filteredData = data.filter(t => t.tags && t.tags.includes("ARCHIV"));
-        } else if (activeFilter === "NOTAG") {
-            filteredData = data.filter(t => !t.tags || t.tags.length === 0);
-        } else if (activeFilter === "LIVE") {
-            filteredData = data.filter(t => {
-                const s = t.start ? new Date(t.start) : null;
-                const z = new Date(t.ziel);
-                return s && jetzt >= s && jetzt <= z;
-            });
-        } else {
-            filteredData = data.filter(t => t.tags && t.tags.includes(activeFilter));
-        }
-
-        if (searchQuery) {
-            filteredData = filteredData.filter(t => 
-                t.name.toLowerCase().includes(searchQuery) || 
-                (t.notiz && t.notiz.toLowerCase().includes(searchQuery))
-            );
-        }
-
+        if (activeFilter === "ALL") { filteredData = data.filter(t => !t.tags || !t.tags.includes("ARCHIV")); } 
+        else if (activeFilter === "ARCHIV") { filteredData = data.filter(t => t.tags && t.tags.includes("ARCHIV")); } 
+        else if (activeFilter === "NOTAG") { filteredData = data.filter(t => !t.tags || t.tags.length === 0); } 
+        else if (activeFilter === "LIVE") { filteredData = data.filter(t => { const s = t.start ? new Date(t.start) : null; const z = new Date(t.ziel); return s && jetzt >= s && jetzt <= z; }); } 
+        else { filteredData = data.filter(t => t.tags && t.tags.includes(activeFilter)); }
+        if (searchQuery) { filteredData = filteredData.filter(t => t.name.toLowerCase().includes(searchQuery) || (t.notiz && t.notiz.toLowerCase().includes(searchQuery))); }
         document.getElementById('counter-display').innerText = `${activeFilter} TERMINE: ${filteredData.length}`;
         updateFilterBar();
         if(document.getElementById('calendar-view').style.display === 'block') renderCalendar();
-
         filteredData.sort((a, b) => {
             const zielA = new Date(a.ziel), startA = a.start ? new Date(a.start) : null;
             const zielB = new Date(b.ziel), startB = b.start ? new Date(b.start) : null;
@@ -352,27 +310,14 @@
             const relevantB = (startB && jetzt < startB) ? startB : zielB;
             return relevantA - relevantB;
         });
-
         let h = "";
         filteredData.forEach((t) => {
             const originalIndex = data.indexOf(t);
             const ziel = new Date(t.ziel), start = t.start ? new Date(t.start) : null;
             let statusText = "FÄLLIG", displayTime = "", cssClass = "faellig";
-
-            if (start && jetzt < start) {
-                statusText = "START IN";
-                displayTime = getCountdown(start - jetzt);
-                cssClass = ""; 
-            } else if (jetzt < ziel) {
-                statusText = start ? "ENDE IN" : "";
-                displayTime = getCountdown(ziel - jetzt);
-                cssClass = start ? "laufend" : ""; 
-            } else {
-                statusText = ""; 
-                displayTime = "FÄLLIG"; 
-                cssClass = "faellig";
-            }
-
+            if (start && jetzt < start) { statusText = "START IN"; displayTime = getCountdown(start - jetzt); cssClass = ""; } 
+            else if (jetzt < ziel) { statusText = start ? "ENDE IN" : ""; displayTime = getCountdown(ziel - jetzt); cssClass = start ? "laufend" : ""; } 
+            else { statusText = ""; displayTime = "FÄLLIG"; cssClass = "faellig"; }
             const tagsHtml = t.tags ? t.tags.map(tag => `<span class="tag-mini">${tag}</span>`).join('') : '';
             const optionsFull = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
             const optionsNoYear = { weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' };
@@ -380,9 +325,7 @@
             const startStr = start ? `Start: ${start.toLocaleString('de-DE', showStartYear ? optionsFull : optionsNoYear)} Uhr<br>` : '';
             const zielStr = `Ende: ${ziel.toLocaleString('de-DE', optionsFull)} Uhr`;
             const timeStyle = displayTime === "FÄLLIG" ? "font-size: 1.2em; padding: 10px 0;" : "";
-
-            h += `
-            <div class="termin-card">
+            h += `<div class="termin-card">
                 <div class="row-title">
                     <div class="titel-box">${t.name}</div>
                     <div class="actions-box">
@@ -408,24 +351,16 @@
     function updateFilterBar() {
         const jetzt = new Date();
         const allTags = new Set();
-        let hasLive = false;
-        let hasNoTag = false;
+        let hasLive = false, hasNoTag = false;
         data.forEach(t => { 
-            if(t.tags && t.tags.length > 0) t.tags.forEach(tag => allTags.add(tag)); 
-            else hasNoTag = true;
-
-            const s = t.start ? new Date(t.start) : null;
-            const z = new Date(t.ziel);
+            if(t.tags && t.tags.length > 0) t.tags.forEach(tag => allTags.add(tag)); else hasNoTag = true;
+            const s = t.start ? new Date(t.start) : null, z = new Date(t.ziel);
             if(s && jetzt >= s && jetzt <= z) hasLive = true;
         });
-
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
         if(hasLive) fHtml += `<span class="tag-pill live-pill ${activeFilter === 'LIVE' ? 'active' : ''}" onclick="setFilter('LIVE')">● LIVE NOW</span>`;
         if(hasNoTag) fHtml += `<span class="tag-pill notag-pill ${activeFilter === 'NOTAG' ? 'active' : ''}" onclick="setFilter('NOTAG')"># NOTAG</span>`;
-        
-        allTags.forEach(tag => {
-            if(tag !== "ARCHIV") fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`;
-        });
+        allTags.forEach(tag => { if(tag !== "ARCHIV") fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`; });
         if(allTags.has("ARCHIV")) fHtml += `<span class="tag-pill arch-pill ${activeFilter === 'ARCHIV' ? 'active' : ''}" onclick="setFilter('ARCHIV')">📁 ARCHIV</span>`;
         document.getElementById('filter-display').innerHTML = fHtml;
     }
@@ -451,8 +386,7 @@
 
     function addCB(val = "", checked = false) {
         const div = document.createElement('div');
-        div.className = "cb-edit-row";
-        div.style = "display:flex; gap:5px; margin-bottom:5px;";
+        div.className = "cb-edit-row"; div.style = "display:flex; gap:5px; margin-bottom:5px;";
         div.innerHTML = `<input type="checkbox" ${checked ? 'checked' : ''} style="width:20px; margin:0;"><input type="text" value="${val}" style="flex:1; margin-bottom:0;"><button class="tool-btn" onclick="this.parentElement.remove()">✕</button>`;
         document.getElementById('cb-list').appendChild(div);
     }
@@ -480,15 +414,10 @@
 
     async function save() {
         const saveBtn = document.getElementById('save-btn');
-        const name = document.getElementById('t-name').value, 
-              ziel = document.getElementById('t-date').value, 
-              start = document.getElementById('t-start').value,
-              note = document.getElementById('t-note').value, 
-              tagsRaw = document.getElementById('t-tags').value,
-              id = document.getElementById('edit-id').value;
+        const name = document.getElementById('t-name').value, ziel = document.getElementById('t-date').value, start = document.getElementById('t-start').value,
+              note = document.getElementById('t-note').value, tagsRaw = document.getElementById('t-tags').value, id = document.getElementById('edit-id').value;
         if(!name || !ziel) { alert("Bitte Titel und Enddatum angeben."); return; }
-        saveBtn.disabled = true;
-        saveBtn.innerText = "SYNCHRONISIERE...";
+        saveBtn.disabled = true; saveBtn.innerText = "SYNCHRONISIERE...";
         const tags = tagsRaw.split(',').map(s => s.trim().toUpperCase()).filter(s => s !== "");
         let fullNote = note;
         document.querySelectorAll('.cb-edit-row').forEach(row => {
@@ -497,41 +426,40 @@
         });
         const entry = { name, start: start || null, ziel, notiz: fullNote.trim(), tags };
         if(id === "-1") data.push(entry); else data[id] = entry;
-        await saveToGit();
-        resetForm();
-        saveBtn.disabled = false;
+        await saveToGit(); resetForm(); saveBtn.disabled = false;
     }
 
     function resetForm() {
-        document.getElementById('edit-id').value = "-1"; 
-        document.getElementById('cb-list').innerHTML = ""; 
-        document.getElementById('t-note').value = ""; 
-        document.getElementById('t-name').value = "";
-        document.getElementById('t-tags').value = "";
-        document.getElementById('t-start').value = "";
-        document.getElementById('t-date').value = "";
-        document.getElementById('save-btn').innerText = "TERMIN SPEICHERN";
+        document.getElementById('edit-id').value = "-1"; document.getElementById('cb-list').innerHTML = ""; 
+        document.getElementById('t-note').value = ""; document.getElementById('t-name').value = "";
+        document.getElementById('t-tags').value = ""; document.getElementById('t-start').value = "";
+        document.getElementById('t-date').value = ""; document.getElementById('save-btn').innerText = "TERMIN SPEICHERN";
     }
 
     async function saveToGit() {
         const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 4))));
         try {
             const res = await fetch(G_URL, { 
-                method: 'PUT', 
-                headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, 
+                method: 'PUT', headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, 
                 body: JSON.stringify({ message: "Update via Monitor", content, sha: currentSha }) 
             });
-            if (res.ok) {
-                const j = await res.json();
-                currentSha = j.content.sha;
-                render();
-            }
+            if (res.ok) { const j = await res.json(); currentSha = j.content.sha; render(); }
         } catch(e) { alert("Fehler beim Speichern im Orbit."); }
     }
 
+    function downloadBackup() {
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+        const fileName = `backup_termine_${timestamp}.json`;
+        const blob = new Blob([JSON.stringify(data, null, 4)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = fileName;
+        document.body.appendChild(a); a.click();
+        document.body.removeChild(a); URL.revokeObjectURL(url);
+    }
+
     function importICS(input) {
-        const file = input.files[0];
-        if (!file) return;
+        const file = input.files[0]; if (!file) return;
         const reader = new FileReader();
         reader.onload = function(e) {
             const content = e.target.result;
@@ -539,8 +467,7 @@
             const dtStartMatch = content.match(/DTSTART[:;](?:VALUE=DATE:)?(\d{8}T\d{6}|\d{8})/);
             const dtEndMatch = content.match(/DTEND[:;](?:VALUE=DATE:)?(\d{8}T\d{6}|\d{8})/);
             const parseDate = (match) => {
-                if (!match) return "";
-                const d = match[1];
+                if (!match) return ""; const d = match[1];
                 return `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,8)}T${d.slice(9,11) || '00'}:${d.slice(11,13) || '00'}`;
             };
             document.getElementById('t-name').value = summary.trim();
@@ -553,7 +480,6 @@
 
     function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
     function wrapText(b, a) { const t = document.getElementById('t-note'); const s = t.selectionStart, e = t.selectionEnd; t.value = t.value.substring(0,s)+b+t.value.substring(s,e)+a+t.value.substring(e); t.focus(); }
-
     setInterval(() => { if(isLogged) render(); }, 1000);
     setInterval(() => { if(isLogged) load(); }, 60000);
 </script>
