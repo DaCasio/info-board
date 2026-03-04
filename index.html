@@ -51,8 +51,10 @@
         .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
         .tool-btn:hover { background: var(--accent); color: black; }
-        .tool-btn.backup-btn { border-color: #00ff00; color: #00ff00; margin-left: auto; }
-        .tool-btn.restore-btn { border-color: #ff9900; color: #ff9900; }
+        
+        /* Rechts ausgerichtete System-Buttons */
+        .tool-btn.restore-btn { border-color: #ff9900; color: #ff9900; margin-left: auto; }
+        .tool-btn.backup-btn { border-color: #00ff00; color: #00ff00; margin-left: 0; }
 
         input, textarea { background: rgba(0,0,0,0.6); border: 1px solid #444; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-bottom: 8px; font-size: 0.95em; }
         textarea { min-height: 80px; font-family: inherit; resize: vertical; }
@@ -110,7 +112,8 @@
         @media (max-width: 600px) {
             .date-group { flex-direction: column; min-width: 100%; }
             .cal-cell { min-height: 60px; font-size: 0.7em; }
-            .tool-btn.backup-btn { margin-left: 0; width: 100%; text-align: center; margin-top: 5px; }
+            .tool-btn.restore-btn { margin-left: 0; width: 100%; text-align: center; margin-top: 5px; }
+            .tool-btn.backup-btn { width: 100%; text-align: center; margin-top: 5px; }
         }
     </style>
 </head>
@@ -160,8 +163,10 @@
                 <button class="tool-btn" onclick="wrapText('[color:#1010dd]','[/color]')" style="color:#1010dd">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
                 <button class="tool-btn" onclick="document.getElementById('ics-upload').click()">+ ICS IMPORT</button>
+                
                 <button class="tool-btn restore-btn" onclick="document.getElementById('backup-upload').click()">📂 RESTORE</button>
                 <button class="tool-btn backup-btn" onclick="downloadBackup()">💾 BACKUP</button>
+                
                 <input type="file" id="ics-upload" accept=".ics" style="display:none" onchange="importICS(this)">
                 <input type="file" id="backup-upload" accept=".json" style="display:none" onchange="importBackup(this)">
             </div>
