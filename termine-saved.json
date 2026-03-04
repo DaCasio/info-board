@@ -1,133 +1,5 @@
 [
     {
-        "name": "Herr Ziberi treffen",
-        "start": "2026-01-17T12:00",
-        "ziel": "2026-01-17T15:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Bajrami Maler",
-        "start": null,
-        "ziel": "2026-01-17T17:00",
-        "notiz": "Bad, Fugen etc.",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Bajrami Übergabe",
-        "start": null,
-        "ziel": "2026-01-17T18:00",
-        "notiz": "[ ] Keller- und Haustürschlüssel - abholen\n[ ] Mieterbestätigung - Ausdrucken und unterschreiben lassen",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Lieferung Esstisch",
-        "ziel": "2026-01-19T08:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Putzen – Kero & Sabina",
-        "start": "2026-01-20T08:00",
-        "ziel": "2026-01-21T22:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Umzug",
-        "start": "2026-01-22T08:00",
-        "ziel": "2026-01-23T15:00",
-        "notiz": "22-23.1\n\nGucken dass der Scherge nicht hinterherfährt\n**Protokoll Vorfall Verfolgung/Nachstellung**\n\nDatum/Uhrzeit: \nOrt: \nBeschreibung: (Kennzeichen, Person, Verhalten)\nZeugen: \nFotos/Video: \n\n1. Polizei anrufen (110): „Verdacht Nachstellung § 238 StGB\"\n2. Anwältin informieren: Unterlassungsklage vorbereiten.\n3. Strafanzeige stellen.\n\n**Vertraulichkeitsvereinbarung – Umzug am 14.01.2026**\n\nSehr geehrte Damen und Herren,\n\nwir beauftragen Sie mit unserem Umzug von der ***straße **, *12345* *Ort* zum [Zielort nicht angeben].\n\n**Wichtige Datenschutzhinweise:**\n1. Der Zielort ist streng vertraulich. Geben Sie **keine Auskunft** über Zieladresse, Route oder Umzugszeit an Dritte (Nachbarn, Vermieter, Mitfahrer).\n2. Bei Nachfragen oder Beobachtung durch Dritte (z.B. Mitmieter, Nachbarn) bitte Sie diese höflich abzuweisen mit: „Datenschutz – keine Auskunft möglich.\"\n3. Bei Belästigung oder Verfolgung melden Sie dies umgehend an uns (Tel: [Ihre Nummer]).\n\nVielen Dank!\n[Unterschrift + Datum]",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Dayflat Telekom",
-        "start": "2026-01-22T20:00",
-        "ziel": "2026-01-26T07:59",
-        "notiz": "",
-        "tags": [
-            "INTERNET"
-        ]
-    },
-    {
-        "name": "Telekom VDSL Umschaltung",
-        "start": "2026-01-26T08:00",
-        "ziel": "2026-01-26T16:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Sperrmüll rausstellen",
-        "ziel": "2026-01-27T15:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Sperrmüll Abholung",
-        "ziel": "2026-01-28T07:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Fuck off Kleiststraße",
-        "ziel": "2026-02-01T00:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Urlaub Ende",
-        "ziel": "2026-02-01T22:00",
-        "notiz": "",
-        "tags": [
-            "URLAUB"
-        ]
-    },
-    {
-        "name": "Sperrmüll Neukirchen rausstellen",
-        "ziel": "2026-02-08T10:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Sperrmüll Neukirchen Abholung",
-        "ziel": "2026-02-09T10:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Steuern rausschicken",
-        "start": "2026-03-01T18:00",
-        "ziel": "2026-04-13T18:00",
-        "notiz": "Start wenn Lohnsteuerabruf möglich.\n6 Wochen Dauer bis Auszahlung abwarten.",
-        "tags": [
-            "STEUERN"
-        ]
-    },
-    {
         "name": "Dr. Stickelbruck – Reinigung",
         "ziel": "2026-03-11T09:00",
         "notiz": "",
@@ -139,26 +11,27 @@
         "name": "Bülent Ceylan – Diktatürk",
         "start": null,
         "ziel": "2026-03-22T19:00",
-        "notiz": "[ ]Bereitschaft für den Sonntag abgeben!",
+        "notiz": "Bereitschaft für den Sonntag an Sahand abgegeben!",
         "tags": [
             "TERMINE"
         ]
     },
     {
         "name": "Langes Wochenende",
+        "start": null,
         "ziel": "2026-04-02T17:00",
-        "notiz": "",
+        "notiz": "Karfreitag\t03. April 2026\tFreitag\nOstermontag\t06. April 2026\tMontag",
         "tags": [
             "URLAUB"
         ]
     },
     {
-        "name": "Dezor Abo Ende prüfen",
+        "name": "Dezor-Abo: Ende prüfen",
         "start": null,
         "ziel": "2026-04-06T09:00",
         "notiz": "Gekündigt, trotzdem prüfen.",
         "tags": [
-            "TERMINE"
+            "ABO"
         ]
     },
     {
@@ -171,17 +44,18 @@
         ]
     },
     {
-        "name": "Dezor Abo Ende",
+        "name": "Dezor-Abo Ende",
         "start": null,
         "ziel": "2026-04-07T16:44",
         "notiz": "Gekündigt.",
         "tags": [
-            "TERMINE"
+            "ABO"
         ]
     },
     {
-        "name": "Eurowings – Konto prüfen",
-        "ziel": "2026-04-15T15:00",
+        "name": "Eurowings glatt",
+        "start": null,
+        "ziel": "2026-05-15T15:00",
         "notiz": "",
         "tags": [
             "FINANZEN"
@@ -189,32 +63,36 @@
     },
     {
         "name": "Langes Wochenende",
+        "start": null,
         "ziel": "2026-04-30T17:00",
-        "notiz": "",
+        "notiz": "Tag der Arbeit\t01. Mai 2026\tFreitag",
         "tags": [
             "URLAUB"
         ]
     },
     {
         "name": "Morgen frei",
+        "start": null,
         "ziel": "2026-05-13T17:00",
-        "notiz": "",
+        "notiz": "Christi Himmelfahrt\t14. Mai 2026\tDonnerstag",
         "tags": [
             "URLAUB"
         ]
     },
     {
         "name": "Langes Wochenende",
+        "start": null,
         "ziel": "2026-05-22T17:00",
-        "notiz": "",
+        "notiz": "Pfingstmontag\t25. Mai 2026\tMontag",
         "tags": [
             "URLAUB"
         ]
     },
     {
         "name": "Morgen frei",
+        "start": null,
         "ziel": "2026-06-03T17:00",
-        "notiz": "",
+        "notiz": "Fronleichnam\t04. Juni 2026\tDonnerstag",
         "tags": [
             "URLAUB"
         ]
@@ -228,11 +106,12 @@
         ]
     },
     {
-        "name": "Abbait",
-        "ziel": "2026-07-09T08:00",
+        "name": "Arbeit",
+        "start": null,
+        "ziel": "2026-07-13T08:00",
         "notiz": "",
         "tags": [
-            "URLAUB"
+            "ARBEIT"
         ]
     },
     {
@@ -252,15 +131,16 @@
         ]
     },
     {
-        "name": "Abbait",
+        "name": "Arbeit",
+        "start": null,
         "ziel": "2026-08-10T08:00",
         "notiz": "",
         "tags": [
-            "URLAUB"
+            "ARBEIT"
         ]
     },
     {
-        "name": "Elster Zertifikat Mutti läuft aus",
+        "name": "Elster-Zertifikat Mutti läuft aus",
         "ziel": "2026-08-31T08:37",
         "notiz": "",
         "tags": [
@@ -284,17 +164,18 @@
         ]
     },
     {
-        "name": "Abbait",
+        "name": "Arbeit",
+        "start": null,
         "ziel": "2026-10-05T08:00",
         "notiz": "",
         "tags": [
-            "URLAUB"
+            "ARBEIT"
         ]
     },
     {
         "name": "Konto glatt",
         "start": null,
-        "ziel": "2026-12-31T15:00",
+        "ziel": "2027-01-29T12:00",
         "notiz": "",
         "tags": [
             "FINANZEN"
@@ -302,91 +183,81 @@
     },
     {
         "name": "Frei",
+        "start": null,
         "ziel": "2026-12-23T17:00",
-        "notiz": "",
+        "notiz": "Heiligabend 24. Dezember 2026 Donnerstag",
         "tags": [
             "URLAUB"
         ]
     },
     {
-        "name": "Abbait",
+        "name": "Arbeit",
+        "start": null,
         "ziel": "2026-12-28T08:00",
         "notiz": "",
         "tags": [
-            "URLAUB"
+            "ARBEIT"
         ]
     },
     {
         "name": "Frei",
+        "start": null,
         "ziel": "2026-12-30T17:00",
-        "notiz": "",
+        "notiz": "Heiligabend 31. Dezember 2026 Donnerstag",
         "tags": [
             "URLAUB"
         ]
     },
     {
-        "name": "Abbait",
+        "name": "Arbeit",
+        "start": null,
         "ziel": "2027-01-04T08:00",
         "notiz": "",
         "tags": [
-            "URLAUB"
+            "ARBEIT"
         ]
     },
     {
         "name": "Termin Christoph Knierim",
+        "start": null,
         "ziel": "2027-09-13T12:00",
         "notiz": "",
         "tags": [
-            "GESUNDHEIT"
+            "ARCHIV"
         ]
     },
     {
-        "name": "Elster Zertifikat Casi läuft aus",
+        "name": "Elster-Zertifikat Casi läuft aus",
+        "start": null,
         "ziel": "2028-03-24T09:24",
         "notiz": "",
         "tags": [
-            "STEUERN"
+            "ARCHIV"
         ]
     },
     {
-        "name": "Elster Zertifikat Kersti läuft aus",
+        "name": "Elster-Zertifikat Kersti läuft aus",
+        "start": null,
         "ziel": "2028-09-11T21:04",
         "notiz": "",
         "tags": [
-            "STEUERN"
+            "ARCHIV"
         ]
     },
     {
-        "name": "Darlehen Ende",
+        "name": "Darlehen-Ende",
+        "start": null,
         "ziel": "2030-05-15T18:00",
         "notiz": "",
         "tags": [
-            "FINANZEN"
+            "ARCHIV"
         ]
     },
     {
-        "name": "RbB",
-        "start": "2026-02-16T18:00",
-        "ziel": "2026-02-23T06:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
-        "name": "Casi Spät",
-        "start": null,
-        "ziel": "2026-03-02T09:30",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
-    },
-    {
-        "name": "RbB",
+        "name": "RB",
         "start": "2026-03-16T18:00",
         "ziel": "2026-03-22T06:00",
-        "notiz": "Verkürzt. RB an Sahand abgegeben 22.3.2026",
+        "notiz": "Verkürzt. RB am 22.03.2026 an Sahand abgegeben.",
         "tags": [
             "ARBEIT"
         ]
@@ -401,48 +272,273 @@
         ]
     },
     {
-        "name": "Bajrami Elektriker",
-        "start": "2026-01-19T09:00",
-        "ziel": "2026-01-19T12:00",
-        "notiz": "",
-        "tags": [
-            "WOHNUNG"
-        ]
-    },
-    {
-        "name": "Test",
-        "start": null,
-        "ziel": "2026-01-01T00:00",
-        "notiz": "",
-        "tags": [
-            "ARCHIV"
-        ]
-    },
-    {
-        "name": "Datagroup: Failed to fetch device certificate.",
+        "name": "D.group: Failed to fetch device certificate.",
         "start": null,
         "ziel": "2026-04-14T14:39",
-        "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. PA-5430 LEVFRW03\nReminder: Schauen ob das Problem nach dem Fix nochmal auftritt. (Cert generiert 14.1.26 CET 13:39 (CEST 14:39))\nReferenzieren auf den Case 03867695\n\nProdukt ID: PA-5430\nSystem ID: LEVFRW03\nSerial ID: 025401001734\nVendor Ticket: Referenz - > 03867695\n\n## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
+        "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. \nReminder: Schauen, ob das Problem nach dem Fix nochmal auftritt. (Zertifikat generiert 14.01.26 CET 13:39 (CEST 14:39))\n\n## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
         "tags": [
             "ARBEIT"
         ]
     },
     {
-        "name": "RA Jellesen",
-        "start": "2026-01-28T15:00",
-        "ziel": "2026-01-28T16:00",
-        "notiz": "Steinstraße 49\n47441 Moers\nDeutschland",
+        "name": "Steuern Kohle check 6w",
+        "start": null,
+        "ziel": "2026-03-16T12:00",
+        "notiz": "",
+        "tags": [
+            "STEUERN"
+        ]
+    },
+    {
+        "name": "Steuern Kohle check 8w",
+        "start": null,
+        "ziel": "2026-03-30T12:00",
+        "notiz": "",
+        "tags": [
+            "STEUERN"
+        ]
+    },
+    {
+        "name": "MA Jahresgespräch",
+        "start": "2026-03-24T13:30",
+        "ziel": "2026-03-24T14:25",
+        "notiz": "Vor Ort in Köln mit Daniel",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "MA Jahresgespräch Reminder",
+        "start": "2026-03-23T13:30",
+        "ziel": "2026-03-23T14:25",
+        "notiz": "Bogen ausfüllen\nVor Ort in Köln mit Daniel",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Service Meeting ANO",
+        "start": "2026-03-05T13:30",
+        "ziel": "2026-03-05T14:50",
+        "notiz": "Sascha statt Sahand übernimmt heute Spät",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Pizza and Games @HQ",
+        "start": "2026-03-24T17:00",
+        "ziel": "2026-03-24T21:55",
+        "notiz": "Vor Ort in Kölle.",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Sommerzeit",
+        "start": null,
+        "ziel": "2026-03-29T03:00",
+        "notiz": "Von 2 auf 3",
         "tags": [
             "TERMINE"
         ]
     },
     {
-        "name": "Küche Doings",
+        "name": "Open Lunch in Köln",
+        "start": "2026-03-25T08:00",
+        "ziel": "2026-03-25T12:00",
+        "notiz": "Vor Ort in Kölle.",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Wohnungsrückgabe Verjährung",
         "start": null,
-        "ziel": "2026-01-17T15:00",
-        "notiz": "[ ]Brett kochnische, Bohrung für Abzugsrohr DAH\n[ ]Brett Mikrowelle, mit kleiner Kabelbohrung\n[ ]Unterschränke Abschlussleisten",
+        "ziel": "2026-08-01T00:00",
+        "notiz": "31.07.2026 - Kleiststraße",
         "tags": [
             "WOHNUNG"
+        ]
+    },
+    {
+        "name": "CVE Liste mit Daniel",
+        "start": "2026-03-11T10:00",
+        "ziel": "2026-03-11T10:25",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "NSO-1 Daily",
+        "start": "2026-03-05T09:40",
+        "ziel": "2026-03-05T10:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Learning Friday",
+        "start": "2026-03-06T11:00",
+        "ziel": "2026-03-06T12:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "1on1 Daniel",
+        "start": "2026-03-13T13:00",
+        "ziel": "2026-03-13T13:25",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Great Place To Work",
+        "start": "2026-03-06T10:00",
+        "ziel": "2026-03-06T11:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "ANO Kernmeeting",
+        "start": "2026-03-06T09:00",
+        "ziel": "2026-03-06T09:25",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "NORD Team 1 Weekly",
+        "start": "2026-03-06T11:00",
+        "ziel": "2026-03-06T11:55",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-03-05T17:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "JF ANO",
+        "start": "2026-03-09T13:00",
+        "ziel": "2026-03-09T14:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "PSC Connect (Nord) in HH Blocker",
+        "start": "2026-04-20T11:00",
+        "ziel": "2026-04-20T16:00",
+        "notiz": "Anreise",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "PSC Connect (Nord) in HH Blocker",
+        "start": "2026-04-21T08:00",
+        "ziel": "2026-04-21T18:00",
+        "notiz": "PSC Connect (Nord)",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "PSC Connect (Nord) in HH Blocker",
+        "start": "2026-04-22T10:00",
+        "ziel": "2026-04-22T15:00",
+        "notiz": "Abreise",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "Pause",
+        "start": "2026-03-05T12:00",
+        "ziel": "2026-03-05T13:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "AXN HQ Neu",
+        "start": null,
+        "ziel": "2026-04-01T10:00",
+        "notiz": "Bezug Standort möglich - Von der Wettern Str.",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "AXN HQ ",
+        "start": null,
+        "ziel": "2026-05-30T10:00",
+        "notiz": "Auszug ALBIN KÖBIS",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "AXN HQ",
+        "start": null,
+        "ziel": "2026-08-01T10:00",
+        "notiz": "Einzug alle Etagen Von der Wettern Str.",
+        "tags": [
+            "ARBEIT"
+        ]
+    },
+    {
+        "name": "NV-Ring-Sperrung",
+        "start": null,
+        "ziel": "2026-04-17T17:00",
+        "notiz": "Montag 2.3., 06:00 bis 17. April.",
+        "tags": [
+            "WAZE"
+        ]
+    },
+    {
+        "name": "Jahrestag",
+        "start": null,
+        "ziel": "2026-08-05T00:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
+    },
+    {
+        "name": "Hochzeitstag",
+        "start": null,
+        "ziel": "2026-07-04T00:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
+    },
+    {
+        "name": "AXN HQ",
+        "start": null,
+        "ziel": "2026-05-01T10:00",
+        "notiz": "Bezug Lager möglich - Von der Wettern Str.",
+        "tags": [
+            "ARBEIT"
         ]
     }
 ]
