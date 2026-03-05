@@ -558,5 +558,14 @@
         "tags": [
             "TERMIN"
         ]
+    },
+    {
+        "name": "Picnic",
+        "start": null,
+        "ziel": "2026-03-06T09:45",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
