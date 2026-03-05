@@ -558,5 +558,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Kati Spieleabend",
+        "start": null,
+        "ziel": "2026-03-06T18:30",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
