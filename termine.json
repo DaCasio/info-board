@@ -567,5 +567,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Spät",
+        "start": null,
+        "ziel": "2026-03-06T18:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
