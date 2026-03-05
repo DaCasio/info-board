@@ -549,5 +549,12 @@
         "tags": [
             "TERMIN"
         ]
+    },
+    {
+        "name": "Wolle treffen Pavillon ",
+        "start": null,
+        "ziel": "2026-03-07T15:00",
+        "notiz": "",
+        "tags": []
     }
 ]
