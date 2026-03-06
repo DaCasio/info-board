@@ -544,7 +544,7 @@
     {
         "name": "D.group: Fehler bei einem PaloAlto Cluster",
         "start": "2026-03-20T08:30",
-        "ziel": "2026-03-20T10:53",
+        "ziel": "2026-03-20T09:00",
         "notiz": "MAG#2025121917347564 — D.group - Fehler bei einem PaloAlto Cluster\n\nReminder: Das Standardverhalten der DevCert aktualisierung von Palo ist vollautomatisch. Manuelles Eingreifen zeigt, dass der automatische Prozess fehlgeschlagen ist.\n\nGültigkeit: Device Certificate: 90 Tage, fest vorgegeben, nicht verlängerbar.\nAutomatisierung: Erneuerung startet 15 Tage vor Ablauf automatisch.\nWarum manuell nötig? Wenn das Zertifikat bereits abgelaufen ist, dann ist der manuelle Schritt via OTP nötig.\n\nVoraussetzungen für automatische Erneuerung: Management-Interface muss Zugriff auf Palo Alto Update-Server haben, Traffic als paloalto-shared-services und SSL auf Port 443 erlaubt, certificate.paloaltonetworks.com erreichbar.\n\nStatusprüfung nach ca. 75-80 Tagen. Blockiert eine Firewall, kann das automatische Update scheitern.\nBei erlaubter Kommunikation nach PA ist kein manueller Eingriff alle 3 Monate nötig.\nFalls hier der automatische Prozess scheitert, ist OTP im Portal zu generieren und manuell auf der Pano einzuspielen.\n\nCert läuft ansonsten am 23.03. 10:53:44 aus.",
         "tags": [
             "ARBEIT"
