@@ -533,15 +533,6 @@
         ]
     },
     {
-        "name": "Kati Spieleabend",
-        "start": null,
-        "ziel": "2026-03-06T19:00",
-        "notiz": "",
-        "tags": [
-            "TERMINE"
-        ]
-    },
-    {
         "name": "D.group: Fehler bei einem PaloAlto Cluster",
         "start": "2026-03-20T08:30",
         "ziel": "2026-03-20T09:00",
