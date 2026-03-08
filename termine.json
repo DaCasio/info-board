@@ -522,5 +522,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Xiao",
+        "start": null,
+        "ziel": "2026-03-14T19:15",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
