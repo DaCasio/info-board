@@ -540,5 +540,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Nägel Schnubbi",
+        "start": null,
+        "ziel": "2026-03-12T17:00",
+        "notiz": "",
+        "tags": [
+            "TERMIN"
+        ]
     }
 ]
