@@ -540,14 +540,5 @@
         "tags": [
             "TERMINE"
         ]
-    },
-    {
-        "name": "Austausch ALDI",
-        "start": "2026-03-09T15:30",
-        "ziel": "2026-03-09T16:00",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ]
     }
 ]
