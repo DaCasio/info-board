@@ -576,5 +576,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Entwurmung SJPD",
+        "start": null,
+        "ziel": "2026-05-07T09:00",
+        "notiz": "",
+        "tags": [
+            "KATZIS"
+        ]
     }
 ]
