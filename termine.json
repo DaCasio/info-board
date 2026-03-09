@@ -549,5 +549,14 @@
         "tags": [
             "TERMIN"
         ]
+    },
+    {
+        "name": "Muddi/Simone",
+        "start": null,
+        "ziel": "2026-03-13T20:00",
+        "notiz": "",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
