@@ -585,5 +585,14 @@
         "tags": [
             "KATZIS"
         ]
+    },
+    {
+        "name": "Aldi Renewal kurze Abstimmung",
+        "start": "2026-03-10T11:30",
+        "ziel": "2026-03-10T12:00",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
