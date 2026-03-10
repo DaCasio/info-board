@@ -585,5 +585,14 @@
         "tags": [
             "KATZIS"
         ]
+    },
+    {
+        "name": "Casi Spät",
+        "start": null,
+        "ziel": "2026-03-23T09:30",
+        "notiz": "Vetretung Sahand außer 24.3. - Da in Köln - Kein open Lunch weil wegen Spät",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
