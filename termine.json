@@ -667,5 +667,14 @@
         "tags": [
             "KATZI"
         ]
+    },
+    {
+        "name": "Perplexity Ende Magenta",
+        "start": null,
+        "ziel": "2026-06-26T12:00",
+        "notiz": "Am 27.6.",
+        "tags": [
+            "TERMINE"
+        ]
     }
 ]
