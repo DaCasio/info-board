@@ -613,5 +613,14 @@
         "tags": [
             "KERO"
         ]
+    },
+    {
+        "name": "Zahnreinigung Kero",
+        "start": null,
+        "ziel": "2026-03-19T16:00",
+        "notiz": "",
+        "tags": [
+            "KERO"
+        ]
     }
 ]
