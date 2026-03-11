@@ -667,5 +667,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "CVE Liste mit Daniel",
+        "start": null,
+        "ziel": "2026-03-23T14:00",
+        "notiz": "Mailvorlage spätestens Anfangen, nächste Woche Spät und am 8.4. Follow Up mit Daniel",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
