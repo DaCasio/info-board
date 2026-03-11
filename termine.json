@@ -604,5 +604,14 @@
         "tags": [
             "GESUNDHEIT"
         ]
+    },
+    {
+        "name": "Frauenarzt",
+        "start": null,
+        "ziel": "2026-04-27T16:00",
+        "notiz": "",
+        "tags": [
+            "KERO"
+        ]
     }
 ]
