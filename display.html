@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termin Monitor - Color E-Ink (View Only)</title>
     <style>
-        /* Optimiert für Color E-Ink: Klare Farben, kein Glow, kein Gradient */
         body { 
             background-color: white; 
             color: black; 
@@ -37,17 +36,31 @@
             border: 3px solid black;
             margin: 15px 0; 
             padding: 15px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
             background-color: #fdfdfd;
+            display: block; /* Zurück auf Block für maximale Kompatibilität */
         }
 
         .card-urgent { border-color: #ff4d4d; background-color: #fffafa; }
         .card-running { border-color: #ffcc00; background-color: #fffff0; }
         
-        .termin-info { flex: 1; min-width: 0; }
+        /* Obere Zeile: Name links, Zeit rechts */
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
+        
+        .termin-info { flex: 1; }
         .termin-name { font-size: 1.6em; font-weight: bold; color: black; margin-bottom: 5px; }
+        
+        /* Tags direkt unter dem Namen */
+        .tag-container { display: flex; gap: 6px; margin: 5px 0 10px 0; flex-wrap: wrap; }
+        .tag-badge { 
+            border: 1px solid black; 
+            background-color: #e0faff; 
+            color: black; 
+            padding: 1px 6px; 
+            font-size: 0.75em; 
+            font-weight: bold; 
+            text-transform: uppercase;
+        }
+
         .termin-datum { font-size: 1.05em; color: #444; line-height: 1.4; font-weight: 500; }
 
         .notiz-text { 
@@ -60,18 +73,11 @@
             line-height: 1.4;
         }
 
-        /* Checkboxen: Klicks deaktiviert */
-        .cb-line { 
-            display: block; 
-            padding: 5px 0; 
-            font-weight: 500; 
-            pointer-events: none; /* Keine Klicks möglich */
-            cursor: default;      /* Standard-Mauszeiger */
-        }
+        .cb-line { display: block; padding: 5px 0; font-weight: 500; pointer-events: none; }
         .cb-line.done { text-decoration: line-through; color: #888; }
         
-        .zeit-box { text-align: right; margin-left: 20px; min-width: 180px; }
-        .status-label { display: block; font-size: 0.75em; text-transform: uppercase; font-weight: bold; color: #666; margin-bottom: -2px; }
+        .zeit-box { text-align: right; min-width: 160px; }
+        .status-label { display: block; font-size: 0.75em; text-transform: uppercase; font-weight: bold; color: #666; }
         .zeit { 
             font-family: 'Courier New', monospace; 
             font-size: 1.8em; 
@@ -89,7 +95,7 @@
 
     <h1>Termin Monitor</h1>
     <div id="counter-display" class="termin-counter">Termine: 0</div>
-    <div id="liste">Initialisiere Anzeige...</div>
+    <div id="liste">Lade Daten aus Orbit...</div>
 
     <script>
         const t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
@@ -98,7 +104,6 @@
         const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
 
         let termineDaten = [];
-        let currentSha = "";
 
         async function holeDaten() {
             try {
@@ -108,14 +113,15 @@
                 });
                 if (response.ok) {
                     const data = await response.json();
-                    currentSha = data.sha;
                     const str = atob(data.content);
                     const bytes = new Uint8Array(str.length);
                     for (let i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
                     termineDaten = JSON.parse(new TextDecoder().decode(bytes));
                     updateAnzeige();
                 }
-            } catch (e) { console.error("Sync Fehler"); }
+            } catch (e) { 
+                document.getElementById('liste').innerHTML = "Fehler beim Laden der Daten.";
+            }
         }
 
         function getCountdownStr(ms) {
@@ -123,21 +129,19 @@
             const d = Math.floor(ms/86400000).toString().padStart(2, '0');
             const h = Math.floor((ms%86400000)/3600000).toString().padStart(2, '0');
             const m = Math.floor((ms%3600000)/60000).toString().padStart(2, '0');
-            return `${d}d ${h}h ${m}m`;
+            return d + "d " + h + "h " + m + "m";
         }
 
         function formatNotiz(txt) {
             if (!txt) return "";
-            let lines = txt.split('\n').map((line) => {
-                // Keine onclick-Events mehr
-                if (line.startsWith('[ ]')) return `<span class="cb-line">☐ ${line.slice(3)}</span>`;
-                if (line.startsWith('[x]')) return `<span class="cb-line done">☑ ${line.slice(3)}</span>`;
+            return txt.split('\n').map(line => {
+                if (line.startsWith('[ ]')) return '<span class="cb-line">☐ ' + line.slice(3) + '</span>';
+                if (line.startsWith('[x]')) return '<span class="cb-line done">☑ ' + line.slice(3) + '</span>';
                 return line;
-            });
-            return lines.join('\n')
-                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
-                .replace(/--(.*?)--/g, '<s>$1</s>')
-                .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+            }).join('\n')
+            .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+            .replace(/--(.*?)--/g, '<s>$1</s>')
+            .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
         }
 
         function updateAnzeige() {
@@ -146,7 +150,7 @@
             const jetzt = new Date();
 
             const sichtbareTermine = termineDaten.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
-            counterDiv.innerText = `AKTIVE TERMINE: ${sichtbareTermine.length}`;
+            counterDiv.innerText = "AKTIVE TERMINE: " + sichtbareTermine.length;
 
             sichtbareTermine.sort((a, b) => {
                 const zielA = new Date(a.ziel), startA = a.start ? new Date(a.start) : null;
@@ -160,64 +164,50 @@
             sichtbareTermine.forEach((t) => {
                 const ziel = new Date(t.ziel);
                 const start = t.start ? new Date(t.start) : null;
-                
-                let zeitStr = "";
-                let statusText = "";
-                let cardClass = "";
-                let zeitClass = "";
+                let zeitStr = "", statusText = "", cardClass = "", zeitClass = "";
 
                 if (start && jetzt < start) {
-                    statusText = "Start in";
-                    zeitStr = getCountdownStr(start - jetzt);
+                    statusText = "Start in"; zeitStr = getCountdownStr(start - jetzt);
                 } else if (jetzt < ziel) {
-                    statusText = start ? "Ende in" : "";
-                    zeitStr = getCountdownStr(ziel - jetzt);
-                    if (start) {
-                        cardClass = "card-running";
-                        zeitClass = "running-text";
-                    } else if (ziel - jetzt < 86400000) {
-                        cardClass = "card-urgent";
-                        zeitClass = "urgent-text";
-                    }
+                    statusText = start ? "Ende in" : ""; zeitStr = getCountdownStr(ziel - jetzt);
+                    if (start) { cardClass = "card-running"; zeitClass = "running-text"; }
+                    else if (ziel - jetzt < 86400000) { cardClass = "card-urgent"; zeitClass = "urgent-text"; }
                 } else {
-                    statusText = "Status";
-                    zeitStr = "Fällig";
-                    cardClass = "card-urgent";
-                    zeitClass = "faellig";
+                    statusText = "Status"; zeitStr = "Fällig"; cardClass = "card-urgent"; zeitClass = "faellig";
                 }
                 
-                const optWithYear = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
-                const optNoYear = { weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' };
+                let tagsHtml = "";
+                if (t.tags && t.tags.length > 0) {
+                    tagsHtml = '<div class="tag-container">' + 
+                        t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') + 
+                        '</div>';
+                }
 
-                const startYear = start ? start.getFullYear() : null;
-                const endYear = ziel.getFullYear();
-                const startFormat = (startYear && startYear !== endYear) ? optWithYear : optNoYear;
+                const opt = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+                const startHtml = start ? "Start: " + start.toLocaleString('de-DE', opt) + " Uhr<br>" : "";
+                const zielHtml = "Ende: " + ziel.toLocaleString('de-DE', opt) + " Uhr";
+                const notizHtml = t.notiz ? '<div class="notiz-text">' + formatNotiz(t.notiz) + '</div>' : "";
 
-                const startHtml = start ? `Start: ${start.toLocaleString('de-DE', startFormat)} Uhr<br>` : '';
-                const zielHtml = `Ende: ${ziel.toLocaleString('de-DE', optWithYear)} Uhr`;
-                
-                const notizHtml = t.notiz ? `<div class="notiz-text">${formatNotiz(t.notiz)}</div>` : "";
-
-                html += `
-                    <div class="termin-card ${cardClass}">
-                        <div class="termin-info">
-                            <div class="termin-name">${t.name}</div>
-                            <div class="termin-datum">
-                                ${startHtml}${zielHtml}
-                            </div>
-                            ${notizHtml}
-                        </div>
-                        <div class="zeit-box">
-                            <span class="status-label">${statusText}</span>
-                            <div class="zeit ${zeitClass}">${zeitStr}</div>
-                        </div>
-                    </div>`;
+                html += '<div class="termin-card ' + cardClass + '">' +
+                            '<div class="card-header">' +
+                                '<div class="termin-info">' +
+                                    '<div class="termin-name">' + t.name + '</div>' +
+                                    tagsHtml +
+                                    '<div class="termin-datum">' + startHtml + zielHtml + '</div>' +
+                                '</div>' +
+                                '<div class="zeit-box">' +
+                                    '<span class="status-label">' + statusText + '</span>' +
+                                    '<div class="zeit ' + zeitClass + '">' + zeitStr + '</div>' +
+                                '</div>' +
+                            '</div>' +
+                            notizHtml +
+                        '</div>';
             });
-            listeDiv.innerHTML = html || "<p style='text-align:center; font-size:1.5em;'>Keine aktuellen Termine.</p>";
+            listeDiv.innerHTML = html || "<p style='text-align:center;'>Keine aktuellen Termine.</p>";
         }
 
         holeDaten();
-        setInterval(holeDaten, 30000); 
+        setInterval(holeDaten, 60000); 
         setInterval(updateAnzeige, 60000); 
     </script>
 </body>
