@@ -3,124 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor - E-Ink Grid + Notes</title>
+    <title>Termin Monitor - E-Ink Grid Full-Text</title>
     <style>
         body { 
             background-color: white; 
             color: black; 
             font-family: 'Segoe UI', Arial, sans-serif; 
-            padding: 10px; 
+            padding: 15px; 
             margin: 0; 
         }
 
         h1 { 
-            border-bottom: 4px solid #00cae3; 
-            padding-bottom: 5px; 
+            border-bottom: 5px solid #00cae3; 
+            padding-bottom: 8px; 
             text-transform: uppercase; 
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-align: center;
-            font-size: 1.6em;
-            margin: 0 0 5px 0;
+            font-size: 2.2em; /* Größerer Header */
+            margin: 0 0 10px 0;
         }
         
         .termin-counter { 
             text-align: right; 
             font-weight: bold; 
             color: #00cae3;
-            margin-bottom: 10px;
-            font-size: 0.85em;
+            margin-bottom: 12px;
+            font-size: 1.1em;
         }
 
         #liste { 
             display: grid; 
             grid-template-columns: repeat(2, 1fr); 
-            gap: 12px; 
-            align-items: start;
+            gap: 15px; 
+            align-items: start; /* Erlaubt unterschiedliche Höhen */
         }
 
         .termin-card { 
-            border: 2px solid black;
-            padding: 10px; 
+            border: 3px solid black; /* Dickere Ränder für E-Ink Kontrast */
+            padding: 12px; 
             background-color: #fdfdfd;
             display: flex;
             flex-direction: column;
-            min-height: 140px; /* Etwas höher für Notizen */
+            height: auto; /* Box wächst mit dem Inhalt */
+            min-height: 160px;
         }
 
-        .card-urgent { border-color: #ff4d4d; background-color: #fffafa; border-width: 3px; }
+        .card-urgent { border-color: #ff4d4d; background-color: #fffafa; border-width: 4px; }
         .card-running { border-color: #ffcc00; background-color: #fffff0; }
         
         .termin-name { 
-            font-size: 1.1em; 
+            font-size: 1.4em; /* Deutlich größer */
             font-weight: bold; 
             line-height: 1.2;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
+            word-break: break-word; /* Verhindert Überlaufen bei langen Wörtern */
         }
         
-        .tag-container { display: flex; gap: 4px; margin-bottom: 6px; flex-wrap: wrap; }
+        .tag-container { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
         .tag-badge { 
             border: 1px solid black; 
             background-color: #e0faff; 
-            padding: 0px 4px; 
-            font-size: 0.6em; 
+            padding: 2px 8px; 
+            font-size: 0.8em; 
             font-weight: bold; 
             text-transform: uppercase;
         }
 
         .termin-datum { 
-            font-size: 0.8em; 
-            color: #333; 
-            line-height: 1.3;
-            margin-bottom: 8px;
+            font-size: 1.0em; /* Größeres Datum */
+            color: #222; 
+            line-height: 1.4;
+            margin-bottom: 10px;
+            font-weight: 500;
         }
 
-        /* Notizen-Bereich im Grid */
+        /* Notizen-Bereich: Kein Limit mehr */
         .notiz-box {
-            font-size: 0.75em;
-            color: #444;
-            border-top: 1px solid #eee;
-            margin-top: 5px;
-            padding-top: 5px;
-            flex-grow: 1;
+            font-size: 1.0em; /* Fast so groß wie Standardtext */
+            color: #333;
+            border-top: 2px solid #eee;
+            margin-top: 8px;
+            padding-top: 8px;
             white-space: pre-wrap;
-            line-height: 1.3;
-            max-height: 80px; /* Verhindert zu lange Boxen */
-            overflow: hidden;
-            text-overflow: ellipsis;
+            line-height: 1.4;
+            overflow: visible; /* Zeigt alles an */
         }
 
         .zeit-box { 
-            border-top: 1px dashed #ccc;
-            padding-top: 5px;
-            margin-top: 8px;
+            border-top: 2px dashed #00cae3;
+            padding-top: 8px;
+            margin-top: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .status-label { font-size: 0.55em; text-transform: uppercase; color: #666; font-weight: bold; }
+        .status-label { font-size: 0.7em; text-transform: uppercase; color: #555; font-weight: bold; }
         .zeit { 
             font-family: 'Courier New', monospace; 
-            font-size: 1em; 
+            font-size: 1.3em; 
             font-weight: bold; 
             color: #00cae3;
         }
 
-        .cb-line { display: block; }
-        .cb-line.done { text-decoration: line-through; color: #aaa; }
+        .cb-line { display: block; padding: 2px 0; }
+        .cb-line.done { text-decoration: line-through; color: #999; }
 
         .faellig { color: #ff4d4d !important; }
         .urgent-text { color: #ff4d4d !important; }
         .running-text { color: #ffcc00 !important; }
 
-        @media (max-width: 700px) {
-            #liste { grid-template-columns: 1fr; }
+        @media (max-width: 800px) {
+            #liste { grid-template-columns: 1fr; } /* Schaltet früher auf 1 Spalte für Lesbarkeit */
+            h1 { font-size: 1.8em; }
         }
     </style>
 </head>
 <body>
 
     <h1>Termin Monitor</h1>
-    <div id="counter-display" class="termin-counter">Verbinde...</div>
+    <div id="counter-display" class="termin-counter">Synchronisiere...</div>
     <div id="liste">Lade Daten...</div>
 
     <script>
@@ -172,7 +173,7 @@
             const jetzt = new Date();
 
             const sichtbare = termineDaten.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
-            counterDiv.innerText = "AKTIV: " + sichtbare.length;
+            counterDiv.innerText = "AKTIVE TERMINE: " + sichtbare.length;
 
             sichtbare.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
 
@@ -195,7 +196,7 @@
                 let tagsHtml = "";
                 if (t.tags && t.tags.length > 0) {
                     tagsHtml = '<div class="tag-container">' + 
-                        t.tags.slice(0, 2).map(tag => '<span class="tag-badge">' + tag + '</span>').join('') + 
+                        t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') + 
                         '</div>';
                 }
 
