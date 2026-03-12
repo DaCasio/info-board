@@ -640,5 +640,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Daily",
+        "start": null,
+        "ziel": "2026-03-13T09:40",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
