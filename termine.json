@@ -658,5 +658,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Spät",
+        "start": null,
+        "ziel": "2026-03-18T09:30",
+        "notiz": "Nur für heute",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
