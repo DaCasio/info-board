@@ -3,113 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Monitor - Dual Orbital View</title>
+    <title>Display Monitor - Orbital View</title>
     <style>
-        :root { --accent: #00cae3; --bg-overlay: rgba(0, 0, 0, 0.85); --live-color: #ffcc00; }
+        :root { --accent: #00cae3; --bg-overlay: rgba(0, 0, 0, 0.8); --live-color: #ffcc00; }
         
         body { 
             background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), 
                         url('https://images-assets.nasa.gov/image/PIA08653/PIA08653~medium.jpg');
             background-size: cover; background-attachment: fixed; background-position: center;
-            color: white; font-family: 'Segoe UI', sans-serif; padding: 15px; margin: 0;
-            overflow-x: hidden;
+            color: white; font-family: 'Segoe UI', sans-serif; padding: 20px; margin: 0;
         }
 
-        .header { 
-            text-align: center; text-transform: uppercase; letter-spacing: 6px; 
-            margin-bottom: 20px; border-bottom: 2px solid var(--accent); 
-            padding-bottom: 5px; font-size: 0.9em; opacity: 0.8;
-        }
+        .header { text-align: center; text-transform: uppercase; letter-spacing: 8px; margin-bottom: 30px; border-bottom: 1px solid var(--accent); padding-bottom: 10px; }
 
-        /* 2-Spalten-Grid System */
+        /* Das 2-Spalten-Grid für optimale Dashboard-Nutzung */
         #liste { 
             display: grid; 
             grid-template-columns: repeat(2, 1fr); 
-            gap: 15px; 
-            max-width: 100%; 
+            gap: 20px; 
+            max-width: 1400px; 
             margin: 0 auto;
         }
 
         .termin-card { 
-            background: rgba(15, 15, 15, 0.9); 
-            backdrop-filter: blur(12px);
+            background: rgba(20, 20, 20, 0.9); 
+            backdrop-filter: blur(10px);
             border-left: 5px solid var(--accent); 
-            border-radius: 6px; 
-            padding: 12px; 
+            border-right: 1px solid rgba(0, 202, 227, 0.2);
+            padding: 15px; 
+            border-radius: 8px; 
             display: flex; 
             flex-direction: column;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            height: 160px; /* Feste Höhe für Gleichmäßigkeit */
-            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: 0.3s;
         }
 
-        .titel-box { 
-            font-size: 1.1em; font-weight: bold; color: white;
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-            margin-bottom: 4px;
-        }
+        .titel-box { font-size: 1.25em; font-weight: bold; margin-bottom: 6px; color: white; }
 
-        /* Tag-Zeile */
-        .tag-row { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; height: 22px; overflow: hidden; }
+        /* TAG STYLING */
+        .tag-row { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
         .tag-pill { 
             font-size: 0.6em; 
             background: rgba(0, 202, 227, 0.1); 
             color: var(--accent); 
             padding: 2px 8px; 
-            border-radius: 3px; 
+            border-radius: 4px; 
             text-transform: uppercase; 
             border: 1px solid rgba(0, 202, 227, 0.4);
             font-weight: bold;
+            letter-spacing: 1px;
         }
 
-        .notiz-box { 
-            font-size: 0.8em; 
-            color: #bbb; 
-            line-height: 1.3; 
-            overflow: hidden; 
-            display: -webkit-box;
-            -webkit-line-clamp: 3; /* Max 3 Zeilen Notiz */
-            -webkit-box-orient: vertical;
-            margin-bottom: 10px;
-        }
-
-        .info-row { 
-            display: flex; justify-content: space-between; align-items: center; 
-            margin-top: auto; padding-top: 8px; 
-            border-top: 1px solid rgba(255,255,255,0.1); 
-        }
+        .info-row { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05); }
         
-        .datum-box { font-size: 0.75em; color: #888; font-weight: bold; }
+        .datum-box { font-size: 0.8em; color: #aaa; }
         
         .countdown { 
             font-family: 'Courier New', monospace; 
             color: var(--accent); 
             font-weight: bold; 
-            font-size: 0.85em;
-            background: rgba(0, 202, 227, 0.15);
-            padding: 3px 6px;
+            font-size: 0.95em;
+            background: rgba(0, 202, 227, 0.1);
+            padding: 4px 10px;
             border-radius: 4px;
             border: 1px solid rgba(0, 202, 227, 0.2);
         }
 
-        /* Status-Zustände */
-        .faellig { border-left-color: #ff4d4d; }
-        .faellig .countdown { color: #ff4d4d; background: rgba(255, 77, 77, 0.15); border-color: #ff4d4d; }
-        
-        .laufend { border-left-color: var(--live-color); }
-        .laufend .countdown { color: var(--live-color); background: rgba(255, 204, 0, 0.15); border-color: var(--live-color); }
-
-        /* Responsive: Auf Handys zurück zu 1 Spalte */
-        @media (max-width: 800px) { 
-            #liste { grid-template-columns: 1fr; }
-            .termin-card { height: auto; min-height: 140px; }
+        .notiz-box { 
+            font-size: 0.85em; 
+            color: #ccc; 
+            margin: 5px 0 15px 0; 
+            line-height: 1.4; 
+            max-height: 80px; 
+            overflow: hidden; 
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-style: italic;
         }
+
+        /* Status-Farben */
+        .faellig .countdown { color: #ff4d4d; background: rgba(255, 77, 77, 0.1); border-color: #ff4d4d; }
+        .faellig { border-left-color: #ff4d4d; }
+        
+        .laufend .countdown { color: var(--live-color); background: rgba(255, 204, 0, 0.1); border-color: var(--live-color); }
+        .laufend { border-left-color: var(--live-color); }
+
+        @media (max-width: 1000px) { #liste { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
-    <div class="header">Orbital Monitor - Dual Sync Mode</div>
-    <div id="liste">Verbinde mit Satellit...</div>
+    <div class="header"><h1>Orbital Display Monitor</h1></div>
+    <div id="liste">Initialisiere Deep Space Link...</div>
 
 <script>
     const t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
@@ -125,11 +111,11 @@
                 data = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0))));
                 render();
             }
-        } catch(e) { console.error("Communication Interrupted", e); }
+        } catch(e) { console.error("Orbit Sync Lost", e); }
     }
 
     function getCountdown(ms) {
-        if (ms < 0) return "00d 00:00:00";
+        if (ms < 0) return "FÄLLIG";
         const d = Math.floor(ms/86400000).toString().padStart(2,'0');
         const hh = Math.floor((ms%86400000)/3600000).toString().padStart(2,'0');
         const mm = Math.floor((ms%3600000)/60000).toString().padStart(2,'0');
@@ -139,6 +125,7 @@
 
     function render() {
         const jetzt = new Date();
+        // ARCHIV herausfiltern für das Display
         const filtered = data.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
         
         filtered.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
@@ -150,31 +137,33 @@
             let timerText = "";
 
             if (start && jetzt < start) {
-                timerText = "IN: " + getCountdown(start - jetzt);
+                timerText = "START: " + getCountdown(start - jetzt);
             } else if (jetzt < ziel) {
                 statusClass = start ? "laufend" : "";
                 timerText = getCountdown(ziel - jetzt);
             } else {
                 statusClass = "faellig";
-                timerText = "OVERDUE";
+                timerText = "ÜBERFÄLLIG";
             }
 
-            const tagsHtml = t.tags ? t.tags.map(tag => `<span class="tag-pill">${tag}</span>`).join('') : '';
-            // Entferne Markdown und Checkboxen für die reine Anzeige
-            const cleanNote = t.notiz.replace(/\[.*?\]/g, '').replace(/\*\*/g, '').replace(/--/g, '');
+            // Tags generieren (alle außer Archiv)
+            const tagsHtml = t.tags ? t.tags.filter(tag => tag !== "ARCHIV").map(tag => `<span class="tag-pill">${tag}</span>`).join('') : '';
+            
+            // Notiz säubern (Markdown-Tags entfernen)
+            const cleanNote = t.notiz ? t.notiz.replace(/\[.*?\]/g, '').replace(/\*\*/g, '').replace(/--/g, '').substring(0, 120) : '';
 
             h += `
             <div class="termin-card ${statusClass}">
                 <div class="titel-box">${t.name}</div>
                 <div class="tag-row">${tagsHtml}</div>
-                <div class="notiz-box">${cleanNote}</div>
+                <div class="notiz-box">${cleanNote}${cleanNote.length >= 120 ? '...' : ''}</div>
                 <div class="info-row">
-                    <div class="datum-box">${new Date(t.ziel).toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', year:'2-digit'})}</div>
+                    <div class="datum-box">${new Date(t.ziel).toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit'})}</div>
                     <div class="countdown">${timerText}</div>
                 </div>
             </div>`;
         });
-        document.getElementById('liste').innerHTML = h || "SYSTEM CLEAR - NO PENDING DATA";
+        document.getElementById('liste').innerHTML = h || "KEINE AKTIVEN TERMINE";
     }
 
     load();
