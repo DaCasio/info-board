@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termin Monitor - E-Ink Grid Full-Text</title>
+    <title>Termin Monitor - E-Ink Grid Precision</title>
     <style>
         body { 
             background-color: white; 
@@ -19,7 +19,7 @@
             text-transform: uppercase; 
             letter-spacing: 3px;
             text-align: center;
-            font-size: 2.2em; /* Größerer Header */
+            font-size: 2.2em;
             margin: 0 0 10px 0;
         }
         
@@ -35,16 +35,16 @@
             display: grid; 
             grid-template-columns: repeat(2, 1fr); 
             gap: 15px; 
-            align-items: start; /* Erlaubt unterschiedliche Höhen */
+            align-items: start;
         }
 
         .termin-card { 
-            border: 3px solid black; /* Dickere Ränder für E-Ink Kontrast */
+            border: 3px solid black;
             padding: 12px; 
             background-color: #fdfdfd;
             display: flex;
             flex-direction: column;
-            height: auto; /* Box wächst mit dem Inhalt */
+            height: auto; 
             min-height: 160px;
         }
 
@@ -52,11 +52,11 @@
         .card-running { border-color: #ffcc00; background-color: #fffff0; }
         
         .termin-name { 
-            font-size: 1.4em; /* Deutlich größer */
+            font-size: 1.4em; 
             font-weight: bold; 
             line-height: 1.2;
             margin-bottom: 6px;
-            word-break: break-word; /* Verhindert Überlaufen bei langen Wörtern */
+            word-break: break-word;
         }
         
         .tag-container { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
@@ -70,23 +70,21 @@
         }
 
         .termin-datum { 
-            font-size: 1.0em; /* Größeres Datum */
+            font-size: 1.0em; 
             color: #222; 
             line-height: 1.4;
             margin-bottom: 10px;
             font-weight: 500;
         }
 
-        /* Notizen-Bereich: Kein Limit mehr */
         .notiz-box {
-            font-size: 1.0em; /* Fast so groß wie Standardtext */
+            font-size: 1.0em; 
             color: #333;
             border-top: 2px solid #eee;
             margin-top: 8px;
             padding-top: 8px;
             white-space: pre-wrap;
             line-height: 1.4;
-            overflow: visible; /* Zeigt alles an */
         }
 
         .zeit-box { 
@@ -108,20 +106,19 @@
         .cb-line { display: block; padding: 2px 0; }
         .cb-line.done { text-decoration: line-through; color: #999; }
 
-        .faellig { color: #ff4d4d !important; }
+        .faellig { color: #ff4d4d !important; text-transform: uppercase; }
         .urgent-text { color: #ff4d4d !important; }
         .running-text { color: #ffcc00 !important; }
 
         @media (max-width: 800px) {
-            #liste { grid-template-columns: 1fr; } /* Schaltet früher auf 1 Spalte für Lesbarkeit */
-            h1 { font-size: 1.8em; }
+            #liste { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
     <h1>Termin Monitor</h1>
-    <div id="counter-display" class="termin-counter">Synchronisiere...</div>
+    <div id="counter-display" class="termin-counter">Sync...</div>
     <div id="liste">Lade Daten...</div>
 
     <script>
@@ -149,11 +146,20 @@
             } catch (e) { console.error("Sync Error"); }
         }
 
+        // Optimierte Countdown Logik
         function getCountdownStr(ms) {
-            if (ms < 0) return "FÄLLIG";
-            const d = Math.floor(ms/86400000);
-            const h = Math.floor((ms%86400000)/3600000);
-            return d + "t " + h + "std";
+            if (ms <= 0) return "FÄLLIG";
+            
+            const d = Math.floor(ms / 86400000);
+            const h = Math.floor((ms % 86400000) / 3600000);
+            const m = Math.floor((ms % 3600000) / 60000);
+
+            let parts = [];
+            if (d > 0) parts.push(d + "t");
+            if (h > 0) parts.push(h + "std");
+            if (m > 0 || (d === 0 && h === 0)) parts.push(m + "min");
+
+            return parts.join(" ");
         }
 
         function formatNotiz(txt) {
@@ -184,21 +190,27 @@
                 let zeitStr = "", statusText = "", cardClass = "", zeitClass = "";
 
                 if (start && jetzt < start) {
-                    statusText = "STARTET"; zeitStr = getCountdownStr(start - jetzt);
+                    statusText = "STARTET"; 
+                    zeitStr = getCountdownStr(start - jetzt);
                 } else if (jetzt < ziel) {
-                    statusText = start ? "ENDET" : "NOCH"; zeitStr = getCountdownStr(ziel - jetzt);
-                    if (start) { cardClass = "card-running"; zeitClass = "running-text"; }
-                    else if (ziel - jetzt < 86400000) { cardClass = "card-urgent"; zeitClass = "urgent-text"; }
+                    statusText = start ? "ENDET" : "NOCH"; 
+                    zeitStr = getCountdownStr(ziel - jetzt);
+                    if (start) { 
+                        cardClass = "card-running"; 
+                        zeitClass = "running-text"; 
+                    } else if (ziel - jetzt < 86400000) { 
+                        cardClass = "card-urgent"; 
+                        zeitClass = "urgent-text"; 
+                    }
                 } else {
-                    statusText = "STATUS"; zeitStr = "FÄLLIG"; cardClass = "card-urgent"; zeitClass = "faellig";
+                    statusText = "STATUS"; 
+                    zeitStr = "FÄLLIG"; 
+                    cardClass = "card-urgent"; 
+                    zeitClass = "faellig";
                 }
                 
-                let tagsHtml = "";
-                if (t.tags && t.tags.length > 0) {
-                    tagsHtml = '<div class="tag-container">' + 
-                        t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') + 
-                        '</div>';
-                }
+                let tagsHtml = t.tags && t.tags.length > 0 ? 
+                    '<div class="tag-container">' + t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') + '</div>' : "";
 
                 const dOpt = { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' };
                 let zeitAnzeige = start ? "S: " + start.toLocaleString('de-DE', dOpt) + " | E: " + ziel.toLocaleString('de-DE', dOpt) 
@@ -223,8 +235,9 @@
         }
 
         holeDaten();
-        setInterval(holeDaten, 60000);
-        setInterval(updateAnzeige, 60000);
+        // Häufigeres Update für die Minutenanzeige (alle 30 Sek scannen, alle 60 Sek Anzeige)
+        setInterval(holeDaten, 30000);
+        setInterval(updateAnzeige, 30000);
     </script>
 </body>
 </html>
