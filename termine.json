@@ -643,8 +643,8 @@
     },
     {
         "name": "Daily",
-        "start": null,
-        "ziel": "2026-03-13T09:40",
+        "start": "2026-03-13T09:40",
+        "ziel": "2026-03-13T10:00",
         "notiz": "",
         "tags": [
             "ARBEIT"
