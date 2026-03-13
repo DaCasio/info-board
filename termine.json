@@ -667,5 +667,14 @@
         "tags": [
             "TERMINE"
         ]
+    },
+    {
+        "name": "Hotel abklären",
+        "start": null,
+        "ziel": "2026-03-13T13:10",
+        "notiz": "",
+        "tags": [
+            "ARBEIT"
+        ]
     }
 ]
