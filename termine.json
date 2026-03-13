@@ -162,10 +162,11 @@
     },
     {
         "name": "Urlaub",
+        "start": null,
         "ziel": "2026-09-18T17:00",
         "notiz": "",
         "tags": [
-            "URLAUB"
+            "ARBEIT"
         ]
     },
     {
