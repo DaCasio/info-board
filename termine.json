@@ -127,10 +127,11 @@
     },
     {
         "name": "Urlaub Kanaren – Konto prüfen (1/2)",
+        "start": null,
         "ziel": "2026-08-01T12:00",
         "notiz": "",
         "tags": [
-            "URLAUB"
+            "ARBEIT"
         ]
     },
     {
