@@ -656,15 +656,6 @@
         ]
     },
     {
-        "name": "Picnic",
-        "start": null,
-        "ziel": "2026-03-14T10:45",
-        "notiz": "",
-        "tags": [
-            "TERMINE"
-        ]
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-03-16T17:00",
