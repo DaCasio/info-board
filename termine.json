@@ -663,5 +663,14 @@
         "tags": [
             "ARBEIT"
         ]
+    },
+    {
+        "name": "Füße",
+        "start": null,
+        "ziel": "2026-04-13T14:00",
+        "notiz": "",
+        "tags": [
+            "KERO"
+        ]
     }
 ]
