@@ -743,10 +743,13 @@
         "name": "Monthly",
         "start": "2026-03-20T10:00",
         "ziel": "2026-03-20T10:30",
-        "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "repeat": "monthly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": ""
     },
     {
         "name": "Füße",
