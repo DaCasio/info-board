@@ -799,17 +799,5 @@
             3
         ],
         "notiz": ""
-    },
-    {
-        "name": "Test",
-        "start": "2026-03-16T10:00",
-        "ziel": "2026-03-16T11:00",
-        "tags": [
-            "RECU"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": ""
     }
 ]
