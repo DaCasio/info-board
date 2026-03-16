@@ -6,7 +6,8 @@
         "notiz": "",
         "tags": [
             "CASI"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Bülent Ceylan – Diktatürk",
@@ -15,7 +16,8 @@
         "notiz": "Bereitschaft für den Sonntag an Sahand abgegeben!",
         "tags": [
             "TERMINE"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Langes Wochenende",
@@ -24,7 +26,8 @@
         "notiz": "Karfreitag\t03. April 2026\tFreitag\nOstermontag\t06. April 2026\tMontag",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Dezor-Abo: Ende prüfen",
@@ -33,7 +36,8 @@
         "notiz": "Gekündigt, trotzdem prüfen.",
         "tags": [
             "ABO"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "C1E verlängern",
@@ -42,7 +46,8 @@
         "notiz": "Frist: 21.06.2026",
         "tags": [
             "CASI"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Dezor-Abo Ende",
@@ -51,7 +56,8 @@
         "notiz": "Gekündigt.",
         "tags": [
             "ABO"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Eurowings glatt",
@@ -60,7 +66,8 @@
         "notiz": "",
         "tags": [
             "FINANZEN"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Langes Wochenende",
@@ -69,7 +76,8 @@
         "notiz": "Tag der Arbeit\t01. Mai 2026\tFreitag",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Morgen frei",
@@ -78,7 +86,8 @@
         "notiz": "Christi Himmelfahrt\t14. Mai 2026\tDonnerstag",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Langes Wochenende",
@@ -87,7 +96,8 @@
         "notiz": "Pfingstmontag\t25. Mai 2026\tMontag",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Morgen frei",
@@ -96,7 +106,8 @@
         "notiz": "Fronleichnam\t04. Juni 2026\tDonnerstag",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Urlaub",
@@ -105,7 +116,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Arbeit",
@@ -114,7 +126,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Urlaub",
@@ -123,7 +136,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Urlaub Kanaren – Konto prüfen (1/2)",
@@ -132,7 +146,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Arbeit",
@@ -141,7 +156,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Elster-Zertifikat Mutti läuft aus",
@@ -149,7 +165,8 @@
         "notiz": "",
         "tags": [
             "STEUERN"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Urlaub Kanaren – Konto prüfen (2/2)",
@@ -158,7 +175,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Urlaub",
@@ -167,7 +185,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Arbeit",
@@ -176,7 +195,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Konto glatt",
@@ -185,7 +205,8 @@
         "notiz": "",
         "tags": [
             "FINANZEN"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Frei",
@@ -194,7 +215,8 @@
         "notiz": "Heiligabend 24. Dezember 2026 Donnerstag",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Arbeit",
@@ -203,7 +225,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Frei",
@@ -212,7 +235,8 @@
         "notiz": "Heiligabend 31. Dezember 2026 Donnerstag",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Arbeit",
@@ -221,7 +245,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Termin Christoph Knierim",
@@ -230,7 +255,8 @@
         "notiz": "Hautarzt",
         "tags": [
             "ARCHIV"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Elster-Zertifikat Casi läuft aus",
@@ -239,7 +265,8 @@
         "notiz": "",
         "tags": [
             "ARCHIV"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Elster-Zertifikat Kersti läuft aus",
@@ -248,7 +275,8 @@
         "notiz": "",
         "tags": [
             "ARCHIV"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Darlehen-Ende",
@@ -257,7 +285,8 @@
         "notiz": "",
         "tags": [
             "ARCHIV"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "RB",
@@ -276,7 +305,8 @@
             5,
             6
         ],
-        "notiz": "Verkürzt. RB am 22.03.2026 an Sahand abgegeben."
+        "notiz": "Verkürzt. RB am 22.03.2026 an Sahand abgegeben.",
+        "checklist": []
     },
     {
         "name": "Casi Spät",
@@ -285,7 +315,8 @@
         "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "D.group: Failed to fetch device certificate.",
@@ -294,7 +325,8 @@
         "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. \nReminder: Schauen, ob das Problem nach dem Fix nochmal auftritt. (Zertifikat generiert 14.01.26 CET 13:39 (CEST 14:39))\n\n## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Steuern Kohle check 8w",
@@ -303,7 +335,8 @@
         "notiz": "",
         "tags": [
             "STEUERN"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "MA Jahresgespräch",
@@ -312,7 +345,8 @@
         "notiz": "Vor Ort in Köln mit Daniel",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "MA Jahresgespräch Reminder",
@@ -321,7 +355,8 @@
         "notiz": "Bogen ausfüllen\nVor Ort in Köln mit Daniel",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Pizza and Games @HQ",
@@ -330,7 +365,8 @@
         "notiz": "Vor Ort in Kölle. Keine Übernachtung. Morgen nach Hause wegen Spätschicht.",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Sommerzeit",
@@ -339,7 +375,8 @@
         "notiz": "Von 2 auf 3",
         "tags": [
             "TERMINE"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Open Lunch in Köln",
@@ -348,7 +385,8 @@
         "notiz": "Vor Ort in Kölle. Hab Spät - Geht nicht",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Wohnungsrückgabe Verjährung",
@@ -357,7 +395,8 @@
         "notiz": "31.07.2026 - Kleiststraße",
         "tags": [
             "WOHNUNG"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "CVE Liste mit Daniel",
@@ -369,7 +408,8 @@
         "repeat": "monthly",
         "repeatUntil": null,
         "days": [],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "1on1 Daniel",
@@ -381,7 +421,8 @@
         "repeat": "biweekly",
         "repeatUntil": null,
         "days": [],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "ANO Kernmeeting",
@@ -393,7 +434,8 @@
         "repeat": "biweekly",
         "repeatUntil": null,
         "days": [],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Weekly",
@@ -407,7 +449,8 @@
         "days": [
             5
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "JF ANO",
@@ -421,7 +464,8 @@
         "days": [
             1
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "PSC Connect (Nord) in HH",
@@ -430,7 +474,8 @@
         "notiz": "Anreise",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "PSC Connect (Nord) in HH",
@@ -439,7 +484,8 @@
         "notiz": "PSC Connect (Nord)",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "PSC Connect (Nord) in HH",
@@ -448,7 +494,8 @@
         "notiz": "Abreise",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "AXN HQ Neu",
@@ -457,7 +504,8 @@
         "notiz": "Bezug Standort möglich - Von der Wettern Str.",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "AXN HQ ",
@@ -466,7 +514,8 @@
         "notiz": "Auszug ALBIN KÖBIS",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "AXN HQ",
@@ -475,7 +524,8 @@
         "notiz": "Einzug alle Etagen Von der Wettern Str.",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "NV-Ring-Sperrung",
@@ -484,7 +534,8 @@
         "notiz": "Montag 2.3., 06:00 bis 17. April.",
         "tags": [
             "WAZE"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Jahrestag",
@@ -496,7 +547,8 @@
         "repeat": "yearly",
         "repeatUntil": null,
         "days": [],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Hochzeitstag",
@@ -508,7 +560,8 @@
         "repeat": "yearly",
         "repeatUntil": null,
         "days": [],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "AXN HQ",
@@ -517,7 +570,8 @@
         "notiz": "Bezug Lager möglich - Von der Wettern Str.",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "D.group: Fehler bei einem PaloAlto Cluster",
@@ -526,7 +580,8 @@
         "notiz": "MAG#2025121917347564 — D.group - Fehler bei einem PaloAlto Cluster\n\nReminder: Das Standardverhalten der DevCert aktualisierung von Palo ist vollautomatisch. Manuelles Eingreifen zeigt, dass der automatische Prozess fehlgeschlagen ist.\n\nGültigkeit: Device Certificate: 90 Tage, fest vorgegeben, nicht verlängerbar.\nAutomatisierung: Erneuerung startet 15 Tage vor Ablauf automatisch.\nWarum manuell nötig? Wenn das Zertifikat bereits abgelaufen ist, dann ist der manuelle Schritt via OTP nötig.\n\nVoraussetzungen für automatische Erneuerung: Management-Interface muss Zugriff auf Palo Alto Update-Server haben, Traffic als paloalto-shared-services und SSL auf Port 443 erlaubt, certificate.paloaltonetworks.com erreichbar.\n\nStatusprüfung nach ca. 75-80 Tagen. Blockiert eine Firewall, kann das automatische Update scheitern.\nBei erlaubter Kommunikation nach PA ist kein manueller Eingriff alle 3 Monate nötig.\nFalls hier der automatische Prozess scheitert, ist OTP im Portal zu generieren und manuell auf der Pano einzuspielen.\n\nCert läuft ansonsten am 23.03. 10:53:44 aus.",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Mein Stübchen",
@@ -535,7 +590,8 @@
         "notiz": "",
         "tags": [
             "ESSEN"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Vossi",
@@ -544,7 +600,8 @@
         "notiz": "",
         "tags": [
             "KERO"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Entwurmung SJPD",
@@ -553,7 +610,8 @@
         "notiz": "",
         "tags": [
             "KATZIS"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Casi Spät",
@@ -562,7 +620,8 @@
         "notiz": "Vetretung Sahand außer 24.3. - Da in Köln - Kein open Lunch weil wegen Spät",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Dr. Stickelbruck – Füllung",
@@ -571,7 +630,8 @@
         "notiz": "",
         "tags": [
             "CASI"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Frauenarzt",
@@ -580,7 +640,8 @@
         "notiz": "",
         "tags": [
             "KERO"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Pumbi Geburtstag",
@@ -600,7 +661,8 @@
             6,
             0
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Diego Geburtstag",
@@ -620,7 +682,8 @@
             6,
             0
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Jax Geburtstag",
@@ -640,7 +703,8 @@
             6,
             0
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Sira Geburtstag",
@@ -660,7 +724,8 @@
             6,
             0
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Perplexity Ende Magenta",
@@ -669,7 +734,8 @@
         "notiz": "Endet am 25.6.",
         "tags": [
             "TERMINE"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "CVE Liste Mailvorlage",
@@ -678,7 +744,8 @@
         "notiz": "Mailvorlage spätestens Anfangen, nächste Woche Spät und am 8.4. Follow Up mit Daniel",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Ablauf des Passwortes 6.4.",
@@ -687,7 +754,8 @@
         "notiz": "Heute renewen",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Spät",
@@ -696,7 +764,8 @@
         "notiz": "Nur für heute",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Daily",
@@ -714,7 +783,8 @@
             4,
             5
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Pause",
@@ -732,7 +802,8 @@
             4,
             5
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Feierabend",
@@ -749,7 +820,8 @@
             4,
             5
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Monthly",
@@ -761,7 +833,8 @@
         "repeat": "monthly",
         "repeatUntil": null,
         "days": [],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Füße",
@@ -770,7 +843,8 @@
         "notiz": "",
         "tags": [
             "KERO"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Magenta Mobil XS MLZ",
@@ -779,7 +853,8 @@
         "notiz": "",
         "tags": [
             "ARCHIV"
-        ]
+        ],
+        "checklist": []
     },
     {
         "name": "Feierabend",
@@ -793,6 +868,7 @@
         "days": [
             3
         ],
-        "notiz": ""
+        "notiz": "",
+        "checklist": []
     }
 ]
