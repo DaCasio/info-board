@@ -109,11 +109,12 @@
         /* Checkbox Editor Styles */
         .cb-editor-row { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; }
         .cb-editor-row input[type="checkbox"] { width: 20px; height: 20px; margin: 0; cursor: pointer; }
-        .cb-editor-row input[type="text"] { flex: 1; margin: 0; padding: 5px 10px; font-size: 0.85em; background: rgba(255,255,255,0.05); }
+        .cb-editor-row input[type="text"] { flex: 1; margin: 0; padding: 5px 10px; font-size: 0.85em; background: rgba(255,255,255,0.05); transition: 0.2s; }
+        .cb-editor-row input[type="text"].strike { text-decoration: line-through; color: #777; }
         .cb-editor-row .btn-del-cb { background: none; border: none; color: #ff4d4d; cursor: pointer; font-weight: bold; padding: 0 5px; }
 
-        .cb-line { cursor: pointer; display: block; padding: 2px 0; }
-        .cb-line.done { text-decoration: line-through; color: #777; }
+        .cb-display-line { cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 2px 0; }
+        .cb-display-line.done { text-decoration: line-through; color: #777; }
         
         .faellig { color: #ff4d4d !important; border-color: rgba(255, 77, 77, 0.4) !important; background: rgba(255, 77, 77, 0.1) !important; }
         .laufend { color: var(--live-color) !important; border-color: rgba(255, 204, 0, 0.4) !important; background: rgba(255, 204, 0, 0.1) !important; }
@@ -193,15 +194,15 @@
                 <button class="tool-btn" onclick="wrapText('[color:#008800]','[/color]')" style="color:#008800">GRÜN</button>
                 <button class="tool-btn" onclick="wrapText('[color:#febe00]','[/color]')" style="color:#febe00">GELB</button>
                 <button class="tool-btn" onclick="wrapText('[color:#1010dd]','[/color]')" style="color:#1010dd">BLAU</button>
-                <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
+                <button class="tool-btn" onclick="addChecklistItem()">+ CHECKBOX</button>
                 <button class="tool-btn restore-btn" onclick="document.getElementById('backup-upload').click()">📂 RESTORE</button>
                 <button class="tool-btn backup-btn" onclick="downloadBackup()">💾 BACKUP</button>
                 <input type="file" id="backup-upload" accept=".json" style="display:none" onchange="importBackup(this)">
             </div>
-            <textarea id="t-note" placeholder="Allgemeine Notizen..." oninput="syncFromNoteToCB()"></textarea>
+            <textarea id="t-note" placeholder="Allgemeine Notizen..."></textarea>
             
             <div id="cb-editor-container" style="margin-top: 10px; border-top: 1px dashed var(--accent); padding-top: 10px;">
-                <span class="date-label">Checkliste (Dynamisch)</span>
+                <span class="date-label">Checkliste</span>
                 <div id="cb-list-edit"></div>
             </div>
 
@@ -234,6 +235,7 @@
     const G_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
     let data = [], currentSha = "", isLogged = false, activeFilter = "ALL";
     let calDate = new Date();
+    let currentChecklist = [];
 
     setInterval(() => {
         if(isLogged && document.getElementById('list-view').style.display !== 'none') {
@@ -444,11 +446,31 @@
                     </div>
                     <div class="countdown-box" data-ziel="${t.ziel}" data-start="${t.start || ''}"><small>...</small>...</div>
                 </div>
-                <div class="row-notiz"><div class="notiz-display">${format(t.notiz, originalIndex)}</div></div>
+                <div class="row-notiz">
+                    <div class="notiz-display">${format(t.notiz)}</div>
+                    ${renderChecklistDisplay(t.checklist, originalIndex)}
+                </div>
             </div>`;
         });
         document.getElementById('liste').innerHTML = h || "Keine Termine.";
         updateCountdowns();
+    }
+
+    function renderChecklistDisplay(cl, tIdx) {
+        if (!cl || cl.length === 0) return "";
+        let h = '<div style="margin-top:10px; border-top:1px solid rgba(255,255,255,0.05); padding-top:10px;">';
+        cl.forEach((item, i) => {
+            h += `<div class="cb-display-line ${item.done ? 'done' : ''}" onclick="toggleCheckItem(${tIdx}, ${i})">
+                    <span>${item.done ? '☑' : '☐'}</span> ${item.text}
+                  </div>`;
+        });
+        h += '</div>';
+        return h;
+    }
+
+    async function toggleCheckItem(tIdx, i) {
+        data[tIdx].checklist[i].done = !data[tIdx].checklist[i].done;
+        await saveToGit();
     }
 
     function updateFilterBar() {
@@ -478,84 +500,44 @@
 
     function setFilter(tag) { activeFilter = tag; render(); }
     
-    function format(txt, tIdx) {
+    function format(txt) {
         if(!txt) return "";
-        return txt.split('\n').map((l, lIdx) => {
-            if(l.startsWith('[ ]')) return `<span class="cb-line" onclick="toggle(${tIdx},${lIdx})">☐ ${l.slice(3)}</span>`;
-            if(l.startsWith('[x]')) return `<span class="cb-line done" onclick="toggle(${tIdx},${lIdx})">☑ ${l.slice(3)}</span>`;
-            return l;
-        }).join('\n')
+        return txt
         .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
         .replace(/--(.*?)--/g, '<s>$1</s>')
         .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
     }
     
-    async function toggle(tIdx, lIdx) {
-        let l = data[tIdx].notiz.split('\n');
-        l[lIdx] = l[lIdx].startsWith('[ ]') ? l[lIdx].replace('[ ]','[x]') : l[lIdx].replace('[x]','[ ]');
-        data[tIdx].notiz = l.join('\n');
-        saveToGit();
+    // Checklist Editor Logik
+    function addChecklistItem(text = "", done = false) {
+        const item = { text, done };
+        currentChecklist.push(item);
+        renderChecklistEditor();
     }
-    
-    // Checkbox System Logik
-    function syncFromNoteToCB() {
-        const note = document.getElementById('t-note').value;
-        const cbContainer = document.getElementById('cb-list-edit');
-        const lines = note.split('\n');
-        
-        cbContainer.innerHTML = "";
-        lines.forEach((line, index) => {
-            if (line.startsWith('[ ]') || line.startsWith('[x]')) {
-                const isChecked = line.startsWith('[x]');
-                const text = line.substring(3).trim();
-                createCBRow(index, isChecked, text);
-            }
+
+    function renderChecklistEditor() {
+        const container = document.getElementById('cb-list-edit');
+        container.innerHTML = "";
+        currentChecklist.forEach((item, index) => {
+            const div = document.createElement('div');
+            div.className = 'cb-editor-row';
+            div.innerHTML = `
+                <input type="checkbox" ${item.done ? 'checked' : ''} onchange="updateChecklistItem(${index}, 'done', this.checked)">
+                <input type="text" class="${item.done ? 'strike' : ''}" value="${item.text}" oninput="updateChecklistItem(${index}, 'text', this.value)" placeholder="Aufgabe...">
+                <button class="btn-del-cb" onclick="removeChecklistItem(${index})">✕</button>
+            `;
+            container.appendChild(div);
         });
     }
 
-    function createCBRow(lineIndex, checked, text) {
-        const container = document.getElementById('cb-list-edit');
-        const div = document.createElement('div');
-        div.className = 'cb-editor-row';
-        div.innerHTML = `
-            <input type="checkbox" ${checked ? 'checked' : ''} onchange="updateNoteFromCB(${lineIndex}, this.checked, null)">
-            <input type="text" value="${text}" oninput="updateNoteFromCB(${lineIndex}, null, this.value)" placeholder="Aufgabe...">
-            <button class="btn-del-cb" onclick="removeCBLine(${lineIndex})">✕</button>
-        `;
-        container.appendChild(div);
+    function updateChecklistItem(index, field, value) {
+        currentChecklist[index][field] = value;
+        if (field === 'done') renderChecklistEditor(); // Refresh for strike-through effect
     }
 
-    function updateNoteFromCB(lineIndex, checked, text) {
-        const area = document.getElementById('t-note');
-        let lines = area.value.split('\n');
-        let currentLine = lines[lineIndex];
-
-        if (checked !== null) {
-            const prefix = checked ? '[x]' : '[ ]';
-            lines[lineIndex] = prefix + currentLine.substring(3);
-        }
-        if (text !== null) {
-            const prefix = currentLine.substring(0, 3);
-            lines[lineIndex] = prefix + " " + text;
-        }
-
-        area.value = lines.join('\n');
-    }
-
-    function removeCBLine(lineIndex) {
-        const area = document.getElementById('t-note');
-        let lines = area.value.split('\n');
-        lines.splice(lineIndex, 1);
-        area.value = lines.join('\n');
-        syncFromNoteToCB();
-    }
-
-    function addCB() {
-        const area = document.getElementById('t-note');
-        const newLine = (area.value === "" || area.value.endsWith('\n')) ? "[ ] " : "\n[ ] ";
-        area.value += newLine;
-        area.focus();
-        syncFromNoteToCB();
+    function removeChecklistItem(index) {
+        currentChecklist.splice(index, 1);
+        renderChecklistEditor();
     }
     
     function wrapText(before, after) {
@@ -602,10 +584,11 @@
         document.getElementById('t-repeat').value = t.repeat || 'none';
         document.getElementById('t-repeat-until').value = t.repeatUntil || "";
         document.getElementById('t-note').value = t.notiz || "";
+        currentChecklist = t.checklist ? JSON.parse(JSON.stringify(t.checklist)) : [];
         document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
         if(t.days) t.days.forEach(d => { const btn = document.querySelector(`.day-btn[data-day="${d}"]`); if(btn) btn.classList.add('active'); });
         toggleRepeatUI();
-        syncFromNoteToCB();
+        renderChecklistEditor();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -619,8 +602,9 @@
         document.getElementById('t-repeat').value = t.repeat || 'none';
         document.getElementById('t-repeat-until').value = t.repeatUntil || "";
         document.getElementById('t-note').value = t.notiz || "";
+        currentChecklist = t.checklist ? JSON.parse(JSON.stringify(t.checklist)) : [];
         toggleRepeatUI();
-        syncFromNoteToCB();
+        renderChecklistEditor();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -634,7 +618,8 @@
             repeat: document.getElementById('t-repeat').value,
             repeatUntil: document.getElementById('t-repeat-until').value || null,
             days: Array.from(document.querySelectorAll('.day-btn.active')).map(b => parseInt(b.dataset.day)),
-            notiz: document.getElementById('t-note').value
+            notiz: document.getElementById('t-note').value,
+            checklist: currentChecklist
         };
         if(!entry.name || !entry.ziel) { alert("Titel und Fälligkeit werden benötigt."); return; }
         if(id === "-1") data.push(entry); else data[id] = entry;
@@ -650,6 +635,7 @@
         document.getElementById('t-date').value = "";
         document.getElementById('t-note').value = "";
         document.getElementById('t-repeat').value = "none";
+        currentChecklist = [];
         document.getElementById('cb-list-edit').innerHTML = "";
         document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
         toggleRepeatUI();
