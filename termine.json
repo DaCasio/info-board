@@ -672,5 +672,14 @@
         "tags": [
             "KERO"
         ]
+    },
+    {
+        "name": "Magenta Mobil XS MLZ",
+        "start": null,
+        "ziel": "2028-03-15T00:00",
+        "notiz": "",
+        "tags": [
+            "ARCHIV"
+        ]
     }
 ]
