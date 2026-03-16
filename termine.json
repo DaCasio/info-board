@@ -799,17 +799,5 @@
             3
         ],
         "notiz": ""
-    },
-    {
-        "name": "",
-        "start": null,
-        "ziel": "",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": ""
     }
 ]
