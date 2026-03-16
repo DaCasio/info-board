@@ -90,9 +90,7 @@
 
         .tag-display-container { display: flex; gap: 5px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
         .tag-mini { font-size: 0.7em; background: rgba(0, 202, 227, 0.2); color: var(--accent); padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(0, 202, 227, 0.3); }
-        
-        /* Neue Box für Wiederholungs-Info */
-        .repeat-badge { font-size: 0.7em; background: #444; color: #fff; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; font-weight: bold; border: 1px solid #666; }
+        .tag-repeat { font-size: 0.7em; background: rgba(255, 204, 0, 0.2); color: #ffcc00; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(255, 204, 0, 0.4); font-weight: bold; }
 
         .row-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
         .datum-box { font-size: 0.85em; color: #aaa; line-height: 1.4; }
@@ -238,6 +236,13 @@
     let data = [], currentSha = "", isLogged = false, activeFilter = "ALL";
     let calDate = new Date();
 
+    // Countdown-Interval
+    setInterval(() => {
+        if(isLogged && document.getElementById('list-view').style.display !== 'none') {
+            updateCountdowns();
+        }
+    }, 1000);
+
     window.onload = () => { if(localStorage.getItem('termin_monitor_auth') === 'true') login(true); };
 
     function login(auto = false) {
@@ -369,7 +374,7 @@
     }
 
     function getCountdown(ms) {
-        if (ms < 0) return null;
+        if (ms < 0) return "00d 00:00:00";
         const d = Math.floor(ms/86400000).toString().padStart(2,'0');
         const hh = Math.floor((ms%86400000)/3600000).toString().padStart(2,'0');
         const mm = Math.floor((ms%3600000)/60000).toString().padStart(2,'0');
@@ -377,8 +382,32 @@
         return `${d}d ${hh}:${mm}:${ss}`;
     }
 
-    function render() {
+    function updateCountdowns() {
         const jetzt = new Date();
+        const boxes = document.querySelectorAll('.countdown-box[data-ziel]');
+        boxes.forEach(box => {
+            const ziel = new Date(box.getAttribute('data-ziel'));
+            const start = box.getAttribute('data-start') ? new Date(box.getAttribute('data-start')) : null;
+            let statusText = "FÄLLIG", displayTime = "FÄLLIG", cssClass = "faellig";
+
+            if (jetzt < ziel) {
+                if (start && jetzt < start) {
+                    statusText = "START IN";
+                    displayTime = getCountdown(start - jetzt);
+                    cssClass = "";
+                } else {
+                    statusText = start ? "ENDE IN" : "";
+                    displayTime = getCountdown(ziel - jetzt);
+                    cssClass = start ? "laufend" : "";
+                }
+            }
+            box.querySelector('small').innerText = statusText;
+            box.childNodes[1].nodeValue = displayTime;
+            box.className = `countdown-box ${cssClass}`;
+        });
+    }
+
+    function render() {
         const searchQuery = document.getElementById('search-input').value.toLowerCase();
         let filteredData = data.filter(t => {
             if (activeFilter === "ALL") return !t.tags || !t.tags.includes("ARCHIV");
@@ -394,35 +423,31 @@
         let h = "";
         filteredData.forEach((t) => {
             const originalIndex = data.indexOf(t);
-            const ziel = new Date(t.ziel), start = t.start ? new Date(t.start) : null;
-            let statusText = "FÄLLIG", displayTime = "", cssClass = "faellig";
-            if (jetzt < ziel) {
-                if (start && jetzt < start) { statusText = "START IN"; displayTime = getCountdown(start - jetzt); cssClass = ""; }
-                else { statusText = start ? "ENDE IN" : ""; displayTime = getCountdown(ziel - jetzt); cssClass = start ? "laufend" : ""; }
-            } else { displayTime = "FÄLLIG"; }
-            
-            const repeatIcon = (t.repeat && t.repeat !== "none") ? `<span title="Wiederholung: ${t.repeat}" style="color:var(--accent); margin-right:5px;">🔄</span>` : "";
-            
-            // Anzeige der Wiederholungs-Box
-            const repeatBadge = (t.repeat && t.repeat !== "none") ? `<span class="repeat-badge">${t.repeat}</span>` : "";
+            const ziel = new Date(t.ziel);
+            const repeatTag = (t.repeat && t.repeat !== "none") ? `<span class="tag-repeat">${t.repeat}</span>` : "";
 
             h += `<div class="termin-card">
-                <div class="row-title"><div class="titel-box">${repeatIcon}${t.name}</div>
-                <div class="actions-box">
-                    <button class="btn-action btn-blue" onclick="duplicate(${originalIndex})">📋</button>
-                    <button class="btn-action" style="background:#ffcc00" onclick="edit(${originalIndex})">✎</button>
-                    <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${originalIndex})">✕</button>
-                </div></div>
-                <div class="tag-display-container">
-                    ${repeatBadge}
-                    ${t.tags ? t.tags.map(tag => `<span class="tag-mini">${tag}</span>`).join('') : ''}
+                <div class="row-title">
+                    <div class="titel-box">${t.name}</div>
+                    <div class="actions-box">
+                        <button class="btn-action btn-blue" onclick="duplicate(${originalIndex})">📋</button>
+                        <button class="btn-action" style="background:#ffcc00" onclick="edit(${originalIndex})">✎</button>
+                        <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${originalIndex})">✕</button>
+                    </div>
                 </div>
-                <div class="row-info"><div class="datum-box">Ziel: ${ziel.toLocaleString('de-DE')}</div>
-                <div class="countdown-box ${cssClass}"><small>${statusText}</small>${displayTime}</div></div>
+                <div class="tag-display-container">
+                    ${t.tags ? t.tags.map(tag => `<span class="tag-mini">${tag}</span>`).join('') : ''}
+                    ${repeatTag}
+                </div>
+                <div class="row-info">
+                    <div class="datum-box">Ziel: ${ziel.toLocaleString('de-DE')}</div>
+                    <div class="countdown-box" data-ziel="${t.ziel}" data-start="${t.start || ''}"><small>...</small>...</div>
+                </div>
                 <div class="row-notiz"><div class="notiz-display">${format(t.notiz, originalIndex)}</div></div>
             </div>`;
         });
         document.getElementById('liste').innerHTML = h || "Keine Termine.";
+        updateCountdowns();
     }
 
     function duplicate(i) {
