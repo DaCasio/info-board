@@ -591,10 +591,21 @@
         "name": "Diego Geburtstag",
         "start": null,
         "ziel": "2026-03-20T01:15",
-        "notiz": "",
         "tags": [
             "KATZIS"
-        ]
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+        ],
+        "notiz": ""
     },
     {
         "name": "Jax Geburtstag",
