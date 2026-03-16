@@ -106,7 +106,7 @@
         .btn-action { padding: 6px 10px; border-radius: 4px; border: none; cursor: pointer; }
         .btn-blue { background: #007bff; color: white; }
 
-        .cb-line { cursor: pointer; display: block; padding: 2px 0; }
+        .cb-line { cursor: pointer; display: block; padding: 2px 0; font-weight: 500; }
         .cb-line.done { text-decoration: line-through; color: #777; }
         
         .faellig { color: #ff4d4d !important; border-color: rgba(255, 77, 77, 0.4) !important; background: rgba(255, 77, 77, 0.1) !important; }
@@ -146,7 +146,7 @@
                         <input type="datetime-local" id="t-start">
                     </div>
                     <div class="date-item">
-                        <span class="date-label">Fälligkeit / Ende <span class="required-star">*</span></span>
+                        <span class="date-label">Ende <span class="required-star">*</span></span>
                         <input type="datetime-local" id="t-date">
                     </div>
                 </div>
@@ -193,7 +193,6 @@
                 <input type="file" id="backup-upload" accept=".json" style="display:none" onchange="importBackup(this)">
             </div>
             <textarea id="t-note" placeholder="Notizen..."></textarea>
-            <div id="cb-list" style="margin-bottom: 8px;"></div>
             <button class="btn-main" id="save-btn" onclick="save()">TERMIN SPEICHERN</button>
         </div>
 
@@ -399,7 +398,6 @@
         document.getElementById('counter-display').innerText = `${activeFilter} TERMINE: ${filteredData.length}`;
         updateFilterBar();
         
-        // Sortierung nach nächstgelegenem Zeitpunkt (Start falls vorhanden, sonst Ziel/Ende)
         filteredData.sort((a, b) => {
             const timeA = a.start ? new Date(a.start) : new Date(a.ziel);
             const timeB = b.start ? new Date(b.start) : new Date(b.ziel);
@@ -470,30 +468,51 @@
     
     function format(txt, tIdx) {
         if(!txt) return "";
-        return txt.split('\n').map((l, lIdx) => {
-            if(l.startsWith('[ ]')) return `<span class="cb-line" onclick="toggle(${tIdx},${lIdx})">☐ ${l.slice(3)}</span>`;
-            if(l.startsWith('[x]')) return `<span class="cb-line done" onclick="toggle(${tIdx},${lIdx})">☑ ${l.slice(3)}</span>`;
-            return l;
-        }).join('\n').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+        // Zuerst nach Zeilen aufteilen, um Checkboxen am Zeilenanfang zu identifizieren
+        let lines = txt.split('\n');
+        let formattedLines = lines.map((l, lIdx) => {
+            let line = l;
+            // Checkbox-Logik (muss ganz am Anfang stehen)
+            if(line.startsWith('[ ]')) {
+                line = `<span class="cb-line" onclick="toggle(${tIdx},${lIdx})">☐ ${line.slice(3)}</span>`;
+            } else if(line.startsWith('[x]')) {
+                line = `<span class="cb-line done" onclick="toggle(${tIdx},${lIdx})">☑ ${line.slice(3)}</span>`;
+            }
+            return line;
+        });
+
+        // Dann Markdown und Farben auf den gesamten Text anwenden
+        let joined = formattedLines.join('\n');
+        return joined
+            .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+            .replace(/--(.*?)--/g, '<s>$1</s>')
+            .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
     }
     
     async function toggle(tIdx, lIdx) {
-        let l = data[tIdx].notiz.split('\n');
-        l[lIdx] = l[lIdx].startsWith('[ ]') ? l[lIdx].replace('[ ]','[x]') : l[lIdx].replace('[x]','[ ]');
-        data[tIdx].notiz = l.join('\n');
-        saveToGit();
+        let lines = data[tIdx].notiz.split('\n');
+        if(lines[lIdx].startsWith('[ ]')) {
+            lines[lIdx] = '[x]' + lines[lIdx].slice(3);
+        } else if(lines[lIdx].startsWith('[x]')) {
+            lines[lIdx] = '[ ]' + lines[lIdx].slice(3);
+        }
+        data[tIdx].notiz = lines.join('\n');
+        await saveToGit();
+        render(); // Anzeige sofort aktualisieren
     }
     
     function addCB() {
         const area = document.getElementById('t-note');
         const start = area.selectionStart;
         area.value = area.value.substring(0, start) + "[ ] " + area.value.substring(start);
+        area.focus();
     }
     
     function wrapText(before, after) {
         const area = document.getElementById('t-note');
         const start = area.selectionStart, end = area.selectionEnd;
         area.value = area.value.substring(0, start) + before + area.value.substring(start, end) + after + area.value.substring(end);
+        area.focus();
     }
     
     function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
