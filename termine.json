@@ -631,10 +631,21 @@
         "name": "Sira Geburtstag",
         "start": null,
         "ziel": "2026-06-22T08:00",
-        "notiz": "",
         "tags": [
             "KATZIS"
-        ]
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+        ],
+        "notiz": ""
     },
     {
         "name": "Perplexity Ende Magenta",
