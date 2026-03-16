@@ -104,10 +104,9 @@
         .notiz-display { font-size: 0.95em; line-height: 1.5; color: #ddd; white-space: pre-wrap; word-break: break-word; }
 
         .btn-main { background: var(--accent); color: black; border: none; padding: 14px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; text-transform: uppercase; margin-top: 10px; }
-        .btn-action { padding: 6px 10px; border-radius: 4px; border: none; cursor: pointer; font-weight: bold; }
+        .btn-action { padding: 6px 10px; border-radius: 4px; border: none; cursor: pointer; }
         
-        /* Spezieller Style für den blauen Kopierbutton */
-        .btn-copy { background: #0088ff; color: white; }
+        .btn-blue { background: #007bff; color: white; }
 
         .cb-line { cursor: pointer; display: block; padding: 2px 0; }
         .cb-line.done { text-decoration: line-through; color: #777; }
@@ -367,19 +366,32 @@
         const hh = Math.floor((ms%86400000)/3600000).toString().padStart(2,'0');
         const mm = Math.floor((ms%3600000)/60000).toString().padStart(2,'0');
         const ss = Math.floor((ms%60000)/1000).toString().padStart(2,'0');
-        return `${d}t ${hh}:${mm}:${ss}`;
+        return `${d}d ${hh}:${mm}:${ss}`;
     }
 
-    function copyToClipboard(idx) {
-        const t = data[idx];
-        const text = `📌 ${t.name}\n📅 ${new Date(t.ziel).toLocaleString('de-DE')}\n📝 ${t.notiz || ''}`;
-        navigator.clipboard.writeText(text).then(() => {
-            // Kleines Feedback
-            const btn = document.activeElement;
-            const originalText = btn.innerText;
-            btn.innerText = "✓";
-            setTimeout(() => btn.innerText = originalText, 1000);
-        });
+    // DUPLIZIER-FUNKTION (Pasted oben rein, setzt ID auf -1)
+    function duplicate(i) {
+        const t = data[i];
+        document.getElementById('edit-id').value = "-1"; // Wichtig: Neuer Termin
+        document.getElementById('t-name').value = t.name + " (Kopie)";
+        document.getElementById('t-start').value = t.start || "";
+        document.getElementById('t-date').value = t.ziel;
+        document.getElementById('t-tags').value = t.tags ? t.tags.join(', ') : "";
+        document.getElementById('t-repeat').value = t.repeat || 'none';
+        document.getElementById('t-repeat-until').value = t.repeatUntil || "";
+        document.getElementById('t-note').value = t.notiz || "";
+        
+        // Wochentage bei Wiederholung setzen
+        document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+        if(t.days) {
+            t.days.forEach(d => {
+                const btn = document.querySelector(`.day-btn[data-day="${d}"]`);
+                if(btn) btn.classList.add('active');
+            });
+        }
+        
+        toggleRepeatUI();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function render() {
@@ -388,6 +400,7 @@
         let filteredData = data.filter(t => {
             if (activeFilter === "ALL") return !t.tags || !t.tags.includes("ARCHIV");
             if (activeFilter === "ARCHIV") return t.tags && t.tags.includes("ARCHIV");
+            if (activeFilter === "NOTAG") return !t.tags || t.tags.length === 0;
             return t.tags && t.tags.includes(activeFilter);
         });
         
@@ -405,11 +418,10 @@
                 if (start && jetzt < start) { statusText = "START IN"; displayTime = getCountdown(start - jetzt); cssClass = ""; }
                 else { statusText = start ? "ENDE IN" : ""; displayTime = getCountdown(ziel - jetzt); cssClass = start ? "laufend" : ""; }
             } else { displayTime = "FÄLLIG"; }
-            
             h += `<div class="termin-card">
-                <div class="row-title"><div class="titel-box">${t.repeat && t.repeat !== "none" ? "🔄 " : ""}${t.name}</div>
+                <div class="row-title"><div class="titel-box">${t.name}</div>
                 <div class="actions-box">
-                    <button class="btn-action btn-copy" onclick="copyToClipboard(${originalIndex})">📋</button>
+                    <button class="btn-action btn-blue" onclick="duplicate(${originalIndex})">📋</button>
                     <button class="btn-action" style="background:#ffcc00" onclick="edit(${originalIndex})">✎</button>
                     <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${originalIndex})">✕</button>
                 </div></div>
@@ -472,12 +484,23 @@
         const t = data[i];
         document.getElementById('edit-id').value = i;
         document.getElementById('t-name').value = t.name;
+        document.getElementById('t-start').value = t.start || "";
         document.getElementById('t-date').value = t.ziel;
         document.getElementById('t-tags').value = t.tags ? t.tags.join(', ') : "";
         document.getElementById('t-repeat').value = t.repeat || 'none';
+        document.getElementById('t-repeat-until').value = t.repeatUntil || "";
         document.getElementById('t-note').value = t.notiz || "";
+        
+        document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+        if(t.days) {
+            t.days.forEach(d => {
+                const btn = document.querySelector(`.day-btn[data-day="${d}"]`);
+                if(btn) btn.classList.add('active');
+            });
+        }
+        
         toggleRepeatUI();
-        window.scrollTo(0,0);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     async function save() {
@@ -501,6 +524,7 @@
         document.getElementById('edit-id').value = "-1";
         document.getElementById('t-name').value = "";
         document.getElementById('t-tags').value = "";
+        document.getElementById('t-start').value = "";
         document.getElementById('t-date').value = "";
         document.getElementById('t-note').value = "";
         document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
