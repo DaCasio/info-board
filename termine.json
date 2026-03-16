@@ -824,7 +824,7 @@
         "checklist": [
             {
                 "text": "test",
-                "done": false
+                "done": true
             }
         ]
     },
