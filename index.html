@@ -86,7 +86,8 @@
         .termin-card.archived { border-left-color: #666; opacity: 0.8; }
 
         .row-title { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-        .titel-box { font-size: 1.3em; font-weight: bold; flex: 1; }
+        .titel-box { font-size: 1.3em; font-weight: bold; flex: 1; display: flex; align-items: center; gap: 8px; }
+        .archive-icon { color: #ffcc00; font-size: 1.1em; }
         .actions-box { display: flex; gap: 6px; }
 
         .tag-display-container { display: flex; gap: 5px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
@@ -411,9 +412,13 @@
             const ziel = new Date(t.ziel);
             const isArchived = t.tags && t.tags.includes("ARCHIV");
             const repeatTag = (t.repeat && t.repeat !== "none") ? `<span class="tag-repeat">${t.repeat}</span>` : "";
+            
+            // Ordner-Symbol Logik
+            const folderIcon = isArchived ? '<span class="archive-icon">📁</span>' : '';
+
             h += `<div class="termin-card ${isArchived ? 'archived' : ''}">
                 <div class="row-title">
-                    <div class="titel-box">${t.name}</div>
+                    <div class="titel-box">${folderIcon}${t.name}</div>
                     <div class="actions-box">
                         <button class="btn-action btn-blue" onclick="duplicate(${originalIndex})">📋</button>
                         <button class="btn-action" style="background:#ffcc00" onclick="edit(${originalIndex})">✎</button>
@@ -477,7 +482,6 @@
     function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
 
     function downloadBackup() {
-        // Zeitstempel generieren: YYYY-MM-DD_HH-mm
         const now = new Date();
         const ts = now.getFullYear() + "-" + 
                    String(now.getMonth() + 1).padStart(2, '0') + "-" + 
