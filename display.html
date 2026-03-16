@@ -37,174 +37,174 @@
             margin: 15px 0; 
             padding: 15px; 
             background-color: #fdfdfd;
-            display: flex;
-            flex-direction: column;
+            display: block;
         }
 
-        /* Spezialfarben für E-Ink (High Contrast) */
-        .termin-card.live { border: 6px solid #ff4d4d; background-color: #fffafa; }
-        .termin-card.faellig { border: 6px solid #ff4d4d; }
-
-        .card-header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: flex-start;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
-
+        .card-urgent { border-color: #ff4d4d; background-color: #fffafa; }
+        .card-running { border-color: #ffcc00; background-color: #fffff0; }
+        
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
+        
         .termin-info { flex: 1; }
-        .termin-name { font-size: 1.8em; font-weight: 900; margin-bottom: 5px; line-height: 1.1; }
+        .termin-name { font-size: 1.6em; font-weight: bold; color: black; margin-bottom: 5px; }
         
-        .tag-container { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
-        .tag { 
-            font-size: 0.9em; 
-            background-color: #eeeeee; 
+        .tag-container { display: flex; gap: 6px; margin: 5px 0 10px 0; flex-wrap: wrap; }
+        .tag-badge { 
+            border: 1px solid black; 
+            background-color: #e0faff; 
             color: black; 
-            padding: 2px 10px; 
-            border: 1px solid black;
+            padding: 1px 6px; 
+            font-size: 0.75em; 
+            font-weight: bold; 
             text-transform: uppercase;
-            font-weight: bold;
+        }
+        .repeat-badge {
+            background-color: #eee;
+            border-color: #888;
+            color: #555;
         }
 
-        .termin-datum { font-size: 1.1em; color: #444; font-weight: bold; }
-
-        .zeit-box { text-align: right; min-width: 180px; }
-        .status-label { font-size: 0.9em; text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 2px; }
-        .zeit { font-family: 'Courier New', monospace; font-size: 1.6em; font-weight: 900; }
-        
-        /* Countdown Farben */
-        .zeit.laufend { color: #ffcc00; } /* Gold/Gelb */
-        .zeit.kritisch { color: #ff4d4d; } /* Rot */
+        .termin-datum { font-size: 1.05em; color: #444; line-height: 1.4; font-weight: 500; }
 
         .notiz-text { 
-            margin-top: 12px; 
-            font-size: 1.2em; 
-            line-height: 1.4; 
-            color: black; 
+            margin-top: 10px; 
+            font-size: 1.1em; 
+            border-top: 2px solid #00cae3; 
+            padding-top: 8px;
             white-space: pre-wrap;
-            word-break: break-word;
+            color: #333;
+            line-height: 1.4;
         }
 
-        /* Checklist Styles */
-        .checklist-display { margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 10px; }
-        .cb-line { display: flex; align-items: center; gap: 10px; font-size: 1.1em; margin-bottom: 4px; }
+        .cb-line { display: block; padding: 5px 0; font-weight: 500; pointer-events: none; }
         .cb-line.done { text-decoration: line-through; color: #888; }
-        .cb-box { font-weight: bold; font-size: 1.2em; }
-
-        @media (max-width: 800px) {
-            .card-header { flex-direction: column; }
-            .zeit-box { text-align: left; margin-top: 15px; }
+        
+        .zeit-box { text-align: right; min-width: 160px; }
+        .status-label { display: block; font-size: 0.75em; text-transform: uppercase; font-weight: bold; color: #666; }
+        .zeit { 
+            font-family: 'Courier New', monospace; 
+            font-size: 1.8em; 
+            font-weight: bold; 
+            color: #00cae3;
+            white-space: nowrap;
         }
+
+        .faellig { color: #ff4d4d !important; text-transform: uppercase; }
+        .urgent-text { color: #ff4d4d !important; }
+        .running-text { color: #ffcc00 !important; }
     </style>
 </head>
 <body>
 
-    <h1 id="clock">TERMIN MONITOR</h1>
-    <div id="counter" class="termin-counter">Lade Orbit-Daten...</div>
-    <div id="liste"></div>
+    <h1>Termin Monitor</h1>
+    <div id="counter-display" class="termin-counter">Termine: 0</div>
+    <div id="liste">Lade Daten aus Orbit...</div>
 
     <script>
         const t1 = "github_pat_11BBRVHCQ05kX9OEirDuF2";
         const t2 = "_SfPbmFFMu5S4O8kX6AdanuVfPsNY6k84nVv35qdNOgAV5OKWJ5NnW3tS9qH";
-        const G_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
-        
-        let data = [];
+        const GITHUB_TOKEN = t1 + t2;
+        const GITHUB_URL = 'https://api.github.com/repos/dacasio/info-board/contents/termine.json';
 
-        function formatNotiz(txt) {
-            if(!txt) return "";
-            return txt
-                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
-                .replace(/\/\/(.*?)\/\//g, '<i>$1</i>')
-                .replace(/__(.*?)__/g, '<u>$1</u>')
-                .replace(/--(.*?)--/g, '<s>$1</s>')
-                .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
-        }
+        let termineDaten = [];
 
         async function holeDaten() {
             try {
-                const res = await fetch(G_URL, { 
-                    headers: { 'Authorization': `token ${t1+t2}` },
-                    cache: "no-store" 
+                const response = await fetch(GITHUB_URL, {
+                    headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github.v3+json' },
+                    cache: "no-store"
                 });
-                if(res.ok) {
-                    const json = await res.json();
-                    const content = decodeURIComponent(escape(atob(json.content)));
-                    data = JSON.parse(content);
+                if (response.ok) {
+                    const data = await response.json();
+                    const str = atob(data.content);
+                    const bytes = new Uint8Array(str.length);
+                    for (let i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i);
+                    termineDaten = JSON.parse(new TextDecoder().decode(bytes));
                     updateAnzeige();
                 }
-            } catch(e) { console.error("Sync-Fehler", e); }
+            } catch (e) { 
+                document.getElementById('liste').innerHTML = "Fehler beim Laden der Daten.";
+            }
         }
 
-        function getCountdown(ms) {
-            if (ms < 0) return "00d 00:00";
-            const d = Math.floor(ms/86400000).toString().padStart(2,'0');
-            const hh = Math.floor((ms%86400000)/3600000).toString().padStart(2,'0');
-            const mm = Math.floor((ms%3600000)/60000).toString().padStart(2,'0');
-            return `${d}d ${hh}:${mm}`;
+        function getCountdownStr(ms) {
+            if (ms < 0) return "Fällig";
+            const d = Math.floor(ms/86400000).toString().padStart(2, '0');
+            const h = Math.floor((ms%86400000)/3600000).toString().padStart(2, '0');
+            const m = Math.floor((ms%3600000)/60000).toString().padStart(2, '0');
+            return d + "d " + h + "h " + m + "m";
+        }
+
+        function formatNotiz(txt) {
+            if (!txt) return "";
+            return txt.split('\n').map(line => {
+                if (line.startsWith('[ ]')) return '<span class="cb-line">☐ ' + line.slice(3) + '</span>';
+                if (line.startsWith('[x]')) return '<span class="cb-line done">☑ ' + line.slice(3) + '</span>';
+                return line;
+            }).join('\n')
+            .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+            .replace(/\/\/(.*?)\/\//g, '<i>$1</i>')
+            .replace(/__(.*?)__/g, '<u>$1</u>')
+            .replace(/--(.*?)--/g, '<s>$1</s>')
+            .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
         }
 
         function updateAnzeige() {
             const listeDiv = document.getElementById('liste');
-            const counterDiv = document.getElementById('counter');
+            const counterDiv = document.getElementById('counter-display');
             const jetzt = new Date();
 
-            // Filtern: Kein ARCHIV, Sortiert nach Fälligkeit
-            let active = data.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
-            active.sort((a,b) => new Date(a.ziel) - new Date(b.ziel));
+            const sichtbareTermine = termineDaten.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
+            counterDiv.innerText = "AKTIVE TERMINE: " + sichtbareTermine.length;
 
-            counterDiv.innerText = "AKTIVE TERMINE IM ORBIT: " + active.length;
+            // Sortierung nach nächstgelegenem Zeitpunkt (Start falls vorhanden, sonst Ende/Ziel)
+            sichtbareTermine.sort((a, b) => {
+                const timeA = a.start ? new Date(a.start) : new Date(a.ziel);
+                const timeB = b.start ? new Date(b.start) : new Date(b.ziel);
+                return timeA - timeB;
+            });
 
             let html = "";
-            active.forEach(t => {
+            sichtbareTermine.forEach((t) => {
                 const ziel = new Date(t.ziel);
                 const start = t.start ? new Date(t.start) : null;
-                
-                let cardClass = "";
-                let zeitStr = "";
-                let statusText = "";
-                let zeitClass = "";
+                let zeitStr = "", statusText = "", cardClass = "", zeitClass = "";
 
-                if (jetzt > ziel) {
-                    cardClass = "faellig";
-                    zeitStr = "FÄLLIG";
-                    statusText = "STATUS";
-                } else if (start && jetzt >= start && jetzt <= ziel) {
-                    cardClass = "live";
-                    statusText = "ENDE IN";
-                    zeitStr = getCountdown(ziel - jetzt);
-                    zeitClass = "laufend";
-                } else if (start && jetzt < start) {
-                    statusText = "START IN";
-                    zeitStr = getCountdown(start - jetzt);
+                if (start && jetzt < start) {
+                    statusText = "Start in"; zeitStr = getCountdownStr(start - jetzt);
+                } else if (jetzt < ziel) {
+                    statusText = start ? "Ende in" : ""; zeitStr = getCountdownStr(ziel - jetzt);
+                    if (start) { 
+                        cardClass = "card-running"; 
+                        zeitClass = "running-text"; 
+                        statusText = "Ende in"; // Überschreibt Label wenn gestartet
+                    } else if (ziel - jetzt < 86400000) { 
+                        cardClass = "card-urgent"; 
+                        zeitClass = "urgent-text"; 
+                    }
                 } else {
-                    statusText = "FÄLLIG IN";
-                    zeitStr = getCountdown(ziel - jetzt);
+                    statusText = "Status"; zeitStr = "Fällig"; cardClass = "card-urgent"; zeitClass = "faellig";
+                }
+                
+                let repeatBadge = "";
+                let repeatIcon = "";
+                if (t.repeat && t.repeat !== "none") {
+                    repeatIcon = "🔄 ";
+                    repeatBadge = '<span class="tag-badge repeat-badge">Serien: ' + t.repeat + '</span>';
                 }
 
-                const tagsHtml = t.tags ? '<div class="tag-container">' + t.tags.map(tag => '<span class="tag">' + tag + '</span>').join('') + '</div>' : "";
-                const repeatIcon = (t.repeat && t.repeat !== "none") ? "🔄 " : "";
-                
-                // Datum Formatierung
-                const opt = { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+                let tagsHtml = "";
+                if ((t.tags && t.tags.length > 0) || repeatBadge !== "") {
+                    tagsHtml = '<div class="tag-container">' + 
+                        (t.tags ? t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') : '') + 
+                        repeatBadge +
+                        '</div>';
+                }
+
+                const opt = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
                 const startHtml = start ? "Start: " + start.toLocaleString('de-DE', opt) + " Uhr<br>" : "";
                 const zielHtml = "Ende: " + ziel.toLocaleString('de-DE', opt) + " Uhr";
-                
-                // Notiz & Checkliste
                 const notizHtml = t.notiz ? '<div class="notiz-text">' + formatNotiz(t.notiz) + '</div>' : "";
-                
-                let checklistHtml = "";
-                if (t.checklist && t.checklist.length > 0) {
-                    checklistHtml = '<div class="checklist-display">';
-                    t.checklist.forEach(item => {
-                        checklistHtml += `
-                            <div class="cb-line ${item.done ? 'done' : ''}">
-                                <span class="cb-box">${item.done ? '☑' : '☐'}</span>
-                                <span>${item.text}</span>
-                            </div>`;
-                    });
-                    checklistHtml += '</div>';
-                }
 
                 html += '<div class="termin-card ' + cardClass + '">' +
                             '<div class="card-header">' +
@@ -219,10 +219,8 @@
                                 '</div>' +
                             '</div>' +
                             notizHtml +
-                            checklistHtml +
                         '</div>';
             });
-
             listeDiv.innerHTML = html || "<p style='text-align:center;'>Keine aktuellen Termine.</p>";
         }
 
