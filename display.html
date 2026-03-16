@@ -76,7 +76,8 @@
             line-height: 1.4;
         }
 
-        .cb-line { display: block; padding: 5px 0; font-weight: 500; pointer-events: none; }
+        .checklist-display { margin-top: 10px; border-top: 1px dashed #ccc; padding-top: 10px; }
+        .cb-line { display: block; padding: 2px 0; font-weight: 500; }
         .cb-line.done { text-decoration: line-through; color: #888; }
         
         .zeit-box { text-align: right; min-width: 160px; }
@@ -137,16 +138,20 @@
 
         function formatNotiz(txt) {
             if (!txt) return "";
-            return txt.split('\n').map(line => {
-                if (line.startsWith('[ ]')) return '<span class="cb-line">☐ ' + line.slice(3) + '</span>';
-                if (line.startsWith('[x]')) return '<span class="cb-line done">☑ ' + line.slice(3) + '</span>';
+            // 1. Checkboxen im Text umwandeln
+            let formatted = txt.split('\n').map(line => {
+                if (line.trim().startsWith('[ ]')) return '<span class="cb-line">☐ ' + line.trim().slice(3) + '</span>';
+                if (line.trim().startsWith('[x]')) return '<span class="cb-line done">☑ ' + line.trim().slice(3) + '</span>';
                 return line;
-            }).join('\n')
-            .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
-            .replace(/\/\/(.*?)\/\//g, '<i>$1</i>')
-            .replace(/__(.*?)__/g, '<u>$1</u>')
-            .replace(/--(.*?)--/g, '<s>$1</s>')
-            .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+            }).join('\n');
+
+            // 2. Rich Text Formatierung
+            return formatted
+                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+                .replace(/\/\/(.*?)\/\//g, '<i>$1</i>')
+                .replace(/__(.*?)__/g, '<u>$1</u>')
+                .replace(/--(.*?)--/g, '<s>$1</s>')
+                .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
         }
 
         function updateAnzeige() {
@@ -157,7 +162,6 @@
             const sichtbareTermine = termineDaten.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
             counterDiv.innerText = "AKTIVE TERMINE: " + sichtbareTermine.length;
 
-            // Sortierung nach nächstgelegenem Zeitpunkt (Start falls vorhanden, sonst Ende/Ziel)
             sichtbareTermine.sort((a, b) => {
                 const timeA = a.start ? new Date(a.start) : new Date(a.ziel);
                 const timeB = b.start ? new Date(b.start) : new Date(b.ziel);
@@ -177,7 +181,7 @@
                     if (start) { 
                         cardClass = "card-running"; 
                         zeitClass = "running-text"; 
-                        statusText = "Ende in"; // Überschreibt Label wenn gestartet
+                        statusText = "Ende in";
                     } else if (ziel - jetzt < 86400000) { 
                         cardClass = "card-urgent"; 
                         zeitClass = "urgent-text"; 
@@ -204,7 +208,22 @@
                 const opt = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
                 const startHtml = start ? "Start: " + start.toLocaleString('de-DE', opt) + " Uhr<br>" : "";
                 const zielHtml = "Ende: " + ziel.toLocaleString('de-DE', opt) + " Uhr";
+                
+                // Notiz-Inhalt
                 const notizHtml = t.notiz ? '<div class="notiz-text">' + formatNotiz(t.notiz) + '</div>' : "";
+
+                // Strukturierte Checkliste (falls vorhanden)
+                let checklistHtml = "";
+                if (t.checklist && t.checklist.length > 0) {
+                    checklistHtml = '<div class="checklist-display">';
+                    t.checklist.forEach(item => {
+                        checklistHtml += `
+                            <div class="cb-line ${item.done ? 'done' : ''}">
+                                <span>${item.done ? '☑' : '☐'} ${item.text}</span>
+                            </div>`;
+                    });
+                    checklistHtml += '</div>';
+                }
 
                 html += '<div class="termin-card ' + cardClass + '">' +
                             '<div class="card-header">' +
@@ -219,13 +238,13 @@
                                 '</div>' +
                             '</div>' +
                             notizHtml +
+                            checklistHtml +
                         '</div>';
             });
             listeDiv.innerHTML = html || "<p style='text-align:center;'>Keine aktuellen Termine.</p>";
         }
 
         holeDaten();
-        // Aktualisierung alle 60 Sekunden für E-Ink Schonung
         setInterval(holeDaten, 60000); 
         setInterval(updateAnzeige, 60000); 
     </script>
