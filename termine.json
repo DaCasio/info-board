@@ -632,10 +632,19 @@
         "name": "Daily",
         "start": "2026-03-16T09:40",
         "ziel": "2026-03-16T10:00",
-        "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "repeat": "weekly",
+        "repeatUntil": "2026-03-20",
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": ""
     },
     {
         "name": "Pause",
