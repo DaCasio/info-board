@@ -774,8 +774,8 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "daily",
-        "repeatUntil": "2026-03-20",
+        "repeat": "weekly",
+        "repeatUntil": null,
         "days": [
             1,
             2,
