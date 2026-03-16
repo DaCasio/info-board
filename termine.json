@@ -784,15 +784,5 @@
             3
         ],
         "notiz": ""
-    },
-    {
-        "name": "test",
-        "start": null,
-        "ziel": "2026-03-16T12:36",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "[test ] "
     }
 ]
