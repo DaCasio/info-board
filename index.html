@@ -106,6 +106,12 @@
         .btn-action { padding: 6px 10px; border-radius: 4px; border: none; cursor: pointer; }
         .btn-blue { background: #007bff; color: white; }
 
+        /* Checkbox Editor Styles */
+        .cb-editor-row { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; }
+        .cb-editor-row input[type="checkbox"] { width: 20px; height: 20px; margin: 0; cursor: pointer; }
+        .cb-editor-row input[type="text"] { flex: 1; margin: 0; padding: 5px 10px; font-size: 0.85em; background: rgba(255,255,255,0.05); }
+        .cb-editor-row .btn-del-cb { background: none; border: none; color: #ff4d4d; cursor: pointer; font-weight: bold; padding: 0 5px; }
+
         .cb-line { cursor: pointer; display: block; padding: 2px 0; }
         .cb-line.done { text-decoration: line-through; color: #777; }
         
@@ -192,8 +198,13 @@
                 <button class="tool-btn backup-btn" onclick="downloadBackup()">💾 BACKUP</button>
                 <input type="file" id="backup-upload" accept=".json" style="display:none" onchange="importBackup(this)">
             </div>
-            <textarea id="t-note" placeholder="Notizen..."></textarea>
-            <div id="cb-list" style="margin-bottom: 8px;"></div>
+            <textarea id="t-note" placeholder="Allgemeine Notizen..." oninput="syncFromNoteToCB()"></textarea>
+            
+            <div id="cb-editor-container" style="margin-top: 10px; border-top: 1px dashed var(--accent); padding-top: 10px;">
+                <span class="date-label">Checkliste (Dynamisch)</span>
+                <div id="cb-list-edit"></div>
+            </div>
+
             <button class="btn-main" id="save-btn" onclick="save()">TERMIN SPEICHERN</button>
         </div>
 
@@ -399,7 +410,6 @@
         document.getElementById('counter-display').innerText = `${activeFilter} TERMINE: ${filteredData.length}`;
         updateFilterBar();
         
-        // Sortierung nach nächstgelegenem Zeitpunkt (Start falls vorhanden, sonst Ziel/Ende)
         filteredData.sort((a, b) => {
             const timeA = a.start ? new Date(a.start) : new Date(a.ziel);
             const timeB = b.start ? new Date(b.start) : new Date(b.ziel);
@@ -474,7 +484,10 @@
             if(l.startsWith('[ ]')) return `<span class="cb-line" onclick="toggle(${tIdx},${lIdx})">☐ ${l.slice(3)}</span>`;
             if(l.startsWith('[x]')) return `<span class="cb-line done" onclick="toggle(${tIdx},${lIdx})">☑ ${l.slice(3)}</span>`;
             return l;
-        }).join('\n').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+        }).join('\n')
+        .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+        .replace(/--(.*?)--/g, '<s>$1</s>')
+        .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
     }
     
     async function toggle(tIdx, lIdx) {
@@ -484,10 +497,65 @@
         saveToGit();
     }
     
+    // Checkbox System Logik
+    function syncFromNoteToCB() {
+        const note = document.getElementById('t-note').value;
+        const cbContainer = document.getElementById('cb-list-edit');
+        const lines = note.split('\n');
+        
+        cbContainer.innerHTML = "";
+        lines.forEach((line, index) => {
+            if (line.startsWith('[ ]') || line.startsWith('[x]')) {
+                const isChecked = line.startsWith('[x]');
+                const text = line.substring(3).trim();
+                createCBRow(index, isChecked, text);
+            }
+        });
+    }
+
+    function createCBRow(lineIndex, checked, text) {
+        const container = document.getElementById('cb-list-edit');
+        const div = document.createElement('div');
+        div.className = 'cb-editor-row';
+        div.innerHTML = `
+            <input type="checkbox" ${checked ? 'checked' : ''} onchange="updateNoteFromCB(${lineIndex}, this.checked, null)">
+            <input type="text" value="${text}" oninput="updateNoteFromCB(${lineIndex}, null, this.value)" placeholder="Aufgabe...">
+            <button class="btn-del-cb" onclick="removeCBLine(${lineIndex})">✕</button>
+        `;
+        container.appendChild(div);
+    }
+
+    function updateNoteFromCB(lineIndex, checked, text) {
+        const area = document.getElementById('t-note');
+        let lines = area.value.split('\n');
+        let currentLine = lines[lineIndex];
+
+        if (checked !== null) {
+            const prefix = checked ? '[x]' : '[ ]';
+            lines[lineIndex] = prefix + currentLine.substring(3);
+        }
+        if (text !== null) {
+            const prefix = currentLine.substring(0, 3);
+            lines[lineIndex] = prefix + " " + text;
+        }
+
+        area.value = lines.join('\n');
+    }
+
+    function removeCBLine(lineIndex) {
+        const area = document.getElementById('t-note');
+        let lines = area.value.split('\n');
+        lines.splice(lineIndex, 1);
+        area.value = lines.join('\n');
+        syncFromNoteToCB();
+    }
+
     function addCB() {
         const area = document.getElementById('t-note');
-        const start = area.selectionStart;
-        area.value = area.value.substring(0, start) + "[ ] " + area.value.substring(start);
+        const newLine = (area.value === "" || area.value.endsWith('\n')) ? "[ ] " : "\n[ ] ";
+        area.value += newLine;
+        area.focus();
+        syncFromNoteToCB();
     }
     
     function wrapText(before, after) {
@@ -537,6 +605,7 @@
         document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
         if(t.days) t.days.forEach(d => { const btn = document.querySelector(`.day-btn[data-day="${d}"]`); if(btn) btn.classList.add('active'); });
         toggleRepeatUI();
+        syncFromNoteToCB();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -551,6 +620,7 @@
         document.getElementById('t-repeat-until').value = t.repeatUntil || "";
         document.getElementById('t-note').value = t.notiz || "";
         toggleRepeatUI();
+        syncFromNoteToCB();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -580,6 +650,7 @@
         document.getElementById('t-date').value = "";
         document.getElementById('t-note').value = "";
         document.getElementById('t-repeat').value = "none";
+        document.getElementById('cb-list-edit').innerHTML = "";
         document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
         toggleRepeatUI();
     }
