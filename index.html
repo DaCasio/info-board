@@ -75,6 +75,8 @@
         .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px; }
         .tag-pill { background: #333; color: #aaa; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; cursor: pointer; border: 1px solid #444; transition: 0.2s; font-weight: bold; }
         .tag-pill.active { background: var(--accent); color: black; border-color: var(--accent); }
+        .tag-pill.archive-pill { color: #ffcc00; border-color: #ffcc00; }
+        .tag-pill.archive-pill.active { background: #ffcc00; color: black; }
 
         .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; text-transform: uppercase; }
 
@@ -86,8 +88,7 @@
         .termin-card.archived { border-left-color: #666; opacity: 0.8; }
 
         .row-title { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-        .titel-box { font-size: 1.3em; font-weight: bold; flex: 1; display: flex; align-items: center; gap: 8px; }
-        .archive-icon { color: #ffcc00; font-size: 1.1em; }
+        .titel-box { font-size: 1.3em; font-weight: bold; flex: 1; }
         .actions-box { display: flex; gap: 6px; }
 
         .tag-display-container { display: flex; gap: 5px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
@@ -412,13 +413,9 @@
             const ziel = new Date(t.ziel);
             const isArchived = t.tags && t.tags.includes("ARCHIV");
             const repeatTag = (t.repeat && t.repeat !== "none") ? `<span class="tag-repeat">${t.repeat}</span>` : "";
-            
-            // Ordner-Symbol Logik
-            const folderIcon = isArchived ? '<span class="archive-icon">📁</span>' : '';
-
             h += `<div class="termin-card ${isArchived ? 'archived' : ''}">
                 <div class="row-title">
-                    <div class="titel-box">${folderIcon}${t.name}</div>
+                    <div class="titel-box">${t.name}</div>
                     <div class="actions-box">
                         <button class="btn-action btn-blue" onclick="duplicate(${originalIndex})">📋</button>
                         <button class="btn-action" style="background:#ffcc00" onclick="edit(${originalIndex})">✎</button>
@@ -444,8 +441,14 @@
         const allTags = new Set();
         data.forEach(t => t.tags && t.tags.forEach(tag => allTags.add(tag)));
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
-        allTags.forEach(tag => { if(tag !== "ARCHIV") fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`; });
-        if(allTags.has("ARCHIV")) fHtml += `<span class="tag-pill ${activeFilter === 'ARCHIV' ? 'active' : ''}" onclick="setFilter('ARCHIV')">ARCHIV</span>`;
+        allTags.forEach(tag => { 
+            if(tag !== "ARCHIV") {
+                fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`; 
+            }
+        });
+        if(allTags.has("ARCHIV")) {
+            fHtml += `<span class="tag-pill archive-pill ${activeFilter === 'ARCHIV' ? 'active' : ''}" onclick="setFilter('ARCHIV')">📁 ARCHIV</span>`;
+        }
         document.getElementById('filter-display').innerHTML = fHtml;
     }
 
