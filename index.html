@@ -237,7 +237,6 @@
     let data = [], currentSha = "", isLogged = false, activeFilter = "ALL";
     let calDate = new Date();
 
-    // Countdown-Interval (Live Sekunden)
     setInterval(() => {
         if(isLogged && document.getElementById('list-view').style.display !== 'none') {
             updateCountdowns();
@@ -278,7 +277,6 @@
             if (t.repeat && t.repeat !== "none") {
                 let zielDate = new Date(t.ziel);
                 const repeatUntil = t.repeatUntil ? new Date(t.repeatUntil + "T23:59:59") : null;
-                
                 while (zielDate < jetzt && (!repeatUntil || zielDate < repeatUntil)) {
                     let nextDate = new Date(zielDate);
                     if (t.repeat === 'daily') nextDate.setDate(nextDate.getDate() + 1);
@@ -395,30 +393,24 @@
 
     function render() {
         const searchQuery = document.getElementById('search-input').value.toLowerCase();
-        
-        // Logik für die Archiv-Anzeige
         let filteredData = data.filter(t => {
             const isArchived = t.tags && t.tags.includes("ARCHIV");
             if (activeFilter === "ALL") return !isArchived;
             if (activeFilter === "ARCHIV") return isArchived;
             return t.tags && t.tags.includes(activeFilter);
         });
-        
         if (searchQuery) { 
-            filteredData = filteredData.filter(t => t.name.toLowerCase().includes(searchQuery) || (t.notiz && t.notiz.toLowerCase().includes(searchQuery))); 
+            filteredData = filteredData.filter(t => t.name.toLowerCase().includes(searchQuery) || (t.notiz && t.notiz.toLowerCase().includes(searchQuery)));
         }
-        
         document.getElementById('counter-display').innerText = `${activeFilter} TERMINE: ${filteredData.length}`;
         updateFilterBar();
         filteredData.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
-        
         let h = "";
         filteredData.forEach((t) => {
             const originalIndex = data.indexOf(t);
             const ziel = new Date(t.ziel);
             const isArchived = t.tags && t.tags.includes("ARCHIV");
             const repeatTag = (t.repeat && t.repeat !== "none") ? `<span class="tag-repeat">${t.repeat}</span>` : "";
-
             h += `<div class="termin-card ${isArchived ? 'archived' : ''}">
                 <div class="row-title">
                     <div class="titel-box">${t.name}</div>
@@ -447,13 +439,13 @@
         const allTags = new Set();
         data.forEach(t => t.tags && t.tags.forEach(tag => allTags.add(tag)));
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
-        // ARCHIV separat ans Ende
         allTags.forEach(tag => { if(tag !== "ARCHIV") fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`; });
         if(allTags.has("ARCHIV")) fHtml += `<span class="tag-pill ${activeFilter === 'ARCHIV' ? 'active' : ''}" onclick="setFilter('ARCHIV')">ARCHIV</span>`;
         document.getElementById('filter-display').innerHTML = fHtml;
     }
 
     function setFilter(tag) { activeFilter = tag; render(); }
+    
     function format(txt, tIdx) {
         if(!txt) return "";
         return txt.split('\n').map((l, lIdx) => {
@@ -462,28 +454,61 @@
             return l;
         }).join('\n').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
     }
+    
     async function toggle(tIdx, lIdx) {
         let l = data[tIdx].notiz.split('\n');
         l[lIdx] = l[lIdx].startsWith('[ ]') ? l[lIdx].replace('[ ]','[x]') : l[lIdx].replace('[x]','[ ]');
         data[tIdx].notiz = l.join('\n');
         saveToGit();
     }
+    
     function addCB() {
         const area = document.getElementById('t-note');
         const start = area.selectionStart;
         area.value = area.value.substring(0, start) + "[ ] " + area.value.substring(start);
     }
+    
     function wrapText(before, after) {
         const area = document.getElementById('t-note');
         const start = area.selectionStart, end = area.selectionEnd;
         area.value = area.value.substring(0, start) + before + area.value.substring(start, end) + after + area.value.substring(end);
     }
+    
     function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
+
     function downloadBackup() {
+        // Zeitstempel generieren: YYYY-MM-DD_HH-mm
+        const now = new Date();
+        const ts = now.getFullYear() + "-" + 
+                   String(now.getMonth() + 1).padStart(2, '0') + "-" + 
+                   String(now.getDate()).padStart(2, '0') + "_" + 
+                   String(now.getHours()).padStart(2, '0') + "-" + 
+                   String(now.getMinutes()).padStart(2, '0');
+        
+        const filename = `backup_termine_${ts}.json`;
         const blob = new Blob([JSON.stringify(data, null, 2)], {type: "application/json"});
         const url = URL.createObjectURL(blob);
-        const a = document.createElement("a"); a.href = url; a.download = "backup_termine.json"; a.click();
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
     }
+
+    function importBackup(input) {
+        const reader = new FileReader();
+        reader.onload = async (e) => {
+            try {
+                const imported = JSON.parse(e.target.result);
+                if(Array.isArray(imported) && confirm(`Möchten Sie ${imported.length} Termine importieren? (Aktuelle Daten werden überschrieben)`)) {
+                    data = imported;
+                    await saveToGit();
+                }
+            } catch(err) { alert("Ungültige Backup-Datei."); }
+        };
+        if(input.files[0]) reader.readAsText(input.files[0]);
+    }
+
     function edit(i) {
         const t = data[i];
         document.getElementById('edit-id').value = i;
@@ -499,6 +524,7 @@
         toggleRepeatUI();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
     function duplicate(i) {
         const t = data[i];
         document.getElementById('edit-id').value = "-1";
@@ -512,6 +538,7 @@
         toggleRepeatUI();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
     async function save() {
         const id = document.getElementById('edit-id').value;
         const entry = {
@@ -529,6 +556,7 @@
         await saveToGit();
         resetForm();
     }
+
     function resetForm() {
         document.getElementById('edit-id').value = "-1";
         document.getElementById('t-name').value = "";
@@ -540,6 +568,7 @@
         document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
         toggleRepeatUI();
     }
+
     async function saveToGit() {
         const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 4))));
         try {
