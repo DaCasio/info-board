@@ -353,10 +353,13 @@
         "name": "CVE Liste mit Daniel",
         "start": "2026-04-08T14:00",
         "ziel": "2026-04-08T14:25",
-        "notiz": "",
         "tags": [
-            "ARBEIT"
-        ]
+            "RECU"
+        ],
+        "repeat": "monthly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": ""
     },
     {
         "name": "1on1 Daniel",
