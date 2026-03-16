@@ -480,10 +480,13 @@
         "name": "Jahrestag",
         "start": null,
         "ziel": "2026-08-05T00:00",
-        "notiz": "",
         "tags": [
             "WE"
-        ]
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": ""
     },
     {
         "name": "Hochzeitstag",
