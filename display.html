@@ -37,19 +37,17 @@
             margin: 15px 0; 
             padding: 15px; 
             background-color: #fdfdfd;
-            display: block; /* Zurück auf Block für maximale Kompatibilität */
+            display: block;
         }
 
         .card-urgent { border-color: #ff4d4d; background-color: #fffafa; }
         .card-running { border-color: #ffcc00; background-color: #fffff0; }
         
-        /* Obere Zeile: Name links, Zeit rechts */
         .card-header { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
         
         .termin-info { flex: 1; }
         .termin-name { font-size: 1.6em; font-weight: bold; color: black; margin-bottom: 5px; }
         
-        /* Tags direkt unter dem Namen */
         .tag-container { display: flex; gap: 6px; margin: 5px 0 10px 0; flex-wrap: wrap; }
         .tag-badge { 
             border: 1px solid black; 
@@ -59,6 +57,12 @@
             font-size: 0.75em; 
             font-weight: bold; 
             text-transform: uppercase;
+        }
+        /* Style für den Serien-Badge */
+        .repeat-badge {
+            background-color: #eee;
+            border-color: #888;
+            color: #555;
         }
 
         .termin-datum { font-size: 1.05em; color: #444; line-height: 1.4; font-weight: 500; }
@@ -176,10 +180,19 @@
                     statusText = "Status"; zeitStr = "Fällig"; cardClass = "card-urgent"; zeitClass = "faellig";
                 }
                 
+                // --- Serientermin Logik ---
+                let repeatBadge = "";
+                let repeatIcon = "";
+                if (t.repeat && t.repeat !== "none") {
+                    repeatIcon = "🔄 ";
+                    repeatBadge = '<span class="tag-badge repeat-badge">Serien: ' + t.repeat + '</span>';
+                }
+
                 let tagsHtml = "";
-                if (t.tags && t.tags.length > 0) {
+                if ((t.tags && t.tags.length > 0) || repeatBadge !== "") {
                     tagsHtml = '<div class="tag-container">' + 
-                        t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') + 
+                        (t.tags ? t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') : '') + 
+                        repeatBadge +
                         '</div>';
                 }
 
@@ -191,7 +204,7 @@
                 html += '<div class="termin-card ' + cardClass + '">' +
                             '<div class="card-header">' +
                                 '<div class="termin-info">' +
-                                    '<div class="termin-name">' + t.name + '</div>' +
+                                    '<div class="termin-name">' + repeatIcon + t.name + '</div>' +
                                     tagsHtml +
                                     '<div class="termin-datum">' + startHtml + zielHtml + '</div>' +
                                 '</div>' +
