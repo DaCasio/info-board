@@ -813,7 +813,7 @@
             "ARBEIT"
         ],
         "repeat": "weekly",
-        "repeatUntil": "2026-03-20",
+        "repeatUntil": null,
         "days": [
             1,
             2,
