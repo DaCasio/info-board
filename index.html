@@ -70,7 +70,6 @@
         .tag-pill { background: #333; color: #aaa; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; cursor: pointer; border: 1px solid #444; transition: 0.2s; font-weight: bold; }
         .tag-pill.active { background: var(--accent); color: black; border-color: var(--accent); }
         
-        /* Spezial-Pills */
         .tag-pill.archive-pill { color: #ffcc00; border-color: #ffcc00; }
         .tag-pill.archive-pill.active { background: #ffcc00; color: black; }
         .tag-pill.live-pill { color: #ff4d4d; border-color: #ff4d4d; animation: pulse-red 2s infinite; }
@@ -400,13 +399,21 @@
         document.getElementById('counter-display').innerText = `${activeFilter} TERMINE: ${filteredData.length}`;
         updateFilterBar();
         
-        filteredData.sort((a, b) => new Date(a.ziel) - new Date(b.ziel));
+        // Sortierung nach nächstgelegenem Zeitpunkt (Start falls vorhanden, sonst Ziel/Ende)
+        filteredData.sort((a, b) => {
+            const timeA = a.start ? new Date(a.start) : new Date(a.ziel);
+            const timeB = b.start ? new Date(b.start) : new Date(b.ziel);
+            return timeA - timeB;
+        });
+
         let h = "";
         filteredData.forEach((t) => {
             const originalIndex = data.indexOf(t);
             const ziel = new Date(t.ziel);
+            const start = t.start ? new Date(t.start) : null;
             const isArchived = t.tags && t.tags.includes("ARCHIV");
             const repeatTag = (t.repeat && t.repeat !== "none") ? `<span class="tag-repeat">${t.repeat}</span>` : "";
+            
             h += `<div class="termin-card ${isArchived ? 'archived' : ''}">
                 <div class="row-title">
                     <div class="titel-box">${t.name}</div>
@@ -421,7 +428,10 @@
                     ${repeatTag}
                 </div>
                 <div class="row-info">
-                    <div class="datum-box">Ziel: ${ziel.toLocaleString('de-DE')}</div>
+                    <div class="datum-box">
+                        ${start ? `Start: ${start.toLocaleString('de-DE')}<br>` : ''}
+                        Ende: ${ziel.toLocaleString('de-DE')}
+                    </div>
                     <div class="countdown-box" data-ziel="${t.ziel}" data-start="${t.start || ''}"><small>...</small>...</div>
                 </div>
                 <div class="row-notiz"><div class="notiz-display">${format(t.notiz, originalIndex)}</div></div>
@@ -442,10 +452,7 @@
         });
 
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
-        
-        if(hasLive) {
-            fHtml += `<span class="tag-pill live-pill ${activeFilter === 'LIVE' ? 'active' : ''}" onclick="setFilter('LIVE')">🔴 LIVE</span>`;
-        }
+        if(hasLive) fHtml += `<span class="tag-pill live-pill ${activeFilter === 'LIVE' ? 'active' : ''}" onclick="setFilter('LIVE')">🔴 LIVE</span>`;
 
         allTags.forEach(tag => { 
             if(tag !== "ARCHIV") {
