@@ -266,7 +266,7 @@
         "tags": [
             "RECU"
         ],
-        "repeat": "weekly",
+        "repeat": "daily",
         "repeatUntil": "2026-03-22",
         "days": [
             1,
