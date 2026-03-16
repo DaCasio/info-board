@@ -383,10 +383,15 @@
         "name": "Weekly",
         "start": "2026-03-20T10:00",
         "ziel": "2026-03-20T10:55",
-        "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            5
+        ],
+        "notiz": ""
     },
     {
         "name": "JF ANO",
