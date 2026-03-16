@@ -68,6 +68,12 @@
             font-weight: bold; 
             text-transform: uppercase;
         }
+        /* Spezial-Style für Serien-Badge */
+        .repeat-badge {
+            background-color: #f0f0f0;
+            color: #444;
+            border-style: dashed;
+        }
 
         .termin-datum { 
             font-size: 1.0em; 
@@ -146,19 +152,15 @@
             } catch (e) { console.error("Sync Error"); }
         }
 
-        // Optimierte Countdown Logik
         function getCountdownStr(ms) {
             if (ms <= 0) return "FÄLLIG";
-            
             const d = Math.floor(ms / 86400000);
             const h = Math.floor((ms % 86400000) / 3600000);
             const m = Math.floor((ms % 3600000) / 60000);
-
             let parts = [];
             if (d > 0) parts.push(d + "t");
             if (h > 0) parts.push(h + "std");
             if (m > 0 || (d === 0 && h === 0)) parts.push(m + "min");
-
             return parts.join(" ");
         }
 
@@ -209,8 +211,19 @@
                     zeitClass = "faellig";
                 }
                 
-                let tagsHtml = t.tags && t.tags.length > 0 ? 
-                    '<div class="tag-container">' + t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>').join('') + '</div>' : "";
+                // --- NEU: Serientermin Logik ---
+                let repeatBadgeHtml = "";
+                let repeatIcon = "";
+                if (t.repeat && t.repeat !== "none") {
+                    repeatIcon = "🔄 ";
+                    repeatBadgeHtml = '<span class="tag-badge repeat-badge">' + t.repeat + '</span>';
+                }
+
+                // Tags und Repeat-Badge kombinieren
+                let tagsArray = t.tags ? t.tags.map(tag => '<span class="tag-badge">' + tag + '</span>') : [];
+                if (repeatBadgeHtml) tagsArray.push(repeatBadgeHtml);
+                
+                let tagsHtml = tagsArray.length > 0 ? '<div class="tag-container">' + tagsArray.join('') + '</div>' : "";
 
                 const dOpt = { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' };
                 let zeitAnzeige = start ? "S: " + start.toLocaleString('de-DE', dOpt) + " | E: " + ziel.toLocaleString('de-DE', dOpt) 
@@ -220,7 +233,7 @@
 
                 html += '<div class="termin-card ' + cardClass + '">' +
                             '<div style="flex-grow:1">' +
-                                '<div class="termin-name">' + t.name + '</div>' +
+                                '<div class="termin-name">' + repeatIcon + t.name + '</div>' +
                                 tagsHtml +
                                 '<div class="termin-datum">' + zeitAnzeige + '</div>' +
                                 notizHtml +
@@ -235,7 +248,6 @@
         }
 
         holeDaten();
-        // Häufigeres Update für die Minutenanzeige (alle 30 Sek scannen, alle 60 Sek Anzeige)
         setInterval(holeDaten, 30000);
         setInterval(updateAnzeige, 30000);
     </script>
