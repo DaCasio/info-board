@@ -820,7 +820,7 @@
             4,
             5
         ],
-        "notiz": "[color:#1010dd]blau[/color]\n[color:#febe00]gelb[/color]\n[color:#008800]grün[/color]\n[color:#ff4d4d]rot[/color]\n--schräg--\n**fett**",
+        "notiz": "[color:#1010dd]blau[/color]\n[color:#febe00]gelb[/color]\n[color:#008800]grün[/color]\n[color:#ff4d4d]rot[/color]\n--durchgestrichen--\n**fett**\n//schräg//\n__unterstrichen__\n",
         "checklist": []
     },
     {
