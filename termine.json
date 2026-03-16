@@ -794,5 +794,23 @@
             3
         ],
         "notiz": ""
+    },
+    {
+        "name": "test",
+        "start": null,
+        "ziel": "2026-03-16T15:40",
+        "tags": [
+            "TEST"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-03-20",
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "test",
+                "done": false
+            }
+        ]
     }
 ]
