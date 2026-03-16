@@ -40,24 +40,13 @@
         .cal-event.archived { opacity: 0.5; background: #666; color: white; }
 
         .input-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-        .input-row input#t-name { flex: 2; min-width: 250px; }
-        .input-row input#t-tags { flex: 1; min-width: 150px; }
+        .input-row input#t-name { flex: 2; min-width: 200px; }
+        .input-row select#t-repeat { flex: 0.5; min-width: 100px; background: rgba(0,0,0,0.6); color: var(--accent); border: 1px solid #444; border-radius: 5px; padding: 5px; }
         
         .date-group { flex: 3; display: flex; gap: 8px; min-width: 320px; }
         .date-item { flex: 1; display: flex; flex-direction: column; }
         .date-label { font-size: 0.7em; color: var(--accent); text-transform: uppercase; margin-bottom: 4px; font-weight: bold; }
         .required-star { color: #ff4d4d; }
-
-        .recurrence-box { 
-            background: rgba(0, 202, 227, 0.05); border: 1px dashed var(--accent); 
-            padding: 10px; border-radius: 8px; margin-bottom: 10px; 
-        }
-        .day-selector { display: flex; gap: 5px; margin-top: 8px; flex-wrap: wrap; }
-        .day-btn { 
-            flex: 1; min-width: 35px; background: #2a2a2a; border: 1px solid #444; 
-            color: #aaa; padding: 5px; border-radius: 4px; cursor: pointer; font-size: 0.7em; font-weight: bold;
-        }
-        .day-btn.active { background: var(--accent); color: black; border-color: var(--accent); }
 
         .toolbar { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
         .tool-btn { background: #2a2a2a; color: var(--accent); border: 1px solid var(--accent); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.75em; font-weight: bold; }
@@ -90,7 +79,7 @@
 
         .row-title { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
         .titel-box { font-size: 1.3em; font-weight: bold; flex: 1; }
-        .actions-box { display: flex; gap: 6px; }
+        .repeat-badge { font-size: 0.6em; background: #555; color: white; padding: 2px 5px; border-radius: 3px; vertical-align: middle; margin-left: 8px; }
 
         .tag-display-container { display: flex; gap: 5px; margin-bottom: 8px; flex-wrap: wrap; }
         .tag-mini { font-size: 0.7em; background: rgba(0, 202, 227, 0.2); color: var(--accent); padding: 2px 8px; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(0, 202, 227, 0.3); }
@@ -149,7 +138,14 @@
             
             <div class="input-row">
                 <input type="text" id="t-name" placeholder="Titel des Termins">
-                <input type="text" id="t-tags" placeholder="Tags (z.B. ARCHIV, Arbeit...)">
+                <select id="t-repeat">
+                    <option value="none">Keine Wiederholung</option>
+                    <option value="monthly">Monatlich</option>
+                </select>
+                <input type="text" id="t-tags" placeholder="Tags...">
+            </div>
+
+            <div class="input-row">
                 <div class="date-group">
                     <div class="date-item">
                         <span class="date-label">Start (Optional)</span>
@@ -161,43 +157,12 @@
                     </div>
                 </div>
             </div>
-
-            <div class="recurrence-box">
-                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 5px;">
-                    <div style="flex: 1;">
-                        <span class="date-label">Wiederholung</span>
-                        <select id="t-repeat" onchange="toggleRepeatUI()">
-                            <option value="none">Keine</option>
-                            <option value="daily">Täglich</option>
-                            <option value="weekly">Wöchentlich</option>
-                            <option value="biweekly">Zweiwöchentlich</option>
-                            <option value="halfyearly">Halbjährlich</option>
-                            <option value="yearly">Jährlich</option>
-                        </select>
-                    </div>
-                    <div id="repeat-until-box" style="flex: 1; display: none;">
-                        <span class="date-label">Enddatum (Stopp)</span>
-                        <input type="date" id="t-repeat-until">
-                    </div>
-                </div>
-                <div id="weekday-selector" class="day-selector" style="display: none;">
-                    <button class="day-btn" data-day="1" onclick="this.classList.toggle('active')">MO</button>
-                    <button class="day-btn" data-day="2" onclick="this.classList.toggle('active')">DI</button>
-                    <button class="day-btn" data-day="3" onclick="this.classList.toggle('active')">MI</button>
-                    <button class="day-btn" data-day="4" onclick="this.classList.toggle('active')">DO</button>
-                    <button class="day-btn" data-day="5" onclick="this.classList.toggle('active')">FR</button>
-                    <button class="day-btn" data-day="6" onclick="this.classList.toggle('active')">SA</button>
-                    <button class="day-btn" data-day="0" onclick="this.classList.toggle('active')">SO</button>
-                </div>
-            </div>
             
             <div class="toolbar">
                 <button class="tool-btn" onclick="wrapText('**','**')">B</button>
                 <button class="tool-btn" onclick="wrapText('--','--')">S</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ff4d4d]','[/color]')" style="color:#ff4d4d">ROT</button>
                 <button class="tool-btn" onclick="wrapText('[color:#008800]','[/color]')" style="color:#008800">GRÜN</button>
-                <button class="tool-btn" onclick="wrapText('[color:#febe00]','[/color]')" style="color:#febe00">GELB</button>
-                <button class="tool-btn" onclick="wrapText('[color:#1010dd]','[/color]')" style="color:#1010dd">BLAU</button>
                 <button class="tool-btn" onclick="addCB()">+ CHECKBOX</button>
                 <button class="tool-btn" onclick="document.getElementById('ics-upload').click()">+ ICS IMPORT</button>
                 <button class="tool-btn restore-btn" onclick="document.getElementById('backup-upload').click()">📂 RESTORE</button>
@@ -213,7 +178,7 @@
 
         <div id="list-view">
             <div class="search-container">
-                <input type="text" id="search-input" class="search-input" placeholder="🔍 Termin oder Inhalt suchen..." oninput="render()">
+                <input type="text" id="search-input" class="search-input" placeholder="🔍 Suchen..." oninput="render()">
             </div>
             <div id="filter-display" class="filter-bar"></div>
             <div id="counter-display" class="termin-counter">AKTIVE TERMINE: 0</div>
@@ -259,43 +224,28 @@
                 const j = await res.json();
                 currentSha = j.sha;
                 data = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content), c => c.charCodeAt(0))));
-                checkRecurrence();
+                checkRepeating(); // Wichtig: Beim Laden prüfen
                 render();
             }
         } catch(e) { console.error("Sync-Fehler", e); }
     }
 
-    function checkRecurrence() {
+    // Neue Funktion für monatliche Termine
+    function checkRepeating() {
         const jetzt = new Date();
         let changed = false;
         data.forEach(t => {
-            if (t.repeat && t.repeat !== "none") {
+            if(t.repeat === 'monthly') {
                 let zielDate = new Date(t.ziel);
-                const repeatUntil = t.repeatUntil ? new Date(t.repeatUntil + "T23:59:59") : null;
-
-                while (zielDate < jetzt && (!repeatUntil || zielDate < repeatUntil)) {
-                    let nextDate = new Date(zielDate);
-                    if (t.repeat === 'daily') nextDate.setDate(nextDate.getDate() + 1);
-                    else if (t.repeat === 'biweekly') nextDate.setDate(nextDate.getDate() + 14);
-                    else if (t.repeat === 'halfyearly') nextDate.setMonth(nextDate.getMonth() + 6);
-                    else if (t.repeat === 'yearly') nextDate.setFullYear(nextDate.getFullYear() + 1);
-                    else if (t.repeat === 'weekly' && t.days) {
-                        let found = false;
-                        for(let i=1; i<=7; i++) {
-                            nextDate.setDate(nextDate.getDate() + 1);
-                            if(t.days.includes(nextDate.getDay())) { found = true; break; }
-                        }
-                    } else { nextDate.setDate(nextDate.getDate() + 7); }
-
-                    if (repeatUntil && nextDate > repeatUntil) break;
-                    
+                while(zielDate < jetzt) {
+                    // Datum um einen Monat vorschieben
                     if(t.start) {
-                        let sDate = new Date(t.start);
-                        let diff = nextDate - zielDate;
-                        t.start = new Date(sDate.getTime() + diff).toISOString().substring(0,16);
+                        let sD = new Date(t.start);
+                        sD.setMonth(sD.getMonth() + 1);
+                        t.start = sD.toISOString().slice(0,16);
                     }
-                    t.ziel = nextDate.toISOString().substring(0,16);
-                    zielDate = nextDate;
+                    zielDate.setMonth(zielDate.getMonth() + 1);
+                    t.ziel = zielDate.toISOString().slice(0,16);
                     changed = true;
                 }
             }
@@ -314,12 +264,6 @@
     function changeMonth(dir) {
         calDate.setMonth(calDate.getMonth() + dir);
         renderCalendar();
-    }
-
-    function toggleRepeatUI() {
-        const mode = document.getElementById('t-repeat').value;
-        document.getElementById('weekday-selector').style.display = mode === 'weekly' ? 'flex' : 'none';
-        document.getElementById('repeat-until-box').style.display = mode !== 'none' ? 'block' : 'none';
     }
 
     function renderCalendar() {
@@ -360,7 +304,7 @@
                 const isArchived = t.tags && t.tags.includes("ARCHIV");
                 const evDiv = document.createElement('div');
                 evDiv.className = `cal-event ${isArchived ? 'archived' : ''}`;
-                evDiv.innerText = (t.repeat && t.repeat !== "none" ? "🔄 " : "") + t.name;
+                evDiv.innerText = (t.repeat === 'monthly' ? "↻ " : "") + t.name;
                 evDiv.onclick = (e) => { e.stopPropagation(); edit(data.indexOf(t)); switchView('list'); };
                 dotContainer.appendChild(evDiv);
             });
@@ -388,6 +332,7 @@
         else { filteredData = data.filter(t => t.tags && t.tags.includes(activeFilter)); }
         
         if (searchQuery) { filteredData = filteredData.filter(t => t.name.toLowerCase().includes(searchQuery) || (t.notiz && t.notiz.toLowerCase().includes(searchQuery))); }
+        
         document.getElementById('counter-display').innerText = `${activeFilter} TERMINE: ${filteredData.length}`;
         updateFilterBar();
         
@@ -399,28 +344,27 @@
             const ziel = new Date(t.ziel), start = t.start ? new Date(t.start) : null;
             let statusText = "FÄLLIG", displayTime = "", cssClass = "faellig";
             
-            if (jetzt < ziel) {
-                if (start && jetzt < start) { statusText = "START IN"; displayTime = getCountdown(start - jetzt); cssClass = ""; }
-                else { statusText = start ? "ENDE IN" : ""; displayTime = getCountdown(ziel - jetzt); cssClass = start ? "laufend" : ""; }
-            } else { statusText = ""; displayTime = "FÄLLIG"; cssClass = "faellig"; }
-
+            if (start && jetzt < start) { statusText = "START IN"; displayTime = getCountdown(start - jetzt); cssClass = ""; } 
+            else if (jetzt < ziel) { statusText = start ? "ENDE IN" : ""; displayTime = getCountdown(ziel - jetzt); cssClass = start ? "laufend" : ""; } 
+            else { statusText = ""; displayTime = "FÄLLIG"; cssClass = "faellig"; }
+            
             const tagsHtml = t.tags ? t.tags.map(tag => `<span class="tag-mini">${tag}</span>`).join('') : '';
-            const repeatInfo = t.repeat && t.repeat !== "none" ? `<span class="tag-mini" style="background:#444; color:white">🔄 ${t.repeat.toUpperCase()}</span>` : '';
+            const optionsFull = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
             
             h += `<div class="termin-card">
                 <div class="row-title">
-                    <div class="titel-box">${t.name}</div>
+                    <div class="titel-box">${t.name} ${t.repeat === 'monthly' ? '<span class="repeat-badge">MONATLICH</span>' : ''}</div>
                     <div class="actions-box">
                         <button class="btn-action" style="background:#00cae3" onclick="copy(${originalIndex})">📄</button>
                         <button class="btn-action" style="background:#ffcc00" onclick="edit(${originalIndex})">✎</button>
                         <button class="btn-action" style="background:#ff4d4d; color:white" onclick="del(${originalIndex})">✕</button>
                     </div>
                 </div>
-                <div class="tag-display-container">${tagsHtml}${repeatInfo}</div>
+                <div class="tag-display-container">${tagsHtml}</div>
                 <div class="row-info">
-                    <div class="datum-box">Ziel: ${ziel.toLocaleString('de-DE')} Uhr</div>
+                    <div class="datum-box">${start ? 'Start: '+start.toLocaleString('de-DE', optionsFull)+'<br>' : ''}Ende: ${ziel.toLocaleString('de-DE', optionsFull)} Uhr</div>
                     <div class="countdown-box ${cssClass}">
-                        <small style="font-size:0.6em; display:block;">${statusText}</small>
+                        ${statusText ? `<small style="font-size:0.6em; display:block;">${statusText}</small>` : ''}
                         ${displayTime}
                     </div>
                 </div>
@@ -431,9 +375,17 @@
     }
 
     function updateFilterBar() {
+        const jetzt = new Date();
         const allTags = new Set();
-        data.forEach(t => { if(t.tags) t.tags.forEach(tag => allTags.add(tag)); });
+        let hasLive = false, hasNoTag = false;
+        data.forEach(t => { 
+            if(t.tags && t.tags.length > 0) t.tags.forEach(tag => allTags.add(tag)); else hasNoTag = true;
+            const s = t.start ? new Date(t.start) : null, z = new Date(t.ziel);
+            if(s && jetzt >= s && jetzt <= z) hasLive = true;
+        });
         let fHtml = `<span class="tag-pill ${activeFilter === 'ALL' ? 'active' : ''}" onclick="setFilter('ALL')">ALLE</span>`;
+        if(hasLive) fHtml += `<span class="tag-pill live-pill ${activeFilter === 'LIVE' ? 'active' : ''}" onclick="setFilter('LIVE')">● LIVE</span>`;
+        if(hasNoTag) fHtml += `<span class="tag-pill notag-pill ${activeFilter === 'NOTAG' ? 'active' : ''}" onclick="setFilter('NOTAG')"># OHNE TAG</span>`;
         allTags.forEach(tag => { if(tag !== "ARCHIV") fHtml += `<span class="tag-pill ${activeFilter === tag ? 'active' : ''}" onclick="setFilter('${tag}')">${tag}</span>`; });
         if(allTags.has("ARCHIV")) fHtml += `<span class="tag-pill arch-pill ${activeFilter === 'ARCHIV' ? 'active' : ''}" onclick="setFilter('ARCHIV')">📁 ARCHIV</span>`;
         document.getElementById('filter-display').innerHTML = fHtml;
@@ -448,7 +400,7 @@
             if(l.startsWith('[x]')) return `<span class="cb-line done" onclick="toggle(${tIdx},${lIdx})">☑ ${l.slice(3)}</span>`;
             return l;
         });
-        return lines.join('\n').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/--(.*?)--/g, '<s>$1</s>');
+        return lines.join('\n').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/--(.*?)--/g, '<s>$1</s>').replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
     }
 
     async function toggle(tIdx, lIdx) {
@@ -469,15 +421,10 @@
         const t = data[i];
         document.getElementById('edit-id').value = i;
         document.getElementById('t-name').value = t.name;
-        document.getElementById('t-tags').value = t.tags ? t.tags.join(', ') : '';
-        document.getElementById('t-start').value = t.start || '';
-        document.getElementById('t-date').value = t.ziel;
         document.getElementById('t-repeat').value = t.repeat || 'none';
-        document.getElementById('t-repeat-until').value = t.repeatUntil || '';
-        document.querySelectorAll('.day-btn').forEach(btn => {
-            btn.classList.toggle('active', t.days && t.days.includes(parseInt(btn.dataset.day)));
-        });
-        toggleRepeatUI();
+        document.getElementById('t-tags').value = t.tags ? t.tags.join(', ') : '';
+        document.getElementById('t-start').value = t.start ? t.start.substring(0,16) : '';
+        document.getElementById('t-date').value = t.ziel.substring(0,16);
         document.getElementById('cb-list').innerHTML = "";
         let textPart = [];
         t.notiz.split('\n').forEach(line => {
@@ -494,41 +441,37 @@
 
     async function save() {
         const saveBtn = document.getElementById('save-btn');
-        const id = document.getElementById('edit-id').value;
-        const entry = {
-            name: document.getElementById('t-name').value,
-            start: document.getElementById('t-start').value || null,
-            ziel: document.getElementById('t-date').value,
-            tags: document.getElementById('t-tags').value.split(',').map(s => s.trim().toUpperCase()).filter(s => s !== ""),
-            repeat: document.getElementById('t-repeat').value,
-            repeatUntil: document.getElementById('t-repeat-until').value || null,
-            days: Array.from(document.querySelectorAll('.day-btn.active')).map(b => parseInt(b.dataset.day)),
-            notiz: document.getElementById('t-note').value
-        };
+        const name = document.getElementById('t-name').value, 
+              ziel = document.getElementById('t-date').value, 
+              start = document.getElementById('t-start').value,
+              repeat = document.getElementById('t-repeat').value,
+              note = document.getElementById('t-note').value, 
+              tagsRaw = document.getElementById('t-tags').value, 
+              id = document.getElementById('edit-id').value;
+              
+        if(!name || !ziel) { alert("Bitte Titel und Enddatum angeben."); return; }
+        saveBtn.disabled = true; saveBtn.innerText = "SYNCHRONISIERE...";
         
+        const tags = tagsRaw.split(',').map(s => s.trim().toUpperCase()).filter(s => s !== "");
+        let fullNote = note;
         document.querySelectorAll('.cb-edit-row').forEach(row => {
             const txt = row.querySelector('input[type="text"]').value, chk = row.querySelector('input[type="checkbox"]').checked;
-            if(txt) entry.notiz += `\n${chk ? '[x]' : '[ ]'}${txt}`;
+            if(txt) fullNote += `\n${chk ? '[x]' : '[ ]'}${txt}`;
         });
-
+        
+        const entry = { name, start: start || null, ziel, notiz: fullNote.trim(), tags, repeat };
         if(id === "-1") data.push(entry); else data[id] = entry;
-        saveBtn.disabled = true;
-        await saveToGit();
-        resetForm();
+        
+        await saveToGit(); 
+        resetForm(); 
         saveBtn.disabled = false;
     }
 
     function resetForm() {
-        document.getElementById('edit-id').value = "-1";
-        document.getElementById('t-name').value = "";
-        document.getElementById('t-start').value = "";
-        document.getElementById('t-date').value = "";
-        document.getElementById('t-repeat').value = "none";
-        document.getElementById('t-repeat-until').value = "";
-        document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
-        document.getElementById('cb-list').innerHTML = "";
-        document.getElementById('t-note').value = "";
-        toggleRepeatUI();
+        document.getElementById('edit-id').value = "-1"; document.getElementById('cb-list').innerHTML = ""; 
+        document.getElementById('t-note').value = ""; document.getElementById('t-name').value = "";
+        document.getElementById('t-tags').value = ""; document.getElementById('t-start').value = "";
+        document.getElementById('t-date').value = ""; document.getElementById('t-repeat').value = "none";
         document.getElementById('save-btn').innerText = "TERMIN SPEICHERN";
     }
 
@@ -537,29 +480,46 @@
         try {
             const res = await fetch(G_URL, { 
                 method: 'PUT', headers: { 'Authorization': `token ${t1+t2}`, 'Content-Type': 'application/json' }, 
-                body: JSON.stringify({ message: "Orbit Update", content, sha: currentSha }) 
+                body: JSON.stringify({ message: "Update via Monitor", content, sha: currentSha }) 
             });
             if (res.ok) { const j = await res.json(); currentSha = j.content.sha; render(); }
-        } catch(e) { console.error(e); }
+        } catch(e) { alert("Fehler beim Speichern im Orbit."); }
+    }
+
+    function downloadBackup() {
+        const blob = new Blob([JSON.stringify(data, null, 4)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a'); a.href = url; a.download = `backup_termine.json`;
+        a.click(); URL.revokeObjectURL(url);
+    }
+
+    function importBackup(input) {
+        const reader = new FileReader();
+        reader.onload = async (e) => {
+            data = JSON.parse(e.target.result);
+            await saveToGit();
+            alert("Backup eingespielt!");
+        };
+        reader.readAsText(input.files[0]);
+    }
+
+    function importICS(input) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const content = e.target.result;
+            const summary = content.match(/SUMMARY:(.*)/)?.[1] || "Import";
+            document.getElementById('t-name').value = summary.trim();
+            alert("ICS geladen. Bitte prüfen.");
+        };
+        reader.readAsText(input.files[0]);
     }
 
     function del(i) { if(confirm("Löschen?")) { data.splice(i,1); saveToGit(); } }
     function wrapText(b, a) { const t = document.getElementById('t-note'); const s = t.selectionStart, e = t.selectionEnd; t.value = t.value.substring(0,s)+b+t.value.substring(s,e)+a+t.value.substring(e); t.focus(); }
-    function downloadBackup() { 
-        const blob = new Blob([JSON.stringify(data, null, 2)], {type: "application/json"});
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a'); a.href = url; a.download = `backup_orbit_${new Date().toISOString().slice(0,10)}.json`;
-        a.click();
-    }
     
-    function importBackup(input) {
-        const reader = new FileReader();
-        reader.onload = (e) => { data = JSON.parse(e.target.result); saveToGit(); };
-        reader.readAsText(input.files[0]);
-    }
-
-    setInterval(render, 1000);
-    setInterval(load, 60000);
+    // Intervalle
+    setInterval(() => { if(isLogged) render(); }, 1000);
+    setInterval(() => { if(isLogged) { load(); checkRepeating(); } }, 60000);
 </script>
 </body>
 </html>
