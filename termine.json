@@ -870,5 +870,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Feierabend (Kopie)",
+        "start": null,
+        "ziel": "2026-03-16T16:13",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "daily",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
