@@ -878,7 +878,7 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "daily",
+        "repeat": "none",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
