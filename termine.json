@@ -362,10 +362,13 @@
         "name": "1on1 Daniel",
         "start": "2026-03-27T13:00",
         "ziel": "2026-03-27T13:25",
-        "notiz": "",
         "tags": [
-            "ARBEIT"
-        ]
+            "RECU"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": ""
     },
     {
         "name": "ANO Kernmeeting",
