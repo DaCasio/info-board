@@ -189,7 +189,9 @@
             </div>
             <div class="toolbar">
                 <button class="tool-btn" onclick="wrapText('**','**')">B</button>
-                <button class="tool-btn" onclick="wrapText('--','--')">S</button>
+                <button class="tool-btn" onclick="wrapText('//','//')">S</button>
+                <button class="tool-btn" onclick="wrapText('__','__')">U</button>
+                <button class="tool-btn" onclick="wrapText('--','--')">D</button>
                 <button class="tool-btn" onclick="wrapText('[color:#ff4d4d]','[/color]')" style="color:#ff4d4d">ROT</button>
                 <button class="tool-btn" onclick="wrapText('[color:#008800]','[/color]')" style="color:#008800">GRÜN</button>
                 <button class="tool-btn" onclick="wrapText('[color:#febe00]','[/color]')" style="color:#febe00">GELB</button>
@@ -504,6 +506,8 @@
         if(!txt) return "";
         return txt
         .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
+        .replace(/\/\/(.*?)\/\//g, '<i>$1</i>')
+        .replace(/__(.*?)__/g, '<u>$1</u>')
         .replace(/--(.*?)--/g, '<s>$1</s>')
         .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
     }
