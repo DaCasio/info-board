@@ -718,5 +718,19 @@
         "tags": [
             "ARCHIV"
         ]
+    },
+    {
+        "name": "Feierabend (Kopie)",
+        "start": null,
+        "ziel": "2026-03-18T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-03-18",
+        "days": [
+            3
+        ],
+        "notiz": ""
     }
 ]
