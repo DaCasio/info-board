@@ -58,7 +58,6 @@
             font-weight: bold; 
             text-transform: uppercase;
         }
-        /* Style für den Serien-Badge */
         .repeat-badge {
             background-color: #eee;
             border-color: #888;
@@ -156,12 +155,11 @@
             const sichtbareTermine = termineDaten.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
             counterDiv.innerText = "AKTIVE TERMINE: " + sichtbareTermine.length;
 
+            // Sortierung: Nächstgelegene Zeit (Startzeitpunkt wenn vorhanden, sonst Endzeitpunkt)
             sichtbareTermine.sort((a, b) => {
-                const zielA = new Date(a.ziel), startA = a.start ? new Date(a.start) : null;
-                const zielB = new Date(b.ziel), startB = b.start ? new Date(b.start) : null;
-                const relA = (startA && jetzt < startA) ? startA : zielA;
-                const relB = (startB && jetzt < startB) ? startB : zielB;
-                return relA - relB;
+                const timeA = a.start ? new Date(a.start) : new Date(a.ziel);
+                const timeB = b.start ? new Date(b.start) : new Date(b.ziel);
+                return timeA - timeB;
             });
 
             let html = "";
@@ -171,16 +169,25 @@
                 let zeitStr = "", statusText = "", cardClass = "", zeitClass = "";
 
                 if (start && jetzt < start) {
-                    statusText = "Start in"; zeitStr = getCountdownStr(start - jetzt);
+                    statusText = "Start in"; 
+                    zeitStr = getCountdownStr(start - jetzt);
                 } else if (jetzt < ziel) {
-                    statusText = start ? "Ende in" : ""; zeitStr = getCountdownStr(ziel - jetzt);
-                    if (start) { cardClass = "card-running"; zeitClass = "running-text"; }
-                    else if (ziel - jetzt < 86400000) { cardClass = "card-urgent"; zeitClass = "urgent-text"; }
+                    statusText = start ? "Ende in" : ""; 
+                    zeitStr = getCountdownStr(ziel - jetzt);
+                    if (start) { 
+                        cardClass = "card-running"; 
+                        zeitClass = "running-text"; 
+                    } else if (ziel - jetzt < 86400000) { 
+                        cardClass = "card-urgent"; 
+                        zeitClass = "urgent-text"; 
+                    }
                 } else {
-                    statusText = "Status"; zeitStr = "Fällig"; cardClass = "card-urgent"; zeitClass = "faellig";
+                    statusText = "Status"; 
+                    zeitStr = "Fällig"; 
+                    cardClass = "card-urgent"; 
+                    zeitClass = "faellig";
                 }
                 
-                // --- Serientermin Logik ---
                 let repeatBadge = "";
                 let repeatIcon = "";
                 if (t.repeat && t.repeat !== "none") {
@@ -198,6 +205,7 @@
 
                 const opt = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
                 const startHtml = start ? "Start: " + start.toLocaleString('de-DE', opt) + " Uhr<br>" : "";
+                // "Ziel" durch "Ende" ersetzt
                 const zielHtml = "Ende: " + ziel.toLocaleString('de-DE', opt) + " Uhr";
                 const notizHtml = t.notiz ? '<div class="notiz-text">' + formatNotiz(t.notiz) + '</div>' : "";
 
@@ -212,7 +220,7 @@
                                     '<span class="status-label">' + statusText + '</span>' +
                                     '<div class="zeit ' + zeitClass + '">' + zeitStr + '</div>' +
                                 '</div>' +
-                            '</div>' +
+                            '</div>' + 
                             notizHtml +
                         '</div>';
             });
@@ -220,6 +228,7 @@
         }
 
         holeDaten();
+        // Alle 60 Sekunden Daten vom Server laden und Anzeige aktualisieren
         setInterval(holeDaten, 60000); 
         setInterval(updateAnzeige, 60000); 
     </script>
