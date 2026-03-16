@@ -389,10 +389,21 @@
         "name": "JF ANO",
         "start": "2026-03-16T13:00",
         "ziel": "2026-03-16T14:00",
-        "notiz": "",
         "tags": [
             "ARBEIT"
-        ]
+        ],
+        "repeat": "weekly",
+        "repeatUntil": "2026-03-31",
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+        ],
+        "notiz": ""
     },
     {
         "name": "PSC Connect (Nord) in HH",
