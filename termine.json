@@ -870,5 +870,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Muddi neuer Boden",
+        "start": null,
+        "ziel": "2026-03-24T08:00",
+        "tags": [
+            "MUDDI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
