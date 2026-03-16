@@ -272,6 +272,14 @@
         } catch(e) { console.error("Sync-Fehler", e); }
     }
 
+    // NEU: Lokale ISO-Zeit (für datetime-local) statt UTC
+    function toLocalISO(date) {
+        const d = new Date(date);
+        const pad = n => String(n).padStart(2, '0');
+        return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()) 
+             + 'T' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+    }
+
     function checkRecurrence() {
         const jetzt = new Date();
         let changed = false;
@@ -295,9 +303,9 @@
                     if (repeatUntil && nextDate > repeatUntil) break;
                     if(t.start) {
                         let diff = nextDate - zielDate;
-                        t.start = new Date(new Date(t.start).getTime() + diff).toISOString().substring(0,16);
+                        t.start = toLocalISO(new Date(t.start).getTime() + diff);
                     }
-                    t.ziel = nextDate.toISOString().substring(0,16);
+                    t.ziel = toLocalISO(nextDate);
                     zielDate = nextDate;
                     changed = true;
                 }
@@ -536,7 +544,7 @@
 
     function updateChecklistItem(index, field, value) {
         currentChecklist[index][field] = value;
-        if (field === 'done') renderChecklistEditor(); // Refresh for strike-through effect
+        if (field === 'done') renderChecklistEditor();
     }
 
     function removeChecklistItem(index) {
