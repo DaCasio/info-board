@@ -369,10 +369,9 @@
         return `${d}d ${hh}:${mm}:${ss}`;
     }
 
-    // DUPLIZIER-FUNKTION (Pasted oben rein, setzt ID auf -1)
     function duplicate(i) {
         const t = data[i];
-        document.getElementById('edit-id').value = "-1"; // Wichtig: Neuer Termin
+        document.getElementById('edit-id').value = "-1";
         document.getElementById('t-name').value = t.name + " (Kopie)";
         document.getElementById('t-start').value = t.start || "";
         document.getElementById('t-date').value = t.ziel;
@@ -381,7 +380,6 @@
         document.getElementById('t-repeat-until').value = t.repeatUntil || "";
         document.getElementById('t-note').value = t.notiz || "";
         
-        // Wochentage bei Wiederholung setzen
         document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
         if(t.days) {
             t.days.forEach(d => {
@@ -418,8 +416,12 @@
                 if (start && jetzt < start) { statusText = "START IN"; displayTime = getCountdown(start - jetzt); cssClass = ""; }
                 else { statusText = start ? "ENDE IN" : ""; displayTime = getCountdown(ziel - jetzt); cssClass = start ? "laufend" : ""; }
             } else { displayTime = "FÄLLIG"; }
+
+            // HIER DIE ANZEIGE DES ICONS:
+            const repeatIcon = (t.repeat && t.repeat !== "none") ? "🔄 " : "";
+
             h += `<div class="termin-card">
-                <div class="row-title"><div class="titel-box">${t.name}</div>
+                <div class="row-title"><div class="titel-box">${repeatIcon}${t.name}</div>
                 <div class="actions-box">
                     <button class="btn-action btn-blue" onclick="duplicate(${originalIndex})">📋</button>
                     <button class="btn-action" style="background:#ffcc00" onclick="edit(${originalIndex})">✎</button>
