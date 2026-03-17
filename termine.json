@@ -758,13 +758,16 @@
         "checklist": []
     },
     {
-        "name": "Spät",
+        "name": "Heute Spät",
         "start": null,
-        "ziel": "2026-03-18T09:30",
-        "notiz": "Nur für heute",
+        "ziel": "2026-03-18T08:00",
         "tags": [
             "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Nur für heute",
         "checklist": []
     },
     {
