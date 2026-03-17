@@ -406,7 +406,7 @@
             "ARBEIT"
         ],
         "repeat": "monthly",
-        "repeatUntil": null,
+        "repeatUntil": "2026-04-08",
         "days": [],
         "notiz": "",
         "checklist": []
