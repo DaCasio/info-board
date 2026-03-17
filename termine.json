@@ -445,7 +445,7 @@
             "ARBEIT"
         ],
         "repeat": "weekly",
-        "repeatUntil": null,
+        "repeatUntil": "2026-03-20",
         "days": [
             5
         ],
