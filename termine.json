@@ -460,7 +460,7 @@
             "ARBEIT"
         ],
         "repeat": "weekly",
-        "repeatUntil": null,
+        "repeatUntil": "2026-03-23",
         "days": [
             1
         ],
