@@ -834,7 +834,7 @@
             "ARBEIT"
         ],
         "repeat": "monthly",
-        "repeatUntil": null,
+        "repeatUntil": "2026-03-20",
         "days": [],
         "notiz": "",
         "checklist": []
