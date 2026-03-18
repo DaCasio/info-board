@@ -843,5 +843,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Mein kleiner Freund Geburtstag",
+        "start": null,
+        "ziel": "2026-03-20T15:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
