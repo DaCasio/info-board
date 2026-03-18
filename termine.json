@@ -734,24 +734,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-03-19T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": "2026-03-20",
-        "days": [
-            1,
-            2,
-            4,
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Monthly",
         "start": "2026-03-20T10:00",
         "ziel": "2026-03-20T10:30",
