@@ -362,19 +362,6 @@
         "checklist": []
     },
     {
-        "name": "Open Lunch in Köln",
-        "start": "2026-03-25T08:00",
-        "ziel": "2026-03-25T12:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Hab Spät - Geht nicht",
-        "checklist": []
-    },
-    {
         "name": "Wohnungsrückgabe Verjährung",
         "start": null,
         "ziel": "2026-08-01T00:00",
