@@ -971,7 +971,7 @@
             "KERO"
         ],
         "repeat": "none",
-        "repeatUntil": "2026-03-18",
+        "repeatUntil": null,
         "days": [],
         "notiz": "",
         "checklist": []
