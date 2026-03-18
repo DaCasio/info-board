@@ -575,9 +575,14 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
+        "repeat": "weekly",
+        "repeatUntil": "2026-03-27",
+        "days": [
+            1,
+            3,
+            4,
+            5
+        ],
         "notiz": "Vetretung Sahand außer 24.3. - Da in Köln - Kein open Lunch weil wegen Spät",
         "checklist": []
     },
