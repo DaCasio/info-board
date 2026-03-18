@@ -70,8 +70,6 @@ A state-of-the-art control center for deadlines and appointments. Optimized for 
 ├── display.html # Passive Anzeige (E-Ink/Dashboards, read-only)
 ├── termine.json # Datenbank (JSON-Array)
 └── README.md # Diese Datei
----
-
 
 ---
 
