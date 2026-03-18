@@ -817,5 +817,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Bella Geburtstag",
+        "start": null,
+        "ziel": "2026-03-19T20:58",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
