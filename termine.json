@@ -740,7 +740,7 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "repeatUntil": "2026-03-20",
+        "repeatUntil": null,
         "days": [],
         "notiz": "",
         "checklist": []
