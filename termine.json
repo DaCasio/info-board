@@ -942,5 +942,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Kero Nägel",
+        "start": null,
+        "ziel": "2026-03-18T15:00",
+        "tags": [
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
