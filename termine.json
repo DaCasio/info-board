@@ -332,10 +332,13 @@
         "name": "MA Jahresgespräch Reminder",
         "start": "2026-03-23T13:30",
         "ziel": "2026-03-23T14:25",
-        "notiz": "Bogen ausfüllen\nVor Ort in Köln mit Daniel",
         "tags": [
             "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bogen ausfüllen\nMORGEN Vor Ort in Köln mit Daniel",
         "checklist": []
     },
     {
