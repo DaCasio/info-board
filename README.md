@@ -66,12 +66,6 @@ A state-of-the-art control center for deadlines and appointments. Optimized for 
 * **EN:** **Intelligent Sorting:** Appointments with start times sort by START (pre-start) then END (post-start). Applied to both `index.html` and `display.html`.
 
 ---
-* ├── index.html # Haupt-Editor + Kalender (Login erforderlich)
-* ├── display.html # Passive Anzeige (E-Ink/Dashboards, read-only)
-* ├── termine.json # Datenbank (JSON-Array)
-* └── README.md # Diese Datei
-
----
 
 ## ⚙️ Einrichtung / Setup (DE/EN)
 
@@ -104,3 +98,12 @@ Hauptänderungen:
 
 
 ## 📁 Dateistruktur / File Structure
+
+---
+├── index.html # Haupt-Editor + Kalender (Login erforderlich)
+
+├── display.html # Passive Anzeige (E-Ink/Dashboards, read-only)
+
+├── termine.json # Datenbank (JSON-Array)
+
+└── README.md # Diese Datei
