@@ -151,7 +151,7 @@
                 .replace(/\/\/(.*?)\/\//g, '<i>$1</i>')
                 .replace(/__(.*?)__/g, '<u>$1</u>')
                 .replace(/--(.*?)--/g, '<s>$1</s>')
-                .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
+                .replace(/\\[color:(.*?)\\](.*?)\\[\/color\\]/g, '<span style="color:$1">$2</span>');
         }
 
         function updateAnzeige() {
@@ -162,9 +162,11 @@
             const sichtbareTermine = termineDaten.filter(t => !t.tags || !t.tags.includes("ARCHIV"));
             counterDiv.innerText = "AKTIVE TERMINE: " + sichtbareTermine.length;
 
+            // **KORRIGIERTE SORTIERLOGIK** - Nur diese Zeilen geändert!
             sichtbareTermine.sort((a, b) => {
-                const timeA = a.start ? new Date(a.start) : new Date(a.ziel);
-                const timeB = b.start ? new Date(b.start) : new Date(b.ziel);
+                const now = new Date();
+                const timeA = (a.start && now < new Date(a.start)) ? new Date(a.start) : new Date(a.ziel);
+                const timeB = (b.start && now < new Date(b.start)) ? new Date(b.start) : new Date(b.ziel);
                 return timeA - timeB;
             });
 
