@@ -692,21 +692,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-03-18T18:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [
-            3
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Muddi neuer Boden",
         "start": null,
         "ziel": "2026-03-24T08:00",
