@@ -382,10 +382,13 @@
         "name": "Open Lunch in Köln",
         "start": "2026-03-25T08:00",
         "ziel": "2026-03-25T12:00",
-        "notiz": "Vor Ort in Kölle. Hab Spät - Geht nicht",
         "tags": [
             "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Hab Spät - Geht nicht",
         "checklist": []
     },
     {
