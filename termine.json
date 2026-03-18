@@ -289,26 +289,6 @@
         "checklist": []
     },
     {
-        "name": "RB",
-        "start": "2026-03-18T18:00",
-        "ziel": "2026-03-19T06:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "daily",
-        "repeatUntil": "2026-03-22",
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
-        ],
-        "notiz": "Verkürzt. RB am 22.03.2026 an Sahand abgegeben.",
-        "checklist": []
-    },
-    {
         "name": "Casi Spät",
         "start": null,
         "ziel": "2026-03-30T09:30",
