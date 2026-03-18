@@ -876,5 +876,20 @@
         ],
         "notiz": "Sahand übernimmt Sonntag auf Montag",
         "checklist": []
+    },
+    {
+        "name": "NORD 1 Weekly",
+        "start": "2026-03-20T10:00",
+        "ziel": "2026-03-20T10:55",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            5
+        ],
+        "notiz": "",
+        "checklist": []
     }
 ]
