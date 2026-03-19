@@ -718,19 +718,6 @@
         "checklist": []
     },
     {
-        "name": "Frozen Zone DL",
-        "start": "2026-03-18T00:00",
-        "ziel": "2026-03-23T23:59",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "EDU 210 PA Blocker",
         "start": "2026-05-04T08:00",
         "ziel": "2026-05-08T17:00",
