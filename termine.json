@@ -167,11 +167,15 @@
     },
     {
         "name": "Elster-Zertifikat Mutti läuft aus",
+        "start": null,
         "ziel": "2026-08-31T08:37",
-        "notiz": "",
         "tags": [
-            "STEUERN"
+            "FINANZEN"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
