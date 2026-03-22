@@ -13,10 +13,13 @@
         "name": "Bülent Ceylan – Diktatürk",
         "start": null,
         "ziel": "2026-03-22T19:00",
-        "notiz": "Bereitschaft für den Sonntag an Sahand abgegeben!",
         "tags": [
             "TERMINE"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
