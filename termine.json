@@ -977,5 +977,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Winterreifen mindestens",
+        "start": null,
+        "ziel": "2026-04-05T18:00",
+        "tags": [
+            "AUTO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
