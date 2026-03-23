@@ -485,9 +485,9 @@
     {
         "name": "D.group: Fehler bei einem PaloAlto Cluster",
         "start": null,
-        "ziel": "2026-03-23T10:53",
+        "ziel": "2026-03-26T08:30",
         "tags": [
-            "ARCHIV"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
