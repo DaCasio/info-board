@@ -873,5 +873,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "FR.Z.ANO",
+        "start": "2026-03-20T00:00",
+        "ziel": "2026-04-12T23:59",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
