@@ -542,25 +542,6 @@
         "checklist": []
     },
     {
-        "name": "Casi Spät",
-        "start": null,
-        "ziel": "2026-03-26T09:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": "2026-03-27",
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "notiz": "Denke wird X sein",
-        "checklist": []
-    },
-    {
         "name": "Frauenarzt",
         "start": null,
         "ziel": "2026-04-27T16:00",
