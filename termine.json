@@ -819,21 +819,6 @@
         "checklist": []
     },
     {
-        "name": "JF ANO",
-        "start": "2026-03-30T13:00",
-        "ziel": "2026-03-30T14:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": null,
-        "days": [
-            1
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Nageltante",
         "start": null,
         "ziel": "2026-04-04T13:00",
