@@ -834,19 +834,6 @@
         "checklist": []
     },
     {
-        "name": "1on1 Carsten:Daniel",
-        "start": "2026-03-27T13:00",
-        "ziel": "2026-03-27T13:25",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "biweekly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Nageltante",
         "start": null,
         "ziel": "2026-04-04T13:00",
