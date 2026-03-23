@@ -272,7 +272,6 @@
         } catch(e) { console.error("Sync-Fehler", e); }
     }
 
-    // NEU: Lokale ISO-Zeit (für datetime-local) statt UTC
     function toLocalISO(date) {
         const d = new Date(date);
         const pad = n => String(n).padStart(2, '0');
@@ -429,6 +428,9 @@
             return timeA - timeB;
         });
 
+        // **GEÄNDERT: dateOpt mit weekday für Start- und Endanzeige**
+        const dateOpt = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
         let h = "";
         filteredData.forEach((t) => {
             const originalIndex = data.indexOf(t);
@@ -452,8 +454,8 @@
                 </div>
                 <div class="row-info">
                     <div class="datum-box">
-                        ${start ? `Start: ${start.toLocaleString('de-DE')}<br>` : ''}
-                        Ende: ${ziel.toLocaleString('de-DE')}
+                        ${start ? `Start: ${start.toLocaleString('de-DE', dateOpt)}<br>` : ''}
+                        Ende: ${ziel.toLocaleString('de-DE', dateOpt)}
                     </div>
                     <div class="countdown-box" data-ziel="${t.ziel}" data-start="${t.start || ''}"><small>...</small>...</div>
                 </div>
@@ -518,10 +520,9 @@
         .replace(/\/\/(.*?)\/\//g, '<i>$1</i>')
         .replace(/__(.*?)__/g, '<u>$1</u>')
         .replace(/--(.*?)--/g, '<s>$1</s>')
-        .replace(/\\[color:(.*?)\\](.*?)\\[\/color\\]/g, '<span style="color:$1">$2</span>');
+        .replace(/\[color:(.*?)\](.*?)\[\/color\]/g, '<span style="color:$1">$2</span>');
     }
     
-    // Checklist Editor Logik
     function addChecklistItem(text = "", done = false) {
         const item = { text, done };
         currentChecklist.push(item);
