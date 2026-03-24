@@ -204,11 +204,14 @@
     {
         "name": "Konto glatt",
         "start": null,
-        "ziel": "2027-01-29T12:00",
-        "notiz": "",
+        "ziel": "2027-03-29T12:00",
         "tags": [
             "FINANZEN"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
