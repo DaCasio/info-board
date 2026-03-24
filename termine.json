@@ -880,7 +880,8 @@
         "start": null,
         "ziel": "2026-04-05T18:00",
         "tags": [
-            "AUTO"
+            "AUTO",
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
