@@ -774,7 +774,7 @@
         "tags": [
             "TERMINE"
         ],
-        "repeat": "none",
+        "repeat": "yearly",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
