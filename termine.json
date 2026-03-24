@@ -206,10 +206,14 @@
         "name": "Urlaub Kanaren – Konto prüfen (2/2)",
         "start": null,
         "ziel": "2026-09-01T12:00",
-        "notiz": "",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "URLAUB"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
