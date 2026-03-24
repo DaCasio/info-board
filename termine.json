@@ -581,10 +581,14 @@
         "name": "Frauenarzt",
         "start": null,
         "ziel": "2026-04-27T16:00",
-        "notiz": "",
         "tags": [
-            "KERO"
+            "KERO",
+            "DOK"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
