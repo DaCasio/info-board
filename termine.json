@@ -99,10 +99,14 @@
         "name": "Langes Wochenende",
         "start": null,
         "ziel": "2026-05-22T17:00",
-        "notiz": "Pfingstmontag\t25. Mai 2026\tMontag",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "FREI"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Pfingstmontag\t25. Mai 2026\tMontag",
         "checklist": []
     },
     {
