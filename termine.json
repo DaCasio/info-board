@@ -824,7 +824,8 @@
         "start": null,
         "ziel": "2027-03-20T15:00",
         "tags": [
-            "ANNUAL"
+            "ANNUAL",
+            "KATZIS"
         ],
         "repeat": "yearly",
         "repeatUntil": null,
