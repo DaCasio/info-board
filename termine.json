@@ -518,13 +518,14 @@
         "checklist": []
     },
     {
-        "name": "Vossi",
+        "name": "Pumbi / Diego Impf Stichtag",
         "start": null,
-        "ziel": "2026-03-27T18:00",
+        "ziel": "2026-06-12T18:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
         "notiz": "",
-        "tags": [
-            "KERO"
-        ],
         "checklist": []
     },
     {
