@@ -640,7 +640,8 @@
         "start": null,
         "ziel": "2026-06-15T21:00",
         "tags": [
-            "ANNUAL"
+            "ANNUAL",
+            "KATZIS"
         ],
         "repeat": "yearly",
         "repeatUntil": null,
