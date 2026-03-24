@@ -263,7 +263,8 @@
         "start": null,
         "ziel": "2027-09-13T12:00",
         "tags": [
-            "DOK"
+            "DOK",
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
