@@ -246,10 +246,14 @@
         "name": "Frei",
         "start": null,
         "ziel": "2026-12-23T17:00",
-        "notiz": "Heiligabend 24. Dezember 2026 Donnerstag",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "FREI"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Heiligabend 24. Dezember 2026 Donnerstag",
         "checklist": []
     },
     {
