@@ -3,10 +3,14 @@
         "name": "Dr. Stickelbruck – Reinigung",
         "start": null,
         "ziel": "2026-09-02T08:00",
-        "notiz": "",
         "tags": [
+            "DOK",
             "CASI"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
