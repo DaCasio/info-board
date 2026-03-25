@@ -1,18 +1,5 @@
 [
     {
-        "name": "Therapie",
-        "start": null,
-        "ziel": "2026-03-25T19:00",
-        "tags": [
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "D.group: Fehler bei einem PaloAlto Cluster",
         "start": null,
         "ziel": "2026-03-26T08:30",
