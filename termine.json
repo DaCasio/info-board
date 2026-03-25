@@ -1,16 +1,194 @@
 [
     {
-        "name": "Dr. Stickelbruck – Reinigung",
+        "name": "Therapie",
         "start": null,
-        "ziel": "2026-09-02T08:00",
+        "ziel": "2026-03-25T19:00",
         "tags": [
-            "DOK",
-            "CASI"
+            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "D.group: Fehler bei einem PaloAlto Cluster",
+        "start": null,
+        "ziel": "2026-03-26T08:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "MAG#2025121917347564 — DevCert\n",
+        "checklist": [
+            {
+                "text": "DevCert aktualisierung prüfen",
+                "done": false
+            },
+            {
+                "text": "Cert ansonsten am 23.03. 10:53:44 abgelaufen",
+                "done": false
+            }
+        ]
+    },
+    {
+        "name": "Daily",
+        "start": "2026-03-26T09:40",
+        "ziel": "2026-03-26T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-03-26T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Mitarbeitergespräch",
+        "start": "2026-03-27T11:00",
+        "ziel": "2026-03-27T11:55",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Vor Ort in Köln mit Daniel.",
+        "checklist": []
+    },
+    {
+        "name": "Mein Stübchen",
+        "start": null,
+        "ziel": "2026-03-28T19:15",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Sommerzeit",
+        "start": null,
+        "ziel": "2026-03-29T03:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Von 2 auf 3",
+        "checklist": []
+    },
+    {
+        "name": "Casi Spät",
+        "start": null,
+        "ziel": "2026-03-30T09:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Steuern Kohle check 8w",
+        "start": null,
+        "ziel": "2026-03-30T12:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "JF ANO",
+        "start": "2026-03-30T13:00",
+        "ziel": "2026-03-30T14:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            1
+        ],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "CVE Liste Mailvorlage",
+        "start": null,
+        "ziel": "2026-03-30T14:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Mailvorlage spätestens Anfangen, nächste Woche Spät und am 8.4. Follow Up mit Daniel",
+        "checklist": []
+    },
+    {
+        "name": "Andre Todestag",
+        "start": null,
+        "ziel": "2026-03-30T16:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "AXN HQ Neu",
+        "start": null,
+        "ziel": "2026-04-01T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bezug Standort möglich - Von der Wettern Str.",
         "checklist": []
     },
     {
@@ -28,13 +206,71 @@
         "checklist": []
     },
     {
+        "name": "Ablauf des Passwortes 6.4.",
+        "start": null,
+        "ziel": "2026-04-03T08:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Heute renewen",
+        "checklist": []
+    },
+    {
+        "name": "Weekly",
+        "start": "2026-04-03T10:00",
+        "ziel": "2026-04-03T10:55",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            5
+        ],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Nageltante",
+        "start": null,
+        "ziel": "2026-04-04T13:00",
+        "tags": [
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Winterreifen mindestens",
+        "start": null,
+        "ziel": "2026-04-05T18:00",
+        "tags": [
+            "AUTO",
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
         "name": "Dezor-Abo: Ende prüfen",
         "start": null,
         "ziel": "2026-04-06T09:00",
-        "notiz": "Gekündigt, trotzdem prüfen.",
         "tags": [
             "ABO"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Gekündigt, trotzdem prüfen.",
         "checklist": []
     },
     {
@@ -52,23 +288,234 @@
         "checklist": []
     },
     {
-        "name": "Dezor-Abo Ende",
+        "name": "Sommerreifen prüfen",
         "start": null,
-        "ziel": "2026-04-07T16:44",
-        "notiz": "Gekündigt.",
+        "ziel": "2026-04-06T18:00",
         "tags": [
-            "ABO"
+            "AUTO",
+            "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
-        "name": "Eurowings glatt",
+        "name": "Dezor-Abo Ende",
         "start": null,
-        "ziel": "2026-05-15T15:00",
+        "ziel": "2026-04-07T16:44",
+        "tags": [
+            "ABO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Gekündigt.",
+        "checklist": []
+    },
+    {
+        "name": "CVE followup",
+        "start": "2026-04-08T14:00",
+        "ziel": "2026-04-08T14:25",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "monthly",
+        "repeatUntil": null,
+        "days": [],
         "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "1on1 Daniel",
+        "start": "2026-04-10T13:00",
+        "ziel": "2026-04-10T13:25",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Robert & Uschi",
+        "start": null,
+        "ziel": "2026-04-11T19:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "FR.Z.ANO.ENDE",
+        "start": null,
+        "ziel": "2026-04-12T23:59",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Steuern Kohle check 10w",
+        "start": null,
+        "ziel": "2026-04-13T12:00",
         "tags": [
             "FINANZEN"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Füße",
+        "start": null,
+        "ziel": "2026-04-13T14:00",
+        "tags": [
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "RBB",
+        "start": "2026-04-13T18:00",
+        "ziel": "2026-04-14T06:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": "2026-04-20",
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            0
+        ],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "D.group: Failed to fetch device certificate.",
+        "start": null,
+        "ziel": "2026-04-14T14:39",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. \nReminder: Schauen, ob das Problem nach dem Fix nochmal auftritt. (Zertifikat generiert 14.01.26 CET 13:39 (CEST 14:39))\n\n## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
+        "checklist": []
+    },
+    {
+        "name": "NORD PSC Monthly",
+        "start": "2026-04-17T10:00",
+        "ziel": "2026-04-17T10:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "monthly_weekday",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "NV-Ring-Sperrung",
+        "start": null,
+        "ziel": "2026-04-17T17:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Montag 2.3., 06:00 bis 17. April.",
+        "checklist": []
+    },
+    {
+        "name": "PSC Connect (Nord) in HH",
+        "start": "2026-04-20T11:00",
+        "ziel": "2026-04-20T16:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Anreise",
+        "checklist": []
+    },
+    {
+        "name": "PSC Connect (Nord) in HH",
+        "start": "2026-04-21T08:00",
+        "ziel": "2026-04-21T18:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "PSC Connect (Nord)",
+        "checklist": []
+    },
+    {
+        "name": "PSC Connect (Nord) in HH",
+        "start": "2026-04-22T10:00",
+        "ziel": "2026-04-22T15:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Abreise",
+        "checklist": []
+    },
+    {
+        "name": "Steuern Kohle check 12w",
+        "start": null,
+        "ziel": "2026-04-27T12:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Frauenarzt",
+        "start": null,
+        "ziel": "2026-04-27T16:00",
+        "tags": [
+            "KERO",
+            "DOK"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -86,6 +533,45 @@
         "checklist": []
     },
     {
+        "name": "AXN HQ",
+        "start": null,
+        "ziel": "2026-05-01T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bezug Lager möglich - Von der Wettern Str.",
+        "checklist": []
+    },
+    {
+        "name": "EDU 210 PA Blocker",
+        "start": "2026-05-04T08:00",
+        "ziel": "2026-05-08T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Entwurmung SJPD",
+        "start": null,
+        "ziel": "2026-05-07T09:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
         "name": "Morgen frei",
         "start": null,
         "ziel": "2026-05-13T17:00",
@@ -97,6 +583,19 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "Christi Himmelfahrt\t14. Mai 2026\tDonnerstag",
+        "checklist": []
+    },
+    {
+        "name": "Eurowings glatt",
+        "start": null,
+        "ziel": "2026-05-15T15:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -114,6 +613,19 @@
         "checklist": []
     },
     {
+        "name": "AXN HQ ",
+        "start": null,
+        "ziel": "2026-05-30T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Auszug ALBIN KÖBIS",
+        "checklist": []
+    },
+    {
         "name": "Morgen frei",
         "start": null,
         "ziel": "2026-06-03T17:00",
@@ -125,6 +637,58 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "Fronleichnam\t04. Juni 2026\tDonnerstag",
+        "checklist": []
+    },
+    {
+        "name": "Pumbi / Diego Impf Stichtag",
+        "start": null,
+        "ziel": "2026-06-12T18:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Jax Geburtstag",
+        "start": null,
+        "ziel": "2026-06-15T21:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Sira Geburtstag",
+        "start": null,
+        "ziel": "2026-06-22T21:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Perplexity Ende Magenta",
+        "start": null,
+        "ziel": "2026-06-25T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Endet am 25.6.",
         "checklist": []
     },
     {
@@ -142,13 +706,29 @@
         "checklist": []
     },
     {
+        "name": "Hochzeitstag",
+        "start": null,
+        "ziel": "2026-07-04T00:00",
+        "tags": [
+            "WE"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
         "name": "Arbeit",
         "start": null,
         "ziel": "2026-07-13T08:00",
-        "notiz": "",
         "tags": [
             "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -166,6 +746,32 @@
         "checklist": []
     },
     {
+        "name": "Wohnungsrückgabe Verjährung",
+        "start": null,
+        "ziel": "2026-08-01T00:00",
+        "tags": [
+            "WOHNUNG"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "31.07.2026 - Kleiststraße",
+        "checklist": []
+    },
+    {
+        "name": "AXN HQ",
+        "start": null,
+        "ziel": "2026-08-01T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Einzug alle Etagen Von der Wettern Str.",
+        "checklist": []
+    },
+    {
         "name": "Urlaub Kanaren – Konto prüfen (1/2)",
         "start": null,
         "ziel": "2026-08-01T12:00",
@@ -180,13 +786,29 @@
         "checklist": []
     },
     {
+        "name": "Jahrestag",
+        "start": null,
+        "ziel": "2026-08-05T00:00",
+        "tags": [
+            "WE"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
         "name": "Arbeit",
         "start": null,
         "ziel": "2026-08-10T08:00",
-        "notiz": "",
         "tags": [
             "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -217,6 +839,20 @@
         "checklist": []
     },
     {
+        "name": "Dr. Stickelbruck – Reinigung",
+        "start": null,
+        "ziel": "2026-09-02T08:00",
+        "tags": [
+            "DOK",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
         "name": "Urlaub",
         "start": "2026-09-18T17:00",
         "ziel": "2026-10-04T21:00",
@@ -234,18 +870,8 @@
         "name": "Arbeit",
         "start": null,
         "ziel": "2026-10-05T08:00",
-        "notiz": "",
         "tags": [
             "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "Konto glatt",
-        "start": null,
-        "ziel": "2027-03-29T12:00",
-        "tags": [
-            "FINANZEN"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -271,10 +897,13 @@
         "name": "Arbeit",
         "start": null,
         "ziel": "2026-12-28T08:00",
-        "notiz": "",
         "tags": [
             "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -295,10 +924,104 @@
         "name": "Arbeit",
         "start": null,
         "ziel": "2027-01-04T08:00",
-        "notiz": "",
         "tags": [
             "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Pumbi Geburtstag",
+        "start": null,
+        "ziel": "2027-03-19T19:35",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "19.3.24",
+        "checklist": []
+    },
+    {
+        "name": "Juna Geburtstag",
+        "start": null,
+        "ziel": "2027-03-19T19:15",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "19.3.24",
+        "checklist": []
+    },
+    {
+        "name": "Bella Geburtstag",
+        "start": null,
+        "ziel": "2027-03-19T20:58",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "19.3.24",
+        "checklist": []
+    },
+    {
+        "name": "Diego Geburtstag",
+        "start": null,
+        "ziel": "2027-03-20T01:15",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "20.3.24",
+        "checklist": []
+    },
+    {
+        "name": "Mogli Geburtstag",
+        "start": null,
+        "ziel": "2027-03-20T14:30",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "20.3.24",
+        "checklist": []
+    },
+    {
+        "name": "Mein kleiner Freund im Katzenhimmel Geburtstag",
+        "start": null,
+        "ziel": "2027-03-20T15:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "yearly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "20.3.24",
+        "checklist": []
+    },
+    {
+        "name": "Konto glatt",
+        "start": null,
+        "ziel": "2027-03-29T12:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -313,6 +1036,19 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "Hautarzt",
+        "checklist": []
+    },
+    {
+        "name": "MagentaMobil XS Bindung",
+        "start": null,
+        "ziel": "2028-03-14T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -347,673 +1083,6 @@
         "ziel": "2030-05-15T18:00",
         "tags": [
             "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Casi Spät",
-        "start": null,
-        "ziel": "2026-03-30T09:30",
-        "notiz": "",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "D.group: Failed to fetch device certificate.",
-        "start": null,
-        "ziel": "2026-04-14T14:39",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "MAG#2026011217353450 — Failed to fetch device certificate. TPM public key match failed. \nReminder: Schauen, ob das Problem nach dem Fix nochmal auftritt. (Zertifikat generiert 14.01.26 CET 13:39 (CEST 14:39))\n\n## Fix Validation Priority\nWe've tried **commit force** multiple times → **No success** on Panorama-managed firewalls.\n\n**Please prioritize validating:**\n1. **debug system reset-ztp** → TPM impact?\n2. **Public key update via admin portal** → Addresses hash key root cause?",
-        "checklist": []
-    },
-    {
-        "name": "Steuern Kohle check 8w",
-        "start": null,
-        "ziel": "2026-03-30T12:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Sommerzeit",
-        "start": null,
-        "ziel": "2026-03-29T03:00",
-        "notiz": "Von 2 auf 3",
-        "tags": [
-            "TERMINE"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "Wohnungsrückgabe Verjährung",
-        "start": null,
-        "ziel": "2026-08-01T00:00",
-        "notiz": "31.07.2026 - Kleiststraße",
-        "tags": [
-            "WOHNUNG"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "PSC Connect (Nord) in HH",
-        "start": "2026-04-20T11:00",
-        "ziel": "2026-04-20T16:00",
-        "notiz": "Anreise",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "PSC Connect (Nord) in HH",
-        "start": "2026-04-21T08:00",
-        "ziel": "2026-04-21T18:00",
-        "notiz": "PSC Connect (Nord)",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "PSC Connect (Nord) in HH",
-        "start": "2026-04-22T10:00",
-        "ziel": "2026-04-22T15:00",
-        "notiz": "Abreise",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "AXN HQ Neu",
-        "start": null,
-        "ziel": "2026-04-01T10:00",
-        "notiz": "Bezug Standort möglich - Von der Wettern Str.",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "AXN HQ ",
-        "start": null,
-        "ziel": "2026-05-30T10:00",
-        "notiz": "Auszug ALBIN KÖBIS",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "AXN HQ",
-        "start": null,
-        "ziel": "2026-08-01T10:00",
-        "notiz": "Einzug alle Etagen Von der Wettern Str.",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "NV-Ring-Sperrung",
-        "start": null,
-        "ziel": "2026-04-17T17:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Montag 2.3., 06:00 bis 17. April.",
-        "checklist": []
-    },
-    {
-        "name": "Jahrestag",
-        "start": null,
-        "ziel": "2026-08-05T00:00",
-        "tags": [
-            "WE"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Hochzeitstag",
-        "start": null,
-        "ziel": "2026-07-04T00:00",
-        "tags": [
-            "WE"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "AXN HQ",
-        "start": null,
-        "ziel": "2026-05-01T10:00",
-        "notiz": "Bezug Lager möglich - Von der Wettern Str.",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "D.group: Fehler bei einem PaloAlto Cluster",
-        "start": null,
-        "ziel": "2026-03-26T08:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "MAG#2025121917347564 — DevCert\n",
-        "checklist": [
-            {
-                "text": "DevCert aktualisierung prüfen",
-                "done": false
-            },
-            {
-                "text": "Cert ansonsten am 23.03. 10:53:44 abgelaufen",
-                "done": false
-            }
-        ]
-    },
-    {
-        "name": "Mein Stübchen",
-        "start": null,
-        "ziel": "2026-03-28T19:15",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Pumbi / Diego Impf Stichtag",
-        "start": null,
-        "ziel": "2026-06-12T18:00",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Entwurmung SJPD",
-        "start": null,
-        "ziel": "2026-05-07T09:00",
-        "notiz": "",
-        "tags": [
-            "KATZIS"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "Frauenarzt",
-        "start": null,
-        "ziel": "2026-04-27T16:00",
-        "tags": [
-            "KERO",
-            "DOK"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Pumbi Geburtstag",
-        "start": null,
-        "ziel": "2027-03-19T19:35",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "19.3.24",
-        "checklist": []
-    },
-    {
-        "name": "Diego Geburtstag",
-        "start": null,
-        "ziel": "2027-03-20T01:15",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "20.3.24",
-        "checklist": []
-    },
-    {
-        "name": "Jax Geburtstag",
-        "start": null,
-        "ziel": "2026-06-15T21:00",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Sira Geburtstag",
-        "start": null,
-        "ziel": "2026-06-22T21:00",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Perplexity Ende Magenta",
-        "start": null,
-        "ziel": "2026-06-25T00:00",
-        "notiz": "Endet am 25.6.",
-        "tags": [
-            "TERMINE"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "CVE Liste Mailvorlage",
-        "start": null,
-        "ziel": "2026-03-30T14:00",
-        "notiz": "Mailvorlage spätestens Anfangen, nächste Woche Spät und am 8.4. Follow Up mit Daniel",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "Ablauf des Passwortes 6.4.",
-        "start": null,
-        "ziel": "2026-04-03T08:30",
-        "notiz": "Heute renewen",
-        "tags": [
-            "ARBEIT"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "Füße",
-        "start": null,
-        "ziel": "2026-04-13T14:00",
-        "notiz": "",
-        "tags": [
-            "KERO"
-        ],
-        "checklist": []
-    },
-    {
-        "name": "MagentaMobil XS Bindung",
-        "start": null,
-        "ziel": "2028-03-14T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "EDU 210 PA Blocker",
-        "start": "2026-05-04T08:00",
-        "ziel": "2026-05-08T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Steuern Kohle check 10w",
-        "start": null,
-        "ziel": "2026-04-13T12:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Steuern Kohle check 12w",
-        "start": null,
-        "ziel": "2026-04-27T12:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Andre Todestag",
-        "start": null,
-        "ziel": "2026-03-30T16:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Juna Geburtstag",
-        "start": null,
-        "ziel": "2027-03-19T19:15",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "19.3.24",
-        "checklist": []
-    },
-    {
-        "name": "Bella Geburtstag",
-        "start": null,
-        "ziel": "2027-03-19T20:58",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "19.3.24",
-        "checklist": []
-    },
-    {
-        "name": "Mogli Geburtstag",
-        "start": null,
-        "ziel": "2027-03-20T14:30",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "20.3.24",
-        "checklist": []
-    },
-    {
-        "name": "Mein kleiner Freund im Katzenhimmel Geburtstag",
-        "start": null,
-        "ziel": "2027-03-20T15:00",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "20.3.24",
-        "checklist": []
-    },
-    {
-        "name": "Nageltante",
-        "start": null,
-        "ziel": "2026-04-04T13:00",
-        "tags": [
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "RBB",
-        "start": "2026-04-13T18:00",
-        "ziel": "2026-04-14T06:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": "2026-04-20",
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            0
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Robert & Uschi",
-        "start": null,
-        "ziel": "2026-04-11T19:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Winterreifen mindestens",
-        "start": null,
-        "ziel": "2026-04-05T18:00",
-        "tags": [
-            "AUTO",
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Sommerreifen prüfen",
-        "start": null,
-        "ziel": "2026-04-06T18:00",
-        "tags": [
-            "AUTO",
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "FR.Z.ANO.ENDE",
-        "start": null,
-        "ziel": "2026-04-12T23:59",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Daily",
-        "start": "2026-03-26T09:40",
-        "ziel": "2026-03-26T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": null,
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Weekly",
-        "start": "2026-04-03T10:00",
-        "ziel": "2026-04-03T10:55",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": null,
-        "days": [
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Mitarbeitergespräch",
-        "start": "2026-03-27T11:00",
-        "ziel": "2026-03-27T11:55",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Vor Ort in Köln mit Daniel.",
-        "checklist": []
-    },
-    {
-        "name": "1on1 Daniel",
-        "start": "2026-04-10T13:00",
-        "ziel": "2026-04-10T13:25",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "biweekly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "JF ANO",
-        "start": "2026-03-30T13:00",
-        "ziel": "2026-03-30T14:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": null,
-        "days": [
-            1
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-03-26T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": null,
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "CVE followup",
-        "start": "2026-04-08T14:00",
-        "ziel": "2026-04-08T14:25",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "monthly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "NORD PSC Monthly",
-        "start": "2026-04-17T10:00",
-        "ziel": "2026-04-17T10:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "monthly_weekday",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Therapie",
-        "start": null,
-        "ziel": "2026-03-25T19:00",
-        "tags": [
-            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
