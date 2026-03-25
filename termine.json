@@ -1013,5 +1013,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "CVE followup",
+        "start": "2026-04-08T14:00",
+        "ziel": "2026-04-08T14:25",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "monthly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
