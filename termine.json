@@ -1089,5 +1089,18 @@
         "days": [],
         "notiz": "NEW Box, Am Nordpark 299, 41069 MÖNCHENGLADBACH",
         "checklist": []
+    },
+    {
+        "name": "Therapie",
+        "start": null,
+        "ziel": "2026-04-22T19:00",
+        "tags": [
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
