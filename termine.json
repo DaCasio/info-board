@@ -600,15 +600,7 @@
         ],
         "repeat": "yearly",
         "repeatUntil": null,
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            0
-        ],
+        "days": [],
         "notiz": "19.3.24",
         "checklist": []
     },
@@ -621,15 +613,7 @@
         ],
         "repeat": "yearly",
         "repeatUntil": null,
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            0
-        ],
+        "days": [],
         "notiz": "20.3.24",
         "checklist": []
     },
@@ -642,15 +626,7 @@
         ],
         "repeat": "yearly",
         "repeatUntil": null,
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            0
-        ],
+        "days": [],
         "notiz": "",
         "checklist": []
     },
@@ -663,15 +639,7 @@
         ],
         "repeat": "yearly",
         "repeatUntil": null,
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            0
-        ],
+        "days": [],
         "notiz": "",
         "checklist": []
     },
