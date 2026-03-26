@@ -286,7 +286,7 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "monthly",
+        "repeat": "monthly_weekday",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
