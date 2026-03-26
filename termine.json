@@ -1102,5 +1102,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Office Köln / Dr Schlemmer + Burim",
+        "start": "2026-05-07T09:00",
+        "ziel": "2026-05-07T16:25",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
