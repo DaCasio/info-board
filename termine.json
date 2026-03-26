@@ -1082,15 +1082,15 @@
     },
     {
         "name": "DGroup Cert",
-        "start": "2026-03-26T13:00",
-        "ziel": "2026-03-26T14:30",
+        "start": null,
+        "ziel": "2026-06-10T14:18",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "MAG#2025121917347564\nFehler im Service Externe Anbindungen seit 26.03. 03:07, 26.03. 08:35\nDUS: Device certificate status: Expired. It cannot be renewed\n\n24.6. 14:18.43",
+        "notiz": "MAG#2025121917347564\nFehler im Service Externe Anbindungen seit 26.03. 03:07, 26.03. 08:35\nDUS: Device certificate status: Expired. It cannot be renewed\n\n24.6. 14:18.43 erneut prüfen oder 15 Tage vorher / David wollte noch neuen AP benennen. Wenn bis dahin keine bekannt, nicht mehr ansprechen. Soll sich der neue AP  automatisch melden.",
         "checklist": []
     },
     {
