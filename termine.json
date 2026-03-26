@@ -1104,7 +1104,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Fehler im Service Externe Anbindungen seit 26.03. 03:07, PaloAlto-CriticalEvents Nachricht CRITICAL - 1 kritische Events in den letzten 12 Stunden. DUS: Device certificate status: Expired. It cannot be renewed\n\nFehler im Service Externe Anbindungen seit 26.03. 08:35, dus: PaloAlto-CriticalEvents Nachricht CRITICAL - 1 kritische Events in den letzten 12 Stunden. DUS: Device certificate status: Expired. It cannot be renewed",
+        "notiz": "MAG#2025121917347564\nFehler im Service Externe Anbindungen seit 26.03. 03:07, 26.03. 08:35\nDUS: Device certificate status: Expired. It cannot be renewed",
         "checklist": []
     }
 ]
