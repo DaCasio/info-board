@@ -1093,5 +1093,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "DGroup Cert",
+        "start": "2026-03-26T13:00",
+        "ziel": "2026-03-26T14:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
