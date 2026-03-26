@@ -1106,5 +1106,18 @@
         "days": [],
         "notiz": "MAG#2025121917347564\nFehler im Service Externe Anbindungen seit 26.03. 03:07, 26.03. 08:35\nDUS: Device certificate status: Expired. It cannot be renewed",
         "checklist": []
+    },
+    {
+        "name": "Learning Friday",
+        "start": "2026-04-10T11:00",
+        "ziel": "2026-04-10T12:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Learning Friday: \"Live Hacking: Realistische Hackerangriffe live erleben\"",
+        "checklist": []
     }
 ]
