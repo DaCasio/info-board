@@ -1,27 +1,5 @@
 [
     {
-        "name": "D.group: Fehler bei einem PaloAlto Cluster",
-        "start": null,
-        "ziel": "2026-03-26T08:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "MAG#2025121917347564 — DevCert\n",
-        "checklist": [
-            {
-                "text": "DevCert aktualisierung prüfen",
-                "done": false
-            },
-            {
-                "text": "Cert ansonsten am 23.03. 10:53:44 abgelaufen",
-                "done": false
-            }
-        ]
-    },
-    {
         "name": "Daily",
         "start": "2026-03-26T09:40",
         "ziel": "2026-03-26T10:00",
