@@ -259,7 +259,7 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "monthly_weekday",
+        "repeat": "none",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
