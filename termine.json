@@ -912,19 +912,6 @@
         "checklist": []
     },
     {
-        "name": "Elster-Zertifikat Casi läuft aus",
-        "start": null,
-        "ziel": "2028-03-24T09:24",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "TAHNEE - EIN TOUCH TOO MUCH",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
