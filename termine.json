@@ -597,7 +597,7 @@
         "tags": [
             "KATZIS"
         ],
-        "repeat": "yearly",
+        "repeat": "none",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
