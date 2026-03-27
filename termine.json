@@ -925,19 +925,6 @@
         "checklist": []
     },
     {
-        "name": "Elster-Zertifikat Kersti läuft aus",
-        "start": null,
-        "ziel": "2028-09-11T21:04",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "TAHNEE - EIN TOUCH TOO MUCH",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
