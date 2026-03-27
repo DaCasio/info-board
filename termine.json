@@ -924,19 +924,6 @@
         "checklist": []
     },
     {
-        "name": "Mogli Geburtstag",
-        "start": null,
-        "ziel": "2027-03-20T14:30",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "20.3.24",
-        "checklist": []
-    },
-    {
         "name": "Konto glatt",
         "start": null,
         "ziel": "2027-04-29T12:00",
