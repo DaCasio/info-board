@@ -152,21 +152,6 @@
         "checklist": []
     },
     {
-        "name": "Weekly",
-        "start": "2026-03-27T10:00",
-        "ziel": "2026-03-27T10:55",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Nageltante",
         "start": null,
         "ziel": "2026-04-04T13:00",
