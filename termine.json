@@ -885,20 +885,6 @@
         "checklist": []
     },
     {
-        "name": "Termin Christoph Knierim",
-        "start": null,
-        "ziel": "2027-09-13T12:00",
-        "tags": [
-            "DOK",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Hautarzt",
-        "checklist": []
-    },
-    {
         "name": "MagentaMobil XS Bindung",
         "start": null,
         "ziel": "2028-03-14T00:00",
