@@ -872,19 +872,6 @@
         "checklist": []
     },
     {
-        "name": "Juna Geburtstag",
-        "start": null,
-        "ziel": "2027-03-19T19:15",
-        "tags": [
-            "KATZIS"
-        ],
-        "repeat": "yearly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "19.3.24",
-        "checklist": []
-    },
-    {
         "name": "Konto glatt",
         "start": null,
         "ziel": "2027-04-29T12:00",
