@@ -780,19 +780,6 @@
         "checklist": []
     },
     {
-        "name": "MagentaMobil XS Bindung",
-        "start": null,
-        "ziel": "2028-03-14T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "TAHNEE - EIN TOUCH TOO MUCH",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
