@@ -19,19 +19,6 @@
         "checklist": []
     },
     {
-        "name": "Mitarbeitergespräch",
-        "start": "2026-03-27T11:00",
-        "ziel": "2026-03-27T11:55",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Remote mit Daniel.",
-        "checklist": []
-    },
-    {
         "name": "Mein Stübchen",
         "start": null,
         "ziel": "2026-03-28T19:15",
