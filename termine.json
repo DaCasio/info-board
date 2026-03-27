@@ -266,19 +266,6 @@
         "checklist": []
     },
     {
-        "name": "1on1 Daniel",
-        "start": "2026-03-27T13:00",
-        "ziel": "2026-03-27T13:25",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Robert & Uschi",
         "start": null,
         "ziel": "2026-04-11T19:00",
