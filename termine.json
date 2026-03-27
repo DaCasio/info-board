@@ -6,7 +6,7 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "weekly",
+        "repeat": "none",
         "repeatUntil": null,
         "days": [
             1,
