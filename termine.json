@@ -13,19 +13,6 @@
         "checklist": []
     },
     {
-        "name": "Andre Todestag",
-        "start": null,
-        "ziel": "2026-03-30T16:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "AXN HQ Neu",
         "start": null,
         "ziel": "2026-04-01T10:00",
