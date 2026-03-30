@@ -819,14 +819,14 @@
     {
         "name": "PA ANO UP 11.2.",
         "start": null,
-        "ziel": "2026-04-13T10:00",
+        "ziel": "2026-04-07T10:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Reccommended Version raussuchen und Updates planen.",
+        "notiz": "Reccommended Version raussuchen und Updates planen. Nach FZ 12.4.",
         "checklist": []
     }
 ]
