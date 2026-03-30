@@ -880,5 +880,18 @@
         "days": [],
         "notiz": "empfang, meetingräume, 1. og",
         "checklist": []
+    },
+    {
+        "name": "AXN HQ alt Rückbau ende",
+        "start": null,
+        "ziel": "2026-06-30T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Auszug ALBIN KÖBIS",
+        "checklist": []
     }
 ]
