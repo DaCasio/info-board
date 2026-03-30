@@ -828,5 +828,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "TYT PA Zoom Session",
+        "start": null,
+        "ziel": "2026-03-31T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "2025111717336719",
+        "checklist": []
     }
 ]
