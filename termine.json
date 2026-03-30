@@ -828,5 +828,18 @@
         "days": [],
         "notiz": "Reccommended Version raussuchen und Updates planen. Nach FZ 12.4.",
         "checklist": []
+    },
+    {
+        "name": "2025110717332718 SW Update ANO",
+        "start": null,
+        "ziel": "2026-04-13T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Nach Frozen Zone - IM JF ansprechen",
+        "checklist": []
     }
 ]
