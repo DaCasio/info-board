@@ -791,19 +791,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-03-30T18:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "PA ANO UP 11.2.",
         "start": null,
         "ziel": "2026-04-07T10:00",
