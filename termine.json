@@ -854,5 +854,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "HQ Alt geräumt",
+        "start": null,
+        "ziel": "2026-04-30T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Tag der Arbeit\t01. Mai 2026\tFreitag",
+        "checklist": []
     }
 ]
