@@ -867,5 +867,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "HQ Neu Teilstart",
+        "start": null,
+        "ziel": "2026-05-04T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "empfang, meetingräume, 1. og",
+        "checklist": []
     }
 ]
