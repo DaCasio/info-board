@@ -856,19 +856,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend ",
-        "start": null,
-        "ziel": "2026-03-31T18:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Fahrrad abholen",
         "start": null,
         "ziel": "2026-03-31T18:30",
