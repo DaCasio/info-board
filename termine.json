@@ -873,7 +873,9 @@
         "start": null,
         "ziel": "2026-03-31T18:30",
         "tags": [
-            "TERMINE"
+            "TERMINE",
+            "KERO",
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
