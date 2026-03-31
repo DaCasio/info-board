@@ -856,21 +856,6 @@
         "checklist": []
     },
     {
-        "name": "Fahrrad abholen",
-        "start": null,
-        "ziel": "2026-03-31T18:30",
-        "tags": [
-            "TERMINE",
-            "KERO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ANO",
         "start": null,
         "ziel": "2026-04-01T10:00",
