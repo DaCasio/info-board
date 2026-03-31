@@ -13,19 +13,6 @@
         "checklist": []
     },
     {
-        "name": "AXN HQ Neu",
-        "start": null,
-        "ziel": "2026-04-01T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Bezug Standort möglich - Max-Reich-Pietsch",
-        "checklist": []
-    },
-    {
         "name": "Langes Wochenende",
         "start": null,
         "ziel": "2026-04-02T18:00",
