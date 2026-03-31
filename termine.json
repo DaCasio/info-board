@@ -919,5 +919,18 @@
         "days": [],
         "notiz": "PA zu schauen, ob was von CHeckMK geblockt wird. Info Marc.",
         "checklist": []
+    },
+    {
+        "name": "PALO BEU ANO",
+        "start": null,
+        "ziel": "2026-04-01T11:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "vorbereiten, muss raus",
+        "checklist": []
     }
 ]
