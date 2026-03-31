@@ -880,5 +880,18 @@
         "days": [],
         "notiz": "Auszug ALBIN KÖBIS",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-03-31T09:40",
+        "ziel": "2026-03-31T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
