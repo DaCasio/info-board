@@ -843,19 +843,6 @@
         "checklist": []
     },
     {
-        "name": "ANO",
-        "start": "2026-04-01T10:15",
-        "ziel": "2026-04-01T11:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "PA schauen, ob was von Check-MK geblockt wird. Info Marc.",
-        "checklist": []
-    },
-    {
         "name": "PALO BEU ANO",
         "start": "2026-04-01T11:00",
         "ziel": "2026-04-01T12:00",
