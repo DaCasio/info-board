@@ -867,5 +867,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Webex Palo",
+        "start": null,
+        "ziel": "2026-04-07T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "s. Kalender",
+        "checklist": []
     }
 ]
