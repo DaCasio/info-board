@@ -843,19 +843,6 @@
         "checklist": []
     },
     {
-        "name": "PALO BEU ANO",
-        "start": "2026-04-01T13:10",
-        "ziel": "2026-04-01T14:10",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "vorbereiten, muss raus",
-        "checklist": []
-    },
-    {
         "name": "Ilija Vitrinen Aufbau Muddi",
         "start": null,
         "ziel": "2026-04-15T09:00",
