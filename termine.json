@@ -844,7 +844,7 @@
     },
     {
         "name": "ANO",
-        "start": null,
+        "start": "2026-04-01T10:15",
         "ziel": "2026-04-01T11:00",
         "tags": [
             "ARBEIT"
