@@ -13,19 +13,6 @@
         "checklist": []
     },
     {
-        "name": "Dezor-Abo: Ende prüfen",
-        "start": null,
-        "ziel": "2026-04-06T09:00",
-        "tags": [
-            "ABO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Gekündigt, trotzdem prüfen.",
-        "checklist": []
-    },
-    {
         "name": "C1E verlängern",
         "start": null,
         "ziel": "2026-04-06T12:00",
