@@ -841,5 +841,18 @@
         "days": [],
         "notiz": "s. Kalender",
         "checklist": []
+    },
+    {
+        "name": "IKEA Muddi Lieferung",
+        "start": null,
+        "ziel": "2026-04-13T07:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
