@@ -1,18 +1,5 @@
 [
     {
-        "name": "CVE Liste Mailvorlage",
-        "start": null,
-        "ziel": "2026-04-02T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Mailvorlage spätestens Anfangen, am 8.4. Follow Up mit Daniel",
-        "checklist": []
-    },
-    {
         "name": "Langes Wochenende",
         "start": null,
         "ziel": "2026-04-02T18:00",
