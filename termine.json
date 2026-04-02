@@ -1,19 +1,5 @@
 [
     {
-        "name": "Langes Wochenende",
-        "start": null,
-        "ziel": "2026-04-02T18:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Karfreitag\t03. April 2026\tFreitag\nOstermontag\t06. April 2026\tMontag",
-        "checklist": []
-    },
-    {
         "name": "Nageltante",
         "start": null,
         "ziel": "2026-04-04T13:00",
