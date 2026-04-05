@@ -958,5 +958,20 @@
         "days": [],
         "notiz": "Erdferne max. ~370.000 km",
         "checklist": []
+    },
+    {
+        "name": "C1E verlängern Sehtest",
+        "start": null,
+        "ziel": "2026-04-07T12:00",
+        "tags": [
+            "CASI",
+            "AUTO",
+            "DOK"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Augenarztgutachten (Anlage 6 FeV) holen - Überweisung? Augenarzt.",
+        "checklist": []
     }
 ]
