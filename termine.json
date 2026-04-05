@@ -986,7 +986,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Wichtige Punkte aus Formular",
+        "notiz": "Wichtige Punkte aus Formular\nHinweis: Persönliche Vorstellung; Fahrerlaubnis wird eingezogen",
         "checklist": [
             {
                 "text": "Gebühr: 41,80 € (bei Verlängerung)",
