@@ -905,5 +905,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Rückflug Bahnkorrektur",
+        "start": null,
+        "ziel": "2026-04-10T05:04",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
