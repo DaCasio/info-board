@@ -892,5 +892,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Manuelle Steuerungstest Crew",
+        "start": null,
+        "ziel": "2026-04-09T04:55",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
