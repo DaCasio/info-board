@@ -866,5 +866,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Wasserung Pazifik",
+        "start": null,
+        "ziel": "2026-04-11T02:17",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
