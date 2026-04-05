@@ -1011,6 +1011,14 @@
             {
                 "text": "Augenarztgutachten (Anl. 6)",
                 "done": false
+            },
+            {
+                "text": "Formular ausfüllen und mit Unterlagen einreichen",
+                "done": false
+            },
+            {
+                "text": "Termin im Führerscheinservice Wesel (Reeser Landstr. 31)",
+                "done": false
             }
         ]
     }
