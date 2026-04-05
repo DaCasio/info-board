@@ -986,18 +986,14 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Wichtige Punkte aus Formular\nHinweis: Persönliche Vorstellung; Fahrerlaubnis wird eingezogen",
+        "notiz": "Wichtige Punkte aus Formular\nHinweis: Persönliche Vorstellung; Fahrerlaubnis wird eingezogen\nGebühr: 41,80 € (bei Verlängerung)",
         "checklist": [
-            {
-                "text": "Gebühr: 41,80 € (bei Verlängerung)",
-                "done": true
-            },
             {
                 "text": "Ausweisdokument",
                 "done": false
             },
             {
-                "text": "Passfoto.",
+                "text": "Passfoto",
                 "done": false
             },
             {
