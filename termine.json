@@ -944,5 +944,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Max Entfernung Erde",
+        "start": null,
+        "ziel": "2026-04-07T01:09",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "ca. 7500 km Abstand, Mond-Flyby, Erdferne max. ~370.000 km",
+        "checklist": []
     }
 ]
