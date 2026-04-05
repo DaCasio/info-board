@@ -840,5 +840,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Gravitativer Einfluss Mond Austritt",
+        "start": null,
+        "ziel": "2026-04-07T19:27",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
