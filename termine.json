@@ -931,5 +931,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Trennung Crewkapsel",
+        "start": null,
+        "ziel": "2026-04-11T01:44",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
