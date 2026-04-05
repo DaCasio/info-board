@@ -990,7 +990,7 @@
         "checklist": [
             {
                 "text": "Gebühr: 41,80 € (bei Verlängerung)",
-                "done": false
+                "done": true
             },
             {
                 "text": "Ausweisdokument",
