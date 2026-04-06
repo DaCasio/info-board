@@ -817,19 +817,6 @@
         "checklist": []
     },
     {
-        "name": "Gravitativer Einfluss Mond",
-        "start": null,
-        "ziel": "2026-04-06T06:43",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Max annäherung Mond",
         "start": null,
         "ziel": "2026-04-07T01:06",
