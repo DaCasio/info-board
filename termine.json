@@ -1,20 +1,5 @@
 [
     {
-        "name": "CE verlängern Bongi",
-        "start": null,
-        "ziel": "2026-04-07T16:30",
-        "tags": [
-            "CASI",
-            "AUTO",
-            "DOK"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Ärztliches Gutachten (Anlage 5 Nr.1 FeV) holen - Termin bei Bongi\nÜberweisung Augenarzt.\nSprechzeiten:\nMontag bis Freitag von 08.00 Uhr bis 13.00 Uhr\nsowie Mo-Di-Do 16.30 bis 18.30 Uhr\nFreitag Nachmittag nach Vereinbarung",
-        "checklist": []
-    },
-    {
         "name": "Dezor-Abo Ende",
         "start": null,
         "ziel": "2026-04-07T16:44",
