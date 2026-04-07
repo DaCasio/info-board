@@ -749,19 +749,6 @@
         "checklist": []
     },
     {
-        "name": "Gravitativer Einfluss Mond Austritt Rückflug",
-        "start": null,
-        "ziel": "2026-04-07T19:27",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Wiedereintritt Erdathmospre",
         "start": null,
         "ziel": "2026-04-11T02:04",
