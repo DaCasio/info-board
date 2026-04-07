@@ -804,19 +804,6 @@
         "checklist": []
     },
     {
-        "name": "Max annäherung Mond",
-        "start": null,
-        "ziel": "2026-04-07T01:06",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "ca. 7500 km Abstand, Mond-Flyby",
-        "checklist": []
-    },
-    {
         "name": "Gravitativer Einfluss Mond Austritt Rückflug",
         "start": null,
         "ziel": "2026-04-07T19:27",
