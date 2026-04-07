@@ -868,7 +868,7 @@
     {
         "name": "CE verlängern Sehtest",
         "start": null,
-        "ziel": "2026-04-07T15:00",
+        "ziel": "2026-04-08T09:00",
         "tags": [
             "CASI",
             "AUTO",
@@ -877,7 +877,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Augenarztgutachten (Anlage 6 FeV) holen - Überweisung? Augenarzt.\nDr. med. Nora Beckers\nPoststr. 2, 47506 Neukirchen-Vluyn\n\nTelefonische Erreichbarkeit (Tel: +49 (0) 28 45 3 34 88)\nMo: 9:00 - 12:00 und 15:00 - 17:00\nDi: 9:00 - 12:00 und 15:00 - 17:00\nMi:  9:00 - 12:00\nDo: 9:00 - 12:00 und 15:00 - 17:00\nFr: 9:00 - 12:00\n\n",
+        "notiz": "Augenarztgutachten (Anlage 6 FeV) holen - Überweisung? Augenarzt.\nDr. med. Nora Beckers\nPoststr. 2, 47506 Neukirchen-Vluyn\n\nAbsage, mit C1e verliere ich nur anhängelaste 3 achsen bis 11t +7,5 zumaschine. Ist egal, kann anhängerkombi bis 12 tonnen fahren\n\n",
         "checklist": []
     },
     {
