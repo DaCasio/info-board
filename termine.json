@@ -1095,5 +1095,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "1on1 Daniel",
+        "start": "2026-04-24T13:00",
+        "ziel": "2026-04-24T13:25",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
