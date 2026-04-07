@@ -775,19 +775,6 @@
         "checklist": []
     },
     {
-        "name": "Rückflug Bahnkorrektur 1",
-        "start": null,
-        "ziel": "2026-04-08T02:04",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Manuelle Steuerungstest Crew",
         "start": null,
         "ziel": "2026-04-09T04:55",
