@@ -1121,5 +1121,18 @@
         "days": [],
         "notiz": "Dieter Burandt GmbH\nMoerser Str. 28\n47228 Duisburg\nTelefon: 02065 - 41 15 21\nIhr Werkstatttermin\n\nWir haben für Sie den folgenden Termin vorgemerkt:\n\nDatum: 27.04.2026\nUhrzeit: 11:00 Uhr\n\nService: Ummontage / lose Reifen / Reifen nicht auf Felge\n\nEin­lager­ungs-Nr.: 1934",
         "checklist": []
+    },
+    {
+        "name": "bofrost*",
+        "start": null,
+        "ziel": "2026-04-08T13:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
