@@ -842,54 +842,6 @@
         "checklist": []
     },
     {
-        "name": "C1E verlängern KR.Wesel Termin",
-        "start": null,
-        "ziel": "2026-04-08T12:00",
-        "tags": [
-            "CASI",
-            "AUTO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Wichtige Punkte aus Formular\nHinweis: Persönliche Vorstellung; Fahrerlaubnis wird eingezogen\nGebühr: 41,80 € (bei Verlängerung)\nhttps://www.kreis-wesel.de/Verl%C3%A4ngerung-der-Fahrerlaubnis",
-        "checklist": [
-            {
-                "text": "Ausweisdokument",
-                "done": false
-            },
-            {
-                "text": "Passfoto machen",
-                "done": false
-            },
-            {
-                "text": "Alter Führerschein",
-                "done": false
-            },
-            {
-                "text": "Vorlage zur Herstellung des Führerscheins",
-                "done": true
-            },
-            {
-                "text": "Ärztl. Gutachten (Anl. 5) - runterladen doer beim Dok anfragen",
-                "done": false
-            },
-            {
-                "text": "Augenarztgutachten (Anl. 6) - runterladen oder beim Dok anfragen",
-                "done": false
-            },
-            {
-                "text": "Formular ausfüllen und mit Unterlagen einreichen",
-                "done": false
-            },
-            {
-                "text": "Termin im Führerscheinservice Wesel (Reeser Landstr. 31)",
-                "done": false
-            }
-        ]
-    },
-    {
         "name": "Daily",
         "start": "2026-04-08T09:40",
         "ziel": "2026-04-08T10:00",
