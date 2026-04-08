@@ -658,19 +658,6 @@
         "checklist": []
     },
     {
-        "name": "PA ANO UP 11.2.",
-        "start": null,
-        "ziel": "2026-04-08T08:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Reccommended Version (11.2.er) raussuchen und Updates planen. Nach FZ 12.4.",
-        "checklist": []
-    },
-    {
         "name": "2025110717332718 SW Update ANO",
         "start": null,
         "ziel": "2026-04-13T10:00",
