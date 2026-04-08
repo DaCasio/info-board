@@ -854,7 +854,7 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "biweekly",
+        "repeat": "none",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
