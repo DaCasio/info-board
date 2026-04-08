@@ -762,19 +762,6 @@
         "checklist": []
     },
     {
-        "name": "Rückflug Bahnkorrektur 3",
-        "start": null,
-        "ziel": "2026-04-10T21:04",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Trennung Crewkapsel",
         "start": null,
         "ziel": "2026-04-11T01:44",
