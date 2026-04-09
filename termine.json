@@ -39,19 +39,6 @@
         "checklist": []
     },
     {
-        "name": "Steuern Kohle check 10w",
-        "start": null,
-        "ziel": "2026-04-13T12:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Füße",
         "start": null,
         "ziel": "2026-04-13T14:00",
