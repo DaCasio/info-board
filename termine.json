@@ -701,7 +701,8 @@
         "start": null,
         "ziel": "2026-04-15T09:00",
         "tags": [
-            "TERMINE"
+            "TERMINE",
+            "MUTTI"
         ],
         "repeat": "none",
         "repeatUntil": null,
