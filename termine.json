@@ -855,19 +855,6 @@
         "checklist": []
     },
     {
-        "name": "Küchenplanung Muddi",
-        "start": null,
-        "ziel": "2026-04-09T18:30",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Fahrrad wegbringen",
         "start": null,
         "ziel": "2026-04-30T15:00",
