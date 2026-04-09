@@ -918,5 +918,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Füße",
+        "start": null,
+        "ziel": "2026-05-13T15:00",
+        "tags": [
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
