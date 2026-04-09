@@ -911,8 +911,7 @@
         "start": null,
         "ziel": "2026-04-30T15:00",
         "tags": [
-            "KERO",
-            "TERMINE"
+            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
