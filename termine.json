@@ -645,19 +645,6 @@
         "checklist": []
     },
     {
-        "name": "JF Ano",
-        "start": "2026-04-13T13:00",
-        "ziel": "2026-04-13T14:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "2025110717332718 SW Update ANO",
         "start": null,
         "ziel": "2026-04-13T10:00",
