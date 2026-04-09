@@ -931,5 +931,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Essen gehen",
+        "start": null,
+        "ziel": "2026-05-25T17:30",
+        "tags": [
+            "TERMINE",
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
