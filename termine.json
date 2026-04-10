@@ -475,20 +475,6 @@
         "notiz": "Fronleichnam 04. Juni 2026"
     },
     {
-        "name": "Brückentag nehmen? (1 Tag Urlaub -> 4 Tage frei)",
-        "start": null,
-        "ziel": "2026-04-13T10:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Fr., 05.06.2026 Nach Fronleichnam Do., 04.06.2026 freinehmen?",
-        "checklist": []
-    },
-    {
         "name": "Pumbi / Diego Impf Stichtag",
         "start": null,
         "ziel": "2026-06-12T18:00",
