@@ -816,5 +816,18 @@
         "days": [],
         "notiz": "Herbstferien: 17.10. – 01.11.2026",
         "checklist": []
+    },
+    {
+        "name": "Weihnachtsferien",
+        "start": "2026-12-23T00:00",
+        "ziel": "2026-01-06T00:00",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Weihnachtsferien: 23.12.2026 – 06.01.2027",
+        "checklist": []
     }
 ]
