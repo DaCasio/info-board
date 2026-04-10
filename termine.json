@@ -1,5 +1,55 @@
 [
     {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-04-10T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": ""
+    },
+    {
+        "name": "Artemis II: Livestream Start",
+        "start": null,
+        "ziel": "2026-04-11T00:30",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Live-Übertragung der Rückkehr (NASA+)."
+    },
+    {
+        "name": "Artemis II: Trennung Servicemodul",
+        "start": null,
+        "ziel": "2026-04-11T01:44",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Orion-Kapsel bereitet sich auf Eintritt vor."
+    },
+    {
+        "name": "Artemis II: Wiedereintritt",
+        "start": null,
+        "ziel": "2026-04-11T01:53",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Eintritt in die Erdatmosphäre."
+    },
+    {
+        "name": "Artemis II: Wasserung Pazifik",
+        "start": null,
+        "ziel": "2026-04-11T02:07",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Splashdown vor San Diego."
+    },
+    {
         "name": "Robert & Uschi",
         "start": null,
         "ziel": "2026-04-11T19:00",
@@ -145,6 +195,16 @@
         "notiz": "Montag 2.3., 06:00 bis 17. April."
     },
     {
+        "name": "Astro: Mondsichel bei Venus & Plejaden",
+        "start": null,
+        "ziel": "2026-04-19T21:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "notiz": "Schönes Fotomotiv in der Abenddämmerung."
+    },
+    {
         "name": "AXN HQ",
         "start": null,
         "ziel": "2026-04-20T10:00",
@@ -155,14 +215,14 @@
         "notiz": "Bezug Lager möglich - Max-Reich-Pietsch"
     },
     {
-        "name": "PSC Connect (Nord) in HH",
+        "name": "PSC Connect (Nord) in HH (Anreise)",
         "start": "2026-04-20T11:00",
         "ziel": "2026-04-20T16:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Anreise"
+        "notiz": ""
     },
     {
         "name": "PSC Connect (Nord) in HH",
@@ -172,17 +232,27 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "PSC Connect (Nord)"
+        "notiz": ""
     },
     {
-        "name": "PSC Connect (Nord) in HH",
+        "name": "Astro: Lyriden Sternschnuppen (Höhepunkt)",
+        "start": null,
+        "ziel": "2026-04-22T02:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "notiz": "Beste Sichtbarkeit in den Morgenstunden."
+    },
+    {
+        "name": "PSC Connect (Nord) in HH (Abreise)",
         "start": "2026-04-22T10:00",
         "ziel": "2026-04-22T15:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Abreise"
+        "notiz": ""
     },
     {
         "name": "Therapie",
@@ -223,7 +293,7 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Dieter Burandt GmbH\nMoerser Str. 28\n47228 Duisburg\nEinlagerungs-Nr.: 1934"
+        "notiz": "Dieter Burandt GmbH, Moerser Str. 28, 47228 Duisburg"
     },
     {
         "name": "Frauenarzt",
@@ -247,25 +317,15 @@
         "notiz": ""
     },
     {
-        "name": "Langes Wochenende",
+        "name": "Feiertag: Tag der Arbeit",
         "start": null,
-        "ziel": "2026-04-30T17:00",
+        "ziel": "2026-05-01T00:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Tag der Arbeit 01. Mai 2026 Freitag"
-    },
-    {
-        "name": "AXN HQ Alt geräumt",
-        "start": null,
-        "ziel": "2026-04-30T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
+        "notiz": "Gesetzlicher Feiertag NRW"
     },
     {
         "name": "AXN HQ Neu Teilstart",
@@ -328,7 +388,7 @@
         "notiz": ""
     },
     {
-        "name": "Morgen frei",
+        "name": "Morgen frei (Feiertag)",
         "start": null,
         "ziel": "2026-05-13T17:00",
         "tags": [
@@ -336,7 +396,18 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Christi Himmelfahrt 14. Mai 2026 Donnerstag"
+        "notiz": "Christi Himmelfahrt 14. Mai 2026"
+    },
+    {
+        "name": "Brückentag (1 Tag Urlaub -> 4 Tage frei)",
+        "start": null,
+        "ziel": "2026-05-15T08:00",
+        "tags": [
+            "ARBEIT",
+            "FREI"
+        ],
+        "repeat": "none",
+        "notiz": "Nach Christi Himmelfahrt."
     },
     {
         "name": "Eurowings glatt",
@@ -349,7 +420,7 @@
         "notiz": ""
     },
     {
-        "name": "Langes Wochenende",
+        "name": "Morgen frei (Pfingsten)",
         "start": null,
         "ziel": "2026-05-22T17:00",
         "tags": [
@@ -357,7 +428,7 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Pfingstmontag 25. Mai 2026 Montag"
+        "notiz": "Pfingstmontag 25. Mai 2026"
     },
     {
         "name": "Essen gehen",
@@ -371,7 +442,17 @@
         "notiz": ""
     },
     {
-        "name": "Morgen frei",
+        "name": "Astro: Blauer Mikromond (Vollmond)",
+        "start": null,
+        "ziel": "2026-05-31T20:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "notiz": "Zweiter Vollmond im Mai."
+    },
+    {
+        "name": "Morgen frei (Feiertag)",
         "start": null,
         "ziel": "2026-06-03T17:00",
         "tags": [
@@ -379,7 +460,18 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Fronleichnam 04. Juni 2026 Donnerstag"
+        "notiz": "Fronleichnam 04. Juni 2026"
+    },
+    {
+        "name": "Brückentag (1 Tag Urlaub -> 4 Tage frei)",
+        "start": null,
+        "ziel": "2026-06-05T08:00",
+        "tags": [
+            "ARBEIT",
+            "FREI"
+        ],
+        "repeat": "none",
+        "notiz": "Nach Fronleichnam."
     },
     {
         "name": "Pumbi / Diego Impf Stichtag",
@@ -419,7 +511,7 @@
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "Endet am 25.6."
+        "notiz": "Abo-Ende"
     },
     {
         "name": "AXN HQ alt Rückbau Ende",
@@ -429,7 +521,7 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Auszug ALBIN KÖBIS"
+        "notiz": "Übergabe ALBIN KÖBIS"
     },
     {
         "name": "Urlaub",
@@ -481,7 +573,7 @@
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "31.07.2026 - Kleiststraße"
+        "notiz": "Kleiststraße"
     },
     {
         "name": "AXN HQ Umzug Done",
@@ -557,7 +649,7 @@
         "notiz": ""
     },
     {
-        "name": "Urlaub",
+        "name": "Urlaub (Kanaren kurzfristig)",
         "start": "2026-09-18T17:00",
         "ziel": "2026-10-04T21:00",
         "tags": [
@@ -565,7 +657,17 @@
             "URLAUB"
         ],
         "repeat": "none",
-        "notiz": "Kanaren kurzfristig."
+        "notiz": ""
+    },
+    {
+        "name": "Feiertag: Tag der Deutschen Einheit",
+        "start": null,
+        "ziel": "2026-10-03T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "Samstag"
     },
     {
         "name": "Arbeit",
@@ -578,6 +680,16 @@
         "notiz": ""
     },
     {
+        "name": "Feiertag: Allerheiligen",
+        "start": null,
+        "ziel": "2026-11-01T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "Sonntag"
+    },
+    {
         "name": "TAHNEE - EIN TOUCH TOO MUCH",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
@@ -585,10 +697,10 @@
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "NEW Box, Am Nordpark 299, 41069 MÖNCHENGLADBACH"
+        "notiz": "NEW Box, Mönchengladbach"
     },
     {
-        "name": "Frei",
+        "name": "Frei (Weihnachten)",
         "start": null,
         "ziel": "2026-12-23T17:00",
         "tags": [
@@ -596,7 +708,7 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Heiligabend 24. Dezember 2026 Donnerstag"
+        "notiz": "Heiligabend Do. 24.12."
     },
     {
         "name": "Arbeit",
@@ -609,7 +721,7 @@
         "notiz": ""
     },
     {
-        "name": "Frei",
+        "name": "Frei (Silvester)",
         "start": null,
         "ziel": "2026-12-30T17:00",
         "tags": [
@@ -617,7 +729,7 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Heiligabend 31. Dezember 2026 Donnerstag"
+        "notiz": "Silvester Do. 31.12."
     },
     {
         "name": "Arbeit",
@@ -638,116 +750,5 @@
         ],
         "repeat": "none",
         "notiz": ""
-    },
-    {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-04-10T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Artemis II: Livestream Start",
-        "start": null,
-        "ziel": "2026-04-11T00:30",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Live-Übertragung der Rückkehr (NASA+)."
-    },
-    {
-        "name": "Artemis II: Trennung Servicemodul",
-        "start": null,
-        "ziel": "2026-04-11T01:44",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Orion-Kapsel bereitet sich auf Eintritt vor."
-    },
-    {
-        "name": "Artemis II: Wiedereintritt",
-        "start": null,
-        "ziel": "2026-04-11T01:53",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Eintritt in die Erdatmosphäre."
-    },
-    {
-        "name": "Artemis II: Wasserung Pazifik",
-        "start": null,
-        "ziel": "2026-04-11T02:07",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Splashdown vor San Diego."
-    },
-    {
-        "name": "Astro: Lyriden Sternschnuppen (Höhepunkt)",
-        "start": null,
-        "ziel": "2026-04-22T02:00",
-        "tags": [
-            "ASTRO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Beste Sichtbarkeit in den Morgenstunden.",
-        "checklist": []
-    },
-    {
-        "name": "Astro: Mondsichel bei Venus & Plejaden",
-        "start": null,
-        "ziel": "2026-04-19T21:00",
-        "tags": [
-            "ASTRO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Schönes Fotomotiv in der Abenddämmerung.",
-        "checklist": []
-    },
-    {
-        "name": "Brückentag (1 Tag Urlaub -> 4 Tage frei)",
-        "start": null,
-        "ziel": "2026-05-15T08:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "notiz": "Nach Christi Himmelfahrt."
-    },
-    {
-        "name": "Brückentag (1 Tag Urlaub -> 4 Tage frei)",
-        "start": null,
-        "ziel": "2026-06-05T08:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "notiz": "Nach Fronleichnam."
-    },
-    {
-        "name": "Astro: Blauer Mikromond (Vollmond)",
-        "start": null,
-        "ziel": "2026-05-31T20:00",
-        "tags": [
-            "ASTRO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Zweiter Vollmond im Mai.",
-        "checklist": []
     }
 ]
