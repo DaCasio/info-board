@@ -405,7 +405,7 @@
         "checklist": []
     },
     {
-        "name": "Brückentag (1 Tag Urlaub -> 4 Tage frei)",
+        "name": "Brückentag nehmen? (1 Tag Urlaub -> 4 Tage frei)",
         "start": null,
         "ziel": "2026-05-15T08:00",
         "tags": [
@@ -413,7 +413,10 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Nach Christi Himmelfahrt."
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Nach Christi Himmelfahrt.",
+        "checklist": []
     },
     {
         "name": "Eurowings glatt",
