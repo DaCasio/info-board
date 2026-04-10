@@ -429,7 +429,7 @@
         "notiz": ""
     },
     {
-        "name": "Morgen frei (Pfingsten)",
+        "name": "Montag frei (Pfingsten)",
         "start": null,
         "ziel": "2026-05-22T17:00",
         "tags": [
@@ -437,7 +437,10 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Pfingstmontag 25. Mai 2026"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Pfingstmontag 25. Mai 2026",
+        "checklist": []
     },
     {
         "name": "Essen gehen",
