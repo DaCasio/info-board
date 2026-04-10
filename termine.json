@@ -714,7 +714,10 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Heiligabend Do. 24.12."
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Heiligabend Do. 24.12. > Fr. 25.12. 1. Weihnachtsfeiertag",
+        "checklist": []
     },
     {
         "name": "Arbeit",
