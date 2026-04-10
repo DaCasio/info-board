@@ -740,10 +740,12 @@
         "start": null,
         "ziel": "2026-05-31T20:00",
         "tags": [
-            "ARTEMIS",
-            "TERMINE"
+            "ASTRO"
         ],
         "repeat": "none",
-        "notiz": "Zweiter Vollmond im Mai."
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Zweiter Vollmond im Mai.",
+        "checklist": []
     }
 ]
