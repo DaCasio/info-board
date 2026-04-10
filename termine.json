@@ -1,15 +1,5 @@
 [
     {
-        "name": "Artemis II: Wiedereintritt",
-        "start": null,
-        "ziel": "2026-04-11T01:53",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Eintritt in die Erdatmosphäre."
-    },
-    {
         "name": "Artemis II: Wasserung Pazifik",
         "start": null,
         "ziel": "2026-04-11T02:07",
