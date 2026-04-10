@@ -1,15 +1,5 @@
 [
     {
-        "name": "Robert & Uschi",
-        "start": null,
-        "ziel": "2026-04-11T19:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
         "name": "FR.Z.ANO.ENDE",
         "start": null,
         "ziel": "2026-04-12T23:59",
