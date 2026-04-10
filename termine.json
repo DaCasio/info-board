@@ -606,19 +606,6 @@
         "checklist": []
     },
     {
-        "name": "Learning Friday",
-        "start": "2026-04-10T11:00",
-        "ziel": "2026-04-10T12:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Learning Friday: \"Live Hacking: Realistische Hackerangriffe live erleben\"",
-        "checklist": []
-    },
-    {
         "name": "2025110717332718 SW Update ANO",
         "start": null,
         "ziel": "2026-04-13T10:00",
