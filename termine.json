@@ -694,11 +694,13 @@
         "start": null,
         "ziel": "2026-04-22T02:00",
         "tags": [
-            "ARTEMIS",
-            "TERMINE"
+            "ASTRO"
         ],
         "repeat": "none",
-        "notiz": "Beste Sichtbarkeit in den Morgenstunden."
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Beste Sichtbarkeit in den Morgenstunden.",
+        "checklist": []
     },
     {
         "name": "Astro: Mondsichel bei Venus & Plejaden",
