@@ -738,7 +738,10 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Silvester Do. 31.12."
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Silvester Do. 31.12. > 01.01.2027",
+        "checklist": []
     },
     {
         "name": "Arbeit",
