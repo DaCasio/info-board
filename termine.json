@@ -1,15 +1,5 @@
 [
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-04-10T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
         "name": "Artemis II: Livestream Start",
         "start": null,
         "ziel": "2026-04-11T00:30",
