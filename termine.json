@@ -705,11 +705,13 @@
         "start": null,
         "ziel": "2026-04-19T21:00",
         "tags": [
-            "ARTEMIS",
-            "TERMINE"
+            "ASTRO"
         ],
         "repeat": "none",
-        "notiz": "Schönes Fotomotiv in der Abenddämmerung."
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Schönes Fotomotiv in der Abenddämmerung.",
+        "checklist": []
     },
     {
         "name": "Brückentag (1 Tag Urlaub -> 4 Tage frei)",
