@@ -1,27 +1,7 @@
 [
     {
-        "name": "Feierabend",
-        "start": "2026-04-10T17:00",
-        "ziel": "2026-04-10T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Trennung Crewkapsel",
-        "start": "2026-04-11T01:44",
-        "ziel": "2026-04-11T01:44",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Artemis Mission"
-    },
-    {
-        "name": "Wiedereintritt Erdathmosphäre",
-        "start": "2026-04-11T02:04",
+        "name": "Wiedereintritt Erdathmospre",
+        "start": null,
         "ziel": "2026-04-11T02:04",
         "tags": [
             "ARTEMIS"
@@ -31,7 +11,7 @@
     },
     {
         "name": "Wasserung Pazifik",
-        "start": "2026-04-11T02:17",
+        "start": null,
         "ziel": "2026-04-11T02:17",
         "tags": [
             "ARTEMIS"
@@ -40,9 +20,19 @@
         "notiz": ""
     },
     {
+        "name": "Trennung Crewkapsel",
+        "start": null,
+        "ziel": "2026-04-11T01:44",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": ""
+    },
+    {
         "name": "Robert & Uschi",
-        "start": "2026-04-11T19:00",
-        "ziel": "2026-04-11T22:00",
+        "start": null,
+        "ziel": "2026-04-11T19:00",
         "tags": [
             "TERMINE"
         ],
@@ -51,18 +41,18 @@
     },
     {
         "name": "FR.Z.ANO.ENDE",
-        "start": "2026-04-12T00:00",
+        "start": null,
         "ziel": "2026-04-12T23:59",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Frozen Zone Ende"
+        "notiz": ""
     },
     {
         "name": "IKEA Muddi Lieferung",
-        "start": "2026-04-13T07:00",
-        "ziel": "2026-04-13T10:00",
+        "start": null,
+        "ziel": "2026-04-13T07:00",
         "tags": [
             "TERMINE",
             "MUTTI"
@@ -71,9 +61,9 @@
         "notiz": ""
     },
     {
-        "name": "SW Update ANO (2025110717332718)",
-        "start": "2026-04-13T10:00",
-        "ziel": "2026-04-13T11:00",
+        "name": "2025110717332718 SW Update ANO",
+        "start": null,
+        "ziel": "2026-04-13T10:00",
         "tags": [
             "ARBEIT"
         ],
@@ -94,9 +84,9 @@
         "notiz": ""
     },
     {
-        "name": "Füße (Kero)",
-        "start": "2026-04-13T14:00",
-        "ziel": "2026-04-13T15:00",
+        "name": "Füße",
+        "start": null,
+        "ziel": "2026-04-13T14:00",
         "tags": [
             "KERO"
         ],
@@ -104,7 +94,7 @@
         "notiz": ""
     },
     {
-        "name": "RBB Nachtschicht",
+        "name": "RBB",
         "start": "2026-04-13T18:00",
         "ziel": "2026-04-14T06:00",
         "tags": [
@@ -135,8 +125,8 @@
     },
     {
         "name": "Ilija Vitrinen Aufbau Muddi",
-        "start": "2026-04-15T09:00",
-        "ziel": "2026-04-15T12:00",
+        "start": null,
+        "ziel": "2026-04-15T09:00",
         "tags": [
             "TERMINE",
             "MUTTI"
@@ -175,59 +165,59 @@
         "notiz": ""
     },
     {
-        "name": "NV-Ring-Sperrung Ende",
-        "start": "2026-04-17T17:00",
+        "name": "NV-Ring-Sperrung",
+        "start": null,
         "ziel": "2026-04-17T17:00",
         "tags": [
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "Sperrung seit Montag 2.3. endet heute."
+        "notiz": "Montag 2.3., 06:00 bis 17. April."
     },
     {
-        "name": "AXN HQ Bezug Lager möglich",
-        "start": "2026-04-20T10:00",
-        "ziel": "2026-04-20T11:00",
+        "name": "AXN HQ",
+        "start": null,
+        "ziel": "2026-04-20T10:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Max-Reich-Pietsch"
+        "notiz": "Bezug Lager möglich - Max-Reich-Pietsch"
     },
     {
-        "name": "PSC Connect (Nord) - Anreise HH",
+        "name": "PSC Connect (Nord) in HH",
         "start": "2026-04-20T11:00",
         "ziel": "2026-04-20T16:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": ""
+        "notiz": "Anreise"
     },
     {
-        "name": "PSC Connect (Nord) - Event",
+        "name": "PSC Connect (Nord) in HH",
         "start": "2026-04-21T08:00",
         "ziel": "2026-04-21T18:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": ""
+        "notiz": "PSC Connect (Nord)"
     },
     {
-        "name": "PSC Connect (Nord) - Abreise HH",
+        "name": "PSC Connect (Nord) in HH",
         "start": "2026-04-22T10:00",
         "ziel": "2026-04-22T15:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": ""
+        "notiz": "Abreise"
     },
     {
         "name": "Therapie",
-        "start": "2026-04-22T19:00",
-        "ziel": "2026-04-22T20:00",
+        "start": null,
+        "ziel": "2026-04-22T19:00",
         "tags": [
             "KERO"
         ],
@@ -246,8 +236,8 @@
     },
     {
         "name": "Küchenplanung besprechen",
-        "start": "2026-04-24T18:00",
-        "ziel": "2026-04-24T19:00",
+        "start": null,
+        "ziel": "2026-04-24T18:00",
         "tags": [
             "TERMINE",
             "MUTTI"
@@ -257,18 +247,18 @@
     },
     {
         "name": "Reifenwechsel",
-        "start": "2026-04-27T11:00",
-        "ziel": "2026-04-27T12:00",
+        "start": null,
+        "ziel": "2026-04-27T11:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Dieter Burandt GmbH, Moerser Str. 28, Duisburg. Einlagerungs-Nr.: 1934"
+        "notiz": "Dieter Burandt GmbH\nMoerser Str. 28\n47228 Duisburg\nEinlagerungs-Nr.: 1934"
     },
     {
         "name": "Frauenarzt",
-        "start": "2026-04-27T16:00",
-        "ziel": "2026-04-27T17:00",
+        "start": null,
+        "ziel": "2026-04-27T16:00",
         "tags": [
             "KERO",
             "DOK"
@@ -278,8 +268,8 @@
     },
     {
         "name": "Fahrrad wegbringen",
-        "start": "2026-04-30T15:00",
-        "ziel": "2026-04-30T16:00",
+        "start": null,
+        "ziel": "2026-04-30T15:00",
         "tags": [
             "KERO"
         ],
@@ -287,30 +277,30 @@
         "notiz": ""
     },
     {
-        "name": "AXN HQ Alt geräumt",
-        "start": "2026-04-30T17:00",
-        "ziel": "2026-04-30T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": "Letzter Termin für Räumung"
-    },
-    {
-        "name": "Start Langes Wochenende (1. Mai)",
-        "start": "2026-04-30T17:00",
+        "name": "Langes Wochenende",
+        "start": null,
         "ziel": "2026-04-30T17:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Tag der Arbeit am Freitag"
+        "notiz": "Tag der Arbeit 01. Mai 2026 Freitag"
+    },
+    {
+        "name": "AXN HQ Alt geräumt",
+        "start": null,
+        "ziel": "2026-04-30T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": ""
     },
     {
         "name": "AXN HQ Neu Teilstart",
-        "start": "2026-05-04T08:00",
-        "ziel": "2026-05-04T10:00",
+        "start": null,
+        "ziel": "2026-05-04T08:00",
         "tags": [
             "ARBEIT"
         ],
@@ -339,8 +329,8 @@
     },
     {
         "name": "Entwurmung SJPD",
-        "start": "2026-05-07T09:00",
-        "ziel": "2026-05-07T09:30",
+        "start": null,
+        "ziel": "2026-05-07T09:00",
         "tags": [
             "KATZIS"
         ],
@@ -348,19 +338,19 @@
         "notiz": ""
     },
     {
-        "name": "AXN HQ alt Auszug ALBIN KÖBIS",
-        "start": "2026-05-08T17:00",
+        "name": "AXN HQ alt letzter Tag",
+        "start": null,
         "ziel": "2026-05-08T17:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Letzter Tag alt"
+        "notiz": "Auszug ALBIN KÖBIS"
     },
     {
-        "name": "Füße (Kero)",
-        "start": "2026-05-13T15:00",
-        "ziel": "2026-05-13T16:00",
+        "name": "Füße",
+        "start": null,
+        "ziel": "2026-05-13T15:00",
         "tags": [
             "KERO"
         ],
@@ -368,20 +358,20 @@
         "notiz": ""
     },
     {
-        "name": "Vorabend Christi Himmelfahrt (Frei)",
-        "start": "2026-05-13T17:00",
+        "name": "Morgen frei",
+        "start": null,
         "ziel": "2026-05-13T17:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Feiertag am 14. Mai"
+        "notiz": "Christi Himmelfahrt 14. Mai 2026 Donnerstag"
     },
     {
         "name": "Eurowings glatt",
-        "start": "2026-05-15T15:00",
-        "ziel": "2026-05-15T15:30",
+        "start": null,
+        "ziel": "2026-05-15T15:00",
         "tags": [
             "FINANZEN"
         ],
@@ -389,20 +379,20 @@
         "notiz": ""
     },
     {
-        "name": "Start Langes Wochenende (Pfingsten)",
-        "start": "2026-05-22T17:00",
+        "name": "Langes Wochenende",
+        "start": null,
         "ziel": "2026-05-22T17:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Pfingstmontag am 25. Mai"
+        "notiz": "Pfingstmontag 25. Mai 2026 Montag"
     },
     {
         "name": "Essen gehen",
-        "start": "2026-05-25T17:30",
-        "ziel": "2026-05-25T20:00",
+        "start": null,
+        "ziel": "2026-05-25T17:30",
         "tags": [
             "TERMINE",
             "KATZIS"
@@ -411,20 +401,20 @@
         "notiz": ""
     },
     {
-        "name": "Vorabend Fronleichnam (Frei)",
-        "start": "2026-06-03T17:00",
+        "name": "Morgen frei",
+        "start": null,
         "ziel": "2026-06-03T17:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Feiertag am 4. Juni"
+        "notiz": "Fronleichnam 04. Juni 2026 Donnerstag"
     },
     {
         "name": "Pumbi / Diego Impf Stichtag",
-        "start": "2026-06-12T18:00",
-        "ziel": "2026-06-12T19:00",
+        "start": null,
+        "ziel": "2026-06-12T18:00",
         "tags": [
             "KATZIS"
         ],
@@ -433,8 +423,8 @@
     },
     {
         "name": "Jax Geburtstag",
-        "start": "2026-06-15T00:00",
-        "ziel": "2026-06-15T23:59",
+        "start": null,
+        "ziel": "2026-06-15T00:00",
         "tags": [
             "KATZIS"
         ],
@@ -443,8 +433,8 @@
     },
     {
         "name": "Sira Geburtstag",
-        "start": "2026-06-22T00:00",
-        "ziel": "2026-06-22T23:59",
+        "start": null,
+        "ziel": "2026-06-22T00:00",
         "tags": [
             "KATZIS"
         ],
@@ -453,26 +443,26 @@
     },
     {
         "name": "Perplexity Ende Magenta",
-        "start": "2026-06-25T00:00",
-        "ziel": "2026-06-25T23:59",
+        "start": null,
+        "ziel": "2026-06-25T00:00",
         "tags": [
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "Abo kündigen/prüfen"
+        "notiz": "Endet am 25.6."
     },
     {
         "name": "AXN HQ alt Rückbau Ende",
-        "start": "2026-06-30T17:00",
+        "start": null,
         "ziel": "2026-06-30T17:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Auszug ALBIN KÖBIS finalisiert"
+        "notiz": "Auszug ALBIN KÖBIS"
     },
     {
-        "name": "Urlaub Start",
+        "name": "Urlaub",
         "start": "2026-07-03T17:00",
         "ziel": "2026-07-08T21:00",
         "tags": [
@@ -484,8 +474,8 @@
     },
     {
         "name": "Hochzeitstag",
-        "start": "2026-07-04T00:00",
-        "ziel": "2026-07-04T23:59",
+        "start": null,
+        "ziel": "2026-07-04T00:00",
         "tags": [
             "TERMINE"
         ],
@@ -493,9 +483,9 @@
         "notiz": ""
     },
     {
-        "name": "Arbeitsbeginn nach Urlaub",
-        "start": "2026-07-13T08:00",
-        "ziel": "2026-07-13T09:00",
+        "name": "Arbeit",
+        "start": null,
+        "ziel": "2026-07-13T08:00",
         "tags": [
             "ARBEIT"
         ],
@@ -503,38 +493,7 @@
         "notiz": ""
     },
     {
-        "name": "Wohnungsrückgabe Kleiststraße Verjährung",
-        "start": "2026-08-01T00:00",
-        "ziel": "2026-08-01T23:59",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "Fristende 31.07.2026"
-    },
-    {
-        "name": "AXN HQ Umzug Done",
-        "start": "2026-08-01T10:00",
-        "ziel": "2026-08-01T11:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": "Einzug alle Etagen - Max-Reich-Pietsch"
-    },
-    {
-        "name": "Urlaub Kanaren – prüfen (1/2)",
-        "start": "2026-08-01T12:00",
-        "ziel": "2026-08-01T13:00",
-        "tags": [
-            "ARBEIT",
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Urlaub Start (Sommer)",
+        "name": "Urlaub",
         "start": "2026-07-31T17:00",
         "ziel": "2026-08-09T21:00",
         "tags": [
@@ -545,9 +504,40 @@
         "notiz": ""
     },
     {
+        "name": "Wohnungsrückgabe Verjährung",
+        "start": null,
+        "ziel": "2026-08-01T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "31.07.2026 - Kleiststraße"
+    },
+    {
+        "name": "AXN HQ Umzug Done",
+        "start": null,
+        "ziel": "2026-08-01T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "Einzug alle Etagen - Max-Reich-Pietsch"
+    },
+    {
+        "name": "Urlaub Kanaren – prüfen (1/2)",
+        "start": null,
+        "ziel": "2026-08-01T12:00",
+        "tags": [
+            "ARBEIT",
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "notiz": ""
+    },
+    {
         "name": "Jahrestag",
-        "start": "2026-08-05T00:00",
-        "ziel": "2026-08-05T23:59",
+        "start": null,
+        "ziel": "2026-08-05T00:00",
         "tags": [
             "TERMINE"
         ],
@@ -555,9 +545,9 @@
         "notiz": ""
     },
     {
-        "name": "Arbeitsbeginn nach Urlaub",
-        "start": "2026-08-10T08:00",
-        "ziel": "2026-08-10T09:00",
+        "name": "Arbeit",
+        "start": null,
+        "ziel": "2026-08-10T08:00",
         "tags": [
             "ARBEIT"
         ],
@@ -566,8 +556,8 @@
     },
     {
         "name": "Elster-Zertifikat Mutti läuft aus",
-        "start": "2026-08-31T08:37",
-        "ziel": "2026-08-31T09:00",
+        "start": null,
+        "ziel": "2026-08-31T08:37",
         "tags": [
             "FINANZEN"
         ],
@@ -576,8 +566,8 @@
     },
     {
         "name": "Urlaub Kanaren – prüfen (2/2)",
-        "start": "2026-09-01T12:00",
-        "ziel": "2026-09-01T13:00",
+        "start": null,
+        "ziel": "2026-09-01T12:00",
         "tags": [
             "ARBEIT",
             "URLAUB"
@@ -587,8 +577,8 @@
     },
     {
         "name": "Dr. Stickelbruck – Reinigung",
-        "start": "2026-09-02T08:00",
-        "ziel": "2026-09-02T09:00",
+        "start": null,
+        "ziel": "2026-09-02T08:00",
         "tags": [
             "DOK",
             "CASI"
@@ -597,7 +587,7 @@
         "notiz": ""
     },
     {
-        "name": "Urlaub Kanaren (kurzfristig)",
+        "name": "Urlaub",
         "start": "2026-09-18T17:00",
         "ziel": "2026-10-04T21:00",
         "tags": [
@@ -605,12 +595,12 @@
             "URLAUB"
         ],
         "repeat": "none",
-        "notiz": ""
+        "notiz": "Kanaren kurzfristig."
     },
     {
-        "name": "Arbeitsbeginn nach Urlaub",
-        "start": "2026-10-05T08:00",
-        "ziel": "2026-10-05T09:00",
+        "name": "Arbeit",
+        "start": null,
+        "ziel": "2026-10-05T08:00",
         "tags": [
             "ARBEIT"
         ],
@@ -625,23 +615,23 @@
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "NEW Box, Am Nordpark 299, 41069 MG"
+        "notiz": "NEW Box, Am Nordpark 299, 41069 MÖNCHENGLADBACH"
     },
     {
-        "name": "Vorabend Heiligabend (Frei)",
-        "start": "2026-12-23T17:00",
+        "name": "Frei",
+        "start": null,
         "ziel": "2026-12-23T17:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": ""
+        "notiz": "Heiligabend 24. Dezember 2026 Donnerstag"
     },
     {
-        "name": "Arbeit (Zwischen den Tagen)",
-        "start": "2026-12-28T08:00",
-        "ziel": "2026-12-28T17:00",
+        "name": "Arbeit",
+        "start": null,
+        "ziel": "2026-12-28T08:00",
         "tags": [
             "ARBEIT"
         ],
@@ -649,20 +639,20 @@
         "notiz": ""
     },
     {
-        "name": "Vorabend Silvester (Frei)",
-        "start": "2026-12-30T17:00",
+        "name": "Frei",
+        "start": null,
         "ziel": "2026-12-30T17:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": ""
+        "notiz": "Heiligabend 31. Dezember 2026 Donnerstag"
     },
     {
-        "name": "Arbeitsbeginn Neujahr",
-        "start": "2027-01-04T08:00",
-        "ziel": "2027-01-04T09:00",
+        "name": "Arbeit",
+        "start": null,
+        "ziel": "2027-01-04T08:00",
         "tags": [
             "ARBEIT"
         ],
@@ -671,10 +661,20 @@
     },
     {
         "name": "Konto glatt",
-        "start": "2027-03-29T12:00",
-        "ziel": "2027-03-29T13:00",
+        "start": null,
+        "ziel": "2027-03-29T12:00",
         "tags": [
             "FINANZEN"
+        ],
+        "repeat": "none",
+        "notiz": ""
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-04-10T17:00",
+        "tags": [
+            "ARBEIT"
         ],
         "repeat": "none",
         "notiz": ""
