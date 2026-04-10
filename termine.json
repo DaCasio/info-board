@@ -858,19 +858,6 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": "2026-04-10T12:15",
-        "ziel": "2026-04-10T13:15",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Küchenplanung besprechen",
         "start": null,
         "ziel": "2026-04-24T18:00",
