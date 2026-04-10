@@ -678,5 +678,45 @@
         ],
         "repeat": "none",
         "notiz": ""
+    },
+    {
+        "name": "Artemis II: Livestream Start",
+        "start": null,
+        "ziel": "2026-04-11T00:30",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Live-Übertragung der Rückkehr (NASA+)."
+    },
+    {
+        "name": "Artemis II: Trennung Servicemodul",
+        "start": null,
+        "ziel": "2026-04-11T01:44",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Orion-Kapsel bereitet sich auf Eintritt vor."
+    },
+    {
+        "name": "Artemis II: Wiedereintritt",
+        "start": null,
+        "ziel": "2026-04-11T01:53",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Eintritt in die Erdatmosphäre."
+    },
+    {
+        "name": "Artemis II: Wasserung Pazifik",
+        "start": null,
+        "ziel": "2026-04-11T02:07",
+        "tags": [
+            "ARTEMIS"
+        ],
+        "repeat": "none",
+        "notiz": "Splashdown vor San Diego."
     }
 ]
