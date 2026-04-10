@@ -829,5 +829,18 @@
         "days": [],
         "notiz": "Weihnachtsferien: 23.12.2026 – 06.01.2027",
         "checklist": []
+    },
+    {
+        "name": "Osterferien",
+        "start": "2026-03-29T00:00",
+        "ziel": "2026-04-12T00:00",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Osterferien: 29.03. – 12.04.2026",
+        "checklist": []
     }
 ]
