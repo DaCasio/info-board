@@ -1,15 +1,5 @@
 [
     {
-        "name": "Artemis II: Livestream Start",
-        "start": null,
-        "ziel": "2026-04-11T00:30",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Live-Übertragung der Rückkehr (NASA+)."
-    },
-    {
         "name": "Artemis II: Trennung Servicemodul",
         "start": null,
         "ziel": "2026-04-11T01:44",
