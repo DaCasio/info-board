@@ -829,5 +829,18 @@
         ],
         "repeat": "none",
         "notiz": ""
+    },
+    {
+        "name": "s. Mail mit Betreff",
+        "start": null,
+        "ziel": "2026-04-13T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Wichtige Information: Foto für neuen Mitarbeiterausweis bis zum 24.04.2026 erforderlich",
+        "checklist": []
     }
 ]
