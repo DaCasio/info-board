@@ -391,7 +391,7 @@
         "notiz": ""
     },
     {
-        "name": "Morgen frei (Feiertag)",
+        "name": "Morgen frei (Christi Himmelfahrt)",
         "start": null,
         "ziel": "2026-05-13T17:00",
         "tags": [
@@ -399,7 +399,10 @@
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Christi Himmelfahrt 14. Mai 2026"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Christi Himmelfahrt 14. Mai 2026",
+        "checklist": []
     },
     {
         "name": "Brückentag (1 Tag Urlaub -> 4 Tage frei)",
