@@ -1,15 +1,5 @@
 [
     {
-        "name": "Artemis II: Trennung Servicemodul",
-        "start": null,
-        "ziel": "2026-04-11T01:44",
-        "tags": [
-            "ARTEMIS"
-        ],
-        "repeat": "none",
-        "notiz": "Orion-Kapsel bereitet sich auf Eintritt vor."
-    },
-    {
         "name": "Artemis II: Wiedereintritt",
         "start": null,
         "ziel": "2026-04-11T01:53",
