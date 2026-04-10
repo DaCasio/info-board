@@ -317,15 +317,18 @@
         "notiz": ""
     },
     {
-        "name": "Feiertag: Tag der Arbeit",
+        "name": "Morgen Frei (Tag der Arbeit)",
         "start": null,
-        "ziel": "2026-05-01T00:00",
+        "ziel": "2026-04-30T17:00",
         "tags": [
             "ARBEIT",
             "FREI"
         ],
         "repeat": "none",
-        "notiz": "Gesetzlicher Feiertag NRW"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Gesetzlicher Feiertag NRW",
+        "checklist": []
     },
     {
         "name": "AXN HQ Neu Teilstart",
