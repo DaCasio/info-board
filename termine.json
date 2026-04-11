@@ -265,10 +265,14 @@
         "ziel": "2026-04-27T16:00",
         "tags": [
             "KERO",
-            "DOK"
+            "DOK",
+            "TERMINE"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Fahrrad wegbringen",
