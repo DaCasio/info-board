@@ -287,10 +287,14 @@
         "start": null,
         "ziel": "2026-04-30T15:00",
         "tags": [
-            "KERO"
+            "KERO",
+            "TERMINE"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Morgen Frei (Tag der Arbeit)",
