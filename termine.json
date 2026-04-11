@@ -1,6 +1,6 @@
 [
     {
-        "name": "IKEA Muddi Lieferung",
+        "name": "IKEA Lieferung",
         "start": null,
         "ziel": "2026-04-13T07:00",
         "tags": [
@@ -8,7 +8,10 @@
             "MUTTI"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "2025110717332718 SW Update ANO",
