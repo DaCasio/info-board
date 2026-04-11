@@ -107,7 +107,7 @@
         "notiz": ""
     },
     {
-        "name": "Ilija Vitrinen Aufbau Muddi",
+        "name": "Ilija Vitrinen Aufbau",
         "start": null,
         "ziel": "2026-04-15T09:00",
         "tags": [
@@ -115,7 +115,10 @@
             "MUTTI"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Grundlagenschulung",
