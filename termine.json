@@ -242,7 +242,7 @@
         "notiz": ""
     },
     {
-        "name": "Küchenplanung besprechen",
+        "name": "Küche bestellen",
         "start": null,
         "ziel": "2026-04-24T18:00",
         "tags": [
@@ -250,7 +250,10 @@
             "MUTTI"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Reifenwechsel",
