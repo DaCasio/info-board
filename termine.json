@@ -329,10 +329,14 @@
         "start": null,
         "ziel": "2026-05-07T09:00",
         "tags": [
-            "KATZIS"
+            "KATZIS",
+            "TERMINE"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "AXN HQ alt letzter Tag",
