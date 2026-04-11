@@ -1,15 +1,5 @@
 [
     {
-        "name": "FR.Z.ANO.ENDE",
-        "start": null,
-        "ziel": "2026-04-12T23:59",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
         "name": "IKEA Muddi Lieferung",
         "start": null,
         "ziel": "2026-04-13T07:00",
