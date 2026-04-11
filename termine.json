@@ -67,10 +67,14 @@
         "start": null,
         "ziel": "2026-04-13T14:00",
         "tags": [
-            "KERO"
+            "KERO",
+            "TERMINE"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "RBB",
