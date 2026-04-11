@@ -628,10 +628,14 @@
         "ziel": "2026-09-02T08:00",
         "tags": [
             "DOK",
-            "CASI"
+            "CASI",
+            "TERMINE"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Urlaub (Kanaren kurzfristig)",
