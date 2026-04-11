@@ -369,10 +369,14 @@
         "start": null,
         "ziel": "2026-05-13T15:00",
         "tags": [
-            "KERO"
+            "KERO",
+            "TERMINE"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Morgen frei (Christi Himmelfahrt)",
