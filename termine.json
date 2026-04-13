@@ -920,5 +920,24 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-04-13T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
     }
 ]
