@@ -920,5 +920,24 @@
         "days": [],
         "notiz": "Mit Marc sprechen und anlegen lassen",
         "checklist": []
+    },
+    {
+        "name": "Pause",
+        "start": "2026-04-14T12:00",
+        "ziel": "2026-04-14T13:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
     }
 ]
