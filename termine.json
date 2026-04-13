@@ -959,18 +959,5 @@
         "days": [],
         "notiz": "Mit Marc sprechen und anlegen lassen",
         "checklist": []
-    },
-    {
-        "name": "WAW Moni",
-        "start": null,
-        "ziel": "2026-04-13T15:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
