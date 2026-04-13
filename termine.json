@@ -1,19 +1,5 @@
 [
     {
-        "name": "Brückentag nehmen? (1 Tag Urlaub -> 4 Tage frei)",
-        "start": null,
-        "ziel": "2026-04-14T09:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Fr. 05.06.2026 nach Fronleichnam Do. 04.06.2026 freinehmen?\nFr. 15.05.2026 nach Christi Himmelfahrt Do. 14.05.2026 freinehmen?",
-        "checklist": []
-    },
-    {
         "name": "Auto konfigurieren",
         "start": null,
         "ziel": "2026-06-01T09:00",
