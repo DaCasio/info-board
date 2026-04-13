@@ -27,9 +27,9 @@
         "checklist": []
     },
     {
-        "name": "Auto läuft 8.12.26 ab",
+        "name": "Auto konfigurieren",
         "start": null,
-        "ziel": "2026-04-13T09:00",
+        "ziel": "2026-06-01T09:00",
         "tags": [
             "ARBEIT",
             "AUTO",
@@ -38,7 +38,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Prüfen und Enyaq konfen",
+        "notiz": "Prüfen und Enyaq konfen\nAuto läuft 8.12.26 ab",
         "checklist": []
     },
     {
