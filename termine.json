@@ -941,5 +941,20 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Leasingablauf Auto",
+        "start": null,
+        "ziel": "2026-12-08T09:00",
+        "tags": [
+            "ARBEIT",
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
