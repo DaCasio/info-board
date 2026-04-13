@@ -818,17 +818,6 @@
         "checklist": []
     },
     {
-        "name": "Gasflasche",
-        "start": "2026-04-13T17:00",
-        "ziel": "2026-04-13T18:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Flaschengas bei Paul Swertz GmbH kaufen\nDr.-Berns-Straße 41, 47441 Moers\n7-18",
-        "checklist": []
-    },
-    {
         "name": "Doofmund",
         "start": null,
         "ziel": "2026-05-03T17:30",
