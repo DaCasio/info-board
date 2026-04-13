@@ -875,5 +875,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Linux USER ANO erstellen",
+        "start": null,
+        "ziel": "2026-04-13T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Prüfen und Enyaq konfen",
+        "checklist": []
     }
 ]
