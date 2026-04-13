@@ -2,12 +2,15 @@
     {
         "name": "2025110717332718 SW Update ANO",
         "start": null,
-        "ziel": "2026-04-13T10:00",
+        "ziel": "2026-04-13T11:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Nach Frozen Zone - IM JF ansprechen"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Nach Frozen Zone - IM JF ansprechen",
+        "checklist": []
     },
     {
         "name": "Brückentag nehmen? (1 Tag Urlaub -> 4 Tage frei)",
