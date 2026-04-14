@@ -15,9 +15,9 @@
         "checklist": []
     },
     {
-        "name": "JF ANO",
+        "name": "ANO ToDos",
         "start": null,
-        "ziel": "2026-04-14T10:30",
+        "ziel": "2026-04-14T18:15",
         "tags": [
             "ARBEIT"
         ],
@@ -26,8 +26,25 @@
         "days": [
             1
         ],
-        "notiz": "2025110717332718 SW Update ANO - offene ansprechen\nimv sw1 und sw2 : Ist noch nicht geupdatet & spanning tree noch nicht umgesetzt\ndat sw1 und sw2 : Ist noch nicht geupdatet /  spanning tree ist umgesetzt\nKönnen wir hierfür ein Wartungsfenster einplanen?\n\nMag User auf Firewalls lokal / template?\n\nAktuell empfohlene PanOS Version 11.2.7-h8\nZuerst die Panorama, danach kommen die rg80, rg88 & Lab firewalls dran usw.",
-        "checklist": []
+        "notiz": "IMV - Update & Spanning Tree",
+        "checklist": [
+            {
+                "text": "imv sw1 und sw2 : Ist noch nicht geupdatet & spanning tree noch nicht umgesetzt",
+                "done": false
+            },
+            {
+                "text": "dat sw1 und sw2 : Ist noch nicht geupdatet /  spanning tree ist umgesetzt",
+                "done": false
+            },
+            {
+                "text": "Mag User auf Firewalls lokal / template?",
+                "done": false
+            },
+            {
+                "text": "Aktuell empfohlene PanOS Version 11.2.7-h8 - Pan, rg80, rg88 & Lab Fw",
+                "done": false
+            }
+        ]
     },
     {
         "name": "RBB",
