@@ -17,7 +17,7 @@
     {
         "name": "ANO ToDo",
         "start": null,
-        "ziel": "2026-04-14T18:15",
+        "ziel": "2026-04-15T10:00",
         "tags": [
             "ARBEIT",
             "ANO"
@@ -27,7 +27,7 @@
         "days": [
             1
         ],
-        "notiz": "IMV - Update & Spanning Tree",
+        "notiz": "Warten auf Freigabe des Updates DAT",
         "checklist": [
             {
                 "text": "imv sw1 und sw2 : Ist noch nicht geupdatet & spanning tree noch nicht umgesetzt",
