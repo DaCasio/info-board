@@ -1004,5 +1004,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "RBB Start",
+        "start": null,
+        "ziel": "2026-05-04T18:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "\n",
+        "checklist": []
     }
 ]
