@@ -742,19 +742,6 @@
         "notiz": ""
     },
     {
-        "name": "s. Mail mit Betreff",
-        "start": null,
-        "ziel": "2026-04-14T09:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Wichtige Information: Foto für neuen Mitarbeiterausweis bis zum 24.04.2026 erforderlich",
-        "checklist": []
-    },
-    {
         "name": "Ilija Küchen Abbau",
         "start": null,
         "ziel": "2026-04-20T10:00",
