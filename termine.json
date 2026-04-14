@@ -271,16 +271,6 @@
         "notiz": "Empfang, Meetingräume, 1. OG"
     },
     {
-        "name": "EDU 210 PA Blocker",
-        "start": "2026-05-04T08:00",
-        "ziel": "2026-05-08T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
         "name": "Office Köln / Dr Schlemmer + Burim",
         "start": "2026-05-06T09:00",
         "ziel": "2026-05-06T16:25",
