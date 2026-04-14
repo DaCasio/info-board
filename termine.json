@@ -1039,5 +1039,18 @@
         "days": [],
         "notiz": "Daniel anschreiben\nMacht Sinn um lücken zu füllen\nKurusus würde ich genr machen",
         "checklist": []
+    },
+    {
+        "name": "Spät",
+        "start": null,
+        "ziel": "2026-05-18T09:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
