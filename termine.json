@@ -50,16 +50,6 @@
         "notiz": ""
     },
     {
-        "name": "CVE followup",
-        "start": "2026-04-14T10:00",
-        "ziel": "2026-04-14T10:25",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
         "name": "Ilija Vitrinen Aufbau",
         "start": null,
         "ziel": "2026-04-15T09:00",
