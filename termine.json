@@ -826,7 +826,7 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
+        "repeat": "weekly",
         "repeatUntil": null,
         "days": [
             1,
