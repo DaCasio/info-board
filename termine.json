@@ -40,10 +40,6 @@
             {
                 "text": "Mag User auf Firewalls lokal / template? | RODC ohne AD Connection",
                 "done": false
-            },
-            {
-                "text": "Aktuell empfohlene PanOS Version 11.2.7-h8 - Pan, rg80, rg88 & Lab Fw",
-                "done": false
             }
         ]
     },
