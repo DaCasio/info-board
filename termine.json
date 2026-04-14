@@ -77,8 +77,11 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
-        "notiz": ""
+        "repeat": "biweekly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Monthly",
