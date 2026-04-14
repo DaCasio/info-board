@@ -31,7 +31,7 @@
         "checklist": [
             {
                 "text": "imv sw1 und sw2 : Ist noch nicht geupdatet & spanning tree noch nicht umgesetzt",
-                "done": false
+                "done": true
             },
             {
                 "text": "dat sw1 und sw2 : Ist noch nicht geupdatet /  spanning tree ist umgesetzt",
