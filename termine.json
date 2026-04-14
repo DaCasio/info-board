@@ -910,7 +910,9 @@
         "name": "BEU PA-440",
         "start": "2026-04-15T08:30",
         "ziel": "2026-04-15T10:30",
-        "tags": [],
+        "tags": [
+            "ARBEIT"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
