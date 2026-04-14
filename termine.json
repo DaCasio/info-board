@@ -86,12 +86,15 @@
     {
         "name": "Monthly",
         "start": "2026-04-17T10:00",
-        "ziel": "2026-04-17T10:30",
+        "ziel": "2026-04-17T10:55",
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
-        "notiz": ""
+        "repeat": "monthly_weekday",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "NV-Ring-Sperrung",
