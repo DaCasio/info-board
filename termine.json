@@ -1007,19 +1007,6 @@
         "checklist": []
     },
     {
-        "name": "EDUs u.a. 210 PA",
-        "start": null,
-        "ziel": "2026-04-15T08:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Daniel anschreiben\nMacht Sinn um Lücken zu füllen\nKursus würde ich gern machen",
-        "checklist": []
-    },
-    {
         "name": "Spät",
         "start": null,
         "ziel": "2026-05-18T09:30",
