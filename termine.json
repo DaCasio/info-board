@@ -1015,20 +1015,6 @@
         "checklist": []
     },
     {
-        "name": "Sascha & Matthes",
-        "start": "2026-04-15T10:30",
-        "ziel": "2026-04-15T11:00",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ANO BEU Austausch",
         "start": null,
         "ziel": "2026-04-28T10:00",
