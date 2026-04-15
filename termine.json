@@ -373,13 +373,16 @@
     },
     {
         "name": "Jax Geburtstag",
-        "start": null,
-        "ziel": "2026-06-15T00:00",
+        "start": "2026-06-15T00:00",
+        "ziel": "2026-06-16T00:00",
         "tags": [
             "KATZIS"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Sira Geburtstag",
