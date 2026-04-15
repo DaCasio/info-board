@@ -17,7 +17,7 @@
     {
         "name": "ANO ToDo",
         "start": null,
-        "ziel": "2026-04-16T08:30",
+        "ziel": "2026-04-15T17:30",
         "tags": [
             "ARBEIT",
             "ANO"
@@ -27,7 +27,7 @@
         "days": [
             1
         ],
-        "notiz": "Warten auf Freigabe des Updates DAT",
+        "notiz": "Updates DAT 15.4 ab 17:30 Uhr",
         "checklist": [
             {
                 "text": "dat sw1 und sw2 : Ist noch nicht geupdatet /  spanning tree ist umgesetzt",
