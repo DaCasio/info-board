@@ -1064,5 +1064,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Essen gehen mit Katzenfamilie 😻",
+        "start": "2026-05-25T17:30",
+        "ziel": "2026-05-25T20:30",
+        "notiz": "Moerser Brauhaus\\nOrsoyer Allee 1A\\, Eick\\, 47445 Moers\\, Deutschland",
+        "tags": [
+            "ICS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
     }
 ]
