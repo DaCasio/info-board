@@ -30,10 +30,6 @@
         "notiz": "Warten auf Freigabe des Updates DAT",
         "checklist": [
             {
-                "text": "imv sw1 und sw2 : Ist noch nicht geupdatet & spanning tree noch nicht umgesetzt",
-                "done": false
-            },
-            {
                 "text": "dat sw1 und sw2 : Ist noch nicht geupdatet /  spanning tree ist umgesetzt",
                 "done": false
             },
