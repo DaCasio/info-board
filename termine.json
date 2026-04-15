@@ -1064,5 +1064,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "live",
+        "start": "2026-04-15T16:22",
+        "ziel": "2026-04-15T16:23",
+        "tags": [
+            "TEST"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
