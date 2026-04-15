@@ -1054,5 +1054,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Therapie",
+        "start": null,
+        "ziel": "2026-05-06T19:00",
+        "tags": [
+            "KERO",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
