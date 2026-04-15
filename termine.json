@@ -1064,5 +1064,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "test",
+        "start": "2026-04-15T16:58",
+        "ziel": "2026-04-15T16:59",
+        "tags": [
+            "ARCHIV"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
