@@ -22,7 +22,10 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "s. Kalender"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Ano Kernmeeting",
