@@ -949,21 +949,58 @@
     },
     {
         "name": "ANO PA440 auf 11.2.7-h8",
-        "start": "2026-05-11T08:00",
-        "ziel": "2026-05-13T17:00",
+        "start": "2026-05-07T08:00",
+        "ziel": "2026-05-07T17:00",
         "tags": [
             "ARBEIT",
             "ANO"
         ],
-        "repeat": "weekly",
-        "repeatUntil": "2026-05-13",
-        "days": [
-            1,
-            2,
-            3
-        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
         "notiz": "",
-        "checklist": []
+        "checklist": [
+            {
+                "text": "bar",
+                "done": false
+            },
+            {
+                "text": "boi",
+                "done": false
+            },
+            {
+                "text": "roe",
+                "done": false
+            },
+            {
+                "text": "gro",
+                "done": false
+            },
+            {
+                "text": "rei",
+                "done": false
+            },
+            {
+                "text": "muen",
+                "done": false
+            },
+            {
+                "text": "her",
+                "done": false
+            },
+            {
+                "text": "imv",
+                "done": false
+            },
+            {
+                "text": "hes",
+                "done": false
+            },
+            {
+                "text": "heu",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO PA440 auf 11.2.7-h8",
