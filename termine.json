@@ -1214,7 +1214,20 @@
         "repeat": "none",
         "repeatUntil": "2026-05-08",
         "days": [],
-        "notiz": "rg80, rg88, cluster-220-ano",
-        "checklist": []
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "rg80",
+                "done": false
+            },
+            {
+                "text": "rg88",
+                "done": false
+            },
+            {
+                "text": "cluster-220-ano",
+                "done": false
+            }
+        ]
     }
 ]
