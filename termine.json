@@ -1118,5 +1118,18 @@
         "days": [],
         "notiz": "13-14 Uhr Fortinet: Alexander Heerlein + SE (Remote)",
         "checklist": []
+    },
+    {
+        "name": "PSC Connect (Nord) in HH (Kopie)",
+        "start": "2026-04-21T14:00",
+        "ziel": "2026-04-21T15:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "14-15 Uhr PaloAlto: Christian Schütze (vor Ort)",
+        "checklist": []
     }
 ]
