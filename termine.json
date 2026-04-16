@@ -1532,5 +1532,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "test (Kopie)",
+        "start": null,
+        "ziel": "2026-04-17T17:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
