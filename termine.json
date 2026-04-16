@@ -410,13 +410,16 @@
     },
     {
         "name": "Hochzeitstag",
-        "start": null,
-        "ziel": "2026-07-04T00:00",
+        "start": "2026-07-04T00:00",
+        "ziel": "2026-07-05T00:00",
         "tags": [
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Arbeit",
