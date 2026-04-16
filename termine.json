@@ -923,8 +923,29 @@
         "repeat": "none",
         "repeatUntil": "2026-05-08",
         "days": [],
-        "notiz": "dev, dat, hbe, hpt, hsp\n",
-        "checklist": []
+        "notiz": "\n",
+        "checklist": [
+            {
+                "text": "dev",
+                "done": false
+            },
+            {
+                "text": "dat",
+                "done": false
+            },
+            {
+                "text": "hbe",
+                "done": false
+            },
+            {
+                "text": "hpt",
+                "done": false
+            },
+            {
+                "text": "hsp",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO PA440 auf 11.2.7-h8",
