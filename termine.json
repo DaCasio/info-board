@@ -1131,5 +1131,18 @@
         "days": [],
         "notiz": "14-15 Uhr PaloAlto: Christian Schütze (vor Ort)",
         "checklist": []
+    },
+    {
+        "name": "PSC Connect (Nord) in HH (Kopie) (Kopie)",
+        "start": "2026-04-21T15:00",
+        "ziel": "2026-04-21T16:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Ab 15 Uhr Abreise (per Öffis) zum Schiff Cap San Diego",
+        "checklist": []
     }
 ]
