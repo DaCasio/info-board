@@ -1307,5 +1307,60 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "ANO PA440 auf 11.2.7-h8",
+        "start": "2026-05-11T08:00",
+        "ziel": "2026-05-11T17:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-05-13",
+        "days": [],
+        "notiz": "\n\n\n\n\n\n\n\n\n\n",
+        "checklist": [
+            {
+                "text": "ces",
+                "done": false
+            },
+            {
+                "text": "lis",
+                "done": false
+            },
+            {
+                "text": "mkw",
+                "done": false
+            },
+            {
+                "text": "wei",
+                "done": false
+            },
+            {
+                "text": "mas",
+                "done": false
+            },
+            {
+                "text": "mir",
+                "done": false
+            },
+            {
+                "text": "mot",
+                "done": false
+            },
+            {
+                "text": "nor",
+                "done": false
+            },
+            {
+                "text": "cho",
+                "done": false
+            },
+            {
+                "text": "cui",
+                "done": false
+            }
+        ]
     }
 ]
