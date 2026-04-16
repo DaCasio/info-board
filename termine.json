@@ -880,7 +880,7 @@
     {
         "name": "ANO PA440 auf 11.2.7-h8",
         "start": "2026-04-29T08:00",
-        "ziel": "2026-04-29T15:00",
+        "ziel": "2026-04-29T17:00",
         "tags": [
             "ARBEIT",
             "ANO"
@@ -888,7 +888,7 @@
         "repeat": "none",
         "repeatUntil": "2026-05-08",
         "days": [],
-        "notiz": "",
+        "notiz": "dev, dat, hbe, hpt, hsp\n",
         "checklist": []
     },
     {
