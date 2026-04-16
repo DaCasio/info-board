@@ -1004,8 +1004,8 @@
     },
     {
         "name": "ANO PA440 auf 11.2.7-h8",
-        "start": "2026-05-15T08:00",
-        "ziel": "2026-05-15T17:00",
+        "start": "2026-05-08T08:00",
+        "ziel": "2026-05-08T17:00",
         "tags": [
             "ARBEIT",
             "ANO"
@@ -1013,8 +1013,49 @@
         "repeat": "none",
         "repeatUntil": "2026-05-13",
         "days": [],
-        "notiz": "",
-        "checklist": []
+        "notiz": "\n",
+        "checklist": [
+            {
+                "text": "bou",
+                "done": false
+            },
+            {
+                "text": "bri",
+                "done": false
+            },
+            {
+                "text": "hon",
+                "done": false
+            },
+            {
+                "text": "jar",
+                "done": false
+            },
+            {
+                "text": "hpl",
+                "done": false
+            },
+            {
+                "text": "ath",
+                "done": false
+            },
+            {
+                "text": "sie",
+                "done": false
+            },
+            {
+                "text": "lin",
+                "done": false
+            },
+            {
+                "text": "pa-440-1-2",
+                "done": false
+            },
+            {
+                "text": "cav",
+                "done": false
+            }
+        ]
     },
     {
         "name": "RBB Start",
