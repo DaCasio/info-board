@@ -835,11 +835,9 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "weekly",
+        "repeat": "none",
         "repeatUntil": null,
-        "days": [
-            5
-        ],
+        "days": [],
         "notiz": "",
         "checklist": []
     },
