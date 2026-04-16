@@ -1055,8 +1055,8 @@
     },
     {
         "name": "Zscaler Tunnel ANO",
-        "start": "2026-04-16T10:30",
-        "ziel": "2026-04-16T11:59",
+        "start": null,
+        "ziel": "2026-04-16T13:00",
         "tags": [
             "ARBEIT",
             "ANO"
@@ -1064,7 +1064,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "offene checken",
         "checklist": []
     }
 ]
