@@ -1160,5 +1160,18 @@
         "days": [],
         "notiz": "ab 19 Uhr Abendessen im Zwick St. Pauli (ca 10 min vom Schiff)",
         "checklist": []
+    },
+    {
+        "name": "Spät Übernahme",
+        "start": "2026-04-16T16:00",
+        "ziel": "2026-04-16T18:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
