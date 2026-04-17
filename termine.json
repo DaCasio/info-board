@@ -746,25 +746,6 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": "2026-04-17T12:00",
-        "ziel": "2026-04-17T13:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ANO Panorama M-600 auf 11.2.7-h8",
         "start": "2026-04-22T17:00",
         "ziel": "2026-04-22T21:00",
