@@ -712,20 +712,6 @@
         "checklist": []
     },
     {
-        "name": "Snapshot ANO löschen",
-        "start": null,
-        "ziel": "2026-04-17T11:00",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-04-17T16:00",
