@@ -65,7 +65,10 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Hotel:\nHoliday inn – The niu, Brucks Hamburg Eppendorf\nChristoph-Probst-Weg 33\n20251 Hamburg\nGleiche Straße wie die Hamburger Niederlassung.\n",
+        "checklist": []
     },
     {
         "name": "Astro: Lyriden Sternschnuppen (Höhepunkt)",
