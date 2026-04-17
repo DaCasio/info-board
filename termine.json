@@ -295,7 +295,10 @@
             "KATZIS"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Moerser Brauhaus",
+        "checklist": []
     },
     {
         "name": "Astro: Blauer Mikromond (Vollmond)",
