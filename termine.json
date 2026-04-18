@@ -973,19 +973,6 @@
         "checklist": []
     },
     {
-        "name": "RBB Ende",
-        "start": null,
-        "ziel": "2026-04-20T06:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "\n",
-        "checklist": []
-    },
-    {
         "name": "ANO BEU Austausch",
         "start": null,
         "ziel": "2026-04-28T10:00",
