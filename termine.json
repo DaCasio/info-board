@@ -1000,20 +1000,6 @@
         "checklist": []
     },
     {
-        "name": "Nagel",
-        "start": null,
-        "ziel": "2026-04-18T13:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Simone / Michael",
         "start": null,
         "ziel": "2026-04-18T17:00",
