@@ -15,19 +15,6 @@
         "checklist": []
     },
     {
-        "name": "PSC Connect (Nord) in HH (Anreise)",
-        "start": "2026-04-20T11:00",
-        "ziel": "2026-04-20T16:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Hotel:\nHoliday inn – The niu, Bricks Hamburg Eppendorf\nChristoph-Probst-Weg 33\n20251 Hamburg\nGleiche Straße wie die Hamburger Niederlassung.\n",
-        "checklist": []
-    },
-    {
         "name": "Astro: Lyriden Sternschnuppen (Höhepunkt)",
         "start": null,
         "ziel": "2026-04-22T02:00",
