@@ -631,20 +631,6 @@
         "notiz": ""
     },
     {
-        "name": "Ilja Küchen Abbau",
-        "start": null,
-        "ziel": "2026-04-20T10:00",
-        "tags": [
-            "TERMINE",
-            "MUTTI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Klaus Flur und Küche tapezieren ",
         "start": null,
         "ziel": "2026-04-29T16:00",
