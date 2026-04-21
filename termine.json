@@ -15,16 +15,6 @@
         "checklist": []
     },
     {
-        "name": "Astro: Lyriden Sternschnuppen (Höhepunkt)",
-        "start": null,
-        "ziel": "2026-04-22T02:00",
-        "tags": [
-            "ASTRO"
-        ],
-        "repeat": "none",
-        "notiz": "Beste Sichtbarkeit in den Morgenstunden."
-    },
-    {
         "name": "PSC Connect (Nord) in HH (Abreise)",
         "start": "2026-04-22T10:00",
         "ziel": "2026-04-22T15:00",
