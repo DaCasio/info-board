@@ -15,16 +15,6 @@
         "checklist": []
     },
     {
-        "name": "PSC Connect (Nord) in HH (Abreise)",
-        "start": "2026-04-22T10:00",
-        "ziel": "2026-04-22T15:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
         "name": "Therapie",
         "start": null,
         "ziel": "2026-04-22T19:00",
