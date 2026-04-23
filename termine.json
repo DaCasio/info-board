@@ -1200,5 +1200,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Update Liste aktualisieren",
+        "start": null,
+        "ziel": "2026-04-24T08:30",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-05-08",
+        "days": [],
+        "notiz": "Erhöhte Schlagzahl von 10 auf 20 an MArtin fürs CAB am kommenden Montag",
+        "checklist": []
     }
 ]
