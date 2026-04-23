@@ -913,7 +913,7 @@
         "checklist": [
             {
                 "text": "rg80",
-                "done": false
+                "done": true
             },
             {
                 "text": "rg88",
