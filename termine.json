@@ -1240,5 +1240,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Nord Team 1 Weekly",
+        "start": "2026-04-24T10:00",
+        "ziel": "2026-04-24T10:55",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-05-08",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
