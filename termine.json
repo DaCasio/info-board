@@ -1221,5 +1221,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "EDU 210 Planung",
+        "start": "2026-06-15T08:00",
+        "ziel": "2026-06-15T17:00",
+        "tags": [
+            "ARBEIT",
+            "EDU"
+        ],
+        "repeat": "daily",
+        "repeatUntil": "2026-06-19",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
