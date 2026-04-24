@@ -735,7 +735,7 @@
             "ANO"
         ],
         "repeat": "none",
-        "repeatUntil": "2026-05-08",
+        "repeatUntil": null,
         "days": [],
         "notiz": "",
         "checklist": [
