@@ -932,7 +932,7 @@
             "ANO"
         ],
         "repeat": "none",
-        "repeatUntil": "2026-05-08",
+        "repeatUntil": null,
         "days": [],
         "notiz": "rg88 Lizenzproblem und Zugriff mit admin nicht möglich. Postponed. Wiedervorlage",
         "checklist": [
