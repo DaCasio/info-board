@@ -1170,5 +1170,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Küche Anlieferung",
+        "start": null,
+        "ziel": "2026-05-06T08:00",
+        "tags": [
+            "TERMINE",
+            "MUTTI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
