@@ -1158,19 +1158,6 @@
         "checklist": []
     },
     {
-        "name": "Mittag",
-        "start": "2026-04-24T12:00",
-        "ziel": "2026-04-24T13:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": "2026-05-08",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-04-24T17:00",
