@@ -1156,5 +1156,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Kühlschrank Muddi wird abgeholt",
+        "start": null,
+        "ziel": "2026-04-27T17:00",
+        "tags": [
+            "TERMINE",
+            "MUTTI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
