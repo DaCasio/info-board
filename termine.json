@@ -1046,7 +1046,7 @@
             "ANO"
         ],
         "repeat": "none",
-        "repeatUntil": "2026-05-13",
+        "repeatUntil": null,
         "days": [],
         "notiz": "",
         "checklist": [
