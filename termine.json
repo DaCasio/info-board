@@ -1223,5 +1223,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "bofrost",
+        "start": null,
+        "ziel": "2026-04-29T11:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
