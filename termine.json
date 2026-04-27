@@ -1205,5 +1205,18 @@
         "days": [],
         "notiz": "3 Juni HQ mit PA Christian und Markus",
         "checklist": []
+    },
+    {
+        "name": "PA Workshop Köln Reminde",
+        "start": null,
+        "ziel": "2026-05-04T09:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-06-19",
+        "days": [],
+        "notiz": "Nachfragen bei Daniel obs bei 3 Juni HQ mit PA Christian und Markus bleibt",
+        "checklist": []
     }
 ]
