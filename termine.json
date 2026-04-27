@@ -1192,5 +1192,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "PA Workshop Köln",
+        "start": null,
+        "ziel": "2026-06-03T09:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-06-19",
+        "days": [],
+        "notiz": "3 Juni HQ mit PA Christian und Markus",
+        "checklist": []
     }
 ]
