@@ -1215,7 +1215,9 @@
         "name": "Daily",
         "start": null,
         "ziel": "2026-04-27T09:40",
-        "tags": [],
+        "tags": [
+            "ARBEIT"
+        ],
         "repeat": "none",
         "repeatUntil": "2026-06-19",
         "days": [],
