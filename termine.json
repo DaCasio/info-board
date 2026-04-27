@@ -1218,5 +1218,16 @@
         "days": [],
         "notiz": "Nachfragen bei Daniel obs bei 3 Juni HQ mit PA Christian und Markus bleibt",
         "checklist": []
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-04-27T17:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": "2026-06-19",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
