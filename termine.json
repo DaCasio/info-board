@@ -15,22 +15,6 @@
         "checklist": []
     },
     {
-        "name": "Reifenwechsel",
-        "start": null,
-        "ziel": "2026-04-27T11:00",
-        "tags": [
-            "ARBEIT",
-            "AUTO",
-            "CASI",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Dieter Burandt GmbH, Moerser Str. 28, 47228 Duisburg",
-        "checklist": []
-    },
-    {
         "name": "Frauenarzt",
         "start": null,
         "ziel": "2026-05-07T16:00",
