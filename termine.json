@@ -912,7 +912,7 @@
     {
         "name": "ANO PA440 auf 11.2.7-h8",
         "start": null,
-        "ziel": "2026-04-27T08:30",
+        "ziel": "2026-05-12T08:30",
         "tags": [
             "ARBEIT",
             "ANO"
@@ -920,7 +920,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "rg88 Lizenzproblem und Zugriff mit admin nicht möglich. Postponed. Wiedervorlage",
+        "notiz": "rg88 Lizenzproblem kein Update möglich - Lizenz wurde beauftragt, bis dahin pausieren",
         "checklist": [
             {
                 "text": "rg88",
