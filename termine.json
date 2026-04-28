@@ -1218,5 +1218,19 @@
         "days": [],
         "notiz": "Nachfragen bei Daniel obs bei 3 Juni HQ mit PA Christian und Markus bleibt",
         "checklist": []
+    },
+    {
+        "name": "ANO JF",
+        "start": null,
+        "ziel": "2026-04-28T13:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
