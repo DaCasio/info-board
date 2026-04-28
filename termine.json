@@ -1220,20 +1220,6 @@
         "checklist": []
     },
     {
-        "name": "ANO JF",
-        "start": null,
-        "ziel": "2026-04-28T13:00",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-04-28T17:00",
