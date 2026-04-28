@@ -1234,19 +1234,6 @@
         "checklist": []
     },
     {
-        "name": "Daily",
-        "start": null,
-        "ziel": "2026-04-28T09:40",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Pause",
         "start": null,
         "ziel": "2026-04-28T12:00",
