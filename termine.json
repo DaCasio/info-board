@@ -1271,5 +1271,100 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "ANO HBE Tausch",
+        "start": "2026-05-06T09:00",
+        "ziel": "2026-05-06T18:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Intern angefragt",
+        "checklist": [
+            {
+                "text": "hnl",
+                "done": false
+            },
+            {
+                "text": "bau",
+                "done": false
+            },
+            {
+                "text": "mei",
+                "done": false
+            },
+            {
+                "text": "dos",
+                "done": false
+            },
+            {
+                "text": "enn",
+                "done": false
+            },
+            {
+                "text": "erp",
+                "done": false
+            },
+            {
+                "text": "ibe",
+                "done": false
+            },
+            {
+                "text": "beu",
+                "done": false
+            },
+            {
+                "text": "xfr",
+                "done": false
+            },
+            {
+                "text": "gem",
+                "done": false
+            },
+            {
+                "text": "bar",
+                "done": false
+            },
+            {
+                "text": "boi",
+                "done": false
+            },
+            {
+                "text": "roe",
+                "done": false
+            },
+            {
+                "text": "gro",
+                "done": false
+            },
+            {
+                "text": "rei",
+                "done": false
+            },
+            {
+                "text": "muen",
+                "done": false
+            },
+            {
+                "text": "her",
+                "done": false
+            },
+            {
+                "text": "imv",
+                "done": false
+            },
+            {
+                "text": "hes",
+                "done": false
+            },
+            {
+                "text": "heu",
+                "done": false
+            }
+        ]
     }
 ]
