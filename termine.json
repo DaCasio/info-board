@@ -866,20 +866,6 @@
         "checklist": []
     },
     {
-        "name": "ANO BEU Austausch",
-        "start": null,
-        "ziel": "2026-04-28T14:00",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Therapie",
         "start": null,
         "ziel": "2026-05-06T19:00",
