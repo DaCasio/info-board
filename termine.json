@@ -1169,16 +1169,5 @@
         "days": [],
         "notiz": "Intern angefragt",
         "checklist": []
-    },
-    {
-        "name": "Gasflasche",
-        "start": "2026-04-29T17:00",
-        "ziel": "2026-04-29T18:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Paul Swertz Moers - bis 18 Uhr",
-        "checklist": []
     }
 ]
