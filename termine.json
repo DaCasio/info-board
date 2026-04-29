@@ -550,10 +550,7 @@
         "name": "Klaus Flur und Küche tapezieren ",
         "start": null,
         "ziel": "2026-04-29T16:00",
-        "tags": [
-            "TERMINE",
-            "MUTTI"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
