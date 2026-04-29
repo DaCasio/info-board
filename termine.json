@@ -1170,9 +1170,7 @@
         "name": "bofrost",
         "start": null,
         "ziel": "2026-04-29T11:00",
-        "tags": [
-            "TERMINE"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
