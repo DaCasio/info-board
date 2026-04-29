@@ -1231,5 +1231,18 @@
         "days": [],
         "notiz": "Intern angefragt",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": null,
+        "ziel": "2026-04-29T09:40",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
