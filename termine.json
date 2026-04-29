@@ -1246,19 +1246,6 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": null,
-        "ziel": "2026-04-29T12:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Arbeit",
         "start": null,
         "ziel": "2026-04-29T13:00",
