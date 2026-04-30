@@ -1139,18 +1139,5 @@
         "days": [],
         "notiz": "Screensharing für Johannes Hü., muss aber noch abgeklärt werden",
         "checklist": []
-    },
-    {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-04-30T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
