@@ -1101,19 +1101,6 @@
         "checklist": []
     },
     {
-        "name": "Picnic",
-        "start": null,
-        "ziel": "2026-04-30T09:45",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "PA AML HQ - Titans Workshop",
         "start": null,
         "ziel": "2026-06-02T09:00",
