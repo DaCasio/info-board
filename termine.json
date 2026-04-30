@@ -1155,7 +1155,7 @@
         "checklist": []
     },
     {
-        "name": "ANO PA440 auf 11.2.7-h8",
+        "name": "ANO PA440 auf Upload",
         "start": "2026-04-30T08:00",
         "ziel": "2026-04-30T17:00",
         "tags": [
@@ -1165,7 +1165,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Upload Base 11.2.0\nUpload 11.2.7.-h8",
         "checklist": [
             {
                 "text": "abl",
