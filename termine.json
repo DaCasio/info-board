@@ -1155,7 +1155,10 @@
         "name": "Anfrage DL für Unterstützung bei CIAM Go-Live",
         "start": null,
         "ziel": "2026-05-09T09:00",
-        "tags": [],
+        "tags": [
+            "ARBEIT",
+            "RBB"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
