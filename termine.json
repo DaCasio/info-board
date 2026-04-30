@@ -776,7 +776,8 @@
         "start": null,
         "ziel": "2026-05-04T18:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "RBB"
         ],
         "repeat": "none",
         "repeatUntil": null,
