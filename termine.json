@@ -1153,5 +1153,296 @@
         "days": [],
         "notiz": "Screensharing für Johannes Hü., muss aber noch abgeklärt werden",
         "checklist": []
+    },
+    {
+        "name": "ANO PA440 auf 11.2.7-h8",
+        "start": "2026-04-30T08:00",
+        "ziel": "2026-04-30T17:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "abl",
+                "done": false
+            },
+            {
+                "text": "asc",
+                "done": false
+            },
+            {
+                "text": "ath",
+                "done": false
+            },
+            {
+                "text": "bar",
+                "done": false
+            },
+            {
+                "text": "bau",
+                "done": false
+            },
+            {
+                "text": "beu",
+                "done": false
+            },
+            {
+                "text": "boi",
+                "done": false
+            },
+            {
+                "text": "bou",
+                "done": false
+            },
+            {
+                "text": "bri",
+                "done": false
+            },
+            {
+                "text": "cav",
+                "done": false
+            },
+            {
+                "text": "ces",
+                "done": false
+            },
+            {
+                "text": "cho",
+                "done": false
+            },
+            {
+                "text": "cluster-220-ano",
+                "done": false
+            },
+            {
+                "text": "col",
+                "done": false
+            },
+            {
+                "text": "cui",
+                "done": false
+            },
+            {
+                "text": "cul",
+                "done": false
+            },
+            {
+                "text": "dam",
+                "done": false
+            },
+            {
+                "text": "dos",
+                "done": false
+            },
+            {
+                "text": "enn",
+                "done": false
+            },
+            {
+                "text": "erp",
+                "done": false
+            },
+            {
+                "text": "gem",
+                "done": false
+            },
+            {
+                "text": "grg",
+                "done": false
+            },
+            {
+                "text": "gro",
+                "done": false
+            },
+            {
+                "text": "her",
+                "done": false
+            },
+            {
+                "text": "hes",
+                "done": false
+            },
+            {
+                "text": "heu",
+                "done": false
+            },
+            {
+                "text": "hnl",
+                "done": false
+            },
+            {
+                "text": "hon",
+                "done": false
+            },
+            {
+                "text": "hpl",
+                "done": false
+            },
+            {
+                "text": "hpt",
+                "done": false
+            },
+            {
+                "text": "hsp",
+                "done": false
+            },
+            {
+                "text": "ibe",
+                "done": false
+            },
+            {
+                "text": "imv",
+                "done": false
+            },
+            {
+                "text": "jar",
+                "done": false
+            },
+            {
+                "text": "lin",
+                "done": false
+            },
+            {
+                "text": "lis",
+                "done": false
+            },
+            {
+                "text": "lyo",
+                "done": false
+            },
+            {
+                "text": "mal",
+                "done": false
+            },
+            {
+                "text": "MarkusKaffee",
+                "done": false
+            },
+            {
+                "text": "mas",
+                "done": false
+            },
+            {
+                "text": "mei",
+                "done": false
+            },
+            {
+                "text": "mir",
+                "done": false
+            },
+            {
+                "text": "mkw",
+                "done": false
+            },
+            {
+                "text": "mot",
+                "done": false
+            },
+            {
+                "text": "muen",
+                "done": false
+            },
+            {
+                "text": "nor",
+                "done": false
+            },
+            {
+                "text": "pin",
+                "done": false
+            },
+            {
+                "text": "rad",
+                "done": false
+            },
+            {
+                "text": "rei",
+                "done": false
+            },
+            {
+                "text": "rij",
+                "done": false
+            },
+            {
+                "text": "roe",
+                "done": false
+            },
+            {
+                "text": "roo",
+                "done": false
+            },
+            {
+                "text": "ros",
+                "done": false
+            },
+            {
+                "text": "sag",
+                "done": false
+            },
+            {
+                "text": "sau",
+                "done": false
+            },
+            {
+                "text": "see",
+                "done": false
+            },
+            {
+                "text": "sef",
+                "done": false
+            },
+            {
+                "text": "sho",
+                "done": false
+            },
+            {
+                "text": "sie-neu",
+                "done": false
+            },
+            {
+                "text": "sis",
+                "done": false
+            },
+            {
+                "text": "sti",
+                "done": false
+            },
+            {
+                "text": "tou",
+                "done": false
+            },
+            {
+                "text": "vau",
+                "done": false
+            },
+            {
+                "text": "waw",
+                "done": false
+            },
+            {
+                "text": "wey",
+                "done": false
+            },
+            {
+                "text": "wil",
+                "done": false
+            },
+            {
+                "text": "xfr",
+                "done": false
+            },
+            {
+                "text": "zem",
+                "done": false
+            },
+            {
+                "text": "zoe",
+                "done": false
+            }
+        ]
     }
 ]
