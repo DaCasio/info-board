@@ -1150,5 +1150,16 @@
         "days": [],
         "notiz": "Intern angefragt",
         "checklist": []
+    },
+    {
+        "name": "Anfrage DL für Unterstützung bei CIAM Go-Live",
+        "start": null,
+        "ziel": "2026-05-09T09:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Screensharing für Johannes Hü., muss aber noch abgeklärt werden",
+        "checklist": []
     }
 ]
