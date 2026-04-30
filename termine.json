@@ -44,20 +44,6 @@
         "checklist": []
     },
     {
-        "name": "Morgen Frei (Tag der Arbeit)",
-        "start": null,
-        "ziel": "2026-04-30T17:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Tag der Arbeit 01. Mai 2026 NRW",
-        "checklist": []
-    },
-    {
         "name": "AXN HQ Neu Teilstart",
         "start": null,
         "ziel": "2026-05-04T08:00",
