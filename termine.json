@@ -1166,5 +1166,44 @@
         "days": [],
         "notiz": "Screensharing für Johannes Hü., muss aber noch abgeklärt werden",
         "checklist": []
+    },
+    {
+        "name": "Campus Beu PA abholen",
+        "start": "2026-04-30T11:30",
+        "ziel": "2026-04-30T12:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Eckenbergstraße 16b, 45307 Essen\nEntpsrechend planen und losfahren",
+        "checklist": []
+    },
+    {
+        "name": "Campus Beu PA abholen",
+        "start": "2026-04-30T11:30",
+        "ziel": "2026-04-30T12:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Eckenbergstraße 16b, 45307 Essen\nEntpsrechend planen und losfahren",
+        "checklist": []
+    },
+    {
+        "name": "Campus Beu PA abholen",
+        "start": "2026-04-30T11:30",
+        "ziel": "2026-04-30T12:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Eckenbergstraße 16b, 45307 Essen\nEntpsrechend planen und losfahren",
+        "checklist": []
     }
 ]
