@@ -1126,5 +1126,16 @@
         "days": [],
         "notiz": "Screensharing für Johannes Hü., muss aber noch abgeklärt werden",
         "checklist": []
+    },
+    {
+        "name": "Strom Wasser ablesen",
+        "start": null,
+        "ziel": "2026-05-01T09:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
