@@ -1139,5 +1139,18 @@
         "days": [],
         "notiz": "Am besten Abgeben",
         "checklist": []
+    },
+    {
+        "name": "Früh abgeben",
+        "start": null,
+        "ziel": "2026-05-04T08:45",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Klären ob Daniel oder Stefan die haben möchten",
+        "checklist": []
     }
 ]
