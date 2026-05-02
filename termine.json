@@ -265,12 +265,15 @@
     {
         "name": "Arbeit",
         "start": null,
-        "ziel": "2026-07-13T08:00",
+        "ziel": "2026-07-09T08:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": ""
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Sommerferien",
