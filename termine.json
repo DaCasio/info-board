@@ -536,19 +536,6 @@
         "checklist": []
     },
     {
-        "name": "Doofmund",
-        "start": null,
-        "ziel": "2026-05-03T15:00",
-        "tags": [
-            "GLADBACH"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Hoffenheim ",
         "start": null,
         "ziel": "2026-05-16T15:30",
