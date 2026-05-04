@@ -1100,7 +1100,7 @@
         "checklist": []
     },
     {
-        "name": "Früh",
+        "name": "Früh ist abgegeben",
         "start": null,
         "ziel": "2026-06-01T06:00",
         "tags": [
@@ -1109,7 +1109,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Am besten abgeben",
+        "notiz": "abgegeben an Daniel",
         "checklist": []
     },
     {
