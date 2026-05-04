@@ -30,20 +30,6 @@
         "checklist": []
     },
     {
-        "name": "Fahrrad wegbringen",
-        "start": null,
-        "ziel": "2026-05-04T15:00",
-        "tags": [
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Entwurmung SJPD",
         "start": null,
         "ziel": "2026-05-07T09:00",
