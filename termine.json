@@ -1166,5 +1166,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "RBB Ende",
+        "start": null,
+        "ziel": "2026-07-20T06:00",
+        "tags": [
+            "ARBEIT",
+            "RBB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "\n",
+        "checklist": []
     }
 ]
