@@ -1137,5 +1137,18 @@
         "days": [],
         "notiz": "Abgeben angefragt - Daniel hat schon spät / Stefan Stefan hat X",
         "checklist": []
+    },
+    {
+        "name": "Früh abgeben",
+        "start": null,
+        "ziel": "2026-08-03T08:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Abgeben angefragt - Stefan hat X",
+        "checklist": []
     }
 ]
