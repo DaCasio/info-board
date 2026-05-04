@@ -1090,7 +1090,7 @@
     },
     {
         "name": "Feierabend",
-        "start": "2026-05-04T13:00",
+        "start": null,
         "ziel": "2026-05-04T17:00",
         "tags": [
             "ARBEIT"
