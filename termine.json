@@ -1113,16 +1113,16 @@
         "checklist": []
     },
     {
-        "name": "Früh abgeben",
+        "name": "Früh",
         "start": null,
-        "ziel": "2026-05-04T08:45",
+        "ziel": "2026-06-05T06:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Am 1.5. Daniel & Stefan angeschrieben, gucken was kommt.",
+        "notiz": "Daniel übernimmt meine Früh am 1 bis 3.6 & ich übernehme die Früh am 5.6.",
         "checklist": []
     },
     {
