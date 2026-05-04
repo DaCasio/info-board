@@ -1148,5 +1148,18 @@
         "days": [],
         "notiz": "Am 1.5. Daniel & Stefan angeschrieben, gucken was kommt.",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-05-04T09:40",
+        "ziel": "2026-05-04T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
