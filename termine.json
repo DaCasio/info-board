@@ -978,20 +978,6 @@
         "checklist": []
     },
     {
-        "name": "Besim Boden Küche und Flur Muddi",
-        "start": null,
-        "ziel": "2026-05-04T08:00",
-        "tags": [
-            "TERMINE",
-            "MUTTI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "CVE - Daniel/Jörg",
         "start": null,
         "ziel": "2026-05-05T13:00",
