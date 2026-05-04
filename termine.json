@@ -733,20 +733,6 @@
         ]
     },
     {
-        "name": "RBB Start",
-        "start": null,
-        "ziel": "2026-05-04T18:00",
-        "tags": [
-            "ARBEIT",
-            "RBB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "\n",
-        "checklist": []
-    },
-    {
         "name": "RBB Ende",
         "start": null,
         "ziel": "2026-05-11T06:00",
