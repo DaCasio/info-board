@@ -44,16 +44,6 @@
         "checklist": []
     },
     {
-        "name": "AXN HQ Neu Teilstart",
-        "start": null,
-        "ziel": "2026-05-04T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": "Empfang, Meetingräume, 1. OG"
-    },
-    {
         "name": "Entwurmung SJPD",
         "start": null,
         "ziel": "2026-05-07T09:00",
