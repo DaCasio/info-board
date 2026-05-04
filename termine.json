@@ -1132,8 +1132,8 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "daily",
+        "repeatUntil": "2026-07-31",
         "days": [],
         "notiz": "Abgeben angefragt - Daniel hat schon spät / Stefan Stefan hat X",
         "checklist": []
