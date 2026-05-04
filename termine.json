@@ -1150,5 +1150,18 @@
         "days": [],
         "notiz": "Abgeben angefragt - Stefan hat X",
         "checklist": []
+    },
+    {
+        "name": "Daniel 1on1",
+        "start": "2026-05-05T11:30",
+        "ziel": "2026-05-05T11:55",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "\n",
+        "checklist": []
     }
 ]
