@@ -1180,19 +1180,6 @@
         "checklist": []
     },
     {
-        "name": "Vorbereiten 1on1/CVE",
-        "start": "2026-05-05T11:10",
-        "ziel": "2026-05-05T11:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ANO Upload",
         "start": "2026-05-05T13:30",
         "ziel": "2026-05-05T17:00",
