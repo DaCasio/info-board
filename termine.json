@@ -1191,5 +1191,16 @@
         "days": [],
         "notiz": "\n",
         "checklist": []
+    },
+    {
+        "name": "ANO Upload",
+        "start": null,
+        "ziel": "2026-05-05T09:40",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
