@@ -1196,7 +1196,10 @@
         "name": "ANO Upload",
         "start": null,
         "ziel": "2026-05-05T09:40",
-        "tags": [],
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
