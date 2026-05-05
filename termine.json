@@ -1142,20 +1142,6 @@
         "checklist": []
     },
     {
-        "name": "ANO Upload",
-        "start": null,
-        "ziel": "2026-05-05T17:00",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "CVE",
         "start": "2026-06-09T08:30",
         "ziel": "2026-06-09T09:40",
