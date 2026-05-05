@@ -1165,5 +1165,18 @@
         "days": [],
         "notiz": "\n",
         "checklist": []
+    },
+    {
+        "name": "Pause",
+        "start": "2026-05-05T12:00",
+        "ziel": "2026-05-05T13:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "\n",
+        "checklist": []
     }
 ]
