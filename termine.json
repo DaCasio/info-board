@@ -1167,5 +1167,32 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "CVE",
+        "start": "2026-06-09T08:30",
+        "ziel": "2026-06-09T09:40",
+        "tags": [
+            "ARBEIT",
+            "CVE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "Product/Service Owner benennen ",
+                "done": false
+            },
+            {
+                "text": "Kundenvollständigkeit prüfen  / Liste migrieren (Start: Palo Alto)",
+                "done": false
+            },
+            {
+                "text": "Mailvorlage anpassen & Umziehen (CC Teams) / Template im Kix? Bewerten!",
+                "done": false
+            }
+        ]
     }
 ]
