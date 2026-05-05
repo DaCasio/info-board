@@ -1207,12 +1207,11 @@
         "checklist": []
     },
     {
-        "name": "Vorbereiten 1on1",
+        "name": "Vorbereiten 1on1/CVE",
         "start": "2026-05-05T11:10",
         "ziel": "2026-05-05T11:30",
         "tags": [
-            "ARBEIT",
-            "ANO"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
