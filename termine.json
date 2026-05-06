@@ -956,7 +956,8 @@
         "start": null,
         "ziel": "2026-05-11T08:30",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "FRÜH"
         ],
         "repeat": "none",
         "repeatUntil": null,
