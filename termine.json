@@ -913,8 +913,8 @@
     },
     {
         "name": "Anfrage DL für Unterstützung bei CIAM Go-Live",
-        "start": null,
-        "ziel": "2026-05-09T09:00",
+        "start": "2026-05-09T08:00",
+        "ziel": "2026-05-09T20:00",
         "tags": [
             "ARBEIT",
             "RBB"
@@ -922,7 +922,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Screensharing für Johannes Hü., muss aber noch abgeklärt werden",
+        "notiz": "Screensharing für Johannes Hü., muss aber noch abgeklärt werden\nKa ob und wann die sich melden...",
         "checklist": []
     },
     {
