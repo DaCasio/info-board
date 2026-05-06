@@ -1030,5 +1030,19 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "Nageltermin",
+        "start": null,
+        "ziel": "2026-05-09T12:00",
+        "tags": [
+            "KERO",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
