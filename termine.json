@@ -557,7 +557,7 @@
         "checklist": [
             {
                 "text": "hnl - me",
-                "done": false
+                "done": true
             },
             {
                 "text": "bau - me",
