@@ -912,20 +912,6 @@
         "checklist": []
     },
     {
-        "name": "ANO HBE Tausch",
-        "start": null,
-        "ziel": "2026-05-06T15:00",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Anfrage DL für Unterstützung bei CIAM Go-Live",
         "start": null,
         "ziel": "2026-05-09T09:00",
