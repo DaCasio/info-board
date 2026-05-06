@@ -1044,18 +1044,5 @@
                 "done": false
             }
         ]
-    },
-    {
-        "name": "Picnic",
-        "start": null,
-        "ziel": "2026-05-06T15:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
