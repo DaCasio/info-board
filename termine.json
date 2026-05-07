@@ -569,11 +569,11 @@
             },
             {
                 "text": "jar - me",
-                "done": true
+                "done": false
             },
             {
                 "text": "hpl - me",
-                "done": true
+                "done": false
             },
             {
                 "text": "ath - me",
