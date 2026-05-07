@@ -15,20 +15,6 @@
         "checklist": []
     },
     {
-        "name": "Entwurmung SJPD",
-        "start": null,
-        "ziel": "2026-05-07T17:00",
-        "tags": [
-            "KATZIS",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "AXN HQ alt letzter Tag - Wochenende",
         "start": null,
         "ziel": "2026-05-08T17:00",
