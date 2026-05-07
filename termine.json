@@ -965,5 +965,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "OT-Sicherheit: Insights und Impact",
+        "start": "2026-05-08T11:00",
+        "ziel": "2026-05-08T12:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
