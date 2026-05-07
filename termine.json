@@ -29,14 +29,17 @@
         "checklist": []
     },
     {
-        "name": "AXN HQ alt letzter Tag",
+        "name": "AXN HQ alt letzter Tag - Wochenende",
         "start": null,
         "ziel": "2026-05-08T17:00",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Auszug ALBIN KÖBIS"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Auszug ALBIN KÖBIS",
+        "checklist": []
     },
     {
         "name": "Füße",
