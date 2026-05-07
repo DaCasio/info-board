@@ -860,9 +860,9 @@
         "checklist": []
     },
     {
-        "name": "Früh abgeben",
+        "name": "Früh abgeben - Prüfen",
         "start": null,
-        "ziel": "2026-05-07T11:30",
+        "ziel": "2026-05-07T13:00",
         "tags": [
             "ARBEIT",
             "FRÜH"
