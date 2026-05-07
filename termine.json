@@ -621,7 +621,7 @@
             },
             {
                 "text": "mot",
-                "done": false
+                "done": true
             },
             {
                 "text": "nor",
