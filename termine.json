@@ -557,7 +557,7 @@
         "checklist": [
             {
                 "text": "bou - me",
-                "done": false
+                "done": true
             },
             {
                 "text": "bri - me",
