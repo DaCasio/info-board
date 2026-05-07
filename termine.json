@@ -569,7 +569,7 @@
             },
             {
                 "text": "jar - me 1/2",
-                "done": true
+                "done": false
             },
             {
                 "text": "hpl - me 1/2",
@@ -577,7 +577,7 @@
             },
             {
                 "text": "ath - me 1/2",
-                "done": true
+                "done": false
             },
             {
                 "text": "sie - me 1/2",
