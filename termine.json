@@ -832,7 +832,7 @@
         "checklist": []
     },
     {
-        "name": "Früh",
+        "name": "Früh - nur heute",
         "start": null,
         "ziel": "2026-06-05T06:00",
         "tags": [
