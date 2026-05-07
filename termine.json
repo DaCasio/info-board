@@ -556,35 +556,35 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "bou - me 1/2",
+                "text": "bou - me 2/2",
                 "done": false
             },
             {
-                "text": "bri - me 1/2",
+                "text": "bri - me 2/2",
                 "done": false
             },
             {
-                "text": "hon - me 1/2",
+                "text": "hon - me 2/2",
                 "done": false
             },
             {
-                "text": "jar - me 1/2",
+                "text": "jar - me 2/2",
                 "done": false
             },
             {
-                "text": "hpl - me 1/2",
-                "done": true
-            },
-            {
-                "text": "ath - me 1/2",
+                "text": "hpl - me 2/2",
                 "done": false
             },
             {
-                "text": "sie - me 1/2",
+                "text": "ath - me 2/2",
                 "done": false
             },
             {
-                "text": "lin - me 1/2",
+                "text": "sie - me 2/2",
+                "done": false
+            },
+            {
+                "text": "lin - me 2/2",
                 "done": false
             },
             {
@@ -592,7 +592,7 @@
                 "done": false
             },
             {
-                "text": "cav - me 1/2",
+                "text": "cav - me 2/2",
                 "done": false
             },
             {
