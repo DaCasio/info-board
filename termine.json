@@ -543,20 +543,6 @@
         "checklist": []
     },
     {
-        "name": "ANO PA440 auf 11.2.7-h8",
-        "start": null,
-        "ziel": "2026-05-07T11:30",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "pa-440-1\npa-440-2",
-        "checklist": []
-    },
-    {
         "name": "Rb Ende",
         "start": null,
         "ziel": "2026-05-11T06:00",
