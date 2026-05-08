@@ -579,7 +579,7 @@
     },
     {
         "name": "ZScaler",
-        "start": "2026-05-08T08:00",
+        "start": null,
         "ziel": "2026-05-08T09:40",
         "tags": [
             "ARBEIT",
