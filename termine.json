@@ -724,20 +724,6 @@
         ]
     },
     {
-        "name": "Küchenaufbau",
-        "start": null,
-        "ziel": "2026-05-08T08:00",
-        "tags": [
-            "TERMINE",
-            "MUTTI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "CVE - Daniel/Jörg",
         "start": "2026-06-05T14:00",
         "ziel": "2026-06-05T14:25",
