@@ -15,7 +15,7 @@
         "checklist": []
     },
     {
-        "name": "AXN HQ alt letzter Tag - Dispatching - Wochenende",
+        "name": "Wochenende",
         "start": null,
         "ziel": "2026-05-08T18:00",
         "tags": [
@@ -24,7 +24,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Auszug ALBIN KÖBIS",
+        "notiz": "",
         "checklist": []
     },
     {
