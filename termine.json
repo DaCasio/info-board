@@ -592,7 +592,7 @@
         "checklist": [
             {
                 "text": "rad - me",
-                "done": true
+                "done": false
             },
             {
                 "text": "zoe - me",
