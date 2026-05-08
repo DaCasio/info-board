@@ -15,19 +15,6 @@
         "checklist": []
     },
     {
-        "name": "Wochenende",
-        "start": null,
-        "ziel": "2026-05-08T18:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Füße",
         "start": null,
         "ziel": "2026-05-13T15:00",
