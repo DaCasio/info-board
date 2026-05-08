@@ -790,5 +790,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Einkaufen",
+        "start": null,
+        "ziel": "2026-05-09T16:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
