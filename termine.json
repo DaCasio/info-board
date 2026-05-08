@@ -16,7 +16,7 @@
     },
     {
         "name": "AXN HQ alt letzter Tag - Dispatching - Wochenende",
-        "start": "2026-05-08T16:00",
+        "start": null,
         "ziel": "2026-05-08T18:00",
         "tags": [
             "ARBEIT"
