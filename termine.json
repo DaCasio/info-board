@@ -591,84 +591,8 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "rad - me",
-                "done": true
-            },
-            {
-                "text": "zoe - me",
-                "done": true
-            },
-            {
-                "text": "lyo - me",
-                "done": true
-            },
-            {
                 "text": "mal - me",
                 "done": false
-            },
-            {
-                "text": "pin - me",
-                "done": true
-            },
-            {
-                "text": "sho - me",
-                "done": true
-            },
-            {
-                "text": "rij - me",
-                "done": true
-            },
-            {
-                "text": "ros - me",
-                "done": true
-            },
-            {
-                "text": "cul - me",
-                "done": true
-            },
-            {
-                "text": "dam - me",
-                "done": true
-            },
-            {
-                "text": "sag",
-                "done": true
-            },
-            {
-                "text": "col",
-                "done": true
-            },
-            {
-                "text": "sis",
-                "done": true
-            },
-            {
-                "text": "sau",
-                "done": true
-            },
-            {
-                "text": "see",
-                "done": true
-            },
-            {
-                "text": "wer",
-                "done": true
-            },
-            {
-                "text": "roo",
-                "done": true
-            },
-            {
-                "text": "tou",
-                "done": true
-            },
-            {
-                "text": "abl",
-                "done": true
-            },
-            {
-                "text": "asc",
-                "done": true
             }
         ]
     },
