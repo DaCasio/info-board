@@ -823,5 +823,19 @@
         "days": [],
         "notiz": "Altes Abo Yahoo läuft aus, nutzen via T-Online",
         "checklist": []
+    },
+    {
+        "name": "RTL+ alt - ABO prüfen",
+        "start": null,
+        "ziel": "2026-05-15T18:00",
+        "tags": [
+            "TERMINE",
+            "ABO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Altes Abo Yahoo läuft aus 6.6.26\n15.5. Paypal Buchung sollte eigentlich nicht rausgehen\nVia T-Online nutzen",
+        "checklist": []
     }
 ]
