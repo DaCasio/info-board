@@ -240,14 +240,17 @@
         "checklist": []
     },
     {
-        "name": "Wohnungsrückgabe Verjährung",
+        "name": "Wohnungs- rückgabe Verjährung",
         "start": null,
         "ziel": "2026-08-01T00:00",
         "tags": [
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "Kleiststraße"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Kleiststraße",
+        "checklist": []
     },
     {
         "name": "AXN HQ Umzug Done",
