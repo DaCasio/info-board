@@ -809,5 +809,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "RTL+ alt - ABO Ende",
+        "start": null,
+        "ziel": "2026-06-06T00:00",
+        "tags": [
+            "TERMINE",
+            "ABO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Altes Abo Yahoo läuft aus, nutzen via T-Online",
+        "checklist": []
     }
 ]
