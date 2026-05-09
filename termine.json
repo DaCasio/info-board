@@ -748,5 +748,18 @@
         "days": [],
         "notiz": "Altes Abo Yahoo läuft aus 6.6.26\n15.5. Paypal Buchung sollte eigentlich nicht rausgehen\nVia T-Online nutzen",
         "checklist": []
+    },
+    {
+        "name": "Abbeit",
+        "start": null,
+        "ziel": "2026-05-15T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Christi Himmelfahrt 14. Mai 2026",
+        "checklist": []
     }
 ]
