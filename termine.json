@@ -267,8 +267,7 @@
         "start": null,
         "ziel": "2026-08-01T12:00",
         "tags": [
-            "ARBEIT",
-            "URLAUB"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
