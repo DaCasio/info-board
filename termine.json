@@ -738,21 +738,6 @@
         ]
     },
     {
-        "name": "Duisburg fahren",
-        "start": null,
-        "ziel": "2026-05-09T14:30",
-        "tags": [
-            "TERMINE",
-            "KERO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Einkaufen",
         "start": null,
         "ziel": "2026-05-09T16:00",
