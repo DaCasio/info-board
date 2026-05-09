@@ -507,20 +507,6 @@
         "checklist": []
     },
     {
-        "name": "Rb Ende",
-        "start": null,
-        "ziel": "2026-05-11T06:00",
-        "tags": [
-            "ARBEIT",
-            "RBB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "\n",
-        "checklist": []
-    },
-    {
         "name": "Spät",
         "start": null,
         "ziel": "2026-05-18T09:30",
