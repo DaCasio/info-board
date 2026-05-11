@@ -533,20 +533,6 @@
         "checklist": []
     },
     {
-        "name": "ANO PA440 auf 11.2.7-h8",
-        "start": "2026-05-11T08:00",
-        "ziel": "2026-05-11T09:40",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "CVE - Daniel/Jörg",
         "start": "2026-06-05T14:00",
         "ziel": "2026-06-05T14:25",
