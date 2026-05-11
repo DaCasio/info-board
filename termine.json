@@ -70,19 +70,6 @@
         "checklist": []
     },
     {
-        "name": "Pfingstmontag",
-        "start": "2026-05-25T00:00",
-        "ziel": "2026-05-25T23:59",
-        "tags": [
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Essen gehen",
         "start": null,
         "ziel": "2026-05-25T17:30",
