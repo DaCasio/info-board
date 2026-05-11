@@ -547,7 +547,7 @@
         "checklist": [
             {
                 "text": "grg - me",
-                "done": false
+                "done": true
             },
             {
                 "text": "sti - me",
