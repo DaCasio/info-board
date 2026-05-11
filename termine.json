@@ -544,40 +544,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "grg - me",
-                "done": false
-            },
-            {
-                "text": "sti - me",
-                "done": false
-            },
-            {
-                "text": "vau - me",
-                "done": false
-            },
-            {
-                "text": "zem - me",
-                "done": false
-            },
-            {
-                "text": "waw - me",
-                "done": false
-            },
-            {
-                "text": "sef - me",
-                "done": false
-            },
-            {
-                "text": "wey - me",
-                "done": false
-            },
-            {
-                "text": "wil - me",
-                "done": false
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "CVE - Daniel/Jörg",
