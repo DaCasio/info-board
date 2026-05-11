@@ -571,11 +571,11 @@
             },
             {
                 "text": "wey - me",
-                "done": false
+                "done": true
             },
             {
                 "text": "wil - me",
-                "done": false
+                "done": true
             }
         ]
     },
