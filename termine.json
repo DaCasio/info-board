@@ -145,10 +145,13 @@
         "start": null,
         "ziel": "2026-06-25T00:00",
         "tags": [
-            "TERMINE"
+            "ABO"
         ],
         "repeat": "none",
-        "notiz": "Abo-Ende"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Abo-Ende",
+        "checklist": []
     },
     {
         "name": "AXN HQ alt Rückbau Ende",
