@@ -738,5 +738,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Klaus 2 Bahnen tapezieren und Fußleisten Acryl ",
+        "start": null,
+        "ziel": "2026-05-15T09:00",
+        "tags": [
+            "MUTTI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
