@@ -726,19 +726,6 @@
         "checklist": []
     },
     {
-        "name": "Leon",
-        "start": "2026-05-12T10:00",
-        "ziel": "2026-05-12T10:15",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Mittag",
         "start": "2026-05-12T12:00",
         "ziel": "2026-05-12T13:00",
