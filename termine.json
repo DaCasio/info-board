@@ -751,5 +751,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Muddi Küche einrp",
+        "start": null,
+        "ziel": "2026-05-13T16:00",
+        "tags": [
+            "MUTTI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
