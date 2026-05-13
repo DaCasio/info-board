@@ -812,5 +812,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Frauenarzt",
+        "start": null,
+        "ziel": "2026-06-25T16:00",
+        "tags": [
+            "KERO",
+            "DOK",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
