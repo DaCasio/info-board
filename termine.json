@@ -651,10 +651,10 @@
             "RBB"
         ],
         "repeat": "none",
-        "notiz": "\\n",
-        "checklist": [],
         "repeatUntil": null,
-        "days": []
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Urlaub",
