@@ -828,7 +828,7 @@
         "checklist": []
     },
     {
-        "name": "Update 11.2.7-h8",
+        "name": "Update 11.2.7-h8 inet/data",
         "start": "2026-06-08T08:30",
         "ziel": "2026-06-08T11:00",
         "tags": [
