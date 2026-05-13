@@ -16,16 +16,17 @@
     },
     {
         "name": "Füße",
-        "start": null,
+        "start": "2026-05-13T14:30",
         "ziel": "2026-05-13T15:00",
         "tags": [
             "KERO",
+            "CASI",
             "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Kero hinfahren - Termin 15 uhr",
         "checklist": []
     },
     {
