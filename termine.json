@@ -75,7 +75,9 @@
         "ziel": "2026-05-25T17:30",
         "tags": [
             "TERMINE",
-            "KATZIS"
+            "KATZIS",
+            "CASI",
+            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
