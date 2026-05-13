@@ -1,25 +1,23 @@
 [
     {
-        "name": "Auto konfigurieren",
+        "name": "Arbeit",
         "start": null,
-        "ziel": "2026-06-01T09:00",
+        "ziel": "2026-05-15T08:00",
         "tags": [
-            "ARBEIT",
-            "AUTO",
-            "CASI"
+            "ARBEIT"
         ],
         "repeat": "none",
+        "notiz": "",
+        "checklist": [],
         "repeatUntil": null,
-        "days": [],
-        "notiz": "Info Gunna 13.4.: Kann ab Juni konfen und bestellen\nPrüfen und Audi Q4 55 e-tron konfen\nBruttolistenpreis: 74.540 €\nRegel: 0,25%\nGvV brutto/Monat: 186,35 €\nNettobelastung/Monat: 78,27 €\nDifferenz zum Octavia RS: -165,33 €\nAuto läuft 8.12.26 ab",
-        "checklist": []
+        "days": []
     },
     {
-        "name": "Eurowings glatt",
-        "start": null,
-        "ziel": "2026-06-15T15:00",
+        "name": "Kernmeeting ANO",
+        "start": "2026-05-15T09:00",
+        "ziel": "2026-05-15T09:25",
         "tags": [
-            "FINANZEN"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -28,55 +26,24 @@
         "checklist": []
     },
     {
-        "name": "Montag frei (Pfingsten)",
+        "name": "Klaus 2 Bahnen tapezieren und Fußleisten Acryl",
         "start": null,
-        "ziel": "2026-05-22T17:00",
+        "ziel": "2026-05-15T09:00",
         "tags": [
-            "ARBEIT",
-            "FREI"
+            "MUTTI"
         ],
         "repeat": "none",
+        "notiz": "",
+        "checklist": [],
         "repeatUntil": null,
-        "days": [],
-        "notiz": "Pfingstmontag 25. Mai 2026",
-        "checklist": []
+        "days": []
     },
     {
-        "name": "Essen gehen",
-        "start": null,
-        "ziel": "2026-05-25T17:30",
+        "name": "Daily",
+        "start": "2026-05-15T09:40",
+        "ziel": "2026-05-15T10:00",
         "tags": [
-            "TERMINE",
-            "KATZIS",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Moerser Brauhaus",
-        "checklist": []
-    },
-    {
-        "name": "Astro: Blauer Mikromond (Vollmond)",
-        "start": null,
-        "ziel": "2026-05-31T20:00",
-        "tags": [
-            "ASTRO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Zweiter Vollmond im Mai.",
-        "checklist": []
-    },
-    {
-        "name": "Therapie",
-        "start": null,
-        "ziel": "2026-06-03T19:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -85,21 +52,11 @@
         "checklist": []
     },
     {
-        "name": "Pumbi / Diego Impf Stichtag",
-        "start": null,
-        "ziel": "2026-06-12T18:00",
+        "name": "Nord PSC Monthly",
+        "start": "2026-05-15T10:00",
+        "ziel": "2026-05-15T10:30",
         "tags": [
-            "KATZIS"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Jax Geburtstag",
-        "start": "2026-06-15T00:00",
-        "ziel": "2026-06-16T00:00",
-        "tags": [
-            "KATZIS"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -108,11 +65,11 @@
         "checklist": []
     },
     {
-        "name": "Sira Geburtstag",
-        "start": "2026-06-22T00:00",
-        "ziel": "2026-06-23T00:00",
+        "name": "Pause",
+        "start": "2026-05-15T12:00",
+        "ziel": "2026-05-15T13:00",
         "tags": [
-            "KATZIS"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -121,355 +78,24 @@
         "checklist": []
     },
     {
-        "name": "Perplexity Ende Magenta",
+        "name": "RTL+ alt – ABO prüfen",
         "start": null,
-        "ziel": "2026-06-25T00:00",
+        "ziel": "2026-05-15T17:00",
         "tags": [
             "ABO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Abo-Ende",
+        "notiz": "Altes Abo Yahoo läuft aus 6.6.26\n15.5. Paypal Buchung sollte eigentlich nicht rausgehen\nVia T-Online nutzen",
         "checklist": []
     },
     {
-        "name": "AXN HQ alt Rückbau Ende",
-        "start": null,
-        "ziel": "2026-06-30T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": "Übergabe ALBIN KÖBIS"
-    },
-    {
-        "name": "Urlaub",
-        "start": "2026-07-03T17:00",
-        "ziel": "2026-07-08T21:00",
-        "tags": [
-            "ARBEIT",
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Hochzeitstag",
-        "start": "2026-07-04T00:00",
-        "ziel": "2026-07-05T00:00",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Arbeit",
-        "start": null,
-        "ziel": "2026-07-09T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Sommerferien",
-        "start": "2026-07-19T00:00",
-        "ziel": "2026-09-07T00:00",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Sommerferien: 19.07. – 01.09.2026",
-        "checklist": []
-    },
-    {
-        "name": "Urlaub",
-        "start": "2026-07-31T17:00",
-        "ziel": "2026-08-09T21:00",
-        "tags": [
-            "ARBEIT",
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Wohnungs- rückgabe Verjährung",
-        "start": null,
-        "ziel": "2026-08-01T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Kleiststraße",
-        "checklist": []
-    },
-    {
-        "name": "AXN HQ Umzug Done",
-        "start": null,
-        "ziel": "2026-08-01T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Einzug alle Etagen - \nAXIANS MAGELLAN\nMax-Reichpietsch Str. 1-5\n51147 Köln\nGermany",
-        "checklist": []
-    },
-    {
-        "name": "(Urlaub) Kanaren – prüfen (1/2)",
-        "start": null,
-        "ziel": "2026-08-01T12:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Jahrestag",
-        "start": "2026-08-05T00:00",
-        "ziel": "2026-08-06T00:00",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Arbeit",
-        "start": null,
-        "ziel": "2026-08-10T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Elster-Zertifikat Mutti läuft aus",
-        "start": null,
-        "ziel": "2026-08-31T08:37",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "(Urlaub) Kanaren – prüfen (2/2)",
-        "start": null,
-        "ziel": "2026-09-01T12:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Sticki",
-        "start": null,
-        "ziel": "2026-09-02T08:00",
-        "tags": [
-            "DOK",
-            "CASI",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Zahnreinigung",
-        "checklist": []
-    },
-    {
-        "name": "Urlaub (Kanaren kurzfristig)",
-        "start": "2026-09-18T17:00",
-        "ziel": "2026-10-04T21:00",
-        "tags": [
-            "ARBEIT",
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Feiertag: Tag der Deutschen Einheit",
-        "start": null,
-        "ziel": "2026-10-03T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "Samstag"
-    },
-    {
-        "name": "Arbeit",
-        "start": null,
-        "ziel": "2026-10-05T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Herbstferien",
-        "start": "2026-10-17T00:00",
-        "ziel": "2026-11-01T00:00",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Herbstferien: 17.10. – 01.11.2026",
-        "checklist": []
-    },
-    {
-        "name": "Feiertag: Allerheiligen",
-        "start": null,
-        "ziel": "2026-11-01T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "Sonntag"
-    },
-    {
-        "name": "TAHNEE - EIN TOUCH TOO MUCH",
-        "start": "2026-11-20T20:00",
-        "ziel": "2026-11-20T23:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "NEW Box, Mönchengladbach"
-    },
-    {
-        "name": "Morgen Frei (Weihnacht)",
-        "start": null,
-        "ziel": "2026-12-23T17:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Heiligabend Do. 24.12. > Fr. 25.12. 1. Weihnachtsfeiertag",
-        "checklist": []
-    },
-    {
-        "name": "Weihnacht Ferien",
-        "start": "2026-12-23T00:00",
-        "ziel": "2027-01-06T00:00",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Weihnachtsferien: 23.12.2026 – 06.01.2027",
-        "checklist": []
-    },
-    {
-        "name": "Arbeit",
-        "start": null,
-        "ziel": "2026-12-28T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Morgen Frei (Silvester)",
-        "start": null,
-        "ziel": "2026-12-30T17:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Silvester Do. 31.12.26 (halber / ganzer U-Tag) > Fr. 01.01.2027",
-        "checklist": []
-    },
-    {
-        "name": "Arbeit",
-        "start": null,
-        "ziel": "2027-01-04T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": ""
-    },
-    {
-        "name": "Konto glatt",
-        "start": null,
-        "ziel": "2027-03-29T15:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Hoffenheim ",
+        "name": "Hoffenheim",
         "start": null,
         "ziel": "2026-05-16T15:30",
         "tags": [
             "GLADBACH"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Leasing Ende Auto",
-        "start": null,
-        "ziel": "2026-12-08T09:00",
-        "tags": [
-            "ARBEIT",
-            "AUTO",
-            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -506,32 +132,75 @@
         "checklist": []
     },
     {
-        "name": "CVE - Daniel/Jörg",
-        "start": "2026-06-03T14:00",
-        "ziel": "2026-06-03T14:25",
+        "name": "Montag frei (Pfingsten)",
+        "start": null,
+        "ziel": "2026-05-22T17:00",
         "tags": [
             "ARBEIT",
-            "CVE"
+            "FREI"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Pfingstmontag 25. Mai 2026",
         "checklist": []
     },
     {
-        "name": "EDU 210",
-        "start": "2026-06-15T08:00",
-        "ziel": "2026-06-15T17:00",
+        "name": "Nägel",
+        "start": null,
+        "ziel": "2026-05-23T13:00",
         "tags": [
-            "ARBEIT",
-            "EDU"
+            "KERO",
+            "TERMINE"
         ],
-        "repeat": "daily",
-        "repeatUntil": "2026-06-19",
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Katie Black Dog",
+        "start": null,
+        "ziel": "2026-05-23T17:00",
+        "tags": [
+            "KERO",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Essen gehen",
+        "start": null,
+        "ziel": "2026-05-25T17:30",
+        "tags": [
+            "TERMINE",
+            "KATZIS",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
         "days": [],
-        "notiz": "https://training.exclusive-networks.com/de-DE/details?id=25f8d492-eee1-ee11-904c-000d3aaf0f96",
+        "notiz": "Moerser Brauhaus",
         "checklist": []
+    },
+    {
+        "name": "Arbeit",
+        "start": null,
+        "ziel": "2026-05-26T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
     },
     {
         "name": "Trödel Eick Ost",
@@ -549,6 +218,34 @@
         "checklist": []
     },
     {
+        "name": "Astro: Blauer Mikromond (Vollmond)",
+        "start": null,
+        "ziel": "2026-05-31T20:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Zweiter Vollmond im Mai.",
+        "checklist": []
+    },
+    {
+        "name": "Auto konfigurieren",
+        "start": null,
+        "ziel": "2026-06-01T09:00",
+        "tags": [
+            "ARBEIT",
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Info Gunna 13.4.: Kann ab Juni konfen und bestellen\nPrüfen und Audi Q4 55 e-tron konfen\nBruttolistenpreis: 74.540 €\nRegel: 0,25%\nGvV brutto/Monat: 186,35 €\nNettobelastung/Monat: 78,27 €\nDifferenz zum Octavia RS: -165,33 €\nAuto läuft 8.12.26 ab",
+        "checklist": []
+    },
+    {
         "name": "PA AML HQ - Titans Workshop",
         "start": null,
         "ziel": "2026-06-02T09:00",
@@ -557,8 +254,36 @@
         ],
         "repeat": "none",
         "repeatUntil": "2026-06-19",
-        "days": [],
         "notiz": "HQ vor Ort mit PA Christian und Markus\nAXIANS MAGELLAN\nMax-Reichpietsch Str. 1-5\n51147 Köln\nGermany",
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "CVE - Daniel/Jörg",
+        "start": "2026-06-03T14:00",
+        "ziel": "2026-06-03T14:25",
+        "tags": [
+            "ARBEIT",
+            "CVE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Therapie",
+        "start": null,
+        "ziel": "2026-06-03T19:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
@@ -576,99 +301,6 @@
         "checklist": []
     },
     {
-        "name": "Rb Start",
-        "start": null,
-        "ziel": "2026-07-13T18:00",
-        "tags": [
-            "ARBEIT",
-            "RBB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Rb Ende",
-        "start": null,
-        "ziel": "2026-07-20T06:00",
-        "tags": [
-            "ARBEIT",
-            "RBB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "\n",
-        "checklist": []
-    },
-    {
-        "name": "Dispo auf 10.000",
-        "start": null,
-        "ziel": "2026-10-15T15:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "RTL+ alt - ABO Ende",
-        "start": null,
-        "ziel": "2026-06-06T10:00",
-        "tags": [
-            "ABO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Altes Abo Yahoo läuft aus, nutzen via T-Online",
-        "checklist": []
-    },
-    {
-        "name": "RTL+ alt - ABO prüfen",
-        "start": null,
-        "ziel": "2026-05-15T17:00",
-        "tags": [
-            "ABO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Altes Abo Yahoo läuft aus 6.6.26\n15.5. Paypal Buchung sollte eigentlich nicht rausgehen\nVia T-Online nutzen",
-        "checklist": []
-    },
-    {
-        "name": "Abbeit",
-        "start": null,
-        "ziel": "2026-05-15T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Abbeit",
-        "start": null,
-        "ziel": "2026-05-26T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Wochenende",
         "start": null,
         "ziel": "2026-06-05T14:30",
@@ -676,120 +308,23 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
         "notiz": "",
-        "checklist": []
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
     },
     {
-        "name": "Füße Sandra",
+        "name": "RTL+ alt – ABO Ende",
         "start": null,
-        "ziel": "2026-07-09T13:15",
+        "ziel": "2026-06-06T10:00",
         "tags": [
-            "TERMINE",
-            "KERO"
+            "ABO"
         ],
         "repeat": "none",
+        "notiz": "Altes Abo Yahoo läuft aus, nutzen via T-Online",
+        "checklist": [],
         "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Klaus 2 Bahnen tapezieren und Fußleisten Acryl ",
-        "start": null,
-        "ziel": "2026-05-15T09:00",
-        "tags": [
-            "MUTTI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Füße",
-        "start": null,
-        "ziel": "2026-06-10T16:00",
-        "tags": [
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Nägel",
-        "start": null,
-        "ziel": "2026-05-23T13:00",
-        "tags": [
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Katie Black Dog",
-        "start": null,
-        "ziel": "2026-05-23T17:00",
-        "tags": [
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Frauenarzt",
-        "start": null,
-        "ziel": "2026-06-25T16:00",
-        "tags": [
-            "KERO",
-            "DOK",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Daily",
-        "start": "2026-05-15T09:40",
-        "ziel": "2026-05-15T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Pause",
-        "start": "2026-05-15T12:00",
-        "ziel": "2026-05-15T13:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
+        "days": []
     },
     {
         "name": "Update 11.2.7-h8 inet/data",
@@ -848,6 +383,60 @@
         "checklist": []
     },
     {
+        "name": "Füße",
+        "start": null,
+        "ziel": "2026-06-10T16:00",
+        "tags": [
+            "KERO",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Pumbi / Diego Impf Stichtag",
+        "start": null,
+        "ziel": "2026-06-12T18:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Jax Geburtstag",
+        "start": "2026-06-15T00:00",
+        "ziel": "2026-06-16T00:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "EDU 210",
+        "start": "2026-06-15T08:00",
+        "ziel": "2026-06-15T17:00",
+        "tags": [
+            "ARBEIT",
+            "EDU"
+        ],
+        "repeat": "daily",
+        "repeatUntil": "2026-06-19",
+        "days": [],
+        "notiz": "https://training.exclusive-networks.com/de-DE/details?id=25f8d492-eee1-ee11-904c-000d3aaf0f96",
+        "checklist": []
+    },
+    {
         "name": "Update 11.2.7-h8 inet/data 2nd",
         "start": "2026-06-15T08:30",
         "ziel": "2026-06-15T11:00",
@@ -862,17 +451,16 @@
         "checklist": []
     },
     {
-        "name": "Update 11.2.7-h8 oediv 1-2-3 2nd",
-        "start": "2026-06-16T08:30",
-        "ziel": "2026-06-16T11:00",
+        "name": "Eurowings glatt",
+        "start": null,
+        "ziel": "2026-06-15T15:00",
         "tags": [
-            "ARBEIT",
-            "ANO"
+            "FINANZEN"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Update der 2ten FW -> oediv 1-2-3",
+        "notiz": "",
         "checklist": []
     },
     {
@@ -890,6 +478,20 @@
         "checklist": []
     },
     {
+        "name": "Update 11.2.7-h8 oediv 1-2-3 2nd",
+        "start": "2026-06-16T08:30",
+        "ziel": "2026-06-16T11:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Update der 2ten FW -> oediv 1-2-3",
+        "checklist": []
+    },
+    {
         "name": "Schwenk 11.2.7-h8 oediv 1-2-3 2nd",
         "start": "2026-06-16T20:00",
         "ziel": "2026-06-16T20:30",
@@ -904,9 +506,92 @@
         "checklist": []
     },
     {
-        "name": "Kernmeeting ANO",
-        "start": "2026-05-15T09:00",
-        "ziel": "2026-05-15T09:25",
+        "name": "Sira Geburtstag",
+        "start": "2026-06-22T00:00",
+        "ziel": "2026-06-23T00:00",
+        "tags": [
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Perplexity Ende Magenta",
+        "start": null,
+        "ziel": "2026-06-25T00:00",
+        "tags": [
+            "ABO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Abo-Ende",
+        "checklist": []
+    },
+    {
+        "name": "Frauenarzt",
+        "start": null,
+        "ziel": "2026-06-25T16:00",
+        "tags": [
+            "KERO",
+            "DOK",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "AXN HQ alt Rückbau Ende",
+        "start": null,
+        "ziel": "2026-06-30T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "Übergabe ALBIN KÖBIS",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Urlaub",
+        "start": "2026-07-03T17:00",
+        "ziel": "2026-07-08T21:00",
+        "tags": [
+            "ARBEIT",
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Hochzeitstag",
+        "start": "2026-07-04T00:00",
+        "ziel": "2026-07-05T00:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Arbeit – Start",
+        "start": null,
+        "ziel": "2026-07-09T08:00",
         "tags": [
             "ARBEIT"
         ],
@@ -917,11 +602,362 @@
         "checklist": []
     },
     {
-        "name": "Nord PSC Monthly",
-        "start": "2026-05-15T10:00",
-        "ziel": "2026-05-15T10:30",
+        "name": "Füße Sandra",
+        "start": null,
+        "ziel": "2026-07-09T13:15",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Rb Start",
+        "start": null,
+        "ziel": "2026-07-13T18:00",
+        "tags": [
+            "ARBEIT",
+            "RBB"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Sommerferien",
+        "start": "2026-07-19T00:00",
+        "ziel": "2026-09-07T00:00",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Sommerferien: 19.07. – 01.09.2026",
+        "checklist": []
+    },
+    {
+        "name": "Rb Ende",
+        "start": null,
+        "ziel": "2026-07-20T06:00",
+        "tags": [
+            "ARBEIT",
+            "RBB"
+        ],
+        "repeat": "none",
+        "notiz": "\\n",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Urlaub",
+        "start": "2026-07-31T17:00",
+        "ziel": "2026-08-09T21:00",
+        "tags": [
+            "ARBEIT",
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Wohnungsrückgabe Verjährung",
+        "start": null,
+        "ziel": "2026-08-01T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "Kleiststraße",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "AXN HQ Umzug Done",
+        "start": null,
+        "ziel": "2026-08-01T10:00",
         "tags": [
             "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "Einzug alle Etagen - \nAXIANS MAGELLAN\nMax-Reichpietsch Str. 1-5\n51147 Köln\nGermany",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "(Urlaub) Kanaren – prüfen (1/2)",
+        "start": null,
+        "ziel": "2026-08-01T12:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Jahrestag",
+        "start": "2026-08-05T00:00",
+        "ziel": "2026-08-06T00:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Arbeit – Start",
+        "start": null,
+        "ziel": "2026-08-10T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Elster-Zertifikat Mutti läuft aus",
+        "start": null,
+        "ziel": "2026-08-31T08:37",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "(Urlaub) Kanaren – prüfen (2/2)",
+        "start": null,
+        "ziel": "2026-09-01T12:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Sticki",
+        "start": null,
+        "ziel": "2026-09-02T08:00",
+        "tags": [
+            "DOK",
+            "CASI",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "Zahnreinigung",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Urlaub (Kanaren kurzfristig)",
+        "start": "2026-09-18T17:00",
+        "ziel": "2026-10-04T21:00",
+        "tags": [
+            "ARBEIT",
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Feiertag: Tag der Deutschen Einheit",
+        "start": null,
+        "ziel": "2026-10-03T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "Samstag",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Arbeit – Start",
+        "start": null,
+        "ziel": "2026-10-05T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Dispo auf 10.000",
+        "start": null,
+        "ziel": "2026-10-15T15:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Herbstferien",
+        "start": "2026-10-17T00:00",
+        "ziel": "2026-11-01T00:00",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Herbstferien: 17.10. – 01.11.2026",
+        "checklist": []
+    },
+    {
+        "name": "Feiertag: Allerheiligen",
+        "start": null,
+        "ziel": "2026-11-01T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "Sonntag",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "TAHNEE - EIN TOUCH TOO MUCH",
+        "start": "2026-11-20T20:00",
+        "ziel": "2026-11-20T23:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "NEW Box, Mönchengladbach",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Leasing Ende Auto",
+        "start": null,
+        "ziel": "2026-12-08T09:00",
+        "tags": [
+            "ARBEIT",
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Weihnacht Ferien",
+        "start": "2026-12-23T00:00",
+        "ziel": "2027-01-06T00:00",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Weihnachtsferien: 23.12.2026 – 06.01.2027",
+        "checklist": []
+    },
+    {
+        "name": "Frei vor Weihnachten",
+        "start": null,
+        "ziel": "2026-12-23T17:00",
+        "tags": [
+            "ARBEIT",
+            "FREI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Heiligabend Do. 24.12. > Fr. 25.12. 1. Weihnachtsfeiertag",
+        "checklist": []
+    },
+    {
+        "name": "Arbeit – Start",
+        "start": null,
+        "ziel": "2026-12-28T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Frei vor Silvester",
+        "start": null,
+        "ziel": "2026-12-30T17:00",
+        "tags": [
+            "ARBEIT",
+            "FREI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Silvester Do. 31.12.26 (halber / ganzer U-Tag) > Fr. 01.01.2027",
+        "checklist": []
+    },
+    {
+        "name": "Arbeit – Start",
+        "start": null,
+        "ziel": "2027-01-04T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "repeatUntil": null,
+        "days": [],
+        "checklist": []
+    },
+    {
+        "name": "Konto glatt",
+        "start": null,
+        "ziel": "2027-03-29T15:00",
+        "tags": [
+            "FINANZEN"
         ],
         "repeat": "none",
         "repeatUntil": null,
