@@ -451,19 +451,6 @@
         "checklist": []
     },
     {
-        "name": "Eurowings glatt",
-        "start": null,
-        "ziel": "2026-06-15T15:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Schwenk 11.2.7-h8 inet/data 2nd",
         "start": "2026-06-15T20:00",
         "ziel": "2026-06-15T20:30",
