@@ -924,5 +924,19 @@
         "days": [],
         "notiz": "Schwenk auf 2te FW-> Internet/Datacenter",
         "checklist": []
+    },
+    {
+        "name": "Schwenk 11.2.7-h8 oediv 1-2-3 2nd",
+        "start": "2026-06-16T08:30",
+        "ziel": "2026-06-16T11:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Schwenk auf 2te FW -> oediv 1-2-3",
+        "checklist": []
     }
 ]
