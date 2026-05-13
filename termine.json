@@ -882,5 +882,19 @@
         "days": [],
         "notiz": "Schwenk au passive FW -> oediv 1-2-3",
         "checklist": []
+    },
+    {
+        "name": "Update 11.2.7-h8 inet/data 2nd",
+        "start": "2026-06-15T08:30",
+        "ziel": "2026-06-15T11:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Update der 2ten FW -> Internet/Datacenter",
+        "checklist": []
     }
 ]
