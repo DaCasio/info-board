@@ -60,12 +60,15 @@
     {
         "name": "Astro: Blauer Mikromond (Vollmond)",
         "start": null,
-        "ziel": "2026-05-31T20:00",
+        "ziel": "2026-05-31T20:01",
         "tags": [
             "ASTRO"
         ],
         "repeat": "none",
-        "notiz": "Zweiter Vollmond im Mai."
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Zweiter Vollmond im Mai.",
+        "checklist": []
     },
     {
         "name": "Therapie",
