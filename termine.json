@@ -15,20 +15,6 @@
         "checklist": []
     },
     {
-        "name": "Morgen frei (Christi Himmelfahrt)",
-        "start": null,
-        "ziel": "2026-05-13T17:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Christi Himmelfahrt 14. Mai 2026",
-        "checklist": []
-    },
-    {
         "name": "Eurowings glatt",
         "start": null,
         "ziel": "2026-06-15T15:00",
