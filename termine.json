@@ -256,7 +256,10 @@
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "Einzug alle Etagen - Max-Reich-Pietsch"
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Einzug alle Etagen - \nAXIANS MAGELLAN\nMax-Reichpietsch Str. 1-5\n51147 Köln\nGermany",
+        "checklist": []
     },
     {
         "name": "(Urlaub) Kanaren – prüfen (1/2)",
