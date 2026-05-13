@@ -868,5 +868,19 @@
         "days": [],
         "notiz": "Update der passiven FW -> oediv 1-2-3",
         "checklist": []
+    },
+    {
+        "name": "Schwenk 11.2.7-h8 oediv 1-2-3 (Kopie)",
+        "start": "2026-06-09T08:30",
+        "ziel": "2026-06-09T11:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Schwenk au passive FW -> oediv 1-2-3",
+        "checklist": []
     }
 ]
