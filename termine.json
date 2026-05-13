@@ -639,33 +639,6 @@
         "checklist": []
     },
     {
-        "name": "CVE",
-        "start": null,
-        "ziel": "2026-05-13T08:30",
-        "tags": [
-            "ARBEIT",
-            "CVE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": [
-            {
-                "text": "Product/Service Owner benennen ",
-                "done": false
-            },
-            {
-                "text": "Kundenvollständigkeit prüfen  / Liste migrieren (Start: Palo Alto)",
-                "done": false
-            },
-            {
-                "text": "Mailvorlage anpassen & Umziehen (CC Teams) / Template im Kix? Bewerten!",
-                "done": false
-            }
-        ]
-    },
-    {
         "name": "RTL+ alt - ABO Ende",
         "start": null,
         "ziel": "2026-06-06T10:00",
