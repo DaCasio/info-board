@@ -836,12 +836,14 @@
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
         "tags": [
-            "TERMINE"
+            "TERMINE",
+            "KERO",
+            "CASI"
         ],
         "repeat": "none",
-        "notiz": "NEW Box, Mönchengladbach",
         "repeatUntil": null,
         "days": [],
+        "notiz": "NEW Box, Mönchengladbach",
         "checklist": []
     },
     {
