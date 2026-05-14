@@ -966,5 +966,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Magenta Mobil XS Mutti",
+        "start": null,
+        "ziel": "2025-09-01T00:00",
+        "tags": [
+            "VERTRÄGE"
+        ],
+        "repeat": "monthly",
+        "repeatUntil": "2026-05-14",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
