@@ -961,7 +961,7 @@
         "tags": [
             "VERTRÄGE"
         ],
-        "repeat": "none",
+        "repeat": "monthly",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
