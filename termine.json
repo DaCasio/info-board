@@ -975,7 +975,7 @@
             "VERTRÄGE"
         ],
         "repeat": "monthly",
-        "repeatUntil": "2026-05-14",
+        "repeatUntil": null,
         "days": [],
         "notiz": "",
         "checklist": []
