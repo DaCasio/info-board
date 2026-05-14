@@ -953,5 +953,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Magenta Mobil XS Helge",
+        "start": null,
+        "ziel": "2027-06-04T00:00",
+        "tags": [
+            "VERTRÄGE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
