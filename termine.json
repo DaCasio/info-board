@@ -29,9 +29,7 @@
         "name": "Hoffenheim",
         "start": null,
         "ziel": "2026-05-16T15:30",
-        "tags": [
-            "GLADBACH"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
