@@ -810,20 +810,6 @@
         "checklist": []
     },
     {
-        "name": "Frei vor Weihnachten",
-        "start": null,
-        "ziel": "2026-12-23T17:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Heiligabend Do. 24.12. > Fr. 25.12. 1. Weihnachtsfeiertag",
-        "checklist": []
-    },
-    {
         "name": "Arbeit – Start",
         "start": null,
         "ziel": "2026-12-28T08:00",
