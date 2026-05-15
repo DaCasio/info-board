@@ -841,5 +841,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Küsschen",
+        "start": null,
+        "ziel": "2026-05-15T10:23",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
