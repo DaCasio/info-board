@@ -13,16 +13,16 @@
         "checklist": []
     },
     {
-        "name": "RTL+ alt – ABO prüfen",
+        "name": "Feierabend",
         "start": null,
         "ziel": "2026-05-15T17:00",
         "tags": [
-            "ABO"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Altes Abo Yahoo läuft aus 6.6.26\n15.5. Paypal Buchung sollte eigentlich nicht rausgehen\nVia T-Online nutzen",
+        "notiz": "",
         "checklist": []
     },
     {
