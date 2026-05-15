@@ -847,5 +847,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Spargel",
+        "start": null,
+        "ziel": "2026-05-15T15:30",
+        "tags": [
+            "LECKER ESSEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
