@@ -966,18 +966,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Magenta Mobil XS Schnubbi",
-        "start": null,
-        "ziel": "2026-06-11T00:00",
-        "tags": [
-            "ARCHIV"
-        ],
-        "repeat": "monthly",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
