@@ -837,20 +837,6 @@
         "checklist": []
     },
     {
-        "name": "Frei vor Silvester",
-        "start": null,
-        "ziel": "2026-12-30T17:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Silvester Do. 31.12.26 (halber / ganzer U-Tag) > Fr. 01.01.2027",
-        "checklist": []
-    },
-    {
         "name": "Arbeit – Start",
         "start": null,
         "ziel": "2027-01-04T08:00",
