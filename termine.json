@@ -1,18 +1,5 @@
 [
     {
-        "name": "Nord PSC Monthly",
-        "start": "2026-05-15T10:00",
-        "ziel": "2026-05-15T10:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Pause",
         "start": "2026-05-15T12:00",
         "ziel": "2026-05-15T13:00",
