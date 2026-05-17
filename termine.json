@@ -828,8 +828,8 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "daily",
+        "repeatUntil": "2026-05-22",
         "days": [],
         "notiz": "",
         "checklist": []
