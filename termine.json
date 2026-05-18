@@ -862,8 +862,8 @@
     },
     {
         "name": "DL Keine Changes",
-        "start": "2026-05-18T16:30",
-        "ziel": "2026-05-18T18:00",
+        "start": null,
+        "ziel": "2026-05-18T16:30",
         "tags": [
             "ARBEIT"
         ],
