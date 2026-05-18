@@ -861,19 +861,6 @@
         "checklist": []
     },
     {
-        "name": "DL Keine Changes",
-        "start": null,
-        "ziel": "2026-05-18T16:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Morgen frei (Fronleichnam)",
         "start": null,
         "ziel": "2026-06-03T17:00",
