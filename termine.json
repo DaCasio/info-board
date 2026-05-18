@@ -926,18 +926,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "PA Web",
-        "start": null,
-        "ziel": "2026-05-18T19:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
