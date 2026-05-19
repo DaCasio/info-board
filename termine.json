@@ -940,5 +940,19 @@
         "days": [],
         "notiz": "Update der 2ten FW - Sascha anhauen ob er es übernimmt, da EDU\n15.06 Inet/Data (2nd Update morgens / Schwenk abends)\n16.06 Oediv (2nd Update morgens / Schwenk abends)",
         "checklist": []
+    },
+    {
+        "name": "Update 11.2.7-h8 inet/data/oediv 2nd  (Kopie)",
+        "start": null,
+        "ziel": "2026-05-20T10:15",
+        "tags": [
+            "ARBEIT",
+            "DL"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Info Patrick Zielserver",
+        "checklist": []
     }
 ]
