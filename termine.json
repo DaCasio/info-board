@@ -926,5 +926,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Update 11.2.7-h8 inet/data/oediv 2nd ",
+        "start": null,
+        "ziel": "2026-05-20T10:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Update der 2ten FW -> Internet/Datacenter / Sascha anhauen ob er es übernimmt, da EDU",
+        "checklist": []
     }
 ]
