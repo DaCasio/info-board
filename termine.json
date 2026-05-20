@@ -914,20 +914,6 @@
         "checklist": []
     },
     {
-        "name": "Update 11.2.7-h8 inet/data/oediv 2nd ",
-        "start": null,
-        "ziel": "2026-05-20T10:00",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Update der 2ten FW - Sascha anhauen ob er es übernimmt, da EDU\n15.06 Inet/Data (2nd Update morgens / Schwenk abends)\n16.06 Oediv (2nd Update morgens / Schwenk abends)",
-        "checklist": []
-    },
-    {
         "name": "DL - Patrick - Info",
         "start": null,
         "ziel": "2026-05-20T10:15",
