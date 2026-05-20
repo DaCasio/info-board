@@ -661,19 +661,6 @@
         "checklist": []
     },
     {
-        "name": "Feiertag: Tag der Deutschen Einheit",
-        "start": null,
-        "ziel": "2026-10-03T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "Samstag",
-        "repeatUntil": null,
-        "days": [],
-        "checklist": []
-    },
-    {
         "name": "Arbeit – Start",
         "start": null,
         "ziel": "2026-10-05T08:00",
