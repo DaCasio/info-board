@@ -925,5 +925,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "1on1 verschieben?",
+        "start": null,
+        "ziel": "2026-05-20T13:05",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Freitag ist im Zeitraum Tech Circle - Ggf danach?",
+        "checklist": []
     }
 ]
