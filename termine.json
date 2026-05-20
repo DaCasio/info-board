@@ -700,19 +700,6 @@
         "checklist": []
     },
     {
-        "name": "Feiertag: Allerheiligen",
-        "start": null,
-        "ziel": "2026-11-01T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "Sonntag",
-        "repeatUntil": null,
-        "days": [],
-        "checklist": []
-    },
-    {
         "name": "TAHNEE - EIN TOUCH TOO MUCH",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
