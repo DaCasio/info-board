@@ -912,19 +912,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "DL - Patrick - Info",
-        "start": null,
-        "ziel": "2026-05-20T10:15",
-        "tags": [
-            "ARBEIT",
-            "DL"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Info Patrick Zielserver",
-        "checklist": []
     }
 ]
