@@ -1,19 +1,5 @@
 [
     {
-        "name": "Therapie",
-        "start": null,
-        "ziel": "2026-05-20T19:00",
-        "tags": [
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Montag frei (Pfingsten)",
         "start": null,
         "ziel": "2026-05-22T18:00",
