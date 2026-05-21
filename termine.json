@@ -181,19 +181,6 @@
         "days": []
     },
     {
-        "name": "RTL+ alt – ABO Ende",
-        "start": null,
-        "ziel": "2026-06-06T10:00",
-        "tags": [
-            "ABO"
-        ],
-        "repeat": "none",
-        "notiz": "Altes Abo Yahoo läuft aus, nutzen via T-Online",
-        "checklist": [],
-        "repeatUntil": null,
-        "days": []
-    },
-    {
         "name": "Update 11.2.7-h8 inet/data",
         "start": "2026-06-08T08:30",
         "ziel": "2026-06-08T11:00",
