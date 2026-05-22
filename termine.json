@@ -1,13 +1,13 @@
 [
     {
-        "name": "Montag frei (Pfingsten)",
+        "name": "Feierabend",
         "start": null,
         "ziel": "2026-05-22T18:00",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Pfingstmontag 25. Mai 2026",
+        "notiz": "Montag frei (Pfingsten) 25. Mai 2026",
         "checklist": []
     },
     {
