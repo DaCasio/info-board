@@ -824,9 +824,7 @@
         "name": "Telefonie",
         "start": null,
         "ziel": "2026-05-22T14:00",
-        "tags": [
-            "ARBEIT"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
