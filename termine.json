@@ -810,10 +810,7 @@
         "name": "Ilija Backofen Einbau",
         "start": null,
         "ziel": "2026-05-22T16:00",
-        "tags": [
-            "MUTTI",
-            "TERMINE"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
