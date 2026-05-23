@@ -1,19 +1,5 @@
 [
     {
-        "name": "Katie Black Dog",
-        "start": null,
-        "ziel": "2026-05-23T16:00",
-        "tags": [
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Essen gehen",
         "start": null,
         "ziel": "2026-05-25T17:30",
