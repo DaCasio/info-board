@@ -1,19 +1,5 @@
 [
     {
-        "name": "Nägel",
-        "start": null,
-        "ziel": "2026-05-23T13:00",
-        "tags": [
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "",
-        "checklist": [],
-        "repeatUntil": null,
-        "days": []
-    },
-    {
         "name": "Katie Black Dog",
         "start": null,
         "ziel": "2026-05-23T16:00",
