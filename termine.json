@@ -728,5 +728,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Losfahren",
+        "start": null,
+        "ziel": "2026-05-25T17:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Moerser Brauhaus",
+        "checklist": []
     }
 ]
