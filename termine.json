@@ -728,19 +728,5 @@
         "days": [],
         "notiz": "Moerser Brauhaus",
         "checklist": []
-    },
-    {
-        "name": "Fertigmachen",
-        "start": null,
-        "ziel": "2026-05-25T16:00",
-        "tags": [
-            "TERMINE",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Moerser Brauhaus",
-        "checklist": []
     }
 ]
