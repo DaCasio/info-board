@@ -598,8 +598,8 @@
         "tags": [
             "FERIEN"
         ],
-        "repeat": "daily",
-        "repeatUntil": "2026-11-01",
+        "repeat": "none",
+        "repeatUntil": null,
         "days": [],
         "notiz": "Herbstferien: 17.10. – 01.11.2026",
         "checklist": []
