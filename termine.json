@@ -417,13 +417,13 @@
     },
     {
         "name": "Sommerferien",
-        "start": "2026-07-19T00:00",
-        "ziel": "2026-09-07T00:00",
+        "start": null,
+        "ziel": "2026-07-19T00:00",
         "tags": [
             "FERIEN"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "daily",
+        "repeatUntil": "2026-09-01",
         "days": [],
         "notiz": "Sommerferien: 19.07. – 01.09.2026",
         "checklist": []
