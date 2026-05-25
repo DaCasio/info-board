@@ -422,8 +422,8 @@
         "tags": [
             "FERIEN"
         ],
-        "repeat": "daily",
-        "repeatUntil": "2026-09-01",
+        "repeat": "none",
+        "repeatUntil": null,
         "days": [],
         "notiz": "Sommerferien: 19.07. – 01.09.2026",
         "checklist": []
