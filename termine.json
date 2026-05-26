@@ -766,16 +766,5 @@
         "days": [],
         "notiz": "zurück auf die 01er Schwenken",
         "checklist": []
-    },
-    {
-        "name": "Pause",
-        "start": "2026-05-26T14:45",
-        "ziel": "2026-05-26T15:45",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
