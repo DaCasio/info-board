@@ -728,7 +728,7 @@
     {
         "name": "Update BRRNG 11.1.13-h5",
         "start": "2026-05-27T09:00",
-        "ziel": "2026-05-27T14:00",
+        "ziel": "2026-05-27T10:30",
         "tags": [
             "TERMINE",
             "BRRNG"
@@ -736,7 +736,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Passive Updaten - Schwenk um 12",
         "checklist": []
     }
 ]
