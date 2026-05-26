@@ -737,7 +737,36 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "Passive Updaten - Schwenk um 12",
-        "checklist": []
+        "checklist": [
+            {
+                "text": "FWCH02\t\tPA-440\tStack_Chemnitz\tConnected",
+                "done": false
+            },
+            {
+                "text": "FWFR01\t\tPA-440\tStack_Freiburg\tConnected",
+                "done": false
+            },
+            {
+                "text": "FWHD02\t\tPA-440\tStack_Heidelberg\tConnected",
+                "done": false
+            },
+            {
+                "text": "FWDS02\t\tPA-410\tStack_US_Dallas\tConnected",
+                "done": false
+            },
+            {
+                "text": "FWDS01\t\tPA-410\tStack_US_Dallas\tConnected",
+                "done": false
+            },
+            {
+                "text": "FWGR01\t\tPA-440\tStack_US_Greer\tConnected",
+                "done": false
+            },
+            {
+                "text": "FWGR02\t\tPA-440\tStack_US_Greer\tConnected",
+                "done": false
+            }
+        ]
     },
     {
         "name": "Update BRRNG 11.1.13-h5",
