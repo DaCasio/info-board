@@ -713,5 +713,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "ANO JF",
+        "start": null,
+        "ziel": "2026-05-26T13:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
