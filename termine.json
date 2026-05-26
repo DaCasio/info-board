@@ -779,7 +779,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Schwenk um 12 - dann verbleibenden Member update",
+        "notiz": "Schwenk um 12 - dann verbleibenden Member update\n\nMember Failover ausführen\n☐ FWCH02 PA-440 Stack_Chemnitz Connected\n☐ FWFR01 PA-440 Stack_Freiburg Connected\n☐ FWHD02 PA-440 Stack_Heidelberg Connected",
         "checklist": [
             {
                 "text": "FWCH01\t\tPA-440\tStack_Chemnitz\tConnected",
