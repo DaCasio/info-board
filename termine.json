@@ -715,30 +715,6 @@
         "checklist": []
     },
     {
-        "name": "Update BRRNG 11.1.13-h5",
-        "start": null,
-        "ziel": "2026-05-27T13:30",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": [
-            {
-                "text": "FWCH01 - PA-440 - Stack_Chemnitz - 01 passive schwenk - FWCH02 suspenden",
-                "done": true
-            },
-            {
-                "text": "FWFR01 - PA-440 - Stack_Freiburg - 01 passive schwenk - FWFR02 suspenden",
-                "done": true
-            },
-            {
-                "text": "FWHD02 - PA-440 - Stack_Heidelberg - 01 active ok",
-                "done": true
-            }
-        ]
-    },
-    {
         "name": "BRRNG zurückschwenk 01er",
         "start": "2026-05-27T13:30",
         "ziel": "2026-05-27T13:45",
