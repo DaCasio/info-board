@@ -725,12 +725,8 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Passive updaten\n--\nDie passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
+        "notiz": "Die passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
         "checklist": [
-            {
-                "text": "US passive/active",
-                "done": false
-            },
             {
                 "text": "FWDS02\t\tPA-410\tStack_US_Dallas passive",
                 "done": true
