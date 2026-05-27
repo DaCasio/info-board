@@ -730,7 +730,7 @@
             },
             {
                 "text": "FWFR01 - PA-440 - Stack_Freiburg - 01 passive schwenk - FWFR02 suspenden",
-                "done": true
+                "done": false
             },
             {
                 "text": "FWHD02 - PA-440 - Stack_Heidelberg - 01 active ok",
