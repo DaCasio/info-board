@@ -716,8 +716,8 @@
     },
     {
         "name": "Pause",
-        "start": "2026-05-27T13:45",
-        "ziel": "2026-05-27T14:45",
+        "start": "2026-05-27T13:00",
+        "ziel": "2026-05-27T14:00",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
