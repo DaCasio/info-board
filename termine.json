@@ -715,8 +715,8 @@
         "checklist": []
     },
     {
-        "name": "Update BRRNG 11.1.13-h5 - schwenk",
-        "start": "2026-05-27T12:00",
+        "name": "Update BRRNG 11.1.13-h5",
+        "start": null,
         "ziel": "2026-05-27T13:30",
         "tags": [
             "TERMINE",
