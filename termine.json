@@ -744,8 +744,8 @@
                 "done": true
             },
             {
-                "text": "---",
-                "done": true
+                "text": "",
+                "done": false
             },
             {
                 "text": "US passice/active",
