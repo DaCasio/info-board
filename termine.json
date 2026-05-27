@@ -726,7 +726,7 @@
         "checklist": [
             {
                 "text": "FWCH01 - PA-440 - Stack_Chemnitz - 01 passive schwenk - FWCH02 suspenden",
-                "done": false
+                "done": true
             },
             {
                 "text": "FWFR01 - PA-440 - Stack_Freiburg - 01 passive schwenk - FWFR01 suspenden",
@@ -734,7 +734,7 @@
             },
             {
                 "text": "FWHD02 - PA-440 - Stack_Heidelberg - 01 active ok",
-                "done": false
+                "done": true
             }
         ]
     },
