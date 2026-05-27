@@ -739,7 +739,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Schwenk um 12 - dann verbleibenden Member updaten",
+        "notiz": "Schwenk um 12 - dann verbleibenden Member updaten\n\n--\n\nIch beginne jetzt mit dem Failover und den restlichen Updates. ",
         "checklist": []
     },
     {
