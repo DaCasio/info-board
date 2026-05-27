@@ -725,7 +725,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Passive Updaten - Schwenk um 12\n\nMoin, ich beginne nun mit den Updates.\n\n--\n\nDie passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
+        "notiz": "Passive updaten\n--\nDie passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
         "checklist": [
             {
                 "text": "Deutsche passive",
