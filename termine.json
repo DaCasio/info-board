@@ -728,19 +728,19 @@
         "notiz": "Die passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
         "checklist": [
             {
-                "text": "FWDS02\t\tPA-410\tStack_US_Dallas passive / done",
-                "done": false
-            },
-            {
                 "text": "FWDS01\t\tPA-410\tStack_US_Dallas active / running / zurückschwenken",
                 "done": false
             },
             {
-                "text": "FWGR02\t\tPA-440\tStack_US_Greer active / running",
+                "text": "FWDS02\t\tPA-410\tStack_US_Dallas passive suspenden und wieder aktivieren",
                 "done": false
             },
             {
-                "text": "FWGR01\t\tPA-440\tStack_US_Greer passive / done  & wird active",
+                "text": "FWGR01\t\tPA-440\tStack_US_Greer active",
+                "done": false
+            },
+            {
+                "text": "FWGR02\t\tPA-440\tStack_US_Greer passive",
                 "done": false
             }
         ]
