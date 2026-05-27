@@ -715,38 +715,6 @@
         "checklist": []
     },
     {
-        "name": "BRRNG zurückschwenk 01er",
-        "start": "2026-05-27T13:30",
-        "ziel": "2026-05-27T13:45",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Die Updates sind erfolgreich abgeschlossen. Morgen geht es weiter mit dem dritten Block.",
-        "checklist": [
-            {
-                "text": "FWCH02\t\tPA-440\tStack_Chemnitz passive machen",
-                "done": true
-            },
-            {
-                "text": "FWFR02\t\tPA-440\tStack_Freiburg passive machen",
-                "done": true
-            },
-            {
-                "text": "FWHD02\t\tPA-440\tStack_Heidelberg passive machen",
-                "done": true
-            },
-            {
-                "text": "FWDS02\t\tPA-410\tStack_US_Dallas passive machen",
-                "done": true
-            },
-            {
-                "text": "FWGR02\t\tPA-440\tStack_US_Greer passive machen",
-                "done": true
-            }
-        ]
-    },
-    {
         "name": "Pause",
         "start": "2026-05-27T13:45",
         "ziel": "2026-05-27T14:45",
