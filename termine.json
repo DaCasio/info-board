@@ -757,20 +757,6 @@
         "checklist": []
     },
     {
-        "name": "Update BRRNG 11.1.13-h5 - Zugänge",
-        "start": "2026-05-27T08:15",
-        "ziel": "2026-05-27T08:30",
-        "tags": [
-            "TERMINE",
-            "BRRNG"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Zugang prüfen",
-        "checklist": []
-    },
-    {
         "name": "Kein Daily heute",
         "start": "2026-05-27T09:40",
         "ziel": "2026-05-27T10:00",
