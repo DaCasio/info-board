@@ -774,14 +774,11 @@
         "name": "Pause",
         "start": "2026-05-27T13:45",
         "ziel": "2026-05-27T14:45",
-        "tags": [
-            "TERMINE",
-            "BRRNG"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Teams bescheid geben.",
+        "notiz": "",
         "checklist": []
     }
 ]
