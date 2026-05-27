@@ -726,16 +726,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "Die passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
-        "checklist": [
-            {
-                "text": "FWDS01\t\tPA-410\tStack_US_Dallas active machen",
-                "done": false
-            },
-            {
-                "text": "FWDS02\t\tPA-410\tStack_US_Dallas passive",
-                "done": true
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Update BRRNG 11.1.13-h5 - schwenk",
