@@ -742,10 +742,7 @@
         "name": "BRRNG zurückschwenk 01er",
         "start": "2026-05-27T13:30",
         "ziel": "2026-05-27T13:45",
-        "tags": [
-            "TERMINE",
-            "BRRNG"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
