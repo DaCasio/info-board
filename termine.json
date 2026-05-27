@@ -728,26 +728,6 @@
         "notiz": "Passive updaten\n--\nDie passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
         "checklist": [
             {
-                "text": "Deutsche passive",
-                "done": false
-            },
-            {
-                "text": "FWCH02\t\tPA-440\tStack_Chemnitz",
-                "done": true
-            },
-            {
-                "text": "FWFR02\t\tPA-440\tStack_Freiburg",
-                "done": true
-            },
-            {
-                "text": "FWHD01\t\tPA-440\tStack_Heidelberg",
-                "done": true
-            },
-            {
-                "text": "",
-                "done": false
-            },
-            {
                 "text": "US passive/active",
                 "done": false
             },
