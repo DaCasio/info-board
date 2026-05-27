@@ -715,20 +715,6 @@
         "checklist": []
     },
     {
-        "name": "Update BRRNG 11.1.13-h5 - passive",
-        "start": null,
-        "ziel": "2026-05-27T11:30",
-        "tags": [
-            "TERMINE",
-            "BRRNG"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Die passiven Standorte sind erfolgreich hochgezogen. Um 12 Uhr geht es weiter mit dem Failover und dem Rest.",
-        "checklist": []
-    },
-    {
         "name": "Update BRRNG 11.1.13-h5 - schwenk",
         "start": "2026-05-27T12:00",
         "ziel": "2026-05-27T13:30",
