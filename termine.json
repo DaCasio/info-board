@@ -716,7 +716,7 @@
     },
     {
         "name": "Update BRRNG 11.1.13-h5 - passive",
-        "start": "2026-05-27T09:00",
+        "start": null,
         "ziel": "2026-05-27T11:30",
         "tags": [
             "TERMINE",
