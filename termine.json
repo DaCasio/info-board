@@ -729,7 +729,7 @@
         "checklist": [
             {
                 "text": "FWDS02\t\tPA-410\tStack_US_Dallas passive / done",
-                "done": true
+                "done": false
             },
             {
                 "text": "FWDS01\t\tPA-410\tStack_US_Dallas active / running / zurückschwenken",
