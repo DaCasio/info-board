@@ -757,7 +757,9 @@
         "name": "ano kernmeeting",
         "start": "2026-05-29T09:00",
         "ziel": "2026-05-29T09:25",
-        "tags": [],
+        "tags": [
+            "ARBEIT"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
