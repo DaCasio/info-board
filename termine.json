@@ -715,17 +715,6 @@
         "checklist": []
     },
     {
-        "name": "feierabend",
-        "start": null,
-        "ziel": "2026-05-28T16:30",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ano kernmeeting",
         "start": "2026-05-29T09:00",
         "ziel": "2026-05-29T09:25",
