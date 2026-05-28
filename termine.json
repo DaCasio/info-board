@@ -809,5 +809,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "-----------------",
+        "start": null,
+        "ziel": "2026-05-28T16:31",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
