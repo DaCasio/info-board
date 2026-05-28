@@ -773,9 +773,7 @@
         "name": "feierabend",
         "start": null,
         "ziel": "2026-05-29T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
