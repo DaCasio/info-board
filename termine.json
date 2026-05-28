@@ -740,9 +740,7 @@
         "name": "nord weekly",
         "start": "2026-05-29T10:00",
         "ziel": "2026-05-29T10:55",
-        "tags": [
-            "ARBEIT"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
