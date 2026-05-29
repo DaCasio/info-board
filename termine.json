@@ -391,14 +391,13 @@
         "start": null,
         "ziel": "2026-07-13T18:00",
         "tags": [
-            "ARBEIT",
-            "RBB"
+            "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "",
-        "checklist": [],
         "repeatUntil": null,
-        "days": []
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Sommerferien",
