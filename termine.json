@@ -607,19 +607,6 @@
         "days": []
     },
     {
-        "name": "Weihnacht Ferien",
-        "start": null,
-        "ziel": "2026-12-23T00:00",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Weihnachtsferien: 23.12.2026 – 06.01.2027",
-        "checklist": []
-    },
-    {
         "name": "Arbeit – Start",
         "start": null,
         "ziel": "2026-12-28T08:00",
