@@ -577,19 +577,6 @@
         "checklist": []
     },
     {
-        "name": "Herbstferien",
-        "start": null,
-        "ziel": "2026-10-17T00:00",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Herbstferien: 17.10. – 01.11.2026",
-        "checklist": []
-    },
-    {
         "name": "TAHNEE - EIN TOUCH TOO MUCH",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
