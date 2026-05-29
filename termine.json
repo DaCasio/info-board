@@ -798,5 +798,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "ano kernmeeting die 2te",
+        "start": "2026-05-29T10:30",
+        "ziel": "2026-05-29T11:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
