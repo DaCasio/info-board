@@ -765,16 +765,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Renewal Jump Host Server ANO",
-        "start": "2026-05-29T10:30",
-        "ziel": "2026-05-29T11:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
