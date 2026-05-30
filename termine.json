@@ -685,20 +685,5 @@
         "days": [],
         "notiz": "Heartland\nDamm 2, 47608 Geldern",
         "checklist": []
-    },
-    {
-        "name": "Holland fahren",
-        "start": null,
-        "ziel": "2026-05-31T14:00",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
