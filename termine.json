@@ -700,19 +700,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Yvonne treffen",
-        "start": "2026-05-30T17:00",
-        "ziel": "2026-05-30T20:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Pizzeria Pinocchio",
-        "checklist": []
     }
 ]
