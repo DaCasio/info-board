@@ -412,16 +412,16 @@
         "checklist": []
     },
     {
-        "name": "Wohnungsrückgabe Verjährung",
+        "name": "Wohnungsrückgabe Verjährung / Kaution ",
         "start": null,
         "ziel": "2026-08-01T00:00",
         "tags": [
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "Kleiststraße",
         "repeatUntil": null,
         "days": [],
+        "notiz": "Kleiststraße",
         "checklist": []
     },
     {
