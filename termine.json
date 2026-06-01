@@ -138,17 +138,17 @@
         "days": []
     },
     {
-        "name": "Pumbi / Diego Impf Stichtag",
+        "name": "Pumbi / Diego Impfen",
         "start": null,
-        "ziel": "2026-06-12T18:00",
+        "ziel": "2026-06-08T16:45",
         "tags": [
             "KATZIS"
         ],
         "repeat": "none",
-        "notiz": "",
-        "checklist": [],
         "repeatUntil": null,
-        "days": []
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Jax Geburtstag",
