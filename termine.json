@@ -660,17 +660,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-06-01T17:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Passwort Ablauf",
         "start": null,
         "ziel": "2026-06-29T08:30",
