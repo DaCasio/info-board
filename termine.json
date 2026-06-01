@@ -693,5 +693,16 @@
         "days": [],
         "notiz": "Läuft Morgen ab... 30.06.",
         "checklist": []
+    },
+    {
+        "name": "Fielmann",
+        "start": null,
+        "ziel": "2026-06-01T12:30",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
