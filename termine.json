@@ -575,20 +575,6 @@
         "checklist": []
     },
     {
-        "name": "Morgen frei (Fronleichnam)",
-        "start": null,
-        "ziel": "2026-06-03T17:00",
-        "tags": [
-            "ARBEIT",
-            "FREI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Brücken Tage",
         "start": null,
         "ziel": "2026-10-01T09:30",
