@@ -619,19 +619,6 @@
         "checklist": []
     },
     {
-        "name": "1on1",
-        "start": "2026-06-03T13:00",
-        "ziel": "2026-06-03T13:25",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Reiterflohmarkt",
         "start": "2026-06-04T10:00",
         "ziel": "2026-06-04T15:00",
