@@ -1,19 +1,5 @@
 [
     {
-        "name": "Therapie",
-        "start": null,
-        "ziel": "2026-06-03T19:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Früh - nur heute",
         "start": null,
         "ziel": "2026-06-05T06:00",
