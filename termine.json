@@ -14,17 +14,17 @@
         "checklist": []
     },
     {
-        "name": "Wochenende",
+        "name": "Feierabend",
         "start": null,
         "ziel": "2026-06-05T14:30",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
-        "notiz": "",
-        "checklist": [],
         "repeatUntil": null,
-        "days": []
+        "days": [],
+        "notiz": "",
+        "checklist": []
     },
     {
         "name": "Update 11.2.7-h8 inet/data",
