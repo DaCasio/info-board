@@ -601,5 +601,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Auto konfig an Daniel",
+        "start": null,
+        "ziel": "2026-06-15T09:00",
+        "tags": [
+            "ARBEIT",
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
