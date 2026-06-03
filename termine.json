@@ -591,9 +591,7 @@
         "name": "Fitnessstudio",
         "start": null,
         "ziel": "2026-06-05T15:30",
-        "tags": [
-            "TERMINE"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
