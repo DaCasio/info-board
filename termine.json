@@ -588,5 +588,18 @@
         "days": [],
         "notiz": "Läuft Morgen ab... 30.06.",
         "checklist": []
+    },
+    {
+        "name": "Sachen packen, Fitnessstudio",
+        "start": null,
+        "ziel": "2026-06-05T15:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
