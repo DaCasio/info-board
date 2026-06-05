@@ -627,9 +627,7 @@
         "name": "Kuckuck",
         "start": null,
         "ziel": "2026-06-05T18:00",
-        "tags": [
-            "TERMINE"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
