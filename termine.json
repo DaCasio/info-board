@@ -616,8 +616,10 @@
     {
         "name": "Fliegengitter",
         "start": null,
-        "ziel": "2026-06-04T14:00",
-        "tags": [],
+        "ziel": "2026-06-06T14:00",
+        "tags": [
+            "TERMINE"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
