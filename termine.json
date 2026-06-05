@@ -634,5 +634,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "BoFrost",
+        "start": null,
+        "ziel": "2026-06-05T11:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
