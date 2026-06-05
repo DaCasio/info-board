@@ -574,17 +574,6 @@
         "checklist": []
     },
     {
-        "name": "Sachen packen, Fitnessstudio",
-        "start": null,
-        "ziel": "2026-06-05T15:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Auto konfig an Daniel",
         "start": null,
         "ziel": "2026-06-22T09:00",
