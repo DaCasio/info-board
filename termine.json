@@ -641,9 +641,7 @@
         "name": "BoFrost",
         "start": null,
         "ziel": "2026-06-05T11:00",
-        "tags": [
-            "TERMINE"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
