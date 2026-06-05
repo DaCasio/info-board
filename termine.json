@@ -681,5 +681,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Next Wave Zugriff",
+        "start": null,
+        "ziel": "2026-06-12T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Zugriff https://tinyurl.com/titanaccess NextWave Learning Center",
+        "checklist": []
     }
 ]
