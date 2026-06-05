@@ -683,16 +683,5 @@
         "days": [],
         "notiz": "Zugriff https://tinyurl.com/titanaccess NextWave Learning Center",
         "checklist": []
-    },
-    {
-        "name": "BoFrost",
-        "start": null,
-        "ziel": "2026-06-05T11:24",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
