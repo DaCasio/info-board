@@ -1,7 +1,7 @@
 [
     {
         "name": "Frühschicht",
-        "start": "2026-06-05T06:00",
+        "start": null,
         "ziel": "2026-06-05T14:00",
         "tags": [],
         "repeat": "none",
