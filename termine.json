@@ -678,9 +678,7 @@
         "name": "Pause",
         "start": "2026-06-05T12:00",
         "ziel": "2026-06-05T12:30",
-        "tags": [
-            "ARBEIT"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
