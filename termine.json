@@ -655,5 +655,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Magenta Mobil XS",
+        "start": null,
+        "ziel": "2028-03-14T00:00",
+        "tags": [
+            "T-COM"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Mobil Vertrag Ende me",
+        "checklist": []
     }
 ]
