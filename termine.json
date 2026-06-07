@@ -681,5 +681,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Magenta Zuhause XL",
+        "start": null,
+        "ziel": "2028-05-07T00:00",
+        "tags": [
+            "T-COM"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
