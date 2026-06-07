@@ -668,5 +668,18 @@
         "days": [],
         "notiz": "Mobil Vertrag Ende me",
         "checklist": []
+    },
+    {
+        "name": "Magenta Mobil XS Helge",
+        "start": null,
+        "ziel": "2027-06-04T00:00",
+        "tags": [
+            "T-COM"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Mobil Vertrag Ende",
+        "checklist": []
     }
 ]
