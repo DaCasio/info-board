@@ -1,19 +1,5 @@
 [
     {
-        "name": "Schwenk 11.2.7-h8 inet/data & oediv",
-        "start": "2026-06-08T20:00",
-        "ziel": "2026-06-08T20:30",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Schwenk auf upgedatete -> inet/data & oediv (me)",
-        "checklist": []
-    },
-    {
         "name": "Füße",
         "start": null,
         "ziel": "2026-06-10T16:00",
