@@ -183,7 +183,8 @@
         "start": null,
         "ziel": "2026-07-20T18:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "RB"
         ],
         "repeat": "none",
         "repeatUntil": null,
