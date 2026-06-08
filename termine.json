@@ -605,16 +605,16 @@
         "checklist": []
     },
     {
-        "name": "Sommerferien (Kopie)",
-        "start": null,
-        "ziel": "2026-07-19T00:00",
+        "name": "Herbstferien",
+        "start": "2026-10-17T00:00",
+        "ziel": "2026-11-01T23:59",
         "tags": [
             "FERIEN"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Sommerferien: 19.07. – 01.09.2026\nHerbstferien: 17.10. – 01.11.2026\nWeihnachtsferien 23.12.2026 – 06.01.2027",
+        "notiz": "",
         "checklist": []
     },
     {
