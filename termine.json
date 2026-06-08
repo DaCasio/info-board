@@ -521,20 +521,6 @@
         "checklist": []
     },
     {
-        "name": "CVE - Kundenliste bearbeiten",
-        "start": "2026-06-08T13:00",
-        "ziel": "2026-06-08T15:30",
-        "tags": [
-            "ARBEIT",
-            "CVE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Kundenliste - Palo Alto Kunden raussuchen und Liste aktualisieren.",
-        "checklist": []
-    },
-    {
         "name": "Next Wave Zugriff",
         "start": null,
         "ziel": "2026-06-12T10:00",
