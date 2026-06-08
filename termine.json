@@ -1,6 +1,6 @@
 [
     {
-        "name": "Update 11.2.7-h8 inet/data",
+        "name": "Update 11.2.7-h8 inet/data & oediv",
         "start": "2026-06-08T08:30",
         "ziel": "2026-06-08T11:00",
         "tags": [
@@ -10,7 +10,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Update der passiven FW -> Internet/Datacenter (me)",
+        "notiz": "Update der passiven FW -> inet/data & oediv (me)",
         "checklist": []
     },
     {
