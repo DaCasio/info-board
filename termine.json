@@ -603,5 +603,18 @@
         "days": [],
         "notiz": "Eintrag Rb Einsatz - Wenn neue Rb Woche gesetzt.\n\nMAG#2026040817382074 — PanOS ANO Update - 11.2.7-h8\nSchwenk auf die upgedateten Firewalls der OEDIV 1,2&3 sowie Datacenter (Segmentierung) / Internet (Perimeter) - Session Count und BGP Session geprüft.",
         "checklist": []
+    },
+    {
+        "name": "Sommerferien (Kopie)",
+        "start": null,
+        "ziel": "2026-07-19T00:00",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Sommerferien: 19.07. – 01.09.2026\nHerbstferien: 17.10. – 01.11.2026\nWeihnachtsferien 23.12.2026 – 06.01.2027",
+        "checklist": []
     }
 ]
