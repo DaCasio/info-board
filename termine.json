@@ -601,7 +601,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Eintrag Rb Einsatz\n\nMAG#2026040817382074 — PanOS ANO Update - 11.2.7-h8\nSchwenk auf die upgedateten Firewalls der OEDIV 1,2&3 sowie Datacenter (Segmentierung) / Internet (Perimeter) - Session Count und BGP Session geprüft.",
+        "notiz": "Eintrag Rb Einsatz - Wenn neue Rb Woche gesetzt.\n\nMAG#2026040817382074 — PanOS ANO Update - 11.2.7-h8\nSchwenk auf die upgedateten Firewalls der OEDIV 1,2&3 sowie Datacenter (Segmentierung) / Internet (Perimeter) - Session Count und BGP Session geprüft.",
         "checklist": []
     }
 ]
