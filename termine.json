@@ -522,8 +522,8 @@
     },
     {
         "name": "CVE - Kundenliste bearbeiten",
-        "start": "2026-06-08T13:01",
-        "ziel": "2026-06-08T15:00",
+        "start": "2026-06-08T13:00",
+        "ziel": "2026-06-08T15:30",
         "tags": [
             "ARBEIT",
             "CVE"
