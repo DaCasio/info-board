@@ -600,19 +600,6 @@
         "checklist": []
     },
     {
-        "name": "JF Ano",
-        "start": "2026-06-09T13:00",
-        "ziel": "2026-06-09T14:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Spät",
         "start": null,
         "ziel": "2026-06-22T09:30",
