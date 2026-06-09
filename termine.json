@@ -493,19 +493,6 @@
         "checklist": []
     },
     {
-        "name": "Magenta Mobil XS Helge",
-        "start": null,
-        "ziel": "2027-06-04T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "CVE - Kundenliste",
         "start": "2026-06-22T11:00",
         "ziel": "2026-06-22T11:30",
