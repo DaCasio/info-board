@@ -484,12 +484,12 @@
         "start": null,
         "ziel": "2028-03-14T00:00",
         "tags": [
-            "TERMINE"
+            "T-COM"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Änderung auf S, abwarten und Lfz in normalen Kalender eintragen.",
         "checklist": []
     },
     {
