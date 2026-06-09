@@ -487,7 +487,8 @@
         "start": null,
         "ziel": "2026-06-09T17:00",
         "tags": [
-            "CASI"
+            "CASI",
+            "KATZIS"
         ],
         "repeat": "none",
         "repeatUntil": null,
