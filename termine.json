@@ -506,19 +506,6 @@
         "checklist": []
     },
     {
-        "name": "Magenta Zuhause XL",
-        "start": null,
-        "ziel": "2028-05-07T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "CVE - Kundenliste",
         "start": "2026-06-22T11:00",
         "ziel": "2026-06-22T11:30",
