@@ -601,17 +601,6 @@
         "checklist": []
     },
     {
-        "name": "pano",
-        "start": "2026-06-09T18:00",
-        "ziel": "2026-06-09T19:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "fw",
         "start": "2026-06-09T19:00",
         "ziel": "2026-06-09T20:00",
