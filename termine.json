@@ -454,20 +454,6 @@
         "checklist": []
     },
     {
-        "name": "Kratzbäume / Feierabend",
-        "start": null,
-        "ziel": "2026-06-09T14:30",
-        "tags": [
-            "CASI",
-            "KATZIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Next Wave Zugriff",
         "start": null,
         "ziel": "2026-06-12T10:00",
