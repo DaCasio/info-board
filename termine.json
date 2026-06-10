@@ -607,5 +607,19 @@
         "days": [],
         "notiz": "Großmarkt Krefeld.",
         "checklist": []
+    },
+    {
+        "name": "Finca in Inca",
+        "start": "2027-09-18T15:00",
+        "ziel": "2027-09-25T15:00",
+        "tags": [
+            "ARBEIT",
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
