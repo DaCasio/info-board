@@ -546,19 +546,6 @@
         "checklist": []
     },
     {
-        "name": "Dani kommt",
-        "start": null,
-        "ziel": "2026-06-11T17:30",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Vossi",
         "start": null,
         "ziel": "2026-06-26T18:00",
