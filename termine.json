@@ -587,19 +587,6 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": "2026-06-11T12:45",
-        "ziel": "2026-06-11T13:45",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-06-11T17:00",
