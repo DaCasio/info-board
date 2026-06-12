@@ -571,5 +571,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Kredi glatt",
+        "start": null,
+        "ziel": "2028-01-29T15:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
