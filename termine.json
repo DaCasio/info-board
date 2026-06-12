@@ -584,18 +584,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Darlehen Ende",
-        "start": null,
-        "ziel": "2030-05-15T15:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
