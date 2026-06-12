@@ -532,20 +532,6 @@
         "checklist": []
     },
     {
-        "name": "Spät",
-        "start": null,
-        "ziel": "2026-06-12T09:30",
-        "tags": [
-            "ARBEIT",
-            "SPÄT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Von Sascha übernommen",
-        "checklist": []
-    },
-    {
         "name": "Vossi",
         "start": null,
         "ziel": "2026-06-26T18:00",
