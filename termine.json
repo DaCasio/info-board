@@ -300,7 +300,7 @@
         "days": []
     },
     {
-        "name": "Urlaub (Kanaren kurzfristig)",
+        "name": "Urlaub planen kurzfristig",
         "start": "2026-09-18T17:00",
         "ziel": "2026-10-04T21:00",
         "tags": [
@@ -308,9 +308,9 @@
             "URLAUB"
         ],
         "repeat": "none",
-        "notiz": "",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
