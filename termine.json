@@ -560,19 +560,6 @@
         "checklist": []
     },
     {
-        "name": "Daily",
-        "start": "2026-06-12T09:40",
-        "ziel": "2026-06-12T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Nord Team Meeting",
         "start": "2026-06-12T10:00",
         "ziel": "2026-06-12T10:55",
