@@ -545,5 +545,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Sommermarkt Grafi",
+        "start": "2026-06-18T16:00",
+        "ziel": "2026-06-18T21:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
