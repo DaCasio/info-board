@@ -259,19 +259,6 @@
         "checklist": []
     },
     {
-        "name": "(Urlaub) Kanaren – prüfen (2/2)",
-        "start": null,
-        "ziel": "2026-09-01T12:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sticki",
         "start": null,
         "ziel": "2026-09-02T08:00",
