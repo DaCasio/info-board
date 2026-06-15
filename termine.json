@@ -619,8 +619,8 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "daily",
+        "repeatUntil": "2026-06-19",
         "days": [],
         "notiz": "",
         "checklist": []
