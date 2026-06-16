@@ -571,5 +571,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Tabbis",
+        "start": null,
+        "ziel": "2026-06-16T10:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "daily",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
