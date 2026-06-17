@@ -623,8 +623,8 @@
         "tags": [
             "TABBIS"
         ],
-        "repeat": "daily",
-        "repeatUntil": "2026-06-19",
+        "repeat": "none",
+        "repeatUntil": null,
         "days": [],
         "notiz": "",
         "checklist": []
