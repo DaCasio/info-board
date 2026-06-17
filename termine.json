@@ -615,5 +615,18 @@
         "days": [],
         "notiz": "Video Recordings for Firewall: Configuration and Management (EDU-210)",
         "checklist": []
+    },
+    {
+        "name": "Tabbis nehmen",
+        "start": null,
+        "ziel": "2026-06-17T10:00",
+        "tags": [
+            "TABBIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
