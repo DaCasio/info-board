@@ -667,5 +667,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-06-22T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "daily",
+        "repeatUntil": "2026-06-26",
+        "days": [],
+        "notiz": "Kundenliste bereitstellen.",
+        "checklist": []
     }
 ]
