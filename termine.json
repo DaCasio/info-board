@@ -601,5 +601,19 @@
         "days": [],
         "notiz": "Bestellt am 17.6",
         "checklist": []
+    },
+    {
+        "name": "Verfügbarkeit EDU-210 Videos Ende",
+        "start": null,
+        "ziel": "2027-06-15T00:00",
+        "tags": [
+            "ARBEIT",
+            "EDU"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Video Recordings for Firewall: Configuration and Management (EDU-210)",
+        "checklist": []
     }
 ]
