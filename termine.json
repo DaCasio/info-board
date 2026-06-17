@@ -585,5 +585,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Bestellung Auto",
+        "start": null,
+        "ziel": "2026-06-17T09:30",
+        "tags": [
+            "ARBEIT",
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "monthly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bestellt am 17.6",
+        "checklist": []
     }
 ]
