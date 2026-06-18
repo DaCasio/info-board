@@ -698,7 +698,9 @@
         "name": "LAB",
         "start": null,
         "ziel": "2026-06-18T12:28",
-        "tags": [],
+        "tags": [
+            "ARBEIT"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
