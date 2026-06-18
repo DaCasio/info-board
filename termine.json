@@ -619,19 +619,6 @@
     {
         "name": "Tabbis nehmen",
         "start": null,
-        "ziel": "2026-06-18T10:00",
-        "tags": [
-            "TABBIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Tabbis nehmen",
-        "start": null,
         "ziel": "2026-06-19T10:00",
         "tags": [
             "TABBIS"
