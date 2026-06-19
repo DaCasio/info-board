@@ -680,5 +680,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Lab",
+        "start": null,
+        "ziel": "2026-06-19T10:16",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
