@@ -604,19 +604,6 @@
         "checklist": []
     },
     {
-        "name": "Tabbis nehmen",
-        "start": null,
-        "ziel": "2026-06-19T10:00",
-        "tags": [
-            "TABBIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Daily",
         "start": "2026-06-22T09:40",
         "ziel": "2026-06-22T10:00",
