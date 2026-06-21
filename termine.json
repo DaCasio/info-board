@@ -666,5 +666,18 @@
         "days": [],
         "notiz": "Kundenliste bearbeiten / auf Mail von Joerg antworten.",
         "checklist": []
+    },
+    {
+        "name": "CVE - Kundenliste (Kopie)",
+        "start": "2026-06-22T10:30",
+        "ziel": "2026-06-22T12:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Kundenliste bearbeiten / auf Mail von Joerg antworten.",
+        "checklist": []
     }
 ]
