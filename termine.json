@@ -655,19 +655,6 @@
         "checklist": []
     },
     {
-        "name": "CVE",
-        "start": "2026-06-22T08:15",
-        "ziel": "2026-06-22T09:39",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Kundenliste bearbeiten / auf Mail von Joerg antworten.",
-        "checklist": []
-    },
-    {
         "name": "CVE - Kundenliste",
         "start": "2026-06-22T10:30",
         "ziel": "2026-06-22T12:00",
