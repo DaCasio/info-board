@@ -655,20 +655,6 @@
         "checklist": []
     },
     {
-        "name": "Drecksgespräch",
-        "start": "2026-06-22T14:30",
-        "ziel": "2026-06-22T15:00",
-        "tags": [
-            "ARBEIT",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Fahradständer anbohren",
         "start": "2026-06-22T17:30",
         "ziel": "2026-06-22T18:30",
