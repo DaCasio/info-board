@@ -692,5 +692,19 @@
         "days": [],
         "notiz": "Kundenliste bearbeiten / auf Mail von Joerg antworten.",
         "checklist": []
+    },
+    {
+        "name": "Drecksgespräch",
+        "start": "2026-06-22T14:30",
+        "ziel": "2026-06-22T15:00",
+        "tags": [
+            "ARBEIT",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
