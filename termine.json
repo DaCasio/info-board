@@ -629,7 +629,7 @@
             },
             {
                 "text": "Termin über den Link gebucht",
-                "done": false
+                "done": true
             }
         ]
     }
