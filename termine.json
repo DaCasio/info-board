@@ -617,7 +617,7 @@
             },
             {
                 "text": "Browser-Favoriten gesichert ",
-                "done": false
+                "done": true
             },
             {
                 "text": "Vnc-Passwort notiert & MFA-Zweitmethode eingerichtet ",
