@@ -623,9 +623,7 @@
         "name": "Client Migration siehe Mail",
         "start": null,
         "ziel": "2026-06-23T14:00",
-        "tags": [
-            "ARBEIT"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
