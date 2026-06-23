@@ -605,7 +605,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "\n",
+        "notiz": "Die Migration wird in 3 Schritten durchgeführt: \nSchritt 1: Vorbereitungen, die ihr macht, damit keine Daten verloren gehen (könnt ihr bereits beginnen) (Tasks)\nSchritt 2: Vorbereitungen, die wir mit euch gemeinsam machen, damit die Migration überhaupt möglich ist (mind. 24 h vorher) \nSchritt 3: Die Migration des Gerätes selbst (Tag des Termins)",
         "checklist": [
             {
                 "text": "OneDrive synchronisiert (grüner Haken) ",
@@ -620,7 +620,7 @@
                 "done": false
             },
             {
-                "text": "Vinci-Passwort notiert & MFA-Zweitmethode eingerichtet ",
+                "text": "Vnc-Passwort notiert & MFA-Zweitmethode eingerichtet ",
                 "done": false
             },
             {
