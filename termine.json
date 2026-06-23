@@ -561,17 +561,6 @@
         "checklist": []
     },
     {
-        "name": "Daily",
-        "start": "2026-06-23T09:40",
-        "ziel": "2026-06-23T10:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Pause",
         "start": "2026-06-23T12:00",
         "ziel": "2026-06-23T13:00",
