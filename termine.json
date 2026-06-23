@@ -630,6 +630,10 @@
             {
                 "text": "Termin über den Link gebucht",
                 "done": true
+            },
+            {
+                "text": "Termin 25.6. 10:10 - Kevin Westmeier",
+                "done": false
             }
         ]
     }
