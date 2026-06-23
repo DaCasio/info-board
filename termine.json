@@ -605,7 +605,32 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
-        "checklist": []
+        "notiz": "\n",
+        "checklist": [
+            {
+                "text": "OneDrive synchronisiert (grüner Haken) ",
+                "done": true
+            },
+            {
+                "text": "Lokale Daten nach OneDrive verschoben (inkl. Outlook-PST & Signaturen) ",
+                "done": false
+            },
+            {
+                "text": "Browser-Favoriten gesichert ",
+                "done": false
+            },
+            {
+                "text": "Vinci-Passwort notiert & MFA-Zweitmethode eingerichtet ",
+                "done": false
+            },
+            {
+                "text": "HardwareHash mind. 24 Std. vorher an uns geschickt ",
+                "done": false
+            },
+            {
+                "text": "Termin über den Link gebucht",
+                "done": false
+            }
+        ]
     }
 ]
