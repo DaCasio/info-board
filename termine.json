@@ -625,5 +625,20 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "Ikea Wolle / Hähnchen",
+        "start": null,
+        "ziel": "2026-06-27T12:30",
+        "tags": [
+            "TERMINE",
+            "KERO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
