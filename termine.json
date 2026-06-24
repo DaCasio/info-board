@@ -52,9 +52,9 @@
         "checklist": []
     },
     {
-        "name": "Urlaub",
-        "start": "2026-07-03T17:00",
-        "ziel": "2026-07-08T21:00",
+        "name": "Urlaub Start",
+        "start": null,
+        "ziel": "2026-07-03T17:00",
         "tags": [
             "ARBEIT",
             "URLAUB"
