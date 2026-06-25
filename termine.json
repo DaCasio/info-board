@@ -733,18 +733,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-06-25T17:00",
-        "tags": [
-            "ARCHIV"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
