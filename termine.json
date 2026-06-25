@@ -573,10 +573,6 @@
         "notiz": "\n",
         "checklist": [
             {
-                "text": "OneDrive synchronisiert (grüner Haken) ",
-                "done": true
-            },
-            {
                 "text": "Lokale Daten nach OneDrive verschoben (inkl. Outlook-PST & Signaturen) ",
                 "done": true
             },
