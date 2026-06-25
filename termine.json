@@ -561,19 +561,6 @@
         "checklist": []
     },
     {
-        "name": "Client Migration siehe Mail",
-        "start": "2026-06-25T10:10",
-        "ziel": "2026-06-25T11:10",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Ikea Wolle / Hähnchen",
         "start": null,
         "ziel": "2026-06-27T12:30",
