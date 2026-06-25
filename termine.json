@@ -602,19 +602,6 @@
         "checklist": []
     },
     {
-        "name": "Reminder",
-        "start": "2026-06-26T10:00",
-        "ziel": "2026-06-26T12:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Daniel hat ne Session - Ich übernehme Telefonie und Monitoring.",
-        "checklist": []
-    },
-    {
         "name": "Pause",
         "start": "2026-06-26T12:00",
         "ziel": "2026-06-26T13:00",
