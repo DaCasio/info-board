@@ -735,5 +735,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Passwort ändern",
+        "start": null,
+        "ziel": "2026-06-25T13:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Läuft Morgen ab... 30.06.",
+        "checklist": []
     }
 ]
