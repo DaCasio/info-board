@@ -658,9 +658,9 @@
         "checklist": []
     },
     {
-        "name": "Spät Monitoring",
-        "start": null,
-        "ziel": "2026-06-26T14:00",
+        "name": "Spät Monitoring / Feierabend",
+        "start": "2026-06-26T14:00",
+        "ziel": "2026-06-26T18:00",
         "tags": [
             "ARBEIT",
             "SPÄT"
