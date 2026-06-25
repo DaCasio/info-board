@@ -11,21 +11,6 @@
         "checklist": []
     },
     {
-        "name": "Frauenarzt",
-        "start": null,
-        "ziel": "2026-06-25T16:00",
-        "tags": [
-            "KERO",
-            "DOK",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "",
-        "checklist": [],
-        "repeatUntil": null,
-        "days": []
-    },
-    {
         "name": "AXN HQ alt Rückbau Ende",
         "start": null,
         "ziel": "2026-06-30T17:00",
