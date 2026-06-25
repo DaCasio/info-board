@@ -11,19 +11,6 @@
         "checklist": []
     },
     {
-        "name": "Perplexity Ende Magenta",
-        "start": null,
-        "ziel": "2026-06-25T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Abo-Ende",
-        "checklist": []
-    },
-    {
         "name": "Frauenarzt",
         "start": null,
         "ziel": "2026-06-25T16:00",
