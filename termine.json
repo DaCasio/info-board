@@ -571,12 +571,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "\n",
-        "checklist": [
-            {
-                "text": "Termin 25.6. 10:10 - Kevin Westmeier",
-                "done": false
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Ikea Wolle / Hähnchen",
