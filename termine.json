@@ -613,19 +613,5 @@
         "days": [],
         "notiz": "Bestellt am 17.6\n7 Monate\n\n•\t7 Monate: etwa Mitte Januar 2027.",
         "checklist": []
-    },
-    {
-        "name": "Forticlient Deadline",
-        "start": null,
-        "ziel": "2026-07-26T10:44",
-        "tags": [
-            "ARBEIT",
-            "WICHTIG"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Bitte kontaktieren Sie Ihren Administrator oder verbinden Sie sich zu einem EMS Server für eine Lizenzaktivierung. Unlizenzierter VPN Zugriff ist verfügbar bis 2026-07-26 10:44:38",
-        "checklist": []
     }
 ]
