@@ -578,19 +578,6 @@
         "checklist": []
     },
     {
-        "name": "Ergebnisse GPTW",
-        "start": "2026-06-26T14:00",
-        "ziel": "2026-06-26T14:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Bestellung Auto",
         "start": null,
         "ziel": "2026-08-17T09:30",
