@@ -568,20 +568,5 @@
         "days": [],
         "notiz": "Bestellt am 17.6\n4 Monate\n\n•\t5 Monate: etwa Mitte November.\n•\t7 Monate: etwa Mitte Januar 2027.",
         "checklist": []
-    },
-    {
-        "name": "Bestellung Auto",
-        "start": null,
-        "ziel": "2026-11-17T09:30",
-        "tags": [
-            "ARBEIT",
-            "AUTO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Bestellt am 17.6\n5 Monate\n\n•\t5 Monate: etwa Mitte November.\n•\t7 Monate: etwa Mitte Januar 2027.",
-        "checklist": []
     }
 ]
