@@ -455,17 +455,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend / Start Rb einmalig",
-        "start": null,
-        "ziel": "2026-06-26T18:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Es wird kühler",
         "start": null,
         "ziel": "2026-06-28T22:00",
