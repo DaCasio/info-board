@@ -256,12 +256,12 @@
         "start": null,
         "ziel": "2026-12-28T08:00",
         "tags": [
-            "ARBEIT"
+            "URLAUB"
         ],
         "repeat": "none",
-        "notiz": "",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
