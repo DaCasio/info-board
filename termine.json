@@ -502,10 +502,10 @@
             "AUTO",
             "CASI"
         ],
-        "repeat": "monthly",
+        "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Bestellt am 17.6\n0 Monate",
+        "notiz": "Bestellt am 17.6\n1 Monat\n\n•\t3 Monate: etwa Mitte September.\n•\t5 Monate: etwa Mitte November.\n•\t7 Monate: etwa Mitte Januar 2027.",
         "checklist": []
     },
     {
