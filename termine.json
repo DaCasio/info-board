@@ -139,19 +139,6 @@
         "checklist": []
     },
     {
-        "name": "Arbeit – Start",
-        "start": null,
-        "ziel": "2026-08-10T08:00",
-        "tags": [
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Elster-Zertifikat Mutti läuft aus",
         "start": null,
         "ziel": "2026-08-31T08:37",
