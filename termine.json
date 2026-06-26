@@ -449,10 +449,10 @@
             "AUTO",
             "CASI"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "monthly",
+        "repeatUntil": "2026-12-17",
         "days": [],
-        "notiz": "Bestellt am 17.6\n1 Monat\n\n•\t3 Monate: etwa Mitte September.\n•\t5 Monate: etwa Mitte November.\n•\t7 Monate: etwa Mitte Januar 2027.",
+        "notiz": "Bestellt am 17.6\n17.07 - 1 Monat\n17.08 - 2 Monate\n17.09 - 3 Monate\n17.10 - 4 Monate\n17.11 - 5 Monate\n17.12 - 6 Monate",
         "checklist": []
     },
     {
