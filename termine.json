@@ -215,12 +215,13 @@
         "start": null,
         "ziel": "2026-10-05T08:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "URLAUB"
         ],
         "repeat": "none",
-        "notiz": "",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
