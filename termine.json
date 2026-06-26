@@ -269,12 +269,12 @@
         "start": null,
         "ziel": "2027-01-04T08:00",
         "tags": [
-            "ARBEIT"
+            "URLAUB"
         ],
         "repeat": "none",
-        "notiz": "",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
