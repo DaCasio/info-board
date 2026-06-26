@@ -501,10 +501,7 @@
         "name": "Feierabend / Start Rb einmalig",
         "start": null,
         "ziel": "2026-06-26T18:00",
-        "tags": [
-            "ARBEIT",
-            "RB"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
