@@ -14,19 +14,6 @@
         "checklist": []
     },
     {
-        "name": "AXN HQ alt Rückbau Ende",
-        "start": null,
-        "ziel": "2026-06-30T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": "Übergabe ALBIN KÖBIS",
-        "repeatUntil": null,
-        "days": [],
-        "checklist": []
-    },
-    {
         "name": "Urlaub Start",
         "start": null,
         "ziel": "2026-07-03T17:00",
