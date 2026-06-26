@@ -139,19 +139,6 @@
         "checklist": []
     },
     {
-        "name": "AXN HQ Umzug Done",
-        "start": null,
-        "ziel": "2026-08-01T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "notiz": "Einzug alle Etagen - \nAXIANS MAGELLAN\nMax-Reichpietsch Str. 1-5\n51147 Köln\nGermany",
-        "checklist": [],
-        "repeatUntil": null,
-        "days": []
-    },
-    {
         "name": "Jahrestag",
         "start": "2026-08-05T00:00",
         "ziel": "2026-08-06T00:00",
