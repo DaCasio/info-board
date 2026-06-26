@@ -333,19 +333,6 @@
         "checklist": []
     },
     {
-        "name": "Passwort Ablauf",
-        "start": null,
-        "ziel": "2026-06-29T08:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Läuft Morgen ab... 30.06.",
-        "checklist": []
-    },
-    {
         "name": "Next Wave Zugriff",
         "start": null,
         "ziel": "2026-07-03T10:10",
