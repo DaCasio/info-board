@@ -114,13 +114,12 @@
         "start": "2026-07-31T17:00",
         "ziel": "2026-08-09T21:00",
         "tags": [
-            "ARBEIT",
             "URLAUB"
         ],
         "repeat": "none",
-        "notiz": "",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
