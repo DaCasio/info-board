@@ -440,21 +440,6 @@
         "checklist": []
     },
     {
-        "name": "Ikea Wolle / Hähnchen",
-        "start": null,
-        "ziel": "2026-06-27T12:30",
-        "tags": [
-            "TERMINE",
-            "KERO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Es wird kühler",
         "start": null,
         "ziel": "2026-06-28T22:00",
