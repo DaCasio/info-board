@@ -577,8 +577,8 @@
         "tags": [
             "ARBEIT"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "daily",
+        "repeatUntil": "2026-07-03",
         "days": [],
         "notiz": "",
         "checklist": []
