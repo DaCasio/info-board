@@ -554,5 +554,16 @@
         "days": [],
         "notiz": "Einblick in VINCI World & Interaktive 3D Entwicklung",
         "checklist": []
+    },
+    {
+        "name": "Dienstag",
+        "start": null,
+        "ziel": "2026-06-30T08:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
