@@ -545,17 +545,6 @@
         "checklist": []
     },
     {
-        "name": "Dienstag",
-        "start": null,
-        "ziel": "2026-06-30T08:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Mittwoch",
         "start": null,
         "ziel": "2026-07-01T08:00",
