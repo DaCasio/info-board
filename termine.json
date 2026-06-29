@@ -491,5 +491,18 @@
         "days": [],
         "notiz": "LAB 15 weitermachen",
         "checklist": []
+    },
+    {
+        "name": "Forcast",
+        "start": "2026-07-01T10:30",
+        "ziel": "2026-07-01T11:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
