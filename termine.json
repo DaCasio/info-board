@@ -3,7 +3,10 @@
         "name": "EDU 210",
         "start": "2026-07-01T08:30",
         "ziel": "2026-07-01T09:40",
-        "tags": [],
+        "tags": [
+            "ARBEIT",
+            "EDU"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
