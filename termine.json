@@ -533,7 +533,9 @@
         "name": "Stromzähler",
         "start": null,
         "ziel": "2026-06-30T23:00",
-        "tags": [],
+        "tags": [
+            "TERMINE"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
