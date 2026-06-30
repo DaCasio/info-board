@@ -576,7 +576,7 @@
     },
     {
         "name": "Telemetrie",
-        "start": "2026-06-30T13:10",
+        "start": "2026-06-30T13:15",
         "ziel": "2026-06-30T17:00",
         "tags": [],
         "repeat": "none",
