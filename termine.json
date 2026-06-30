@@ -553,17 +553,6 @@
         "checklist": []
     },
     {
-        "name": "Bofrost",
-        "start": null,
-        "ziel": "2026-06-30T10:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Stromzähler",
         "start": null,
         "ziel": "2026-07-01T08:00",
