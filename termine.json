@@ -573,16 +573,5 @@
         "days": [],
         "notiz": "Kundenliste bereitstellen.",
         "checklist": []
-    },
-    {
-        "name": "Telemetrie",
-        "start": "2026-06-30T13:16",
-        "ziel": "2026-06-30T17:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
