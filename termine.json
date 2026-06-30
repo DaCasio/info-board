@@ -545,9 +545,9 @@
         "checklist": []
     },
     {
-        "name": "Mittwoch",
+        "name": "Feierabend",
         "start": null,
-        "ziel": "2026-07-01T08:00",
+        "ziel": "2026-06-30T17:24",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
