@@ -253,9 +253,7 @@
         "name": "Next Wave Zugriff",
         "start": null,
         "ziel": "2026-07-03T10:10",
-        "tags": [
-            "ARBEIT"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
