@@ -331,7 +331,7 @@
     },
     {
         "name": "Sommermarkt Grafi",
-        "start": "2026-07-02T16:00",
+        "start": null,
         "ziel": "2026-07-02T21:00",
         "tags": [
             "TERMINE"
