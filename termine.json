@@ -356,7 +356,7 @@
         "checklist": []
     },
     {
-        "name": "Darlehen glatt",
+        "name": "Darlehen frühstens glatt",
         "start": null,
         "ziel": "2028-01-28T15:00",
         "tags": [
