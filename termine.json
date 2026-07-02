@@ -579,5 +579,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Darlehen spätesten glatt",
+        "start": null,
+        "ziel": "2030-05-15T17:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
