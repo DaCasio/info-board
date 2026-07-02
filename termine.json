@@ -555,7 +555,7 @@
     {
         "name": "Dispatcher",
         "start": "2026-07-02T11:00",
-        "ziel": "2026-07-02T12:00",
+        "ziel": "2026-07-02T13:00",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
