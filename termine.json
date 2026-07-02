@@ -333,9 +333,7 @@
         "name": "Sommermarkt Grafi",
         "start": null,
         "ziel": "2026-07-02T18:00",
-        "tags": [
-            "TERMINE"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
