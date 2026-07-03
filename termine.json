@@ -490,5 +490,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "SNow",
+        "start": null,
+        "ziel": "2026-07-30T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "•\tJuli 2026: Abschluss der Systemkonfiguration, finale UAT-Testphase",
+        "checklist": []
     }
 ]
