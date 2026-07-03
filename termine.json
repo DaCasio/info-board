@@ -482,7 +482,8 @@
         "start": null,
         "ziel": "2026-09-07T08:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "SNOW"
         ],
         "repeat": "none",
         "repeatUntil": null,
