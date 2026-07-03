@@ -502,5 +502,18 @@
         "days": [],
         "notiz": "•\tJuli 2026: Abschluss der Systemkonfiguration, finale UAT-Testphase",
         "checklist": []
+    },
+    {
+        "name": "SNow",
+        "start": null,
+        "ziel": "2026-08-15T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Schulungen für Betriebsteam und Key User „Train the Trainer\"",
+        "checklist": []
     }
 ]
