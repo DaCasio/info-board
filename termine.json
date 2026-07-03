@@ -410,17 +410,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-07-03T17:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ANO SCM Demo",
         "start": "2026-07-07T10:30",
         "ziel": "2026-07-07T12:00",
