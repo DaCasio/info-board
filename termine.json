@@ -476,5 +476,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "SNow Go!Live",
+        "start": null,
+        "ziel": "2026-09-07T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
