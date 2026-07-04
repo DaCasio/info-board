@@ -532,9 +532,9 @@
         "checklist": []
     },
     {
-        "name": "Phantasialand",
-        "start": null,
-        "ziel": "2026-07-05T10:00",
+        "name": "Phantasialand, Casi, Kero",
+        "start": "2026-07-05T10:00",
+        "ziel": "2026-07-06T18:00",
         "tags": [
             "TERMINE"
         ],
