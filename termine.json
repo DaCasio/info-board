@@ -13,21 +13,6 @@
         "checklist": []
     },
     {
-        "name": "Hochzeitstag",
-        "start": "2026-07-04T00:00",
-        "ziel": "2026-07-05T00:00",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Füße Sandra",
         "start": null,
         "ziel": "2026-07-09T13:15",
