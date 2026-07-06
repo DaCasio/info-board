@@ -397,19 +397,6 @@
         "checklist": []
     },
     {
-        "name": "Plopsaland",
-        "start": null,
-        "ziel": "2026-07-07T07:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Rb Start",
         "start": null,
         "ziel": "2026-08-10T18:00",
