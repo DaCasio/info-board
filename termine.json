@@ -515,20 +515,5 @@
         "days": [],
         "notiz": "Alle Nutzer müssen bitte bis zum Go- Live folgenden Kurs abschließen und die Video-Tutorials (Shorts) verinnerlichen. So bekommt Ihr vorab ein gutes Grundverständnis für das Tool. Euere Teamleiter bzw. die Keyser werden wie im vorhergehenden Punkt beschrieben von Uns geschult und tragen das Wissen Ende August an Euch weiter.",
         "checklist": []
-    },
-    {
-        "name": "Phantasialand",
-        "start": "2026-07-05T10:00",
-        "ziel": "2026-07-06T18:00",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
