@@ -1,18 +1,5 @@
 [
     {
-        "name": "Urlaub Ende",
-        "start": null,
-        "ziel": "2026-07-08T23:59",
-        "tags": [
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Füße Sandra",
         "start": null,
         "ziel": "2026-07-09T13:15",
