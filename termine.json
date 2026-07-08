@@ -515,5 +515,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Firewall Tausch HES",
+        "start": "2026-07-10T09:15",
+        "ziel": "2026-07-10T12:15",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
