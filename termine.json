@@ -248,20 +248,6 @@
         "checklist": []
     },
     {
-        "name": "Vossi",
-        "start": null,
-        "ziel": "2026-07-10T18:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Großmarkt Krefeld.",
-        "checklist": []
-    },
-    {
         "name": "Finca in Inca",
         "start": "2027-09-18T15:00",
         "ziel": "2027-09-25T15:00",
