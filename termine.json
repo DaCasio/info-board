@@ -606,5 +606,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Update",
+        "start": null,
+        "ziel": "2026-07-09T18:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": ">= 11.2.10-h12\nanstatt\n>= 11.2.7-h18",
+        "checklist": []
     }
 ]
