@@ -464,19 +464,6 @@
         "checklist": []
     },
     {
-        "name": "NSO ONE Daily",
-        "start": "2026-07-10T09:40",
-        "ziel": "2026-07-10T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "NORD Team1 Weekly",
         "start": "2026-07-10T10:00",
         "ziel": "2026-07-10T10:55",
