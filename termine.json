@@ -447,7 +447,12 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "Alle Nutzer müssen bitte bis zum Go- Live folgenden Kurs abschließen und die Video-Tutorials (Shorts) verinnerlichen. So bekommt Ihr vorab ein gutes Grundverständnis für das Tool. Eure Teamleiter bzw. die Keyuser werden wie im vorhergehenden Punkt beschrieben von uns geschult und tragen das Wissen Ende August an Euch weiter.",
-        "checklist": []
+        "checklist": [
+            {
+                "text": "Info Jörg abwarten wegen Buchungsnummer",
+                "done": false
+            }
+        ]
     },
     {
         "name": "Stichtag Migration PC",
