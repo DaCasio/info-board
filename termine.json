@@ -450,19 +450,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-07-10T17:40",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Stichtag Migration PC",
         "start": null,
         "ziel": "2026-08-07T08:30",
