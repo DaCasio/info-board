@@ -543,5 +543,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "ANO PALO MKW 11.2.10-h12",
+        "start": "2026-07-10T19:00",
+        "ziel": "2026-07-10T20:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
