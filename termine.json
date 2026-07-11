@@ -585,7 +585,9 @@
         "start": null,
         "ziel": "2026-07-13T10:00",
         "tags": [
-            "TERMINE"
+            "TERMINE",
+            "CASI",
+            "FINANZEN"
         ],
         "repeat": "none",
         "repeatUntil": null,
