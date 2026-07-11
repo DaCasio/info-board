@@ -579,5 +579,18 @@
         "days": [],
         "notiz": "Wünscht sich Schnubbi zum Geburtstag\nhttps://share.google/4j5su4VNhe3FfXNLf\n",
         "checklist": []
+    },
+    {
+        "name": "Mutti LSt Abgabe",
+        "start": null,
+        "ziel": "2026-07-13T10:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
