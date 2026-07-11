@@ -577,5 +577,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Matcha Set",
+        "start": null,
+        "ziel": "2026-07-12T10:00",
+        "tags": [
+            "CASI",
+            "KERO",
+            "GEBURTSTAG"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
