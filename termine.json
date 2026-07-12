@@ -594,5 +594,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Sommerferien Ende",
+        "start": null,
+        "ziel": "2026-09-01T23:59",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
