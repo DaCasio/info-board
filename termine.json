@@ -603,5 +603,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Robert & Uschi Dampfe",
+        "start": null,
+        "ziel": "2026-07-18T18:00",
+        "tags": [
+            "TERMINE",
+            "KERO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
