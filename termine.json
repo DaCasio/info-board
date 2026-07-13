@@ -589,5 +589,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Dani Tisch zusammen bauen & Prominent getrennt gucken ",
+        "start": null,
+        "ziel": "2026-07-17T17:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
