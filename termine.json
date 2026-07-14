@@ -329,20 +329,6 @@
         "checklist": []
     },
     {
-        "name": "Leni St. Joseph KH",
-        "start": null,
-        "ziel": "2026-07-14T09:30",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Rb Start",
         "start": null,
         "ziel": "2026-08-10T18:00",
