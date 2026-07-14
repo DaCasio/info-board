@@ -547,21 +547,6 @@
         "checklist": []
     },
     {
-        "name": "Mutti LSt Abgabe",
-        "start": null,
-        "ziel": "2026-07-14T17:30",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sommerferien Ende",
         "start": null,
         "ziel": "2026-09-01T23:59",
