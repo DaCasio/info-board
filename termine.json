@@ -646,5 +646,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Solar eclipse",
+        "start": null,
+        "ziel": "2027-08-02T08:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "the world will go dark for 6 minutes.",
+        "checklist": []
     }
 ]
