@@ -642,5 +642,18 @@
         "days": [],
         "notiz": "2er Member\nDAT\nDEV\nHBE\nHPT",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-07-16T09:40",
+        "ziel": "2026-07-16T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
