@@ -627,5 +627,18 @@
         "days": [],
         "notiz": "The world will go dark for 6 minutes.\nAm besten sichtbar in Spanien.",
         "checklist": []
+    },
+    {
+        "name": "Forcast",
+        "start": "2026-07-15T10:30",
+        "ziel": "2026-07-15T11:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
