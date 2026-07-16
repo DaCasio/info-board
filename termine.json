@@ -824,5 +824,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Gladbach - Mainz",
+        "start": "2026-09-19T13:30",
+        "ziel": "2026-09-19T18:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
