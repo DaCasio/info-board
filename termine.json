@@ -785,5 +785,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-07-17T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Wünscht sich Schnubbi zum Geburtstag\nhttps://share.google/4j5su4VNhe3FfXNLf\n",
+        "checklist": []
     }
 ]
