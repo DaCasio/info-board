@@ -811,5 +811,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Gladbach - Elversberg Home",
+        "start": "2026-08-29T13:30",
+        "ziel": "2026-08-29T18:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
