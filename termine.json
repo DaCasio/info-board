@@ -644,19 +644,6 @@
         "checklist": []
     },
     {
-        "name": "Fahrt Ano",
-        "start": "2026-07-16T12:00",
-        "ziel": "2026-07-16T13:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Service Meeting ANO",
         "start": "2026-07-16T13:00",
         "ziel": "2026-07-16T14:30",
