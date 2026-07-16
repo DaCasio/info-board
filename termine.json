@@ -18,7 +18,8 @@
         "start": null,
         "ziel": "2026-07-17T17:00",
         "tags": [
-            "FERIEN"
+            "FERIEN",
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
