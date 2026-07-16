@@ -720,5 +720,31 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Weekly",
+        "start": "2026-07-17T10:00",
+        "ziel": "2026-07-17T10:55",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Monthly",
+        "start": "2026-07-17T10:00",
+        "ziel": "2026-07-17T10:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
