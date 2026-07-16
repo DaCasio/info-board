@@ -798,5 +798,18 @@
         "days": [],
         "notiz": "Wünscht sich Schnubbi zum Geburtstag\nhttps://share.google/4j5su4VNhe3FfXNLf\n",
         "checklist": []
+    },
+    {
+        "name": "Gladbach auf RTL Free TV",
+        "start": "2026-08-29T15:30",
+        "ziel": "2026-08-29T17:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
