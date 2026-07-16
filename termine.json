@@ -644,19 +644,6 @@
         "checklist": []
     },
     {
-        "name": "Rückfahrt Home",
-        "start": "2026-07-16T15:00",
-        "ziel": "2026-07-16T16:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Daily",
         "start": "2026-07-17T09:40",
         "ziel": "2026-07-17T10:00",
