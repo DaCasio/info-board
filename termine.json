@@ -14,12 +14,11 @@
         "checklist": []
     },
     {
-        "name": "Sommerferien Start / Feierabend",
+        "name": "Sommerferien Start",
         "start": null,
         "ziel": "2026-07-17T17:00",
         "tags": [
-            "FERIEN",
-            "ARBEIT"
+            "FERIEN"
         ],
         "repeat": "none",
         "repeatUntil": null,
