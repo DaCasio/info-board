@@ -683,8 +683,77 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "abl\nasc\nath\nbar\nbau\nbeu\nboi\nbou\nbri\ncav\nces\ncho\ncol\ncui\ncul\ndam\ndos",
-        "checklist": []
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "abl",
+                "done": false
+            },
+            {
+                "text": "asc",
+                "done": false
+            },
+            {
+                "text": "ath",
+                "done": false
+            },
+            {
+                "text": "bar",
+                "done": false
+            },
+            {
+                "text": "bau",
+                "done": false
+            },
+            {
+                "text": "beu",
+                "done": false
+            },
+            {
+                "text": "boi",
+                "done": false
+            },
+            {
+                "text": "bou",
+                "done": false
+            },
+            {
+                "text": "bri",
+                "done": false
+            },
+            {
+                "text": "cav",
+                "done": false
+            },
+            {
+                "text": "ces",
+                "done": false
+            },
+            {
+                "text": "cho",
+                "done": false
+            },
+            {
+                "text": "col",
+                "done": false
+            },
+            {
+                "text": "cui",
+                "done": false
+            },
+            {
+                "text": "cul",
+                "done": false
+            },
+            {
+                "text": "dam",
+                "done": false
+            },
+            {
+                "text": "dos",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO Updates",
