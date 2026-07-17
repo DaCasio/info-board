@@ -763,5 +763,19 @@
         "days": [],
         "notiz": "enn\nerp\ngem\ngrg\ngro\nher\nhes\nheu\nhnl\nhon\nhpl\nibe\nimv\njar\nlin\nlis\nlyo",
         "checklist": []
+    },
+    {
+        "name": "ANO Updates",
+        "start": "2026-07-29T08:30",
+        "ziel": "2026-07-29T10:30",
+        "tags": [
+            "ARBEIT",
+            "ANO-LGS/RGS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "mal\nmas\nmei\nmir\nmkw\nmot\nmuen\nnor\npin\nrad\nrei\nrij\nroe\nroo\nros\nsag\nsau",
+        "checklist": []
     }
 ]
