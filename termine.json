@@ -802,7 +802,8 @@
         "ziel": "2026-08-10T10:30",
         "tags": [
             "ARBEIT",
-            "ANO-RZ"
+            "ANO-RZ",
+            "ANO"
         ],
         "repeat": "none",
         "repeatUntil": null,
