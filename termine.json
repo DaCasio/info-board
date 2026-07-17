@@ -658,19 +658,6 @@
         "checklist": []
     },
     {
-        "name": "Monthly",
-        "start": "2026-07-17T10:00",
-        "ziel": "2026-07-17T10:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Karl - Rückblick und aktueller Stand",
-        "checklist": []
-    },
-    {
         "name": "Lunch",
         "start": "2026-07-17T12:00",
         "ziel": "2026-07-17T13:00",
