@@ -637,7 +637,8 @@
         "ziel": "2026-07-24T12:30",
         "tags": [
             "ARBEIT",
-            "ANO-PILOT"
+            "ANO-PILOT",
+            "ANO"
         ],
         "repeat": "none",
         "repeatUntil": null,
