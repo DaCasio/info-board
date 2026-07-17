@@ -767,8 +767,77 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "enn\nerp\ngem\ngrg\ngro\nher\nhes\nheu\nhnl\nhon\nhpl\nibe\nimv\njar\nlin\nlis\nlyo",
-        "checklist": []
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "enn",
+                "done": false
+            },
+            {
+                "text": "erp",
+                "done": false
+            },
+            {
+                "text": "gem",
+                "done": false
+            },
+            {
+                "text": "grg",
+                "done": false
+            },
+            {
+                "text": "gro",
+                "done": false
+            },
+            {
+                "text": "her",
+                "done": false
+            },
+            {
+                "text": "hes",
+                "done": false
+            },
+            {
+                "text": "heu",
+                "done": false
+            },
+            {
+                "text": "hnl",
+                "done": false
+            },
+            {
+                "text": "hon",
+                "done": false
+            },
+            {
+                "text": "hpl",
+                "done": false
+            },
+            {
+                "text": "ibe",
+                "done": false
+            },
+            {
+                "text": "imv",
+                "done": false
+            },
+            {
+                "text": "jar",
+                "done": false
+            },
+            {
+                "text": "lin",
+                "done": false
+            },
+            {
+                "text": "lis",
+                "done": false
+            },
+            {
+                "text": "lyo",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO Updates",
