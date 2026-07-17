@@ -935,8 +935,73 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "see\nsef\nsho\nsie\nsis\nsti\ntou\nvau\nwaw\nwei\nwer\nwey\nwil\nxfr\nzem\nzoe",
-        "checklist": []
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "see",
+                "done": false
+            },
+            {
+                "text": "sef",
+                "done": false
+            },
+            {
+                "text": "sho",
+                "done": false
+            },
+            {
+                "text": "sie",
+                "done": false
+            },
+            {
+                "text": "sis",
+                "done": false
+            },
+            {
+                "text": "sti",
+                "done": false
+            },
+            {
+                "text": "tou",
+                "done": false
+            },
+            {
+                "text": "vau",
+                "done": false
+            },
+            {
+                "text": "waw",
+                "done": false
+            },
+            {
+                "text": "wei",
+                "done": false
+            },
+            {
+                "text": "wer",
+                "done": false
+            },
+            {
+                "text": "wey",
+                "done": false
+            },
+            {
+                "text": "wil",
+                "done": false
+            },
+            {
+                "text": "xfr",
+                "done": false
+            },
+            {
+                "text": "zem",
+                "done": false
+            },
+            {
+                "text": "zoe",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO Updates",
