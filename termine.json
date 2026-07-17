@@ -791,5 +791,19 @@
         "days": [],
         "notiz": "see\nsef\nsho\nsie\nsis\nsti\ntou\nvau\nwaw\nwei\nwer\nwey\nwil\nxfr\nzem\nzoe",
         "checklist": []
+    },
+    {
+        "name": "ANO Updates",
+        "start": "2026-08-10T08:30",
+        "ziel": "2026-08-10T10:30",
+        "tags": [
+            "ARBEIT",
+            "ANO-RZ"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "hst_unw_oed-pan-fwc1-1\nhst_unw_oed-pan-fwc2-1\nhst_unw_oed-pan-fwc3-2\npan-fwc1-2-hdr1 \npan-fwc5-2-hdr1",
+        "checklist": []
     }
 ]
