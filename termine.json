@@ -537,7 +537,8 @@
         "start": null,
         "ziel": "2026-07-20T08:30",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "CVE"
         ],
         "repeat": "none",
         "repeatUntil": null,
