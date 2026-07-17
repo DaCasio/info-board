@@ -725,21 +725,6 @@
         "checklist": []
     },
     {
-        "name": "Linux Credentials an Martin / Maurice",
-        "start": null,
-        "ziel": "2026-07-17T11:30",
-        "tags": [
-            "ARBEIT",
-            "ANO-LINUX",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ANO Updates",
         "start": "2026-07-27T08:30",
         "ziel": "2026-07-27T10:30",
