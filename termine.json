@@ -533,12 +533,11 @@
         "checklist": []
     },
     {
-        "name": "Dani Tisch zusammen bauen & Prominent getrennt gucken ",
+        "name": "CVE - Listenabgleich",
         "start": null,
-        "ziel": "2026-07-17T17:00",
+        "ziel": "2026-07-20T08:30",
         "tags": [
-            "TERMINE",
-            "KERO"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
