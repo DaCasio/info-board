@@ -805,5 +805,19 @@
         "days": [],
         "notiz": "hst_unw_oed-pan-fwc1-1\nhst_unw_oed-pan-fwc2-1\nhst_unw_oed-pan-fwc3-2\npan-fwc1-2-hdr1 \npan-fwc5-2-hdr1",
         "checklist": []
+    },
+    {
+        "name": "ANO Updates",
+        "start": "2026-08-13T08:30",
+        "ziel": "2026-08-13T10:30",
+        "tags": [
+            "ARBEIT",
+            "ANO-RZ"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "hst_unw_oed-pan-fwc1-2\nhst_unw_oed-pan-fwc2-2\nhst_unw_oed-pan-fwc3-1\npan-fwc1-1-hdr2\npan-fwc5-1-hdr2",
+        "checklist": []
     }
 ]
