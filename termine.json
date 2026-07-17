@@ -14,20 +14,6 @@
         "checklist": []
     },
     {
-        "name": "Sommerferien Start / Feierabend",
-        "start": null,
-        "ziel": "2026-07-17T17:00",
-        "tags": [
-            "FERIEN",
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Rb Ende",
         "start": null,
         "ziel": "2026-07-27T06:00",
