@@ -817,7 +817,8 @@
         "ziel": "2026-08-13T10:30",
         "tags": [
             "ARBEIT",
-            "ANO-RZ"
+            "ANO-RZ",
+            "ANO"
         ],
         "repeat": "none",
         "repeatUntil": null,
