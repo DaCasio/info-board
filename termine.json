@@ -1015,8 +1015,29 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "hst_unw_oed-pan-fwc1-1\nhst_unw_oed-pan-fwc2-1\nhst_unw_oed-pan-fwc3-2\npan-fwc1-2-hdr1 \npan-fwc5-2-hdr1",
-        "checklist": []
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "hst_unw_oed-pan-fwc1-1",
+                "done": false
+            },
+            {
+                "text": "hst_unw_oed-pan-fwc2-1",
+                "done": false
+            },
+            {
+                "text": "hst_unw_oed-pan-fwc3-2",
+                "done": false
+            },
+            {
+                "text": "pan-fwc1-2-hdr1 ",
+                "done": false
+            },
+            {
+                "text": "pan-fwc5-2-hdr1",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO Updates",
