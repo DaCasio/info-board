@@ -603,7 +603,7 @@
         "checklist": []
     },
     {
-        "name": "ANO Updates",
+        "name": "ANO Updates Pilot 1st Member",
         "start": "2026-07-22T08:30",
         "ziel": "2026-07-22T10:30",
         "tags": [
@@ -614,8 +614,29 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "1er Member\nDAT\nDEV\nHBE\nHPT\nHSP",
-        "checklist": []
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "DAT",
+                "done": false
+            },
+            {
+                "text": "DEV",
+                "done": false
+            },
+            {
+                "text": "HBE",
+                "done": false
+            },
+            {
+                "text": "HPT",
+                "done": false
+            },
+            {
+                "text": "HSP",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO Updates",
