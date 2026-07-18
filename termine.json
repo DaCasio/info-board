@@ -1019,7 +1019,7 @@
         "checklist": [
             {
                 "text": "hst_unw_oed-pan-fwc1-1",
-                "done": false
+                "done": true
             },
             {
                 "text": "hst_unw_oed-pan-fwc2-1",
