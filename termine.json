@@ -1,19 +1,5 @@
 [
     {
-        "name": "Rb Start",
-        "start": null,
-        "ziel": "2026-07-20T18:00",
-        "tags": [
-            "ARBEIT",
-            "RB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Rb Ende",
         "start": null,
         "ziel": "2026-07-27T06:00",
