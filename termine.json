@@ -1099,5 +1099,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "JF - Axians - ANO - Firewall",
+        "start": "2026-07-21T13:00",
+        "ziel": "2026-07-21T14:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-07-24",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
