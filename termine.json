@@ -1090,9 +1090,9 @@
     {
         "name": "Feierabend",
         "start": null,
-        "ziel": "2026-07-21T17:00",
+        "ziel": "2026-07-22T17:00",
         "tags": [
-            "ARBEIT"
+            "ARCHIV"
         ],
         "repeat": "none",
         "repeatUntil": null,
