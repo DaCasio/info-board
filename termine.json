@@ -562,7 +562,7 @@
         "checklist": [
             {
                 "text": "DAT",
-                "done": false
+                "done": true
             },
             {
                 "text": "DEV",
