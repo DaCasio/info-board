@@ -547,42 +547,6 @@
         "checklist": []
     },
     {
-        "name": "ANO Updates Pilot 1st Member",
-        "start": "2026-07-22T08:30",
-        "ziel": "2026-07-22T10:30",
-        "tags": [
-            "ARBEIT",
-            "ANO-PILOT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "11.2.10-h12",
-        "checklist": [
-            {
-                "text": "DAT",
-                "done": true
-            },
-            {
-                "text": "DEV",
-                "done": true
-            },
-            {
-                "text": "HBE",
-                "done": true
-            },
-            {
-                "text": "HPT",
-                "done": true
-            },
-            {
-                "text": "HSP",
-                "done": true
-            }
-        ]
-    },
-    {
         "name": "ANO Updates Pilot 2nd Member",
         "start": "2026-07-24T10:30",
         "ziel": "2026-07-24T12:30",
