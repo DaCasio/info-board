@@ -1040,10 +1040,10 @@
     },
     {
         "name": "Pause",
-        "start": "2026-07-22T12:45",
-        "ziel": "2026-07-22T13:45",
+        "start": "2026-07-23T12:45",
+        "ziel": "2026-07-23T13:45",
         "tags": [
-            "ARBEIT"
+            "ARCHIV"
         ],
         "repeat": "none",
         "repeatUntil": null,
