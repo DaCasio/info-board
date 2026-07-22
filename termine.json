@@ -566,7 +566,7 @@
             },
             {
                 "text": "DEV",
-                "done": false
+                "done": true
             },
             {
                 "text": "HBE",
