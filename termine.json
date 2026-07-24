@@ -1058,5 +1058,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Helge Geburtstag",
+        "start": null,
+        "ziel": "2026-08-09T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
