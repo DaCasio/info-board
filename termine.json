@@ -1112,5 +1112,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Impfung Stichtag",
+        "start": null,
+        "ziel": "2026-10-14T17:30",
+        "tags": [
+            "TERMINE",
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Sira & Jax",
+        "checklist": []
     }
 ]
