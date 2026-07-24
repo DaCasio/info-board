@@ -990,19 +990,6 @@
         ]
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-07-24T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Spät",
         "start": null,
         "ziel": "2026-10-05T09:30",
