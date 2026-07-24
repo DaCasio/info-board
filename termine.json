@@ -1118,5 +1118,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Köpi Wirtshaus Moers",
+        "start": "2026-08-22T17:30",
+        "ziel": "2026-08-22T23:00",
+        "tags": [
+            "TERMINE",
+            "KERO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "mit Yvonne",
+        "checklist": []
     }
 ]
