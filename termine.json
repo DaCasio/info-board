@@ -574,11 +574,11 @@
             },
             {
                 "text": "HPT",
-                "done": true
+                "done": false
             },
             {
                 "text": "HSP",
-                "done": true
+                "done": false
             }
         ]
     },
