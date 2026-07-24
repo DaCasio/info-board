@@ -1,14 +1,13 @@
 [
     {
-        "name": "Rb Ende",
-        "start": null,
-        "ziel": "2026-07-27T06:00",
+        "name": "Daily",
+        "start": "2026-07-27T09:40",
+        "ziel": "2026-07-27T10:00",
         "tags": [
-            "ARBEIT",
-            "RB"
+            "ARBEIT"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "daily",
+        "repeatUntil": "2026-07-31",
         "days": [],
         "notiz": "",
         "checklist": []
