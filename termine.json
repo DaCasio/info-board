@@ -1126,5 +1126,19 @@
         "days": [],
         "notiz": "Sira & Jax",
         "checklist": []
+    },
+    {
+        "name": "Impfung Termin?",
+        "start": null,
+        "ziel": "2026-10-17T17:30",
+        "tags": [
+            "TERMINE",
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Sira & Jax",
+        "checklist": []
     }
 ]
