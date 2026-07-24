@@ -1128,9 +1128,9 @@
         "checklist": []
     },
     {
-        "name": "Entwurmung",
+        "name": "Entwurmung Erinnerung",
         "start": null,
-        "ziel": "2026-10-17T17:30",
+        "ziel": "2026-11-07T17:30",
         "tags": [
             "TERMINE",
             "KATZIS"
@@ -1138,7 +1138,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Sira, Jax, Pumba & Diego ",
+        "notiz": "Sira, Jax, Pumba & Diego",
         "checklist": []
     }
 ]
