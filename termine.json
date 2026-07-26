@@ -1217,5 +1217,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Bis hier hin Ruhe :D",
+        "start": null,
+        "ziel": "2026-08-23T09:00",
+        "tags": [
+            "TERMINE",
+            "RUHE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
