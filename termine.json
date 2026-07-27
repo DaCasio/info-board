@@ -646,11 +646,11 @@
             },
             {
                 "text": "dam",
-                "done": true
+                "done": false
             },
             {
                 "text": "dos",
-                "done": true
+                "done": false
             }
         ]
     },
