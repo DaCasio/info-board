@@ -618,7 +618,7 @@
             },
             {
                 "text": "bri",
-                "done": false
+                "done": true
             },
             {
                 "text": "cav",
@@ -630,7 +630,7 @@
             },
             {
                 "text": "cho",
-                "done": false
+                "done": true
             },
             {
                 "text": "col",
