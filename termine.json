@@ -1032,19 +1032,6 @@
         "checklist": []
     },
     {
-        "name": "DL-Ticket-Rule Pushen",
-        "start": null,
-        "ziel": "2026-07-27T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Helge Geburtstag",
         "start": null,
         "ziel": "2026-08-09T00:00",
