@@ -618,7 +618,7 @@
             },
             {
                 "text": "bri",
-                "done": true
+                "done": false
             },
             {
                 "text": "cav",
@@ -650,7 +650,7 @@
             },
             {
                 "text": "dos",
-                "done": false
+                "done": true
             }
         ]
     },
