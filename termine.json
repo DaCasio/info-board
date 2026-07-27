@@ -594,11 +594,11 @@
             },
             {
                 "text": "ath",
-                "done": true
+                "done": false
             },
             {
                 "text": "bar",
-                "done": true
+                "done": false
             },
             {
                 "text": "bau",
