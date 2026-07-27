@@ -590,11 +590,11 @@
             },
             {
                 "text": "asc",
-                "done": true
+                "done": false
             },
             {
                 "text": "ath",
-                "done": true
+                "done": false
             },
             {
                 "text": "bar",
