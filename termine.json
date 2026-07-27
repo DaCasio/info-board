@@ -586,11 +586,11 @@
         "checklist": [
             {
                 "text": "abl",
-                "done": true
+                "done": false
             },
             {
                 "text": "asc",
-                "done": true
+                "done": false
             },
             {
                 "text": "ath",
