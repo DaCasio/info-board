@@ -598,7 +598,7 @@
             },
             {
                 "text": "bar",
-                "done": false
+                "done": true
             },
             {
                 "text": "bau",
