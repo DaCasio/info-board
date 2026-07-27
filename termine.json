@@ -1134,19 +1134,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Endlich sind se weg :D",
-        "start": null,
-        "ziel": "2026-07-27T14:00",
-        "tags": [
-            "TERMINE",
-            "RUHE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Angekommen :D",
-        "checklist": []
     }
 ]
