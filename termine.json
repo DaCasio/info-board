@@ -586,7 +586,7 @@
         "checklist": [
             {
                 "text": "abl",
-                "done": true
+                "done": false
             },
             {
                 "text": "asc",
@@ -594,7 +594,7 @@
             },
             {
                 "text": "ath",
-                "done": false
+                "done": true
             },
             {
                 "text": "bar",
