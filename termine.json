@@ -586,7 +586,7 @@
         "checklist": [
             {
                 "text": "enn",
-                "done": false
+                "done": true
             },
             {
                 "text": "erp",
