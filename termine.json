@@ -590,11 +590,11 @@
             },
             {
                 "text": "erp",
-                "done": true
+                "done": false
             },
             {
                 "text": "gem",
-                "done": true
+                "done": false
             },
             {
                 "text": "grg",
