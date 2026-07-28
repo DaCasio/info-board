@@ -1065,20 +1065,6 @@
         "checklist": []
     },
     {
-        "name": "PA Account Mig",
-        "start": "2026-07-28T17:00",
-        "ziel": "2026-07-28T18:00",
-        "tags": [
-            "ARBEIT",
-            "PA"
-        ],
-        "repeat": "none",
-        "repeatUntil": "2026-07-31",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Bofrost",
         "start": null,
         "ziel": "2026-07-29T13:00",
