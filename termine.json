@@ -921,5 +921,18 @@
         "days": [],
         "notiz": "Ticket ploppt heute auf",
         "checklist": []
+    },
+    {
+        "name": "DL - Decrypt Rule prüfen",
+        "start": null,
+        "ziel": "2026-07-30T11:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "geht noch nicht",
+        "checklist": []
     }
 ]
