@@ -408,20 +408,6 @@
         "checklist": []
     },
     {
-        "name": "Therapie",
-        "start": "2026-07-29T19:00",
-        "ziel": "2026-07-29T20:30",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Füße Sandra 🦶",
         "start": null,
         "ziel": "2026-10-12T13:00",
