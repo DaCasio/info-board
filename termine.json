@@ -920,5 +920,16 @@
         "days": [],
         "notiz": "geht noch nicht",
         "checklist": []
+    },
+    {
+        "name": "Picnic",
+        "start": "2026-07-30T09:45",
+        "ziel": "2026-07-30T11:45",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
