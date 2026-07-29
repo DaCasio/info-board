@@ -651,42 +651,6 @@
         ]
     },
     {
-        "name": "ANO Updates RZ - Sascha",
-        "start": "2026-08-06T08:30",
-        "ziel": "2026-08-06T10:30",
-        "tags": [
-            "ARBEIT",
-            "ANO-RZ",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "11.2.10-h12",
-        "checklist": [
-            {
-                "text": "hst_unw_oed-pan-fwc1-2",
-                "done": false
-            },
-            {
-                "text": "hst_unw_oed-pan-fwc2-2",
-                "done": false
-            },
-            {
-                "text": "hst_unw_oed-pan-fwc3-1",
-                "done": false
-            },
-            {
-                "text": "pan-fwc1-1-hdr2",
-                "done": false
-            },
-            {
-                "text": "pan-fwc5-1-hdr2",
-                "done": false
-            }
-        ]
-    },
-    {
         "name": "Spät",
         "start": null,
         "ziel": "2026-10-05T09:30",
