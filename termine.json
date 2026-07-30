@@ -801,5 +801,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Totale Sonnenfinsternis ",
+        "start": null,
+        "ziel": "2026-08-12T22:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
