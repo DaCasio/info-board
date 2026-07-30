@@ -568,7 +568,7 @@
         "checklist": [
             {
                 "text": "see",
-                "done": false
+                "done": true
             },
             {
                 "text": "sef",
