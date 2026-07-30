@@ -814,5 +814,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Perseiden Meteor Schauer Peak",
+        "start": "2026-08-12T22:00",
+        "ziel": "2026-08-13T23:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
