@@ -710,16 +710,17 @@
         "checklist": []
     },
     {
-        "name": "1on1",
-        "start": "2026-07-30T13:30",
-        "ziel": "2026-07-30T13:55",
+        "name": "CVE",
+        "start": null,
+        "ziel": "2026-08-10T08:30",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "CVE"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Userliste vervollständigen, weitere Kollegen mit einbinden.",
         "checklist": []
     },
     {
