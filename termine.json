@@ -1,9 +1,11 @@
 [
     {
         "name": "Daily",
-        "start": "2026-07-30T09:40",
-        "ziel": "2026-07-30T10:00",
-        "tags": [],
+        "start": "2026-07-31T09:40",
+        "ziel": "2026-07-31T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
