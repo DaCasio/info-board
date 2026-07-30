@@ -828,5 +828,19 @@
         "days": [],
         "notiz": "Ticket ploppt heute auf",
         "checklist": []
+    },
+    {
+        "name": "Daily & CVE",
+        "start": "2026-07-31T09:40",
+        "ziel": "2026-07-31T10:00",
+        "tags": [
+            "ARBEIT",
+            "CVE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Userliste vervollständigen, weitere Kollegen mit einbinden.",
+        "checklist": []
     }
 ]
