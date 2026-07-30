@@ -866,5 +866,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Mond nähe Merkur",
+        "start": null,
+        "ziel": "2026-08-11T22:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
