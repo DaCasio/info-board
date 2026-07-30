@@ -615,20 +615,6 @@
         "checklist": []
     },
     {
-        "name": "Therapie",
-        "start": null,
-        "ziel": "2026-10-21T19:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Impfung Stichtag",
         "start": null,
         "ziel": "2026-10-14T17:30",
