@@ -396,9 +396,9 @@
         "checklist": []
     },
     {
-        "name": "Vossi",
+        "name": "Vossi pünktlich losfahren",
         "start": null,
-        "ziel": "2026-07-31T18:00",
+        "ziel": "2026-07-31T18:30",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
