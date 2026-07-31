@@ -1,16 +1,5 @@
 [
     {
-        "name": "Urlaub",
-        "start": null,
-        "ziel": "2026-07-31T17:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Wohnung Rückgabe Verjährung / Kaution",
         "start": null,
         "ziel": "2026-08-01T00:00",
