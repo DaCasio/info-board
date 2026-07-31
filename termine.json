@@ -453,9 +453,9 @@
         "checklist": []
     },
     {
-        "name": "Sonnenfinsternis",
-        "start": null,
-        "ziel": "2027-08-02T08:00",
+        "name": "Sonnenfinsternis 35 bis 40 %",
+        "start": "2027-08-02T10:08",
+        "ziel": "2027-08-02T12:07",
         "tags": [
             "ASTRO"
         ],
