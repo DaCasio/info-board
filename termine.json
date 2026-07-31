@@ -3,9 +3,7 @@
         "name": "Urlaub",
         "start": null,
         "ziel": "2026-07-31T17:00",
-        "tags": [
-            "URLAUB"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
