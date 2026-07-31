@@ -793,16 +793,5 @@
         "days": [],
         "notiz": "https://www.partners.cloudflare.com/partners/login",
         "checklist": []
-    },
-    {
-        "name": "Casi muss sich fertigmachen",
-        "start": null,
-        "ziel": "2026-07-31T18:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
