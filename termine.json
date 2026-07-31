@@ -826,5 +826,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Cloudflare enablement",
+        "start": null,
+        "ziel": "2026-08-10T08:30",
+        "tags": [
+            "ARBEIT",
+            "CLOUDFLARE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "https://www.partners.cloudflare.com/partners/login",
+        "checklist": []
     }
 ]
