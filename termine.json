@@ -1,8 +1,8 @@
 [
     {
         "name": "Urlaub",
-        "start": "2026-07-31T17:00",
-        "ziel": "2026-08-09T23:59",
+        "start": null,
+        "ziel": "2026-07-31T17:00",
         "tags": [
             "URLAUB"
         ],
