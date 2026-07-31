@@ -738,15 +738,15 @@
     },
     {
         "name": "Sonnenfinsternis 89%",
-        "start": null,
-        "ziel": "2026-08-12T20:14",
+        "start": "2026-08-12T19:20",
+        "ziel": "2026-08-12T20:53",
         "tags": [
             "ASTRO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Die genauen Zeiten für Neukirchen-Vluyn (Sommerzeit MESZ):\n\n    Beginn: ca. 19:20 Uhr\n\n    Der Mond tritt am rechten Sonnenrand ein.\n\n    Maximum: ca. 20:15 Uhr\n\n    Höhepunkt am Niederrhein: Die Sonne ist zu etwa 86 % bedeckt (Magnitude knapp 0,88). Die Sonne steht zu diesem Zeitpunkt bereits sehr tief am West-Horizont (nur noch ca. 5° Höhe).\n\n    Sonnenuntergang: ca. 20:53 Uhr\n\n    Die Sonne geht unter, bevor die Finsternis vollständig endet.\n\nBesonderheit: Da der Höhepunkt so tief im Westen stattfindet, benötigst du einen Ort mit völlig freier Sicht nach Westen (ohne Bäume, Gebäude oder Hügel im Weg), um die tief stehende, fast vollständig bedeckte Sichelsonne zu beobachten.\n\n(Achtung: Auch bei einer stark bedeckten Sonne ist eine geeignete Sonnenfinsternisbrille für den direkten Blick zwingend erforderlich!)",
         "checklist": []
     },
     {
