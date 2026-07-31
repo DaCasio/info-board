@@ -657,19 +657,6 @@
         "checklist": []
     },
     {
-        "name": "Weekly",
-        "start": "2026-07-31T10:00",
-        "ziel": "2026-07-31T10:55",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "PA - AML Tech Circle",
         "start": "2026-07-31T13:00",
         "ziel": "2026-07-31T14:00",
