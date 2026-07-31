@@ -396,17 +396,6 @@
         "checklist": []
     },
     {
-        "name": "Vossi pünktlich losfahren",
-        "start": null,
-        "ziel": "2026-07-31T18:30",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sommerferien Ende",
         "start": null,
         "ziel": "2026-09-01T23:59",
