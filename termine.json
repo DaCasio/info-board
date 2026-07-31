@@ -412,10 +412,7 @@
         "name": "Vossi",
         "start": null,
         "ziel": "2026-07-31T18:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
