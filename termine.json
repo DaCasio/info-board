@@ -453,11 +453,11 @@
         "checklist": []
     },
     {
-        "name": "Solar eclipse",
+        "name": "Sonnenfinsternis",
         "start": null,
         "ziel": "2027-08-02T08:00",
         "tags": [
-            "TERMINE"
+            "ASTRO"
         ],
         "repeat": "none",
         "repeatUntil": null,
