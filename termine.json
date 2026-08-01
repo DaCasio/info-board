@@ -1,16 +1,5 @@
 [
     {
-        "name": "Wohnung Rückgabe Verjährung / Kaution",
-        "start": null,
-        "ziel": "2026-08-01T00:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Jahrestag",
         "start": "2026-08-05T00:00",
         "ziel": "2026-08-06T00:00",
