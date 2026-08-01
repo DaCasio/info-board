@@ -629,17 +629,6 @@
         "checklist": []
     },
     {
-        "name": "Zählerstände",
-        "start": "2026-07-31T21:00",
-        "ziel": "2026-07-31T23:59",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Eröffnung Standort K*ln",
         "start": "2026-11-04T12:00",
         "ziel": "2026-11-04T19:00",
