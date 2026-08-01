@@ -760,5 +760,18 @@
         "days": [],
         "notiz": "https://www.partners.cloudflare.com/partners/login",
         "checklist": []
+    },
+    {
+        "name": "Dauerkarte 4W vorher",
+        "start": null,
+        "ziel": "2026-08-08T18:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
