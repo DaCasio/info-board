@@ -773,5 +773,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "PA GP 6.3.3-h14",
+        "start": null,
+        "ziel": "2026-08-05T09:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Palo Alto Networks is actively finalizing the GlobalProtect App 6.2.8-h13 & GlobalProtect App 6.3.3-h14 build for Windows and macOS to resolve these stability concerns.\nTarget Release Date:  Aug 5, 2026",
+        "checklist": []
     }
 ]
