@@ -798,5 +798,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "DKB Gewinnspiel",
+        "start": null,
+        "ziel": "2026-09-30T12:00",
+        "tags": [
+            "TERMINE",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Benachrichtigung per Mail ob gewonnen.",
+        "checklist": []
     }
 ]
