@@ -19,12 +19,13 @@
         "start": null,
         "ziel": "2026-08-31T08:37",
         "tags": [
-            "FINANZEN"
+            "FINANZEN",
+            "ELSTER"
         ],
         "repeat": "none",
-        "notiz": "",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
