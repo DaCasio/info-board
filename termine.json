@@ -633,19 +633,6 @@
         "checklist": []
     },
     {
-        "name": "6 Planeten Parade",
-        "start": null,
-        "ziel": "2026-08-12T22:00",
-        "tags": [
-            "ASTRO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sonnenfinsternis 88%",
         "start": "2026-08-12T19:17",
         "ziel": "2026-08-12T21:03",
