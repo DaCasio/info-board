@@ -885,5 +885,19 @@
         "days": [],
         "notiz": "Hautarzt Screening",
         "checklist": []
+    },
+    {
+        "name": "Elster Zerti Casi Ende",
+        "start": null,
+        "ziel": "2028-03-24T09:24",
+        "tags": [
+            "FINANZEN",
+            "ELSTER"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
