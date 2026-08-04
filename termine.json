@@ -813,6 +813,7 @@
         "start": null,
         "ziel": "2027-09-13T12:00",
         "tags": [
+            "PRÜFEN",
             "DOK",
             "CASI",
             "TERMINE"
@@ -820,7 +821,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Hautarzt Screening",
+        "notiz": "Hautarzt Screening - Umplanen, fällt in Finca Urlaub rein.",
         "checklist": []
     },
     {
