@@ -799,5 +799,19 @@
         "days": [],
         "notiz": "Benachrichtigung per Mail ob gewonnen.",
         "checklist": []
+    },
+    {
+        "name": "Therapie",
+        "start": null,
+        "ziel": "2026-08-12T19:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
