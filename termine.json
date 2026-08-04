@@ -855,5 +855,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Elster Zerti Kero Ende",
+        "start": null,
+        "ziel": "2028-09-11T21:04",
+        "tags": [
+            "TERMINE",
+            "ELSTER"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
