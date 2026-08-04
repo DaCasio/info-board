@@ -808,8 +808,8 @@
             "TERMINE",
             "KERO"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "biweekly",
+        "repeatUntil": "2026-12-30",
         "days": [],
         "notiz": "",
         "checklist": []
