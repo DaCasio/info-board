@@ -841,5 +841,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Telekom Lfz Ende Home XL Carsten",
+        "start": null,
+        "ziel": "2028-05-07T00:00",
+        "tags": [
+            "TERMINE",
+            "TELEKOM"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
