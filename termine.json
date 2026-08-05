@@ -345,20 +345,6 @@
         "checklist": []
     },
     {
-        "name": "Füße Sandra 🦶",
-        "start": null,
-        "ziel": "2026-12-07T12:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sommerferien Ende",
         "start": null,
         "ziel": "2026-09-01T23:59",
