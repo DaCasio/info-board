@@ -642,19 +642,6 @@
         "checklist": []
     },
     {
-        "name": "DKB Gewinnspiel",
-        "start": null,
-        "ziel": "2026-09-30T12:00",
-        "tags": [
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Benachrichtigung per Mail ob gewonnen.",
-        "checklist": []
-    },
-    {
         "name": "Therapie",
         "start": null,
         "ziel": "2026-08-12T19:00",
