@@ -181,19 +181,6 @@
         "checklist": []
     },
     {
-        "name": "Sommermarkt Grafi",
-        "start": "2026-08-06T16:00",
-        "ziel": "2026-08-06T21:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Darlehen frühstens glatt",
         "start": null,
         "ziel": "2028-03-13T18:00",
