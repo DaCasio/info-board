@@ -755,5 +755,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "ANO Repo",
+        "start": null,
+        "ziel": "2026-08-10T08:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
