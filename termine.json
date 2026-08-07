@@ -615,20 +615,6 @@
         "checklist": []
     },
     {
-        "name": "Dani Trash TV",
-        "start": "2026-08-07T16:00",
-        "ziel": "2026-08-07T17:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Therapie",
         "start": null,
         "ziel": "2026-08-12T19:00",
