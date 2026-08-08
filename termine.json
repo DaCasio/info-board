@@ -846,5 +846,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "ANO Kernmeeting",
+        "start": "2026-08-21T09:00",
+        "ziel": "2026-08-21T09:25",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": "2026-09-18",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
