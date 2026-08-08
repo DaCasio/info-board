@@ -878,5 +878,24 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Feierabend",
+        "start": null,
+        "ziel": "2026-08-24T18:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": "2026-08-28",
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
     }
 ]
