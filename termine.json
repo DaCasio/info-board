@@ -867,7 +867,8 @@
         "start": null,
         "ziel": "2026-08-10T17:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "PERI"
         ],
         "repeat": "weekly",
         "repeatUntil": "2026-08-21",
