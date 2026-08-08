@@ -766,5 +766,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Forcast",
+        "start": "2026-08-12T10:30",
+        "ziel": "2026-08-12T11:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": "2026-09-09",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
