@@ -589,8 +589,8 @@
     },
     {
         "name": "Cloudflare enablement",
-        "start": null,
-        "ziel": "2026-08-10T10:30",
+        "start": "2026-08-10T11:00",
+        "ziel": "2026-08-10T11:59",
         "tags": [
             "ARBEIT",
             "CLOUDFLARE"
