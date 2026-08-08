@@ -833,5 +833,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Monthly",
+        "start": "2026-08-21T10:00",
+        "ziel": "2026-08-21T10:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "monthly_weekday",
+        "repeatUntil": "2026-09-18",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
