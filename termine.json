@@ -832,7 +832,8 @@
         "start": "2026-08-18T13:00",
         "ziel": "2026-08-18T14:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "PERI"
         ],
         "repeat": "biweekly",
         "repeatUntil": "2026-09-15",
