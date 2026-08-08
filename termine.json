@@ -807,5 +807,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "PA - AML - Tech Circle",
+        "start": "2026-08-14T13:00",
+        "ziel": "2026-08-14T14:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": "2026-09-11",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
