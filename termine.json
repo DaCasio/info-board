@@ -718,8 +718,8 @@
     },
     {
         "name": "ANO Repo",
-        "start": null,
-        "ziel": "2026-08-10T08:30",
+        "start": "2026-08-10T08:15",
+        "ziel": "2026-08-10T09:30",
         "tags": [
             "ARBEIT"
         ],
