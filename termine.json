@@ -914,7 +914,8 @@
         "start": null,
         "ziel": "2026-08-31T17:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "PERI"
         ],
         "repeat": "weekly",
         "repeatUntil": "2026-09-18",
