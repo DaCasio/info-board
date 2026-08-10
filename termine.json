@@ -508,20 +508,6 @@
         "checklist": []
     },
     {
-        "name": "CVE im Daily",
-        "start": "2026-08-10T09:40",
-        "ziel": "2026-08-10T10:00",
-        "tags": [
-            "ARBEIT",
-            "CVE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Userliste vervollständigen, weitere Kollegen mit einbinden.",
-        "checklist": []
-    },
-    {
         "name": "Bis hier hin Ruhe :D",
         "start": null,
         "ziel": "2026-08-23T09:00",
