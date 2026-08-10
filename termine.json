@@ -967,5 +967,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Mutti Sehtest",
+        "start": null,
+        "ziel": "2026-08-13T14:30",
+        "tags": [
+            "TERMINE",
+            "KERO",
+            "MUTTI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
