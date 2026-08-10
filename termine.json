@@ -957,5 +957,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Geburtstag Schnubbi",
+        "start": null,
+        "ziel": "2026-09-28T00:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
