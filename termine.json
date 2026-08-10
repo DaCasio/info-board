@@ -909,7 +909,8 @@
         "start": null,
         "ziel": "2026-08-21T12:00",
         "tags": [
-            "TERMINE"
+            "TERMINE",
+            "U-ANDERE"
         ],
         "repeat": "none",
         "repeatUntil": null,
