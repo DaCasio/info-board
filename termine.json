@@ -903,19 +903,6 @@
         "checklist": []
     },
     {
-        "name": "Frühstück",
-        "start": "2026-08-10T10:00",
-        "ziel": "2026-08-10T10:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sperrmüll rausstellen",
         "start": null,
         "ziel": "2026-09-20T18:00",
