@@ -964,7 +964,8 @@
         "ziel": "2026-09-28T00:00",
         "tags": [
             "TERMINE",
-            "KERO"
+            "KERO",
+            "JEBORTSTACH"
         ],
         "repeat": "none",
         "repeatUntil": null,
