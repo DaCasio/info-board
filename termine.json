@@ -975,5 +975,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Trödel in Eick 🤣",
+        "start": "2026-09-26T10:00",
+        "ziel": "2026-09-26T15:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
