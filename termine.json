@@ -538,20 +538,6 @@
         "checklist": []
     },
     {
-        "name": "Telekom Lfz Ende Mob S Helge",
-        "start": null,
-        "ziel": "2027-07-12T00:00",
-        "tags": [
-            "TERMINE",
-            "TELEKOM"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Dr. Knierim",
         "start": null,
         "ziel": "2027-09-13T12:00",
