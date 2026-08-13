@@ -181,19 +181,6 @@
         "checklist": []
     },
     {
-        "name": "Darlehen frühstens glatt",
-        "start": null,
-        "ziel": "2028-03-15T18:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Ende Palo Lab",
         "start": null,
         "ziel": "2026-09-15T00:00",
