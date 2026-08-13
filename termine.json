@@ -965,15 +965,15 @@
     },
     {
         "name": "Abgleich Aldi im AMS",
-        "start": "2026-08-13T10:00",
-        "ziel": "2026-08-13T11:00",
+        "start": null,
+        "ziel": "2026-08-14T08:30",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "telefonisch alarmeiren eher nicht - aber nochmal bei martin k nachfragen",
         "checklist": []
     }
 ]
