@@ -623,21 +623,6 @@
         "checklist": []
     },
     {
-        "name": "Elster Zerti Casi Ende",
-        "start": null,
-        "ziel": "2028-03-24T09:24",
-        "tags": [
-            "FINANZEN",
-            "ELSTER",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Darlehen Ende",
         "start": null,
         "ziel": "2030-05-15T12:00",
