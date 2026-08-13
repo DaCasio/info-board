@@ -975,18 +975,5 @@
         "days": [],
         "notiz": "telefonisch alarmieren eher nicht - aber nochmal bei martin k nachfragen",
         "checklist": []
-    },
-    {
-        "name": "Pause",
-        "start": "2026-08-13T12:30",
-        "ziel": "2026-08-13T13:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
