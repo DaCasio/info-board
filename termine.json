@@ -213,7 +213,8 @@
         "start": null,
         "ziel": "2026-11-16T20:00",
         "tags": [
-            "ABO"
+            "CASI",
+            "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": null,
