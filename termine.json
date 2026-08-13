@@ -552,20 +552,6 @@
         "checklist": []
     },
     {
-        "name": "Telekom Lfz Ende Mob S Carsten",
-        "start": null,
-        "ziel": "2028-03-14T00:00",
-        "tags": [
-            "TERMINE",
-            "TELEKOM"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Dr. Knierim",
         "start": null,
         "ziel": "2027-09-13T12:00",
