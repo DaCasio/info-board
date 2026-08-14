@@ -265,19 +265,6 @@
     {
         "name": "SNow",
         "start": null,
-        "ziel": "2026-08-14T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Schulungen für Betriebsteam und Key User „Train the Trainer\"",
-        "checklist": []
-    },
-    {
-        "name": "SNow",
-        "start": null,
         "ziel": "2026-08-31T08:00",
         "tags": [
             "ARBEIT"
