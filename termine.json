@@ -464,8 +464,7 @@
         "start": null,
         "ziel": "2026-08-23T09:00",
         "tags": [
-            "TERMINE",
-            "RUHE"
+            "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": null,
