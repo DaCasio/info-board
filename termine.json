@@ -305,8 +305,8 @@
     },
     {
         "name": "Gladbach auf RTL Free TV",
-        "start": "2026-08-29T15:30",
-        "ziel": "2026-08-29T17:30",
+        "start": null,
+        "ziel": "2026-08-29T15:30",
         "tags": [
             "TERMINE",
             "GLADBACH"
