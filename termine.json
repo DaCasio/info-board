@@ -222,20 +222,6 @@
         "checklist": []
     },
     {
-        "name": "Rb Ende",
-        "start": null,
-        "ziel": "2026-08-17T06:00",
-        "tags": [
-            "ARBEIT",
-            "RB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Spät",
         "start": null,
         "ziel": "2026-08-24T09:30",
