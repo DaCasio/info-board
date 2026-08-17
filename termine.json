@@ -475,8 +475,7 @@
         "start": "2026-08-18T14:00",
         "ziel": "2026-08-18T17:00",
         "tags": [
-            "ARBEIT",
-            "CLOUDFLARE"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
