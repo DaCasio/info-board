@@ -825,19 +825,6 @@
     },
     {
         "name": "Blocker Pause",
-        "start": "2026-08-17T14:30",
-        "ziel": "2026-08-17T15:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Blocker Pause",
         "start": "2026-08-17T16:00",
         "ziel": "2026-08-17T16:30",
         "tags": [
