@@ -819,5 +819,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "CVE Team Süd spreaden",
+        "start": null,
+        "ziel": "2026-08-19T09:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
