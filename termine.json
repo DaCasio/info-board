@@ -819,19 +819,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Pause",
-        "start": "2026-08-20T12:15",
-        "ziel": "2026-08-20T13:15",
-        "tags": [
-            "ARBEIT",
-            "PERI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
