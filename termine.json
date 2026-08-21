@@ -436,7 +436,7 @@
             "TERMINE",
             "KERO"
         ],
-        "repeat": "biweekly",
+        "repeat": "none",
         "repeatUntil": null,
         "days": [],
         "notiz": "",
