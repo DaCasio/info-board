@@ -222,20 +222,6 @@
         "checklist": []
     },
     {
-        "name": "Spät",
-        "start": null,
-        "ziel": "2026-08-24T09:30",
-        "tags": [
-            "ARBEIT",
-            "SPÄT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "SNow Go!Live",
         "start": null,
         "ziel": "2026-09-07T08:00",
