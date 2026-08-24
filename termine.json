@@ -195,16 +195,16 @@
     {
         "name": "Bestellung Auto",
         "start": null,
-        "ziel": "2026-09-17T09:30",
+        "ziel": "2027-02-17T09:30",
         "tags": [
             "ARBEIT",
             "AUTO",
             "CASI"
         ],
-        "repeat": "monthly",
-        "repeatUntil": "2027-02-17",
+        "repeat": "none",
+        "repeatUntil": null,
         "days": [],
-        "notiz": "Bestellt am 17.6.\n17.09 - 3 Monate\n17.10 - 4 Monate\n17.11 - 5 Monate\n17.12 - 6 Monate\n17.01 - 7 Monate\n17.02 - 8 Monate",
+        "notiz": "Bestellt am 17.6. - Liferzeit wohl 8 Monate\n17.09 - 3 Monate\n17.10 - 4 Monate\n17.11 - 5 Monate\n17.12 - 6 Monate\n17.01 - 7 Monate\n17.02 - 8 Monate",
         "checklist": []
     },
     {
