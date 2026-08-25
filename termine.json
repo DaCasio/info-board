@@ -744,5 +744,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Mede HNO",
+        "start": null,
+        "ziel": "2026-10-01T08:00",
+        "tags": [
+            "DOK",
+            "CASI",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Wenn das mit den Ohren noch nicht besser ist, Termin machen\nAnsonsten Druckausgleich, Kaugummi, Wärmelampe 10 min auf jeder Seite.",
+        "checklist": []
     }
 ]
