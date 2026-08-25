@@ -1,473 +1,14 @@
 [
     {
-        "name": "Elster Zerti Mutti Ende",
+        "name": "Feierabend",
         "start": null,
-        "ziel": "2026-08-31T08:37",
-        "tags": [
-            "ELSTER",
-            "MUTTI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Sticki",
-        "start": null,
-        "ziel": "2026-09-02T08:00",
-        "tags": [
-            "DOK",
-            "CASI",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "notiz": "Zahnreinigung",
-        "checklist": [],
-        "repeatUntil": null,
-        "days": []
-    },
-    {
-        "name": "Urlaub",
-        "start": "2026-09-18T17:00",
-        "ziel": "2026-10-04T23:59",
-        "tags": [
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "16 X ausschlafen :)",
-        "checklist": []
-    },
-    {
-        "name": "Tahnee - Ein touch too much",
-        "start": "2026-11-20T20:00",
-        "ziel": "2026-11-20T23:00",
-        "tags": [
-            "TERMINE",
-            "KERO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "NEW Box, Mönchengladbach",
-        "checklist": []
-    },
-    {
-        "name": "Leasing Ende Auto",
-        "start": null,
-        "ziel": "2026-12-08T09:00",
-        "tags": [
-            "ARBEIT",
-            "AUTO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "notiz": "",
-        "checklist": [],
-        "repeatUntil": null,
-        "days": []
-    },
-    {
-        "name": "Frei",
-        "start": "2026-12-23T17:00",
-        "ziel": "2026-12-28T08:00",
-        "tags": [
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "4 X ausschlafen :)",
-        "checklist": []
-    },
-    {
-        "name": "Frei",
-        "start": "2026-12-30T17:00",
-        "ziel": "2027-01-04T08:00",
-        "tags": [
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "4 X ausschlafen :)",
-        "checklist": []
-    },
-    {
-        "name": "Konto glatt",
-        "start": null,
-        "ziel": "2027-06-30T15:00",
-        "tags": [
-            "FINANZEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Variabel",
-        "checklist": []
-    },
-    {
-        "name": "Brücken Tage",
-        "start": null,
-        "ziel": "2026-10-05T09:30",
-        "tags": [
-            "ARBEIT",
-            "URLAUB",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Brückentage 2027 in NRW (Übersicht)\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-\n    Ostern\n        Zeitraum: 22.03. – 29.03.2027\n        Feiertage: Karfreitag (26.03.) & Ostermontag (29.03.)\n        Urlaubstage: 4 Tage (22.03. – 25.03.)\n        Freie Tage: 10 Tage\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n    Kombi: Himmelfahrt & Pfingsten\n        Zeitraum: 06.05. – 17.05.2027\n        Feiertage: Christi Himmelfahrt (06.05.) & Pfingstmontag (17.05.)\n        Urlaubstage: 6 Tage (07.05. & 10.05. – 14.05.)\n        Freie Tage: 12 Tage\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n    Fronleichnam\n        Zeitraum: 27.05. – 30.05.2027\n        Feiertag: Donnerstag, 27.05.2027\n        Brückentag: Freitag, 28.05.2027\n        Urlaubstage: 1 Tag\n        Freie Tage: 4 Tage",
-        "checklist": []
-    },
-    {
-        "name": "CVE - Kundenliste",
-        "start": "2026-08-26T14:00",
-        "ziel": "2026-08-26T14:25",
-        "tags": [
-            "ARBEIT",
-            "CVE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Herbstferien",
-        "start": "2026-10-17T00:00",
-        "ziel": "2026-11-01T23:59",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Weihnachtsferien",
-        "start": "2026-12-23T00:00",
-        "ziel": "2027-01-06T23:59",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Finca in Inca",
-        "start": "2027-09-11T15:00",
-        "ziel": "2027-09-25T15:00",
-        "tags": [
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "14 Tage :)",
-        "checklist": []
-    },
-    {
-        "name": "Ende Palo Lab",
-        "start": null,
-        "ziel": "2026-09-15T00:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Bestellung Auto",
-        "start": null,
-        "ziel": "2027-02-17T09:30",
-        "tags": [
-            "ARBEIT",
-            "AUTO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Bestellt am 17.6. - Liferzeit wohl 8 Monate\n17.09 - 3 Monate\n17.10 - 4 Monate\n17.11 - 5 Monate\n17.12 - 6 Monate\n17.01 - 7 Monate\n17.02 - 8 Monate",
-        "checklist": []
-    },
-    {
-        "name": "Paramount Abo beenden",
-        "start": null,
-        "ziel": "2026-11-16T20:00",
-        "tags": [
-            "CASI",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "SNow Go!Live",
-        "start": null,
-        "ziel": "2026-09-07T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "SNow",
-        "start": null,
-        "ziel": "2026-08-31T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Ende August: finale Migration der relevanten Daten aus KIX und Planview",
-        "checklist": []
-    },
-    {
-        "name": "Sommerferien Ende",
-        "start": null,
-        "ziel": "2026-09-01T23:59",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Winterreifen Termin machen",
-        "start": "2026-10-01T10:00",
-        "ziel": "2026-10-01T12:00",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "AUTO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Schauen ob das noch nötig ist, da Leasing ausläuft.\nZur Not bleibt die Karre stehen wenns schneit.\nWenn der Enyaq im Februar kommt, danach sieht es aus, dann besser nochmal Winterreifen wechseln.",
-        "checklist": []
-    },
-    {
-        "name": "Gladbach auf RTL Free TV",
-        "start": null,
-        "ziel": "2026-08-29T15:30",
-        "tags": [
-            "TERMINE",
-            "GLADBACH"
-        ],
-        "repeat": "none",
-        "repeatUntil": "2026-12-17",
-        "days": [],
-        "notiz": "Gegen Leipzig",
-        "checklist": []
-    },
-    {
-        "name": "Gladbach - Elversberg Home",
-        "start": "2026-09-05T13:30",
-        "ziel": "2026-09-05T18:30",
-        "tags": [
-            "TERMINE",
-            "GLADBACH"
-        ],
-        "repeat": "none",
-        "repeatUntil": "2026-12-17",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Gladbach - Mainz Home",
-        "start": "2026-09-19T13:30",
-        "ziel": "2026-09-19T18:30",
-        "tags": [
-            "TERMINE",
-            "GLADBACH"
-        ],
-        "repeat": "none",
-        "repeatUntil": "2026-12-17",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Spät",
-        "start": null,
-        "ziel": "2026-10-05T09:30",
-        "tags": [
-            "ARBEIT",
-            "SPÄT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Rb Start",
-        "start": null,
-        "ziel": "2026-10-26T18:00",
-        "tags": [
-            "ARBEIT",
-            "RB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Füße 🦶",
-        "start": null,
-        "ziel": "2026-09-03T16:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Geburtstag Mutti",
-        "start": null,
-        "ziel": "2026-09-28T00:00",
-        "tags": [
-            "TERMINE",
-            "MUTTI",
-            "JEBORTSTACH"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Impfung Stichtag",
-        "start": null,
-        "ziel": "2026-10-14T17:30",
-        "tags": [
-            "TERMINE",
-            "KATZIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Sira & Jax",
-        "checklist": []
-    },
-    {
-        "name": "Entwurmung Erinnerung",
-        "start": null,
-        "ziel": "2026-11-07T17:30",
-        "tags": [
-            "TERMINE",
-            "KATZIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Sira, Jax, Pumba & Diego",
-        "checklist": []
-    },
-    {
-        "name": "Eröffnung Standort K*ln",
-        "start": "2026-11-04T12:00",
-        "ziel": "2026-11-04T19:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Partielle Mondfinsternis",
-        "start": "2026-08-27T22:00",
-        "ziel": "2026-08-28T23:00",
-        "tags": [
-            "ASTRO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Therapie",
-        "start": null,
-        "ziel": "2026-08-26T19:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Dr. Knierim",
-        "start": null,
-        "ziel": "2027-09-13T12:00",
-        "tags": [
-            "PRÜFEN",
-            "DOK",
-            "CASI",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Hautarzt Screening - Umplanen, fällt in Finca Urlaub rein.",
-        "checklist": []
-    },
-    {
-        "name": "Daily",
-        "start": "2026-08-26T09:40",
-        "ziel": "2026-08-26T10:00",
+        "ziel": "2026-08-25T18:00",
         "tags": [
             "ARBEIT",
             "PERI"
         ],
         "repeat": "weekly",
-        "repeatUntil": "2026-09-18",
+        "repeatUntil": "2026-08-28",
         "days": [
             1,
             2,
@@ -479,9 +20,9 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": "2026-08-26T12:00",
-        "ziel": "2026-08-26T13:00",
+        "name": "Daily",
+        "start": "2026-08-26T09:40",
+        "ziel": "2026-08-26T10:00",
         "tags": [
             "ARBEIT",
             "PERI"
@@ -513,6 +54,26 @@
         "checklist": []
     },
     {
+        "name": "Pause",
+        "start": "2026-08-26T12:00",
+        "ziel": "2026-08-26T13:00",
+        "tags": [
+            "ARBEIT",
+            "PERI"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": "2026-09-18",
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
+    },
+    {
         "name": "1on1",
         "start": "2026-08-26T13:00",
         "ziel": "2026-08-26T13:25",
@@ -522,6 +83,47 @@
         ],
         "repeat": "biweekly",
         "repeatUntil": "2026-09-09",
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "CVE - Kundenliste",
+        "start": "2026-08-26T14:00",
+        "ziel": "2026-08-26T14:25",
+        "tags": [
+            "ARBEIT",
+            "CVE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Therapie",
+        "start": null,
+        "ziel": "2026-08-26T19:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Partielle Mondfinsternis",
+        "start": "2026-08-27T22:00",
+        "ziel": "2026-08-28T23:00",
+        "tags": [
+            "ASTRO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
         "days": [],
         "notiz": "",
         "checklist": []
@@ -543,11 +145,12 @@
         "checklist": []
     },
     {
-        "name": "PA - AML - Tech Circle",
-        "start": "2026-09-11T13:00",
-        "ziel": "2026-09-11T14:00",
+        "name": "Wolle U",
+        "start": "2026-08-29T00:00",
+        "ziel": "2026-09-13T00:00",
         "tags": [
-            "ARBEIT"
+            "TERMINE",
+            "U-ANDERE"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -556,64 +159,43 @@
         "checklist": []
     },
     {
-        "name": "JF ANO",
-        "start": "2026-09-01T13:00",
-        "ziel": "2026-09-01T14:00",
-        "tags": [
-            "ARBEIT",
-            "PERI"
-        ],
-        "repeat": "biweekly",
-        "repeatUntil": "2026-09-15",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Monthly",
-        "start": "2026-09-18T10:00",
-        "ziel": "2026-09-18T10:30",
-        "tags": [
-            "ARBEIT",
-            "PERI"
-        ],
-        "repeat": "monthly_weekday",
-        "repeatUntil": "2026-09-18",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "ANO Kernmeeting",
-        "start": "2026-09-04T09:00",
-        "ziel": "2026-09-04T09:25",
-        "tags": [
-            "ARBEIT",
-            "PERI"
-        ],
-        "repeat": "biweekly",
-        "repeatUntil": "2026-09-18",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Feierabend",
+        "name": "Gladbach auf RTL Free TV",
         "start": null,
-        "ziel": "2026-08-25T18:00",
+        "ziel": "2026-08-29T15:30",
         "tags": [
-            "ARBEIT",
-            "PERI"
+            "TERMINE",
+            "GLADBACH"
         ],
-        "repeat": "weekly",
-        "repeatUntil": "2026-08-28",
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "Gegen Leipzig",
+        "checklist": []
+    },
+    {
+        "name": "SNow",
+        "start": null,
+        "ziel": "2026-08-31T08:00",
+        "tags": [
+            "ARBEIT"
         ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Ende August: finale Migration der relevanten Daten aus KIX und Planview",
+        "checklist": []
+    },
+    {
+        "name": "Elster Zerti Mutti Ende",
+        "start": null,
+        "ziel": "2026-08-31T08:37",
+        "tags": [
+            "ELSTER",
+            "MUTTI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
         "notiz": "",
         "checklist": []
     },
@@ -638,6 +220,183 @@
         "checklist": []
     },
     {
+        "name": "JF ANO",
+        "start": "2026-09-01T13:00",
+        "ziel": "2026-09-01T14:00",
+        "tags": [
+            "ARBEIT",
+            "PERI"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": "2026-09-15",
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Sommerferien Ende",
+        "start": null,
+        "ziel": "2026-09-01T23:59",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Sticki",
+        "start": null,
+        "ziel": "2026-09-02T08:00",
+        "tags": [
+            "DOK",
+            "CASI",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "notiz": "Zahnreinigung",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Füße 🦶",
+        "start": null,
+        "ziel": "2026-09-03T16:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "ANO Kernmeeting",
+        "start": "2026-09-04T09:00",
+        "ziel": "2026-09-04T09:25",
+        "tags": [
+            "ARBEIT",
+            "PERI"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": "2026-09-18",
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Gladbach - Elversberg Home",
+        "start": "2026-09-05T13:30",
+        "ziel": "2026-09-05T18:30",
+        "tags": [
+            "TERMINE",
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Wahl Sachsen Anhalt",
+        "start": null,
+        "ziel": "2026-09-06T18:00",
+        "tags": [
+            "WAHL"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "SNow Go!Live",
+        "start": null,
+        "ziel": "2026-09-07T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "PA - AML - Tech Circle",
+        "start": "2026-09-11T13:00",
+        "ziel": "2026-09-11T14:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Ende Palo Lab",
+        "start": null,
+        "ziel": "2026-09-15T00:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Monthly",
+        "start": "2026-09-18T10:00",
+        "ziel": "2026-09-18T10:30",
+        "tags": [
+            "ARBEIT",
+            "PERI"
+        ],
+        "repeat": "monthly_weekday",
+        "repeatUntil": "2026-09-18",
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Urlaub",
+        "start": "2026-09-18T17:00",
+        "ziel": "2026-10-04T23:59",
+        "tags": [
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "16 X ausschlafen :)",
+        "checklist": []
+    },
+    {
+        "name": "Gladbach - Mainz Home",
+        "start": "2026-09-19T13:30",
+        "ziel": "2026-09-19T18:30",
+        "tags": [
+            "TERMINE",
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
         "name": "Sperrmüll rausstellen",
         "start": null,
         "ziel": "2026-09-20T18:00",
@@ -651,12 +410,11 @@
         "checklist": []
     },
     {
-        "name": "Wolle U",
-        "start": "2026-08-29T00:00",
-        "ziel": "2026-09-13T00:00",
+        "name": "Wahl McPomm",
+        "start": null,
+        "ziel": "2026-09-20T18:00",
         "tags": [
-            "TERMINE",
-            "U-ANDERE"
+            "WAHL"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -707,24 +465,13 @@
         "checklist": []
     },
     {
-        "name": "Wahl Sachsen Anhalt",
+        "name": "Geburtstag Mutti",
         "start": null,
-        "ziel": "2026-09-06T18:00",
+        "ziel": "2026-09-28T00:00",
         "tags": [
-            "WAHL"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Wahl McPomm",
-        "start": null,
-        "ziel": "2026-09-20T18:00",
-        "tags": [
-            "WAHL"
+            "TERMINE",
+            "MUTTI",
+            "JEBORTSTACH"
         ],
         "repeat": "none",
         "repeatUntil": null,
@@ -744,6 +491,259 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "Wenn das mit den Ohren noch nicht besser ist, Termin machen\nAnsonsten Druckausgleich, Kaugummi, Wärmelampe 10 min auf jeder Seite.",
+        "checklist": []
+    },
+    {
+        "name": "Winterreifen Termin machen",
+        "start": "2026-10-01T10:00",
+        "ziel": "2026-10-01T12:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "AUTO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Schauen ob das noch nötig ist, da Leasing ausläuft.\nZur Not bleibt die Karre stehen wenns schneit.\nWenn der Enyaq im Februar kommt, danach sieht es aus, dann besser nochmal Winterreifen wechseln.",
+        "checklist": []
+    },
+    {
+        "name": "Brücken Tage",
+        "start": null,
+        "ziel": "2026-10-05T09:30",
+        "tags": [
+            "ARBEIT",
+            "URLAUB",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Brückentage 2027 in NRW (Übersicht)\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-\n    Ostern\n        Zeitraum: 22.03. – 29.03.2027\n        Feiertage: Karfreitag (26.03.) & Ostermontag (29.03.)\n        Urlaubstage: 4 Tage (22.03. – 25.03.)\n        Freie Tage: 10 Tage\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n    Kombi: Himmelfahrt & Pfingsten\n        Zeitraum: 06.05. – 17.05.2027\n        Feiertage: Christi Himmelfahrt (06.05.) & Pfingstmontag (17.05.)\n        Urlaubstage: 6 Tage (07.05. & 10.05. – 14.05.)\n        Freie Tage: 12 Tage\n-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n    Fronleichnam\n        Zeitraum: 27.05. – 30.05.2027\n        Feiertag: Donnerstag, 27.05.2027\n        Brückentag: Freitag, 28.05.2027\n        Urlaubstage: 1 Tag\n        Freie Tage: 4 Tage",
+        "checklist": []
+    },
+    {
+        "name": "Spät",
+        "start": null,
+        "ziel": "2026-10-05T09:30",
+        "tags": [
+            "ARBEIT",
+            "SPÄT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Impfung Stichtag",
+        "start": null,
+        "ziel": "2026-10-14T17:30",
+        "tags": [
+            "TERMINE",
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Sira & Jax",
+        "checklist": []
+    },
+    {
+        "name": "Herbstferien",
+        "start": "2026-10-17T00:00",
+        "ziel": "2026-11-01T23:59",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Rb Start",
+        "start": null,
+        "ziel": "2026-10-26T18:00",
+        "tags": [
+            "ARBEIT",
+            "RB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Eröffnung Standort K*ln",
+        "start": "2026-11-04T12:00",
+        "ziel": "2026-11-04T19:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Entwurmung Erinnerung",
+        "start": null,
+        "ziel": "2026-11-07T17:30",
+        "tags": [
+            "TERMINE",
+            "KATZIS"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Sira, Jax, Pumba & Diego",
+        "checklist": []
+    },
+    {
+        "name": "Paramount Abo beenden",
+        "start": null,
+        "ziel": "2026-11-16T20:00",
+        "tags": [
+            "CASI",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Tahnee - Ein touch too much",
+        "start": "2026-11-20T20:00",
+        "ziel": "2026-11-20T23:00",
+        "tags": [
+            "TERMINE",
+            "KERO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "NEW Box, Mönchengladbach",
+        "checklist": []
+    },
+    {
+        "name": "Leasing Ende Auto",
+        "start": null,
+        "ziel": "2026-12-08T09:00",
+        "tags": [
+            "ARBEIT",
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "notiz": "",
+        "checklist": [],
+        "repeatUntil": null,
+        "days": []
+    },
+    {
+        "name": "Weihnachtsferien",
+        "start": "2026-12-23T00:00",
+        "ziel": "2027-01-06T23:59",
+        "tags": [
+            "FERIEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Frei",
+        "start": "2026-12-23T17:00",
+        "ziel": "2026-12-28T08:00",
+        "tags": [
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "4 X ausschlafen :)",
+        "checklist": []
+    },
+    {
+        "name": "Frei",
+        "start": "2026-12-30T17:00",
+        "ziel": "2027-01-04T08:00",
+        "tags": [
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "4 X ausschlafen :)",
+        "checklist": []
+    },
+    {
+        "name": "Bestellung Auto",
+        "start": null,
+        "ziel": "2027-02-17T09:30",
+        "tags": [
+            "ARBEIT",
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bestellt am 17.6. - Lieferzeit wohl 8 Monate\n17.09 - 3 Monate\n17.10 - 4 Monate\n17.11 - 5 Monate\n17.12 - 6 Monate\n17.01 - 7 Monate\n17.02 - 8 Monate",
+        "checklist": []
+    },
+    {
+        "name": "Konto glatt",
+        "start": null,
+        "ziel": "2027-06-30T15:00",
+        "tags": [
+            "FINANZEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Variabel",
+        "checklist": []
+    },
+    {
+        "name": "Finca in Inca",
+        "start": "2027-09-11T15:00",
+        "ziel": "2027-09-25T15:00",
+        "tags": [
+            "URLAUB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "14 Tage :)",
+        "checklist": []
+    },
+    {
+        "name": "Dr. Knierim",
+        "start": null,
+        "ziel": "2027-09-13T12:00",
+        "tags": [
+            "PRÜFEN",
+            "DOK",
+            "CASI",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Hautarzt Screening - Umplanen, fällt in Finca Urlaub rein.",
         "checklist": []
     }
 ]
