@@ -751,8 +751,7 @@
         "ziel": "2026-10-01T08:00",
         "tags": [
             "DOK",
-            "CASI",
-            "TERMINE"
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
