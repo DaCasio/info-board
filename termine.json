@@ -89,8 +89,8 @@
     },
     {
         "name": "CVE - Kundenliste",
-        "start": "2026-08-26T14:00",
-        "ziel": "2026-08-26T14:25",
+        "start": "2026-08-26T10:00",
+        "ziel": "2026-08-26T10:30",
         "tags": [
             "ARBEIT",
             "CVE"
@@ -98,7 +98,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "",
+        "notiz": "Namen eintragen da sich ansonsten keiner berufen fühlt.",
         "checklist": []
     },
     {
