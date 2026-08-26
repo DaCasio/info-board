@@ -745,5 +745,18 @@
         "days": [],
         "notiz": "Wenn das mit den Ohren noch nicht besser ist, Termin machen\nAnsonsten Druckausgleich, Kaugummi, Wärmelampe 10 min auf jeder Seite.",
         "checklist": []
+    },
+    {
+        "name": "Passwortaablauf 23.9.",
+        "start": null,
+        "ziel": "2026-09-23T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
