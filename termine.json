@@ -744,5 +744,19 @@
         "days": [],
         "notiz": "Passwort vor Urlaub ändern",
         "checklist": []
+    },
+    {
+        "name": "CVE Punkt Dustin",
+        "start": null,
+        "ziel": "2026-08-27T09:30",
+        "tags": [
+            "ARBEIT",
+            "CVE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
