@@ -763,7 +763,9 @@
         "name": "Cleanup KIX Tickets",
         "start": null,
         "ziel": "2026-08-27T09:30",
-        "tags": [],
+        "tags": [
+            "ARBEIT"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
