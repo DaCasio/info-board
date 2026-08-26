@@ -769,5 +769,18 @@
         "days": [],
         "notiz": "Langläufer bspw KZVK und kurzen Einleitungstext für Daniel - Er bewertet was wir mit dem Case machen",
         "checklist": []
+    },
+    {
+        "name": "Blueprint PA ACC Umstellung.",
+        "start": null,
+        "ziel": "2026-08-27T09:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Blueprint fertig machen und an Daniel reichen.",
+        "checklist": []
     }
 ]
