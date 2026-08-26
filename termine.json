@@ -127,11 +127,12 @@
         "checklist": []
     },
     {
-        "name": "Herbstferien",
-        "start": "2026-10-17T00:00",
-        "ziel": "2026-11-01T23:59",
+        "name": "CVE - Kundenliste",
+        "start": "2026-08-26T14:00",
+        "ziel": "2026-08-26T14:25",
         "tags": [
-            "FERIEN"
+            "ARBEIT",
+            "CVE"
         ],
         "repeat": "none",
         "repeatUntil": null,
