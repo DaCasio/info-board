@@ -127,20 +127,6 @@
         "checklist": []
     },
     {
-        "name": "CVE - Kundenliste",
-        "start": "2026-08-26T14:00",
-        "ziel": "2026-08-26T14:25",
-        "tags": [
-            "ARBEIT",
-            "CVE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Weihnachtsferien",
         "start": "2026-12-23T00:00",
         "ziel": "2027-01-06T23:59",
