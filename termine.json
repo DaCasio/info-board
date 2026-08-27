@@ -221,19 +221,6 @@
         "checklist": []
     },
     {
-        "name": "Sommerferien Ende",
-        "start": null,
-        "ziel": "2026-09-01T23:59",
-        "tags": [
-            "FERIEN"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Winterreifen Termin machen",
         "start": "2026-10-01T10:00",
         "ziel": "2026-10-01T12:00",
