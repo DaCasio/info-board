@@ -731,18 +731,5 @@
         "days": [],
         "notiz": "Warten auf Jörg, damit ich die Mail an Dustin absetzen kann",
         "checklist": []
-    },
-    {
-        "name": "Blueprint PA ACC Umstellung.",
-        "start": null,
-        "ziel": "2026-08-27T11:15",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Blueprint fertig machen und an Daniel reichen.",
-        "checklist": []
     }
 ]
