@@ -733,19 +733,6 @@
         "checklist": []
     },
     {
-        "name": "Cleanup KIX Tickets",
-        "start": null,
-        "ziel": "2026-08-27T10:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Langläufer bspw KZVK und kurzen Einleitungstext für Daniel - Er bewertet was wir mit dem Case machen",
-        "checklist": []
-    },
-    {
         "name": "Blueprint PA ACC Umstellung.",
         "start": null,
         "ziel": "2026-08-27T11:15",
