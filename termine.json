@@ -717,19 +717,5 @@
         "days": [],
         "notiz": "Passwort vor Urlaub ändern",
         "checklist": []
-    },
-    {
-        "name": "CVE Punkt Dustin",
-        "start": null,
-        "ziel": "2026-08-27T13:15",
-        "tags": [
-            "ARBEIT",
-            "CVE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Warten auf Jörg, damit ich die Mail an Dustin absetzen kann",
-        "checklist": []
     }
 ]
