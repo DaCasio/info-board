@@ -208,19 +208,6 @@
         "checklist": []
     },
     {
-        "name": "SNow",
-        "start": null,
-        "ziel": "2026-08-31T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Ende August: finale Migration der relevanten Daten aus KIX und Planview",
-        "checklist": []
-    },
-    {
         "name": "Winterreifen Termin machen",
         "start": "2026-10-01T10:00",
         "ziel": "2026-10-01T12:00",
