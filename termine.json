@@ -658,5 +658,21 @@
         "days": [],
         "notiz": "Rheinberger Str. 199, 47445 Moers",
         "checklist": []
+    },
+    {
+        "name": "Termin - Christoph Knierim - 13.9.27 Gecancled - Neu machen",
+        "start": null,
+        "ziel": "2026-08-31T12:00",
+        "tags": [
+            "PRÜFEN",
+            "DOK",
+            "CASI",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Hautarzt Screening - Umplanen, fällt in Finca Urlaub rein.",
+        "checklist": []
     }
 ]
