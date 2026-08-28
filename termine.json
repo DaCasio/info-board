@@ -236,20 +236,6 @@
         "checklist": []
     },
     {
-        "name": "Gladbach auf RTL Free TV / Grillen",
-        "start": null,
-        "ziel": "2026-08-29T15:30",
-        "tags": [
-            "TERMINE",
-            "GLADBACH"
-        ],
-        "repeat": "none",
-        "repeatUntil": "2026-12-17",
-        "days": [],
-        "notiz": "Gegen Leipzig",
-        "checklist": []
-    },
-    {
         "name": "Gladbach - Elversberg Home",
         "start": "2026-09-05T13:30",
         "ziel": "2026-09-05T18:30",
