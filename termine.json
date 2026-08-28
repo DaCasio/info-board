@@ -279,20 +279,6 @@
         "checklist": []
     },
     {
-        "name": "Füße 🦶",
-        "start": null,
-        "ziel": "2026-09-03T16:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Geburtstag Mutti",
         "start": null,
         "ziel": "2026-09-28T00:00",
