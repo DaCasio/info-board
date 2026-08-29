@@ -1,19 +1,5 @@
 [
     {
-        "name": "Elster Zerti Mutti Ende",
-        "start": null,
-        "ziel": "2026-08-31T08:37",
-        "tags": [
-            "ELSTER",
-            "MUTTI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sticki",
         "start": null,
         "ziel": "2026-09-02T08:00",
