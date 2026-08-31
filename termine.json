@@ -660,5 +660,19 @@
         "days": [],
         "notiz": "Hautarzt Screening - Umplanen, fällt in Finca Urlaub rein.\nAm besten am 6.9.27 vorziehen.",
         "checklist": []
+    },
+    {
+        "name": "Pause",
+        "start": "2026-08-31T13:15",
+        "ziel": "2026-08-31T14:15",
+        "tags": [
+            "ARBEIT",
+            "PERI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
