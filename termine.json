@@ -308,19 +308,6 @@
         "checklist": []
     },
     {
-        "name": "Eröffnung Standort K*ln",
-        "start": "2026-11-04T12:00",
-        "ziel": "2026-11-04T19:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Termin - Christoph Knierim - Neu planen",
         "start": null,
         "ziel": "2027-01-04T09:00",
