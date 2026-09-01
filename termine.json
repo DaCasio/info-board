@@ -321,19 +321,17 @@
         "checklist": []
     },
     {
-        "name": "Termin - Christoph Knierim - Gecancled - Neu machen",
+        "name": "Termin - Christoph Knierim - Neu planen",
         "start": null,
-        "ziel": "2027-09-13T12:00",
+        "ziel": "2027-01-04T09:00",
         "tags": [
-            "PRÜFEN",
             "DOK",
-            "CASI",
-            "TERMINE"
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Hautarzt Screening - Umplanen, fällt in Finca Urlaub rein.\nAm besten am 6.9.27 vorziehen.",
+        "notiz": "Hautarzt Screening 13.09.27 12 Uhr storniert wegen Finca.",
         "checklist": []
     },
     {
