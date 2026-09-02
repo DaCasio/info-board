@@ -79,6 +79,12 @@
 
         .termin-counter { text-align: right; font-weight: bold; color: var(--accent); margin-bottom: 10px; font-size: 0.9em; text-transform: uppercase; }
 
+        /* NEU: Trenner beim Wechsel zu einem anderen Kalendertag */
+        .tag-separator { display: flex; align-items: center; gap: 12px; margin: 22px 0 14px; color: var(--accent); font-size: 0.78em; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; }
+        .tag-separator::before, .tag-separator::after { content: ''; height: 1px; flex: 1; background: linear-gradient(90deg, transparent, rgba(0, 202, 227, 0.75), transparent); }
+        .tag-separator.today { color: #ffcc00; }
+        .tag-separator.today::before, .tag-separator.today::after { background: linear-gradient(90deg, transparent, rgba(255, 204, 0, 0.85), transparent); }
+
         .termin-card { background: rgba(30,30,30,0.85); backdrop-filter: blur(4px); border-left: 6px solid var(--accent); padding: 15px; border-radius: 8px; margin-bottom: 12px; display: flex; flex-direction: column; }
         .termin-card.archived { border-left-color: #666; opacity: 0.8; }
 
@@ -105,6 +111,19 @@
             font-weight: 600;
             color: #b8dfe6;
             line-height: 1.2;
+        }
+        /* NEU: fortlaufende Zeit seit dem Fälligkeitszeitpunkt */
+        .countdown-overdue {
+            display: block;
+            margin-top: 4px;
+            padding-top: 4px;
+            border-top: 1px solid rgba(255, 77, 77, 0.28);
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.74em;
+            font-weight: 800;
+            line-height: 1.25;
+            color: #ff9b9b;
+            text-transform: uppercase;
         }
 
         .row-notiz { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 10px; }
@@ -479,13 +498,37 @@
         return `${months} Monate ${days} Tage`;
     }
 
+    /* NEU: Datumsschlüssel und Beschriftung für die Tages-Trenner */
+    function getDayKey(date) {
+        const d = new Date(date);
+        const pad = n => String(n).padStart(2, '0');
+        return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+    }
+
+    function getDaySeparatorLabel(date, heute) {
+        const d = new Date(date);
+        if (getDayKey(d) === getDayKey(heute)) {
+            return 'HEUTE · ' + d.toLocaleDateString('de-DE', {
+                weekday: 'long',
+                day: '2-digit',
+                month: 'long'
+            });
+        }
+        return d.toLocaleDateString('de-DE', {
+            weekday: 'long',
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric'
+        });
+    }
+
     function updateCountdowns() {
         const jetzt = new Date();
         const boxes = document.querySelectorAll('.countdown-box[data-ziel]');
         boxes.forEach(box => {
             const ziel = new Date(box.getAttribute('data-ziel'));
             const start = box.getAttribute('data-start') ? new Date(box.getAttribute('data-start')) : null;
-            let statusText = "FÄLLIG", displayTime = "FÄLLIG", displaySub = "0 Monate 0 Tage", cssClass = "faellig";
+            let statusText = "FÄLLIG", displayTime = "FÄLLIG", displaySub = "0 Monate 0 Tage", overdueText = "", cssClass = "faellig";
             if (jetzt < ziel) {
                 if (start && jetzt < start) {
                     statusText = "START IN";
@@ -498,10 +541,14 @@
                     displaySub = getMonthDayDiff(jetzt, ziel);
                     cssClass = start ? "laufend" : "";
                 }
+            } else {
+                /* NEU: FÄLLIG bleibt sichtbar, darunter zählt die überfällige Zeit hoch */
+                overdueText = "ÜBERFÄLLIG SEIT " + getCountdown(jetzt - ziel);
             }
             box.querySelector('small').innerText = statusText;
             box.querySelector('.countdown-main').innerText = displayTime;
             box.querySelector('.countdown-subline').innerText = displaySub;
+            box.querySelector('.countdown-overdue').innerText = overdueText;
             box.className = `countdown-box ${cssClass}`;
         });
     }
@@ -536,6 +583,7 @@
         const dateOpt = { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
 
         let h = "";
+        let previousDayKey = "";
         filteredData.forEach((t) => {
             const originalIndex = data.indexOf(t);
             const ziel = new Date(t.ziel);
@@ -544,6 +592,16 @@
             const repeatTag = (t.repeat && t.repeat !== "none") ? `<span class="tag-repeat">${t.repeat}</span>` : "";
             const targetDate = (start && jetzt < start) ? start : ziel;
             const monthDayText = jetzt < targetDate ? getMonthDayDiff(jetzt, targetDate) : '0 Monate 0 Tage';
+
+            /* NEU: Nur bei Wechsel auf einen anderen Termin-Tag einen Trenner ausgeben */
+            const currentDayKey = getDayKey(targetDate);
+            if (currentDayKey !== previousDayKey) {
+                const isToday = currentDayKey === getDayKey(jetzt);
+                h += `<div class="tag-separator ${isToday ? 'today' : ''}">
+                        <span>${getDaySeparatorLabel(targetDate, jetzt)}</span>
+                      </div>`;
+                previousDayKey = currentDayKey;
+            }
             
             h += `<div class="termin-card ${isArchived ? 'archived' : ''}">
                 <div class="row-title">
@@ -567,6 +625,7 @@
                         <small>...</small>
                         <span class="countdown-main">...</span>
                         <span class="countdown-subline">${monthDayText}</span>
+                        <span class="countdown-overdue"></span>
                     </div>
                 </div>
                 <div class="row-notiz">
