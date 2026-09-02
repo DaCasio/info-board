@@ -2,17 +2,17 @@
     {
         "name": "Sticki",
         "start": null,
-        "ziel": "2026-09-02T08:00",
+        "ziel": "2026-12-10T09:00",
         "tags": [
             "DOK",
-            "CASI",
+            "KERO",
             "TERMINE"
         ],
         "repeat": "none",
-        "notiz": "Zahnreinigung",
-        "checklist": [],
         "repeatUntil": null,
-        "days": []
+        "days": [],
+        "notiz": "Zahnreinigung",
+        "checklist": []
     },
     {
         "name": "Urlaub",
