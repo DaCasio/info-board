@@ -666,7 +666,12 @@
         "repeat": "none",
         "repeatUntil": "2026-09-18",
         "days": [],
-        "notiz": "",
-        "checklist": []
+        "notiz": "****////____----[color:#ff4d4d][/color][color:#008800][/color][color:#febe00][/color][color:#1010dd][/color]",
+        "checklist": [
+            {
+                "text": "",
+                "done": false
+            }
+        ]
     }
 ]
