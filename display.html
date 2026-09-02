@@ -32,6 +32,36 @@
             font-size: 1.1em;
         }
 
+        /* NEU: Minimalistischer Trenner beim Wechsel zu einem anderen Termin-Tag */
+        .tag-separator {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 24px 0 14px;
+            color: #00a9be;
+            font-size: 0.95em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tag-separator::before,
+        .tag-separator::after {
+            content: '';
+            height: 2px;
+            flex: 1;
+            background-color: #00cae3;
+        }
+
+        .tag-separator.today {
+            color: #8a6b00;
+        }
+
+        .tag-separator.today::before,
+        .tag-separator.today::after {
+            background-color: #ffcc00;
+        }
+
         .termin-card {
             border: 3px solid black;
             margin: 15px 0;
@@ -95,6 +125,18 @@
             font-weight: bold;
             color: #666;
             white-space: nowrap;
+        }
+
+        /* NEU: Laufende Anzeige seit dem Fälligkeitszeitpunkt */
+        .zeit-ueberfaellig {
+            margin-top: 6px;
+            padding-top: 5px;
+            border-top: 1px solid #ffb3b3;
+            font-size: 0.78em;
+            font-weight: bold;
+            color: #b30000;
+            white-space: nowrap;
+            text-transform: uppercase;
         }
 
         .faellig { color: #ff4d4d !important; text-transform: uppercase; }
@@ -169,6 +211,30 @@
             return months + ' Monate ' + days + ' Tage';
         }
 
+        /* NEU: Tagesvergleich und Beschriftung für die Anzeige-Trenner */
+        function getDayKey(date) {
+            const d = new Date(date);
+            const pad = n => String(n).padStart(2, '0');
+            return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+        }
+
+        function getDaySeparatorLabel(date, heute) {
+            const d = new Date(date);
+            if (getDayKey(d) === getDayKey(heute)) {
+                return 'HEUTE · ' + d.toLocaleDateString('de-DE', {
+                    weekday: 'long',
+                    day: '2-digit',
+                    month: 'long'
+                });
+            }
+            return d.toLocaleDateString('de-DE', {
+                weekday: 'long',
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric'
+            });
+        }
+
         function formatNotiz(txt) {
             if (!txt) return '';
             let formatted = txt.split('\n').map(line => {
@@ -201,10 +267,22 @@
             });
 
             let html = '';
+            let previousDayKey = '';
             sichtbareTermine.forEach((t) => {
                 const ziel = new Date(t.ziel);
                 const start = t.start ? new Date(t.start) : null;
-                let zeitStr = '', statusText = '', cardClass = '', zeitClass = '', monateStr = '';
+                const targetDate = (start && jetzt < start) ? start : ziel;
+                const currentDayKey = getDayKey(targetDate);
+                let zeitStr = '', statusText = '', cardClass = '', zeitClass = '', monateStr = '', ueberfaelligStr = '';
+
+                /* NEU: Trenner nur beim Wechsel des relevanten Termin-Tages */
+                if (currentDayKey !== previousDayKey) {
+                    const isToday = currentDayKey === getDayKey(jetzt);
+                    html += '<div class="tag-separator ' + (isToday ? 'today' : '') + '">' +
+                                '<span>' + getDaySeparatorLabel(targetDate, jetzt) + '</span>' +
+                            '</div>';
+                    previousDayKey = currentDayKey;
+                }
 
                 if (start && jetzt < start) {
                     statusText = 'Start in';
@@ -226,6 +304,7 @@
                     statusText = 'Status';
                     zeitStr = 'Fällig';
                     monateStr = '0 Monate 0 Tage';
+                    ueberfaelligStr = 'Überfällig seit ' + getCountdownStr(jetzt - ziel);
                     cardClass = 'card-urgent';
                     zeitClass = 'faellig';
                 }
@@ -249,6 +328,7 @@
                 const startHtml = start ? 'Start: ' + start.toLocaleString('de-DE', opt) + ' Uhr<br>' : '';
                 const zielHtml = 'Ende: ' + ziel.toLocaleString('de-DE', opt) + ' Uhr';
                 const notizHtml = t.notiz ? '<div class="notiz-text">' + formatNotiz(t.notiz) + '</div>' : '';
+                const ueberfaelligHtml = ueberfaelligStr ? '<div class="zeit-ueberfaellig">' + ueberfaelligStr + '</div>' : '';
 
                 let checklistHtml = '';
                 if (t.checklist && t.checklist.length > 0) {
@@ -270,6 +350,7 @@
                                     '<span class="status-label">' + statusText + '</span>' +
                                     '<div class="zeit ' + zeitClass + '">' + zeitStr + '</div>' +
                                     '<div class="zeit-monate">' + monateStr + '</div>' +
+                                    ueberfaelligHtml +
                                 '</div>' +
                             '</div>' +
                             notizHtml +
