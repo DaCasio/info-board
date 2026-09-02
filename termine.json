@@ -646,19 +646,14 @@
     {
         "name": "Feierabend",
         "start": null,
-        "ziel": "2026-09-02T18:31",
+        "ziel": "2026-09-02T18:50",
         "tags": [
             "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": "2026-09-18",
         "days": [],
-        "notiz": "**ghgdfhdf**//dfghdfgh//__dfghdfgh__--hdfghdfh--[color:#ff4d4d]dfghdfgh[/color][color:#008800]fdghfdghf[/color][color:#febe00]dfghfdghdfg[/color][color:#1010dd]dfghdfghfdh[/color]",
-        "checklist": [
-            {
-                "text": "",
-                "done": true
-            }
-        ]
+        "notiz": "",
+        "checklist": []
     }
 ]
