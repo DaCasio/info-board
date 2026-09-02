@@ -1,4 +1,3 @@
-```markdown
 # 🛰️ Termin Monitor - Orbital Control
 
 ![Version](https://img.shields.io/badge/Version-3.5-00cae3.svg)
@@ -132,4 +131,3 @@ A control center for appointments, deadlines, and time windows. It is optimized 
 ---
 
 *Orbital Control Systems v3.5 - Precision Scheduling for Mission Critical Operations.*
-```
