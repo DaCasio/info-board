@@ -670,7 +670,7 @@
         "checklist": [
             {
                 "text": "",
-                "done": false
+                "done": true
             }
         ]
     }
