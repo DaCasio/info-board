@@ -117,7 +117,7 @@
         "start": "2026-12-23T00:00",
         "ziel": "2027-01-06T23:59",
         "tags": [
-            "FERIEN"
+            "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": null,
