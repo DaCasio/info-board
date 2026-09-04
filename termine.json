@@ -629,19 +629,6 @@
         "checklist": []
     },
     {
-        "name": "Picnic",
-        "start": "2026-09-04T09:45",
-        "ziel": "2026-09-04T11:15",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "DELL Management Server ANO",
         "start": null,
         "ziel": "2026-10-15T08:00",
