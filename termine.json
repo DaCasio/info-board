@@ -630,7 +630,7 @@
     },
     {
         "name": "Helge Kroatien",
-        "start": "2026-09-04T18:00",
+        "start": null,
         "ziel": "2026-09-25T18:00",
         "tags": [
             "INFO"
