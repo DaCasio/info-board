@@ -630,8 +630,8 @@
     },
     {
         "name": "Picnic",
-        "start": null,
-        "ziel": "2026-09-04T09:45",
+        "start": "2026-09-04T09:45",
+        "ziel": "2026-09-04T11:15",
         "tags": [
             "TERMINE"
         ],
