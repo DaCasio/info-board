@@ -497,8 +497,7 @@
         "start": null,
         "ziel": "2026-09-20T00:00",
         "tags": [
-            "TERMINE",
-            "U-ANDERE"
+            "INFO"
         ],
         "repeat": "none",
         "repeatUntil": null,
