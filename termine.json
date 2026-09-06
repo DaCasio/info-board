@@ -521,19 +521,6 @@
         "checklist": []
     },
     {
-        "name": "Wahl Sachsen Anhalt",
-        "start": null,
-        "ziel": "2026-09-06T18:00",
-        "tags": [
-            "WAHL"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Wahl McPomm",
         "start": null,
         "ziel": "2026-09-20T18:00",
