@@ -348,20 +348,6 @@
         "checklist": []
     },
     {
-        "name": "1on1",
-        "start": "2026-09-09T13:00",
-        "ziel": "2026-09-09T13:25",
-        "tags": [
-            "ARBEIT",
-            "PERI"
-        ],
-        "repeat": "biweekly",
-        "repeatUntil": "2026-09-09",
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Weekly",
         "start": "2026-09-11T10:00",
         "ziel": "2026-09-11T10:55",
