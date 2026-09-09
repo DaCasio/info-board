@@ -182,7 +182,7 @@
     },
     {
         "name": "Winterreifen Termin machen",
-        "start": "2026-10-01T10:00",
+        "start": null,
         "ziel": "2026-10-01T12:00",
         "tags": [
             "TERMINE",
