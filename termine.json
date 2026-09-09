@@ -562,19 +562,6 @@
         "checklist": []
     },
     {
-        "name": "DELL Management Server ANO",
-        "start": null,
-        "ziel": "2026-10-15T08:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Helge Kroatien Ende",
         "start": null,
         "ziel": "2026-09-25T18:00",
