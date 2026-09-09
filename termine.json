@@ -354,10 +354,11 @@
         "start": "2026-09-11T13:00",
         "ziel": "2026-09-11T14:00",
         "tags": [
-            "ARBEIT"
+            "ARBEIT",
+            "PERI"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "biweekly",
+        "repeatUntil": "2026-09-11",
         "days": [],
         "notiz": "",
         "checklist": []
