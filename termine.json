@@ -679,5 +679,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "03 Freiburg - Gladbach",
+        "start": null,
+        "ziel": "2026-10-11T15:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
