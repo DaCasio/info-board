@@ -640,5 +640,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "07 Stuttgart - Gladbach",
+        "start": null,
+        "ziel": "2026-10-23T20:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
