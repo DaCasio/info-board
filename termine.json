@@ -572,18 +572,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Termin Herr Baijrami",
-        "start": null,
-        "ziel": "2026-09-10T16:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Besuch mit Bank",
-        "checklist": []
     }
 ]
