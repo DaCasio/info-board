@@ -653,5 +653,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "09 HSV - Gladbach",
+        "start": null,
+        "ziel": "2026-11-03T20:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
