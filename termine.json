@@ -614,5 +614,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Pokal Gladbach - KSC",
+        "start": null,
+        "ziel": "2026-10-27T20:45",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
