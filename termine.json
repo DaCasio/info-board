@@ -666,5 +666,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "11 Bremen - Gladbach",
+        "start": null,
+        "ziel": "2026-11-27T20:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
