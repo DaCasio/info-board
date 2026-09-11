@@ -139,19 +139,6 @@
         "checklist": []
     },
     {
-        "name": "Ende Palo Lab",
-        "start": null,
-        "ziel": "2026-09-15T00:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Bestellung Auto",
         "start": null,
         "ziel": "2027-02-17T09:30",
