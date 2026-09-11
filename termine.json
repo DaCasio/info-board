@@ -692,5 +692,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Holland - Kaffee",
+        "start": "2026-09-11T11:45",
+        "ziel": "2026-09-11T13:15",
+        "tags": [
+            "TERMIN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
