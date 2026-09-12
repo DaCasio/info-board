@@ -638,5 +638,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Aloys 80",
+        "start": "2026-09-26T18:00",
+        "ziel": "2026-09-26T22:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Hotel-Restaurant Im Tannenhof\nPescher Straße 35, Pesch, 41352 Korschenbroich",
+        "checklist": []
     }
 ]
