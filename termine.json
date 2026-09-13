@@ -505,21 +505,6 @@
         "checklist": []
     },
     {
-        "name": "Tisch reserviert @ König Pilsener Wirtshaus Moers",
-        "start": null,
-        "ziel": "2026-09-12T18:00",
-        "tags": [
-            "TERMINE",
-            "KERO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Rheinberger Str. 199, 47445 Moers",
-        "checklist": []
-    },
-    {
         "name": "Helge Kroatien Ende",
         "start": null,
         "ziel": "2026-09-25T18:00",
