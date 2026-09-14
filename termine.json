@@ -454,7 +454,7 @@
     {
         "name": "Mede HNO",
         "start": null,
-        "ziel": "2026-10-01T08:00",
+        "ziel": "2026-10-05T10:00",
         "tags": [
             "DOK",
             "CASI"
@@ -462,7 +462,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Wenn das mit den Ohren noch nicht besser ist, Termin machen\nAnsonsten Druckausgleich, Kaugummi, Wärmelampe 10 min auf jeder Seite.",
+        "notiz": "Wenn das mit den Ohren noch nicht besser ist, Termin machen - Hörtest.\nAnsonsten Druckausgleich, Kaugummi, Wärmelampe 10 min auf jeder Seite.",
         "checklist": []
     },
     {
