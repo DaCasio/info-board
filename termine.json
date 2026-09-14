@@ -230,8 +230,7 @@
         "start": null,
         "ziel": "2026-09-28T00:00",
         "tags": [
-            "TERMINE",
-            "JEBORTSTACH"
+            "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": null,
