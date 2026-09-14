@@ -649,5 +649,19 @@
         "days": [],
         "notiz": "Übernachtung Matamba mit Yvonne + Christian",
         "checklist": []
+    },
+    {
+        "name": "Schnubbi - Vossi",
+        "start": null,
+        "ziel": "2026-09-18T18:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
