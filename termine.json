@@ -727,5 +727,18 @@
         "days": [],
         "notiz": "Bestellt am 17.6. - Lieferzeit wohl 8 Monate\n**[color:#008800]17.01 - 7 Monate[/color]**",
         "checklist": []
+    },
+    {
+        "name": "Kurz mal arbeiten",
+        "start": "2026-12-28T08:00",
+        "ziel": "2026-12-30T17:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
