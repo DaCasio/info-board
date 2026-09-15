@@ -635,21 +635,6 @@
     {
         "name": "Bestellung Auto",
         "start": null,
-        "ziel": "2026-09-17T09:30",
-        "tags": [
-            "ARBEIT",
-            "AUTO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Bestellt am 17.6. - Lieferzeit wohl 8 Monate\n17.09 - 3 Monate",
-        "checklist": []
-    },
-    {
-        "name": "Bestellung Auto",
-        "start": null,
         "ziel": "2026-10-17T09:30",
         "tags": [
             "ARBEIT",
