@@ -704,5 +704,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Gerichtstermin gg. Koenen",
+        "start": null,
+        "ziel": "2026-11-24T11:30",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
