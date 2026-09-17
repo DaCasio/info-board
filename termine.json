@@ -345,25 +345,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-09-17T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": "2026-09-17",
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sperrmüll rausstellen",
         "start": null,
         "ziel": "2026-09-20T11:00",
