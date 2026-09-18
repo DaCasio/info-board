@@ -16,7 +16,7 @@
     },
     {
         "name": "Urlaub",
-        "start": "2026-09-18T17:00",
+        "start": null,
         "ziel": "2026-10-04T23:59",
         "tags": [
             "URLAUB"
@@ -24,7 +24,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "16 X ausschlafen :)",
+        "notiz": "",
         "checklist": []
     },
     {
