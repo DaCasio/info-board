@@ -630,7 +630,7 @@
         "checklist": []
     },
     {
-        "name": "CVE INFO Jörg",
+        "name": "CVE",
         "start": null,
         "ziel": "2026-09-18T08:30",
         "tags": [
@@ -639,7 +639,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Passwort vor Urlaub ändern",
+        "notiz": "",
         "checklist": []
     },
     {
