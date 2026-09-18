@@ -281,25 +281,6 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": "2026-09-18T13:15",
-        "ziel": "2026-09-18T14:15",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "weekly",
-        "repeatUntil": "2026-09-18",
-        "days": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Sperrmüll rausstellen",
         "start": null,
         "ziel": "2026-09-20T11:00",
