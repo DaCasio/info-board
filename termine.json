@@ -617,19 +617,6 @@
         "checklist": []
     },
     {
-        "name": "CVE",
-        "start": null,
-        "ziel": "2026-09-18T08:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Robert Uschi Köpi",
         "start": null,
         "ziel": "2026-11-07T17:00",
