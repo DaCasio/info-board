@@ -413,19 +413,6 @@
         "checklist": []
     },
     {
-        "name": "Passwortablauf 23.9.",
-        "start": null,
-        "ziel": "2026-09-18T08:15",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Passwort vor Urlaub ändern",
-        "checklist": []
-    },
-    {
         "name": "Andreas-Bräm-Straße",
         "start": null,
         "ziel": "2026-11-29T23:59",
