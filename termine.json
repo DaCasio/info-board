@@ -282,19 +282,6 @@
         "checklist": []
     },
     {
-        "name": "Wahl McPomm",
-        "start": null,
-        "ziel": "2026-09-20T18:00",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "& Abgeordnetenhaus Berlin",
-        "checklist": []
-    },
-    {
         "name": "Mede HNO",
         "start": null,
         "ziel": "2026-10-05T08:30",
