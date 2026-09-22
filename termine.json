@@ -254,20 +254,6 @@
         "checklist": []
     },
     {
-        "name": "Geburtstag Schnubbi",
-        "start": null,
-        "ziel": "2026-09-23T00:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Mede HNO",
         "start": null,
         "ziel": "2026-10-05T08:30",
