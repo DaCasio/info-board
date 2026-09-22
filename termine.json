@@ -517,5 +517,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Kredi/Konto Ausgleich",
+        "start": null,
+        "ziel": "2028-03-31T15:00",
+        "tags": [
+            "INFO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Variabel",
+        "checklist": []
     }
 ]
