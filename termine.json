@@ -528,5 +528,18 @@
         "days": [],
         "notiz": "Variabel",
         "checklist": []
+    },
+    {
+        "name": "Wolle Birthday",
+        "start": null,
+        "ziel": "2026-12-18T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
