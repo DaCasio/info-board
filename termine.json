@@ -197,19 +197,6 @@
         "checklist": []
     },
     {
-        "name": "Geburtstag Mutti",
-        "start": null,
-        "ziel": "2026-09-28T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Impfung Stichtag",
         "start": null,
         "ziel": "2026-10-14T17:30",
