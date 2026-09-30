@@ -539,5 +539,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Saar/SchleWiHol",
+        "start": null,
+        "ziel": "2027-04-18T18:00",
+        "tags": [
+            "WAHLEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
