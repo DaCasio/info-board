@@ -373,21 +373,6 @@
         "checklist": []
     },
     {
-        "name": "Phantasialand",
-        "start": null,
-        "ziel": "2026-10-01T09:45",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Übernachtung Matamba mit Yvonne + Christian",
-        "checklist": []
-    },
-    {
         "name": "Bestellung Auto",
         "start": null,
         "ziel": "2026-10-17T09:30",
