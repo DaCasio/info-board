@@ -552,5 +552,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "NRW Landtag",
+        "start": null,
+        "ziel": "2027-04-25T18:00",
+        "tags": [
+            "WAHLEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
