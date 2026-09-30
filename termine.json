@@ -526,5 +526,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "BuPräWahl",
+        "start": null,
+        "ziel": "2026-10-30T18:00",
+        "tags": [
+            "WAHLEN"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
