@@ -541,19 +541,6 @@
         "checklist": []
     },
     {
-        "name": "Daily",
-        "start": "2026-10-12T09:40",
-        "ziel": "2026-10-12T10:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Pause",
         "start": "2026-10-12T12:00",
         "ziel": "2026-10-12T13:00",
