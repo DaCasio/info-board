@@ -184,9 +184,9 @@
         "checklist": []
     },
     {
-        "name": "Impfung Stichtag",
+        "name": "Impfung",
         "start": null,
-        "ziel": "2026-10-14T17:30",
+        "ziel": "2026-10-23T17:30",
         "tags": [
             "TERMINE",
             "KATZIS"
