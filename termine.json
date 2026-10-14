@@ -539,5 +539,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Komplett Check",
+        "start": null,
+        "ziel": "2027-07-14T09:00",
+        "tags": [
+            "INFO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Termin Dr. Bongards machen für Roundup Check bspw. Blutbild und weitere.",
+        "checklist": []
     }
 ]
