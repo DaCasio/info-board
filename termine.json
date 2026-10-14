@@ -128,7 +128,7 @@
     {
         "name": "Bestellung Auto",
         "start": null,
-        "ziel": "2027-02-17T09:30",
+        "ziel": "2027-07-19T09:30",
         "tags": [
             "ARBEIT",
             "AUTO",
@@ -137,7 +137,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Bestellt am 17.6. - Lieferzeit wohl 8 Monate\n**[color:#1010dd]17.02 - 8 Monate[/color]**",
+        "notiz": "Bestellt am 19.10. - Lieferzeit wohl 9 Monate\n**[color:#1010dd]17.02 - 8 Monate[/color]**",
         "checklist": []
     },
     {
