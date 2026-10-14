@@ -39,10 +39,10 @@
             "CASI"
         ],
         "repeat": "none",
-        "notiz": "",
-        "checklist": [],
         "repeatUntil": null,
-        "days": []
+        "days": [],
+        "notiz": "Wird auf 1 Jahr verlängert da Enyaq Bestellung nicht rausging.",
+        "checklist": []
     },
     {
         "name": "Frei",
