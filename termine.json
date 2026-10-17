@@ -507,5 +507,18 @@
         "days": [],
         "notiz": "Termin Dr. Bongards machen für Roundup Check bspw. Blutbild und weitere.",
         "checklist": []
+    },
+    {
+        "name": "Bis hier frei parken bei hähnchen ",
+        "start": null,
+        "ziel": "2026-10-28T00:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
