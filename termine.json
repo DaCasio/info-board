@@ -156,21 +156,6 @@
         "checklist": []
     },
     {
-        "name": "Winterreifen Termin machen",
-        "start": null,
-        "ziel": "2026-10-15T09:00",
-        "tags": [
-            "TERMINE",
-            "CASI",
-            "AUTO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Rb Start",
         "start": null,
         "ziel": "2026-10-26T18:00",
