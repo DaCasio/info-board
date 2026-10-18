@@ -211,20 +211,6 @@
         "checklist": []
     },
     {
-        "name": "Mede HNO",
-        "start": null,
-        "ziel": "2026-11-02T08:30",
-        "tags": [
-            "DOK",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Wenn das mit den Ohren noch nicht besser ist, Termin machen - Hörtest.\nAnsonsten Druckausgleich, Kaugummi, Wärmelampe 10 min auf jeder Seite.",
-        "checklist": []
-    },
-    {
         "name": "Andreas-Bräm-Straße",
         "start": null,
         "ziel": "2026-11-29T23:59",
