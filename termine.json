@@ -505,5 +505,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "UVV Skoda Essen",
+        "start": null,
+        "ziel": "2026-11-18T08:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "AUTO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
