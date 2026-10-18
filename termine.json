@@ -520,5 +520,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Reifenmontage Quick",
+        "start": null,
+        "ziel": "2026-11-11T14:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "AUTO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
