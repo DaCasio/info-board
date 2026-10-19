@@ -492,5 +492,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "RB WDR ",
+        "start": null,
+        "ziel": "2026-10-19T08:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Johannes Hütten oder Stefan Reisch fragen",
+        "checklist": []
     }
 ]
