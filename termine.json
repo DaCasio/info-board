@@ -492,5 +492,16 @@
         "days": [],
         "notiz": "Johannes Hütten oder Stefan Reisch fragen",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-10-20T09:40",
+        "ziel": "2026-10-20T10:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
