@@ -495,9 +495,11 @@
     },
     {
         "name": "Daily",
-        "start": "2026-10-20T09:40",
-        "ziel": "2026-10-20T10:00",
-        "tags": [],
+        "start": "2026-10-21T09:40",
+        "ziel": "2026-10-21T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
