@@ -503,5 +503,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Forcast",
+        "start": "2026-10-21T10:30",
+        "ziel": "2026-10-21T11:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
