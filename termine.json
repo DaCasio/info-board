@@ -492,16 +492,5 @@
         "days": [],
         "notiz": "Johannes Hütten oder SMY fragen",
         "checklist": []
-    },
-    {
-        "name": "Pause Rest nachholen",
-        "start": "2026-10-21T13:30",
-        "ziel": "2026-10-21T13:50",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
