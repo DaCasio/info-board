@@ -494,17 +494,6 @@
         "checklist": []
     },
     {
-        "name": "Daily",
-        "start": "2026-10-22T09:40",
-        "ziel": "2026-10-22T10:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "PA-Learning",
         "start": "2026-10-22T11:00",
         "ziel": "2026-10-22T12:00",
