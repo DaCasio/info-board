@@ -334,19 +334,6 @@
         "checklist": []
     },
     {
-        "name": "Kredi/Konto Ausgleich",
-        "start": null,
-        "ziel": "2028-03-31T15:00",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Variabel",
-        "checklist": []
-    },
-    {
         "name": "Wolle Birthday",
         "start": null,
         "ziel": "2026-12-18T00:00",
