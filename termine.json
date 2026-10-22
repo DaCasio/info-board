@@ -492,5 +492,16 @@
         "days": [],
         "notiz": "Johannes Hütten oder SMY fragen",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-10-22T09:40",
+        "ziel": "2026-10-22T10:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
