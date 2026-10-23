@@ -169,20 +169,6 @@
         "checklist": []
     },
     {
-        "name": "Impfung losfahren",
-        "start": null,
-        "ziel": "2026-10-23T17:10",
-        "tags": [
-            "TERMINE",
-            "KATZIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Sira & Jax",
-        "checklist": []
-    },
-    {
         "name": "Entwurmung Erinnerung",
         "start": null,
         "ziel": "2026-11-09T17:30",
