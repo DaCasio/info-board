@@ -468,32 +468,6 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": "2026-10-23T12:00",
-        "ziel": "2026-10-23T13:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-10-23T17:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "RB WDR LB DMZ",
         "start": "2026-10-27T23:00",
         "ziel": "2026-10-28T04:00",
