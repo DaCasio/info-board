@@ -333,19 +333,6 @@
         "checklist": []
     },
     {
-        "name": "Uhr zurück ",
-        "start": null,
-        "ziel": "2026-10-25T03:00",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Uhr vor",
         "start": null,
         "ziel": "2027-03-28T01:59",
