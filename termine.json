@@ -496,5 +496,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Berrang Panorama Update",
+        "start": null,
+        "ziel": "2026-10-26T10:45",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
