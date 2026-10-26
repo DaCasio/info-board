@@ -488,8 +488,8 @@
     },
     {
         "name": "Berrang Panorama Update 11 Uhr",
-        "start": null,
-        "ziel": "2026-10-26T10:55",
+        "start": "2026-10-26T11:00",
+        "ziel": "2026-10-26T12:00",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
