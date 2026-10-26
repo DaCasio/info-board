@@ -490,43 +490,43 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "FWDS02\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "text": "FWDS02\t11.2.10-h14\t11.2.10-h16\tmorgens",
                 "done": false
             },
             {
-                "text": "FWDS01\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "text": "FWDS01\t11.2.10-h14\t11.2.10-h16\tmorgens",
                 "done": false
             },
             {
-                "text": "FWGR01\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "text": "FWGR01\t11.2.10-h14\t11.2.10-h16\tmorgens",
                 "done": false
             },
             {
-                "text": "FWGR02\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "text": "FWGR02\t11.2.10-h14\t11.2.10-h16\tmorgens",
                 "done": false
             },
             {
-                "text": "FWCH02\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "text": "FWCH02\t11.2.10-h14\t11.2.10-h16\t",
                 "done": false
             },
             {
-                "text": "FWCH01\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "text": "FWCH01\t11.2.10-h14\t11.2.10-h16\t",
                 "done": false
             },
             {
-                "text": "FWFR01\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "text": "FWFR01\t11.2.10-h14\t11.2.10-h16\t",
                 "done": false
             },
             {
-                "text": "FWFR02\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "text": "FWFR02\t11.2.10-h14\t11.2.10-h16\t",
                 "done": false
             },
             {
-                "text": "FWHD02\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "text": "FWHD02\t11.2.10-h14\t11.2.10-h16\t",
                 "done": false
             },
             {
-                "text": "FWHD01\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "text": "FWHD01\t11.2.10-h14\t11.2.10-h16\t",
                 "done": false
             }
         ]
