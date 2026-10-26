@@ -476,5 +476,59 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Update Brrng",
+        "start": "2026-10-27T09:00",
+        "ziel": "2026-10-27T10:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "FWDS02\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "done": false
+            },
+            {
+                "text": "FWDS01\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "done": false
+            },
+            {
+                "text": "FWGR01\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "done": false
+            },
+            {
+                "text": "FWGR02\t11.2.10-h14\t11.2.10-h16\t27.10.2026 morgens",
+                "done": false
+            },
+            {
+                "text": "FWCH02\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "done": false
+            },
+            {
+                "text": "FWCH01\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "done": false
+            },
+            {
+                "text": "FWFR01\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "done": false
+            },
+            {
+                "text": "FWFR02\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "done": false
+            },
+            {
+                "text": "FWHD02\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "done": false
+            },
+            {
+                "text": "FWHD01\t11.2.10-h14\t11.2.10-h16\t27/10/2026",
+                "done": false
+            }
+        ]
     }
 ]
