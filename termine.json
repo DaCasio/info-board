@@ -490,6 +490,18 @@
         "notiz": "",
         "checklist": [
             {
+                "text": "FWCH01\t11.2.10-h16\t",
+                "done": false
+            },
+            {
+                "text": "FWFR01\t11.2.10-h16\t",
+                "done": false
+            },
+            {
+                "text": "FWHD02\t11.2.10-h16\t",
+                "done": false
+            },
+            {
                 "text": "FWDS02\t11.2.10-h16\tmorgens",
                 "done": false
             },
@@ -503,30 +515,6 @@
             },
             {
                 "text": "FWGR02\t11.2.10-h16\tmorgens",
-                "done": false
-            },
-            {
-                "text": "FWCH02\t11.2.10-h16\t",
-                "done": false
-            },
-            {
-                "text": "FWCH01\t11.2.10-h16\t",
-                "done": false
-            },
-            {
-                "text": "FWFR01\t11.2.10-h16\t",
-                "done": false
-            },
-            {
-                "text": "FWFR02\t11.2.10-h16\t",
-                "done": false
-            },
-            {
-                "text": "FWHD02\t11.2.10-h16\t",
-                "done": false
-            },
-            {
-                "text": "FWHD01\t11.2.10-h16\t",
                 "done": false
             }
         ]
