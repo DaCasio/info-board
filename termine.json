@@ -579,6 +579,46 @@
             {
                 "text": "HPT",
                 "done": false
+            },
+            {
+                "text": "oed-pan-fwc1-1",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc1-2",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc2-1",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc2-2",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc3-1",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc3-2",
+                "done": false
+            },
+            {
+                "text": "segmentierung-pan-fwc1-1-hdr2",
+                "done": false
+            },
+            {
+                "text": "segmentierung-pan-fwc1-2-hdr1",
+                "done": false
+            },
+            {
+                "text": "perimeter-pan-fwc5-1-hdr2",
+                "done": false
+            },
+            {
+                "text": "perimeter-pan-fwc5-2-hdr1",
+                "done": false
             }
         ]
     }
