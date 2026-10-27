@@ -496,7 +496,7 @@
             },
             {
                 "text": "FWDS01\t11.2.10-h16\tmorgens",
-                "done": false
+                "done": true
             },
             {
                 "text": "FWGR01\t11.2.10-h16\tmorgens",
@@ -504,7 +504,7 @@
             },
             {
                 "text": "FWGR02\t11.2.10-h16\tmorgens",
-                "done": false
+                "done": true
             }
         ]
     },
