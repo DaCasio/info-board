@@ -875,5 +875,64 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "ANO 11.2.10-h16 L/RGS (Kopie)",
+        "start": "2026-11-04T10:30",
+        "ziel": "2026-11-04T14:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "asc",
+                "done": false
+            },
+            {
+                "text": "grg",
+                "done": false
+            },
+            {
+                "text": "sti",
+                "done": false
+            },
+            {
+                "text": "vau",
+                "done": false
+            },
+            {
+                "text": "zem",
+                "done": false
+            },
+            {
+                "text": "waw",
+                "done": false
+            },
+            {
+                "text": "wer",
+                "done": false
+            },
+            {
+                "text": "sef",
+                "done": false
+            },
+            {
+                "text": "mkw",
+                "done": false
+            },
+            {
+                "text": "wey",
+                "done": false
+            },
+            {
+                "text": "wil",
+                "done": false
+            }
+        ]
     }
 ]
