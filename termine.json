@@ -621,5 +621,128 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "ANO 11.2.10-h16 L/RGS",
+        "start": "2026-11-02T10:30",
+        "ziel": "2026-11-02T14:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "abl",
+                "done": false
+            },
+            {
+                "text": "bar",
+                "done": false
+            },
+            {
+                "text": "mei",
+                "done": false
+            },
+            {
+                "text": "hnl",
+                "done": false
+            },
+            {
+                "text": "bau",
+                "done": false
+            },
+            {
+                "text": "ibe",
+                "done": false
+            },
+            {
+                "text": "beu",
+                "done": false
+            },
+            {
+                "text": "boi",
+                "done": false
+            },
+            {
+                "text": "bou",
+                "done": false
+            },
+            {
+                "text": "bri",
+                "done": false
+            },
+            {
+                "text": "cav",
+                "done": false
+            },
+            {
+                "text": "ces",
+                "done": false
+            },
+            {
+                "text": "cho",
+                "done": false
+            },
+            {
+                "text": "cui",
+                "done": false
+            },
+            {
+                "text": "cul",
+                "done": false
+            },
+            {
+                "text": "dam",
+                "done": false
+            },
+            {
+                "text": "dos",
+                "done": false
+            },
+            {
+                "text": "enn",
+                "done": false
+            },
+            {
+                "text": "erp",
+                "done": false
+            },
+            {
+                "text": "xfr",
+                "done": false
+            },
+            {
+                "text": "gem",
+                "done": false
+            },
+            {
+                "text": "roe",
+                "done": false
+            },
+            {
+                "text": "gro",
+                "done": false
+            },
+            {
+                "text": "rei",
+                "done": false
+            },
+            {
+                "text": "muen",
+                "done": false
+            },
+            {
+                "text": "her",
+                "done": false
+            },
+            {
+                "text": "imv",
+                "done": false
+            }
+        ]
     }
 ]
