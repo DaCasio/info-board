@@ -385,19 +385,6 @@
         "checklist": []
     },
     {
-        "name": "Bis hier frei parken bei Hähnchen",
-        "start": null,
-        "ziel": "2026-10-28T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "UVV Skoda Essen",
         "start": null,
         "ziel": "2026-11-18T08:00",
