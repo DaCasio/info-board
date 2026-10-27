@@ -921,5 +921,35 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "Update Brrng 15",
+        "start": "2026-10-27T15:00",
+        "ziel": "2026-10-27T16:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "FWSH01 nachmittags 11.2.10-h16",
+                "done": false
+            },
+            {
+                "text": "FWSH02 nachmittags 11.2.10-h16",
+                "done": false
+            },
+            {
+                "text": "PaloAlto Frankfurt 11.2.13-h4",
+                "done": false
+            },
+            {
+                "text": "PaloAlto Frankfurt 11.2.13-h4",
+                "done": false
+            }
+        ]
     }
 ]
