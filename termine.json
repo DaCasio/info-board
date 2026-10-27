@@ -744,5 +744,136 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "ANO 11.2.10-h16 L/RGS",
+        "start": "2026-11-04T10:30",
+        "ziel": "2026-11-04T14:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "hes",
+                "done": false
+            },
+            {
+                "text": "heu",
+                "done": false
+            },
+            {
+                "text": "hon",
+                "done": false
+            },
+            {
+                "text": "jar",
+                "done": false
+            },
+            {
+                "text": "hpl",
+                "done": false
+            },
+            {
+                "text": "ath",
+                "done": false
+            },
+            {
+                "text": "sie",
+                "done": false
+            },
+            {
+                "text": "lin",
+                "done": false
+            },
+            {
+                "text": "lis",
+                "done": false
+            },
+            {
+                "text": "pa-440",
+                "done": false
+            },
+            {
+                "text": "mas",
+                "done": false
+            },
+            {
+                "text": "mir",
+                "done": false
+            },
+            {
+                "text": "mot",
+                "done": false
+            },
+            {
+                "text": "wei",
+                "done": false
+            },
+            {
+                "text": "nor",
+                "done": false
+            },
+            {
+                "text": "zoe",
+                "done": false
+            },
+            {
+                "text": "lyo",
+                "done": false
+            },
+            {
+                "text": "pin",
+                "done": false
+            },
+            {
+                "text": "rad",
+                "done": false
+            },
+            {
+                "text": "rij",
+                "done": false
+            },
+            {
+                "text": "ros",
+                "done": false
+            },
+            {
+                "text": "sag",
+                "done": false
+            },
+            {
+                "text": "col",
+                "done": false
+            },
+            {
+                "text": "sis",
+                "done": false
+            },
+            {
+                "text": "sau",
+                "done": false
+            },
+            {
+                "text": "sho",
+                "done": false
+            },
+            {
+                "text": "see",
+                "done": false
+            },
+            {
+                "text": "roo",
+                "done": false
+            },
+            {
+                "text": "tou",
+                "done": false
+            }
+        ]
     }
 ]
