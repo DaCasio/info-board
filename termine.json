@@ -967,5 +967,60 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "ANO 11.2.10-h16 RZ - 19 Uhr part 2",
+        "start": "2026-11-04T19:00",
+        "ziel": "2026-11-04T20:30",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "oed-pan-fwc1-1",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc1-2",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc2-1",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc2-2",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc3-1",
+                "done": false
+            },
+            {
+                "text": "oed-pan-fwc3-2",
+                "done": false
+            },
+            {
+                "text": "segmentierung-pan-fwc1-1-hdr2",
+                "done": false
+            },
+            {
+                "text": "segmentierung-pan-fwc1-2-hdr1",
+                "done": false
+            },
+            {
+                "text": "perimeter-pan-fwc5-1-hdr2",
+                "done": false
+            },
+            {
+                "text": "perimeter-pan-fwc5-2-hdr1",
+                "done": false
+            }
+        ]
     }
 ]
