@@ -546,5 +546,40 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "ANO 11.2.10-h16 Pilot aktiv",
+        "start": "2026-11-02T10:30",
+        "ziel": "2026-11-02T14:00",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "OED Peri Data",
+        "checklist": [
+            {
+                "text": "DAT",
+                "done": false
+            },
+            {
+                "text": "DEV",
+                "done": false
+            },
+            {
+                "text": "HBE",
+                "done": false
+            },
+            {
+                "text": "HSP",
+                "done": false
+            },
+            {
+                "text": "HPT",
+                "done": false
+            }
+        ]
     }
 ]
