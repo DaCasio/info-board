@@ -477,7 +477,16 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": []
+        "checklist": [
+            {
+                "text": "FWGR02",
+                "done": false
+            },
+            {
+                "text": "FWDS01",
+                "done": false
+            }
+        ]
     },
     {
         "name": "Update Brrng 12",
