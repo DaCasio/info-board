@@ -464,20 +464,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "FWCH02\t11.2.10-h16\t",
-                "done": false
-            },
-            {
-                "text": "FWFR02\t11.2.10-h16\t",
-                "done": false
-            },
-            {
-                "text": "FWHD01\t11.2.10-h16\t",
-                "done": false
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Pause",
