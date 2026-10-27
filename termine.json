@@ -480,7 +480,7 @@
         "checklist": [
             {
                 "text": "FWGR02",
-                "done": false
+                "done": true
             },
             {
                 "text": "FWDS01",
