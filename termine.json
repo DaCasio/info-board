@@ -477,36 +477,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "FWCH01\t11.2.10-h16\t",
-                "done": true
-            },
-            {
-                "text": "FWFR01\t11.2.10-h16\t",
-                "done": true
-            },
-            {
-                "text": "FWHD02\t11.2.10-h16\t",
-                "done": true
-            },
-            {
-                "text": "FWDS02\t11.2.10-h16\tmorgens",
-                "done": true
-            },
-            {
-                "text": "FWDS01\t11.2.10-h16\tmorgens",
-                "done": true
-            },
-            {
-                "text": "FWGR01\t11.2.10-h16\tmorgens",
-                "done": true
-            },
-            {
-                "text": "FWGR02\t11.2.10-h16\tmorgens",
-                "done": true
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Update Brrng 12",
