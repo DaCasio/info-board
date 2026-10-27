@@ -544,5 +544,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Pause",
+        "start": "2026-10-27T13:15",
+        "ziel": "2026-10-27T14:15",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
