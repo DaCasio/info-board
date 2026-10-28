@@ -826,12 +826,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "PA Frankfurt FRA-1 11.2.13-h4",
-                "done": true
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Update Brrng 9 passive",
