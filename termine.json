@@ -914,24 +914,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "FWMU-TMP02",
-                "done": true
-            },
-            {
-                "text": "FWNU01",
-                "done": true
-            },
-            {
-                "text": "FWHA02",
-                "done": true
-            },
-            {
-                "text": "FWST02",
-                "done": true
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "ANO 11.2.10-h16 Pilot aktiv",
