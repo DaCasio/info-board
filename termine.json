@@ -830,10 +830,6 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "FWSH01 11.2.10-h16",
-                "done": true
-            },
-            {
                 "text": "FWSH02 11.2.10-h16",
                 "done": true
             },
