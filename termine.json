@@ -861,19 +861,6 @@
         ]
     },
     {
-        "name": "Update Brrng 12 aktive",
-        "start": "2026-10-28T12:00",
-        "ziel": "2026-10-28T13:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Update Brrng 9 passive",
         "start": "2026-10-29T09:00",
         "ziel": "2026-10-29T09:39",
