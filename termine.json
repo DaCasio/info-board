@@ -856,19 +856,19 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "FWSH01 nachmittags 11.2.10-h16",
+                "text": "FWSH01 11.2.10-h16",
                 "done": false
             },
             {
-                "text": "FWSH02 nachmittags 11.2.10-h16",
+                "text": "FWSH02 11.2.10-h16",
                 "done": false
             },
             {
-                "text": "PaloAlto Frankfurt 11.2.13-h4",
+                "text": "PA Frankfurt 11.2.13-h4",
                 "done": false
             },
             {
-                "text": "PaloAlto Frankfurt 11.2.13-h4",
+                "text": "PA Frankfurt 11.2.13-h4",
                 "done": false
             }
         ]
