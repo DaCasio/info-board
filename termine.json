@@ -925,11 +925,11 @@
             },
             {
                 "text": "FWHA02",
-                "done": false
+                "done": true
             },
             {
                 "text": "FWST02",
-                "done": false
+                "done": true
             }
         ]
     },
