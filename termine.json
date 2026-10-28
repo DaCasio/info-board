@@ -985,19 +985,6 @@
         ]
     },
     {
-        "name": "Pause",
-        "start": "2026-10-28T12:45",
-        "ziel": "2026-10-28T13:45",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-10-28T17:00",
