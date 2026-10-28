@@ -871,24 +871,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "FWMU-TMP01",
-                "done": false
-            },
-            {
-                "text": "FWNU02",
-                "done": false
-            },
-            {
-                "text": "FWHA01",
-                "done": false
-            },
-            {
-                "text": "FWST01",
-                "done": false
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Update Brrng 9 passive",
