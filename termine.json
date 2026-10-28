@@ -1062,5 +1062,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Pizza & Games 2.0 [In-person]",
+        "start": "2027-02-17T16:30",
+        "ziel": "2027-02-17T22:55",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
