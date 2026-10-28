@@ -819,7 +819,7 @@
     },
     {
         "name": "Update Brrng 15 komplett",
-        "start": "2026-10-28T15:00",
+        "start": null,
         "ziel": "2026-10-28T17:00",
         "tags": [],
         "repeat": "none",
