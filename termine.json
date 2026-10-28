@@ -828,10 +828,6 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "FWSH02 11.2.10-h16",
-                "done": true
-            },
-            {
                 "text": "PA Frankfurt 11.2.13-h4",
                 "done": false
             },
