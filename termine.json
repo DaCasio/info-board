@@ -905,8 +905,8 @@
     },
     {
         "name": "Update Brrng 9 passive",
-        "start": "2026-10-28T09:00",
-        "ziel": "2026-10-28T09:39",
+        "start": "2026-10-29T09:00",
+        "ziel": "2026-10-29T09:39",
         "tags": [
             "ARBEIT"
         ],
@@ -914,7 +914,28 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": []
+        "checklist": [
+            {
+                "text": "FWOR0x",
+                "done": false
+            },
+            {
+                "text": "FWTA0x",
+                "done": false
+            },
+            {
+                "text": "FWMADC0x",
+                "done": false
+            },
+            {
+                "text": "FWPL0x",
+                "done": false
+            },
+            {
+                "text": "FWMA0x",
+                "done": false
+            }
+        ]
     },
     {
         "name": "ANO 11.2.10-h16 Pilot aktiv",
