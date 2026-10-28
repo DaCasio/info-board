@@ -917,7 +917,7 @@
         "checklist": [
             {
                 "text": "FWMU-TMP02",
-                "done": false
+                "done": true
             },
             {
                 "text": "FWNU01",
