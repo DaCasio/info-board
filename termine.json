@@ -916,19 +916,19 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "FWMU-TMP0X 11.2.10-h16",
+                "text": "FWMU-TMP02",
                 "done": false
             },
             {
-                "text": "FWNU0X 11.2.10-h16",
+                "text": "FWNU01",
                 "done": false
             },
             {
-                "text": "FWHA0X  11.2.10-h16",
+                "text": "FWHA02",
                 "done": false
             },
             {
-                "text": "FWST0X 11.2.10-h16",
+                "text": "FWST02",
                 "done": false
             }
         ]
