@@ -1001,5 +1001,16 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "Daily",
+        "start": "2026-10-29T09:40",
+        "ziel": "2026-10-29T10:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
