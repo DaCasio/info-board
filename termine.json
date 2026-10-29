@@ -893,5 +893,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Weekly",
+        "start": "2026-10-30T10:55",
+        "ziel": "2026-10-30T10:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
