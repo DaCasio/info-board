@@ -873,7 +873,7 @@
         "checklist": [
             {
                 "text": "FWMA01",
-                "done": false
+                "done": true
             },
             {
                 "text": "FWOR02",
