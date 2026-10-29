@@ -872,11 +872,11 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "FWOR02",
+                "text": "FWMA01",
                 "done": false
             },
             {
-                "text": "FWTA01",
+                "text": "FWOR02",
                 "done": false
             },
             {
@@ -884,7 +884,7 @@
                 "done": false
             },
             {
-                "text": "FWMA01",
+                "text": "FWTA01",
                 "done": false
             }
         ]
