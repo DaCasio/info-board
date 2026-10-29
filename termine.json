@@ -870,24 +870,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "FWMA01",
-                "done": false
-            },
-            {
-                "text": "FWOR02",
-                "done": false
-            },
-            {
-                "text": "FWPL01",
-                "done": false
-            },
-            {
-                "text": "FWTA01",
-                "done": false
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Pause",
