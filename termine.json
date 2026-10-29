@@ -895,17 +895,6 @@
         "checklist": []
     },
     {
-        "name": "Kero Feierabend",
-        "start": null,
-        "ziel": "2026-10-29T14:30",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Kero / Dani IKEA",
         "start": "2026-10-29T15:15",
         "ziel": "2026-10-29T15:30",
