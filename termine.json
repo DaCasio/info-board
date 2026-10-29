@@ -873,11 +873,11 @@
         "checklist": [
             {
                 "text": "FWMA01",
-                "done": true
+                "done": false
             },
             {
                 "text": "FWOR02",
-                "done": true
+                "done": false
             },
             {
                 "text": "FWPL01",
