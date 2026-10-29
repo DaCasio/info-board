@@ -788,12 +788,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "FWMADC01",
-                "done": false
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "ANO 11.2.10-h16 Pilot aktiv",
