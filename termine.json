@@ -942,17 +942,6 @@
         ]
     },
     {
-        "name": "Daily",
-        "start": "2026-10-29T09:40",
-        "ziel": "2026-10-29T10:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Pause",
         "start": "2026-10-29T14:00",
         "ziel": "2026-10-29T15:00",
