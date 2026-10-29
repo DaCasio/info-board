@@ -389,7 +389,7 @@
         "checklist": [
             {
                 "text": "DAT upd & schwenk",
-                "done": false
+                "done": true
             },
             {
                 "text": "DEV upd & schwenk",
