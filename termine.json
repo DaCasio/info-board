@@ -100,19 +100,6 @@
         "checklist": []
     },
     {
-        "name": "Weihnachtsferien",
-        "start": "2026-12-23T00:00",
-        "ziel": "2027-01-06T23:59",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Finca in Inca",
         "start": "2027-09-11T15:00",
         "ziel": "2027-09-25T15:00",
