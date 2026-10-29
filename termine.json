@@ -790,11 +790,11 @@
         "notiz": "",
         "checklist": [
             {
-                "text": "FWOR0x",
+                "text": "FWOR01",
                 "done": false
             },
             {
-                "text": "FWTA0x",
+                "text": "FWTA02",
                 "done": false
             },
             {
@@ -802,11 +802,11 @@
                 "done": false
             },
             {
-                "text": "FWPL0x",
+                "text": "FWPL02",
                 "done": false
             },
             {
-                "text": "FWMA0x",
+                "text": "FWMA02",
                 "done": false
             }
         ]
