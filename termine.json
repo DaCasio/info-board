@@ -860,17 +860,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-10-29T17:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "MA-Jahresgespräch",
         "start": "2027-02-18T09:00",
         "ziel": "2027-02-18T10:25",
