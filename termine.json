@@ -386,28 +386,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "DAT upd & schwenk",
-                "done": true
-            },
-            {
-                "text": "DEV upd & schwenk",
-                "done": true
-            },
-            {
-                "text": "HBE upd & schwenk",
-                "done": true
-            },
-            {
-                "text": "HSP upd & schwenk",
-                "done": true
-            },
-            {
-                "text": "HPT upd & schwenk",
-                "done": true
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "ANO 11.2.10-h16 RZ - 19 Uhr part 1",
