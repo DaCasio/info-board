@@ -873,17 +873,6 @@
         "checklist": []
     },
     {
-        "name": "Lunch",
-        "start": "2026-10-30T11:15",
-        "ziel": "2026-10-30T11:45",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Feierabend",
         "start": null,
         "ziel": "2026-10-30T16:30",
