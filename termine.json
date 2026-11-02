@@ -359,41 +359,6 @@
         "checklist": []
     },
     {
-        "name": "ANO 11.2.10-h16 RZ - 19 Uhr part 1",
-        "start": "2026-11-02T19:00",
-        "ziel": "2026-11-02T19:30",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": [
-            {
-                "text": "pan-fwc5-2-hdr1 passiv machen > Schwenk auf pan-fwc5-1-hdr2",
-                "done": false
-            },
-            {
-                "text": "pan-fwc1-2-hdr1 passiv machen > Schwenk auf pan-fwc1-1-hdr2",
-                "done": false
-            },
-            {
-                "text": "oed-pan-fwc3-2 passiv machen > Schwenk auf oed-pan-fwc3-1",
-                "done": false
-            },
-            {
-                "text": "oed-pan-fwc2-1 passiv machen > Schwenk auf oed-pan-fwc2-2",
-                "done": true
-            },
-            {
-                "text": "oed-pan-fwc1-1 passiv machen > Schwenk auf oed-pan-fwc1-2",
-                "done": false
-            }
-        ]
-    },
-    {
         "name": "ANO 11.2.10-h16 L/RGS",
         "start": "2026-11-03T10:30",
         "ziel": "2026-11-03T14:00",
