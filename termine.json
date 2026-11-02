@@ -728,11 +728,11 @@
             },
             {
                 "text": "HSP",
-                "done": true
+                "done": false
             },
             {
                 "text": "HPT",
-                "done": true
+                "done": false
             }
         ]
     },
