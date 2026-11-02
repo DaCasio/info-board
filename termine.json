@@ -720,7 +720,7 @@
             },
             {
                 "text": "DEV",
-                "done": false
+                "done": true
             },
             {
                 "text": "HBE",
@@ -732,7 +732,7 @@
             },
             {
                 "text": "HPT",
-                "done": true
+                "done": false
             }
         ]
     },
