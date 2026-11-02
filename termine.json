@@ -778,28 +778,7 @@
         "repeatUntil": null,
         "days": [],
         "notiz": "",
-        "checklist": [
-            {
-                "text": "oed-pan-fwc1-2",
-                "done": true
-            },
-            {
-                "text": "oed-pan-fwc2-2",
-                "done": true
-            },
-            {
-                "text": "oed-pan-fwc3-1",
-                "done": true
-            },
-            {
-                "text": " segmentierung-pan-fwc1-1-hdr2",
-                "done": true
-            },
-            {
-                "text": "perimeter-pan-fwc5-1-hdr2",
-                "done": false
-            }
-        ]
+        "checklist": []
     },
     {
         "name": "Rödl remote session",
