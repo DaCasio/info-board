@@ -385,7 +385,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "oed-pan-fwc1-1 [color:#ff4d4d]active[/color]\noed-pan-fwc1-2 [color:#008800]passive[/color]\noed-pan-fwc2-1 [color:#ff4d4d]active[/color]\noed-pan-fwc2-2 [color:#008800]passive[/color]\noed-pan-fwc3-1 [color:#008800]passive[/color]\noed-pan-fwc3-2 [color:#ff4d4d]active[/color]\nsegmentierung-pan-fwc1-1-hdr2 [color:#008800]passive[/color]\nsegmentierung-pan-fwc1-2-hdr1 [color:#ff4d4d]active[/color]\nperimeter-pan-fwc5-1-hdr2 [color:#008800]passive[/color]\nperimeter-pan-fwc5-2-hdr1 [color:#ff4d4d]active[/color]",
+        "notiz": "--oed-pan-fwc1-1 [color:#ff4d4d]active[/color]--\noed-pan-fwc1-2 [color:#008800]passive[/color]\n\n--oed-pan-fwc2-1 [color:#ff4d4d]active[/color]--\noed-pan-fwc2-2 [color:#008800]passive[/color]\n\n--oed-pan-fwc3-2 [color:#ff4d4d]active[/color]--\noed-pan-fwc3-1 [color:#008800]passive[/color]\n\n--segmentierung-pan-fwc1-2-hdr1 [color:#ff4d4d]active[/color]--\nsegmentierung-pan-fwc1-1-hdr2 [color:#008800]passive[/color]\n\n--perimeter-pan-fwc5-2-hdr1 [color:#ff4d4d]active[/color]--\nperimeter-pan-fwc5-1-hdr2 [color:#008800]passive[/color]",
         "checklist": []
     },
     {
