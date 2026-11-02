@@ -724,16 +724,5 @@
         "days": [],
         "notiz": "",
         "checklist": []
-    },
-    {
-        "name": "Kero Feierabend",
-        "start": null,
-        "ziel": "2026-11-02T20:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
