@@ -385,7 +385,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "oed-pan-fwc1-1 [color:#ff4d4d]active[/color] <-schwenk-> oed-pan-fwc1-2 [color:#008800]passive[/color]\n\noed-pan-fwc2-1 [color:#ff4d4d]active[/color] <-schwenk-> oed-pan-fwc2-2 [color:#008800]passive[/color]\n\noed-pan-fwc3-2 [color:#ff4d4d]active[/color] <-schwenk-> oed-pan-fwc3-1 [color:#008800]passive[/color]\n\nsegmentierung-pan-fwc1-2-hdr1 [color:#ff4d4d]active[/color] <-schwenk-> segmentierung-pan-fwc1-1-hdr2 [color:#008800]passive[/color]\n\nperimeter-pan-fwc5-2-hdr1 [color:#ff4d4d]active[/color] <-schwenk-> perimeter-pan-fwc5-1-hdr2 [color:#008800]passive[/color]",
+        "notiz": "oed-pan-fwc1-2 [color:#008800]passive[/color]  schwenk-> oed-pan-fwc1-1 [color:#ff4d4d]active[/color]\n\noed-pan-fwc2-2 [color:#008800]passive[/color] schwenk-> oed-pan-fwc2-1 [color:#ff4d4d]active[/color]\n\noed-pan-fwc3-1 [color:#008800]passive[/color] schwenk-> oed-pan-fwc3-2 [color:#ff4d4d]active[/color]\n\nsegmentierung-pan-fwc1-1-hdr2 [color:#008800]passive[/color] schwenk-> segmentierung-pan-fwc1-2-hdr1 [color:#ff4d4d]active[/color]\n\nperimeter-pan-fwc5-1-hdr2 [color:#008800]passive[/color] schwenk-> perimeter-pan-fwc5-2-hdr1 [color:#ff4d4d]active[/color]",
         "checklist": []
     },
     {
