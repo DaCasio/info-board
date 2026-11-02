@@ -800,5 +800,16 @@
                 "done": false
             }
         ]
+    },
+    {
+        "name": "Rödl remote session",
+        "start": "2026-11-02T13:30",
+        "ziel": "2026-11-02T14:30",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
