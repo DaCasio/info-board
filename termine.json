@@ -798,8 +798,8 @@
     },
     {
         "name": "Pause",
-        "start": "2026-11-02T12:15",
-        "ziel": "2026-11-02T13:15",
+        "start": "2026-11-02T12:20",
+        "ziel": "2026-11-02T13:20",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
