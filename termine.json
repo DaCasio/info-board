@@ -716,11 +716,11 @@
         "checklist": [
             {
                 "text": "DAT",
-                "done": true
+                "done": false
             },
             {
                 "text": "DEV",
-                "done": true
+                "done": false
             },
             {
                 "text": "HBE",
