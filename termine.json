@@ -811,5 +811,24 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "ANO 11.2.10-h16 RZ - Update passive perimeter",
+        "start": "2026-11-02T14:30",
+        "ziel": "2026-11-02T15:30",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": [
+            {
+                "text": "perimeter-pan-fwc5-1-hdr2",
+                "done": false
+            }
+        ]
     }
 ]
