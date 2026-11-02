@@ -716,7 +716,7 @@
         "checklist": [
             {
                 "text": "DAT",
-                "done": true
+                "done": false
             },
             {
                 "text": "DEV",
