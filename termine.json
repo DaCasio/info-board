@@ -720,11 +720,11 @@
             },
             {
                 "text": "DEV",
-                "done": true
+                "done": false
             },
             {
                 "text": "HBE",
-                "done": true
+                "done": false
             },
             {
                 "text": "HSP",
