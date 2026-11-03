@@ -415,20 +415,6 @@
         "checklist": []
     },
     {
-        "name": "ANO 11.2.10-h16 L/RGS",
-        "start": "2026-11-03T12:30",
-        "ziel": "2026-11-03T16:30",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Daily",
         "start": "2026-11-04T09:40",
         "ziel": "2026-11-04T10:00",
