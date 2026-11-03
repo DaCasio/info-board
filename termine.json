@@ -606,7 +606,7 @@
     {
         "name": "Pause",
         "start": "2026-11-03T12:00",
-        "ziel": "2026-11-03T13:00",
+        "ziel": "2026-11-03T12:30",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
