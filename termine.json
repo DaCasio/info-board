@@ -415,17 +415,6 @@
         "checklist": []
     },
     {
-        "name": "Pause",
-        "start": "2026-11-03T12:00",
-        "ziel": "2026-11-03T12:30",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "ANO 11.2.10-h16 L/RGS",
         "start": "2026-11-03T12:30",
         "ziel": "2026-11-03T16:30",
