@@ -333,20 +333,6 @@
         "checklist": []
     },
     {
-        "name": "ANO 11.2.10-h16 L/RGS",
-        "start": "2026-11-04T08:00",
-        "ziel": "2026-11-04T09:40",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "mkaffee / rz und oed abstimmen",
-        "checklist": []
-    },
-    {
         "name": "ANO 11.2.10-h16 RZ - 19 Uhr part 2",
         "start": "2026-11-04T19:00",
         "ziel": "2026-11-04T20:30",
