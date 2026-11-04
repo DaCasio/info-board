@@ -466,5 +466,19 @@
         "days": [],
         "notiz": "rz und oed abstimmen",
         "checklist": []
+    },
+    {
+        "name": "Report",
+        "start": "2026-11-04T13:30",
+        "ziel": "2026-11-04T14:30",
+        "tags": [
+            "ARBEIT",
+            "ANO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "rz und oed abstimmen",
+        "checklist": []
     }
 ]
