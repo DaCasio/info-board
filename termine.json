@@ -402,8 +402,7 @@
         "start": "2026-11-04T13:45",
         "ziel": "2026-11-04T14:45",
         "tags": [
-            "ARBEIT",
-            "ANO"
+            "ARBEIT"
         ],
         "repeat": "none",
         "repeatUntil": null,
