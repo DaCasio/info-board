@@ -114,20 +114,6 @@
         "checklist": []
     },
     {
-        "name": "Entwurmung Erinnerung",
-        "start": null,
-        "ziel": "2026-11-09T17:30",
-        "tags": [
-            "TERMINE",
-            "KATZIS"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Sira, Jax, Pumba & Diego",
-        "checklist": []
-    },
-    {
         "name": "Termin - Christoph Knierim - Neu planen",
         "start": null,
         "ziel": "2027-01-04T09:00",
