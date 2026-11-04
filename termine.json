@@ -409,5 +409,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "RB",
+        "start": "2026-11-30T18:00",
+        "ziel": "2026-12-07T06:00",
+        "tags": [
+            "ARBEIT",
+            "RB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
