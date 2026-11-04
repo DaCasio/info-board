@@ -426,20 +426,6 @@
         "checklist": []
     },
     {
-        "name": "ANO 11.2.10-h16 RZ",
-        "start": "2026-11-04T10:00",
-        "ziel": "2026-11-04T11:59",
-        "tags": [
-            "ARBEIT",
-            "ANO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Report",
         "start": "2026-11-04T13:45",
         "ziel": "2026-11-04T14:45",
