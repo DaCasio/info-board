@@ -375,5 +375,38 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "PA Tech Circle",
+        "start": "2026-11-06T13:00",
+        "ziel": "2026-11-06T14:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Pause",
+        "start": "2026-11-06T14:00",
+        "ziel": "2026-11-06T15:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "PA-Learning",
+        "start": "2026-11-06T15:00",
+        "ziel": "2026-11-06T16:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
