@@ -342,5 +342,27 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-11-06T09:40",
+        "ziel": "2026-11-06T10:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
+    },
+    {
+        "name": "Learning Friday",
+        "start": "2026-11-06T11:00",
+        "ziel": "2026-11-06T12:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
