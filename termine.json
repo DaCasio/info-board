@@ -344,17 +344,6 @@
         "checklist": []
     },
     {
-        "name": "DL Tickets",
-        "start": "2026-11-06T10:40",
-        "ziel": "2026-11-06T12:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "DL Check ISP",
         "start": "2026-11-06T12:00",
         "ziel": "2026-11-06T13:00",
