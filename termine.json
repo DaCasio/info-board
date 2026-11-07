@@ -413,5 +413,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "13 Gladbach - FFM",
+        "start": null,
+        "ziel": "2026-12-12T18:30",
+        "tags": [
+            "GLADBACH"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
