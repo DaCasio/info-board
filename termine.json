@@ -384,5 +384,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "kuckuck",
+        "start": null,
+        "ziel": "2026-11-14T15:00",
+        "tags": [
+            "TERMINE",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
