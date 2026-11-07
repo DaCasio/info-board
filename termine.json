@@ -342,5 +342,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "UVV HU AU Skoda Essen",
+        "start": null,
+        "ziel": "2026-11-09T09:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "AUTO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Klären was jetzt mit Hu/Au is",
+        "checklist": []
     }
 ]
