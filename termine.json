@@ -441,5 +441,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "17 Gladbach - Berlin",
+        "start": null,
+        "ziel": "2027-01-16T15:30",
+        "tags": [
+            "GLADBACH",
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": "2026-12-17",
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
