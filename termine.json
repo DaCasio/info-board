@@ -485,5 +485,24 @@
         "days": [],
         "notiz": "Nur 1 Tag? Abklären",
         "checklist": []
+    },
+    {
+        "name": "Daily",
+        "start": "2026-11-09T09:40",
+        "ziel": "2026-11-09T10:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "weekly",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
     }
 ]
