@@ -471,5 +471,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "RB Klärung",
+        "start": null,
+        "ziel": "2026-11-09T09:00",
+        "tags": [
+            "ARBEIT",
+            "RB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Nur 1 Tag? Abklären",
+        "checklist": []
     }
 ]
