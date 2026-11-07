@@ -357,5 +357,18 @@
         "days": [],
         "notiz": "Klären was jetzt mit Hu/Au is",
         "checklist": []
+    },
+    {
+        "name": "wandern",
+        "start": null,
+        "ziel": "2026-11-08T11:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
