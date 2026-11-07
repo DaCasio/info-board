@@ -419,7 +419,8 @@
         "start": null,
         "ziel": "2026-12-12T18:30",
         "tags": [
-            "GLADBACH"
+            "GLADBACH",
+            "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": "2026-12-17",
