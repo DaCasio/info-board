@@ -359,11 +359,13 @@
         "checklist": []
     },
     {
-        "name": "wandern",
+        "name": "Wandern",
         "start": null,
         "ziel": "2026-11-08T11:00",
         "tags": [
-            "TERMINE"
+            "TERMINE",
+            "KERO",
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
