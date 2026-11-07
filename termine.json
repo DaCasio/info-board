@@ -327,7 +327,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Nur 1 Tag? Abklären",
+        "notiz": "",
         "checklist": []
     },
     {
