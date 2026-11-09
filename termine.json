@@ -515,17 +515,6 @@
         "checklist": []
     },
     {
-        "name": "Abstimmung ANO TechRefresh",
-        "start": "2026-11-09T10:30",
-        "ziel": "2026-11-09T11:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Durchsprache ANO Vertragselemente für Codex Import",
         "start": "2026-11-09T13:00",
         "ziel": "2026-11-09T14:00",
