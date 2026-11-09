@@ -644,5 +644,19 @@
         "days": [],
         "notiz": "Woche 5.5 ab 17 uhr bis 17.5. 23:59",
         "checklist": []
+    },
+    {
+        "name": "Urlaub Angefragt",
+        "start": "2027-08-02T00:00",
+        "ziel": "2027-08-06T23:59",
+        "tags": [
+            "URLAUB",
+            "ANGEFRAGT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Woche 30.7 ab 17 uhr bis 8.8. 23:59",
+        "checklist": []
     }
 ]
