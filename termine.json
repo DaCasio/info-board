@@ -650,5 +650,18 @@
         "days": [],
         "notiz": "Woche 10.8 ab 17 uhr bis 26.8. 23:59",
         "checklist": []
+    },
+    {
+        "name": "JF - AXN - ANO - Firewall",
+        "start": "2026-11-10T14:00",
+        "ziel": "2026-11-10T15:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
