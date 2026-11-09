@@ -590,5 +590,18 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Palo Alto & AML - Tech Circle",
+        "start": "2026-11-20T13:00",
+        "ziel": "2026-11-20T14:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
