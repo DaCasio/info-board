@@ -676,7 +676,7 @@
     {
         "name": "Tickets",
         "start": "2026-11-09T11:00",
-        "ziel": "2026-11-09T11:45",
+        "ziel": "2026-11-09T12:00",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
