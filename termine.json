@@ -562,5 +562,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "CVE-Task Force",
+        "start": "2026-11-12T13:30",
+        "ziel": "2026-11-12T14:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "biweekly",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
