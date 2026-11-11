@@ -620,5 +620,19 @@
         "days": [],
         "notiz": "Woche 10.8 ab 17 uhr bis 26.8. 23:59",
         "checklist": []
+    },
+    {
+        "name": "Wandern",
+        "start": null,
+        "ziel": "2026-11-15T11:00",
+        "tags": [
+            "TERMINE",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
