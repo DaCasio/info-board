@@ -276,19 +276,6 @@
         "checklist": []
     },
     {
-        "name": "Reifenmontage Quick",
-        "start": "2026-11-11T14:00",
-        "ziel": "2026-11-11T15:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Termin 14 Uhr",
-        "checklist": []
-    },
-    {
         "name": "Pizza & Games 2.0 [In-person]",
         "start": "2027-02-17T16:30",
         "ziel": "2027-02-17T22:55",
