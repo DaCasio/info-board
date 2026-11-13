@@ -628,5 +628,19 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "RB - Reminder und Klärung",
+        "start": null,
+        "ziel": "2026-11-16T08:00",
+        "tags": [
+            "ARBEIT",
+            "RB"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bisher nur ein Tag ab 30.11. gesetzt - Wurde dann versehentlich bei Yana eingebucht - Wieder Fehler zum Monatswechsel.",
+        "checklist": []
     }
 ]
