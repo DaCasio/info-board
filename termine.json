@@ -319,10 +319,7 @@
         "name": "Vossi / Kero Mittelschicht Ende",
         "start": null,
         "ziel": "2026-11-13T18:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
