@@ -620,5 +620,16 @@
         "days": [],
         "notiz": "Bisher nur ein Tag ab 30.11. gesetzt - Wurde dann versehentlich bei Yana eingebucht - Wieder Fehler zum Monatswechsel.",
         "checklist": []
+    },
+    {
+        "name": "BSW BVG Wahl",
+        "start": null,
+        "ziel": "2026-11-18T18:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
