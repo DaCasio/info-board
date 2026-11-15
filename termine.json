@@ -594,20 +594,6 @@
         "checklist": []
     },
     {
-        "name": "Wandern",
-        "start": null,
-        "ziel": "2026-11-15T12:00",
-        "tags": [
-            "TERMINE",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "RB - Reminder und Klärung",
         "start": null,
         "ziel": "2026-11-16T08:00",
