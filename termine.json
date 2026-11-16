@@ -846,7 +846,9 @@
         "start": "2027-08-05T00:00",
         "ziel": "2027-08-06T00:00",
         "tags": [
-            "TERMIN"
+            "TERMINE",
+            "CASI",
+            "KERO"
         ],
         "repeat": "yearly",
         "repeatUntil": null,
