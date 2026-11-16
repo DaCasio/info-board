@@ -453,8 +453,7 @@
         "start": "2027-05-07T00:00",
         "ziel": "2027-05-14T23:59",
         "tags": [
-            "URLAUB",
-            "ANGEFRAGT"
+            "URLAUB"
         ],
         "repeat": "none",
         "repeatUntil": null,
