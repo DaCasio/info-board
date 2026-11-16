@@ -648,13 +648,15 @@
         "name": "TAHNEE - EIN TOUCH TOO MUCH - TICKETS IN MÖNCHENGLADBACH",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
-        "notiz": "Platzinformationen:\\nBlock Parkett links\\, Reihe 25\\, Platz 1\\n\\nBlock Parkett links\\, Reihe 25\\, Platz 2\\n\\n\\nEVENTIM wünscht viel Spaß bei der Veranstaltung.\\n\\nWeitere Informationen zu deiner Veranstaltung findest du unter:\\nhttps://www.eventim.de/tickets.html?affiliate=IPM&doc=evdetailb&fun=evdetail&key=4050559%2421084378&language=de\nNEW Box\\, Am Nordpark 299\\, 41069 MÖNCHENGLADBACH",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "KERO",
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "Platzinformationen:\nBlock Parkett links\nReihe 25\nPlatz 1/2\nhttps://www.eventim.de/tickets.html?affiliate=IPM&doc=evdetailb&fun=evdetail&key=4050559%2421084378&language=de\n\nNEW Box\nAm Nordpark 299\n41069 MÖNCHENGLADBACH",
         "checklist": []
     },
     {
