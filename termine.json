@@ -819,7 +819,7 @@
         "start": "2030-05-15T12:00",
         "ziel": "2030-05-15T13:00",
         "tags": [
-            "ARCHIV"
+            "INFO"
         ],
         "repeat": "none",
         "repeatUntil": null,
