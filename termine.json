@@ -882,13 +882,13 @@
         "name": "Lieferung von Picnic",
         "start": "2026-11-17T09:45",
         "ziel": "2026-11-17T11:45",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
