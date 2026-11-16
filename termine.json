@@ -56,21 +56,6 @@
         "checklist": []
     },
     {
-        "name": "Paramount Abo beenden",
-        "start": null,
-        "ziel": "2026-11-16T20:00",
-        "tags": [
-            "CASI",
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Termin - Christoph Knierim - Neu planen",
         "start": null,
         "ziel": "2027-01-04T09:00",
