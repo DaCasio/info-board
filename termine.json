@@ -797,8 +797,8 @@
     },
     {
         "name": "Magenta Zuhause XL Lfz Ende",
-        "start": "2028-05-07T00:00",
-        "ziel": "2028-05-08T00:00",
+        "start": null,
+        "ziel": "2028-05-07T00:00",
         "tags": [
             "TERMINE",
             "TELEKOM"
