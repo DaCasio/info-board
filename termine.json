@@ -8,8 +8,8 @@
             "AUTO",
             "CASI"
         ],
-        "repeat": "none",
-        "repeatUntil": null,
+        "repeat": "yearly",
+        "repeatUntil": "2027-12-08",
         "days": [],
         "notiz": "Wird auf 1 Jahr verlängert da Enyaq Bestellung nicht rausging.",
         "checklist": []
