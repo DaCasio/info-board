@@ -788,16 +788,16 @@
         "checklist": []
     },
     {
-        "name": "Entwurmung Sira\\, Jax\\, Pumba & Diego",
-        "start": "2024-05-07T00:00",
-        "ziel": "2024-05-08T00:00",
-        "notiz": "",
+        "name": "Entwurmung Sira, Jax, Pumba & Diego",
+        "start": "2027-05-07T00:00",
+        "ziel": "2027-05-08T00:00",
         "tags": [
-            "ICS"
+            "KATZIS"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
