@@ -56,19 +56,6 @@
         "checklist": []
     },
     {
-        "name": "Finca in Inca",
-        "start": "2027-09-11T15:00",
-        "ziel": "2027-09-25T15:00",
-        "tags": [
-            "URLAUB"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "14 Tage :)",
-        "checklist": []
-    },
-    {
         "name": "Bestellung Auto",
         "start": null,
         "ziel": "2027-07-19T09:30",
