@@ -789,13 +789,14 @@
         "name": "Termin - Christoph Knierim - Neu planen",
         "start": "2027-01-04T09:00",
         "ziel": "2027-01-04T09:15",
-        "notiz": "13.9.27 wegen Finca storniert\\n\\nZugangsinformationen:\\n* In Stock 1.OG mit Fahrstuhl\\n* Mit Fahrstuhl\\n* Kein barrierefreier Zugang\\nUm Ihren Termin abzusagen oder zu verschieben\\, klicken Sie auf den folgenden Link :\\nhttps://www.doctolib.de/sessions/anonymous/Rei3d6Ki?utm_campaign=confirm&utm_medium=email&utm_source=doctolib\\n\\nÜber Doctolib\nKastell 1\\, 47441 Moers",
         "tags": [
-            "ICS"
+            "CASI",
+            "DOK"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "13.9.27 wegen Finca storniert ",
         "checklist": []
     },
     {
