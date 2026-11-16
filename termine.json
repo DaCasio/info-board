@@ -672,15 +672,15 @@
     },
     {
         "name": "Sommerreifen Termin machen",
-        "start": "2026-04-17T00:00",
-        "ziel": "2026-04-18T00:00",
-        "notiz": "Reifen Quick Duisburg \\n02065 411521\\nTermin immer telefonisch \\nMitteilen dass die Reifen aufgezogen werden müssen\\, wegen Zeitaufwand \\nKilometerstand mitteilen.\\nImmer per Rechnung an Axians magellan GmbH\\, ist hinterlegt.",
+        "start": "2027-04-17T00:00",
+        "ziel": "2027-04-18T00:00",
         "tags": [
-            "ICS"
+            "AUTO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "Reifen Quick Duisburg\n02065 411521\nTermin immer telefonisch\nMitteilen dass die Reifen aufgezogen werden müssen\nwegen Zeitaufwand\nKilometerstand mitteilen\nImmer per Rechnung an\nAxians magellan GmbH\nist hinterlegt",
         "checklist": []
     },
     {
