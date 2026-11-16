@@ -981,13 +981,15 @@
         "name": "Darlehen Ende",
         "start": "2030-05-15T12:00",
         "ziel": "2030-05-15T13:00",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "KERO",
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
