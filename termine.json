@@ -1,20 +1,5 @@
 [
     {
-        "name": "Sticki",
-        "start": null,
-        "ziel": "2026-12-10T09:00",
-        "tags": [
-            "DOK",
-            "KERO",
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Zahnreinigung",
-        "checklist": []
-    },
-    {
         "name": "Tahnee - Ein touch too much",
         "start": "2026-11-20T20:00",
         "ziel": "2026-11-20T23:00",
