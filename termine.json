@@ -660,16 +660,18 @@
         "checklist": []
     },
     {
-        "name": "Gerichtstermin mit den Spackos 2. Etage Sitzungssaal 225",
+        "name": "Gerichtstermin 2. Etage Sitzungssaal 225",
         "start": "2026-11-24T11:30",
         "ziel": "2026-11-24T12:30",
-        "notiz": "Amtsgericht Moers\\nHaagstraße 7\\, Moers-Mitte\\, 47441 Moers\\, Deutschland",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "CASI",
+            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "Amtsgericht Moers\nHaagstraße 7\nMoers-Mitte\n47441 Moers\nDeutschland",
         "checklist": []
     },
     {
