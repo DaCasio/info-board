@@ -523,8 +523,7 @@
         "start": "2028-03-24T09:24",
         "ziel": "2028-03-24T09:24",
         "tags": [
-            "TERMINE",
-            "CASI"
+            "INFO"
         ],
         "repeat": "none",
         "repeatUntil": null,
