@@ -958,13 +958,15 @@
         "name": "Tisch reserviert @ König Pilsener Wirtshaus Moers",
         "start": "2026-12-26T17:30",
         "ziel": "2026-12-26T18:00",
-        "notiz": "Rheinberger Str. 199\\, 47445 Moers",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "CASI",
+            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "Rheinberger Str. 199\n47445 Moers",
         "checklist": []
     },
     {
