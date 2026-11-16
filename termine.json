@@ -770,7 +770,7 @@
         "start": "2029-08-29T11:32",
         "ziel": "2029-08-29T11:32",
         "tags": [
-            "INF"
+            "INFO"
         ],
         "repeat": "none",
         "repeatUntil": null,
