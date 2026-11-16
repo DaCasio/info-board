@@ -840,5 +840,20 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Phantasialand ",
+        "start": "2027-01-06T09:00",
+        "ziel": "2027-01-07T18:00",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
