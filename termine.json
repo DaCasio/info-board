@@ -168,19 +168,6 @@
         "checklist": []
     },
     {
-        "name": "Wolle Birthday",
-        "start": null,
-        "ziel": "2026-12-18T00:00",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Uhr vor",
         "start": null,
         "ziel": "2027-03-28T01:59",
