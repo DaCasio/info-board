@@ -884,13 +884,14 @@
         "name": "Magenta Mobil S Casi Ende",
         "start": "2028-03-14T00:00",
         "ziel": "2028-03-15T00:00",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "TELEKOM"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
