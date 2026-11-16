@@ -248,7 +248,7 @@
     {
         "name": "RB",
         "start": "2026-11-30T18:00",
-        "ziel": "2026-12-01T06:00",
+        "ziel": "2026-12-07T06:00",
         "tags": [
             "ARBEIT",
             "RB"
@@ -256,7 +256,7 @@
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
-        "notiz": "Bisher nur ein Tag 30.11. - Wurde dann versehentlich bei Yana eingebucht - Wieder Fehler zum Monatswechsel.",
+        "notiz": "",
         "checklist": []
     },
     {
