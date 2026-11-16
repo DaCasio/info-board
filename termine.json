@@ -440,8 +440,7 @@
         "start": "2027-03-22T00:00",
         "ziel": "2027-03-25T23:59",
         "tags": [
-            "URLAUB",
-            "ANGEFRAGT"
+            "URLAUB"
         ],
         "repeat": "none",
         "repeatUntil": null,
