@@ -316,21 +316,6 @@
         "checklist": []
     },
     {
-        "name": "robert & uschi",
-        "start": null,
-        "ziel": "2026-12-05T18:30",
-        "tags": [
-            "TERMINE",
-            "KERO",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "13 Gladbach - FFM",
         "start": null,
         "ziel": "2026-12-12T18:30",
