@@ -895,13 +895,13 @@
         "name": "Scheiß Naturpool ☠️",
         "start": "2023-09-17T13:20",
         "ziel": "2023-09-17T14:20",
-        "notiz": "Piscinas Naturales Los Abrigos",
         "tags": [
             "ICS"
         ],
-        "repeat": "none",
+        "repeat": "yearly",
         "repeatUntil": null,
         "days": [],
+        "notiz": "Piscinas Naturales Los Abrigos",
         "checklist": []
     },
     {
