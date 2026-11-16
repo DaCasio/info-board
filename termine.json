@@ -868,13 +868,14 @@
         "name": "Magenta Mobil XS Helge Lfz Ende",
         "start": "2027-06-04T00:00",
         "ziel": "2027-06-05T00:00",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "TELEKOM"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
