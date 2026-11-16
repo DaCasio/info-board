@@ -637,13 +637,14 @@
         "name": "Elster Zerti Casi läuft aus",
         "start": "2028-03-24T09:24",
         "ziel": "2028-03-24T09:24",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
