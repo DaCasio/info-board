@@ -828,15 +828,15 @@
     },
     {
         "name": "Das Beste <3",
-        "start": "2013-08-05T00:00",
-        "ziel": "2013-08-06T00:00",
-        "notiz": "",
+        "start": "2027-08-05T00:00",
+        "ziel": "2027-08-06T00:00",
         "tags": [
-            "ICS"
+            "TERMIN"
         ],
-        "repeat": "none",
+        "repeat": "yearly",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
