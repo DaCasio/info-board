@@ -926,13 +926,13 @@
         "name": "Elster Zerti Mutti läuft aus",
         "start": "2029-08-29T11:32",
         "ziel": "2029-08-29T11:32",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
