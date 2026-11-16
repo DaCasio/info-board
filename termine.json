@@ -980,13 +980,15 @@
         "name": "Leasing Ende Octavia",
         "start": "2026-12-08T09:00",
         "ziel": "2026-12-08T09:01",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "AUTO",
+            "CASI"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     }
 ]
