@@ -829,13 +829,15 @@
         "name": "🌴 Finca Birthday 🥂🍾 Bash 🎊🇪🇸🎈❤️",
         "start": "2027-09-11T00:00",
         "ziel": "2027-09-26T00:00",
-        "notiz": "Finca Son Bordils\\nCarretera Sineu\\, 1\\, 07300 Inca\\, Illes Balears\\, España",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "CASI",
+            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "Finca Son Bordils\nCarretera Sineu 1\n07300 Inca\nIlles Balears\nEspaña",
         "checklist": []
     },
     {
