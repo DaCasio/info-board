@@ -427,8 +427,7 @@
         "start": "2027-01-06T00:00",
         "ziel": "2027-01-08T23:59",
         "tags": [
-            "URLAUB",
-            "ANGEFRAGT"
+            "URLAUB"
         ],
         "repeat": "none",
         "repeatUntil": null,
