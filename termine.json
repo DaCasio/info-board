@@ -858,13 +858,14 @@
         "name": "Elster Zerti Kersti läuft aus",
         "start": "2028-09-11T21:04",
         "ziel": "2028-09-11T21:04",
-        "notiz": "",
         "tags": [
-            "ICS"
+            "TERMINE",
+            "KERO"
         ],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
+        "notiz": "",
         "checklist": []
     },
     {
