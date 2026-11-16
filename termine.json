@@ -911,7 +911,7 @@
         "start": "2027-09-17T13:20",
         "ziel": "2027-09-17T14:20",
         "tags": [
-            "ICS"
+            "CASI"
         ],
         "repeat": "yearly",
         "repeatUntil": null,
