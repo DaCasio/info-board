@@ -2092,19 +2092,6 @@
         "checklist": []
     },
     {
-        "name": "Karre vom Grafi wegfahren",
-        "start": null,
-        "ziel": "2026-11-19T18:00",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Für Fr, 20.11.2026",
-        "checklist": []
-    },
-    {
         "name": "Bio-Tonne",
         "start": null,
         "ziel": "2026-11-23T18:00",
