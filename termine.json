@@ -2285,5 +2285,18 @@
         "days": [],
         "notiz": "Für Mo, 28.12.2026",
         "checklist": []
+    },
+    {
+        "name": "Hahn Parken Garage bis 26.11.",
+        "start": null,
+        "ziel": "2026-11-26T00:00",
+        "tags": [
+            "INFO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
