@@ -2090,5 +2090,200 @@
         "days": [],
         "notiz": "Bürgerliche Abenddämmerung in Neukirchen-Vluyn: Beginn (Sonnenuntergang) 17:59 Uhr, Ende (Dunkelheit) 18:33 Uhr.",
         "checklist": []
+    },
+    {
+        "name": "Karre vom Grafi wegfahren",
+        "start": null,
+        "ziel": "2026-11-19T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Fr, 20.11.2026",
+        "checklist": []
+    },
+    {
+        "name": "Bio-Tonne",
+        "start": null,
+        "ziel": "2026-11-23T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Di, 24.11.2026",
+        "checklist": []
+    },
+    {
+        "name": "Restmüll-Tonne",
+        "start": null,
+        "ziel": "2026-11-25T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Do, 26.11.2026",
+        "checklist": []
+    },
+    {
+        "name": "Wertstofftonne & Karre vom Grafi wegfahren",
+        "start": null,
+        "ziel": "2026-11-26T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Fr, 27.11.2026",
+        "checklist": []
+    },
+    {
+        "name": "Papiertonne",
+        "start": null,
+        "ziel": "2026-11-29T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Mo, 30.11.2026",
+        "checklist": []
+    },
+    {
+        "name": "Karre vom Grafi wegfahren",
+        "start": null,
+        "ziel": "2026-12-03T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Fr, 04.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Bio-Tonne",
+        "start": null,
+        "ziel": "2026-12-07T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Di, 08.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Restmüll-Tonne",
+        "start": null,
+        "ziel": "2026-12-09T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Do, 10.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Wertstofftonne & Karre vom Grafi wegfahren",
+        "start": null,
+        "ziel": "2026-12-10T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Fr, 11.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Karre vom Grafi wegfahren",
+        "start": null,
+        "ziel": "2026-12-17T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Fr, 18.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Bio-Tonne",
+        "start": null,
+        "ziel": "2026-12-20T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Mo, 21.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Restmüll-Tonne",
+        "start": null,
+        "ziel": "2026-12-22T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Mi, 23.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Wertstofftonne",
+        "start": null,
+        "ziel": "2026-12-23T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Do, 24.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Karre vom Grafi wegfahren",
+        "start": null,
+        "ziel": "2026-12-24T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Fr, 25.12.2026",
+        "checklist": []
+    },
+    {
+        "name": "Papiertonne",
+        "start": null,
+        "ziel": "2026-12-27T18:00",
+        "tags": [
+            "TERMINE"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Für Mo, 28.12.2026",
+        "checklist": []
     }
 ]
