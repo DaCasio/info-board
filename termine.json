@@ -748,19 +748,6 @@
         "checklist": []
     },
     {
-        "name": "Lieferung von Picnic",
-        "start": null,
-        "ziel": "2026-11-17T11:08",
-        "tags": [
-            "TERMINE"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Elster Zerti Mutti läuft aus",
         "start": "2029-08-29T11:32",
         "ziel": "2029-08-29T11:32",
