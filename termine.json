@@ -834,7 +834,7 @@
     },
     {
         "name": "Dämmerung (16:40–17:17 Uhr)",
-        "start": "2026-11-19T16:03",
+        "start": null,
         "ziel": "2026-11-19T16:40",
         "tags": [
             "INFO"
