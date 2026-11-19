@@ -2287,5 +2287,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "MiPräWahl Siegmund",
+        "start": null,
+        "ziel": "2026-12-08T18:00",
+        "tags": [
+            "INFO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
