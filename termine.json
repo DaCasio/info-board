@@ -2300,18 +2300,5 @@
         "days": [],
         "notiz": "Reminder Marc absprache",
         "checklist": []
-    },
-    {
-        "name": "Pause",
-        "start": "2026-11-19T12:00",
-        "ziel": "2026-11-19T12:30",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
