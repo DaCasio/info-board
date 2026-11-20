@@ -2300,5 +2300,18 @@
         "days": [],
         "notiz": "Bauarbeiten gehen weiter.",
         "checklist": []
+    },
+    {
+        "name": "Rechnung AXN spätestens",
+        "start": null,
+        "ziel": "2026-12-13T14:00",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "14.12.",
+        "checklist": []
     }
 ]
