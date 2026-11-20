@@ -286,7 +286,7 @@
     },
     {
         "name": "18 Gladbach - Leipzig",
-        "start": null,
+        "start": "2027-01-23T13:30",
         "ziel": "2027-01-23T15:30",
         "tags": [
             "GLADBACH",
