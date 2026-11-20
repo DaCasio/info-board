@@ -2346,5 +2346,16 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "DL Ticket abschließen.",
+        "start": "2026-11-20T15:40",
+        "ziel": "2026-11-20T17:00",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
