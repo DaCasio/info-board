@@ -2302,17 +2302,6 @@
         "checklist": []
     },
     {
-        "name": "Fertigmachen",
-        "start": "2026-11-20T17:00",
-        "ziel": "2026-11-20T18:00",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Losfahren",
         "start": null,
         "ziel": "2026-11-20T18:30",
