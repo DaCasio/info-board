@@ -2327,7 +2327,7 @@
     },
     {
         "name": "DL Ticket abschließen.",
-        "start": "2026-11-20T15:30",
+        "start": "2026-11-20T15:10",
         "ziel": "2026-11-20T17:00",
         "tags": [],
         "repeat": "none",
