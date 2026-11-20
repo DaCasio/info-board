@@ -2316,8 +2316,8 @@
     },
     {
         "name": "F5 Supp anschreiben FBH",
-        "start": "2026-11-20T15:00",
-        "ziel": "2026-11-20T15:20",
+        "start": "2026-11-20T14:45",
+        "ziel": "2026-11-20T15:00",
         "tags": [],
         "repeat": "none",
         "repeatUntil": null,
