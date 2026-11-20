@@ -245,7 +245,7 @@
     },
     {
         "name": "15 Gladbach - Bayern",
-        "start": null,
+        "start": "2027-01-09T16:00",
         "ziel": "2027-01-09T18:30",
         "tags": [
             "GLADBACH",
