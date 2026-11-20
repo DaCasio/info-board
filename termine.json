@@ -2302,17 +2302,6 @@
         "checklist": []
     },
     {
-        "name": "Losfahren",
-        "start": null,
-        "ziel": "2026-11-20T18:30",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "S. Seiler ANO",
         "start": null,
         "ziel": "2026-11-23T08:30",
