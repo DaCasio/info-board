@@ -2357,5 +2357,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "S. Seiler ANO",
+        "start": null,
+        "ziel": "2026-11-23T08:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bei ANO schauen ob Account, dann löschen.",
+        "checklist": []
     }
 ]
