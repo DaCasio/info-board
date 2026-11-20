@@ -259,7 +259,7 @@
     },
     {
         "name": "17 Gladbach - Berlin",
-        "start": null,
+        "start": "2027-01-16T13:30",
         "ziel": "2027-01-16T15:30",
         "tags": [
             "GLADBACH",
