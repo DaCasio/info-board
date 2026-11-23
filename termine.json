@@ -2253,5 +2253,19 @@
         ],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Spät",
+        "start": null,
+        "ziel": "2026-11-25T09:30",
+        "tags": [
+            "ARBEIT",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
