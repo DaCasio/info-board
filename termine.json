@@ -2232,5 +2232,26 @@
         "days": [],
         "notiz": "14.12.",
         "checklist": []
+    },
+    {
+        "name": "Koenen Gerichtstermin losfahren",
+        "start": null,
+        "ziel": "2026-11-24T10:45",
+        "tags": [
+            "TERMINE",
+            "CASI",
+            "KERO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "notiz": "",
+        "checklist": []
     }
 ]
