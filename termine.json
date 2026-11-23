@@ -2255,5 +2255,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Asphalt Sanierung Mutti",
+        "start": null,
+        "ziel": "2026-11-30T00:00",
+        "tags": [
+            "INFO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Ab dem 30. November finden dann weitere Asphaltsanierungen in der Wiesfurthstraße in Neukirchen zwischen Heckrathstraße und etwa Hausnummer 76 statt.",
+        "checklist": []
     }
 ]
