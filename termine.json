@@ -1961,19 +1961,6 @@
         "checklist": []
     },
     {
-        "name": "Bio-Tonne",
-        "start": null,
-        "ziel": "2026-11-23T18:00",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Für Di, 24.11.2026",
-        "checklist": []
-    },
-    {
         "name": "Restmüll-Tonne",
         "start": null,
         "ziel": "2026-11-25T18:00",
