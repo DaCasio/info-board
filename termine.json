@@ -2178,19 +2178,6 @@
         "checklist": []
     },
     {
-        "name": "Restmüll-Tonne",
-        "start": null,
-        "ziel": "2026-11-25T18:00",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Für Do, 26.11.2026",
-        "checklist": []
-    },
-    {
         "name": "Wertstofftonne & Karre vom Grafi wegfahren",
         "start": null,
         "ziel": "2026-11-26T18:00",
