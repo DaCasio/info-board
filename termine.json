@@ -2479,18 +2479,5 @@
         "days": [],
         "notiz": "Ab dem 30. November finden dann weitere Asphaltsanierungen in der Wiesfurthstraße in Neukirchen zwischen Heckrathstraße und etwa Hausnummer 76 statt.",
         "checklist": []
-    },
-    {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-11-25T18:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
     }
 ]
