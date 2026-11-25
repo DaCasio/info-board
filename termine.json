@@ -2386,20 +2386,6 @@
         "checklist": []
     },
     {
-        "name": "Feierabend",
-        "start": null,
-        "ziel": "2026-11-25T18:00",
-        "tags": [
-            "ARBEIT",
-            "CASI"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Asphalt Sanierung Mutti",
         "start": null,
         "ziel": "2026-11-30T00:00",
