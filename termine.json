@@ -2438,5 +2438,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Dämmerung (16:33–17:11 Uhr)",
+        "start": "2026-11-25T16:33",
+        "ziel": "2026-11-25T17:11",
+        "tags": [
+            "INFO"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Bürgerliche Abenddämmerung in Neukirchen-Vluyn: Beginn (Sonnenuntergang) 16:33 Uhr, Ende (Dunkelheit) 17:11 Uhr.",
+        "checklist": []
     }
 ]
