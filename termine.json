@@ -2465,5 +2465,19 @@
         "days": [],
         "notiz": "Ab dem 30. November finden dann weitere Asphaltsanierungen in der Wiesfurthstraße in Neukirchen zwischen Heckrathstraße und etwa Hausnummer 76 statt.",
         "checklist": []
+    },
+    {
+        "name": "Connect / Infotainment Ablauf",
+        "start": null,
+        "ziel": "2026-12-09T00:00",
+        "tags": [
+            "AUTO",
+            "CASI"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
