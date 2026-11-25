@@ -571,20 +571,6 @@
         "checklist": []
     },
     {
-        "name": "Manu treffen ",
-        "start": "2026-11-27T19:00",
-        "ziel": "2026-11-27T22:00",
-        "tags": [
-            "TERMINE",
-            "KERO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Entwurmung Sira, Jax, Pumba & Diego",
         "start": "2027-05-07T00:00",
         "ziel": "2027-05-08T00:00",
