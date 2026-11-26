@@ -2496,5 +2496,16 @@
         "days": [],
         "notiz": "Reminder: Zwischenstandsanfrage Loop Punkt 7 & 8",
         "checklist": []
+    },
+    {
+        "name": "FBH BIG IP Check",
+        "start": null,
+        "ziel": "2026-11-27T08:40",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "CPU Spikes respektive an Kunden ob diese Spikes noch auf seiner VM ersichtlich sind.",
+        "checklist": []
     }
 ]
