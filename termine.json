@@ -2358,19 +2358,6 @@
         "checklist": []
     },
     {
-        "name": "Rechnung AXN spätestens",
-        "start": null,
-        "ziel": "2026-12-13T14:00",
-        "tags": [
-            "ARBEIT"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "14.12.",
-        "checklist": []
-    },
-    {
         "name": "Asphalt Sanierung Mutti",
         "start": null,
         "ziel": "2026-11-30T00:00",
