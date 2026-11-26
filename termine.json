@@ -2372,19 +2372,6 @@
         "checklist": []
     },
     {
-        "name": "Dämmerung (16:32–17:11 Uhr)",
-        "start": "2026-11-26T16:32",
-        "ziel": "2026-11-26T17:11",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Bürgerliche Abenddämmerung in Neukirchen-Vluyn: Beginn (Sonnenuntergang) 16:32 Uhr, Ende (Dunkelheit) 17:11 Uhr.",
-        "checklist": []
-    },
-    {
         "name": "20 Gladbach - Freiburg - Nicht terminiert",
         "start": "2027-02-06T13:30",
         "ziel": "2027-02-06T15:30",
