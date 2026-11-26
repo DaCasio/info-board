@@ -2522,5 +2522,18 @@
         "days": [],
         "notiz": "",
         "checklist": []
+    },
+    {
+        "name": "Loop CVE Task",
+        "start": null,
+        "ziel": "2026-12-10T08:30",
+        "tags": [
+            "ARBEIT"
+        ],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "Reminder: Zwischenstandsanfrage Loop Punkt 7 & 8",
+        "checklist": []
     }
 ]
