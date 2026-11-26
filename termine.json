@@ -2150,19 +2150,6 @@
         "checklist": []
     },
     {
-        "name": "Wertstofftonne & Karre vom Grafi wegfahren",
-        "start": null,
-        "ziel": "2026-11-26T18:00",
-        "tags": [
-            "INFO"
-        ],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "Für Fr, 27.11.2026",
-        "checklist": []
-    },
-    {
         "name": "Papiertonne",
         "start": null,
         "ziel": "2026-11-29T18:00",
