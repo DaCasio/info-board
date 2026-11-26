@@ -2522,5 +2522,16 @@
         "days": [],
         "notiz": "Reminder: Zwischenstandsanfrage Loop Punkt 7 & 8",
         "checklist": []
+    },
+    {
+        "name": "F5 FBH UPD",
+        "start": "2026-11-26T17:30",
+        "ziel": "2026-11-26T18:30",
+        "tags": [],
+        "repeat": "none",
+        "repeatUntil": null,
+        "days": [],
+        "notiz": "",
+        "checklist": []
     }
 ]
