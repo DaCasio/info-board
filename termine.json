@@ -733,17 +733,6 @@
         "checklist": []
     },
     {
-        "name": "Dämmerung Start",
-        "start": "2026-11-27T15:52",
-        "ziel": "2026-11-27T16:31",
-        "tags": [],
-        "repeat": "none",
-        "repeatUntil": null,
-        "days": [],
-        "notiz": "",
-        "checklist": []
-    },
-    {
         "name": "Dämmerung (16:29–17:08 Uhr)",
         "start": "2026-11-30T15:50",
         "ziel": "2026-11-30T16:29",
