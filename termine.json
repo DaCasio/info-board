@@ -749,9 +749,7 @@
         "name": "Dämmerung Start",
         "start": "2026-11-27T15:52",
         "ziel": "2026-11-27T16:31",
-        "tags": [
-            "INFO"
-        ],
+        "tags": [],
         "repeat": "none",
         "repeatUntil": null,
         "days": [],
